@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+models/
+artifacts/
+calibration/
+*.safetensors
+*.pt
+*.bin
+*.e8
+*.uniform
+*.so
+*.dylib
+*.log
+*.part
+.DS_Store

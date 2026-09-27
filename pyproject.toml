@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mamba2-e8w5"
+version = "0.1.0"
+description = "Reproducible E8/W5 compression for NVIDIA Mamba-2 8B"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "torch>=2.4", "sentencepiece", "datasets", "huggingface-hub", "transformers>=4.45", "einops"]
+
+[tool.setuptools.packages.find]
+include = ["mamba_e8w5*"]
