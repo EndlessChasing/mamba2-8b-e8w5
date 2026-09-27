@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: source and runtime adaptation in progress. No compressed 8B model or quality result yet.
+Status: source and runtime checks passed; collecting 65,536 train calibration tokens. No compressed 8B model or quality result yet.
 
 ## Scope
 
@@ -14,16 +14,16 @@ Status: source and runtime adaptation in progress. No compressed 8B model or qua
 
 - [x] Create public EndlessChasing/mamba2-8b-e8w5 repository.
 - [x] Pin official NVIDIA revision and LFS SHA256s.
-- [ ] Download and verify official checkpoint and native SentencePiece tokenizer on GPU host.
-- [ ] Record source/runtime/codec licenses and include redistribution notices.
-- [ ] Push reproducible source and progress documentation; keep weights outside Git.
+- [x] Download and verify official checkpoint and native SentencePiece tokenizer on GPU host.
+- [x] Record source/runtime/codec licenses and include redistribution notices.
+- [x] Push reproducible source and progress documentation; keep weights outside Git.
 
 ## Correctness before compression
 
-- [ ] Load official checkpoint into public mamba_ssm runtime with exact key/shape coverage.
-- [ ] Verify grouped gated RMSNorm, 8 SSM groups and independent embedding/output weights.
-- [ ] Verify native tokenizer and baseline finite-logit/token-cache checks.
-- [ ] Freeze calibration/development/evaluation inputs and protocol before candidate evaluation.
+- [x] Load official checkpoint into public mamba_ssm runtime with exact key/shape coverage.
+- [x] Verify grouped gated RMSNorm, 8 SSM groups and independent embedding/output weights.
+- [x] Verify native tokenizer and baseline finite-logit/token-cache checks.
+- [x] Freeze calibration/development/evaluation inputs and protocol before candidate evaluation.
 
 ## Compression
 

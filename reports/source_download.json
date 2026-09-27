@@ -1,0 +1,23 @@
+{
+  "repository": "nvidia/mamba2-8b-3t-4k",
+  "revision": "b915550c63ba9359f88f44d1f6a600d85af27302",
+  "files": [
+    {
+      "path": "model_optim_rng.pt",
+      "source_path": "release/mp_rank_00/model_optim_rng.pt",
+      "url": "https://huggingface.co/nvidia/mamba2-8b-3t-4k/resolve/b915550c63ba9359f88f44d1f6a600d85af27302/release/mp_rank_00/model_optim_rng.pt",
+      "bytes": 16474189490,
+      "sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb"
+    },
+    {
+      "path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "source_path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "url": "https://huggingface.co/nvidia/mamba2-8b-3t-4k/resolve/b915550c63ba9359f88f44d1f6a600d85af27302/mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "bytes": 4573028,
+      "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+    }
+  ],
+  "checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+  "complete": true
+}

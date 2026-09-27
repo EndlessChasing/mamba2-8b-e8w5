@@ -1,0 +1,144 @@
+{
+  "audit_date": "2026-09-27",
+  "audit_type": "Public metadata and source audit; no large weight download by this auditor",
+  "source": {
+    "repo_id": "nvidia/mamba2-8b-3t-4k",
+    "revision": "b915550c63ba9359f88f44d1f6a600d85af27302",
+    "model_card_license": "apache-2.0",
+    "official_description": "Pure Mamba-2 base model, 3.5T training tokens, 4K sequence length",
+    "metadata_url": "https://huggingface.co/api/models/nvidia/mamba2-8b-3t-4k?blobs=true",
+    "files": [
+      {
+        "path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+        "bytes": 4573028,
+        "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+        "url": "https://huggingface.co/nvidia/mamba2-8b-3t-4k/resolve/b915550c63ba9359f88f44d1f6a600d85af27302/mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+        "local_download_verified": true,
+        "verification_receipt": "source_download.json"
+      },
+      {
+        "path": "release/mp_rank_00/model_optim_rng.pt",
+        "bytes": 16474189490,
+        "sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+        "url": "https://huggingface.co/nvidia/mamba2-8b-3t-4k/resolve/b915550c63ba9359f88f44d1f6a600d85af27302/release/mp_rank_00/model_optim_rng.pt",
+        "local_download_verified": true,
+        "verification_receipt": "source_download.json"
+      }
+    ]
+  },
+  "architecture": {
+    "status": "Verified against the official 507-tensor inventory and checkpoint arguments; numerical runtime smoke tracked separately",
+    "num_parameters_expected": 8236999680,
+    "d_model": 4096,
+    "n_layer": 56,
+    "d_state": 128,
+    "d_conv": 4,
+    "expand": 2,
+    "headdim": 64,
+    "ngroups": 8,
+    "vocab_size": 256000,
+    "tie_embeddings": false,
+    "residual_in_fp32": false,
+    "rms_norm": true,
+    "chunk_size": 128,
+    "norm_epsilon": 1e-05,
+    "inventory_receipt": "source_tensor_inventory.json"
+  },
+  "tokenizer_semantics": {
+    "implementation": "Native SentencePiece encode_as_ids and decode_ids; no automatically inserted BOS or EOS",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/7ee599a25ca15f042c1087176b73ebddb0566d02/megatron/training/tokenizer/tokenizer.py",
+    "class": "_GPTSentencePieceTokenizer",
+    "special_ids": "Read from pinned .model file, do not copy IDs from generic HF wrappers"
+  },
+  "alternative_conversions": [
+    {
+      "repo_id": "ib-ssm/mamba2-8b-3t-4k-hf",
+      "revision": "2b35ece89bfc2d66327d771c25f054bc1dc0f73a",
+      "status": "Not selected; custom code and T5 tokenizer compatibility wrapper differ from native tokenizer"
+    },
+    {
+      "repo_id": "devingulliver/mamba2-8b",
+      "revision": "663993b0c882616ab837222433c37b323a4eaf6a",
+      "status": "Not selected; public config omits ngroups=8"
+    }
+  ],
+  "competitors": [
+    {
+      "repo_id": "ut-enyac/quamba2-8b-converted-w4a8",
+      "revision": "813a7a8815a2bdbfcdbec1f0550e0beec90dd187",
+      "weight_files": [
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 4245725690,
+          "sha256": "cb9cabca74ed3dc97adcfe3e838cc53fa82a41bd213d24da86f690e1d53c9e90"
+        }
+      ],
+      "total_weight_bytes": 4245725690,
+      "status": "Publisher HF metadata only; not downloaded or evaluated here",
+      "license_caveat": "Read repository license.txt; Quamba research-license restrictions conflict with some Apache2 metadata tags."
+    },
+    {
+      "repo_id": "ut-enyac/quamba2-8b-converted-w4aX",
+      "revision": "6d03f97e4b77f2688965653e517bde480a7c88ef",
+      "weight_files": [
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 4247971564,
+          "sha256": "6bd83b5b9f06b9fa8dfb03e4fa7b7b5c582b3ffd69f0abe0880088933bfe85ee"
+        }
+      ],
+      "total_weight_bytes": 4247971564,
+      "status": "Publisher HF metadata only; not downloaded or evaluated here",
+      "license_caveat": "Read repository license.txt; Quamba research-license restrictions conflict with some Apache2 metadata tags."
+    },
+    {
+      "repo_id": "ut-enyac/quamba2-8b-converted-w4a16",
+      "revision": "997f760f29c10574ee8363b8680d636048dee048",
+      "weight_files": [
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 4253601410,
+          "sha256": "0e0097aeffe8da48a21bf9698e32f474f54f766b902661b5626b366a8d5c4bc4"
+        }
+      ],
+      "total_weight_bytes": 4253601410,
+      "status": "Publisher HF metadata only; not downloaded or evaluated here",
+      "license_caveat": "Read repository license.txt; Quamba research-license restrictions conflict with some Apache2 metadata tags."
+    },
+    {
+      "repo_id": "ut-enyac/mamba2-8b-converted-uniql-1.0-masked-lora-rft-w4a16",
+      "revision": "220a411ffc885f1543fc19afcfe90b793fa61153",
+      "weight_files": [
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "bytes": 3712725824,
+          "sha256": "5ae067e667f92a7de8b72c6c537d9526ee0781c959804f15a4feb623e966a4b9"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "bytes": 540672216,
+          "sha256": "e89b00aa5960b167582ff35eea0c77509d954353fed0f906f429f17b25ee9238"
+        }
+      ],
+      "total_weight_bytes": 4253398040,
+      "status": "Publisher HF metadata only; not downloaded or evaluated here",
+      "license_caveat": "Read license.txt; no blanket license claim made in this audit."
+    }
+  ],
+  "smallest_claim": "Unproven. This finite public inventory is not an exhaustive worldwide proof; quality and actual E8/W5 output bytes remain gates.",
+  "quantization_source": {
+    "repo": "https://github.com/Cornell-RelaxML/quip-sharp",
+    "revision": "1d8f873e9a2a8b86b12bb1064c312c5689b77d98",
+    "license": "GPL-3.0",
+    "primitives": [
+      "lib/codebook/latticee8_padded12.py",
+      "lib/algo/quip.py:LDLQ_buffered_lowmem"
+    ],
+    "scope": "Adaptation of E8P12/LDLQ primitives, not complete original QuIP# fine-tuning recipe"
+  },
+  "download_verification": {
+    "receipt": "source_download.json",
+    "receipt_sha256": "f4b1ef422d5918df010976121c2049c9239774d12dca5db2cd09504cd86739e9",
+    "scope": "Remote download tool verified both full file SHA256 values; metadata audit independently matched receipt to publisher identities"
+  }
+}

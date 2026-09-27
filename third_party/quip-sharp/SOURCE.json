@@ -1,0 +1,16 @@
+{
+  "upstream": "https://github.com/Cornell-RelaxML/quip-sharp",
+  "license": "GPL-3.0",
+  "source_snapshot": "Exact bytes checked against the pinned upstream GitHub commit.",
+  "files": {
+    "lib/codebook/latticee8_padded12.py": "af3442929e4dd033f1a9776eab36bea42ba9dd17761a3d0056639f0db7c4e75f",
+    "lib/algo/quip.py": "abd4986cbd636dea77809bc0b816964f406e0f2440cdde39cc83ba7734052fc4",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  "revision": "1d8f873e9a2a8b86b12bb1064c312c5689b77d98",
+  "source_urls": {
+    "lib/codebook/latticee8_padded12.py": "https://raw.githubusercontent.com/Cornell-RelaxML/quip-sharp/1d8f873e9a2a8b86b12bb1064c312c5689b77d98/lib/codebook/latticee8_padded12.py",
+    "lib/algo/quip.py": "https://raw.githubusercontent.com/Cornell-RelaxML/quip-sharp/1d8f873e9a2a8b86b12bb1064c312c5689b77d98/lib/algo/quip.py",
+    "LICENSE": "https://raw.githubusercontent.com/Cornell-RelaxML/quip-sharp/1d8f873e9a2a8b86b12bb1064c312c5689b77d98/LICENSE"
+  }
+}

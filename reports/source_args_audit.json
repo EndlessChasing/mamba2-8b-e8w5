@@ -1,0 +1,31 @@
+{
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "selected_args": {
+    "num_layers": 56,
+    "encoder_num_layers": 56,
+    "decoder_num_layers": null,
+    "hidden_size": 4096,
+    "ffn_hidden_size": 16384,
+    "group_query_attention": true,
+    "num_query_groups": 8,
+    "norm_epsilon": 1e-05,
+    "apply_layernorm_1p": false,
+    "apply_residual_connection_post_layernorm": false,
+    "moe_grouped_gemm": false,
+    "recompute_num_layers": null,
+    "fp16": false,
+    "bf16": true,
+    "fp32_residual_connection": false,
+    "fp16_lm_cross_entropy": false,
+    "num_layers_per_virtual_pipeline_stage": null,
+    "dino_head_hidden_size": 2048
+  },
+  "top_level_keys": [
+    "model",
+    "args",
+    "checkpoint_version",
+    "iteration",
+    "opt_param_scheduler",
+    "rng_state"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "complete": true,
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "source_tensor_count": 507,
+  "source_parameter_count": 8236999680,
+  "source_dtypes": {
+    "torch.bfloat16": {
+      "tensors": 507,
+      "parameters": 8236999680
+    }
+  },
+  "baseline_dtype": "torch.float16",
+  "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+  "tokenizer_vocab": 256000,
+  "tokenizer_special_ids": {
+    "bos": 2,
+    "eos": 3,
+    "pad": 0
+  },
+  "model_config": {
+    "d_model": 4096,
+    "d_intermediate": 0,
+    "n_layer": 56,
+    "vocab_size": 256000,
+    "ssm_cfg": {
+      "layer": "Mamba2",
+      "d_state": 128,
+      "d_conv": 4,
+      "expand": 2,
+      "headdim": 64,
+      "ngroups": 8,
+      "chunk_size": 128,
+      "rmsnorm": true,
+      "norm_before_gate": false,
+      "use_mem_eff_path": false
+    },
+    "rms_norm": true,
+    "residual_in_fp32": true,
+    "fused_add_norm": false,
+    "pad_vocab_size_multiple": 128,
+    "tie_embeddings": false
+  },
+  "parameter_count": 8236999680,
+  "group_sizes": [
+    1024
+  ],
+  "untied_vocabulary": true,
+  "source_safe_unpickler": "weights_only=True; inspected passive Namespace, NumPy uint32 RNG state, ModelType enum only",
+  "prefill_tokens": 256,
+  "prefill_finite": true,
+  "tokenwise_tokens": 8,
+  "tokenwise_finite": true,
+  "tokenwise_cache_dtypes": [
+    "torch.float16"
+  ],
+  "tokenwise_cache_bytes": 122028032,
+  "token_sha256_int64le": "994b1f58936dbb690e281d6c86a63d0bcb7b062cff1575aabe12b1c39323c0eb",
+  "top_next_tokens": [
+    11316,
+    14,
+    11020,
+    18720,
+    439
+  ],
+  "peak_memory": {
+    "peak_allocated_bytes": 16850942464,
+    "peak_reserved_bytes": 17098080256,
+    "current_allocated_bytes": 16666499072,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "runtime_source_sha256": "8e7794f1be49a171ebf1bd7df992b4652cd12cc99163ab9321a09b7ebf17012c",
+  "calibration_source_sha256": "b5a7356a2ab769538940aed218653a092a7055aa26a9ec6f62d3783b9ac78ee5",
+  "elapsed_seconds": 47.46246600151062,
+  "limitations": [
+    "Finite smoke only, not a PPL/MK quality result",
+    "Full original Megatron execution not run",
+    "Eight tokenwise tokens do not substitute full tokenwise validation"
+  ]
+}
