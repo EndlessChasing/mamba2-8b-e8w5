@@ -1,0 +1,267 @@
+{
+  "format": "MAMBA2_SMALL_COMPENSATION_FINAL_INDEPENDENT_AUDIT_V1",
+  "complete": true,
+  "passed": true,
+  "publication_authorized": false,
+  "audited_at_utc": "2026-09-28T03:15:25.249147+00:00",
+  "method": "Read-only receipts and source inspection, fresh CPU checkpoint/export recheck, filesystem stat census, and independent stdlib recomputation of all 130 four-arm window aggregates. No new GPU execution or quality selection.",
+  "authoritative_files": {
+    "smoke": {
+      "file": "reports/small_compensation_v1_smoke.json",
+      "bytes": 194128,
+      "sha256": "cd71bb63d32d6c703dd8a0efc823836d2fb9110075d0d278de855b6dca7d46c7"
+    },
+    "train": {
+      "file": "reports/small_compensation_v1_train.json",
+      "bytes": 1474150,
+      "sha256": "2b0abbe2559ca4393af5d949fc7fa17dbb55cc164ca1ffc2c88347e3ebed0aba"
+    },
+    "manifest": {
+      "file": "reports/small_compensation_v1_manifest.json",
+      "bytes": 95371,
+      "sha256": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006"
+    },
+    "integrity": {
+      "file": "reports/small_compensation_v1_integrity.json",
+      "bytes": 146731,
+      "sha256": "8c06dc1b378b9146f7e770a6d3097f788e43658c2a0604f5aa1fd0660a160211"
+    },
+    "eval": {
+      "file": "reports/small_compensation_v1_eval.json",
+      "bytes": 1056199,
+      "sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206"
+    }
+  },
+  "identity_checks": {
+    "local_input_bindings_checked": {
+      "parent_manifest": "reports/quantization_v1.json",
+      "norm_manifest": "reports/norm_compensation_v1_manifest.json",
+      "small_manifest": "reports/small_compensation_v1_manifest.json",
+      "training_report": "reports/small_compensation_v1_train.json",
+      "smoke_report": "reports/small_compensation_v1_smoke.json",
+      "training_data_manifest": "reports/small_compensation_v1_data.json",
+      "protocol": "docs/SMALL_TENSOR_COMPENSATION_PROTOCOL.md",
+      "continuation_note": "docs/PPL_PRIORITY_CONTINUATION.md",
+      "reference_report": "reports/norm_compensation_v1_ppl_continuation.json",
+      "evaluator": "scripts/evaluate_small_compensation.py"
+    },
+    "all_matched": true,
+    "frozen_code_sha256": {
+      "runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+      "evaluation.py": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+      "codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "norm_overlay.py": "2e911764fe065c9dfe7971dff02f17c92911530c02ca5b16c78d2f42af450385"
+    },
+    "evaluator_sha256": "2102d406da33482303f0dd9a6446b1c070fdf28ecade70e9ab8da9cdfd0202be",
+    "small_overlay_sha256": "3512c1b232c4039c16a26ffc0fe8c2eac1be6bb9c704ccbcb1d4e8e7788a1286",
+    "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "small_manifest_sha256": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006",
+    "resolved_file_ledger_sha256": "0f6e13986dbf08c1da8f01dda59b4ddff922c17fcdf9c66daa92088ae27d4378",
+    "original_source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "original_tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+  },
+  "smoke_audit": {
+    "passed": true,
+    "finite_gradient_tensors": 393,
+    "nonzero_gradient_families": 7,
+    "checkpoint_gradient_max_difference": 0,
+    "native_export_forward_bitwise_equal": true,
+    "frozen_content_hashes_unchanged": 114,
+    "trial_state_discarded": true
+  },
+  "training_audit": {
+    "successful_updates": 1024,
+    "attempts": 1024,
+    "overflow_retries": 0,
+    "fixed_passes": 4,
+    "train_windows": 256,
+    "stored_tokens_per_window": 2048,
+    "targets_per_update": 2047,
+    "new_successful_target_exposures": 2096128,
+    "prior_norm_target_exposures": 262016,
+    "cumulative_retained_target_exposures": 2358144,
+    "exposure_scope": "Successful optimizer target positions; smoke trials, recomputation and repeated forward work excluded.",
+    "schedule_and_all_history_rows_independently_checked": true,
+    "final_checkpoint_only_selected": true,
+    "all_393_gradient_tensors_finite_each_update": true,
+    "evaluation_data_used_for_training": false,
+    "new_training_windows_disjoint_from_original_32_windows": true,
+    "trainable_parameters": 3580928,
+    "trainable_tensors": 393,
+    "all_393_exported_tensors_changed_relative_to_norm_initialization": true,
+    "frozen_large_parameter_tensors": 114,
+    "frozen_gpu_hashes_unchanged": true,
+    "final_native_export_forward_bitwise_equal": true,
+    "logical_raw_data_bytes": 2886482462,
+    "replacement_archive_bytes": 7283930,
+    "replacement_archive_byte_delta": 0
+  },
+  "binary_checkpoint_export_recheck": {
+    "passed": true,
+    "checkpoint_sha256": "8620ef7753cd3a2517158185d752acc727d7a52e03a4b181f04793e0184caff1",
+    "checkpoint_bytes": 43751025,
+    "other_fp16_sha256": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+    "rounded_masters_checked": 393,
+    "parameters_checked": 3580928,
+    "exact_seeded_schedule_verified": true,
+    "exact_report_history_verified": true,
+    "cuda_initialized": false
+  },
+  "evaluation_identity_audit": {
+    "parent_decoded_tensors_verified": 507,
+    "parent_e8_matrices_verified": 112,
+    "parent_w5_vocabularies_verified": 2,
+    "small_final_rounded_masters_and_loaded_export_hashes_matched": 393,
+    "frozen_parameter_content_hashes_matched": 114,
+    "covered_parameters": 8236999680,
+    "covered_tensors": 507,
+    "same_process": true,
+    "arm_order": [
+      "source_fp16",
+      "parent_e8w5",
+      "norm_e8w5",
+      "small_e8w5"
+    ],
+    "window_plan_matches_previous_full_validation": true,
+    "dataset_matches_previous_full_validation": true,
+    "window_plan_sha256": "11d0c6efca95fcde3032f8234b0e1b1687db6cfc0e17d00f2699a96a07c45caa",
+    "windows_per_arm": 130,
+    "targets_per_arm": 264764,
+    "full_windows": 129,
+    "tail_targets": 572
+  },
+  "quality_recomputed": {
+    "arms": {
+      "source_fp16": {
+        "nll": 527554.2002649307,
+        "targets": 264764,
+        "ppl": 7.334175947318572,
+        "mean_nll": 1.9925450599965657
+      },
+      "parent_e8w5": {
+        "nll": 576893.6733951569,
+        "targets": 264764,
+        "ppl": 8.83656043963809,
+        "mean_nll": 2.17889771039551
+      },
+      "norm_e8w5": {
+        "nll": 569390.048034668,
+        "targets": 264764,
+        "ppl": 8.589640667554631,
+        "mean_nll": 2.150556903637458
+      },
+      "small_e8w5": {
+        "nll": 562211.1521596909,
+        "targets": 264764,
+        "ppl": 8.359867548009992,
+        "mean_nll": 2.1234425834316255
+      }
+    },
+    "small_vs_norm_ppl_relative_change": -0.026750026972903962,
+    "small_vs_parent_ppl_relative_change": -0.0539455249454075,
+    "small_vs_source_ppl_relative_change": 0.13985096731506985,
+    "small_minus_norm_mean_nll": -0.0271143202058326,
+    "paired_windows_against_norm": {
+      "improved": 119,
+      "unchanged": 0,
+      "worsened": 11
+    },
+    "predeclared_one_percent_improvement_vs_norm_met": true,
+    "source_plus_five_percent_target_met": false,
+    "MK_evaluated": false
+  },
+  "storage_census": {
+    "storage_scopes": {
+      "raw_parent": {
+        "relative_path": "artifacts/e8w5_v1",
+        "regular_file_count": 118,
+        "directory_count": 1,
+        "apparent_file_bytes": 2886686334,
+        "allocated_file_bytes_st_blocks": 2886905856,
+        "checkpoint_file_count": 0,
+        "checkpoint_apparent_bytes": 0,
+        "checkpoint_allocated_bytes": 0,
+        "symlink_count": 0
+      },
+      "small_overlay": {
+        "relative_path": "artifacts/small_compensation_v1",
+        "regular_file_count": 2,
+        "directory_count": 1,
+        "apparent_file_bytes": 7379301,
+        "allocated_file_bytes_st_blocks": 7385088,
+        "checkpoint_file_count": 0,
+        "checkpoint_apparent_bytes": 0,
+        "checkpoint_allocated_bytes": 0,
+        "symlink_count": 0
+      },
+      "training_work": {
+        "relative_path": "artifacts/small_compensation_v1_train_work",
+        "regular_file_count": 36,
+        "directory_count": 1,
+        "apparent_file_bytes": 1396860886,
+        "allocated_file_bytes_st_blocks": 1396981760,
+        "checkpoint_file_count": 32,
+        "checkpoint_apparent_bytes": 1395495712,
+        "checkpoint_allocated_bytes": 1395601408,
+        "symlink_count": 0
+      },
+      "smoke_work": {
+        "relative_path": "artifacts/small_compensation_v1_smoke_work",
+        "regular_file_count": 2,
+        "directory_count": 2,
+        "apparent_file_bytes": 7284011,
+        "allocated_file_bytes_st_blocks": 7290880,
+        "checkpoint_file_count": 0,
+        "checkpoint_apparent_bytes": 0,
+        "checkpoint_allocated_bytes": 0,
+        "symlink_count": 0
+      },
+      "new_training_data": {
+        "relative_path": "training_data/small_compensation_v1",
+        "regular_file_count": 2,
+        "directory_count": 1,
+        "apparent_file_bytes": 4201723,
+        "allocated_file_bytes_st_blocks": 4206592,
+        "checkpoint_file_count": 0,
+        "checkpoint_apparent_bytes": 0,
+        "checkpoint_allocated_bytes": 0,
+        "symlink_count": 0
+      }
+    },
+    "sum_selected_scopes_apparent_bytes": 4302412255,
+    "sum_selected_scopes_allocated_file_bytes": 4302770176,
+    "cross_scope_hardlinks": [],
+    "exclusions": "Source checkpoint, original Hessian calibration, prior norm/refinement/release/restore runs, tokenizer outside these directories, code/licenses and reports outside these directories are excluded. Selected scopes are filesystem-stat counts, not a new distributable package."
+  },
+  "storage_interpretation": {
+    "logical_resolved_data_bytes": 2886482462,
+    "physical_parent_plus_small_overlay_directory_bytes": 2894065635,
+    "evaluator_parent_plus_norm_plus_small_directories_bytes": 2901412534,
+    "new_huffman_container_built": false,
+    "allocated_bytes_note": "st_blocks * 512 for regular files only, excluding directory blocks. This is distinct from file lengths and is not a filesystem-exclusive usage claim."
+  },
+  "limitations": [
+    "Validation has already informed development; it is not untouched test evidence.",
+    "PPL does not establish recall preservation or repair the prior MK regression.",
+    "Original source is a declared reference input, not a compressed candidate inference dependency.",
+    "Evaluation expands weights to FP16; this is not compressed runtime residency.",
+    "Recorded PPL evaluation timings are run diagnostics, not a throughput benchmark.",
+    "No old Huffman container size is claimed for changed FP16 values.",
+    "The FP16 original is the official BF16 checkpoint cast into the declared native runtime; no Megatron BF16 parity is established.",
+    "The historical norm MK regression is unchanged evidence. This new candidate has no MK measurement.",
+    "No global smallest-model, equal-quality, deployment readiness, compact GPU residency or throughput claim follows.",
+    "The 1% PPL research advancement criterion passes; the separate original-source +5% quality target still fails.",
+    "Storage scopes exclude original source/calibration, prior runs, external tokenizer, code/licenses and external reports; no new distributable package was measured."
+  ],
+  "diagnostic_resources": {
+    "training_peak_allocated_bytes": 36040458752,
+    "evaluation_gpu_memory": {
+      "peak_allocated_bytes": 22062521856,
+      "peak_reserved_bytes": 23710400512,
+      "current_allocated_bytes": 16818257408,
+      "note": "Decoded FP16 quality reference, not compressed model residency"
+    },
+    "evaluation_elapsed_seconds": 274.9319601750467,
+    "note": "Training includes teacher/student/backward; evaluation uses expanded FP16 weights and verification workspaces. Timings are not a benchmark."
+  }
+}

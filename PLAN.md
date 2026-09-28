@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Under their original gates neither advanced to full validation. The user subsequently directed PPL-first work: the norm candidate completed separately recorded full validation (8.83656→8.58964, −2.7943%; still +17.1180% versus source), and the larger all-small-tensor experiment completed its fixed 1024-step training and exact export audit; independent full PPL evaluation is running. MK remains disclosed evidence rather than a blocker for this continuation. The GitHub release remains a draft with zero assets.
+Status: publication remains on hold at the user's request. Current best repaired full-validation PPL is 8.359867548 from all-small-tensor compensation, versus 8.589640668 for norm-only, 8.836560440 for original E8/W5 and 7.334175947 for FP16. Raw capacity is unchanged. The >=1% improvement condition passed, but the +5% source target remains unmet (+13.9851%). MK is deferred by explicit user direction, with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -89,5 +89,10 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 - [x] Freeze the next all-small-tensor protocol: 393 existing tensors, 256 disjoint train windows excluding the old 32, 1024 fixed updates.
 - [x] Pass new CPU and GPU checks covering convolution and recurrent parameter gradients, resumption, and actual FP16 export: 393 finite-gradient tensors, all seven families nonzero, checkpoint gradients exact, reloaded FP16 output exact, 114 frozen weight hashes unchanged; reports/small_compensation_v1_smoke.json.
 - [x] Train, export and independently audit the final checkpoint without changing E8/W5 or payload capacity: 1024 updates, zero overflows, 393 changed small tensors, 114 frozen matrices, raw data 2,886,482,462 bytes.
-- [ ] Measure complete validation PPL, source-relative gap and gain over norm-v1; report recall as unmeasured for this candidate.
+- [x] Measure complete validation PPL, source-relative gap and gain over norm-v1: PPL 8.359868, −2.6750% versus norm-v1, −5.3946% versus original E8/W5, +13.9851% versus FP16. Recall is unmeasured for this candidate. See docs/SMALL_TENSOR_COMPENSATION_RESULTS.md.
 - [ ] Consider a separate Resurface recall experiment after the PPL work; no recall recovery is assumed.
+
+## Next PPL hypothesis
+
+- [x] Audit input-balance training versus already trained norm gains; they are redundant in exact arithmetic, with finite-precision differences. Do not count this as 688,128 new independent modes.
+- [ ] Design a bounded experiment that changes E8 codeword assignment or the codebook itself; preserve comparable capacity accounting and full-validation measurements. This is not yet implemented or measured.
