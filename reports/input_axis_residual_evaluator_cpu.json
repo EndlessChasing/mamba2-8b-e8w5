@@ -1,0 +1,38 @@
+{
+  "format": "MAMBA2_INPUT_AXIS_RESIDUAL_EVALUATION_V1",
+  "complete": true,
+  "script_sha256": "c8dece7ec209b74ef65244086c7c245f08a59ea344124559f964e44c8a2540f0",
+  "protocol_sha256": "bf4af74313812a5f20373e9cfa68654b2cbe39a66841788ae4c66e965aa80088",
+  "development_arm_order": [
+    "accepted_e8_w5_w5",
+    "axis_in_w5_w5",
+    "axis_in_w4_w5",
+    "axis_in_w4_w4",
+    "accepted_e8_w5_w5_repeat"
+  ],
+  "primary_arm": "axis_in_w4_w5",
+  "fitting_performed": false,
+  "mk_performed": false,
+  "candidate_advancement": false,
+  "publication_performed": false,
+  "limitations": [
+    "Development windows were already observed; complete validation has informed development.",
+    "The primary adds raw bytes; no new complete Huffman distribution has been built.",
+    "Native dense FP16 execution is not compressed runtime residency.",
+    "Development controls cannot trigger validation or replace the fixed primary."
+  ],
+  "self_test": {
+    "passed": true,
+    "cuda_initialized": false,
+    "checks": [
+      "Independent complete507 inventory and exact0/56/57/58 replacement sets",
+      "Reject unlisted projection and incomplete fixed-arm gate",
+      "Only primary triggers validation; exact1% boundary",
+      "Complete130-window/264764-target validation coverage and572-target final window/60-token CE tail"
+    ],
+    "scorer_source_sha256": "c1dd8343a204923d6799f5b4eed31a6f0ffee1bc0774b2deaa15f34e0d54091d",
+    "native_ce_tail_test_reused_from": "Frozen diagnose_vocab_w4.self_test; no production scorer changes."
+  },
+  "mode": "self_test",
+  "elapsed_seconds": 0.014625814976170659
+}
