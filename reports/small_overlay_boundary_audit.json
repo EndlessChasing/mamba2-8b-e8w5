@@ -1,0 +1,48 @@
+{
+  "format": "SMALL_OVERLAY_BOUNDARY_AUDIT_V1",
+  "complete": true,
+  "checked_at_utc": "2026-09-28T02:41:56.514671+00:00",
+  "code_and_input_sha256": {
+    "mamba_e8w5/small_overlay.py": "3512c1b232c4039c16a26ffc0fe8c2eac1be6bb9c704ccbcb1d4e8e7788a1286",
+    "tests/test_small_overlay.py": "f6d7073192cb4ba2bf72f99967ab10950c5539587158aa6bcdaf243f6e913313",
+    "mamba_e8w5/small_training.py": "6e98858460534c4047f7bf75bd62eaf7769d7e46919cd9de6868fd6177a80086",
+    "scripts/train_small_compensation.py": "d92317e3157f374ef872e40f0de5ad81f9dc6ad9732b19f3df616a114fc5ca7a",
+    "docs/SMALL_TENSOR_COMPENSATION_PROTOCOL.md": "f57229f979f8bc94def0780f87aa48ae0b83f7d30dc29fef527b46aaa2be0c31",
+    "reports/small_compensation_v1_data.json": "88d4dcd9f468a50137f25f7afdc101fd2635f254bdd0d4b194ecf252c7116709"
+  },
+  "tests": {
+    "command": "CUDA_VISIBLE_DEVICES= python -m unittest tests.test_small_overlay -v",
+    "run": 11,
+    "passed": 11,
+    "failures": 0,
+    "test_seconds": 0.286,
+    "scope": [
+      "393 FP32 checkpoint masters round bitwise to full FP16 export",
+      "exact integer final1024 progress and scheduled committed history",
+      "same-window overflow retries",
+      "rejection of wrong checkpoint/smoke/initialization provenance or failure snapshots",
+      "signed-zero FP16 identity",
+      "exact target exposures",
+      "rejection of altered calibration exclusions or validation data",
+      "safe regular filenames, no symlinks, integer byte counts"
+    ]
+  },
+  "real_prepared_data_verification": {
+    "passed": true,
+    "manifest_sha256": "88d4dcd9f468a50137f25f7afdc101fd2635f254bdd0d4b194ecf252c7116709",
+    "token_file_sha256": "f9d2321f580832b19d62ec498841b552b5f66b90be16a195c004b30be1f6d0b8",
+    "shape": [
+      256,
+      2048
+    ],
+    "grid_blocks": 1237,
+    "excluded_grid_blocks": 62,
+    "eligible_blocks": 1175,
+    "selected_blocks": 256,
+    "internal_overlap_tokens": 0,
+    "old_calibration_overlap_tokens": 0,
+    "cuda_initialized": false
+  },
+  "read_only_trainer_review": "Staged loss scaling, all393 smoke coverage, strict no-replay journal, final1024 export and report/manifest/checkpoint schema agree. Exact checkpoint format and Python-int counter guards execute before restoring state. No material training-math blocker found.",
+  "limitations": "CPU verification and static audit only; new393-tensor GPU smoke and final quality remain separate requirements. No model trained, evaluated, published or uploaded by this audit."
+}
