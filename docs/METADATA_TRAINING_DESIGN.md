@@ -1,8 +1,10 @@
 # Existing-metadata training: read-only design audit
 
-**Status: proposal, unimplemented and unmeasured.** This note authorizes no training,
-GPU experiment, new candidate, or publication. The eight-sweep refinement remains
-the current experiment. No frozen runtime, codec, evaluator, or weights were changed.
+**Status: initial design audit; the proposed quality gains remain unmeasured.**
+The eight-sweep experiment has since completed and stopped. The norm-only option
+is now being implemented under the separate [declared protocol](NORM_COMPENSATION_PROTOCOL.md).
+Balance training and the wider small-tensor option remain unimplemented proposals.
+Publication remains on hold; no frozen runtime, codec or evaluator is changed.
 
 ## Proposed ordering and representational limit
 

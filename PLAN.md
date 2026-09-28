@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss, confirmed over the entire validation split. Local package restoration and generation passed. The bounded eight-sweep experiment is complete: development PPL improved only0.460844%, below its predeclared1% advancement threshold, with MK unchanged. This route is stopped and full validation was skipped. The GitHub release remains a draft with zero assets.
+Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss, confirmed over the entire validation split. Local package restoration and generation passed. The bounded eight-sweep experiment stopped after missing its predeclared advancement threshold. A distinct norm-only compensation experiment on the original parent is now being implemented under a fixed protocol. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -58,6 +58,18 @@ Status: publication is on hold at the user's request. Diagnosis identifies E8 pr
 - [x] Apply the conditional stop rule: retain the negative result and stop this route. Full validation was skipped because the development gate failed; see docs/E8_REFINEMENT_RESULTS.md.
 
 This is an improvement screen, not the original-model +5% PPL quality gate. Equal raw bit allocation does not establish equal Huffman archive bytes.
+
+## Existing-norm compensation experiment
+
+- [x] Declare a separate bounded protocol before training: docs/NORM_COMPENSATION_PROTOCOL.md. Use the original two-sweep parent and exactly 113 existing norm tensors / 692,224 parameters.
+- [ ] Implement an FP16-forward, FP32-master training path with correct checkpoint recomputation, full-vocabulary CE/KL, loss scaling and resumable state.
+- [ ] Pass training-only smoke checks for forward/export parity, checkpoint gradients, loss chunking, selected/frozen gradients and memory.
+- [ ] Run the fixed four passes / 128 successful updates on the 32 calibration training windows; preserve all attempts and use only the final checkpoint.
+- [ ] Export and independently verify the complete small-tensor replacement, with every non-norm tensor unchanged and all original E8/W5 files inherited.
+- [ ] Compare original parent and reloaded candidate on frozen development PPL/MK in one process; require at least 1% PPL gain and recall/control nonregression.
+- [ ] If that gate passes, confirm original/parent/candidate on full validation; otherwise preserve the negative result and stop this fixed recipe. Keep the source-relative quality target separate.
+
+This route adds no inference tensor fields; actual archive and metadata bytes must still be measured. No publication or test-set evaluation is authorized by this experiment.
 
 ## Evaluation and release
 
