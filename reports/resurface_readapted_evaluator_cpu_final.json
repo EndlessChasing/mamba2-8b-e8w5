@@ -1,0 +1,30 @@
+{
+  "format": "MAMBA2_RESURFACE_READAPTED_EVALUATION_V1",
+  "complete": true,
+  "stage": null,
+  "script_sha256": "a7ef0091882ca25d1e3424898d5f9a2c3c5014c0fcc99b03f9ae6fd3b46bc20e",
+  "protocol_sha256": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6",
+  "gate_mode": "soft",
+  "fitting_performed": false,
+  "training_forward_used_for_evaluation": false,
+  "publication_performed": false,
+  "candidate_promotion": false,
+  "limits": [
+    "Same active FP16 export/policy for every task; no task-triggered bypass.",
+    "Native expanded-weight reference; no compact-residency claim."
+  ],
+  "self_test": {
+    "passed": true,
+    "cuda_initialized": false,
+    "checks": [
+      "Exact Clopper-Pearson endpoint/closed-form/symmetry cases",
+      "Strict no-epsilon PPL gate at equality/next-float",
+      "Independent224 tensor inventory and1536 permutation coverage",
+      "Full fixed1536 accounting and same-pair overflow retry",
+      "Reject float/bool counts, altered pair and mutated overflow"
+    ]
+  },
+  "mode": "self_test",
+  "cuda_initialized": false,
+  "elapsed_seconds": 0.17774122103583068
+}
