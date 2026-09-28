@@ -1,9 +1,15 @@
 # Prototype compensation: correctness smoke passed
 
-**The fixed 128-update training run has not started.** The first complete
-smoke update took **154.61 seconds**. A bounded performance investigation must
-distinguish first-use work from steady-state cost before starting that run.
-Publication remains on hold; no PPL or recall improvement is established here.
+**Historical smoke snapshot: 2026-09-28, approximately 04:07 UTC.** At smoke
+completion, the fixed 128-update training run had not started. The first complete
+smoke update took **154.61 seconds**, prompting a bounded performance investigation.
+
+**Subsequent status:** the [performance probe](PROTOTYPE_DECODER_PERFORMANCE.md)
+completed. Its faster alternative failed decoded FP16 bitwise parity, so the
+original validated decoder was retained. The [fixed 128-update job](PROTOTYPE_RUNNING_JOB.md)
+launched at approximately **04:21 UTC** and is running; its final export and
+independent quality evaluation remain pending. Publication remains on hold;
+no prototype PPL or recall improvement is established here.
 
 ## Verified results
 

@@ -91,6 +91,10 @@ The original source-relative quality target also remains unmet.
 A subsequent [norm-only training recipe](NORM_COMPENSATION_RESULTS.md) completed
 128 fixed updates and passed all integrity checks at unchanged raw payload size.
 Development PPL improved 2.9421%, but normal MK fell 10/12→9/12, so its combined
-advancement gate also failed and full validation was skipped. No candidate has
-been promoted and no new entropy-coded distribution has been built. Original
-release files and the publication hold remain unchanged.
+advancement gate also failed and full validation was initially skipped under
+that protocol. The later user-directed [PPL-only continuation](NORM_PPL_RESULTS.md)
+evaluated the unchanged norm export over all **264,764 validation targets**:
+norm **8.589640668**, original E8/W5 **8.836560440**, source FP16 **7.334175947**.
+The historical combined gate remains failed; the continuation did not repeat MK.
+No candidate has been promoted and no new entropy-coded distribution has been
+built. Original release files and the publication hold remain unchanged.

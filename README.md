@@ -6,9 +6,11 @@ An experimental compact version of NVIDIA’s pure Mamba-2 8B using E8 lattice q
 
 All **8,236,999,680 parameters** have been quantized or retained and independently verified. The raw weight data occupies **2,886,482,462 bytes** before entropy coding, tokenizer and release metadata. **Model publication remains on hold after the failed quality gate.** The release is a draft with no uploaded assets.
 
-## Measured quality
+## Original candidate: measured test quality
 
-| Full test measurement | Original weights cast to FP16 | E8/W5 reconstructed to FP16 |
+The following test, runtime-memory and restored-package measurements describe the original `e8w5_v1` candidate before compensation training. The best all-small candidate above has separate full-validation evidence; its test quality and entropy-coded container size have not been measured.
+
+| Full test measurement | Original weights cast to FP16 | Original `e8w5_v1` reconstructed to FP16 |
 | --- | ---: | ---: |
 | WikiText-2 PPL, 300,963 next-token targets | 7.2445 | 8.7085 |
 | Public MK, normal prompts | 18/48 | 15/48 |
@@ -20,11 +22,11 @@ The [PPL diagnosis](docs/PPL_DIAGNOSIS.md) records controlled component and proj
 
 A separate [eight-sweep repair experiment](docs/E8_REFINEMENT_RESULTS.md) improved all 112 projection reconstruction proxies at unchanged raw bitrate. Paired development PPL improved only **0.461%**, with recall unchanged, missing the predeclared 1% advancement threshold. This route stopped; no refined full-validation result or entropy-coded package is claimed.
 
-The subsequent [existing-norm compensation experiment](docs/NORM_COMPENSATION_RESULTS.md) trained 692,224 existing parameters at unchanged raw capacity. Development PPL improved **2.942%**, but normal recall fell **10/12→9/12**. Its original combined gate failed, so that protocol stopped before full validation; the subsequent user-directed PPL-only evaluation is reported above. It is not a promoted replacement for the original candidate.
+The subsequent [existing-norm compensation experiment](docs/NORM_COMPENSATION_RESULTS.md) trained 692,224 existing parameters at unchanged raw capacity. Development PPL improved **2.942%**, but normal recall fell **10/12→9/12**. Its original combined gate failed, so that protocol stopped before full validation. The subsequent user-directed [PPL-only full validation](docs/NORM_PPL_RESULTS.md) measured **8.589640668**, versus **8.836560440** for original E8/W5 and **7.334175947** for the FP16 source, over all **264,764 targets**. The historical combined gate remains failed, and no norm entropy-coded package has been built.
 
-The decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
+The original `e8w5_v1` decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
 
-The staged complete package occupies **2,666,260,364 bytes**. Its actual restore command reproduced all118 raw files exactly; generation also passed using the archived software, restored tokenizer and restored weights, with no original checkpoint as an input. This establishes package usability, not a quality pass. See the [restore receipt](reports/release_restore_local_v1.json) and [generation smoke](reports/restored_inference_local_v1.json). The package remains unpublished.
+The staged original `e8w5_v1` package occupies **2,666,260,364 bytes**. Its actual restore command reproduced all118 raw files exactly; generation also passed using the archived software, restored tokenizer and restored weights, with no original checkpoint as an input. This establishes package usability, not a quality pass. See the [restore receipt](reports/release_restore_local_v1.json) and [generation smoke](reports/restored_inference_local_v1.json). This size does not describe the trained all-small candidate; no all-small entropy-coded container has been measured. The package remains unpublished.
 
 Source: [nvidia/mamba2-8b-3t-4k](https://huggingface.co/nvidia/mamba2-8b-3t-4k), Apache-2.0. The software and QuIP#-derived components are distributed under GPL-3.0; upstream model attribution is separate. See [license scope](licenses/THIRD_PARTY.md), [pinned sources](docs/SOURCES.md), and [comparison limits](docs/COMPARISON.md).
 
