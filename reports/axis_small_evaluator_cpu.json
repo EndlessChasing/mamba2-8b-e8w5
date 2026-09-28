@@ -1,0 +1,36 @@
+{
+  "format": "MAMBA2_AXIS_SMALL_NATIVE_EVALUATION_V1",
+  "complete": true,
+  "script_sha256": "f2c2309f1dee45d32b8c4fcb9114a8d0f594cb56277b3a194a039070c361ac4c",
+  "protocol_sha256": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282",
+  "development_arm_order": [
+    "current_axis_old_small",
+    "current_axis_readapted_small",
+    "current_axis_old_small_repeat"
+  ],
+  "primary_arm": "current_axis_readapted_small",
+  "same_process": true,
+  "training_forward_used_for_ppl": false,
+  "candidate_advancement": false,
+  "publication_performed": false,
+  "mk_performed": false,
+  "limitations": [
+    "Development and validation have already informed research; no untouched test claim.",
+    "A fixed small-tensor payload does not imply unchanged serialized/container bytes.",
+    "Native FP16 reference execution is not compact inference residency."
+  ],
+  "self_test": {
+    "passed": true,
+    "cuda_initialized": false,
+    "checks": [
+      "Fixed448 schedule and8 same-window overflow retries; strict count types",
+      "Bitwise rounded master/export equality including signed zero",
+      "Reject nonfinite/wrong dtype/shape/missing export and underflowed native A",
+      "393 replacements may include unchanged tensors;114 fixed",
+      "Exact1% threshold; failed gate never invokes full-validation callback"
+    ]
+  },
+  "mode": "self_test",
+  "cuda_initialized": false,
+  "elapsed_seconds": 0.030406945035792887
+}
