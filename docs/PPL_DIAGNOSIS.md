@@ -211,8 +211,10 @@ byte, for example through selective additional precision or residual capacity,
 or a training/calibration method that optimizes the complete quantized network.
 Those are follow-up hypotheses, not validated repairs. This diagnosis does not
 prove that every 2-bit method fails, and no claim is made that a particular repair
-will meet the +5% PPL target. Any candidate must still pass the combined PPL and
-recall gate.
+will meet the +5% PPL target. Under the user's subsequent
+[PPL-first direction](PPL_PRIORITY_CONTINUATION.md), new repair experiments use
+their declared PPL gates and report recall as unmeasured. The earlier combined
+PPL/recall gates below remain recorded with their original outcomes.
 
 ## Subsequent same-bitrate check
 

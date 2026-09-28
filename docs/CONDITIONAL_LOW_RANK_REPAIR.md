@@ -61,14 +61,48 @@ weights change. Lower local squared error therefore cannot establish lower
 language loss. This does not prove low-rank repair fails; it rules out treating
 a low-rank weight/output fit as a PPL guarantee.
 
+## Scope evidence from completed diagnostics
+
+The earlier draft considered output-only rank 8 as a small-capacity example.
+Existing quality evidence supports considering **both input and output
+projections** in a subsequent single pilot. It does not establish the best rank.
+
+On the original E8/W5 candidate, the same four validation windows / 4,096
+targets scored PPL **9.237163951**. Each separate intervention restored the
+named weights fully to source FP16 while keeping W5 and original small tensors:
+
+| Source weights restored | PPL | Mean NLL reduction from original E8/W5 |
+|---|---:|---:|
+| All input projections | 8.294958073 | 0.107587038 |
+| All output projections | 8.671019498 | 0.063248534 |
+| Input z rows | 8.746508676 | 0.054580295 |
+| Input x rows | 8.775621406 | 0.051257324 |
+
+Evidence: `row_rescues.*.ppl` in
+[the original role diagnostic](../reports/ppl_components_dev.json), SHA256
+`1b01b3c844358998a4c41c603d54f9bc87bf8e451672b342ccf142ae7c073c36`.
+These effects are conditional and cannot be added. Dense source restoration
+is neither a low-rank candidate nor an upper bound on a learned correction.
+
+The later [all-small interaction diagnostic](../reports/small_projection_interaction_v1.json)
+restored all 112 projections together: PPL **8.359912174 to 7.412136849** on
+264,764 targets, with W5 and trained small tensors fixed. That supports further
+projection repair, but does not re-establish the in/out ordering on this newer
+base. The running prototype candidate has no role-specific quality evidence.
+
+All-projection rank 4 adds **15,654,912 value bytes**, versus **11,010,048** for
+output-only rank 8: a difference of **4,644,864 B / 4.4296875 MiB**, plus
+1,792 extra header bytes and unmeasured manifest differences. Broader coverage
+halves each output correction's rank, so storage arithmetic cannot rank their
+PPL. A shared x/z-only rank-4 input basis plus rank-4 outputs would save only
+974,848 value bytes versus full in/out rank 4; it also requires explicit row
+mapping and model-loader support. No row-masked model format is implemented.
+
 ## Conditional bounded pilot for later review
 
-One reasonable first candidate would train **rank 8 on the 56 output
-projections only**, using 5,505,024 trainable values. This limits added capacity
-to about 0.412% and directly corrects each mixer's residual-stream output.
-It does not establish that output-only repair is optimal; input-projection
-gating and state errors may require a different intervention. The table above
-is a capacity comparison; no sweep of the six alternatives has been selected.
+If low-rank repair is pursued after the prototype result, prioritize reviewing
+a single scope that covers input and output projections. The preceding table
+compares capacities; no rank, training recipe or sweep has been selected.
 
 If this route is selected after the current result:
 
@@ -91,8 +125,9 @@ If this route is selected after the current result:
    Bind data exclusions and order before fitting. Reuse full-vocabulary
    `0.5 CE + 0.5 KL(teacher || student)`, temperature 1, 64-token loss chunks,
    FP32 masters, checkpointing and bounded loss-scale retries. Fix learning
-   rate and factor initialization together in a future protocol; no setting
-   in this draft is chosen from validation or the running prototype result.
+   rate and factor initialization together in a future protocol. Those values
+   are not chosen yet. The scope discussion above explicitly uses already
+   observed validation diagnostics; it is not an untouched evaluation.
 4. First run a discarded correctness/feasibility smoke: zero-residual native
    parity, checkpoint gradient parity, finite full-window loss/gradients,
    a real optimizer update, exact factor readback and native export parity,
@@ -109,11 +144,11 @@ If this route is selected after the current result:
    or an automatic rank sweep. MK stays deferred/nonblocking; no recall
    recovery, test result or publication claim follows from this gate.
 
-FP32 masters, gradients and two Adam moments for the proposed rank-8 output
-pilot occupy about **88,080,768 B** before FP16 casts and activations. This small
-optimizer state is promising for the 96 GB GPU, but full model/teacher memory,
-temporary dense residuals and checkpoint activations still need the smoke.
-No speed, memory-fit or accuracy result has been measured for this design.
+FP32 masters, gradients and two Adam moments occupy **88,080,768 B** for
+rank-8 outputs, or **125,239,296 B** for rank-4 input and output projections,
+before FP16 casts and activations. Full model/teacher memory, temporary dense
+residuals and checkpoint activations still need the smoke on the 96 GB GPU.
+No speed, memory-fit or accuracy result has been measured for either design.
 
 For scale only, the last completed full-validation best PPL 8.359867548 would
 need about **7.882694%** reduction to reach source-plus-5% (7.700884745).
