@@ -48,8 +48,28 @@ Pending final verification:
   CPU derivative/offset/tail controls.
 - Final report bytes/SHA256, elapsed time and terminal completion.
 
-The expected report path is `reports/output_calibration_v1.json`; existence
-or a partial report alone does not establish successful completion.
+The failed report remains `reports/output_calibration_v1.json`; it will not be
+overwritten or reclassified as complete.
+
+## Completed one-window execution probe
+
+The [bounded replay](../reports/output_calibration_anchor_probe_v1.json)
+completed with exit code 0 (SHA256
+`b83fab9ae854e5b3622ee0960fcdc51e3d4e12210651cc5718ea2ea2be067e40`).
+It compares source alone, the frozen paired scorer after loading the base,
+the new source/base scorers, and a repeated frozen paired scorer on window 0.
+All nine within-process comparisons for the same model are bitwise equal
+across all 32 CE chunks. Source and base 507-tensor audits pass.
+
+All historical chunk controls differ. Relative to the prior process, source
+total NLL differs by -0.06638336181640625 over 2047 targets (about -0.00324%
+PPL); base differs by +0.222503662109375 (about +0.01087% PPL). The probe
+therefore rules out a difference between the two scorer paths on this window,
+but does not establish the cause of the cross-process numerical variation or
+measure its size on the complete diagnostic set. No tolerance was applied to
+turn the original failed exact control into a pass. A separately declared
+diagnostic will use exact controls within its own process and report historical
+drift explicitly.
 
 ## Entropy, slope and curvature
 
