@@ -1,0 +1,167 @@
+{
+  "format": "MAMBA2_LOW_RANK_JOB_V1",
+  "complete": true,
+  "pid": 2451867,
+  "runner_identity": {
+    "pid": 2451867,
+    "present": true,
+    "state": "R",
+    "start_ticks": 97259839,
+    "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+    "argv": [
+      "/home/horde/.venvs/lodram/bin/python",
+      "-u",
+      "/home/horde/Mamba2-8B-E8W5/scripts/run_low_rank_compensation_job.py"
+    ],
+    "live": true
+  },
+  "started_at_unix": 1790591311.3211114,
+  "script_sha256": "ad4becc8ffec91e71864b57909b4d68696d774f5af5a0904aea6a607332dad94",
+  "checker_sha256": "46cca2177963e8cb673fb404860c4cf29f5823b98263d6b62d5d61947d17a7cb",
+  "bound_inputs": {
+    "scripts/train_low_rank_compensation.py": "fdcb974e7abcd9379a6da900cd5801839e03973275010185f59235d67d938273",
+    "scripts/evaluate_low_rank_compensation.py": "f0d1285276d1b4ea3bb132b98cb412a9718289b715d70ee1fa961c08bc3b0bd7",
+    "reports/low_rank_compensation_v1_smoke.json": "dacedf6401f082d172da31a5737c11d038998c939988999099f89b9620de0132",
+    "docs/LOW_RANK_COMPENSATION_PROTOCOL.md": "b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2"
+  },
+  "outputs": {
+    "work": "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1_train_work",
+    "overlay": "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1",
+    "training_report": "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_train.json",
+    "evaluation_report": "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_eval.json",
+    "training_log": "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_train.log",
+    "evaluation_log": "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_eval.log"
+  },
+  "fixed_successful_updates": 1024,
+  "stages": [
+    {
+      "stage": "training",
+      "command": [
+        "/home/horde/.venvs/lodram/bin/python",
+        "-u",
+        "/home/horde/Mamba2-8B-E8W5/scripts/train_low_rank_compensation.py",
+        "--mode",
+        "train",
+        "--protocol-sha256",
+        "b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2",
+        "--work-dir",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1_train_work",
+        "--out-dir",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1",
+        "--report",
+        "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_train.json",
+        "--smoke-report",
+        "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_smoke.json"
+      ],
+      "started_at_unix": 1790591311.3220184,
+      "pid": 2451868,
+      "process_identity": {
+        "pid": 2451868,
+        "present": true,
+        "state": "R",
+        "start_ticks": 97259843,
+        "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+        "argv": [
+          "/home/horde/.venvs/lodram/bin/python",
+          "-u",
+          "/home/horde/Mamba2-8B-E8W5/scripts/train_low_rank_compensation.py",
+          "--mode",
+          "train",
+          "--protocol-sha256",
+          "b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2",
+          "--work-dir",
+          "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1_train_work",
+          "--out-dir",
+          "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1",
+          "--report",
+          "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_train.json",
+          "--smoke-report",
+          "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_smoke.json"
+        ],
+        "live": true
+      },
+      "exit_code": 0,
+      "ended_at_unix": 1790594050.8387933
+    },
+    {
+      "stage": "independent_full_validation",
+      "command": [
+        "/home/horde/.venvs/lodram/bin/python",
+        "-u",
+        "/home/horde/Mamba2-8B-E8W5/scripts/evaluate_low_rank_compensation.py",
+        "--overlay-dir",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1",
+        "--training-report",
+        "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_train.json",
+        "--training-checkpoint",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1_train_work/checkpoint_attempt1024_step1024_final.pt",
+        "--smoke-report",
+        "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_smoke.json",
+        "--report",
+        "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_eval.json"
+      ],
+      "started_at_unix": 1790594051.5711913,
+      "pid": 2586102,
+      "process_identity": {
+        "pid": 2586102,
+        "present": true,
+        "state": "R",
+        "start_ticks": 97533868,
+        "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+        "argv": [
+          "/home/horde/.venvs/lodram/bin/python",
+          "-u",
+          "/home/horde/Mamba2-8B-E8W5/scripts/evaluate_low_rank_compensation.py",
+          "--overlay-dir",
+          "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1",
+          "--training-report",
+          "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_train.json",
+          "--training-checkpoint",
+          "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1_train_work/checkpoint_attempt1024_step1024_final.pt",
+          "--smoke-report",
+          "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_smoke.json",
+          "--report",
+          "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_eval.json"
+        ],
+        "live": true
+      },
+      "exit_code": 0,
+      "ended_at_unix": 1790594347.4345634
+    }
+  ],
+  "stage": "complete",
+  "publication_performed": false,
+  "resume": false,
+  "scope": "Fixed TRAIN recipe followed by independent full validation; no MK/test/publishing.",
+  "training_report_sha256": "b7fb6bf26d174189dbbe6d37298adb8e556412ee282c16bc996743044940694a",
+  "final_checkpoint": {
+    "file": "/home/horde/Mamba2-8B-E8W5/artifacts/low_rank_compensation_v1_train_work/checkpoint_attempt1024_step1024_final.pt",
+    "sha256": "3f36c3b8acd11a04f71a268aac47dcd85fbe1e2537b0423377baac43d22392aa"
+  },
+  "comparison": {
+    "ppl": {
+      "source_fp16": 7.334175947318572,
+      "best_small_e8w5": 8.359867548009992,
+      "low_rank_e8w5": 8.630189440194565
+    },
+    "candidate_vs_baseline_ppl_relative_change": 0.03233566687894718,
+    "candidate_vs_source_ppl_relative_change": 0.1767088084858155,
+    "baseline_vs_source_ppl_relative_change": 0.13985096731506985,
+    "candidate_minus_baseline_mean_nll": 0.031823872777889825,
+    "meaningful_improvement_reference": {
+      "required_reduction": 0.01,
+      "met": false
+    },
+    "source_plus5_percent_reference": {
+      "maximum_ppl": 7.700884744684501,
+      "met": false
+    },
+    "window_counts": {
+      "improved": 4,
+      "unchanged": 0,
+      "worsened": 126
+    }
+  },
+  "evaluation_report_sha256": "efb4264bc65efded5fa9b05f9ea689542f9feaf23d2108a1f7c335bee6c67979",
+  "ended_at_unix": 1790594347.4416656
+}

@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold at the user's request. Prototype compensation completed 128 updates, export and independent full validation: PPL8.306585062 versus all-small8.359867548 and FP16 source7.334175947. This is the lowest measured compact-candidate PPL, but its0.6374% gain misses the declared >=1% advancement gate and its+13.2586% source gap misses the+5% target. Both gates failed; stop this fixed recipe and retain the accepted all-small model/distribution. Its own earlier advancement gate passed, with raw capacity unchanged. MK remains deferred with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
+Status: publication remains on hold at the user's request. Rank-4 compensation completed all 1,024 updates, verified export and independent full validation: PPL 8.630189440 versus accepted all-small 8.359867548 and FP16 source 7.334175947. This is a 3.2336% regression versus the base and a 17.6709% source gap; both quality gates failed. Stop this fixed recipe without extra epochs, checkpoint selection or a rank sweep. The all-small model/distribution remains unchanged. Prototype PPL 8.306585062 remains the lowest measured compact-candidate value, but its 0.6374% gain also failed the 1% advancement gate and was not promoted. A narrow fit-versus-fresh TRAIN diagnostic is planned; no new training has begun. MK remains deferred with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -119,9 +119,11 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 
 The [rank-4 protocol](docs/LOW_RANK_COMPENSATION_PROTOCOL.md) covers all112
 projections starting from the accepted all-small candidate, with the original
-E8/W5 and small tensors frozen. The discarded GPU smoke passed, and the fixed
-training job launched at2026-09-28 10:28:31UTC; no quality result is established.
-See the [job record and status command](docs/LOW_RANK_RUNNING_JOB.md).
+E8/W5 and small tensors frozen. The fixed training and independent validation
+completed with exit code zero, but both quality gates failed: PPL 8.630189440
+versus base 8.359867548 and source 7.334175947. See the
+[negative result](docs/LOW_RANK_COMPENSATION_RESULTS.md) and
+[completed job record](docs/LOW_RANK_RUNNING_JOB.md).
 The [conditional capacity note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
 and [CPU factor representation](docs/LOW_RANK_RESIDUAL_IMPLEMENTATION.md)
 record the storage and native FP16 merge contract. This does not extend the
@@ -132,5 +134,8 @@ completed prototype recipe or promote its failed candidate.
 - [x] Pass nine bank CPU tests, four driver accounting tests and22-path input preflight.
 - [x] Pass discarded GPU smoke: exact initial native output/replay gradients, one2047-target update in2.062858s without overflow, expected initial B/A gradients and both families after the update,112-file export/native parity and507 unchanged tensor hashes. See [smoke results](docs/LOW_RANK_SMOKE_RESULTS.md).
 - [x] Prepare independent native evaluation, pass six CPU integrity/gate tests and launch the fixed sequential training/validation job after readiness checks. Publication remains held.
-- [ ] Complete exactly1024 successful updates from fresh initialization, with no intermediate PPL selection.
-- [ ] Independently verify final224 masters/112 factor files and native same-process source/all-small/candidate full-validation PPL; apply both predeclared gates. MK remains deferred.
+- [x] Complete exactly 1,024 successful updates from fresh initialization: 1,024 attempts, zero overflows, 2,096,128 target exposures and no intermediate PPL selection.
+- [x] Independently verify final 224 rounded masters, 112 factor files, native export parity and all 507 frozen tensor hashes. Factor files occupy 15,658,496 bytes plus a 198,517-byte manifest; no new complete distribution or compact inference-memory result is claimed.
+- [x] Measure native same-process source/all-small/candidate full-validation PPL on 264,764 targets and 130 windows: 7.334175947 / 8.359867548 / 8.630189440. Four windows improve and 126 worsen. Both the >=1% advancement and source+5% gates fail.
+- [x] Preserve the negative result and stop this fixed recipe without extra epochs, checkpoint selection or a rank sweep. Retain the accepted all-small model/distribution; MK remains deferred and publication held.
+- [ ] Run a narrow posthoc fit-versus-fresh TRAIN diagnostic on the fixed final candidate. Online training CE decreased while validation worsened; this suggests overfitting but does not establish its mechanism. No new training is scheduled by this diagnostic.

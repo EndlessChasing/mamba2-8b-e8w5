@@ -1,39 +1,50 @@
-# Fixed rank-4 PPL repair job
+# Completed rank-4 PPL repair job
 
-Started **2026-09-28 10:28:31 UTC** on `horde-gpu`, with runner PID 2451867
-and initial trainer PID 2451868. The launch and first live process identities
-were verified through Linux `/proc`. A PID written in this document is historical;
-use the checker below for current state.
+**Execution completed; both quality gates failed.** Training and independent
+full validation exited with code zero. The fixed recipe is stopped, and the
+accepted all-small model/distribution remains unchanged. See the
+[result and receipt ledger](LOW_RANK_COMPENSATION_RESULTS.md).
 
-The job follows the frozen [protocol](LOW_RANK_COMPENSATION_PROTOCOL.md):
-accepted all-small baseline, all 112 input/output projections, rank four,
-256 new TRAIN windows, four seeded passes and exactly 1,024 successful updates.
-The [discarded GPU smoke](LOW_RANK_SMOKE_RESULTS.md) passed before launch.
-Only the final export is eligible for independent full validation. No resume,
-extra epochs, intermediate validation selection, MK or publication is scheduled.
+The job started **2026-09-28 10:28:31 UTC** on `horde-gpu`. Training finished
+at **11:14:10 UTC**, and evaluation finished at **11:19:07 UTC**. Runner PID
+2451867, trainer PID 2451868 and evaluator PID 2586102 are historical process
+identities, not claims that those processes are still running.
 
-## Read status
+The frozen [protocol](LOW_RANK_COMPENSATION_PROTOCOL.md) used the accepted
+all-small baseline, all 112 input/output projections, rank four, 256 new TRAIN
+windows and four seeded passes. The [discarded GPU smoke](LOW_RANK_SMOKE_RESULTS.md)
+passed before launch. The completed run records **1,024 successful updates in
+1,024 attempts, zero overflows and 2,096,128 target exposures**. No resume,
+extra epochs or intermediate validation selection occurred.
+
+All 224 rounded final masters matched the 112 serialized factor files.
+Native export hidden states and last-eight-token logits were bitwise equal,
+and all 507 frozen baseline tensor hashes were unchanged. Independent native
+full validation then measured PPL **7.334175947 / 8.359867548 / 8.630189440**
+for source / accepted all-small / low-rank candidate. Candidate PPL worsened
+**3.2336%** versus the base; both the 1% advancement and source+5% gates failed.
+
+## Read the completed job record
 
 ```sh
 ssh horde-gpu 'cd /home/horde/Mamba2-8B-E8W5 && /home/horde/.venvs/lodram/bin/python scripts/check_low_rank_job.py'
 ```
 
-An optional bounded wait uses `--milestone 128 --wait-seconds 45`. The checker
-matches PID, process start ticks, boot ID and exact command before reporting
-a live process. It reads receipts and logs; it cannot restart or modify the job.
+The checker reads receipts and logs; it cannot restart or modify the job.
+Its live-process checks require matching PID, process start ticks, boot ID
+and exact command. No milestone wait is needed for this completed run.
 
 Remote outputs:
 
-- `reports/low_rank_compensation_v1_job.json`: process identities, stages and exit codes.
-- `reports/low_rank_compensation_v1_train.json` and `.log`: update/loss/overflow history.
-- `artifacts/low_rank_compensation_v1_train_work/`: journals and unique checkpoints.
-- `artifacts/low_rank_compensation_v1/`: eventual final 112 factor files and manifest.
-- `reports/low_rank_compensation_v1_eval.json` and `.log`: eventual three-arm validation.
+- `reports/low_rank_compensation_v1_job.json`: completed stages and both exit codes.
+- `reports/low_rank_compensation_v1_train.json` and `.log`: complete update/loss/overflow history.
+- `artifacts/low_rank_compensation_v1_train_work/`: journals and checkpoints, including the final step 1,024.
+- `artifacts/low_rank_compensation_v1/`: final 112 factor files and manifest.
+- `reports/low_rank_compensation_v1_eval.json` and `.log`: completed three-arm full validation.
 
-Training and optimizer artifacts remain on the GPU host. The source model and
-accepted baseline are reused unchanged. At launch the remote filesystem had
-about 19 GiB available; this experiment writes factor checkpoints and reports,
-not another full source-weight copy.
+Model and optimizer binaries remain on the GPU host. Training/evaluation
+receipts and a manifest copy are available locally; the source model and
+accepted baseline were reused unchanged.
 
 ## Frozen launch identities
 
@@ -46,7 +57,8 @@ not another full source-weight copy.
 | Read-only checker | `46cca2177963e8cb673fb404860c4cf29f5823b98263d6b62d5d61947d17a7cb` |
 
 The [launch receipt](../reports/low_rank_compensation_v1_launch.json) records
-the exact command, time and initial process identity. Launch does not establish
-training completion, export correctness or improved PPL. The final report must
-separately state the 1% improvement and source+5% outcomes. MK remains deferred,
-and publication remains on hold.
+the initial command and process identity; the
+[completed job receipt](../reports/low_rank_compensation_v1_job.json) records
+both successful process exits. Completion and integrity do not constitute a
+quality pass. No factor overlay was promoted or added to the accepted offline
+distribution. MK remains deferred, and publication remains on hold.
