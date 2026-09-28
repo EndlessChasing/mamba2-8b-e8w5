@@ -1,8 +1,10 @@
 # Readapted Mamba2-8B MK validation and Resurface repair
 
-Status on2026-09-28: the source/current MK baseline, native correctness checks
-and final1536 training/export are complete. Independent evaluation is in progress. No adapter quality
-result or promotion is claimed yet. Publication remains on hold.
+Status on2026-09-28: the source/current MK baseline, native correctness checks,
+final1536 training/export and all DEV measurements are complete. The original
+strict DEV run failed its historical cross-process MK replay prerequisite.
+Paired DEV results are promising; their separate terminal audit and prospective
+full PPL/independent confirmation are pending. No promotion or publication.
 
 ## Completed baseline
 
@@ -93,3 +95,32 @@ bindings. These are correctness checks and do not establish recall/PPL quality.
 The candidate must pass both recall and PPL gates. Improvement over the current
 model is not automatically full recovery to source recall or broad recall
 equivalence. No tested candidate has yet passed those gates.
+
+## Completed DEV measurements and preserved replay failure
+
+| Same-process arm | Normal MK | Removed-target matches |64-window PPL |
+|---|---:|---:|---:|
+| Current readapted |112/384 (29.1667%)|0/384|7.6242504268035765|
+| Final1536 active soft Resurface |346/384 (90.1042%)|0/384|7.59503251999968|
+| Restored current |112/384 (29.1667%)|0/384|7.6242504268035765|
+
+The observed paired gain is60.9375 percentage points; PPL decreases0.3832233%.
+All768 restored MK rows and all64 restored prose rows/CE chunks match the
+initial current arm exactly. Final507 base and224 adapter audits agree, with
+169 bound files rechecked. This is DEV evidence, not fresh confirmation.
+
+The historical current baseline was111/384. Seven generated sequences changed
+between processes despite identical inputs and weight hashes; one changed
+correctness. The cause remains unresolved. The original strict run correctly
+retains `complete:false`, exit1 and its historical-MK mismatch error. Report
+SHA256 `12f8ba2cdaf19ab929aa7c1eac14a20033f0f31223b5ada7311f6014a2e81781`,
+6,930,157 bytes; runtime1698.7724 seconds; process absence verified. See the
+[bounded drift audit](RESURFACE_MK_BASELINE_DRIFT.md).
+
+The separately declared [soft continuation protocol](RESURFACE_SOFT_CONTINUATION_PROTOCOL.md)
+explicitly removes only historical cross-process MK equality, after observing
+that discrepancy. It preserves the original failure and all paired MK/PPL
+quality thresholds. A CPU audit must first establish complete restored controls
+and actual-file integrity, followed by prospective full130-window PPL and the
+previously unopened CONFIRM set. Candidate, soft gates and numerical profile
+remain identical. The prepared hard0 fallback is not triggered or evaluated.

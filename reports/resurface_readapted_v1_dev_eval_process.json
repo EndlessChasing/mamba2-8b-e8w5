@@ -1,0 +1,38 @@
+{
+  "status": "finished",
+  "pid": 3685056,
+  "started_unix": 1790616701.285392,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "scripts/evaluate_resurface_readapted.py",
+    "--stage",
+    "dev",
+    "--train-manifest-sha",
+    "dfe076ef18d5b0610e016d41d00a38948f3878b7c67d9cd8f6f46237e09d7e11",
+    "--split-manifest-sha",
+    "a6d870fe3e400d892d7eb55aab62d8f15f2d61b6a922d6590ab53fcfcfa0961a",
+    "--training-report-sha",
+    "e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6",
+    "--report",
+    "reports/resurface_readapted_v1_dev_eval.json"
+  ],
+  "code_pins": {
+    "scripts/evaluate_resurface_readapted.py": "7d8ecefb8c28c4a74b9a9f3faed22831849a312cc65781f22404a3200d52c471",
+    "docs/RESURFACE_READAPTED_TRAINING_PROTOCOL.md": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6"
+  },
+  "required_reports": {
+    "reports/resurface_readapted_v1_smoke.json": "3e34033ec70f2827b674d1f953afc318758868c51791529f49f33be8a8b04a89",
+    "reports/resurface_readapted_v1_train.json": "e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6",
+    "reports/resurface_readapted_v1_dev_eval_cpu.json": "545693a88a8b02eda34f80a1e3b41805340e2e6556cd0c355253d2259ecda8b9"
+  },
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99798839,
+  "exit_code": 1,
+  "finished_unix": 1790618400.0578146,
+  "wall_seconds": 1698.7724232673645,
+  "log_sha256": "5c6c5588a6886fd91177f30563b1d54a0be1d994e62fd986bc4de0534896ce5c",
+  "report_sha256": "12f8ba2cdaf19ab929aa7c1eac14a20033f0f31223b5ada7311f6014a2e81781",
+  "report_bytes": 6930157,
+  "report_complete": false
+}
