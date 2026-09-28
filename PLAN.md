@@ -197,3 +197,11 @@ completed prototype recipe or promote its failed candidate.
 ## Remaining PPL objective
 
 - [ ] Reduce complete-validation PPL from 7.977512009 to at most 7.700884745 (the paired source +5% target), with all added weight data counted. Declare the next experiment before measuring it. Recall/Resurface and publication remain deferred.
+
+## Same-capacity joint E8/axis selection
+
+- [x] Freeze the [joint-selection protocol](docs/JOINT_AXIS_SELECTION_PROTOCOL.md) before implementation or measurements: enumerate 16 signed-axis candidates with the greedy incumbent, preserving the current 20-bit files' metadata and decode format.
+- [ ] Pass bounded CPU checks and reproduce all six fixed current files (layers 0/18/55, input/output) before scoring joint selection.
+- [ ] Complete the six-matrix original-TRAIN-H screen: require median squared-error reduction at least 5%, at least four matrices at least 2%, and no regression above 0.1%. Stop this recipe if the screen fails.
+- [ ] Only after a screen pass, build and verify all 112 replacement matrices with the same fixed recipe and reuse the exact pilot files.
+- [ ] Compare paired current/candidate/current-repeat on the existing 64 development windows; a 1% PPL gain enables complete source/current/candidate validation. Report the source +5% target separately; no automatic publication.
