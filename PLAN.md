@@ -186,7 +186,8 @@ completed prototype recipe or promote its failed candidate.
 
 - [x] Freeze the [output-axis protocol](docs/OUTPUT_AXIS_RESIDUAL_PROTOCOL.md) before implementation: retain the measured input-axis candidate and enhance exactly 56 output projections, using original weights/Hessians and the same fixed axis4 recipe.
 - [x] Implement and independently review the separate output quantizer/verifier, preserving the completed input experiment and original codec/runtime.
-- [ ] Complete the CUDA-hidden CPU preflight and all 56 output matrices, verifying stored codes, finite FP16 reconstruction and actual replacement-byte accounting.
+- [x] Complete the CUDA-hidden CPU preflight: 314 bound files, 56 output Hessians and 61 inherited files pass; evaluator CPU tests and independent code review also pass.
+- [ ] Complete all 56 output matrices, verifying stored codes, finite FP16 reconstruction and actual replacement-byte accounting. Quantization launched; completion remains pending.
 - [ ] Independently score paired input-only baseline, output-enhanced candidate and exact baseline repeat on the same 64 observed development windows.
 - [ ] If the fixed 1% improvement gate passes, run complete source/baseline/candidate validation on all 130 windows / 264,764 targets; otherwise retain the negative result and stop this recipe.
 - [ ] Record actual quality and storage, including the separate source-plus-5% target. Expected extra code bytes are 117,440,512 (112 MiB); the new PPL and package size are unmeasured. MK and publication remain deferred.
