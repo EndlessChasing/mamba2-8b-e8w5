@@ -1,0 +1,26 @@
+{
+  "format": "MAMBA2_SMALL_EVALUATION_CPU_TESTS_V1",
+  "complete": true,
+  "cpu_only": true,
+  "GPU_model_or_quality_run": false,
+  "host": "horde-gpu",
+  "command": "/home/horde/.venvs/lodram/bin/python -m unittest discover -s tests -p test_small_evaluation.py -v",
+  "exit_code": 0,
+  "tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "unittest_elapsed_seconds": 0.023,
+  "checks": [
+    "130-window complete target coverage and final572",
+    "checkpoint FP32-to-FP16 identity and1024-step eligibility",
+    "loaded export and frozen tensor byte hashes including signedzero",
+    "token hash/execution identity",
+    "1%norm and5%source boundaries",
+    "target-weighted aggregate and finite loss"
+  ],
+  "source_sha256": {
+    "scripts/evaluate_small_compensation.py": "2102d406da33482303f0dd9a6446b1c070fdf28ecade70e9ab8da9cdfd0202be",
+    "tests/test_small_evaluation.py": "7b0402e74ff19f3b0f603914c08667709602bea3feee1d0f5b5cf476b8dc25ea",
+    "docs/SMALL_EVALUATION_RUNBOOK.md": "44c03b353eb877e20f058ead6e94bf2a95cf2c17f2c070733325b7bcf5c1e586"
+  }
+}
