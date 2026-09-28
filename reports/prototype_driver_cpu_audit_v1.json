@@ -1,0 +1,23 @@
+{
+  "format": "MAMBA2_PROTOTYPE_DRIVER_CPU_AUDIT_V1",
+  "complete": true,
+  "passed": true,
+  "cuda_visible_devices": "",
+  "gpu_used": false,
+  "cuda_initialized": false,
+  "test_count": 3,
+  "tests": [
+    "fixed seeded128 schedule and overflow exposure accounting",
+    "reject advanced retry window and bool/noninteger counter",
+    "actual SHA-pinned prepared32 windows,871eligible, all earlier exclusions verified"
+  ],
+  "code_sha256": {
+    "scripts/train_prototype_compensation.py": "bc6f59da1671d0e8973984f8ce24d176c364a128086f17b57b34c1f4022e1bc0",
+    "tests/test_prototype_driver.py": "bcd59faeddf06aa44ad1c4944ccb4c9892b2dcf9a76b31325510293b2e82ab7c",
+    "mamba_e8w5/prototype_training.py": "7bbf4835120d45dd988aa185cbe5a3e7da6fb1f70e6d6b2a939fc46bc434c00e",
+    "mamba_e8w5/learned_e8_codebook.py": "b244b93dabb9a85487f4745588e7c0dd922274768223da94bf368aecfe10843f"
+  },
+  "data_manifest_sha256": "a485424d1b7894eb1d5a6361ab4c25fdb4f6e5bedc56d7a15a7e4add2c454bcd",
+  "protocol_sha256": "e50295425dcd2f5a09b5fea4254b9c6f6f38744bc73583f93621ac1ce942cb9d",
+  "scope": "CPU driver accounting and actual data provenance only. Real-model GPU smoke and training have not run."
+}
