@@ -1,5 +1,8 @@
 # Release readiness: local 8B candidate
 
+
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+
 Evidence snapshot: **2026-09-28 UTC** (2026-09-27 Pacific).
 This is a completion checklist, not permission to publish.
 

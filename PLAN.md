@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Neither advanced to full validation. The GitHub release remains a draft with zero assets.
+Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Under their original gates neither advanced to full validation. The user subsequently directed PPL-first work: the norm candidate is now entering a separately recorded full-validation run, and a larger all-small-tensor training experiment is being prepared. MK remains disclosed evidence rather than a blocker for this continuation. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -80,3 +80,14 @@ This route adds no inference tensor fields; actual archive and metadata bytes mu
 - [ ] Publish quality changes, limitations and a bounded comparison to available same-base releases.
 
 Only code, small reports and metadata are retained on the Mac. Original weights, covariances and generated model binaries remain on the GPU host during experiments.
+
+## User-directed PPL priority continuation
+
+- [x] Record the user decision to prioritize PPL and defer recall work, while preserving the earlier failed combined gate: docs/PPL_PRIORITY_CONTINUATION.md.
+- [x] Confirm the actual source and candidate architectures are pure Mamba-2: 56 Mamba blocks, zero attention/independent MLP/MoE; reports/pure_mamba2_architecture_audit.json.
+- [ ] Run separate full-validation PPL for original source, original E8/W5, and fixed norm-v1 export with exact paired inputs.
+- [ ] Freeze the next all-small-tensor protocol: 393 existing tensors, 256 disjoint train windows excluding the old 32, 1024 fixed updates.
+- [ ] Pass new CPU and GPU checks covering convolution and recurrent parameter gradients, resumption, and actual FP16 export.
+- [ ] Train, export and independently audit the final checkpoint without changing E8/W5 or payload capacity.
+- [ ] Measure complete validation PPL, source-relative gap and gain over norm-v1; report recall as unmeasured for this candidate.
+- [ ] Consider a separate Resurface recall experiment after the PPL work; no recall recovery is assumed.

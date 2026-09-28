@@ -1,5 +1,8 @@
 # First 8B candidate: measured results
 
+
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+
 Candidate `e8w5_v1`; raw manifest SHA-256:
 `ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed`.
 

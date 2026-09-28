@@ -1,5 +1,8 @@
 # Existing-norm compensation: PPL improved, recall gate failed
 
+
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+
 **Status: fixed experiment complete; combined advancement gate failed.**
 Publication remains on hold. The original E8/W5 candidate and the eight-sweep
 experiment are unchanged. No full-validation or test run, entropy repackaging,

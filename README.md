@@ -1,5 +1,8 @@
 # Mamba-2 8B E8/W5
 
+
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](docs/PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+
 An experimental compact version of NVIDIA’s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head.
 
 All **8,236,999,680 parameters** have been quantized or retained and independently verified. The raw weight data occupies **2,886,482,462 bytes** before entropy coding, tokenizer and release metadata. **Model publication remains on hold after the failed quality gate.** The release is a draft with no uploaded assets.
