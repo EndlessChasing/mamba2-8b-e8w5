@@ -2,11 +2,11 @@
 
 The downloader needs **Python 3.10+ and curl**. It uses the public GitHub API and does not need Torch, CUDA, a GitHub login, or access to the original NVIDIA checkpoint.
 
-Choose an existing tag from [GitHub Releases](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases). A repository checkout is not itself a published quantized model. Replace the quoted placeholders below with the tag and manifest SHA-256 printed in that release's notes.
+The current research prerelease is `v0.2.0-resurface`. Use these commands once that tag is public in [GitHub Releases](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases). A repository checkout is not itself a downloaded quantized model. Copy the manifest SHA-256 from that release's notes; those notes and the release manifest provide final publication status and exact byte totals.
 
 ```sh
 python3 scripts/download_release.py \
-  --tag "RELEASE_TAG_FROM_GITHUB" \
+  --tag "v0.2.0-resurface" \
   --manifest-sha256 "MANIFEST_SHA256_FROM_RELEASE_NOTES" \
   --output ./downloaded-model
 ```
@@ -17,7 +17,7 @@ The independent manifest digest is optional:
 
 ```sh
 python3 scripts/download_release.py \
-  --tag "RELEASE_TAG_FROM_GITHUB" \
+  --tag "v0.2.0-resurface" \
   --output ./downloaded-model
 ```
 
@@ -51,7 +51,7 @@ mkdir model-software
 unzip downloaded-model/source.zip -d model-software
 ```
 
-Follow `model-software/README.md` for the Python/Torch dependencies. Restoration uses the portable C++ Huffman codec and therefore also needs a C++17 compiler. It does not require downloading the original full-precision weights. Then:
+Follow `model-software/README.md` for the Python/Torch dependencies. Restoration also needs a C++17 compiler because the shared container reader loads the portable codec. The `v0.2.0-resurface` container stores every raw member without an additional entropy-coding pass; this is explicitly recorded as `all-raw-members-no-entropy-coding`. It does not require downloading the original full-precision weights. Then:
 
 ```sh
 python3 model-software/scripts/package_release.py verify \
@@ -64,7 +64,33 @@ python3 model-software/scripts/package_release.py restore \
   --expected-manifest-sha256 "MANIFEST_SHA256_FROM_RELEASE_NOTES"
 ```
 
-See [PACKAGING.md](PACKAGING.md) for disk accounting and reference inference. Downloading consumes the complete release's listed bytes. Restoring additionally needs the raw quantized files and, for split containers, temporary space for one assembled container. The current quality reference expands weights to FP16; archive size is not runtime GPU residency.
+## Run the restored model
+
+Use Linux, a compatible CUDA PyTorch installation and the public Mamba runtime.
+The validated environment uses `mamba-ssm==2.3.2.post1`; wheel/build compatibility
+also depends on PyTorch, CUDA and GPU architecture. From the extracted source:
+
+```sh
+python3 -m pip install -e ./model-software
+python3 -m pip install 'mamba-ssm==2.3.2.post1' --no-build-isolation
+
+python3 -m mamba_e8w5.release_generate \
+  --model-dir ./restored-model/raw \
+  --prompt "The capital of France is" \
+  --max-new-tokens 12 \
+  --repeat \
+  --report ./generation-receipt.json
+```
+
+The release loader uses the restored native tokenizer, all encoded base weights
+and the bundled **enabled soft adapter**. It does not need the NVIDIA source
+checkpoint, calibration Hessians, previous model directories or training data.
+The receipt belongs outside the restored raw directory. `--repeat` checks a new
+cache on the same prompt; it is not a benchmark or cross-process reproducibility
+guarantee. See the [model card](MODEL_CARD.md) for the known historical MK drift.
+
+See [RESURFACE_RELEASE.md](RESURFACE_RELEASE.md) for this version's packaging
+scope. Downloading consumes the complete release's listed bytes. Restoring additionally needs the raw quantized files and, for split containers, temporary space for one assembled container. The current quality reference expands weights to FP16; archive size is not runtime GPU residency.
 
 ## Publishing convention
 

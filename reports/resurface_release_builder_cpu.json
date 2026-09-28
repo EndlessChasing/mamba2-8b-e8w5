@@ -1,0 +1,28 @@
+{
+  "command": [
+    "scripts/build_resurface_release.py",
+    "--self-test",
+    "--report",
+    "reports/resurface_release_builder_cpu.json"
+  ],
+  "complete": true,
+  "cuda_initialized": false,
+  "finished_unix": 1790622195.6399534,
+  "format": "MAMBA2_AXIS_RESURFACE_DISTRIBUTION_BUILD_V1",
+  "gpu_used": false,
+  "pid": 3952852,
+  "publication_performed": false,
+  "script_sha256": "512b60390f8a85b944bd21a150b6a470ad688265179a4d29e164ae89952abef1",
+  "self_test": {
+    "checks": [
+      "full-byte raw-member restore",
+      "empty codebook and no entropy claim",
+      "corruption rejected",
+      "split concatenation exact"
+    ],
+    "complete": true,
+    "frozen_reader_used": true,
+    "gpu_used": false
+  },
+  "started_unix": 1790622195.616301
+}

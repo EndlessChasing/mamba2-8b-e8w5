@@ -57,3 +57,14 @@ This project adapts those primitives to Mamba projections with its own rotation,
 ## Attribution and release boundary
 
 See [third-party notes](../licenses/THIRD_PARTY.md). No private Resurface checkpoint, adapter, training data, or private experiment history is included. Research comparisons with Quamba refer to public metadata and publications; Quamba implementation code is not vendored or imported by this release.
+
+## Public Resurface-inspired repair in v0.2.0
+
+The released soft adapter was implemented and trained in this public project,
+using its own numeric-binding generator and the frozen
+[training protocol](RESURFACE_READAPTED_TRAINING_PROTOCOL.md). Its native
+post-D placement is a documented variant rather than an exact reproduction of
+the reference method. This does not include the earlier private2.7B Resurface
+code, checkpoints or datasets. Actual final export, paired PPL and independent
+confirmation identities are recorded in [the results](RESURFACE_READAPTED_RESULTS.md)
+and [release model card](MODEL_CARD.md).

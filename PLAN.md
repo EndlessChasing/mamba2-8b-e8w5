@@ -1,6 +1,15 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold. Output-axis quantization and final native evaluation completed with exit 0. The fixed candidate passes the 1% development gate and improves complete-validation PPL **8.109428666→7.977512009 (1.62671%; 116/130 windows improve)** versus the paired input-axis model. Its **8.77176%** source gap still fails the +5% quality target. Actual raw data are **3,138,928,792 bytes**, 3.88687% above the paired baseline and 8.74581% above historical all-small. This is the best tested compressed-candidate PPL so far; the historical accepted all-small model/distribution remains unchanged. No new complete package or promotion is claimed. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
+Status: the user authorized publication of the latest fixed-soft Resurface candidate. Full validation PPL is **7.593163114** versus source **7.334175947** (+3.53%). Independent MK confirmation is **340/384** versus compressed base **91/384**, with removed-target matches **0/384** for both. The current raw base-plus-adapter data are **3,141,468,439 bytes**. Release packaging, independent restore and archived-source inference checks are in progress for **v0.2.0-resurface**; older candidate failures and artifacts remain retained.
+
+## Current publication checklist
+
+- [x] Receive explicit user authorization to publish after the source comparison.
+- [x] Fix release identity to the validated axis/readapted base plus enabled soft adapter.
+- [ ] Build complete portable package, tokenizer, corresponding source and licenses.
+- [ ] Restore all released files exactly and run inference using the archived source.
+- [ ] Upload and verify each asset checksum, then publish the research prerelease.
+- [ ] Confirm public release URL and publish exact download byte counts.
 
 ## Scope
 
@@ -46,7 +55,7 @@ Status: publication remains on hold. Output-axis quantization and final native e
 - [x] Confirm the dominant component on the entire validation split without further test-set use: original PPL7.334168, E8-only8.729770, W5-only7.415406, complete8.836527; all264764 targets.
 - [x] Write a diagnosis supported by controlled interventions and identify any remaining uncertainty: see docs/PPL_DIAGNOSIS.md.
 - [x] Evaluate a targeted repair on validation data: all112 eight-sweep projections were verified; paired dev PPL9.237164→9.194595, MK10/12→10/12, controls0/12→0/12. Advancement gate failed; no full validation or promotion. The first candidate's test results have already been seen.
-- [ ] Obtain new user direction before resuming model publication.
+- [x] Obtain new user direction before resuming model publication: explicit publication authorization received after the final source comparison.
 
 ## Same-bitrate repair experiment
 

@@ -21,7 +21,7 @@ NVIDIA model authors and citation are retained verbatim in `NVIDIA_MAMBA2_MODEL_
 
 Quamba is referenced as a public research comparison. Its [model repository license.txt](https://huggingface.co/ut-enyac/quamba2-8b-converted-w4a16/blob/997f760f29c10574ee8363b8680d636048dee048/license.txt) states UT Austin Research License restrictions, including restrictions on redistribution and commercial use. Some model card tags differ. No Quamba source or documentation is copied into this repository, and its implementation is not a dependency of this release.
 
-Private Resurface code, adapter checkpoints, private datasets, and historical experiment archives are outside this release. Public documentation should contain only the source identities, aggregate evaluation results, and reproducible scripts needed for this model.
+Private Resurface code, adapter checkpoints, private datasets, and historical experiment archives from the earlier private research project are outside this release. The new public `mamba_e8w5/resurface_native.py` implementation, synthetic-data generator and adapter trained for this repository are included in `v0.2.0-resurface`; they are distinct from those excluded private materials. The implementation is a post-D Resurface-inspired variant, not a claim of an exact upstream implementation. Its software is covered by the repository GPL-3.0 license. Model/software scopes above and the applicable retained notices continue to apply.
 
 ## Calibration and evaluation data
 

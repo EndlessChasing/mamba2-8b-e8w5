@@ -1,148 +1,165 @@
-# Mamba-2 8B E8/W5 — unpublished experimental candidate
+# Mamba-2 8B E8/axis + W4/W5 + soft Resurface
 
-**Model publication is on hold.** This is a reviewable model-card draft for the
-completed two-sweep candidate `e8w5_v1`. It is not a published download, a claim
-of equal quality, or the model card of a successfully evaluated refinement.
+Release: **`v0.2.0-resurface` — research prerelease**. The model has completed
+paired PPL and independent numeric-recall confirmation. Publication is authorized;
+release packaging and public availability are tracked in
+[RELEASE_READINESS.md](RELEASE_READINESS.md).
 
-**The provisional quality target failed:** full WikiText-2 test PPL increased
-**20.21%**, and public multi-key recall decreased **6.25 percentage points**.
+This is an independently modified version of
+[NVIDIA's pure Mamba-2 8B base model](https://huggingface.co/nvidia/mamba2-8b-3t-4k).
+It is a base language model, not an instruction-tuned assistant. The release
+preserves 56 Mamba-2 blocks, width 4096, eight SSM groups, a 256000-token vocabulary,
+and separate embedding and output weights. There are **8,236,999,680 base
+parameters**, plus **1,154,104 trained adapter parameters**.
 
-## Model and method
+## Representation and adaptation
 
-This is an independent modified version of
-[NVIDIA's pure Mamba-2 8B base language model](https://huggingface.co/nvidia/mamba2-8b-3t-4k).
-It preserves 56 layers, model width 4096, eight SSM groups, the full 256000-token
-vocabulary, separate embedding/output weights, and all **8236999680 parameters**.
-It is not an instruction-tuned model.
+| Component | Released representation |
+| --- | --- |
+| 112 input/output projection matrices | Rotated E8P12 plus axis residual; 20 code bits per eight values (nominal 2.5 bits/value), with separately counted transforms/scales/headers |
+| Embedding | Group-128 W4 with FP16 scales |
+| Output vocabulary head | Group-128 W5 with FP16 scales |
+| 393 remaining base tensors | FP16; readapted for this compressed base |
+| 224 adapter tensors | FP16 soft gated readout at all 56 layers; 1,154,104 parameters |
 
-- **112 projection matrices:** calibrated diagonal balancing, signed DCT/Hadamard
-  rotations and E8P12 lattice quantization with LDLQ feedback. Every eight values
-  use a 16-bit index, before transformation metadata. This candidate used scale
-  override 0.9, damping 0.01 and two tuning sweeps.
-- **Two independent vocabulary matrices:** uniform W5, group 128, with FP16 scales.
-- **393 remaining parameter tensors:** FP16.
-- **Entropy storage:** chunked Huffman, with tables and offsets counted. Huffman
-  restores the quantized files exactly; quantization itself is lossy relative to
-  the original floating-point model.
+The adapter is this project's **post-D Resurface-inspired variant**: it operates
+between the native D*x addition and grouped gated RMSNorm. It is not an exact
+reproduction of the original paper's placement. The same enabled soft sigmoid
+policy is used for recall, prose PPL, and inference. There is no task-dependent
+bypass, fitted inference threshold, or additional recurrent cache.
 
-Calibration used 65536 WikiText-2 training tokens. No fine-tuning, residual adapter,
-architecture pruning, tied vocabulary, or external weight base is required by
-the representation. Source, tokenizer and calibration identities are retained in
-the [provenance](SOURCES.md) and [quantization manifest](../reports/quantization_v1.json).
+The final adapter was trained for 1536 successful updates on 1536 synthetic
+numeric-binding examples, with 10,752 answer-token targets and 784,896 prose
+regularization targets. The current compressed model served as the prose
+teacher. All 507 base tensors were frozen during adapter training; actual export
+and final-checkpoint rounding were verified. See the
+[training protocol](RESURFACE_READAPTED_TRAINING_PROTOCOL.md) and
+[complete results](RESURFACE_READAPTED_RESULTS.md).
 
-## Measured quality: failed target
+Quantization is lossy relative to the original model. This release uses the
+existing E8HUF001 container with raw members and **no additional entropy-coding
+pass**; wrapping/restoration preserves every encoded file exactly.
 
-| Full-test metric | Original source cast to FP16 | E8/W5 decoded to FP16 | Change |
-| --- | ---: | ---: | ---: |
-| WikiText-2 PPL | 7.244528 | 8.708514 | +20.208155% |
-| Public MK normal prompts | 18/48 (37.50%) | 15/48 (31.25%) | −6.25 percentage points |
-| Target-removed controls | 0/48 | 0/48 | No additional matches |
+## Measured quality
 
-The PPL evaluation scores all **300963 next-token targets**, across 147 windows
-of at most 2048 targets with state reset at each window. Both models use the same
-tokenizer, dataset identities and runtime. Execution uses SSD prefill; this is
-not a full-test per-token FP16-cache experiment.
+### Complete WikiText-2 validation
 
-The declared engineering target was PPL increase at most 5%, at most one fewer
-normal recall success, and no increase in target-removed matches. **This candidate
-fails the PPL and normal-recall conditions.** All 147 prose windows worsen.
-Among normal MK cases, 14 succeed for both models, four are lost and one is
-gained. Forty-eight examples do not establish statistical equivalence.
+| Model | PPL |
+| --- | ---: |
+| Original NVIDIA weights cast to FP16 | 7.334175947 |
+| Compressed/readapted base without adapter | 7.622396588 |
+| Released candidate with soft adapter | **7.593163114** |
 
-The public MK generator is new for this repository. Its scores are not
-interchangeable with private Resurface results or other recall benchmarks.
-See the [frozen protocol](EVALUATION.md), [paired full-test report](../reports/comparison_full_prefill.json)
-and [detailed results](RESULTS.md).
+The adapter improves PPL **0.383521%** over its paired compressed base, with all
+130 windows improving. Candidate PPL remains **3.531237% above original FP16**.
+The source-relative +5% engineering target is met; this does not establish equal
+quality.
 
-A separate four-window validation check writes FP16 state after every token:
-PPL **7.857486 → 9.238848**, normal MK **7/12 → 10/12**, controls **0/12 → 0/12**.
-That small validation recall gain did not reproduce on the larger test and does
-not override the test result. [Tokenwise report](../reports/comparison_dev_tokenwise.json).
+The protocol scores **264,764 next-token targets** in 130 reset windows, including
+the short final window. Current/adapter/restored runs were paired in one process;
+current and restored CE chunks match exactly. The source value is from the pinned
+original-source evaluation with identical dataset, tokenizer, window and token
+identities, not a new same-process source/adapter comparison. WikiText-2 validation
+informed development and is **not untouched test evidence**.
 
-Component diagnosis on the complete validation split attributes the dominant
-measured loss to E8 projections. The [diagnosis](PPL_DIAGNOSIS.md) also records
-the small historical-versus-current parent endpoint discrepancy, exact decoded
-E8 checks and same-process controls. A later eight-sweep refinement has only
-training-screen evidence at this draft's snapshot; it is not included in these
-quality or storage claims.
+[Full PPL report](../reports/resurface_soft_continuation_v1_full_eval.json);
+[independent arithmetic/integrity receipt audit](../reports/resurface_soft_continuation_v1_full_independent_audit.json).
 
-## Actual storage
+### Independent numeric-binding confirmation
 
-These counts describe the **existing immutable local two-sweep package**, not a
-future release amended with this draft:
-
-| Scope | Exact bytes | Decimal GB |
+| Model on the same CONFIRM set | Normal recall | Target-removed false matches |
 | --- | ---: | ---: |
-| Raw quantized data files, excluding raw manifest | 2886482462 | 2.886482462 |
-| Complete raw package, including raw manifest | 2886686334 | 2.886686334 |
-| Huffman weight container | 2660128443 | 2.660128443 |
-| Entire prepared distribution, including tokenizer, code, licenses, reports and its own manifest | 2666260364 | 2.666260364 |
+| Compressed/readapted base | 91/384 (23.6979%) | 0/384 |
+| Same base with soft adapter | **340/384 (88.5417%)** | **0/384** |
 
-The weight container is split into **1500000000** and **1160128443** byte parts.
-Its size is approximately **2.583590 bits per original parameter** including
-container overhead; this is not a claim that all weights individually use 2 bits.
-No original model checkpoint is omitted from a required weight dependency: the
-container holds all encoded or retained model tensors.
+The paired improvement is **64.84375 percentage points**: 251 gained cases and
+two lost cases. The conservative 95% lower bound is +58.502343 points; exact
+McNemar p=4.439957888196715e-72. CONFIRM was prepared only after full PPL passed,
+using separate numeric instances under the frozen split contract. It shares the
+three development template families and covers 16 or 64 records per prompt.
+The original uncompressed source was **not evaluated on CONFIRM**.
 
-The [complete local restore acceptance](../reports/release_restore_local_v1.json)
-verified all **118/118 original raw files** byte-for-byte, plus tokenizer and
-configuration. Restoration took approximately 109 seconds on the test host;
-this is a local file operation, not inference throughput. The subsequent
-[restored generation smoke](../reports/restored_inference_local_v1.json) verified
-61 archived source files and ran three short prompts using the restored raw
-weights/tokenizer. Outputs were nonempty, and a fresh-cache repeat was identical.
-No source-checkpoint argument was supplied; the disabled source loader and Python
-open guard recorded zero access attempts. This is not an OS filesystem sandbox
-or a model-quality benchmark.
+[Confirmation report](../reports/resurface_soft_continuation_v1_confirm_eval.json);
+[independent confirmation audit](../reports/resurface_soft_continuation_v1_confirm_independent_audit.json).
 
-Changes to distribution metadata will change complete distribution bytes and
-manifest SHA. The current outer manifest SHA is
-`d5f5c77eba397c6706a1b59290f37fd1754728b9e00637aed8a390c1d6922ff1`;
-the raw model identity is
-`ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed`.
+### Observed development comparison with the original source
 
-## Runtime memory and use limitations
+On the same 384 DEV normal prompts, original FP16 scores **167/384 (43.4896%)**
+and the repaired compressed candidate scores **346/384 (90.1042%)**; both have
+0/384 target-removed matches. This is observed development evidence, separate
+from CONFIRM. The candidate received recall training while the original-source
+baseline did not: the comparison is not evidence that compression itself improves
+recall or that training budgets are equal.
 
-The public accuracy runtime expands weights to FP16. Full-test candidate
-evaluation peaked at **17355670016 B allocated** and **18599641088 B reserved**
-GPU memory. Batch-one FP16 convolution plus SSM cache occupies **122028032 B**
-(116.375 MiB), before other runtime memory.
+[Source baseline](../reports/readapted_mk_baseline_v1.json);
+[DEV result with preserved strict failure](../reports/resurface_readapted_v1_dev_eval.json).
 
-Compact disk storage therefore does not establish compact GPU residency. This
-candidate includes no compressed GPU matrix-multiplication kernel, measured
-ASIC design, power/energy result or isolated inference-throughput claim. The
-original checkpoint is BF16; full test comparisons use FP16 in the public runtime,
-and original Megatron end-to-end numerical parity has not been demonstrated.
+### Reproducibility qualification
 
-Use the candidate for compression and reconstruction research with its measured
-quality loss visible. Do not treat restoration success or a generation smoke as
-quality retention. There is no certified global-smallest or equal-quality claim;
-the [public comparison](COMPARISON.md) has a finite, dated search scope.
+The initial strict DEV run failed historical cross-process MK replay: seven
+generated sequences differed and compressed-base correctness changed 111→112/384,
+despite identical input and weight hashes. Its failure remains preserved.
+The separately declared [continuation protocol](RESURFACE_SOFT_CONTINUATION_PROTOCOL.md)
+removed only that historical-equality prerequisite, after the discrepancy was
+observed. It kept the same candidate, soft policy, numerical profile and paired
+quality thresholds. Same-process restored MK/PPL controls, fresh-cache replays,
+507 base tensors, 224 adapter tensors and final file checks passed. Prospective
+full PPL and previously unopened CONFIRM then passed. The cause of the historical
+sequence differences remains unresolved.
 
-## Availability and loading
+## Storage and execution
 
-The [public repository](https://github.com/EndlessChasing/mamba2-8b-e8w5) exists,
-but model assets remain unpublished while diagnosis and refinement proceed.
-[Download instructions](DOWNLOAD.md) describe the planned release workflow, not
-an available model download. The prepared package contains matching archived
-source and the native tokenizer; [packaging documentation](PACKAGING.md) describes
-verification and restoration. Original weights and calibration Hessians are
-needed to reproduce quantization, not to decode the completed package.
+| Measured scope before outer packaging | Bytes |
+| --- | ---: |
+| Encoded base model data | 3,138,928,792 |
+| Serialized FP16 adapter file | 2,539,647 |
+| **Base plus adapter data** | **3,141,468,439** |
+| Adapter tensor payload within that file | 2,308,208 |
+| Separate adapter manifest | 294,171 |
+
+Base plus adapter data are **80.930748% smaller** than the original base's
+16,473,999,360-byte 16-bit tensor payload. This compares tensor/model-data scopes,
+not complete distribution sizes. Outer manifests, tokenizer, software, licenses
+and reports are additional; the completed release's `release_manifest.json`
+provides the authoritative total and hashes. The older 2.671 GB all-small bundle
+contains a different model and must not be used as this release's size.
+
+The reference runtime expands weights to FP16. Batch-one native FP16 convolution
+and SSM cache in the measured recall runs is 122,028,032 bytes (116.375 MiB), before
+weights, activations and other runtime allocations. Compact files do **not** mean
+3 GB GPU residency. There is no compressed GPU matrix kernel, measured ASIC
+energy/throughput result, or global-smallest/equal-quality claim here.
+
+The original checkpoint is BF16; the reported comparison uses this project's
+FP16 reference runtime. Original Megatron end-to-end numerical parity is not
+established. Numeric binding recall does not establish broad task performance,
+unseen-template recall, longer-context retention, or arbitrary-prompt reliability.
+
+## Availability and provenance
+
+The release is prepared for
+[`v0.2.0-resurface`](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface).
+Use the [download and verification instructions](DOWNLOAD.md) after the tag is
+public. A repository checkout alone is not a downloaded model. Release assembly,
+restore and archived-software checks are recorded in
+[RESURFACE_RELEASE.md](RESURFACE_RELEASE.md).
+
+The official model and tokenizer identities are pinned in [SOURCES.md](SOURCES.md).
+The final adapter file SHA-256 is
+`1e9857feaf80ede6525cce839726883f6230c98a067cb226eb2f095693ea803e`.
+The same identity is bound to both full-PPL and CONFIRM reports. No original
+full-precision checkpoint is required to use a complete restored release.
 
 ## Attribution and licenses
 
-NVIDIA's upstream model and tokenizer are declared Apache-2.0; the pinned original
-model card, attribution and license are retained. This is a modified model from
-an independent project, without NVIDIA endorsement.
+NVIDIA's upstream model and tokenizer are declared **Apache-2.0**; the pinned model
+card, attribution and license text are retained. This is an independently modified
+model without NVIDIA endorsement.
 
-The software and QuIP#-derived E8/LDLQ implementation use GPL-3.0, with matching
-source and attribution. Model and software scopes are recorded separately in
-[THIRD_PARTY.md](../licenses/THIRD_PARTY.md), with [Apache-2.0](../licenses/APACHE-2.0.txt)
-and [QuIP# GPL-3.0](../licenses/QUIP-SHARP-GPL-3.0.txt) texts included. No Quamba
-implementation or private Resurface code, adapter or dataset is distributed.
-WikiText is fetched separately under its upstream terms; dataset text is not
-included in the repository or model archive.
-
-This draft has not modified the existing outer model card, manifest, weight
-container, or archived source. See [RELEASE_READINESS.md](RELEASE_READINESS.md)
-for the remaining publication requirements and hold.
+Repository software and the QuIP#-derived E8/LDLQ implementation are **GPL-3.0**;
+matching source and notices accompany the distribution. Model and software scopes
+are described separately in [THIRD_PARTY.md](../licenses/THIRD_PARTY.md). This
+release's new public adapter implementation and trained artifact are distinct
+from excluded private Resurface code, checkpoints and datasets. No Quamba
+implementation is distributed. WikiText text and tokenized passages are fetched
+separately under upstream terms and are not included in the model distribution.

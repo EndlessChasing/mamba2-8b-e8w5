@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "passed": true,
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python -m unittest tests.test_release_runtime -v",
+  "test_runner": "unittest.TextTestRunner in-process to record post-test CUDA initialization",
+  "stdout": "test_actual_adapter_file_boundary (tests.test_release_runtime.ReleaseRuntimeTests) ... ok\ntest_fp16_raw_bits_shape_dtype_and_finiteness (tests.test_release_runtime.ReleaseRuntimeTests) ... ok\ntest_independent_geometry_and_counts (tests.test_release_runtime.ReleaseRuntimeTests) ... ok\ntest_matrix_vocab_hash_geometry_and_source_boundaries (tests.test_release_runtime.ReleaseRuntimeTests) ... ok\ntest_missing_adapter_or_wrong_policy_fails_closed (tests.test_release_runtime.ReleaseRuntimeTests) ... ok\ntest_safe_files_duplicate_json_and_trusted_manifest (tests.test_release_runtime.ReleaseRuntimeTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.132s\n\nOK\n",
+  "exit_code": 0,
+  "tests_run": 6,
+  "cuda_visible_devices": "",
+  "cuda_initialized": false,
+  "python": "3.10.12",
+  "torch": "2.11.0+cu128",
+  "source_sha256": {
+    "mamba_e8w5/release_runtime.py": "c629cfb1221aea0bb8343cee470a4188082e9a3a9a2e0332c80c30a9978beda3",
+    "mamba_e8w5/release_generate.py": "5572b3126504693e6a2fd5c68bf020bbd5190a49d00445e2e89e1baa4f1f0ae3",
+    "tests/test_release_runtime.py": "8f66e22b3d508d6ad85b4646fbd9da272b4ab5cd7baea820cf271ecf0c503b3a"
+  },
+  "elapsed_seconds": 0.13942561601288617,
+  "scope": "CPU schema/serialization validation only; native8B restored inference pending root-run GPU smoke"
+}
