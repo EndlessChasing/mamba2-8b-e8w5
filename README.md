@@ -8,7 +8,7 @@ All **8,236,999,680 parameters** have been quantized or retained and independent
 
 ## Original candidate: measured test quality
 
-The following test, runtime-memory and restored-package measurements describe the original `e8w5_v1` candidate before compensation training. The best all-small candidate above has separate full-validation evidence; its test quality and entropy-coded container size have not been measured.
+The following test, runtime-memory and restored-package measurements describe the original `e8w5_v1` candidate before compensation training. The best all-small candidate above has separate full-validation and verified weight-container evidence; its test quality and complete release remain unmeasured/unbuilt.
 
 | Full test measurement | Original weights cast to FP16 | Original `e8w5_v1` reconstructed to FP16 |
 | --- | ---: | ---: |
@@ -26,7 +26,17 @@ The subsequent [existing-norm compensation experiment](docs/NORM_COMPENSATION_RE
 
 The original `e8w5_v1` decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
 
-The staged original `e8w5_v1` package occupies **2,666,260,364 bytes**. Its actual restore command reproduced all118 raw files exactly; generation also passed using the archived software, restored tokenizer and restored weights, with no original checkpoint as an input. This establishes package usability, not a quality pass. See the [restore receipt](reports/release_restore_local_v1.json) and [generation smoke](reports/restored_inference_local_v1.json). This size does not describe the trained all-small candidate; no all-small entropy-coded container has been measured. The package remains unpublished.
+The staged original `e8w5_v1` complete release occupies **2,666,260,364 bytes**. Its actual restore command reproduced all118 raw files exactly; generation also passed using the archived software, restored tokenizer and restored weights, with no original checkpoint as an input. This establishes package usability, not a quality pass. See the [restore receipt](reports/release_restore_local_v1.json) and [generation smoke](reports/restored_inference_local_v1.json). The package remains unpublished.
+
+## Verified storage
+
+| Artifact scope | Original `e8w5_v1` | Trained all-small |
+| --- | ---: | ---: |
+|117 raw data files, excluding manifest |2,886,482,462 B |2,886,482,462 B |
+|Huffman weight container, including raw manifest |2,660,128,443 B |**2,660,171,471 B** |
+|Complete release, including tokenizer/software/licenses/outer metadata |2,666,260,364 B |Not built |
+
+The all-small container passed complete readback of **118 files**, **342 independent chunk checks**, and a subsequent identity audit against its pinned resolved manifest. See the [readback receipt](reports/all_small_resolved_v1_huffman.json), [identity receipt](reports/all_small_resolved_v1_huffman_identity.json), and [composition details](docs/ALL_SMALL_COMPOSITION.md). Its size includes the raw manifest and all decoding metadata, but excludes the tokenizer, software, licenses and outer release metadata. It retains the previously measured full-validation **PPL8.359867548** through exact file identity; packing did not rerun PPL. An all-small complete release and archived-software GPU restoration check have not been performed.
 
 Source: [nvidia/mamba2-8b-3t-4k](https://huggingface.co/nvidia/mamba2-8b-3t-4k), Apache-2.0. The software and QuIP#-derived components are distributed under GPL-3.0; upstream model attribution is separate. See [license scope](licenses/THIRD_PARTY.md), [pinned sources](docs/SOURCES.md), and [comparison limits](docs/COMPARISON.md).
 

@@ -52,7 +52,7 @@ Use `--mode copy` when independent writable inodes are needed. The composer
 rehashes both input and output after materialization and only then renames the
 completed staging directory.
 
-## Bytes and later packaging
+## Verified raw bytes
 
 Actual CPU composition completed successfully in
 `artifacts/all_small_resolved_v1`. All117 files were hardlinked;393 actual small
@@ -77,14 +77,34 @@ total. Tokenizer, source, licenses, quality reports, container overhead and the
 outer release manifest belong to the later release total and are excluded here.
 Composition did not remeasure quality or execute the GPU model.
 
-After separate approval, the existing `scripts/package_release.py build` can
-consume this raw directory with the pinned tokenizer and the actual full PPL
-report. Its trusted Huffman readback and release ledger count all shipped bytes.
-A separate CPU weight-container pack/readback is tracked by
-`reports/all_small_resolved_v1_huffman.json`; its completed result is pending
-at this documentation update. These raw-directory measurements are not a
-verified entropy-coded container size. No complete release/source snapshot or
-restored GPU verification is claimed here.
+## Verified weight container; complete release remains unbuilt
+
+The separate CPU-only pack completed, with full trusted readback of118 files and
+342 independent chunk checks. A subsequent identity audit matched all118 members
+to the pinned resolved manifest and revalidated the raw file ledger. Both
+receipts report that CUDA was not initialized:
+
+- [Full readback](../reports/all_small_resolved_v1_huffman.json).
+- [Post-readback identity audit](../reports/all_small_resolved_v1_huffman_identity.json).
+
+| Artifact scope | Original `e8w5_v1` | Trained all-small |
+| --- | ---: | ---: |
+|117 raw data files, excluding manifest |2,886,482,462 B |2,886,482,462 B |
+|Huffman weight container, including raw manifest |2,660,128,443 B |2,660,171,471 B |
+|Complete release with tokenizer/software/licenses/outer metadata |2,666,260,364 B |Not built |
+
+All-small container SHA-256:
+`46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd`.
+The container includes its raw manifest, all weight data, Huffman tables,
+offsets, scales, signs and codebooks. Its measured size excludes tokenizer,
+software, licenses, quality reports and outer release metadata. The complete
+release size in the original column belongs to the earlier original package.
+
+Exact file identity binds the all-small container to the existing full-validation
+PPL8.359867548. Packing did not remeasure PPL, MK or test quality, and no
+all-small archived-software GPU restore smoke has run. The next complete release
+build can use `scripts/package_release.py` with the pinned tokenizer and actual
+quality report; it must count every additional shipped asset and its manifest.
 
 Following normal release restoration, the existing frozen loader supports this
 all-small representation directly:
