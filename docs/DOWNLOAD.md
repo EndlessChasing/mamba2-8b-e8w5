@@ -2,12 +2,12 @@
 
 The downloader needs **Python 3.10+ and curl**. It uses the public GitHub API and does not need Torch, CUDA, a GitHub login, or access to the original NVIDIA checkpoint.
 
-The current research prerelease is `v0.2.0-resurface`. Use these commands once that tag is public in [GitHub Releases](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases). A repository checkout is not itself a downloaded quantized model. Copy the manifest SHA-256 from that release's notes; those notes and the release manifest provide final publication status and exact byte totals.
+The current research prerelease is `v0.2.0-resurface`. Download it from [GitHub Releases](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface). The complete release is **3,165,987,804 bytes (3.166 GB)**. A repository checkout is not itself a downloaded quantized model. The commands below pin the manifest SHA-256 verified during publication; the release notes and manifest record the exact byte totals.
 
 ```sh
 python3 scripts/download_release.py \
   --tag "v0.2.0-resurface" \
-  --manifest-sha256 "MANIFEST_SHA256_FROM_RELEASE_NOTES" \
+  --manifest-sha256 "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d" \
   --output ./downloaded-model
 ```
 
@@ -56,12 +56,12 @@ Follow `model-software/README.md` for the Python/Torch dependencies. Restoration
 ```sh
 python3 model-software/scripts/package_release.py verify \
   --release-dir ./downloaded-model \
-  --expected-manifest-sha256 "MANIFEST_SHA256_FROM_RELEASE_NOTES"
+  --expected-manifest-sha256 "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d"
 
 python3 model-software/scripts/package_release.py restore \
   --release-dir ./downloaded-model \
   --output ./restored-model \
-  --expected-manifest-sha256 "MANIFEST_SHA256_FROM_RELEASE_NOTES"
+  --expected-manifest-sha256 "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d"
 ```
 
 ## Run the restored model

@@ -1,7 +1,6 @@
 # Release readiness: v0.2.0-resurface
 
-**Publication is authorized for the latest validated model as a research
-prerelease.** This supersedes the earlier publication hold for the current release;
+**Published as the [v0.2.0-resurface research prerelease](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface).** This supersedes the earlier publication hold for the current release;
 historical failed experiments and their frozen protocols remain unchanged.
 The fixed source tag is `v0.2.0-resurface`. The older empty
 `v0.1.0-experimental` draft is retained separately.
@@ -24,7 +23,7 @@ The fixed source tag is `v0.2.0-resurface`. The older empty
 
 Quality validation of the measured model is complete. The following acceptance
 checks concern the **new complete package**, not the earlier all-small bundle.
-Terminal CPU/GPU receipts establish the first five checks. Upload/public verification remains pending.
+Terminal CPU/GPU and public-download receipts establish all checks below.
 
 - [x] Compose all latest base files and the actual final soft adapter into one
   self-contained model; bind the 507+224 decoded tensors to the quality reports.
@@ -36,12 +35,11 @@ Terminal CPU/GPU receipts establish the first five checks. Upload/public verific
   restored member with the pinned raw ledger.
 - [x] Run the new loader from archived software using only restored model files,
   with soft adapter enabled and original-checkpoint access excluded.
-- [ ] Check flat GitHub asset basename uniqueness, upload the complete assets and
+- [x] Check flat GitHub asset basename uniqueness, upload the complete assets and
   verify the public manifest/assets for `v0.2.0-resurface`.
 
 The publisher records exact paths, hashes and completed status in
-[RESURFACE_RELEASE.md](RESURFACE_RELEASE.md). No public-availability claim is made
-by this checklist before publication verification.
+[RESURFACE_RELEASE.md](RESURFACE_RELEASE.md). The [publication receipt](../reports/resurface_release_v0_2_0_publication.json) verifies the public release, all26 asset sizes/server hashes, actual anonymous manifest download and all three weight-part download endpoints.
 
 ## Immutable evidence identities
 

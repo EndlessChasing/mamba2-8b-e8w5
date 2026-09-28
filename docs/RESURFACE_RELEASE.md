@@ -1,10 +1,9 @@
 # v0.2.0-resurface: release assembly and acceptance
 
-Target: **public research prerelease**
+Published: **public research prerelease**
 [`v0.2.0-resurface`](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface).
-Publication is authorized. Complete packaging, public-command restoration and
-archived-source GPU generation have passed. The draft's assets are uploading;
-public availability will be recorded after GitHub verification. The old empty
+Published on **2026-09-28 at19:36:35 UTC**. Complete packaging, public-command
+restoration, archived-source GPU generation and public asset verification passed. The old empty
 `v0.1.0-experimental` draft remains separate.
 
 ## Model selected for this release
@@ -65,8 +64,7 @@ is GPU residency.
    manifest/size/digest identities. Preserve previous artifacts and failed results.
 
 See [readiness](RELEASE_READINESS.md) for status and [DOWNLOAD.md](DOWNLOAD.md)
-for the end-user verification flow. Exact terminal packaging and public release
-receipts will be recorded here when available.
+for the end-user verification flow. Terminal packaging and public release receipts are recorded below.
 
 ## Completed build and restored inference
 
@@ -96,3 +94,20 @@ Final raw-manifest SHA-256:
 ```text
 7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f
 ```
+
+## Public distribution verification
+
+[GitHub release](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface) — public research prerelease,26 assets totaling **3,165,987,804 bytes**.
+
+The [streaming upload receipt](../reports/resurface_release_v0_2_0_upload.json)
+records exact source bytes and all26 GitHub server SHA-256 matches. The
+[publication receipt](../reports/resurface_release_v0_2_0_publication.json)
+independently confirms a public repository, draft=false, the exact asset
+inventory/size/digest ledger, a byte-identical manifest downloaded anonymously,
+and HTTP200 for all three weight-part download endpoints. Large weight parts
+were not downloaded a second time; server digests match the already verified
+streamed bytes. The old v0.1 draft is unchanged.
+
+The source tag and archived code remain fixed at the build commit. Build-time
+status text in that archive is historical; these terminal receipts and the
+release notes establish final publication status.

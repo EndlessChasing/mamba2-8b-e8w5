@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: the user authorized publication of the latest fixed-soft Resurface candidate. Full validation PPL is **7.593163114** versus source **7.334175947** (+3.53%). Independent MK confirmation is **340/384** versus compressed base **91/384**, with removed-target matches **0/384** for both. The current raw base-plus-adapter data are **3,141,468,439 bytes**. Release packaging, independent restore and archived-source inference checks have passed; GitHub upload is in progress for **v0.2.0-resurface**; older candidate failures and artifacts remain retained.
+Status: the user authorized publication of the latest fixed-soft Resurface candidate. Full validation PPL is **7.593163114** versus source **7.334175947** (+3.53%). Independent MK confirmation is **340/384** versus compressed base **91/384**, with removed-target matches **0/384** for both. The current raw base-plus-adapter data are **3,141,468,439 bytes**. Release packaging, independent restore, archived-source inference and all26 GitHub asset checks passed. **v0.2.0-resurface is public** with a complete download size of **3,165,987,804 bytes**; older candidate failures and artifacts remain retained.
 
 ## Current publication checklist
 
@@ -8,8 +8,8 @@ Status: the user authorized publication of the latest fixed-soft Resurface candi
 - [x] Fix release identity to the validated axis/readapted base plus enabled soft adapter.
 - [x] Build complete portable package, tokenizer, corresponding source and licenses.
 - [x] Restore all released files exactly and run inference using the archived source.
-- [ ] Upload and verify each asset checksum, then publish the research prerelease.
-- [ ] Confirm public release URL and publish exact download byte counts.
+- [x] Upload and verify each asset checksum, then publish the research prerelease.
+- [x] Confirm public release URL and publish exact download byte counts.
 
 ## Scope
 
@@ -85,8 +85,8 @@ This route adds no inference tensor fields; actual archive and metadata bytes mu
 - [x] Compare original and reconstructed quantized models on the same PPL and multi-key recall protocol.
 - [x] Keep development screens distinct from full evaluation and numerical roundtrip checks.
 - [x] Measure actual model bytes and evaluation memory; separate compressed file size from inference residency.
-- [ ] Release model artifact, tokenizer/config, checksums, source revision and reproducible commands.
-- [ ] Publish quality changes, limitations and a bounded comparison to available same-base releases.
+- [x] Release model artifact, tokenizer/config, checksums, source revision and reproducible commands.
+- [x] Publish quality changes, limitations and a bounded comparison to available same-base releases.
 
 Only code, small reports and metadata are retained on the Mac. Original weights, covariances and generated model binaries remain on the GPU host during experiments.
 

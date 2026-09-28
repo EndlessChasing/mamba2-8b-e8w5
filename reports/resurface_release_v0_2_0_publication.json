@@ -1,0 +1,235 @@
+{
+  "complete": true,
+  "verified_unix": 1790624214.4291651,
+  "repo": "EndlessChasing/mamba2-8b-e8w5",
+  "release_id": 398543799,
+  "tag": "v0.2.0-resurface",
+  "public_repository": true,
+  "draft": false,
+  "prerelease": true,
+  "published_at": "2026-09-28T19:36:35Z",
+  "url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface",
+  "source_commit": "e89c764e33a7fcd72095e1b9b9ea47f22d3ff7bb",
+  "assets_verified": 26,
+  "total_release_bytes": 3165987804,
+  "all_server_sha256_verified": true,
+  "anonymous_release_api_verified": true,
+  "anonymous_manifest_download_exact": true,
+  "manifest_sha256": "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d",
+  "anonymous_weight_part_head_status": {
+    "mamba2-8b-axis-resurface.raw.huff.part-00001-of-00003": 200,
+    "mamba2-8b-axis-resurface.raw.huff.part-00002-of-00003": 200,
+    "mamba2-8b-axis-resurface.raw.huff.part-00003-of-00003": 200
+  },
+  "assets": [
+    {
+      "id": 596187052,
+      "name": "APACHE-2.0.txt",
+      "size": 11358,
+      "digest": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/APACHE-2.0.txt"
+    },
+    {
+      "id": 596240027,
+      "name": "axis_small_readaptation_v1_eval.json",
+      "size": 2821435,
+      "digest": "sha256:3c6d840315b7552be5530ea884d0a9c620219df8dbbdad1a98b4cdd6e89ad1b4",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/axis_small_readaptation_v1_eval.json"
+    },
+    {
+      "id": 596240124,
+      "name": "axis_small_readaptation_v1_manifest.json",
+      "size": 239782,
+      "digest": "sha256:3ede80b2883d8b8987cb3e2198fd8badc2dbbb5af03c8fe6cac7f5f9f5b62047",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/axis_small_readaptation_v1_manifest.json"
+    },
+    {
+      "id": 596186931,
+      "name": "composition_verification.json",
+      "size": 373,
+      "digest": "sha256:0707585a39742ace6d461b90da9f26cc95c4fa015d35cf9a30c5f1b98ff9e8bb",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/composition_verification.json"
+    },
+    {
+      "id": 596186980,
+      "name": "config.json",
+      "size": 462,
+      "digest": "sha256:fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/config.json"
+    },
+    {
+      "id": 596187009,
+      "name": "container_verification.json",
+      "size": 516,
+      "digest": "sha256:98f51c35f412dc6180818bce2daa5478ba9eeff77c72549b18678dc0a79181c4",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/container_verification.json"
+    },
+    {
+      "id": 596240194,
+      "name": "input_axis_residual_v1_manifest.json",
+      "size": 168431,
+      "digest": "sha256:0fabdec5f6713f4530723f1e6a8c0e8b34563edea015441035613e5232347c85",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/input_axis_residual_v1_manifest.json"
+    },
+    {
+      "id": 596187081,
+      "name": "MAMBA-APACHE-2.0.txt",
+      "size": 11348,
+      "digest": "sha256:760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/MAMBA-APACHE-2.0.txt"
+    },
+    {
+      "id": 596187297,
+      "name": "mamba2-8b-axis-resurface.raw.huff.part-00001-of-00003",
+      "size": 1500000000,
+      "digest": "sha256:ee5d769afbe16fcf00125364d43904caad3a0ae869aec28122116d638335268e",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/mamba2-8b-axis-resurface.raw.huff.part-00001-of-00003"
+    },
+    {
+      "id": 596212405,
+      "name": "mamba2-8b-axis-resurface.raw.huff.part-00002-of-00003",
+      "size": 1500000000,
+      "digest": "sha256:ad54ac0124852324029b25ec054dd0e880fd86b6824905930512e9660ca7d5be",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/mamba2-8b-axis-resurface.raw.huff.part-00002-of-00003"
+    },
+    {
+      "id": 596237734,
+      "name": "mamba2-8b-axis-resurface.raw.huff.part-00003-of-00003",
+      "size": 146417981,
+      "digest": "sha256:522e0093c7477deac154e8eaa6d15f3c17aad23c6136ddc3d2d6ed0553138d6d",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/mamba2-8b-axis-resurface.raw.huff.part-00003-of-00003"
+    },
+    {
+      "id": 596186890,
+      "name": "MODEL_CARD.md",
+      "size": 3662,
+      "digest": "sha256:72ed1da21be1fe67ea30840d436508e28cb6d350e48710350f9843b698a7fd37",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/MODEL_CARD.md"
+    },
+    {
+      "id": 596239773,
+      "name": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "size": 4573028,
+      "digest": "sha256:5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model"
+    },
+    {
+      "id": 596187132,
+      "name": "NVIDIA_MAMBA2_MODEL_CARD.md",
+      "size": 2162,
+      "digest": "sha256:2e83defa8c178beb564f510fff383e6e7876d0e3eee044266318c59493e5ecc3",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/NVIDIA_MAMBA2_MODEL_CARD.md"
+    },
+    {
+      "id": 596240250,
+      "name": "output_axis_residual_v1_manifest.json",
+      "size": 193007,
+      "digest": "sha256:2b6f56e4f1705ddfad18fc58662a28b1f36b7fd63dd4ff540e733e1f0747812f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/output_axis_residual_v1_manifest.json"
+    },
+    {
+      "id": 596187162,
+      "name": "PROJECT-LICENSE",
+      "size": 35149,
+      "digest": "sha256:3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/PROJECT-LICENSE"
+    },
+    {
+      "id": 596187209,
+      "name": "QUIP-SHARP-GPL-3.0.txt",
+      "size": 35149,
+      "digest": "sha256:3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/QUIP-SHARP-GPL-3.0.txt"
+    },
+    {
+      "id": 596239956,
+      "name": "raw_manifest.json",
+      "size": 352665,
+      "digest": "sha256:7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/raw_manifest.json"
+    },
+    {
+      "id": 596240875,
+      "name": "release_manifest.json",
+      "size": 8428,
+      "digest": "sha256:da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/release_manifest.json"
+    },
+    {
+      "id": 596240333,
+      "name": "resurface_readapted_v1_manifest.json",
+      "size": 294171,
+      "digest": "sha256:5660676adb45806052cbaab7f5e50056769c4f5e106d5a49cf148f025bf2b7a8",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/resurface_readapted_v1_manifest.json"
+    },
+    {
+      "id": 596240414,
+      "name": "resurface_soft_continuation_v1_confirm_eval.json",
+      "size": 5171089,
+      "digest": "sha256:306ae9e8ed5e78756f7c8ea39c8db40dbebf3895ced3c5c279722be5100a344b",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/resurface_soft_continuation_v1_confirm_eval.json"
+    },
+    {
+      "id": 596240557,
+      "name": "resurface_soft_continuation_v1_confirm_independent_audit.json",
+      "size": 4523,
+      "digest": "sha256:37e3c9e0e5498335fcbf0a30fbc0cfaee34418c80cf5ea0a1cfd99adad6b56da",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/resurface_soft_continuation_v1_confirm_independent_audit.json"
+    },
+    {
+      "id": 596240609,
+      "name": "resurface_soft_continuation_v1_full_eval.json",
+      "size": 2703975,
+      "digest": "sha256:06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/resurface_soft_continuation_v1_full_eval.json"
+    },
+    {
+      "id": 596240734,
+      "name": "resurface_soft_continuation_v1_full_independent_audit.json",
+      "size": 4653,
+      "digest": "sha256:14a9bb85a95dcdd6429e12409c73336765e546a9ae09b43b2c0bd28bdcc2d515",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/resurface_soft_continuation_v1_full_independent_audit.json"
+    },
+    {
+      "id": 596240773,
+      "name": "source.zip",
+      "size": 2929978,
+      "digest": "sha256:c927ab7898420ad51d42f2da301122dedf2ee29fb8c36c717826771bc29ba21d",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/source.zip"
+    },
+    {
+      "id": 596187250,
+      "name": "THIRD_PARTY.md",
+      "size": 4479,
+      "digest": "sha256:f20938c522dcaaa613361a273d50028bd521f3cd1df1fd92ee095b03b75a29be",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/download/v0.2.0-resurface/THIRD_PARTY.md"
+    }
+  ],
+  "scope": "Anonymous public metadata, actual manifest download and all three weight-part HTTP availability; server digests match streamed uploads. Large weight parts were not downloaded a second time."
+}

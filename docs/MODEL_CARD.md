@@ -1,8 +1,8 @@
 # Mamba-2 8B E8/axis + W4/W5 + soft Resurface
 
 Release: **`v0.2.0-resurface` — research prerelease**. The model has completed
-paired PPL and independent numeric-recall confirmation. Publication is authorized;
-release packaging and public availability are tracked in
+paired PPL and independent numeric-recall confirmation. The [complete3.166GB distribution](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface) is public;
+release packaging and public-download evidence are tracked in
 [RELEASE_READINESS.md](RELEASE_READINESS.md).
 
 This is an independently modified version of
