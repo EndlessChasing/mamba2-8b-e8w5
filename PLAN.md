@@ -119,8 +119,10 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 
 The [rank-4 protocol](docs/LOW_RANK_COMPENSATION_PROTOCOL.md) covers all112
 projections starting from the accepted all-small candidate, with the original
-E8/W5 and small tensors frozen. The discarded GPU smoke passed; formal training
-and quality evaluation remain pending. The [conditional capacity note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
+E8/W5 and small tensors frozen. The discarded GPU smoke passed, and the fixed
+training job launched at2026-09-28 10:28:31UTC; no quality result is established.
+See the [job record and status command](docs/LOW_RANK_RUNNING_JOB.md).
+The [conditional capacity note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
 and [CPU factor representation](docs/LOW_RANK_RESIDUAL_IMPLEMENTATION.md)
 record the storage and native FP16 merge contract. This does not extend the
 completed prototype recipe or promote its failed candidate.
@@ -129,5 +131,6 @@ completed prototype recipe or promote its failed candidate.
 - [x] Prepare256 fresh TRAIN windows with zero prior overlap; fixed1024-update schedule and2,096,128 target exposures.
 - [x] Pass nine bank CPU tests, four driver accounting tests and22-path input preflight.
 - [x] Pass discarded GPU smoke: exact initial native output/replay gradients, one2047-target update in2.062858s without overflow, expected initial B/A gradients and both families after the update,112-file export/native parity and507 unchanged tensor hashes. See [smoke results](docs/LOW_RANK_SMOKE_RESULTS.md).
+- [x] Prepare independent native evaluation, pass six CPU integrity/gate tests and launch the fixed sequential training/validation job after readiness checks. Publication remains held.
 - [ ] Complete exactly1024 successful updates from fresh initialization, with no intermediate PPL selection.
 - [ ] Independently verify final224 masters/112 factor files and native same-process source/all-small/candidate full-validation PPL; apply both predeclared gates. MK remains deferred.

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/run_low_rank_compensation_job.py"
+  ],
+  "cwd": "/home/horde/Mamba2-8B-E8W5",
+  "started_at_unix": 1790591311.2835774,
+  "publication_performed": false,
+  "runner_sha256": "ad4becc8ffec91e71864b57909b4d68696d774f5af5a0904aea6a607332dad94",
+  "checker_sha256": "46cca2177963e8cb673fb404860c4cf29f5823b98263d6b62d5d61947d17a7cb",
+  "output_log": "/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_job.log",
+  "pid": 2451867,
+  "process_identity": {
+    "pid": 2451867,
+    "present": true,
+    "state": "R",
+    "start_ticks": 97259839,
+    "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+    "argv": [
+      "/home/horde/.venvs/lodram/bin/python",
+      "-u",
+      "/home/horde/Mamba2-8B-E8W5/scripts/run_low_rank_compensation_job.py"
+    ],
+    "live": true
+  },
+  "launched": true
+}

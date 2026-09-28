@@ -1,0 +1,60 @@
+{
+  "format": "MAMBA2_LOW_RANK_JOB_CPU_READINESS_V1",
+  "complete": true,
+  "passed": true,
+  "created_utc": "2026-09-28T10:28:55.570Z",
+  "scope": "Launcher/checker CPU controls and read-only prelaunch readiness; no real training/evaluation subprocess launched by this preparation.",
+  "code_sha256": {
+    "scripts/run_low_rank_compensation_job.py": "ad4becc8ffec91e71864b57909b4d68696d774f5af5a0904aea6a607332dad94",
+    "scripts/check_low_rank_job.py": "46cca2177963e8cb673fb404860c4cf29f5823b98263d6b62d5d61947d17a7cb",
+    "tests/test_low_rank_job.py": "748a94e73df9592c916f843a8c08c084d7439ba8b1242d2137a05c174f26984e"
+  },
+  "tests": {
+    "command": "CUDA_VISIBLE_DEVICES='' /home/horde/.venvs/lodram/bin/python -m unittest tests.test_low_rank_job -v",
+    "remote_cwd": "/home/horde/Mamba2-8B-E8W5",
+    "tests": 11,
+    "elapsed_seconds": 0.008,
+    "chunk_id": "03c262",
+    "wall_time_seconds": 0.66744825,
+    "exit_code": 0,
+    "original_token_count": 307,
+    "output": "test_existing_log_blocks_process_launch_and_is_preserved (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_final_evaluation_requires_all_full_arms_and_finite_ppl (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_fixed_checkpoint_gate_and_containment (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_interrupted_runner_terminates_its_child_and_records_exit (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_missing_proc_is_unknown_not_proof_process_stopped (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_nonzero_child_exit_is_saved_and_blocks_next_stage (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_pending_pins_fail_before_opening_inputs (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_proc_identity_requires_starttime_boot_and_exact_argv (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_progress_resets_at_new_arm_and_uses_complete_receipt (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_snapshot_does_not_create_a_missing_job (tests.test_low_rank_job.LowRankJobTests) ... ok\ntest_valid_pins_are_verified_against_actual_bytes (tests.test_low_rank_job.LowRankJobTests) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.008s\n\nOK\n"
+  },
+  "prelaunch": {
+    "command": "CUDA_VISIBLE_DEVICES='' /home/horde/.venvs/lodram/bin/python scripts/run_low_rank_compensation_job.py --check-only",
+    "chunk_id": "833a2a",
+    "wall_time_seconds": 0.720194333,
+    "exit_code": 0,
+    "original_token_count": 126,
+    "output": "{\"ready\": true, \"launch_performed\": false, \"pins\": {\"scripts/train_low_rank_compensation.py\": \"fdcb974e7abcd9379a6da900cd5801839e03973275010185f59235d67d938273\", \"scripts/evaluate_low_rank_compensation.py\": \"f0d1285276d1b4ea3bb132b98cb412a9718289b715d70ee1fa961c08bc3b0bd7\", \"reports/low_rank_compensation_v1_smoke.json\": \"dacedf6401f082d172da31a5737c11d038998c939988999099f89b9620de0132\", \"docs/LOW_RANK_COMPENSATION_PROTOCOL.md\": \"b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2\"}}\n"
+  },
+  "status_snapshot": {
+    "command": "/home/horde/.venvs/lodram/bin/python scripts/check_low_rank_job.py",
+    "chunk_id": "cf62b8",
+    "wall_time_seconds": 0.576564792,
+    "exit_code": 0,
+    "original_token_count": 51,
+    "output": "{\n  \"observed_at_unix\": 1790591282.4507926,\n  \"job_file\": \"/home/horde/Mamba2-8B-E8W5/reports/low_rank_compensation_v1_job.json\",\n  \"status\": \"not_started\",\n  \"error\": null,\n  \"milestone_reached\": null\n}\n"
+  },
+  "earlier_fixture_failure": {
+    "scope": "First local8-test run before final11-test suite",
+    "failed_tests": 1,
+    "reason": "macOS /var temp path resolves to /private/var; test expected uncanonicalized path instead of documented resolved checkpoint path.",
+    "resolution": "Corrected fixture to compare checkpoint.resolve(); launcher behavior unchanged by this fixture fix."
+  },
+  "verification": [
+    "PID start ticks, boot ID and exact argv reject process reuse/mismatch",
+    "Zombie process is not reported live",
+    "Missing /proc is unknown, not proof of process termination",
+    "Pending pins reject before opening inputs",
+    "Changed executable bytes reject",
+    "Existing log is preserved and blocks subprocess",
+    "Mock nonzero child exit is recorded and stops stage",
+    "Mock interrupted runner terminates its own child and records exit",
+    "Checkpoint must be fixed1024 completed updates and inside work directory",
+    "Evaluation requires exact three arms, full130windows/264764targets and finite PPL",
+    "Current-arm window counts reset after next Scoring marker"
+  ],
+  "launch_performed": false,
+  "commit_performed": false
+}
