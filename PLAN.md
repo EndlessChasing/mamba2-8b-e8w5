@@ -112,3 +112,8 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 - [x] Complete the bounded decoder performance probe. The faster explicit-MM alternative failed decoded FP16 bitwise parity; retain the original validated decoder unchanged. See [probe results](docs/PROTOTYPE_DECODER_PERFORMANCE.md).
 - [ ] Complete the declared 128-update recipe and independently verify final export, fixed baseline and actual added bytes. The fixed job is running after its 2026-09-28 04:21 UTC launch; see the [job record and read-only status command](docs/PROTOTYPE_RUNNING_JOB.md). No final export or prototype quality result is established yet.
 - [ ] Run complete paired validation for source/best baseline/reloaded prototype candidate; retain both meaningful-gain and source+5% criteria. No prototype quality result exists yet.
+
+While the fixed prototype job runs, the [conditional low-rank repair note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
+records exact additional factor capacities and a possible native FP16 training
+contract. This is preparation only. A new experiment has not been selected,
+implemented or measured; the next decision waits for the prototype result.
