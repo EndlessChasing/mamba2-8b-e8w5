@@ -181,3 +181,12 @@ completed prototype recipe or promote its failed candidate.
 - [x] Reload the primary from actual files and complete source/baseline/primary validation on130 windows/264,764 targets:7.334175947 /8.359867548 /8.109428666.127 windows improve,3 worsen;1% improvementPASS, source+5% targetFAIL at10.57041% gap.
 - [x] Finish native507-tensor audits, final baseline restoration and bound-file rechecks; terminal report complete, exit0 and evaluator process absent. See [final result and receipts](docs/INPUT_AXIS_RESIDUAL_RESULTS.md).
 - [x] Retain the measured improvement and its limits: primary raw data3,021,487,451 bytes are4.67715% larger, no complete axis package/test/MK/promotion/publication. Keep the historical accepted all-small distribution unchanged.
+
+## Output-axis residual experiment
+
+- [x] Freeze the [output-axis protocol](docs/OUTPUT_AXIS_RESIDUAL_PROTOCOL.md) before implementation: retain the measured input-axis candidate and enhance exactly 56 output projections, using original weights/Hessians and the same fixed axis4 recipe.
+- [x] Implement and independently review the separate output quantizer/verifier, preserving the completed input experiment and original codec/runtime.
+- [ ] Complete the CUDA-hidden CPU preflight and all 56 output matrices, verifying stored codes, finite FP16 reconstruction and actual replacement-byte accounting.
+- [ ] Independently score paired input-only baseline, output-enhanced candidate and exact baseline repeat on the same 64 observed development windows.
+- [ ] If the fixed 1% improvement gate passes, run complete source/baseline/candidate validation on all 130 windows / 264,764 targets; otherwise retain the negative result and stop this recipe.
+- [ ] Record actual quality and storage, including the separate source-plus-5% target. Expected extra code bytes are 117,440,512 (112 MiB); the new PPL and package size are unmeasured. MK and publication remain deferred.
