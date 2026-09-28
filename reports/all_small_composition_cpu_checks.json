@@ -1,0 +1,43 @@
+{
+  "format": "MAMBA2_ALL_SMALL_COMPOSITION_CPU_CHECKS_V1",
+  "complete": true,
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python tests/test_compose_all_small_package.py -v",
+  "host": "horde-gpu",
+  "device": "CPU; CUDA_VISIBLE_DEVICES empty",
+  "exit_code": 0,
+  "tests_passed": 5,
+  "tests_skipped": 0,
+  "unittest_elapsed_seconds": 0.11,
+  "checks": [
+    "actual393 exported FP16 tensors equal completed full-validation hash ledger",
+    "dtype/shape/nonfinite/missing-key and signed-zero rejection",
+    "hardlink/copy equality, exclusive creation, source content/mode/mtime preserved",
+    "flat inventory rejects unexpected prototype member and symlink",
+    "fresh manifest excludes stale parent metrics, preserves archived runtime code-hash contract, and counts own bytes"
+  ],
+  "real_small_export_sha256": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+  "quality_report_sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206",
+  "actual_small_tensor_count": 393,
+  "actual_small_parameter_count": 3580928,
+  "actual_small_tensor_bytes": 7161856,
+  "full_composition_performed": false,
+  "full_inherited_file_rehash_performed": false,
+  "huffman_pack_performed": false,
+  "gpu_model_load_performed": false,
+  "quality_remeasured": false,
+  "files": {
+    "scripts/compose_all_small_package.py": {
+      "bytes": 17241,
+      "sha256": "2c1ffe05246e33ead207550f31776d6f54bb56dd7a17defc56c48c976b61e91e"
+    },
+    "tests/test_compose_all_small_package.py": {
+      "bytes": 6988,
+      "sha256": "b38d8649e79592bbe0acb59840a98a46434c7a89fb79e4610d7603e4f7cf2258"
+    },
+    "docs/ALL_SMALL_COMPOSITION.md": {
+      "bytes": 4518,
+      "sha256": "3ab4bd21fe9cf1b0b5b7cbc3e8b8e3b74a0598adf5e27694ad880b32c72d7149"
+    }
+  },
+  "scope": "Focused helper CPU tests and actual small export identity. Full117-file composition, trusted Huffman readback, restored native inference and packaging remain separate execution steps."
+}

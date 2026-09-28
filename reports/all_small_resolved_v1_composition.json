@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "output": "/home/horde/Mamba2-8B-E8W5/artifacts/all_small_resolved_v1",
+  "manifest_sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8",
+  "data_files": 117,
+  "actual_small_tensors_verified": 393,
+  "inherited_files_verified": 116,
+  "frozen_large_tensor_hashes_bound_to_evaluation": 114,
+  "parameter_tensors": 507,
+  "parameters": 8236999680,
+  "quality_report_sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206",
+  "data_file_bytes": 2886482462,
+  "manifest_bytes": 246900,
+  "raw_package_bytes": 2886729362,
+  "materialization_counts": {
+    "hardlink": 117,
+    "copy": 0
+  },
+  "gpu_used": false,
+  "full_pack_performed": false,
+  "quality_remeasured": false,
+  "note": "No source checkpoint loaded. Output is immutable by workflow, not an OS write lock; hardlinks share input inodes and must never be edited."
+}
