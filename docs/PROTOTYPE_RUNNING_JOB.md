@@ -16,6 +16,13 @@ These PIDs identify this launch and are not a permanent indication of liveness.
 The runner rejects existing outputs. Do not repeat this command to monitor it.
 Read the receipts and logs instead:
 
+```bash
+python scripts/prototype_job_status.py
+```
+
+This read-only Linux helper checks actual process command lines and states in
+`/proc` as well as receipts. A receipt alone is not evidence that a job is live.
+
 - `reports/prototype_compensation_v1_job.json`: process IDs, stage and terminal status.
 - `reports/prototype_compensation_v1_train.json`: training binding and successful update count.
 - `reports/prototype_compensation_v1_train.log`: detailed training output.
