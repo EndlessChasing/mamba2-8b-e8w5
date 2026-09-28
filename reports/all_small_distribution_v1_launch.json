@@ -1,0 +1,23 @@
+{
+  "pid": 1503873,
+  "launched_at_unix": 1790571850.1771488,
+  "command": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba/scripts/build_all_small_distribution_job.py",
+    "--raw-dir",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/all_small_resolved_v1",
+    "--tokenizer",
+    "/home/horde/Mamba2-8B-E8W5/models/source/mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+    "--output",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/release-all-small-v1",
+    "--restored-dir",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/restored-all-small-v1",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/all_small_distribution_v1_job.json"
+  ],
+  "report": "/home/horde/Mamba2-8B-E8W5/reports/all_small_distribution_v1_job.json",
+  "log": "/home/horde/Mamba2-8B-E8W5/reports/all_small_distribution_v1.launch.log",
+  "snapshot": "/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba",
+  "publication_performed": false
+}

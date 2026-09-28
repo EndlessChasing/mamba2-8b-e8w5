@@ -1,0 +1,21 @@
+{
+  "format": "MAMBA2_ALL_SMALL_DISTRIBUTION_FAILURE_V1",
+  "job_complete": false,
+  "build_exit_code": 1,
+  "source_snapshot": "/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba",
+  "snapshot_provenance_sha256": "82b1810f5d76d2219a342e77b7dd95a6e4ca9a88349d722a0ff2a17d9e340340",
+  "failure_stage": "copy licenses after full weight-container readback and pinned identity validation",
+  "failure_cause": "shutil.copytree retained read-only source modes, so the following PROJECT-LICENSE copy could not open its destination for writing",
+  "build_log_sha256": "5a7d08b8a6329544f2f1f3a7986a6339efa0fd2b6f3a37c2b521fb680937fa35",
+  "build_log_bytes": 8906,
+  "traceback": "File \"/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba/scripts/package_release.py\", line 546, in <module>\n    main()\n  File \"/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba/scripts/package_release.py\", line 539, in main\n    result = (build_release(args) if args.command == \"build\" else\n  File \"/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba/scripts/package_release.py\", line 363, in build_release\n    shutil.copyfile(ROOT / \"LICENSE\", staging / \"licenses\" / \"PROJECT-LICENSE\")\n  File \"/usr/lib/python3.10/shutil.py\", line 256, in copyfile\n    with open(dst, 'wb') as fdst:\nPermissionError: [Errno 13] Permission denied: '/home/horde/Mamba2-8B-E8W5/artifacts/release-all-small-v1.building/licenses/PROJECT-LICENSE'",
+  "weight_container_bytes": 2660171471,
+  "weight_container_sha256": "46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd",
+  "files_verified": 118,
+  "pinned_identity_verified": true,
+  "full_distribution_complete": false,
+  "restore_executed": false,
+  "publication_performed": false,
+  "gpu_used": false,
+  "ended_at_unix": 1790572088.4526775
+}

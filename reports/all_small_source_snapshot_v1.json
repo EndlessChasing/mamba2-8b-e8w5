@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "remote_snapshot": "/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba",
+  "source_file_count": 200,
+  "source_file_bytes": 19673487,
+  "source_ledger_sha256": "abdf91a88e0ac27331d34654ede7568a05e4838e604d2a4fa933adc64cfeda9f",
+  "snapshot_provenance_sha256": "82b1810f5d76d2219a342e77b7dd95a6e4ca9a88349d722a0ff2a17d9e340340"
+}

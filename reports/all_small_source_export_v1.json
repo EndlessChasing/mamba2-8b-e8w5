@@ -1,0 +1,9 @@
+{
+  "exported_git_commit": "a695e1f3c19942b00a876bd73570b2142d8cf1ba",
+  "exported_git_tree": "fc1fefd49149768dd965efe65a6c0887c6e095c7",
+  "exported_archive_sha256": "3dfad97b25f21d3b8fa30f31112e7b2be9bdeaf33f8934788ae96b2e6cabea34",
+  "exported_archive_bytes": 4847697,
+  "local_archive": "/var/folders/4q/66t70g5d58lcbfkvt6nstqjr0000gp/T/mamba2-all-small-source-w0222pe4/a695e1f3c19942b00a876bd73570b2142d8cf1ba.tar.gz",
+  "remote_archive": "/home/horde/mamba2_source_snapshots/archives/a695e1f3c19942b00a876bd73570b2142d8cf1ba.tar.gz",
+  "remote_snapshot": "/home/horde/mamba2_source_snapshots/a695e1f3c19942b00a876bd73570b2142d8cf1ba"
+}
