@@ -1,0 +1,29 @@
+{
+  "status": "finished",
+  "pid": 3537994,
+  "started_unix": 1790613732.6169941,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "scripts/prepare_resurface_data.py",
+    "--split",
+    "dev",
+    "--report",
+    "reports/resurface_readapted_v1_prepare_dev.json"
+  ],
+  "code_pins": {
+    "scripts/prepare_resurface_data.py": "6cedde5d522f0e477016ffb4fb613c039b657290143f351495d15d89118456dd",
+    "mamba_e8w5/resurface_data.py": "e813a382c25e99529eaddedb78aecd122b3c875903831f485c1cdf054ef7760c",
+    "docs/RESURFACE_READAPTED_TRAINING_PROTOCOL.md": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6"
+  },
+  "required_reports": {},
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99501972,
+  "exit_code": 0,
+  "finished_unix": 1790613735.679641,
+  "wall_seconds": 3.0626471042633057,
+  "log_sha256": "f976223b1e4cb5228ebb1c9b4ae45d5016d306c931b0570fb60016969a8d4407",
+  "report_sha256": "0cb624631aabfbd446b2d043237796fc4ca596e5ca50d90deacd62a7612dcb99",
+  "report_bytes": 3792,
+  "report_complete": true
+}

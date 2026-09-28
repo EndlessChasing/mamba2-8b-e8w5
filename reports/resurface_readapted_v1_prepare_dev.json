@@ -1,0 +1,104 @@
+{
+  "format": "MAMBA2_RESURFACE_DATA_PREPARATION_V1",
+  "complete": true,
+  "split": "dev",
+  "code_sha256": {
+    "/home/horde/Mamba2-8B-E8W5/docs/RESURFACE_READAPTED_TRAINING_PROTOCOL.md": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6",
+    "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/resurface_data.py": "e813a382c25e99529eaddedb78aecd122b3c875903831f485c1cdf054ef7760c",
+    "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+    "/home/horde/Mamba2-8B-E8W5/scripts/prepare_resurface_data.py": "6cedde5d522f0e477016ffb4fb613c039b657290143f351495d15d89118456dd"
+  },
+  "gpu_used": false,
+  "manifest": {
+    "format": "MAMBA2_RESURFACE_NUMERIC_DATA_V1",
+    "complete": true,
+    "split": "dev",
+    "contract": {
+      "seed": 834901,
+      "key_range": [
+        100000,
+        180000
+      ],
+      "value_ranges": [
+        [
+          600000,
+          680000
+        ]
+      ],
+      "samples_per_cell": 64,
+      "normal_count": 384,
+      "removed_count": 384,
+      "positions": "floor(sample*(N-1)/63)",
+      "control_key_base": 190000,
+      "control_value_base": 690000,
+      "generator": "frozen public-mamba8-mk-v1 validation, samples_per_cell=64"
+    },
+    "sizes": [
+      16,
+      64
+    ],
+    "templates": [
+      0,
+      1,
+      2
+    ],
+    "proof": {
+      "split": "dev",
+      "normal_count": 384,
+      "removed_count": 384,
+      "unique_prompts": 768,
+      "exact_binding_and_control_absence": true,
+      "raw_rows_sha256": "3e09940f2fdf64cb9f4069fe22d183df2d1c49a48806a24085d8bc80320a3e3b",
+      "template_scope": "Same three template families; only instances/key-value ranges are separated."
+    },
+    "protocol_sha256": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "helper_source_sha256": "e813a382c25e99529eaddedb78aecd122b3c875903831f485c1cdf054ef7760c",
+    "python_version": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+    "value_pool_statistics": {
+      "pool_cardinality": 80000,
+      "normal_binding_value_occurrences": 15360,
+      "normal_target_value_occurrences": 384,
+      "unique_normal_values": 13945,
+      "bands": [
+        {
+          "range_half_open": [
+            600000,
+            680000
+          ],
+          "pool_cardinality": 80000,
+          "binding_value_occurrences": 15360,
+          "target_value_occurrences": 384
+        }
+      ],
+      "sampling": "Uniform without replacement within each prompt over the pooled bands; not exact per-prompt band balancing.",
+      "paired_removed_controls_included_in_draw_totals": false
+    },
+    "public_generator_sha256": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+    "files": {
+      "raw.jsonl": {
+        "bytes": 1456600,
+        "sha256": "3e09940f2fdf64cb9f4069fe22d183df2d1c49a48806a24085d8bc80320a3e3b"
+      },
+      "tokens.jsonl": {
+        "bytes": 3598856,
+        "sha256": "2ab1f8ffa2adf385b4df65778c9d19371d8fea1024b32e007032c0ebed626bf8"
+      }
+    },
+    "row_count": 768,
+    "prompt_tokens_total": 517120,
+    "prompt_tokens_max": 1236,
+    "answer_target_tokens": 0,
+    "answer_token_count_histogram": {},
+    "automatic_bos_eos": false,
+    "full_vocabulary": 256000,
+    "evaluation_supervised_targets_stored": false,
+    "confirmation_loaded_for_training": false
+  },
+  "manifest_path": "/home/horde/Mamba2-8B-E8W5/training_data/resurface_readapted_v1/dev/manifest.json",
+  "manifest_sha256": "a6d870fe3e400d892d7eb55aab62d8f15f2d61b6a922d6590ab53fcfcfa0961a",
+  "manifest_bytes": 2117,
+  "exact_raw_and_tokenized_roundtrip": true,
+  "cuda_initialized": false,
+  "elapsed_seconds": 1.5928451699437574
+}

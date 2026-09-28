@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "script_sha256": "ec045368583b6e49f484341b2d718658bb59e8d11050710377742752c1c67294",
+  "command": "ssh horde-gpu 'cd /home/horde/Mamba2-8B-E8W5 && CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python -m mamba_e8w5.resurface_loss --self-test'",
+  "exit_code": 0,
+  "tool_wall_time_seconds": 2.31418825,
+  "result": {
+    "complete": true,
+    "tests": [
+      "masked MK: direct gradient, short tail, gate branch and scale once",
+      "prose: direct gradient, short tail, gate branch and scale once",
+      "Prompt-label changes cannot affect answer-only CE",
+      "Reject nonfinite router logits even when MK closure coefficient is zero"
+    ],
+    "passed": 4,
+    "cuda_initialized": false,
+    "scope": "CPU small vocabulary loss algebra only"
+  },
+  "prior_finite_path_suite": {
+    "source_sha256": "7d657dab55634712ed8b6bc16b68871f4af69b5c083371edb0f78c45dfc1cd90",
+    "passed": 3,
+    "exit_code": 0,
+    "tool_wall_time_seconds": 2.368054959,
+    "cuda_initialized": false,
+    "change": "Added one nonfinite captured-gate guard and its rejection test; finite objective unchanged."
+  }
+}
