@@ -188,6 +188,7 @@ completed prototype recipe or promote its failed candidate.
 - [x] Implement and independently review the separate output quantizer/verifier, preserving the completed input experiment and original codec/runtime.
 - [x] Complete the CUDA-hidden CPU preflight: 314 bound files, 56 output Hessians and 61 inherited files pass; evaluator CPU tests and independent code review also pass.
 - [x] Complete all 56 output matrices with exact stored-index and finite FP16 readback; process exited 0. New files total 588,217,549 bytes and replace 470,776,208 bytes. Resolved raw candidate data are 3,138,928,792 bytes, adding 117,441,341 bytes including changed headers.
+- [x] Pass the independent actual-overlay CPU preflight with 392 bound files, full paired-model tensor ledgers and no CUDA initialization; start the native PPL evaluation.
 - [ ] Independently score paired input-only baseline, output-enhanced candidate and exact baseline repeat on the same 64 observed development windows.
 - [ ] If the fixed 1% improvement gate passes, run complete source/baseline/candidate validation on all 130 windows / 264,764 targets; otherwise retain the negative result and stop this recipe.
 - [ ] Record actual quality and storage, including the separate source-plus-5% target. Measured extra code bytes are 117,440,512 (112 MiB), plus 829 bytes of header growth. New PPL and complete package size remain unmeasured; MK and publication remain deferred.
