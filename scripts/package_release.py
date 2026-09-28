@@ -32,6 +32,7 @@ DEFAULT_PART_BYTES = 1_500_000_000
 BUFFER_BYTES = 8 << 20
 TOKENIZER_NAME = "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model"
 TOKENIZER_SHA256 = "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+ALL_SMALL_FORMAT = "MAMBA2_E8W5_ALL_SMALL_RESOLVED_V1"
 
 
 def serialize(value):
@@ -83,8 +84,33 @@ def software_snapshot(path):
         if source.stat().st_size > 16 << 20:
             raise ValueError(f"Unexpected large source snapshot file: {relative}")
         files.append((relative.as_posix(), source.read_bytes()))
-    index = {"git_commit": git_value("rev-parse", "HEAD"),
-             "git_worktree_dirty": bool(git_value("status", "--porcelain")),
+    # An exported directory can sit below an unrelated Git checkout. Only the
+    # repository's own .git entry permits reporting live Git metadata.
+    git_present = (ROOT / ".git").exists()
+    git_commit = git_value("rev-parse", "HEAD") if git_present else None
+    git_status = git_value("status", "--porcelain") if git_commit is not None else None
+    provenance = None
+    provenance_name = "SNAPSHOT_PROVENANCE.json"
+    provenance_path = ROOT / provenance_name
+    if provenance_path.is_symlink():
+        raise ValueError("Snapshot provenance must be a regular immutable file")
+    if provenance_path.exists():
+        data = dict(files)[provenance_name]
+        declared = json.loads(data)
+        keys = {"exported_git_commit": 40, "exported_git_tree": 40, "exported_archive_sha256": 64}
+        for name, length in keys.items():
+            value = declared.get(name)
+            if not isinstance(value, str) or len(value) != length or any(c not in "0123456789abcdef" for c in value):
+                raise ValueError(f"Invalid snapshot provenance: {name}")
+        digest = hashlib.sha256(data).hexdigest()
+        if sha256_file(provenance_path) != digest:
+            raise ValueError("Snapshot provenance changed while collecting source")
+        provenance = {"path": provenance_name, "bytes": len(data), "sha256": digest,
+            **{name: declared[name] for name in keys},
+            "scope": "Export identity declared by the snapshot producer; this builder hashes the provenance file, not the external exported archive."}
+    index = {"git_commit": git_commit,
+             "git_worktree_dirty": None if git_status is None else bool(git_status),
+             "git_metadata_present": git_present, "snapshot_provenance": provenance,
              "scope": "Exact corresponding source bytes, including uncommitted working files.",
              "files": [{"path": name, "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
                        for name, data in files]}
@@ -168,9 +194,70 @@ def finalize_manifest(directory, manifest):
     raise RuntimeError("Manifest byte accounting failed to converge")
 
 
-def make_model_card(raw, quality_paths):
+def validate_all_small_quality(raw, report, report_sha):
+    """Require the supplied score to describe the exact resolved all-small data."""
+    metadata, binding = raw["quality"], raw["binding"]
+    if report_sha != metadata["report_sha256"] or report_sha != binding["quality_report_sha256"]:
+        raise ValueError("All-small release requires its exact bound quality report SHA")
+    arm = metadata["arm"]
+    if report.get("complete") is not True or report.get("same_process") is not True or arm != "small_e8w5":
+        raise ValueError("Expected completed same-process small_e8w5 quality report")
+    inputs = report["inputs"]
+    for key, expected in (("parent_manifest", binding["parent_manifest_sha256"]),
+                          ("small_manifest", binding["small_manifest_sha256"]),
+                          ("small_export", binding["small_values_sha256"])):
+        if inputs[key]["sha256"] != expected:
+            raise ValueError(f"All-small quality input binding differs: {key}")
+    if (raw["files"]["other_fp16.pt"]["sha256"] != binding["small_values_sha256"]
+            or report["parent_package_receipt"]["manifest_sha256"] != binding["parent_manifest_sha256"]
+            or report["small_overlay_receipt"]["parent_manifest_sha256"] != binding["parent_manifest_sha256"]
+            or report["small_overlay_receipt"]["overlay_manifest_sha256"] != binding["small_manifest_sha256"]):
+        raise ValueError("All-small quality/export identity differs")
+    result, protocol = report["results"][arm], metadata["protocol"]
+    if (result["ppl"] != metadata["ppl"] or result["nll"] != metadata["nll"]
+            or result["target_tokens"] != protocol["target_tokens"]
+            or len(result["windows"]) != protocol["number_of_windows"]
+            or report["protocol"] != protocol or report["dataset"] != metadata["dataset"]
+            or report["window_plan_sha256"] != metadata["window_plan_sha256"]):
+        raise ValueError("Selected all-small PPL/NLL/protocol differs from raw metadata")
+    source = report["results"]["source_fp16"]
+    if (source["target_tokens"] != result["target_tokens"]
+            or len(source["windows"]) != len(result["windows"])):
+        raise ValueError("Model-card source and candidate scopes differ")
+    return result, source
+
+
+def make_model_card(raw, quality_paths, quality_reports=None):
     quality = ("Supplied measurement reports: " + ", ".join(f"[{p}]({p})" for p in quality_paths)
                if quality_paths else "No quality report was supplied. PPL and recall remain unmeasured in this release.")
+    candidate_details = ""
+    if raw.get("format") == ALL_SMALL_FORMAT:
+        candidate_details = (f"\nThis all-small candidate contains {raw['composition']['replacement_tensors']:,} trained\n"
+            f"small FP16 tensors. Its {len(raw['matrices'])} E8 projection files and\n"
+            f"{len(raw['vocabularies'])} W5 vocabulary files are unchanged from the original E8/W5 parent.\n")
+        metadata = raw["quality"]
+        report_sha = metadata["report_sha256"]
+        if report_sha != raw["binding"]["quality_report_sha256"]:
+            raise ValueError("All-small model-card quality bindings differ")
+        report = (quality_reports or {}).get(report_sha)
+        if report is None:
+            candidate_details += ("The exact completed report bound by this manifest was not supplied.\n"
+                "Candidate/source PPL figures and the source-relative target are omitted.\n")
+        else:
+            arm = metadata["arm"]
+            result, source = validate_all_small_quality(raw, report, report_sha)
+            gap = result["ppl"] / source["ppl"] - 1
+            limit = 1.05 * source["ppl"]
+            status = "met" if result["ppl"] <= limit else "unmet"
+            candidate_details += (f"\nSelected report arm: **`{arm}`**. Full-validation PPL is\n"
+                f"**{result['ppl']:.9f}** over **{result['target_tokens']:,} targets** in\n"
+                f"**{len(result['windows'])} windows**. Same-process source FP16 PPL is\n"
+                f"**{source['ppl']:.9f}**; the candidate's relative change is **{gap:+.4%}**.\n"
+                f"The source+5% target (PPL <= {limit:.9f}) is **{status}**.\n"
+                "These are the supplied prior validation measurements; packaging does not rerun PPL.\n"
+                "Validation has informed development, so these are not untouched test results.\n")
+        candidate_details += ("No MK or test score is claimed for this trained all-small candidate.\n"
+            "Original-candidate MK/test results describe the earlier model.\n")
     return f"""# Mamba-2 8B E8/W5 — experimental quantized release
 
 This is an independent modified version of NVIDIA's pure Mamba-2 8B base model.
@@ -182,6 +269,7 @@ lossy relative to the original floating-point checkpoint.
 ## Quality and scope
 
 {quality}
+{candidate_details}
 
 The packaging tool does not assign a quality pass, claim equal-quality accuracy,
 or certify a globally smallest model. Inspect the supplied protocol, exact
@@ -242,6 +330,8 @@ def build_release(args):
     for path, role in supplied:
         report = json.loads(path.read_text())
         if role == "quality":
+            if raw.get("format") == ALL_SMALL_FORMAT:
+                validate_all_small_quality(raw, report, sha256_file(path))
             if report.get("complete") is False:
                 raise ValueError(f"Incomplete quality report: {path}")
             for key in ("package_receipt", "candidate_package"):
@@ -258,6 +348,10 @@ def build_release(args):
     receipt = verify_container(container, trusted_directory=raw_dir)
     if sha256_file(raw_dir / "manifest.json") != raw_manifest_sha:
         raise ValueError("Raw manifest changed during packaging")
+    if raw.get("format") == ALL_SMALL_FORMAT:
+        # Function-local import avoids the wrapper's validate_raw import cycle.
+        from scripts.pack_resolved_weights import verify_pinned_identity
+        receipt["pinned_candidate_identity"] = verify_pinned_identity(raw_dir, container, raw_manifest_sha, receipt)
     receipt["container"] = CONTAINER_NAME
     write_json(staging / "container_verification.json", receipt)
     weight_parts = (split_container(container, args.split_bytes) if args.split_bytes
@@ -269,6 +363,7 @@ def build_release(args):
         shutil.copyfile(ROOT / "LICENSE", staging / "licenses" / "PROJECT-LICENSE")
     reports = []
     quality_paths = []
+    quality_reports = {}
     for number, (path, role) in enumerate(supplied, 1):
         path = path.resolve()
         json.loads(path.read_text())  # Reports are copied verbatim, never executed.
@@ -279,8 +374,12 @@ def build_release(args):
         reports.append({"path": name, "kind": role})
         if role == "quality":
             quality_paths.append(name)
+            copied_sha, copied_report = sha256_file(target), json.loads(target.read_text())
+            if raw.get("format") == ALL_SMALL_FORMAT:
+                validate_all_small_quality(raw, copied_report, copied_sha)
+            quality_reports[copied_sha] = copied_report
     write_json(staging / "raw_manifest.json", raw)
-    (staging / "MODEL_CARD.md").write_text(make_model_card(raw, quality_paths))
+    (staging / "MODEL_CARD.md").write_text(make_model_card(raw, quality_paths, quality_reports))
     source_index = software_snapshot(staging / "source.zip")
     roles = {part["path"]: "weight-container-part" for part in weight_parts}
     roles.update({TOKENIZER_NAME: "tokenizer", "config.json": "configuration", "source.zip": "corresponding-source",
@@ -299,7 +398,9 @@ def build_release(args):
         "quality": {"status": "reports-attached-no-automatic-pass" if quality_paths else "unmeasured",
                     "reports": quality_paths, "smallest_claim": "not certified by packaging"},
         "software": {"source_archive": "source.zip", "git_commit": source_index["git_commit"],
-                     "git_worktree_dirty": source_index["git_worktree_dirty"]},
+                     "git_worktree_dirty": source_index["git_worktree_dirty"],
+                     "git_metadata_present": source_index["git_metadata_present"],
+                     "snapshot_provenance": source_index["snapshot_provenance"]},
         "assets": assets, "sizes": {"weight_container_bytes": receipt["actual_file_bytes"],
             "tokenizer_bytes": (staging / TOKENIZER_NAME).stat().st_size,
             "configuration_bytes": (staging / "config.json").stat().st_size,

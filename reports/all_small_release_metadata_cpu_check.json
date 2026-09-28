@@ -1,0 +1,29 @@
+{
+  "format": "MAMBA2_ALL_SMALL_RELEASE_METADATA_CPU_CHECK_V1",
+  "complete": true,
+  "exit_code": 0,
+  "scope": "Function-level CPU check using actual bound all-small report and a synthetic no-Git snapshot fixture; functions compiled directly from current script AST to avoid unrelated torch imports on Mac.",
+  "script_sha256": "439065e59a800fb23c48ce6fb21c011997947d45be0902b8075ed99e84266c5d",
+  "quality_report_sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206",
+  "raw_manifest_sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8",
+  "checks": {
+    "model_card_selected_arm": "small_e8w5",
+    "selected_ppl": 8.359867548009992,
+    "targets": 264764,
+    "windows": 130,
+    "source_relative_target": "unmet",
+    "development_validation_limitation_present": true,
+    "quality_mutations_rejected": [
+      "wrong SHA",
+      "different NLL",
+      "different small export binding"
+    ],
+    "missing_bound_report_has_no_numeric_comparison": true,
+    "git_metadata_absent_is_null": true,
+    "synthetic_snapshot_provenance_archived_and_hashed": true
+  },
+  "gpu_used": false,
+  "full_pack_performed": false,
+  "runtime_or_training_modified": false,
+  "pinned_identity_call_scope": "Code reviewed; function-local build hook after complete readback and before split. Full build not run by this check."
+}
