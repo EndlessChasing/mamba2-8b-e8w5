@@ -1,0 +1,56 @@
+{
+  "format": "MAMBA2_LOW_RANK_TRAINING_CPU_TESTS_V1",
+  "complete": true,
+  "passed": true,
+  "code_sha256": {
+    "mamba_e8w5/low_rank_training.py": "1948c89100750477e2bacda8013c97ff3e2ccbde0e444b961092f28c96c7f503",
+    "tests/test_low_rank_training.py": "22d744f30244569957998e3ff0df311eeef95a809b90fbf50f1bfc0ba2f72b03"
+  },
+  "execution": {
+    "host": "horde-gpu",
+    "directory": "/home/horde/Mamba2-8B-E8W5",
+    "command": "CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python -m unittest tests.test_low_rank_training -v",
+    "python": "3.10.12",
+    "torch": "2.11.0+cu128",
+    "tests_run": 9,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0,
+    "unittest_elapsed_seconds": 0.957,
+    "environment_probe_cuda_initialized": false,
+    "gpu_operations": false
+  },
+  "checks": [
+    "Dedicated CPU generator and exact A initialization order; B zero; shared base storage; unchanged global RNG; full 112-projection capacity and 1024-window schedule",
+    "Zero-correction native output equality; initially zero A gradients and nonzero B gradients; both factor families nonzero after one toy SGD update; unchanged base content hashes",
+    "Independent whole-backbone native functional output and all factor gradients equal bank output/gradients with and without checkpoint replay",
+    "Single-block checkpoint/non-checkpoint output, residual, input gradient and local factor-gradient equality; other-block factor gradients absent",
+    "Explicit FP16 factor rounding changes the constructed fixture output; merged output equals independent CPU factor-format merge; analytical ordinary cast gradients match; no base gradient",
+    "All toy factor files match rounded FP32 masters after strict disk readback; native hidden/logit parity; original references and content restored after success and intentional parity failure",
+    "Staged full-vocabulary CE/KL with a short final chunk matches full loss and factor gradients within declared toy tolerance; loss scaling applied once",
+    "Rank, seed, factor dtype/shape, FP32 checkpoint shape/finiteness and FP16 representability reject invalid inputs; invalid state loads leave all masters unchanged",
+    "Frozen base mutation is detected; local autocast suppression preserves the caller context/global precision; mocked CUDA TF32-on guard rejects without CUDA initialization",
+    "Gradient minimum, maximum and maximum_absolute match finite gradients and are null for overflow; bitwise export parity rejects signed-zero-only differences and restores all references"
+  ],
+  "preliminary_fixture_failure": {
+    "tests_run": 9,
+    "failed_test": "test_fp16_rounding_and_manual_gradient_of_native_merge",
+    "reason": "The first fixture's rounded outputs coincided with and without factor rounding, so its intended distinction assertion failed.",
+    "correction": "Use FP32 factors containing 1.0003, which cast to FP16 1; four unrounded products produce a different final FP16 value.",
+    "implementation_changed": false,
+    "final_suite_rerun_passed": true
+  },
+  "limits": [
+    "CPU toy-model proofs only; not a native CUDA Mamba smoke, full-model training run, or quality evaluation",
+    "CUDA precision guard was exercised with a mocked flag, not CUDA matrix arithmetic",
+    "The bank retains dense FP16 base weights and uses transient dense merges/gradients; no compact-residency or GPU-memory-fit claim",
+    "No frozen codec, runtime, factor format, norm, small, or prototype training file changed; no training CLI, GPU job, publication, or commit"
+  ],
+  "supersedes_initial_cpu_pass": {
+    "implementation_sha256": "7e830d8d0e8d01f14402abafc94228f32a51b54811114981bbb3dea42a8c762e",
+    "tests_sha256": "39735c888c1e71830fdb91282e1b71d328426975476c75a54a8d97b25c137453",
+    "tests_run": 9,
+    "elapsed_seconds": 0.878,
+    "reason": "Pre-smoke gradient range receipt and strict signed-zero-sensitive export hash comparison"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "format": "MAMBA2_LOW_RANK_DATA_PREPARATION_CPU_RECEIPT_V1",
+  "complete": true,
+  "passed": true,
+  "created_utc": "2026-09-28T10:14:35.795Z",
+  "scope": "Fresh TRAIN data preparation only; target exposures below describe the planned schedule, not completed training.",
+  "command": "CUDA_VISIBLE_DEVICES=\"\" HF_HUB_OFFLINE=1 HF_DATASETS_OFFLINE=1 /home/horde/.venvs/lodram/bin/python -u scripts/prepare_low_rank_training_data.py",
+  "remote_cwd": "/home/horde/Mamba2-8B-E8W5",
+  "execution_receipt": {
+    "tool": "exec_command/write_stdin",
+    "session_id": 84679,
+    "final_chunk_id": "0f800e",
+    "exit_code": 0
+  },
+  "dataset_cache_messages": [
+    "Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).",
+    "Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/horde/.cache/huggingface/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Fri Sep 25 21:27:12 2026)."
+  ],
+  "emitted_summary": {
+    "complete": true,
+    "manifest_sha256": "e168e1d90ea7cd9c14c8210f13b5e6b569612c82dcaf832100c250cb72d24bef",
+    "token_windows_file_sha256": "539684ba450894a2e56d4f958b69942bacd7e6260ef349684c2c965d273012b1",
+    "selected_tokens_sha256_int64le": "5b88ce16159d92644384f99b59f3523ba43259715b91ead4c6fb9cad4af54b81",
+    "overlap": {
+      "grid_blocks": 1237,
+      "excluded_grid_blocks": 398,
+      "eligible_blocks": 839,
+      "selected_blocks": 256,
+      "internal_overlap_tokens": 0,
+      "all_previous_fitting_overlap_tokens": 0,
+      "previous_family_overlap_tokens": {
+        "original_calibration": 0,
+        "all_small_training": 0,
+        "crossmoment_fit": 0,
+        "crossmoment_heldout": 0,
+        "prototype_training": 0
+      },
+      "minimum_start_gap": 6144
+    },
+    "targets_per_pass": 524032,
+    "four_pass_target_exposures": 2096128,
+    "cuda_initialized": false
+  },
+  "environment": {
+    "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+    "torch": "2.11.0+cu128",
+    "CUDA_VISIBLE_DEVICES": "",
+    "cuda_initialized": false
+  },
+  "files": {
+    "protocol": {
+      "file": "docs/LOW_RANK_COMPENSATION_PROTOCOL.md",
+      "sha256": "b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2"
+    },
+    "preparation_script": {
+      "file": "scripts/prepare_low_rank_training_data.py",
+      "sha256": "11ac5cc71759b73e1d51e3cfcc6b05d59c24e3c5ff132d267c64508374df1c7c"
+    },
+    "manifest": {
+      "remote_file": "training_data/low_rank_compensation_v1/manifest.json",
+      "local_copy": "reports/low_rank_compensation_v1_data_manifest.json",
+      "bytes": 68324,
+      "sha256": "e168e1d90ea7cd9c14c8210f13b5e6b569612c82dcaf832100c250cb72d24bef"
+    },
+    "tokens": {
+      "remote_file": "training_data/low_rank_compensation_v1/training_tokens.pt",
+      "bytes": 4195881,
+      "sha256": "539684ba450894a2e56d4f958b69942bacd7e6260ef349684c2c965d273012b1",
+      "shape": [
+        256,
+        2048
+      ],
+      "dtype": "torch.int64",
+      "copied_to_mac": false
+    }
+  },
+  "checks": {
+    "all_four_pinned_prior_dataset_metadata_equal": true,
+    "full_text_and_token_stream_identity_matches": true,
+    "original_source_and_tokenizer_pinned": true,
+    "immutable_loader_and_runtime_hashes_match": true,
+    "prior_provenance_rehashed_at_completion": true,
+    "protocol_and_preparer_unchanged_during_run": true,
+    "token_tensor_disk_readback_exact": true,
+    "flat_schedule_length": 1024,
+    "each_epoch_is_permutation": true,
+    "seed": 20260928,
+    "no_validation_or_test_data": true,
+    "no_model_loaded": true,
+    "no_gpu_work": true
+  },
+  "limitations": [
+    "This receipt is data readiness, not a training or model-quality result.",
+    "No prototype tables are used as the low-rank baseline.",
+    "Protocol is frozen; no resume/replay or unannounced recipe changes."
+  ]
+}

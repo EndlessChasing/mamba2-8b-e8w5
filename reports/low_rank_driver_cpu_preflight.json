@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "passed": true,
+  "scope": "CPU fixed-input preflight and strict update/overflow accounting; no model load or CUDA operations",
+  "time_unix": 1790590683.8118906,
+  "binding": {
+    "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "small_manifest_sha256": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006",
+    "small_values_sha256": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "baseline_report_sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206",
+    "protocol_sha256": "b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2",
+    "training_data_manifest_sha256": "e168e1d90ea7cd9c14c8210f13b5e6b569612c82dcaf832100c250cb72d24bef",
+    "training_tokens_sha256": "539684ba450894a2e56d4f958b69942bacd7e6260ef349684c2c965d273012b1",
+    "hyperparameters": {
+      "successful_updates": 1024,
+      "maximum_overflow_retries": 8,
+      "maximum_attempts": 1032,
+      "epochs": 4,
+      "windows_per_epoch": 256,
+      "stored_window_tokens": 2048,
+      "targets_per_update": 2047,
+      "seed": 20260928,
+      "initialization_seed": 20260928,
+      "rank": 4,
+      "sampler": "four successive torch.randperm(256) draws from one seeded CPU Generator",
+      "optimizer": "AdamW",
+      "learning_rate": 0.0003,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 0.0,
+      "gradient_clip_norm": 1.0,
+      "ce_coefficient": 0.5,
+      "teacher_to_student_kl_coefficient": 0.5,
+      "temperature": 1.0,
+      "logits_chunk_tokens": 64,
+      "masters": "224 FP32 factor tensors; rank4 B=0, A=CPU seeded normal/sqrt(n)",
+      "initialization_order": "numeric layer0..55, in_proj then out_proj; separate CPU generator, only A draws RNG",
+      "forward": "half(W0.detach().float()+B_master.half().float()@A_master.half().float()); casts inside replay",
+      "frozen": "all507 accepted all-small baseline tensors; E8/W5 metadata and indices unchanged",
+      "loss_scaler": {
+        "init_scale": 1024.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000
+      },
+      "overflow_policy": "retry same window with halved scale, no parameter/optimizer update; abort after8 overflows",
+      "selection": "final1024 successful updates only; no evaluation/checkpoint selection",
+      "resume": false,
+      "checkpoint_every_successful_updates": 32
+    },
+    "frozen_code_sha256": {
+      "mamba_e8w5/runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+      "mamba_e8w5/codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "mamba_e8w5/evaluation.py": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+      "mamba_e8w5/small_overlay.py": "3512c1b232c4039c16a26ffc0fe8c2eac1be6bb9c704ccbcb1d4e8e7788a1286",
+      "mamba_e8w5/norm_training.py": "25ac3ec6ba167902014018f99fbf8dbbc659e0e4903f80baf28e28a4a3e74087",
+      "scripts/train_norm_compensation.py": "da1818af295738cfa8a012b35ff0d1f007c410f27988d9bdaf88425fbedc47f2"
+    },
+    "code_sha256": {
+      "scripts/train_low_rank_compensation.py": "fdcb974e7abcd9379a6da900cd5801839e03973275010185f59235d67d938273",
+      "mamba_e8w5/low_rank_training.py": "1948c89100750477e2bacda8013c97ff3e2ccbde0e444b961092f28c96c7f503",
+      "mamba_e8w5/low_rank_residual.py": "050bc995c14477189b5b919d8d75c31e6c18dd4815d0de54cb72da39f6e083d6",
+      "scripts/prepare_low_rank_training_data.py": "11ac5cc71759b73e1d51e3cfcc6b05d59c24e3c5ff132d267c64508374df1c7c"
+    }
+  },
+  "tests_run": 4,
+  "test_exit_code": 0,
+  "test_output": "test_complete_exposures (tests.test_low_rank_driver.AccountingTests) ... ok\ntest_no_extra_update_or_target (tests.test_low_rank_driver.AccountingTests) ... ok\ntest_retry_same_window_and_bound (tests.test_low_rank_driver.AccountingTests) ... ok\ntest_wrong_numeric_types_are_rejected (tests.test_low_rank_driver.AccountingTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.043s\n\nOK\n",
+  "test_source_sha256": "5f05b8f3d90a23bdf01ce1785063c1b240bb2370c3bf885c79a11a579a54446a",
+  "training_tokens_shape": [
+    256,
+    2048
+  ],
+  "bound_paths_verified": 22,
+  "cuda_initialized": false,
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "torch": "2.11.0+cu128"
+}
