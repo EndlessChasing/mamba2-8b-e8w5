@@ -1,6 +1,8 @@
 # Mamba-2 8B E8/W5
 
-**Current PPL-priority result:** the [all-small-tensor experiment](docs/SMALL_TENSOR_COMPENSATION_RESULTS.md) completed 1024 updates and full validation. PPL is **8.35987**, down **2.6750%** from norm-v1 and **5.3946%** from original E8/W5, with raw capacity unchanged. It remains **13.9851% above FP16**, so the +5% source target is unmet. MK is deferred under the user's [PPL-first direction](docs/PPL_PRIORITY_CONTINUATION.md); recall recovery is unmeasured for this candidate. Publication remains on hold.
+**Latest PPL-priority result:** [prototype compensation](docs/PROTOTYPE_COMPENSATION_RESULTS.md) completed its fixed 128 updates, export and independent full validation. PPL is **8.306585062**, the lowest measured compact-candidate value so far, versus **8.359867548** for all-small and **7.334175947** for FP16. The **0.6374%** improvement misses the declared **1%** advancement gate; the **13.2586%** source gap also misses the **+5%** target. Both quality gates failed, and this fixed recipe is stopped.
+
+The [all-small candidate](docs/SMALL_TENSOR_COMPENSATION_RESULTS.md) and its verified offline distribution remain the accepted baseline; the prototype overlay is not included in that package. These validation results have informed development and are not untouched test evidence. MK remains deferred under the user's [PPL-first direction](docs/PPL_PRIORITY_CONTINUATION.md), with no recall-recovery claim. Publication remains on hold. A separate [rank-4 repair on all 112 projections](docs/LOW_RANK_COMPENSATION_PROTOCOL.md) is being prepared; no GPU training or quality result is established for it.
 
 An experimental compact version of NVIDIA’s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head.
 
@@ -8,7 +10,7 @@ All **8,236,999,680 parameters** have been quantized or retained and independent
 
 ## Original candidate: measured test quality
 
-The following test, runtime-memory and restored-generation measurements describe the original `e8w5_v1` candidate before compensation training. The best all-small candidate above has separate full-validation, complete offline-distribution and CPU restoration evidence; its test quality and archived-software GPU generation remain unmeasured.
+The following test, runtime-memory and restored-generation measurements describe the original `e8w5_v1` candidate before compensation training. The retained all-small candidate has separate full-validation, complete offline-distribution, CPU restoration and archived-software generation evidence; its test quality remains unmeasured.
 
 | Full test measurement | Original weights cast to FP16 | Original `e8w5_v1` reconstructed to FP16 |
 | --- | ---: | ---: |
@@ -36,7 +38,7 @@ The staged original `e8w5_v1` complete release occupies **2,666,260,364 bytes**.
 |Huffman weight container, including raw manifest |2,660,128,443 B |**2,660,171,471 B** |
 |Complete release, including tokenizer/software/licenses/outer metadata |2,666,260,364 B |**2,671,176,471 B** |
 
-The all-small container passed complete readback of **118 files**, **342 independent chunk checks**, and a subsequent identity audit against its pinned resolved manifest. See the [readback receipt](reports/all_small_resolved_v1_huffman.json), [identity receipt](reports/all_small_resolved_v1_huffman_identity.json), and [composition details](docs/ALL_SMALL_COMPOSITION.md). The complete offline distribution additionally includes the tokenizer, fixed corresponding source, licenses, reports and outer metadata. Its actual CPU restore command reproduced **all 118 raw files exactly**; see the [distribution audit](docs/ALL_SMALL_DISTRIBUTION.md) and [build/restore receipt](reports/all_small_distribution_v2_job.json). It retains the previously measured full-validation **PPL8.359867548** through exact file identity; packing did not rerun PPL. Archived-software GPU loading/generation remains pending, and publication remains on hold.
+The all-small container passed complete readback of **118 files**, **342 independent chunk checks**, and a subsequent identity audit against its pinned resolved manifest. See the [readback receipt](reports/all_small_resolved_v1_huffman.json), [identity receipt](reports/all_small_resolved_v1_huffman_identity.json), and [composition details](docs/ALL_SMALL_COMPOSITION.md). The complete offline distribution additionally includes the tokenizer, fixed corresponding source, licenses, reports and outer metadata. Its actual CPU restore command reproduced **all 118 raw files exactly**; see the [distribution audit](docs/ALL_SMALL_DISTRIBUTION.md) and [build/restore receipt](reports/all_small_distribution_v2_job.json). It retains the previously measured full-validation **PPL8.359867548** through exact file identity; packing did not rerun PPL. Archived-software GPU loading/generation also passed on three short prompts, with exact fresh-cache repetition and no original checkpoint input; see the [generation receipt](reports/all_small_restored_inference_v2.json). This is package-usability evidence, not new PPL/MK or compressed GPU residency. Publication remains on hold.
 
 Source: [nvidia/mamba2-8b-3t-4k](https://huggingface.co/nvidia/mamba2-8b-3t-4k), Apache-2.0. The software and QuIP#-derived components are distributed under GPL-3.0; upstream model attribution is separate. See [license scope](licenses/THIRD_PARTY.md), [pinned sources](docs/SOURCES.md), and [comparison limits](docs/COMPARISON.md).
 

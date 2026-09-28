@@ -2,7 +2,8 @@
 
 This packaging task uses the already evaluated all-small candidate. It does not
 change weights, train, rerun PPL, certify recall, or publish a model. The learned
-prototype experiment remains a separate GPU job.
+prototype experiment completed separately; its failed-gate overlay is not
+included in this retained distribution.
 
 ## Fixed inputs
 
@@ -72,9 +73,13 @@ Completed job-receipt SHA:
 - [Complete asset ledger](../reports/all_small_distribution_v2_manifest.json).
 - [Full container readback and pinned identity](../reports/all_small_distribution_v2_container_verification.json).
 
-No archived-software GPU loading or generation test has run for this all-small
-distribution. After the independent prototype training and full validation
-release the GPU, the existing verifier can check this remaining usability gate:
+## Archived-software generation check
+
+The actual archived-software generation check completed successfully in
+**51.8446seconds**, after prototype training and validation finished. It
+verified209 archived files, loaded the restored tokenizer/raw package and
+generated12 tokens for each of three short prompts. Fresh-cache repetition
+was exact. The following command records the completed invocation:
 
 ```sh
 /home/horde/.venvs/lodram/bin/python -u scripts/verify_restored_inference.py \
@@ -84,9 +89,21 @@ release the GPU, the existing verifier can check this remaining usability gate:
   --report reports/all_small_restored_inference_v2.json
 ```
 
-That pending check loads archived software and restored weights without the
-original checkpoint and performs short generation. It does not remeasure PPL
-or MK. Assertions must be enabled, CUDA visible, and the report path unused.
+The runtime hash is
+`bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369`;
+the raw manifest and outer manifest match the fixed identities above. No
+original checkpoint argument was supplied. The source loader was disabled
+and a Python file-open guard recorded zero original-checkpoint access attempts;
+this is an application-level check, not an OS filesystem sandbox.
+
+See the [generation receipt](../reports/all_small_restored_inference_v2.json),
+SHA256 `e6e1d78c804f01170b12fd26f473481bfb515753f057d559d525af29cbf0fcee`.
+Examples include “Paris. The country is a member of the European Union and”
+and “store information. In a computer, memory is used to store”. These short
+outputs establish that the restored package runs; they do not remeasure PPL
+or MK. Peak allocated memory was17,226,020,864 bytes and peak reserved was
+18,599,641,088 bytes with decoded FP16 weights, not compressed residency.
+Do not repeat the command with its already-used report path.
 
 ## Preserved first-attempt failure
 

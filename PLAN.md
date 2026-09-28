@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold at the user's request. Current best repaired full-validation PPL is 8.359867548 from all-small-tensor compensation, versus 8.589640668 for norm-only, 8.836560440 for original E8/W5 and 7.334175947 for FP16. Raw capacity is unchanged. The >=1% improvement condition passed, but the +5% source target remains unmet (+13.9851%). MK is deferred by explicit user direction, with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
+Status: publication remains on hold at the user's request. Prototype compensation completed 128 updates, export and independent full validation: PPL8.306585062 versus all-small8.359867548 and FP16 source7.334175947. This is the lowest measured compact-candidate PPL, but its0.6374% gain misses the declared >=1% advancement gate and its+13.2586% source gap misses the+5% target. Both gates failed; stop this fixed recipe and retain the accepted all-small model/distribution. Its own earlier advancement gate passed, with raw capacity unchanged. MK remains deferred with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -93,7 +93,7 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 - [x] Compose the measured all-small candidate into a standalone flat raw package:393 actual small tensors and116 inherited files verified,507 tensor identities bound to the evaluation. Raw data2,886,482,462 bytes plus246,900-byte manifest; no original checkpoint required by the loader.
 - [x] Build and fully read back its actual Huffman weights container:2,660,171,471 bytes,118 files and342 independently checked chunks. A separate post-build audit matches every container member to the pinned manifest ledger. See docs/ALL_SMALL_COMPOSITION.md; this excludes tokenizer/software/licenses/outer release metadata and does not establish a new quality result.
 - [x] Build the currently measured all-small model's complete offline distribution from fixed exported source:2,671,176,471 bytes including20 assets and the outer manifest; actual CPU restoration reproduces all118 raw files. Preserve the first permission-failure receipt and successful second-attempt evidence. See docs/ALL_SMALL_DISTRIBUTION.md. No PPL remeasurement or GPU generation is inferred.
-- [ ] Verify the selected candidate's archived-software loading/generation without the source checkpoint after prototype training and full validation release the GPU. The original candidate's successful generation test does not establish this for a newly packaged candidate. Publication remains held.
+- [x] Verify the retained all-small candidate's archived-software loading/generation:209 archived files checked, restored raw manifest pinned, three short prompts generated and fresh-cache repetition exact. No original checkpoint argument or intercepted access attempt;51.8446 seconds. See reports/all_small_restored_inference_v2.json. This adds usability evidence, not PPL/MK or compressed GPU-memory validation. Publication remains held.
 - [ ] Consider a separate Resurface recall experiment after the PPL work; no recall recovery is assumed.
 
 ## Next PPL hypothesis
@@ -111,14 +111,16 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 - [x] Pass discarded GPU smoke:112 zero-decode checks, real-block replay gradients, one full2047-target update, all112 serialized FP16 table/native-output parity, all507 baseline hashes unchanged. First update154.61s and36.57GB peak allocation. See docs/PROTOTYPE_SMOKE_RESULTS.md.
 - [x] Complete the bounded decoder performance probe. The faster explicit-MM alternative failed decoded FP16 bitwise parity; retain the original validated decoder unchanged. See [probe results](docs/PROTOTYPE_DECODER_PERFORMANCE.md).
 - [x] Verify the actual first periodic checkpoint on CPU:32 successful updates,zero overflows,65,504 targets,112 finite master tables/FP16 casts,optimizer step32,exact schedule/history/journal prefix and fileSHA. Saved frozen hashes remain startup evidence; no intermediate PPL or model selection. See docs/PROTOTYPE_RUNNING_JOB.md.
-- [ ] Complete the declared 128-update recipe and independently verify final export, fixed baseline and actual added bytes. The fixed job is running after its 2026-09-28 04:21 UTC launch; see the [job record and read-only status command](docs/PROTOTYPE_RUNNING_JOB.md). No final export or prototype quality result is established yet.
-- [ ] Run complete paired validation for source/best baseline/reloaded prototype candidate; retain both meaningful-gain and source+5% criteria. No prototype quality result exists yet.
+- [x] Complete the declared 128-update recipe and independently verify final export:128 successes/128 attempts,zero overflows,262,016 target exposures; all507 baseline tensor hashes unchanged. All112 table files match rounded final masters and add462,336 bytes plus142,637-byte manifest. Native export hidden/last-eight logits are bitwise equal on the128-token check. See the [completed job record](docs/PROTOTYPE_RUNNING_JOB.md).
+- [x] Run independent complete paired validation for source/all-small/reloaded prototype:130 windows,264,764 targets, PPL7.334175947 /8.359867548 /8.306585062. All112 candidate projection identities and395 unchanged tensors verified;127 windows improve,3 worsen.
+- [x] Apply both declared quality gates:FAIL. Prototype gain0.6374% is below1%; source gap+13.2586% is above5%. Stop this fixed recipe with no extra epochs or intermediate checkpoint selection; retain the all-small model/distribution. See [final results](docs/PROTOTYPE_COMPENSATION_RESULTS.md). Execution and integrity completion do not constitute a quality pass.
 
-While the fixed prototype job runs, the [conditional low-rank repair note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
-records exact additional factor capacities and a possible native FP16 training
-contract. The isolated [CPU factor representation](docs/LOW_RANK_RESIDUAL_IMPLEMENTATION.md)
-now has 11 passing checks for strict file readback, resource bounds, independent
-merge arithmetic and gradient/replay behavior. This is preparation only: no
-low-rank training recipe, GPU path or model experiment has been selected,
-implemented or measured. The next experiment decision waits for the prototype
-result.
+## Separate low-rank repair preparation
+
+The [rank-4 protocol](docs/LOW_RANK_COMPENSATION_PROTOCOL.md) covers all112
+projections starting from the accepted all-small candidate, with the original
+E8/W5 and small tensors frozen. Preparation is underway in separate files; no
+GPU training or quality result is established. The [conditional capacity note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
+and [CPU factor representation](docs/LOW_RANK_RESIDUAL_IMPLEMENTATION.md)
+record the storage and native FP16 merge contract. This does not extend the
+completed prototype recipe or promote its failed candidate.

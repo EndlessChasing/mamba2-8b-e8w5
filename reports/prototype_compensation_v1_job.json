@@ -1,0 +1,98 @@
+{
+  "format": "MAMBA2_PROTOTYPE_JOB_V1",
+  "complete": true,
+  "pid": 1379083,
+  "started_at_unix": 1790569290.8131285,
+  "script_sha256": "f7c8a3a39ebc84b35e959cc3425a6370773cb1465322cecf993f58f8c1264b32",
+  "bound_inputs": {
+    "scripts/train_prototype_compensation.py": "bc6f59da1671d0e8973984f8ce24d176c364a128086f17b57b34c1f4022e1bc0",
+    "scripts/evaluate_prototype_compensation.py": "59a10619c16721056dc8afe128f3c44eef5d05015488e10b7f063b4cd3394ebd",
+    "reports/prototype_compensation_v1_smoke.json": "05f41c5607b90da8b9cc68924c854655c12fe8ce1b76450c6ca5974dead85a6f"
+  },
+  "outputs": {
+    "work": "/home/horde/Mamba2-8B-E8W5/artifacts/prototype_compensation_v1_train_work",
+    "overlay": "/home/horde/Mamba2-8B-E8W5/artifacts/prototype_compensation_v1",
+    "training_report": "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_train.json",
+    "evaluation_report": "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_eval.json",
+    "training_log": "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_train.log",
+    "evaluation_log": "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_eval.log"
+  },
+  "stages": [
+    {
+      "stage": "training",
+      "command": [
+        "/home/horde/.venvs/lodram/bin/python",
+        "-u",
+        "/home/horde/Mamba2-8B-E8W5/scripts/train_prototype_compensation.py",
+        "--mode",
+        "train",
+        "--protocol-sha256",
+        "e50295425dcd2f5a09b5fea4254b9c6f6f38744bc73583f93621ac1ce942cb9d",
+        "--work-dir",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/prototype_compensation_v1_train_work",
+        "--out-dir",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/prototype_compensation_v1",
+        "--report",
+        "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_train.json",
+        "--smoke-report",
+        "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_smoke.json"
+      ],
+      "started_at_unix": 1790569290.8133922,
+      "pid": 1379084,
+      "exit_code": 0,
+      "ended_at_unix": 1790589274.9533095
+    },
+    {
+      "stage": "independent_full_validation",
+      "command": [
+        "/home/horde/.venvs/lodram/bin/python",
+        "-u",
+        "/home/horde/Mamba2-8B-E8W5/scripts/evaluate_prototype_compensation.py",
+        "--overlay-dir",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/prototype_compensation_v1",
+        "--training-report",
+        "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_train.json",
+        "--training-checkpoint",
+        "/home/horde/Mamba2-8B-E8W5/artifacts/prototype_compensation_v1_train_work/checkpoint_attempt128_step128_final.pt",
+        "--smoke-report",
+        "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_smoke.json",
+        "--report",
+        "/home/horde/Mamba2-8B-E8W5/reports/prototype_compensation_v1_eval.json"
+      ],
+      "started_at_unix": 1790589274.9758134,
+      "pid": 2352631,
+      "exit_code": 0,
+      "ended_at_unix": 1790589589.2927456
+    }
+  ],
+  "publication_performed": false,
+  "fixed_successful_updates": 128,
+  "scope": "Fixed TRAIN recipe followed by independent full validation; no MK or test scoring.",
+  "stage": "complete",
+  "comparison": {
+    "ppl": {
+      "source_fp16": 7.334175947318572,
+      "best_small_e8w5": 8.359867548009992,
+      "prototype_e8w5": 8.306585061749145
+    },
+    "candidate_vs_baseline_ppl_relative_change": -0.006373604121698295,
+    "candidate_vs_source_ppl_relative_change": 0.1325860084916688,
+    "baseline_vs_source_ppl_relative_change": 0.13985096731506985,
+    "candidate_minus_baseline_mean_nll": -0.006394002255727643,
+    "meaningful_improvement_reference": {
+      "required_reduction": 0.01,
+      "met": false
+    },
+    "source_plus5_percent_reference": {
+      "maximum_ppl": 7.700884744684501,
+      "met": false
+    },
+    "window_counts": {
+      "improved": 127,
+      "unchanged": 0,
+      "worsened": 3
+    }
+  },
+  "evaluation_report_sha256": "4c6c17edde18cd2ccc911f453e1d14b41cb575dd6d60bfcb15575ce4b2ffcc1d",
+  "ended_at_unix": 1790589589.2983148
+}
