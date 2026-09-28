@@ -1,7 +1,7 @@
 # Readapted Mamba2-8B MK validation and Resurface repair
 
-Status on2026-09-28: the source/current MK baseline is complete. Resurface
-correctness checks and training/evaluation are in progress. No adapter quality
+Status on2026-09-28: the source/current MK baseline, native correctness checks
+and final1536 training/export are complete. Independent evaluation is in progress. No adapter quality
 result or promotion is claimed yet. Publication remains on hold.
 
 ## Completed baseline
@@ -71,7 +71,20 @@ bindings. These are correctness checks and do not establish recall/PPL quality.
   then is discarded. Actual FP16 export/reload and hook-removal restoration
   are exact; both507-tensor models remain unchanged. Smoke exits0 in333.2057s,
   report SHA256 `3e34033ec70f2827b674d1f953afc318758868c51791529f49f33be8a8b04a89`.
-- [ ] Final1536 training and actualFP16 export verification.
+- [x] Final1536 training and actualFP16 export verification:1541 attempts,
+  five same-pair overflow retries,10,752 MK answer targets and784,896 prose
+  targets. Runtime1943.0175 seconds, exit0. All224 exported tensors equal the
+  saved final1536 masters rounded toFP16, with exact native export output.
+  Base/teacher507 content audits pass. Independent actual-file CPU verification
+  also passes (report SHA256 `545693a88a8b02eda34f80a1e3b41805340e2e6556cd0c355253d2259ecda8b9`).
+  Adapter file2,539,647 bytes, SHA256
+  `1e9857feaf80ede6525cce839726883f6230c98a067cb226eb2f095693ea803e`;
+  its manifest is294,171 bytes. Base plus adapter data are3,141,468,439 bytes,
+  excluding manifests/tokenizer/software; no complete distribution built.
+  Training report SHA256
+  `e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6`;
+  final checkpoint15,850,619 bytes, SHA256
+  `03ed8da1d7c49fde4b70c053719eff19b715393d7b96dc41427f3cfc62af3fba`.
 - [ ] Same-enabled-adapter DEV MK and64-window PPL joint screen.
 - [ ] Conditional complete130-window PPL no greater than paired current.
 - [ ] Conditional independent384+384 confirmation MK with positive paired
