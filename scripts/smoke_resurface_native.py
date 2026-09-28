@@ -23,7 +23,7 @@ from train_norm_compensation import gradient_comparison, SMOKE_TOLERANCES
 
 PROTOCOL_SHA = '469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6'
 DATA_SHA = 'dfe076ef18d5b0610e016d41d00a38948f3878b7c67d9cd8f6f46237e09d7e11'
-TRAINER_SHA = 'ddc9aacf26b37d318b20e9409f8c7619a6bd8d3d1688f7736e2acab6ae12ec0b'
+TRAINER_SHA = '9b8ea5911c47a4f333db994154cd6913da81beaef05bb4de2751455f113fef41'
 CODE_PINS = {
     'mamba_e8w5/resurface_native.py': '2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7',
     'mamba_e8w5/resurface_loss.py': 'ec045368583b6e49f484341b2d718658bb59e8d11050710377742752c1c67294',
