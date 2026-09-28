@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "members_matched_to_pinned_manifest": 118,
+  "raw_file_ledger_revalidated": true,
+  "raw_manifest_sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8",
+  "container_sha256": "46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd",
+  "previous_full_readback_files": 118,
+  "scope": "Identity audit against pinned manifest and completed full readback; no new quality score.",
+  "readback_report_sha256": "2bbc844395195002b2d14ac77cc747ab63317e947f5d8893fbf60c771a2d4c07",
+  "audit_source_sha256": "63df29cade7b8d11892c50ab4358bcea107c754f5dd660bdd2cf764763cf5f23",
+  "cuda_initialized": false
+}

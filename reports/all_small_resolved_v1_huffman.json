@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "container": "/home/horde/Mamba2-8B-E8W5/artifacts/all_small_resolved_v1.huff",
+  "actual_file_bytes": 2660171471,
+  "sha256": "46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd",
+  "original_package_bytes": 2886729362,
+  "files_verified": 118,
+  "independent_chunks_verified": 342,
+  "trusted_source_bound": true,
+  "entropy": {
+    "e8": {
+      "symbols": 767033344,
+      "shannon_bits": 15.06634678182679,
+      "huffman_average_bits": 15.094016461688529
+    },
+    "embedding": {
+      "symbols": 2097152000,
+      "shannon_bits": 4.410649212134179,
+      "huffman_average_bits": 4.4453391489982605
+    }
+  },
+  "note": "Exact to quantized raw files; no claim of lossless recovery of source floating-point model.",
+  "raw_manifest_sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8",
+  "composition_script_sha256": "2c1ffe05246e33ead207550f31776d6f54bb56dd7a17defc56c48c976b61e91e",
+  "quality_report_sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206",
+  "quality_arm": "small_e8w5",
+  "scope": "Weights container including its raw manifest. Excludes tokenizer, software, licenses and outer distribution metadata.",
+  "elapsed_seconds": 228.4646815439919,
+  "script_sha256": "b09f3620222463400bc9cc16fc50a8c27069c960405df03a237161d2cf4986f5",
+  "huffman_source_sha256": "ce07b211670c1afbdb14fa73753cc4ef4e8ecdd425347c269b5aa9f6cca7e6ac",
+  "cuda_initialized": false,
+  "quality_remeasured": false,
+  "complete_release_built": false,
+  "available_disk_bytes_before": 31355432960
+}

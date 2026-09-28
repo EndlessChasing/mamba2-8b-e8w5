@@ -9,8 +9,34 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from mamba_e8w5.huffman import pack_directory, verify_container, sha256_file
+from mamba_e8w5.huffman import Reader, pack_directory, verify_container, sha256_file
 from scripts.package_release import validate_raw
+
+
+def verify_pinned_identity(raw, container, expected_manifest_sha256, readback_receipt):
+    """Bind verified container bytes to the pinned ledger, not mutable raw files."""
+    raw, container = Path(raw), Path(container)
+    manifest_path = raw/'manifest.json'
+    if sha256_file(manifest_path) != expected_manifest_sha256:
+        raise ValueError('Pinned resolved manifest changed')
+    manifest = validate_raw(raw)
+    expected = {name: (entry['bytes'], entry['sha256']) for name, entry in manifest['files'].items()}
+    expected['manifest.json'] = (manifest_path.stat().st_size, expected_manifest_sha256)
+    reader = Reader(container)
+    actual = {name: (entry['original_bytes'], entry['sha256']) for name, entry in reader.files.items()}
+    if actual != expected or reader.manifest['source_manifest_sha256'] != expected_manifest_sha256:
+        raise ValueError('Container member identities differ from the pinned candidate ledger')
+    if (readback_receipt.get('complete') is not True
+            or readback_receipt['files_verified'] != len(expected)
+            or container.stat().st_size != readback_receipt['actual_file_bytes']
+            or sha256_file(container) != readback_receipt['sha256']
+            or sha256_file(manifest_path) != expected_manifest_sha256):
+        raise ValueError('Prior full readback does not describe these exact container bytes')
+    return {'complete': True, 'members_matched_to_pinned_manifest': len(expected),
+        'raw_file_ledger_revalidated': True, 'raw_manifest_sha256': expected_manifest_sha256,
+        'container_sha256': readback_receipt['sha256'],
+        'previous_full_readback_files': readback_receipt['files_verified'],
+        'scope': 'Identity audit against pinned manifest and completed full readback; no new quality score.'}
 
 
 def main():
@@ -41,8 +67,7 @@ def main():
     started = time.perf_counter()
     pack_directory(raw, output)
     receipt = verify_container(output, trusted_directory=raw)
-    if sha256_file(manifest_path) != args.expected_manifest_sha256:
-        raise RuntimeError('Resolved manifest changed during packing')
+    identity = verify_pinned_identity(raw, output, args.expected_manifest_sha256, receipt)
     import torch
     if torch.cuda.is_initialized():
         raise RuntimeError('CPU-only container task unexpectedly initialized CUDA')
@@ -52,6 +77,7 @@ def main():
         quality_arm=manifest['quality']['arm'],
         scope='Weights container including its raw manifest. Excludes tokenizer, software, licenses and outer distribution metadata.',
         elapsed_seconds=time.perf_counter()-started, script_sha256=sha256_file(__file__),
+        pinned_candidate_identity=identity,
         huffman_source_sha256=sha256_file(ROOT/'mamba_e8w5/huffman.py'),
         cuda_initialized=False, quality_remeasured=False, complete_release_built=False,
         available_disk_bytes_before=available)
