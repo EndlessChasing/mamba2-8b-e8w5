@@ -1,0 +1,29 @@
+{
+  "format": "MAMBA2_READAPTED_MK_BASELINE_V1",
+  "complete": false,
+  "script_sha256": "dfd97232faf16bf1499b9bbd9dfd0e09d09dc0e5b5d0bc77df5d8afbda1ff188",
+  "protocol_sha256": "560a4d6c8c0805a56474aa9d1401bf4f373e0f1f3e6ed1edeaeee6e80026b177",
+  "arm_order": [
+    "source_fp16",
+    "current_axis_readapted_small"
+  ],
+  "execution": "native SSD prefill plus recurrent greedy generation",
+  "cache_dtype": "float16",
+  "prompt_cache_rounding": "end of prefill, not every input token",
+  "generation": "full256000 vocabulary, greedy, maximum12 tokens, stop at EOS",
+  "matching": "first standalone six-digit integer equals answer",
+  "training_performed": false,
+  "adapter_enabled": false,
+  "test_prompts_loaded": false,
+  "ppl_evaluated": false,
+  "candidate_selection_performed": false,
+  "publication_performed": false,
+  "limitations": [
+    "Observed synthetic development baseline; not unseen confirmation or original Resurface MK.",
+    "Native FP16 weight expansion; no compressed residency or prompt-tokenwise state claim.",
+    "Baseline only: no MK-repair or PPL-preservation claim for an adapter."
+  ],
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/evaluate_readapted_mk.py\", line 421, in main\n    run(args, report)\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/evaluate_readapted_mk.py\", line 341, in run\n    report.update(self_test=self_test(), input_binding=context['binding'], export_integrity=proof,\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/evaluate_readapted_mk.py\", line 294, in self_test\n    assert wilson(0, 384)['wilson95'][0] == 0.\nAssertionError\n",
+  "elapsed_seconds": 17.798646844923496
+}

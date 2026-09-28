@@ -1,0 +1,30 @@
+{
+  "status": "finished",
+  "pid": 3505510,
+  "started_unix": 1790613081.2836525,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "scripts/evaluate_readapted_mk.py",
+    "--verify-only",
+    "--report",
+    "reports/readapted_mk_baseline_v1_cpu_attempt2.json"
+  ],
+  "code_pins": {
+    "scripts/evaluate_readapted_mk.py": "3ea23e3587611346801c3a479a92a6606225cd2e6848870f3a01abf1744b3a6c",
+    "docs/MK_RESURFACE_PROTOCOL.md": "560a4d6c8c0805a56474aa9d1401bf4f373e0f1f3e6ed1edeaeee6e80026b177"
+  },
+  "required_reports": {
+    "reports/axis_small_readaptation_v1_eval.json": "3c6d840315b7552be5530ea884d0a9c620219df8dbbdad1a98b4cdd6e89ad1b4",
+    "reports/axis_small_readaptation_v1_verify.json": "2a48af2d28d1f2859ea717feffae4ab6e0adae0ee0b0b4a81e7865c7a24c6ad6"
+  },
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99436839,
+  "exit_code": 0,
+  "finished_unix": 1790613115.88423,
+  "wall_seconds": 34.60057783126831,
+  "log_sha256": "b9e71399aedcc3a9fb432fcc75b4fc0d5697ec69d2871b33e24394a977167512",
+  "report_sha256": "52660cfc6a071b829ca15524ee3d7a14ca7312c419260c3f175747f99a3e4cda",
+  "report_bytes": 1296323,
+  "report_complete": true
+}
