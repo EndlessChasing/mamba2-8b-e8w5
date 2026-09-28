@@ -1,0 +1,52 @@
+{
+  "format": "MAMBA2_LOW_RANK_EVALUATION_CPU_TESTS_V1",
+  "complete": true,
+  "passed": true,
+  "code_sha256": {
+    "scripts/evaluate_low_rank_compensation.py": "f0d1285276d1b4ea3bb132b98cb412a9718289b715d70ee1fa961c08bc3b0bd7",
+    "tests/test_low_rank_evaluation.py": "8e755f33b30d5f3d24289b28e1f6fafba31e7c277573f9bb876d93ef021a5114",
+    "mamba_e8w5/low_rank_residual.py": "050bc995c14477189b5b919d8d75c31e6c18dd4815d0de54cb72da39f6e083d6",
+    "scripts/evaluate_small_compensation.py": "2102d406da33482303f0dd9a6446b1c070fdf28ecade70e9ab8da9cdfd0202be"
+  },
+  "execution": {
+    "host": "horde-gpu",
+    "directory": "/home/horde/Mamba2-8B-E8W5",
+    "command": "CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python -m unittest tests.test_low_rank_evaluation -v",
+    "python": "3.10.12",
+    "torch": "2.11.0+cu128",
+    "tests_run": 6,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0,
+    "unittest_elapsed_seconds": 0.778,
+    "gpu_operations": false,
+    "prepared_data_test_asserted_cuda_uninitialized": true
+  },
+  "checks": [
+    "All112 real projection geometries and224 FP32 factor masters round to exact FP16 bytes; total7827456 values and15658496 serialized bytes; signed-zero, missing coverage and dtype mismatches rejected",
+    "Independent1024 seeded schedule and attempted/successful exposure accounting; exactly8 overflow retries accepted,9 rejected; float/bool counter and schedule substitutions rejected",
+    "Independent native FP32 factor product plus detached base followed by FP16 rounding matches expected bytes; original base bytes preserved; local autocast disabled without changing caller context",
+    "Unsafe file paths, symbolic links and changed content rejected by ledger checks",
+    "Pinned actual256x2048 TRAIN tensor, source/exclusion manifests, eligible grid, all256 token hashes and fixed1024 schedule verified without CUDA initialization",
+    "Three synthetic complete arms preserve130 paired windows and264764 targets including572-target tail; separate1percent improvement and source-plus5percent gates checked around thresholds; token pairing mismatch rejected"
+  ],
+  "actual_training_data": {
+    "manifest_sha256": "e168e1d90ea7cd9c14c8210f13b5e6b569612c82dcaf832100c250cb72d24bef",
+    "token_file_sha256": "539684ba450894a2e56d4f958b69942bacd7e6260ef349684c2c965d273012b1",
+    "protocol_sha256": "b732c24692ae5dc91c5c67c1a0e0a0c435be3402959bfe5db874c67246836cf2",
+    "all_previous_fitting_overlap_tokens": 0,
+    "four_pass_target_exposures": 2096128
+  },
+  "independent_static_review": {
+    "reviewer": "mamba8_release_audit",
+    "approved_evaluator_sha256": "f0d1285276d1b4ea3bb132b98cb412a9718289b715d70ee1fa961c08bc3b0bd7",
+    "material_blocker_found": false
+  },
+  "limits": [
+    "Focused CPU fixtures and actual prepared-data verification only; no actual final training export exists in these checks",
+    "No GPU smoke, model loading, PPL evaluation, training, candidate promotion or publication was performed",
+    "Full --verify-only must inspect the eventual actual final1024 checkpoint and serialized candidate before quality evaluation",
+    "No frozen codec/runtime/training/evaluation helper was changed by this evaluator task"
+  ]
+}
