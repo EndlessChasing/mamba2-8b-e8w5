@@ -1,8 +1,10 @@
 # Existing-metadata training: read-only design audit
 
-**Status: initial design audit; the proposed quality gains remain unmeasured.**
+**Status: initial design audit with a measured norm-only follow-up; other proposals remain unmeasured.**
 The eight-sweep experiment has since completed and stopped. The norm-only option
-is now being implemented under the separate [declared protocol](NORM_COMPENSATION_PROTOCOL.md).
+has now completed under the separate [declared protocol](NORM_COMPENSATION_PROTOCOL.md),
+improving development PPL 2.9421% but failing recall nonregression; see
+[measured results](NORM_COMPENSATION_RESULTS.md).
 Balance training and the wider small-tensor option remain unimplemented proposals.
 Publication remains on hold; no frozen runtime, codec or evaluator is changed.
 
@@ -22,8 +24,7 @@ size, and new provenance metadata is not free.
 This changes a column gain, shared across every output row of each projection.
 It cannot independently repair individual E8 codeword errors or rotate a column's
 output direction. The available function family is much smaller than retraining
-the 6.136B projection weights. Language quality improvement is unknown for either
-proposal. The wider all-small-tensor variant should remain a separate comparison.
+the 6.136B projection weights. The norm-only follow-up is measured above; balance-training quality remains unknown. The wider all-small-tensor variant should remain a separate comparison.
 
 ## Simpler alternative: retained FP16 norms or small tensors
 

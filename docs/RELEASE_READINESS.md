@@ -85,3 +85,10 @@ The [declared1% advancement gate](REFINEMENT_PROTOCOL.md) failed; the route stop
 and full validation was skipped. See the [completed results](E8_REFINEMENT_RESULTS.md).
 This refinement is not a promoted or entropy-packaged replacement candidate.
 The original source-relative quality target also remains unmet.
+
+A subsequent [norm-only training recipe](NORM_COMPENSATION_RESULTS.md) completed
+128 fixed updates and passed all integrity checks at unchanged raw payload size.
+Development PPL improved 2.9421%, but normal MK fell 10/12→9/12, so its combined
+advancement gate also failed and full validation was skipped. No candidate has
+been promoted and no new entropy-coded distribution has been built. Original
+release files and the publication hold remain unchanged.

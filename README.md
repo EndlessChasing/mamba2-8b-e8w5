@@ -18,6 +18,8 @@ The [PPL diagnosis](docs/PPL_DIAGNOSIS.md) records controlled component and proj
 
 A separate [eight-sweep repair experiment](docs/E8_REFINEMENT_RESULTS.md) improved all 112 projection reconstruction proxies at unchanged raw bitrate. Paired development PPL improved only **0.461%**, with recall unchanged, missing the predeclared 1% advancement threshold. This route stopped; no refined full-validation result or entropy-coded package is claimed.
 
+The subsequent [existing-norm compensation experiment](docs/NORM_COMPENSATION_RESULTS.md) trained 692,224 existing parameters at unchanged raw capacity. Development PPL improved **2.942%**, but normal recall fell **10/12→9/12**. Its combined gate failed, so full validation was skipped and this recipe stopped. It is not a promoted replacement for the original candidate.
+
 The decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
 
 The staged complete package occupies **2,666,260,364 bytes**. Its actual restore command reproduced all118 raw files exactly; generation also passed using the archived software, restored tokenizer and restored weights, with no original checkpoint as an input. This establishes package usability, not a quality pass. See the [restore receipt](reports/release_restore_local_v1.json) and [generation smoke](reports/restored_inference_local_v1.json). The package remains unpublished.
@@ -36,6 +38,8 @@ Download instructions are in [DOWNLOAD.md](docs/DOWNLOAD.md); model assets will 
 - **Entropy coding:** chunked Huffman over quantized symbols with tables and offsets counted. It losslessly restores the already-lossy quantized package.
 
 The reference loader expands the package to FP16 for quality measurements. Compact disk storage does not imply equally compact inference memory. There is no custom compressed GPU matrix-multiplication kernel in this first release.
+
+The [checkpoint architecture audit](reports/pure_mamba2_architecture_audit.json) confirms **56 pure Mamba-2 blocks**, with zero attention, independent MLP or MoE blocks. The actual source checkpoint has `hybrid_attention_ratio=0` and `hybrid_mlp_ratio=0`; all 507 tensors map exactly to the parent and norm candidate.
 
 ## Reproduce
 

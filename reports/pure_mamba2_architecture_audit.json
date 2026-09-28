@@ -1,0 +1,109 @@
+{
+  "format": "PURE_MAMBA2_ARCHITECTURE_AUDIT_V1",
+  "complete": true,
+  "checked_at_utc": "2026-09-28T02:21:20.317461+00:00",
+  "conclusion": "Official source, original E8/W5 parent, and final norm overlay all contain 56 pure Mamba-2 blocks; no attention, separate MLP, or MoE blocks.",
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "source_checkpoint_cpu_recheck": {
+    "fresh_full_file_sha256_verified": true,
+    "safe_loader": "torch.load(weights_only=True, mmap=True, map_location=cpu) with the existing runtime passive metadata allowlist",
+    "CUDA_VISIBLE_DEVICES": "",
+    "cuda_initialized": false,
+    "native_tensor_count": 507,
+    "native_to_saved_inventory_keys_and_shapes_exact": true,
+    "selected_actual_checkpoint_args": {
+      "num_layers": 56,
+      "encoder_num_layers": 56,
+      "hidden_size": 4096,
+      "ffn_hidden_size": 16384,
+      "group_query_attention": true,
+      "num_query_groups": 8,
+      "num_attention_heads": 32,
+      "num_experts": null,
+      "transformer_impl": "local",
+      "hybrid_attention_ratio": 0.0,
+      "hybrid_mlp_ratio": 0.0,
+      "hybrid_override_pattern": null,
+      "moe_grouped_gemm": false
+    }
+  },
+  "exhaustive_schema": {
+    "mamba_blocks": 56,
+    "tensor_suffixes_and_shapes_per_block": {
+      "mixer.dt_bias": [
+        128
+      ],
+      "mixer.A_log": [
+        128
+      ],
+      "mixer.D": [
+        128
+      ],
+      "mixer.in_proj.weight": [
+        18560,
+        4096
+      ],
+      "mixer.conv1d.weight": [
+        10240,
+        1,
+        4
+      ],
+      "mixer.conv1d.bias": [
+        10240
+      ],
+      "mixer.norm.weight": [
+        8192
+      ],
+      "mixer.out_proj.weight": [
+        4096,
+        8192
+      ],
+      "norm.weight": [
+        4096
+      ]
+    },
+    "block_tensor_count": 504,
+    "nonblock_tensors": {
+      "backbone.embedding.weight": [
+        256000,
+        4096
+      ],
+      "backbone.norm_f.weight": [
+        4096
+      ],
+      "lm_head.weight": [
+        256000,
+        4096
+      ]
+    },
+    "total_tensors": 507,
+    "attention_blocks": 0,
+    "separate_mlp_blocks": 0,
+    "moe_blocks": 0,
+    "unmapped_or_additional_tensors": 0
+  },
+  "parameter_counts": {
+    "all": 8236999680,
+    "mamba_blocks": 6139843584,
+    "input_embedding": 1048576000,
+    "untied_output_head": 1048576000,
+    "final_norm": 4096
+  },
+  "candidate_identity_checks": {
+    "source_parent_norm_keysets_exact": true,
+    "parent_norm_parameter_mapping_exact": true,
+    "parent_norm_configs_exact": true,
+    "n_layer": 56,
+    "ssm_layer": "Mamba2",
+    "d_intermediate": 0,
+    "attention_layer_indices": []
+  },
+  "input_reports_sha256": {
+    "reports/source_tensor_inventory.json": "57fe43d21c5dd5fb781815a7bca7bbcc1b795f6de723ce449fddd4bbdbd721f6",
+    "reports/source_args_audit.json": "29f2d866ba88dc6c754720c8cda60672b46d8fbe7056c1a448a7d2aab1ac3d88",
+    "reports/quantization_v1.json": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "reports/norm_compensation_v1_manifest.json": "1fa9d35ff56a08e2f7ddf258bfa1fb61bc2e83ae2af404ab2f68a781821ac4d8"
+  },
+  "interpretation": "Megatron saves common model arguments such as group_query_attention, num_attention_heads and ffn_hidden_size. Their presence alone does not prove such layers are instantiated. Here explicit hybrid ratios are zero and the complete weight schema contains only Mamba-2 blocks. Mamba input/output projections, internal gates, convolution and norms remain part of the pure Mamba block.",
+  "scope": "Architecture verification only; does not change failed quality gates, establish source-runtime numerical parity, or authorize publication."
+}

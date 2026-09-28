@@ -20,6 +20,38 @@ parent, additional tensors, different precision, missing entries, unsafe paths
 and nonfinite values. Training receipts identify the final 128 successful
 updates, deterministic schedule, exposure accounting and successful smoke.
 
+## Final development result
+
+The completed 128-update candidate was reloaded from its exported FP16 file
+and compared with the original two-sweep parent in the same process:
+
+| Metric | Parent | Norm candidate |
+|---|---:|---:|
+| Development PPL | 9.2371639507 | 8.9653964898 |
+| Normal MK | 10/12 | 9/12 |
+| Target-removed MK | 0/12 | 0/12 |
+| Logical raw model payload | 2,886,482,462 bytes | 2,886,482,462 bytes |
+
+PPL improved **2.9421%**, exceeding the predeclared 1% improvement threshold.
+Normal MK lost the case `validation-n64-t2-s0`; all other paired outcomes
+were unchanged. **The combined development gate failed**, and the evaluator
+correctly skipped full validation. No test split, source-relative full-validation
+claim, alternate training step or further recipe was evaluated.
+
+All 507 loaded parent tensors passed the fresh audit, including independent W5
+readback. All 113 final trained norms matched the checkpoint's rounded FP32
+masters and exported FP16 values. The other 280 small tensors stayed bitwise
+unchanged, and the other 394 parameter objects were retained. The replacement
+archive is 7,283,930 bytes, exactly the parent's serialized size in this run;
+its FP16 tensor payload is 7,161,856 bytes. The physical parent-plus-overlay
+directories total 2,894,033,233 bytes, including both manifests, excluding
+tokenizer, software, training checkpoints and reports.
+
+Evidence: [final evaluation report](../reports/norm_compensation_v1_eval.json),
+SHA-256 `72350eaa1989601f4412ba9e31c178e22dba95ec0b85f5837f9f08b29b265dad`.
+The GPU evaluation stage took 156.85 seconds and peaked at 22,062,521,856
+Torch-allocated bytes. It used the expanded FP16 accuracy runtime.
+
 ## Loading the exported candidate
 
 ```python

@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss, confirmed over the entire validation split. Local package restoration and generation passed. The bounded eight-sweep experiment stopped after missing its predeclared advancement threshold. A distinct norm-only compensation experiment on the original parent is now being implemented under a fixed protocol. The GitHub release remains a draft with zero assets.
+Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Neither advanced to full validation. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -62,12 +62,12 @@ This is an improvement screen, not the original-model +5% PPL quality gate. Equa
 ## Existing-norm compensation experiment
 
 - [x] Declare a separate bounded protocol before training: docs/NORM_COMPENSATION_PROTOCOL.md. Use the original two-sweep parent and exactly 113 existing norm tensors / 692,224 parameters.
-- [ ] Implement an FP16-forward, FP32-master training path with correct checkpoint recomputation, full-vocabulary CE/KL, loss scaling and resumable state.
-- [ ] Pass training-only smoke checks for forward/export parity, checkpoint gradients, loss chunking, selected/frozen gradients and memory.
-- [ ] Run the fixed four passes / 128 successful updates on the 32 calibration training windows; preserve all attempts and use only the final checkpoint.
-- [ ] Export and independently verify the complete small-tensor replacement, with every non-norm tensor unchanged and all original E8/W5 files inherited.
-- [ ] Compare original parent and reloaded candidate on frozen development PPL/MK in one process; require at least 1% PPL gain and recall/control nonregression.
-- [ ] If that gate passes, confirm original/parent/candidate on full validation; otherwise preserve the negative result and stop this fixed recipe. Keep the source-relative quality target separate.
+- [x] Implement an FP16-forward, FP32-master training path with correct checkpoint recomputation, full-vocabulary CE/KL, loss scaling and resumable state; 3 training and 10 overlay/evaluator CPU tests passed.
+- [x] Pass training-only GPU smoke checks: native/functional and export/reload outputs bitwise equal; all 113 checkpoint gradients exact; full-vocabulary chunking checks passed; complete 2047-target update had finite gradients and no overflow; all 394 frozen tensor hashes unchanged. Peak allocated 35,774,360,064 bytes; trial state discarded.
+- [x] Run the fixed four passes / 128 successful updates on the 32 calibration training windows: 128 attempts, zero overflows, 262,016 target exposures; only the final checkpoint exported.
+- [x] Export and independently verify the complete small-tensor replacement: all 394 frozen GPU tensor hashes unchanged, all 113 rounded masters match export, all 280 protected small tensors exact, original E8/W5 inherited. Logical raw data remains 2,886,482,462 bytes.
+- [x] Compare original parent and reloaded candidate in one process: PPL 9.237164→8.965396 (−2.9421%); normal MK 10/12→9/12; controls 0/12 unchanged. PPL gate passed; combined gate failed.
+- [x] Preserve the negative combined result and stop this fixed recipe. Full validation was skipped; the source-relative quality target remains unestablished for this candidate. See docs/NORM_COMPENSATION_RESULTS.md.
 
 This route adds no inference tensor fields; actual archive and metadata bytes must still be measured. No publication or test-set evaluation is authorized by this experiment.
 

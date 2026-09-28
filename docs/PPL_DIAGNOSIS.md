@@ -222,6 +222,13 @@ benefit from extra codeword search, insufficient for the tested repair gate.
 It does not establish a lower bound for all 2-bit methods. No training or further
 candidate selection was performed in this bounded experiment.
 
+The subsequent [norm-only training experiment](NORM_COMPENSATION_RESULTS.md)
+recovered 2.9421% development PPL at unchanged raw size, but lost one of the
+parent's ten correct public recall cases. It failed its predeclared combined
+gate and stopped before full validation. This shows some prose loss is
+compensable with existing parameters; it does not establish preserved recall
+or repair the original full-test quality failure.
+
 ## Reproduce the diagnosis
 
 Use the pinned source/raw artifacts and existing frozen reports. Choose fresh

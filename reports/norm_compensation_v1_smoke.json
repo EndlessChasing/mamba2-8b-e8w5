@@ -1,0 +1,2687 @@
+{
+  "complete": true,
+  "passed": true,
+  "mode": "smoke",
+  "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "selected_norms": {
+    "backbone.layers.0.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.0.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.1.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.1.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.2.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.2.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.3.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.3.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.4.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.4.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.5.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.5.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.6.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.6.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.7.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.7.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.8.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.8.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.9.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.9.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.10.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.10.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.11.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.11.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.12.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.12.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.13.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.13.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.14.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.14.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.15.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.15.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.16.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.16.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.17.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.17.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.18.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.18.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.19.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.19.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.20.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.20.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.21.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.21.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.22.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.22.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.23.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.23.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.24.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.24.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.25.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.25.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.26.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.26.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.27.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.27.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.28.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.28.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.29.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.29.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.30.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.30.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.31.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.31.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.32.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.32.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.33.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.33.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.34.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.34.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.35.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.35.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.36.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.36.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.37.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.37.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.38.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.38.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.39.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.39.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.40.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.40.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.41.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.41.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.42.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.42.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.43.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.43.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.44.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.44.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.45.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.45.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.46.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.46.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.47.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.47.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.48.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.48.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.49.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.49.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.50.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.50.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.51.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.51.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.52.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.52.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.53.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.53.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.54.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.54.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.55.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.55.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.norm_f.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    }
+  },
+  "started_at_unix": 1790560697.3429346,
+  "pid": 964039,
+  "evaluation_data_used": false,
+  "calibration_split": "train",
+  "binding": {
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "hessian_manifest_sha256": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+    "calibration_tokens_sha256": "ebeb62135d074ba41fcb44cc64f8fe8aa09f452dfd28183c1b28f84645e6f577",
+    "protocol_sha256": "125cf066981e0b014c6cb1eb3cfd01608d63a9b7271185038b4dea30938308a3",
+    "trainer_source_sha256": "da1818af295738cfa8a012b35ff0d1f007c410f27988d9bdaf88425fbedc47f2",
+    "training_helper_source_sha256": "25ac3ec6ba167902014018f99fbf8dbbc659e0e4903f80baf28e28a4a3e74087",
+    "norm_overlay_source_sha256": "2e911764fe065c9dfe7971dff02f17c92911530c02ca5b16c78d2f42af450385",
+    "hyperparameters": {
+      "epochs": 4,
+      "windows_per_epoch": 32,
+      "window_tokens": 2048,
+      "targets_per_window": 2047,
+      "successful_updates": 128,
+      "maximum_skipped_attempts": 8,
+      "maximum_attempts": 136,
+      "seed": 20260927,
+      "sampler": "four sequential torch.randperm(32) draws from one seeded CPU Generator",
+      "optimizer": "AdamW",
+      "learning_rate": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 0.0,
+      "gradient_clip_norm": 1.0,
+      "ce_coefficient": 0.5,
+      "teacher_to_student_kl_coefficient": 0.5,
+      "temperature": 1.0,
+      "logits_chunk_tokens": 64,
+      "model_mode": "eval with gradients enabled",
+      "master_dtype": "float32",
+      "forward_parameter_dtype": "float16",
+      "checkpoint_each_native_block": true,
+      "loss_scaler": {
+        "device": "cuda",
+        "init_scale": 1024.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000
+      },
+      "overflow_policy": "retry same scheduled window without optimizer update; stop above8 skipped attempts",
+      "selection": "final128 successful updates only; no validation during training"
+    },
+    "frozen_code_sha256": {
+      "quantize.py": "7a63da784932e53eecfa49e1403d140e142f05d97b1621729af7fe3f20b03b08",
+      "codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369"
+    },
+    "evaluation_source_sha256": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "initial_forward": {
+    "hidden_bitwise_equal": true,
+    "logits_bitwise_equal": true,
+    "input_tokens": 128,
+    "hidden_sha256": "cb3d41c141e9f39aa78bcc72d952ebc051cd93dd16285efcf9639b362acf06cc"
+  },
+  "tolerances": {
+    "checkpoint_gradient_rtol": 0.005,
+    "checkpoint_gradient_atol": 3e-05,
+    "chunk_hidden_gradient_rtol": 0.005,
+    "chunk_hidden_gradient_atol": 0.001,
+    "chunk_objective_absolute": 1e-05
+  },
+  "checkpoint_parity": {
+    "passed": true,
+    "rtol": 0.005,
+    "atol": 3e-05,
+    "maximum_absolute_difference": 0.0,
+    "tensor_count": 113,
+    "hidden_bitwise_equal": true,
+    "perturbed_masters": true,
+    "gradient_coverage": {
+      "finite": true,
+      "tensors": 113,
+      "parameters": 692224,
+      "nonzero": 692217,
+      "dtypes": [
+        "torch.float32"
+      ],
+      "per_tensor": {
+        "backbone.layers.0.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.0.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.1.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.1.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.10.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.10.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.11.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.11.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.12.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.12.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.13.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.13.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.14.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.14.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.15.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.15.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.16.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.16.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.17.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.17.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.18.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8191,
+          "numel": 8192
+        },
+        "backbone.layers.18.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.19.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.19.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.2.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8191,
+          "numel": 8192
+        },
+        "backbone.layers.2.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.20.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.20.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.21.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.21.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.22.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8191,
+          "numel": 8192
+        },
+        "backbone.layers.22.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.23.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.23.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.24.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.24.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.25.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.25.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.26.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.26.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.27.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.27.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.28.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.28.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.29.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.29.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.3.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.3.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.30.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.30.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.31.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.31.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.32.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.32.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.33.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.33.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.34.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.34.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.35.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8191,
+          "numel": 8192
+        },
+        "backbone.layers.35.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.36.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.36.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.37.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.37.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.38.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.38.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.39.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.39.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.4.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.4.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.40.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.40.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.41.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.41.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.42.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.42.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.43.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.43.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.44.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.44.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.45.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.45.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.46.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.46.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.47.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.47.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.48.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.48.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.49.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.49.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.5.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.5.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.50.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.50.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.51.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.51.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.52.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.52.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.53.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8190,
+          "numel": 8192
+        },
+        "backbone.layers.53.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.54.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.54.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.55.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8191,
+          "numel": 8192
+        },
+        "backbone.layers.55.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.6.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.6.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.7.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.7.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.8.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.8.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.9.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.9.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.norm_f.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        }
+      }
+    }
+  },
+  "chunked_loss_parity": {
+    "passed": true,
+    "rtol": 0.005,
+    "atol": 0.001,
+    "maximum_absolute_difference": 0.0,
+    "tensor_count": 1,
+    "tokens": 5,
+    "chunk_tokens": 3,
+    "objective_absolute_difference": 1.9967556008637644e-07,
+    "chunked_loss": 3.314610281586647,
+    "unchunked_loss": 3.314610481262207
+  },
+  "full_window_trial": {
+    "attempts": [
+      {
+        "ce": 2.3997852267669244,
+        "teacher_to_student_kl": 0.13379086094713236,
+        "loss": 1.2667880438570285,
+        "targets": 2047,
+        "scaled_hidden_gradient_finite": true,
+        "scaled_hidden_gradient_nonzero": 8371275,
+        "scaled_hidden_gradient_elements": 8384512,
+        "overflow": false,
+        "loss_scale_before": 1024.0,
+        "loss_scale_after": 1024.0,
+        "gradient_norm_before_clip": 2.0788681507110596,
+        "gradients": {
+          "finite": true,
+          "tensors": 113,
+          "parameters": 692224,
+          "nonzero": 692222,
+          "dtypes": [
+            "torch.float32"
+          ]
+        },
+        "overflow_optimizer_and_masters_unchanged": null
+      }
+    ],
+    "successful_updates": 1,
+    "discard_before_training": true
+  },
+  "export_parity": {
+    "bitwise_equal": true,
+    "maximum_absolute_difference": 0.0,
+    "functional_hidden_sha256": "1c733c95be432133cfed5739cd82e2a4d859b79798b332f4ef79b7aed2fcccba",
+    "reloaded_hidden_sha256": "1c733c95be432133cfed5739cd82e2a4d859b79798b332f4ef79b7aed2fcccba",
+    "input_tokens": 128,
+    "tensor_comparison": {
+      "tensor_count": 393,
+      "selected_norm_tensor_count": 113,
+      "selected_norm_parameter_count": 692224,
+      "protected_non_norm_tensor_count": 280,
+      "actual_changed_norm_keys": [
+        "backbone.layers.0.mixer.norm.weight",
+        "backbone.layers.0.norm.weight",
+        "backbone.layers.1.mixer.norm.weight",
+        "backbone.layers.10.mixer.norm.weight",
+        "backbone.layers.11.mixer.norm.weight",
+        "backbone.layers.12.mixer.norm.weight",
+        "backbone.layers.13.mixer.norm.weight",
+        "backbone.layers.14.mixer.norm.weight",
+        "backbone.layers.15.mixer.norm.weight",
+        "backbone.layers.16.mixer.norm.weight",
+        "backbone.layers.17.mixer.norm.weight",
+        "backbone.layers.18.mixer.norm.weight",
+        "backbone.layers.19.mixer.norm.weight",
+        "backbone.layers.2.mixer.norm.weight",
+        "backbone.layers.20.mixer.norm.weight",
+        "backbone.layers.21.mixer.norm.weight",
+        "backbone.layers.22.mixer.norm.weight",
+        "backbone.layers.23.mixer.norm.weight",
+        "backbone.layers.24.mixer.norm.weight",
+        "backbone.layers.25.mixer.norm.weight",
+        "backbone.layers.26.mixer.norm.weight",
+        "backbone.layers.27.mixer.norm.weight",
+        "backbone.layers.28.mixer.norm.weight",
+        "backbone.layers.29.mixer.norm.weight",
+        "backbone.layers.3.mixer.norm.weight",
+        "backbone.layers.30.mixer.norm.weight",
+        "backbone.layers.31.mixer.norm.weight",
+        "backbone.layers.32.mixer.norm.weight",
+        "backbone.layers.33.mixer.norm.weight",
+        "backbone.layers.34.mixer.norm.weight",
+        "backbone.layers.35.mixer.norm.weight",
+        "backbone.layers.36.mixer.norm.weight",
+        "backbone.layers.37.mixer.norm.weight",
+        "backbone.layers.38.mixer.norm.weight",
+        "backbone.layers.39.mixer.norm.weight",
+        "backbone.layers.39.norm.weight",
+        "backbone.layers.4.mixer.norm.weight",
+        "backbone.layers.40.mixer.norm.weight",
+        "backbone.layers.40.norm.weight",
+        "backbone.layers.41.mixer.norm.weight",
+        "backbone.layers.41.norm.weight",
+        "backbone.layers.42.mixer.norm.weight",
+        "backbone.layers.42.norm.weight",
+        "backbone.layers.43.mixer.norm.weight",
+        "backbone.layers.43.norm.weight",
+        "backbone.layers.44.mixer.norm.weight",
+        "backbone.layers.44.norm.weight",
+        "backbone.layers.45.mixer.norm.weight",
+        "backbone.layers.45.norm.weight",
+        "backbone.layers.46.mixer.norm.weight",
+        "backbone.layers.46.norm.weight",
+        "backbone.layers.47.mixer.norm.weight",
+        "backbone.layers.47.norm.weight",
+        "backbone.layers.48.mixer.norm.weight",
+        "backbone.layers.48.norm.weight",
+        "backbone.layers.49.mixer.norm.weight",
+        "backbone.layers.49.norm.weight",
+        "backbone.layers.5.mixer.norm.weight",
+        "backbone.layers.50.mixer.norm.weight",
+        "backbone.layers.50.norm.weight",
+        "backbone.layers.51.mixer.norm.weight",
+        "backbone.layers.51.norm.weight",
+        "backbone.layers.52.mixer.norm.weight",
+        "backbone.layers.52.norm.weight",
+        "backbone.layers.53.mixer.norm.weight",
+        "backbone.layers.53.norm.weight",
+        "backbone.layers.54.mixer.norm.weight",
+        "backbone.layers.55.mixer.norm.weight",
+        "backbone.layers.6.mixer.norm.weight",
+        "backbone.layers.7.mixer.norm.weight",
+        "backbone.layers.8.mixer.norm.weight",
+        "backbone.layers.9.mixer.norm.weight"
+      ],
+      "actual_changed_norm_tensor_count": 72,
+      "unchanged_tensor_count": 321,
+      "candidate_fp16_tensor_sha256": {
+        "backbone.layers.0.norm.weight": "9793edc1c25e38122f2fd5920a238e28f0503aca7662eb1781738c5b0969ad73",
+        "backbone.layers.0.mixer.norm.weight": "fe4ef95537911fce87c5472e1bd8d687e378c523470d636c865da206a6e96ce5",
+        "backbone.layers.1.norm.weight": "9e29e2f3de238898a191e6bbba0b0852e2f15dd41466879da36be8d518b2199d",
+        "backbone.layers.1.mixer.norm.weight": "1797f5abb038982fbdb33be26451906990db0a224fb1533c4423246d9bf4d678",
+        "backbone.layers.2.norm.weight": "bab85a52f73b19bfe8ebfa48bf15b30bee7ecb683bbfcd7d34eb75ee30b53fd2",
+        "backbone.layers.2.mixer.norm.weight": "019732206b14956e4d18a9b6972c6273dc01dfc17854923d6a95fac7a46fc244",
+        "backbone.layers.3.norm.weight": "01ed7860131cd8bcefabff40c3228132fc222b7a5eeddec03e7a4d13fd137758",
+        "backbone.layers.3.mixer.norm.weight": "fb918ccc5c961bc1091e6bb8d969f9957f3099d797f89c54d407912f6f5b3632",
+        "backbone.layers.4.norm.weight": "f2ce50fb37126ddd30ba3beb7b213b331c1746bdc0c60ec6c5c26fd82e1ecd0c",
+        "backbone.layers.4.mixer.norm.weight": "d33491f5c3dfbcad428e85c9a0772f52b8b9e28bc75c1880defb3d9cfcfdb12e",
+        "backbone.layers.5.norm.weight": "ad44f74b2f588a6b5f106e3ed44aab1e31ee3366352869d7d7f17011236e9b60",
+        "backbone.layers.5.mixer.norm.weight": "41bef59eb41e03e0703160e39bf420686f2015292ca5c557b39af6f0d0c0a23a",
+        "backbone.layers.6.norm.weight": "7f520131c6694231b0fd73c6b1dc2a7700af71abbd9837f5c3abfe00f310d423",
+        "backbone.layers.6.mixer.norm.weight": "c8bdd21052394bcfaf57526c134883d94815b013c243f7cb15949584f6c7796d",
+        "backbone.layers.7.norm.weight": "bf6fb10ee195f462fc56f2ebdf5bc90868903e11ad112be734047f8b22840778",
+        "backbone.layers.7.mixer.norm.weight": "527b659c99e9f1840f854295fc781dca62862e2cf7f29a604755822e635be0c5",
+        "backbone.layers.8.norm.weight": "5f27b8fa0c87417559de141558cfc2c1c26b157e54bf882da11253f8f714960d",
+        "backbone.layers.8.mixer.norm.weight": "8180c5b07e1b4ca01f7ba2b94df0c88daf8f16b5fe7f3261ed8dd22cb2049b9f",
+        "backbone.layers.9.norm.weight": "c44b6d08369d2d42e241d4e82632dbb6fd7b6d3cfae96bfb40205a2effb3b2d9",
+        "backbone.layers.9.mixer.norm.weight": "bf5dce3c7f1349a2536f78119d04b8d29e8592cdbbad4b02d5bffe0c3c7e5727",
+        "backbone.layers.10.norm.weight": "81d316cd8e282e0da65590159338cc18f24d79687577225b90a5d87ed493539d",
+        "backbone.layers.10.mixer.norm.weight": "9377ef5da5b5ffed01a729bae699109a6143cd150e1b3fdcbe757b108ac19f33",
+        "backbone.layers.11.norm.weight": "2fabc03b5ba35332dde5bdab5a195ee2063b7e28e464f3c5b404f74632d1e184",
+        "backbone.layers.11.mixer.norm.weight": "3fbfe51a3a61d31ca5487be1b6dd46d2df494aeeab6bbbd0b9427d2bc8e9c843",
+        "backbone.layers.12.norm.weight": "18979a2dd8e980e4e4fcc04e43e8e03ad79e7e984f7f80300cf16dac1ad561de",
+        "backbone.layers.12.mixer.norm.weight": "bc696023987a4dcd8bdc670c5f70dbe10e6ff50633aca6c303a65072c72f1d65",
+        "backbone.layers.13.norm.weight": "3d6c40cbdd1a5583b6a7cd541f7e6fa4e1c129471ed87f8735f072f01688c5c6",
+        "backbone.layers.13.mixer.norm.weight": "39e03e340835ea8c97745d60f47ae676fa1d46bd052e9c4873c44924f80d9e52",
+        "backbone.layers.14.norm.weight": "4c5734dd29096b6224aaafe294714a1b5312503bf11faa53c524d14c2e0daa97",
+        "backbone.layers.14.mixer.norm.weight": "8ff058df9d0555afc4722f8073cc734edc2b257a90cf3e29fd928462048b0118",
+        "backbone.layers.15.norm.weight": "f5776f81ddb0776e09eba6807b30abccedbdbed440a16de704005b0768d48c85",
+        "backbone.layers.15.mixer.norm.weight": "29e4a6f18c8176fe42de0600957e295d022acd0b77939666d6df20f509599441",
+        "backbone.layers.16.norm.weight": "d6910544ccd022e809030c347fddd6153bfccdc0e70a9884f8b7660e8ced8ffa",
+        "backbone.layers.16.mixer.norm.weight": "fa3f7d7fe76c50671a5985b69ef71abb7878ca7a47f6dd7fc04cf62a0d53a67a",
+        "backbone.layers.17.norm.weight": "0dbda8b78265d62ed2101015cceac59fa93d7ff5a1d1a9a255b063eb5fb46b71",
+        "backbone.layers.17.mixer.norm.weight": "cae2c42e55b20cc7d6a5a37851296efa9d1aa170be8640937cd98138abbfbc5a",
+        "backbone.layers.18.norm.weight": "995ca90d9a99a38c557cecf8ae6262cdbd785a8d2dc080c5676711203a5c789c",
+        "backbone.layers.18.mixer.norm.weight": "d961932856da8305ef9e25afbbf705cabf4ee4c89fdb6ced39b237dc12046e5b",
+        "backbone.layers.19.norm.weight": "1d073b4d344e004814677ed176b3a9b62a5126b78e7c9f9fc37f0133bda6607c",
+        "backbone.layers.19.mixer.norm.weight": "2022bd95f65bfce6d3e4f2dc7eaf9f2c6072934bd923c3f93643da6e4e4f0943",
+        "backbone.layers.20.norm.weight": "5599a9e958c94b2ed441e2dd1d404df9db1c0c169471849b7f7f51eb133bef16",
+        "backbone.layers.20.mixer.norm.weight": "60a68132e91c0e30e4a92369e5facadfb1898d284bf46d7ee2ea3285b685bb66",
+        "backbone.layers.21.norm.weight": "09eac8ee9f6cd1828078d4d5e700ffda829e6a2bbdfe45f7a381cf2dca5bdd42",
+        "backbone.layers.21.mixer.norm.weight": "18640a75b9a399e69fdfc741ed0015fa89c64c8d201d89fc8b416293304d5fe6",
+        "backbone.layers.22.norm.weight": "6f74012a93ec2813c4b9542f7082b1fcf1591331aa333412f2718430f5217c1e",
+        "backbone.layers.22.mixer.norm.weight": "93aa3a8dfc5b102d68f69980e68e86e191dcf20f2e0fdbda80c0d92572bdd656",
+        "backbone.layers.23.norm.weight": "c817ced803c1d381cb9c0eb3322e5cf18a3701772b00fee4997f8dab9c2cc6cc",
+        "backbone.layers.23.mixer.norm.weight": "fa1c675f0ce2dd2ccacf5e466f3b34cdfdef13af3ebaaee40cccac8786b7deea",
+        "backbone.layers.24.norm.weight": "5a85ce8fc16972fd0219563bc5465d1bbd2d238b8f49d4f7e32fdb7ee287d5b5",
+        "backbone.layers.24.mixer.norm.weight": "4b3cffe28b4b5c1dee129b2aef35b74faa54aad0ac05116fc611cfe425a05159",
+        "backbone.layers.25.norm.weight": "428fe2cd8377e08f72255b42a74501984e919bdee4907f9d7457b5c4becc8547",
+        "backbone.layers.25.mixer.norm.weight": "5f68558e25b8ae63cb9c0bfc720120816d2884dd434bd26897b73e75b872204d",
+        "backbone.layers.26.norm.weight": "dd50e679bda5b158354eca362245dad141a3c21ae5741698f588a587fb12c80d",
+        "backbone.layers.26.mixer.norm.weight": "95d5cd3e84f2164a69485918bac092ae1f7d0a93020b417292224d076414d53f",
+        "backbone.layers.27.norm.weight": "f52a1de1e8c66b9ec8019b87d0c65d58a49f7b0c72f7ac5a76a2c1be033409d2",
+        "backbone.layers.27.mixer.norm.weight": "8becb31e27a2a2b9805abcb88e0a985b8626226b40fb08aa3a489a68297a40f6",
+        "backbone.layers.28.norm.weight": "3e885238ffc01b721de1579a8d0e7fb624779ea1f8281f3188265de4913e0074",
+        "backbone.layers.28.mixer.norm.weight": "467b45d6d5a65213d91111de952e7d7b023c536b5216b273bde43035b856d5ed",
+        "backbone.layers.29.norm.weight": "9a2aa638bc4c696d19960f272c53c465af7e1aefcbed57ec73910c9bcebe0650",
+        "backbone.layers.29.mixer.norm.weight": "d304004565c03cbebf3c9022034b905691633260d29e08bb648f0d5939fb938c",
+        "backbone.layers.30.norm.weight": "77dfff6725bf5fb1bdf61246549174ad9dc8cada01e5ae5b236cf47b32289b83",
+        "backbone.layers.30.mixer.norm.weight": "149f0f722547e62e7026ba39376799cad45f1e09313bfa47d6c1512b0260cd45",
+        "backbone.layers.31.norm.weight": "91021b027b364e8c80684278e5d8ae72dd4ce447f9a3b32169f466b277e1d4b6",
+        "backbone.layers.31.mixer.norm.weight": "2fa86371c91159153f32e3c2b351f5836a7b8e7631f05f975c3b0922d0b83b05",
+        "backbone.layers.32.norm.weight": "85ee33d860c5d68a96301e435c588a6f326169d9b6ff81e49a17d2a95fd96455",
+        "backbone.layers.32.mixer.norm.weight": "712a896d36f0278d2d22db0424789d91328b6b452b6c1febf2df41ced7e47200",
+        "backbone.layers.33.norm.weight": "b553ea94ea3b619e0c0a5c605f5fc959329ba42fca542b60926ae48e326b6fe1",
+        "backbone.layers.33.mixer.norm.weight": "951aea11e7b5e2bc5f260d4c316089829af8d67300b3e4626148baada28a92cf",
+        "backbone.layers.34.norm.weight": "d85bb56c4bbf9d032530af16540b5e0730cec734d1df58893e16a5025bb23775",
+        "backbone.layers.34.mixer.norm.weight": "bd1f5b2cb46a1192943c5432de13dfbdaeaa50ce97a8ce825afb5fe31d88e92b",
+        "backbone.layers.35.norm.weight": "02d45b99deb96f5b2ba06fb445e676ab517ae9de09e3ab073a89c300d1d68d89",
+        "backbone.layers.35.mixer.norm.weight": "4729e52a2653a1e79564aa5f2b32915b2f57e95820701e4cb494e21088e7a035",
+        "backbone.layers.36.norm.weight": "5b0463dab176c1aea4336ffb6e748c23c104f5f6636d0fd1ec2d28d12dce1875",
+        "backbone.layers.36.mixer.norm.weight": "47b7fa5d9cd813e09e5f5c4bdf2d957ec3f5409942cbd2b1dbcc06fce14dcb96",
+        "backbone.layers.37.norm.weight": "a89b7145356590ddbbff47a18beca350004e67d3ebf99a5906d0b5078a604b07",
+        "backbone.layers.37.mixer.norm.weight": "1f31b600d3482c27b55171ead0e940d652083eafa00855065a27b8b1fae960fd",
+        "backbone.layers.38.norm.weight": "19c5ebc7de9cee118883b267470901048adffffe3424a2793aedcf127332b204",
+        "backbone.layers.38.mixer.norm.weight": "01d3b2450a704b2410b6a61dbdb73b2347b1e48a9b620aa8a522ea2763a6150a",
+        "backbone.layers.39.norm.weight": "787308438382d9fed8243129ba3dd2f0c48e41aa46eaedd1e85eee6b5c917d1c",
+        "backbone.layers.39.mixer.norm.weight": "2abb5033ddc312a2bc4c7cadfc3511342fee9fdcd3e3975638f2d53d785745cc",
+        "backbone.layers.40.norm.weight": "4d5b3d7236d4b3d2fcccc93aa570f2070995ed58ff815731bf82b403915a9e48",
+        "backbone.layers.40.mixer.norm.weight": "29a22483b804460089e8943ce9b4eba1b9794d934bac269656552ddac95c1b0c",
+        "backbone.layers.41.norm.weight": "b51a20b565117188b0a67e7d52fa71b3d21d1025b6f07eb4e914ef915d617e1a",
+        "backbone.layers.41.mixer.norm.weight": "6673a61ca2b71e66e613860f97d611e507081d242f120f892ce735b4ec203d4b",
+        "backbone.layers.42.norm.weight": "71a7e4a7be78376c1e58217572ea5baacaccfd04392d29dfb30c81ea8aea5885",
+        "backbone.layers.42.mixer.norm.weight": "e11a00ab12e9d4b4b43c593315b0c04e4ddc41be485fa46f9733d06abb93eb61",
+        "backbone.layers.43.norm.weight": "aece7d644d1fe3966d7134fe1ebb2ecf0f23281ff2f5a4adb6af049d780c2144",
+        "backbone.layers.43.mixer.norm.weight": "5c51e30a3fc0d2dc4132157f6b5d402e6ccade52d454f31d1364d6ad4cc82b93",
+        "backbone.layers.44.norm.weight": "4e230799c3bc3ae5843e54b5c197db53fa8ed094b9d04a921c1e03d00b6b4000",
+        "backbone.layers.44.mixer.norm.weight": "c4b279dcfcd531a8899d5b440d97b94a336a0c01ac8c379493bb94638cba47d9",
+        "backbone.layers.45.norm.weight": "1a3e94f97b1a1af3bf59d987408d23fd13efc90d40396c81b55eb32340cd4914",
+        "backbone.layers.45.mixer.norm.weight": "3bf59cb6e288b5e684dc451128290097e93033dd78bf18b5696cb86ceada3cc1",
+        "backbone.layers.46.norm.weight": "cc2ee1a1c21309f670d234dde78fad0d02f7ec5b4f57a30ea4b940c6c5e4978e",
+        "backbone.layers.46.mixer.norm.weight": "6432014586db26ea055c9c62ffac23df4ff156925dc54a13b8a927744126af65",
+        "backbone.layers.47.norm.weight": "aa9a0ad4b08d40dc7bde984232d8f274949f6cb1a98a9210e06b168059a9e8d1",
+        "backbone.layers.47.mixer.norm.weight": "a6eec280c0d191faf689cfe5146cd89220f933f495c5d4b9cf7b630e1d44e90d",
+        "backbone.layers.48.norm.weight": "dd7e4ee86c785bbe74d75378614fb8419a94ab21a1e7ea209ae3bf699b981605",
+        "backbone.layers.48.mixer.norm.weight": "22d0e22b5c8208a4ec09eac1c0a295eac7f1d55d240aa24ab78c1f892595dff3",
+        "backbone.layers.49.norm.weight": "6d99c6499e894e7239fe2c28a47bbbeea5bb90cafb7768d40b212e9e42ce458d",
+        "backbone.layers.49.mixer.norm.weight": "5fffa20b2e484a54d8f8b8bdf8fb64526cee83b166984f0c634f15c7640fcc26",
+        "backbone.layers.50.norm.weight": "e8bdc2e6fb9a06d49dc1e281210f37ae2599846586cc82354151a65083645e93",
+        "backbone.layers.50.mixer.norm.weight": "ad2570c1ba25b18e50f4ef769827c08c9c4629a8b7dc31f70314439c7e61d818",
+        "backbone.layers.51.norm.weight": "365e0a792bfc35516bcb614d38b177bf2e20f542138745bb4976ce1479088d49",
+        "backbone.layers.51.mixer.norm.weight": "f741ef1738518a4fc54f05a3c1bc9a45d7a85081e978810a3bc95a1f2080f780",
+        "backbone.layers.52.norm.weight": "308212240b1c1bc02365091260399bdc8890d107512a84ee132c96ebbaac59d3",
+        "backbone.layers.52.mixer.norm.weight": "2e269deff8039ecbbbac68f5528dad890c29d931dab56386d43d273734e5f8bf",
+        "backbone.layers.53.norm.weight": "5079c718bb17d48364b22063a92dea402e874723194f44f2ca38c7665e49340d",
+        "backbone.layers.53.mixer.norm.weight": "8d87ba04b27e692167dd316f23b3d8dbb576b2942c13b4ca44724f25012c0b10",
+        "backbone.layers.54.norm.weight": "34f792867f2eb4849503b03959193ccd9e2db3017e61fc1f8ae2fed08f18d5fa",
+        "backbone.layers.54.mixer.norm.weight": "6d3eda18419668d9c80519ccdfb86cff72feaae9a6fcaaaddc6fc77e29fb3d9c",
+        "backbone.layers.55.norm.weight": "0cebaa98b5f5c71290d4f5855504bd69063e5122d4b22c097a915536ee54de32",
+        "backbone.layers.55.mixer.norm.weight": "8ec4f60c55845d812ec74977a15d229a2760a1c7e0276694ac8c989e82d93ddb",
+        "backbone.norm_f.weight": "faaec522c44fb91b13d39994ddcab415ca0f106eefd127a2fd437b2303759860",
+        "backbone.layers.0.mixer.dt_bias": "575d992f7d30726a3ed0ef4404363b3bb05517d6c5c9919fe0ce6f71e82a2f95",
+        "backbone.layers.0.mixer.A_log": "29392b76e84485e739e55ec93ac1f3c9a5fdd773f1507e05a646594b3318d509",
+        "backbone.layers.0.mixer.D": "f403f7ff1c7b8bf49948587eba321a8b88d4e251298068f2bc7e7f81dac3aeaf",
+        "backbone.layers.0.mixer.conv1d.weight": "6c20cbe43da8393c6b58312e7d08d28d6f11f2c27917f763c2ad43a400947a01",
+        "backbone.layers.0.mixer.conv1d.bias": "2f8af760ccc9b5c4a9571e6b2d7911341ae2de5a20f78d8a7e91ab78e2cb45c8",
+        "backbone.layers.1.mixer.dt_bias": "ae3bc85972c86c363f53effd0dc73bbaf26e8e1dc3712b93a2b55e355c272d2a",
+        "backbone.layers.1.mixer.A_log": "c3e07ff4f6828621d19e6f9f485707a4e1a0dbc1523846859e3977c96a5c9955",
+        "backbone.layers.1.mixer.D": "3f8d560bb4c20630d019b88b266febddecb796b6107dc1383fedc5b8a940f93b",
+        "backbone.layers.1.mixer.conv1d.weight": "1466752dc9510ffa8f81980222280bd544cacfdf18b4828c44323993fc7259df",
+        "backbone.layers.1.mixer.conv1d.bias": "1bafe69217bc1f0b2897cbf9025a6566173295d880ffadf59fc34954598e6453",
+        "backbone.layers.2.mixer.dt_bias": "15cde4f788f1ff9485dc227f4e9ebce8086db1708b906f1f978da5f91575c0ee",
+        "backbone.layers.2.mixer.A_log": "5d489b5a3aea0568892de8ffe6bdb9f66393f63fd9950d46e68bce5890d8cc22",
+        "backbone.layers.2.mixer.D": "a8e6d5bb5ad6b6f5b2c348c29942d5257c8ba57ac1d5911979a267a9a7cc7c61",
+        "backbone.layers.2.mixer.conv1d.weight": "6b9e2f4ade006643ecd590ab25ca3589a261eb00a96cd7d7335206b80dba5524",
+        "backbone.layers.2.mixer.conv1d.bias": "4f456087ed19f4e735c6d6255b9cf1625cdee2bb5bf2445b3a8c17df6969e2d9",
+        "backbone.layers.3.mixer.dt_bias": "269a5fbcce1bc2c51819b1e7a5558a29775161ca550099a8a105961d11842405",
+        "backbone.layers.3.mixer.A_log": "0fcecbdfef16ee9a572cfbec4cedfab376b4c779389acaf0f52f548dc764ed73",
+        "backbone.layers.3.mixer.D": "1554e5ad7649f1544d2f41cde1e36eb3d68b19396feea8a3c84d8f3b9dd6ba57",
+        "backbone.layers.3.mixer.conv1d.weight": "aa8686394d656efac69db1c9167911b2a3c34fc47e5abaf54730ab2dbf932e15",
+        "backbone.layers.3.mixer.conv1d.bias": "428fd49dc59e1387638268ad2a2009b78e311ccde29ae0ef25a5a45ea392db40",
+        "backbone.layers.4.mixer.dt_bias": "330c9ada10d50b5b1395a49c669a6c6866cb89c67b5dab528d216bd183d29306",
+        "backbone.layers.4.mixer.A_log": "81b2cb9c623779e72fc6f0baee4ce062d421bc3b2ee092df00b2da922752a18b",
+        "backbone.layers.4.mixer.D": "d60e0ec52a650f6df590923518c337ed37af616802d683947cfb8b2be9da3c04",
+        "backbone.layers.4.mixer.conv1d.weight": "5d2e1b198cf100fcece9605aaed3bc93b5141a8a17311eb4b1942bb41826addc",
+        "backbone.layers.4.mixer.conv1d.bias": "020308daf8003db276077de20db5bf9b015ba5379195b4550cbc12f21d989f5b",
+        "backbone.layers.5.mixer.dt_bias": "63264b7f6a174f9440dff8dc8ea288244c1bfd1d57521e59bddda1e1fa431610",
+        "backbone.layers.5.mixer.A_log": "1b53fda9c3153fec7f9df48545658001dde1edb43e6f459845b02cd0b77c5147",
+        "backbone.layers.5.mixer.D": "4172d001644056bd136afdf0858a678923d470657a551a643b765360d04ba519",
+        "backbone.layers.5.mixer.conv1d.weight": "79c906ba95e398316653dea595561039a13c17225d83ad84b6875ce1a33fc9e7",
+        "backbone.layers.5.mixer.conv1d.bias": "27c9d3e0cde45c9092fb572d44ce3a1af4a279679805dda4941eb7d63441c1bb",
+        "backbone.layers.6.mixer.dt_bias": "08a8f542317c36767a974f0703ead327a5750c2a2e99bf44ff78b6660763f564",
+        "backbone.layers.6.mixer.A_log": "0bb4b3272855d54a1554309ab0e12861b80f0c555c87fff6db317748c46d1d94",
+        "backbone.layers.6.mixer.D": "005598e55cbaf612df49f91a6bf3073ab4ce625a34fafd657c12ca61f12332d1",
+        "backbone.layers.6.mixer.conv1d.weight": "c223dade29ec079d10aa9644114e22b65e4288de0a68c3fa4ead894f065fc2ad",
+        "backbone.layers.6.mixer.conv1d.bias": "bcab2f7846e401324b5d9deacfb94eb7dfbb2e0af81c212ae6d4b5b696e93467",
+        "backbone.layers.7.mixer.dt_bias": "8121037a3fb7644e5e255a153151ad5e2d8c378c65571fb8e6bbcd758538fd21",
+        "backbone.layers.7.mixer.A_log": "a12135bb157b5ea0af3ee12034386adffcec65ec397100025981285b0fc13efb",
+        "backbone.layers.7.mixer.D": "2d7fdf8f427733a7c61baf62e757550b9e036a9a055eb6fc14a31917d0d4300c",
+        "backbone.layers.7.mixer.conv1d.weight": "de368d0203ed30e65c31f983fd693d38c67540bc7548ec15aadf7a1f9dc6b36a",
+        "backbone.layers.7.mixer.conv1d.bias": "936c9391061cdba320210737ca1ce22fd4dad9b7dc013986ae62a466762a6cd8",
+        "backbone.layers.8.mixer.dt_bias": "d09c4c2c4fb2bf1ff7f998b49b31b971106e406d3a708e8a7eba2cff0496a9a5",
+        "backbone.layers.8.mixer.A_log": "ba4517666ce89351f5468bcc2645a1ea9fa211d23b6570b7cd39a28e0430bc5b",
+        "backbone.layers.8.mixer.D": "07c8e5a49539b5d3fb17eb46648f82c1f7fdeb64fce7688e9b4ea8b025254834",
+        "backbone.layers.8.mixer.conv1d.weight": "41bae34c06ae430d1f39c44e9d671e7a1de097564cd57f1fefb4a9f31a838a8f",
+        "backbone.layers.8.mixer.conv1d.bias": "8a9dcea999f18211d615924e737c2d1d5f97b71be36fa95c1ca30d68ba4b6e35",
+        "backbone.layers.9.mixer.dt_bias": "47f82d0956f1410de8d2e3028613d87744fff36c40e01f101499275d9a1f246c",
+        "backbone.layers.9.mixer.A_log": "d12ee15e981b77f5d6ce618e0e954264ad591d5030feeb54df7bb6ae85041a14",
+        "backbone.layers.9.mixer.D": "45b1e4c49adf0de86e746ec6dbd3df451fc49923be6d147b64c98e3f509d0886",
+        "backbone.layers.9.mixer.conv1d.weight": "2dc1137b6df8f51a8a518450ee93cc6bffce8a611691b3e66d6be38b71486391",
+        "backbone.layers.9.mixer.conv1d.bias": "4717f86a354f0c59d1e9b87d4b7585a7cea98b0bf55de0a21836ebc926ea7ba6",
+        "backbone.layers.10.mixer.dt_bias": "d324777e66f0e6e4d99a1ef833e038402303c7a973c79b7e9eec5de728ee0994",
+        "backbone.layers.10.mixer.A_log": "549d1d9132b408b025c666aec65ba1a172b21f3fdaf7b0bc4f08e22c1c41e068",
+        "backbone.layers.10.mixer.D": "7d5dbad8b46b07489ac9840757e480904f6a0b0c333ea8c9be87fb7ce2be8369",
+        "backbone.layers.10.mixer.conv1d.weight": "ab3baa93bfcc166d21ecfdd6a8020435d14cc8e9ac1298a561d8978a4a1ee3ab",
+        "backbone.layers.10.mixer.conv1d.bias": "6c10a33e19ca3fffd3811eea63e1cfbfff164474e6c7cd03fea1d060c2838f68",
+        "backbone.layers.11.mixer.dt_bias": "398a57d4a84fad84fe793c252c36689eb7222bf2c7dae842bd769aea8d132a8d",
+        "backbone.layers.11.mixer.A_log": "a49a4097c8b0b93687d7bca54c448edfd336695887835643c937a193b7645f8e",
+        "backbone.layers.11.mixer.D": "d37062a9603ed53aaf07f227312eac2896aa86a645b0a4013cd15be935d3176b",
+        "backbone.layers.11.mixer.conv1d.weight": "ee0b2719bd2f2b62edbe785d2147b03546d6d3041b79074ccd798695f13203de",
+        "backbone.layers.11.mixer.conv1d.bias": "cea5365c08c89d985b9e355ab8cb317a1ccdb27a625d68fb45a685916d5f508a",
+        "backbone.layers.12.mixer.dt_bias": "8c838c8c0b2d299b3b927c826c5bd7cd94b062276337a426e327ce8d2e5d9615",
+        "backbone.layers.12.mixer.A_log": "c37e8e70f7036f00d6a6e775a55ffc34f672edce0d72c573dc703039381c8e72",
+        "backbone.layers.12.mixer.D": "2420796f486bf19ace80997a6b522feae3ff158e2eb7f971208ececf872d39aa",
+        "backbone.layers.12.mixer.conv1d.weight": "bebbfe698927e5d6d94173d8cdc0004119b53051867e443a7434c63bbb4f5e97",
+        "backbone.layers.12.mixer.conv1d.bias": "34af93b560b686b68ca77a875da62ed0900dd584a668991b714b70b32ecc5fcc",
+        "backbone.layers.13.mixer.dt_bias": "18197d06a34ed3676a0bf74347d6d97dc6e7c35f5295f92a2b5e93b628b408f6",
+        "backbone.layers.13.mixer.A_log": "4d441f8ab4caa2078589fcf57fb5a5a28679a641ded4cfef767c632971cf9ab9",
+        "backbone.layers.13.mixer.D": "57f2216c11bd9372c4195f4629809b66288a3f656f2f37e02a955bbbb9c10544",
+        "backbone.layers.13.mixer.conv1d.weight": "3acf8890e7923c823748643a95d17ca047634a4c01f251939d6ec431ca925e68",
+        "backbone.layers.13.mixer.conv1d.bias": "497b7c5ac2401cca830c0178689ab7ff534a6efff0da08f47e66f834ac430d4e",
+        "backbone.layers.14.mixer.dt_bias": "d7ba3283e57c1d6667dafc6a5557bc0283b6083ca738eb24bc16e7bc5ebbbfe9",
+        "backbone.layers.14.mixer.A_log": "612e1d1902aff391bac31159c8cb257d87d8b45007a5caa20fc0d0f86877affe",
+        "backbone.layers.14.mixer.D": "8608fca8fa70a7abe2a4f30750450782f8bcfc6e1c328d3fca2c446ef7ff5750",
+        "backbone.layers.14.mixer.conv1d.weight": "207d18b40a9ae29b5dd59fae18785e75f4a55546c1251dadeefcdfec5e1061ae",
+        "backbone.layers.14.mixer.conv1d.bias": "9b7a78d13c5cf9dc2bdbba42e8dfb7dcd36dccfa188608eded62fc5e4120f9c1",
+        "backbone.layers.15.mixer.dt_bias": "03d06adfb765cd1c63511a591af2b922594ca984d9d02191990aed377ab87a7f",
+        "backbone.layers.15.mixer.A_log": "5570e0a435b5edcbd1128dbdbc536a59e5a65cd2ca20d6e17a97fe2f02630172",
+        "backbone.layers.15.mixer.D": "fef0f1d04b18aacc04c7e1ddcf0effed779c6e95dbbe769ec656c35d176ca803",
+        "backbone.layers.15.mixer.conv1d.weight": "302cea25cf918972d29affd7d73b0fca03dd237e736f7da89a066aecb90d8557",
+        "backbone.layers.15.mixer.conv1d.bias": "d89d957103a8bc734d9b4f1c092b25f1560e785f1919db467c222f9353e2750c",
+        "backbone.layers.16.mixer.dt_bias": "56bbfd60436a32ec7d72a51ea63f95e86b0ba57016422a180dc28e8edaba05d0",
+        "backbone.layers.16.mixer.A_log": "28dc31e731f08a54d3863b59a5771ac77087b99d7f95f9a0060b8bb826b6892c",
+        "backbone.layers.16.mixer.D": "e8083fd430522a2bacf26ce7fe30348102c101e811927f4543db403724f7bd94",
+        "backbone.layers.16.mixer.conv1d.weight": "c5e1703d843e11393887d7031286f517bbbd31794018ec275d761470b494600f",
+        "backbone.layers.16.mixer.conv1d.bias": "78af0ceaf23cb00b0536a85962eac2db567fbb670d70191d2d182fa53ac1688c",
+        "backbone.layers.17.mixer.dt_bias": "da30edbdcb7abd589e0f5be03acb09f8e313d50cf6e2895ea510e1bbd866e10b",
+        "backbone.layers.17.mixer.A_log": "19fb22c89739c883c9b4f8194b23f158e73ed8977319e97490934013d78992fd",
+        "backbone.layers.17.mixer.D": "d3c6e51127a62f41bdcc8c25feab179e952572a107647d25a9119c70a23de797",
+        "backbone.layers.17.mixer.conv1d.weight": "2d8f6e155e96d9180819637800d896672ddbc91f82c158eab2fb2d5082ec0b8e",
+        "backbone.layers.17.mixer.conv1d.bias": "9b1677920accdb43d90bada8e0506cf83c8a18eb26f398710e6f5bae2cf4b9c6",
+        "backbone.layers.18.mixer.dt_bias": "caf798ab038bbe6db8ecabd667b6b8f9832f81e578660c9de7e5645ad0d4bc5d",
+        "backbone.layers.18.mixer.A_log": "5c35bd6083c3feff4bead9e2dc49ba8982161ad7e0d97d8ae7de42647c69688d",
+        "backbone.layers.18.mixer.D": "abb5386c7f4d69371ac5c5ca3102958b09f9f8ae1a3a9fa0aa30c6265092cdb8",
+        "backbone.layers.18.mixer.conv1d.weight": "e995e5de14b4ee1032fff9dcb5dc8b1237d99c2de0ce5faff9e8f139d674df97",
+        "backbone.layers.18.mixer.conv1d.bias": "0d2ffc81c63e92124c27558f04bc3000ee08cd253e81932d87d9cd45e002aded",
+        "backbone.layers.19.mixer.dt_bias": "fafee561285a386364dd8bd49ca8b045c843e15d969b711630a193a3c86fe037",
+        "backbone.layers.19.mixer.A_log": "10865c8e3bb5785b848efb7a887909e5dd5e008f8a275d8655fda2b7edb84000",
+        "backbone.layers.19.mixer.D": "f4c1bf7c3dd76270406c68c1ccc17c30a699106d618dcd40b2b8078dcaed76b7",
+        "backbone.layers.19.mixer.conv1d.weight": "e10180afd81ce19d7d22072984fcf64e730dfe3bb477ada00205d5846e33ac44",
+        "backbone.layers.19.mixer.conv1d.bias": "072c36c348e2c3d96c4c6c172f3d0b1fd55c75876c75a9e18bcc4d113aece5dd",
+        "backbone.layers.20.mixer.dt_bias": "26134afcf405687849544834016e542c1c58a6d5adfbc8240aac49638608a861",
+        "backbone.layers.20.mixer.A_log": "b0b072bf883570b33eba9fa410a2d2cbe622db9ab7a6bc563c504c5d716352e5",
+        "backbone.layers.20.mixer.D": "a238032bdaada9b645f91e1c63b5e0b3db1eab1ad64486f99e7d8fe7806cde1c",
+        "backbone.layers.20.mixer.conv1d.weight": "2dd7a3dd802dc375cf3d5ae9ff7ec4dcb5941ae7fd25557ac1d6e2d646511be7",
+        "backbone.layers.20.mixer.conv1d.bias": "400d3fa9aa1336b93699fe8af01d48f8f706f3796c265408ecf9a15a559bb69a",
+        "backbone.layers.21.mixer.dt_bias": "b20c56a2c64efcff68b3e93d6b8514034ca5d5546856071a9398095d275b8b4c",
+        "backbone.layers.21.mixer.A_log": "5239beb13dbce70934dc6919697a07f3b6dd77f90d4a2583129e2a779d20f3f5",
+        "backbone.layers.21.mixer.D": "2851559df57450185bae0f482b9be52e42265df4d1c4c88e16357a59f6fa3e15",
+        "backbone.layers.21.mixer.conv1d.weight": "bcf01d6be9d30e54c1db3d97970864950267452d52498b5bb16eea5e0a7b08be",
+        "backbone.layers.21.mixer.conv1d.bias": "5fcf3613c6df9a4f2d99129a88a6dbd88d807ba3f7631fd1287fa0856b57a993",
+        "backbone.layers.22.mixer.dt_bias": "1629d1e393ad3c37f1da0f068d94e157e63c37eb7548b3e44125308b3a7ccd62",
+        "backbone.layers.22.mixer.A_log": "845e54a627c0e0a25e0ffe725aba0113e43b9ed454fd09faa0542f379d06ebe7",
+        "backbone.layers.22.mixer.D": "560c88a129a0fc7887f022437ff18351d4647a800bffe402e39633331571a145",
+        "backbone.layers.22.mixer.conv1d.weight": "cec6dfc0500b9cbc4bf6c83ffe60b0d916876a190ae13e623cf72947a5104935",
+        "backbone.layers.22.mixer.conv1d.bias": "25028a667430f08788bcf140e2ff926e903cd621ccfc7ace87bcf0b65765b101",
+        "backbone.layers.23.mixer.dt_bias": "62460522d608fcb2491b08c60a786297e7f35abf22250529d8a17417b73a075a",
+        "backbone.layers.23.mixer.A_log": "256b45c7be3a4c714ebd96c5bd329c7f8ecc56b0826e2ce974d839e266d47ef3",
+        "backbone.layers.23.mixer.D": "ea60d8fd560951d90850a68d2e5d7f02fc49c12841c7bbd0d9411e3696e4afa1",
+        "backbone.layers.23.mixer.conv1d.weight": "9e799b05ab5bb8001a337a71abf442faa52aba1ef1d1fa61f6fb588a030113e7",
+        "backbone.layers.23.mixer.conv1d.bias": "ca5342e86d03bec00d41086f66b480f4cc5e2fe509293acb59ffc2289becf02c",
+        "backbone.layers.24.mixer.dt_bias": "39582e76d30b090ba934dfb12c1e9352eeb31e98ff91cbebc7adf05866e9ea0d",
+        "backbone.layers.24.mixer.A_log": "4c8064143205ada0e96b336941ac55f7197848aa7918b2e840fc970cfcd2bb7a",
+        "backbone.layers.24.mixer.D": "c277c3b967a492735fbcbcec26e532f4b6607282f664c10cd72bc859206219c1",
+        "backbone.layers.24.mixer.conv1d.weight": "7a2d3eeaf6a70a17b79ae7aaede083dd03dee250a00399009ea451cc42fe7d03",
+        "backbone.layers.24.mixer.conv1d.bias": "1ffbd7d1b80471daf04af1993702bd8dad51936492fbc9bfb45b997fa59e1171",
+        "backbone.layers.25.mixer.dt_bias": "33269b569cd020ff52d7a8a4b57f59259e6f20d6ff929caf74006f2f79ff7a70",
+        "backbone.layers.25.mixer.A_log": "634260bcad92801b7d10fcc8fa0fd32d7ba6303155adf2521328e6f665cc2b51",
+        "backbone.layers.25.mixer.D": "920a89b75261ef527ce072f36e935475f37a3ead7cac42c33e5a38dcf5318119",
+        "backbone.layers.25.mixer.conv1d.weight": "c417ed3d8092ca914285332d84b0c204ada28b804677dda6463472e6c59a8ab1",
+        "backbone.layers.25.mixer.conv1d.bias": "ba65e8274dd4aaf833500e40f74e273ecf86d2edb73bc7376e0311b3bf7d73fc",
+        "backbone.layers.26.mixer.dt_bias": "50f2caf9766bd297c1f9f16b96b3990a628752bc545e16dd1c84042633921bfe",
+        "backbone.layers.26.mixer.A_log": "09c4b20ab9cb3e3d9e2c7fd24fd8cb66352eb085bc1a83c89affc955b59c54f3",
+        "backbone.layers.26.mixer.D": "220c27d710e3cb3e3621d6511cf85a26e1623fe3e178189570c6c6c37144652b",
+        "backbone.layers.26.mixer.conv1d.weight": "ca1ed45a5ddbaa3625d5ac91eba345c4af8feae39a92481574eca76d69a15990",
+        "backbone.layers.26.mixer.conv1d.bias": "1f0eeb3761cf264e20b57e2823a807a337ed335783767d81b7d43e305cac3ebd",
+        "backbone.layers.27.mixer.dt_bias": "fea735358e84b4fa3d1724dd2a6e03006ac8a27e484d1804b24a6aef42ffab09",
+        "backbone.layers.27.mixer.A_log": "a3a4ea97dd46282a53ce070e5db10954d794a466331889afaf52c411d3a06942",
+        "backbone.layers.27.mixer.D": "505141a60590d7933d9ab19de1c35a6ac0e9c953f5126a9b4e2109e0dd510c94",
+        "backbone.layers.27.mixer.conv1d.weight": "fb9fccc4a87f7096335d33581c48715b9274c6ea6087d6843104253e4fd32eef",
+        "backbone.layers.27.mixer.conv1d.bias": "c5ab9a61189144f5fa46cb277a73157ff2c46c6799bab8906da7e4a6e0f1df6f",
+        "backbone.layers.28.mixer.dt_bias": "58ca53e6860d866c746ce73692e7ba63c1cb4a784422fa8e177644a901c7f77e",
+        "backbone.layers.28.mixer.A_log": "a75d221bb3297d1041bb5589d1106b4bbdfec488e34255de0e1cd03f20290bc7",
+        "backbone.layers.28.mixer.D": "f080d472359a57018234ee32dc9e99d9f4181fa59a88d1b7e22a3ed313593dac",
+        "backbone.layers.28.mixer.conv1d.weight": "f0c9a06697227bb14f3915a6350dd99914317e1a61ba19644c1b678da57f0296",
+        "backbone.layers.28.mixer.conv1d.bias": "72d1f45edd6593d5f99049026ecf2741ba6df2efe71e078e10a93d4668a84e81",
+        "backbone.layers.29.mixer.dt_bias": "af38750da64c057b7a71009edd4eb40a3af42162b6c7efac9eeaad380d430357",
+        "backbone.layers.29.mixer.A_log": "9c6b2a26a52931a7226d3e1d94ae1d7d6941f25f5d20cac02978f7d7903a4b32",
+        "backbone.layers.29.mixer.D": "34ec92f2f0417360ad2bcec676346ef5c903905e71dc91f21d5f7dd3a412217b",
+        "backbone.layers.29.mixer.conv1d.weight": "1b49521951ccecdb84c437b260b352f4d9002bf9f83b33eae8071243814c9820",
+        "backbone.layers.29.mixer.conv1d.bias": "b1a093af7c4f5b43e3b4168ab301e8fd4f8eb4945b1fd18be55d320253c57958",
+        "backbone.layers.30.mixer.dt_bias": "60af789d442f0a8809967c8dc2f804aabdef826126615deda6e174c9e4d4ddb6",
+        "backbone.layers.30.mixer.A_log": "be73553b772adc0c015324fc0bfc2ce358ca250c18cdaa885e351905ace5936c",
+        "backbone.layers.30.mixer.D": "2cc12741fa7e45dc342c0fe275669dd06525ba8f38b4b9c9fc88569bf8dc51f8",
+        "backbone.layers.30.mixer.conv1d.weight": "afa0c6eaee3d7b8631e6b3b0da76a4a4735f1077409c0da0bb95a003717f7761",
+        "backbone.layers.30.mixer.conv1d.bias": "3f0d8d9f7dadf6957251a1032c26a3124e84a9994d2303581a270f7009eb51ac",
+        "backbone.layers.31.mixer.dt_bias": "7d5c2871ec08174f6b13748229c1da78b992e7b8cacf72b0eebf0e0f6127e3be",
+        "backbone.layers.31.mixer.A_log": "9b00d81564617e621f95aa7f3d67a1cd534632d66fe99da77f529b00635292cc",
+        "backbone.layers.31.mixer.D": "d377cc4a701f89da641a04033892ced50d7ec6f2edb2f341ade6a926e704daa1",
+        "backbone.layers.31.mixer.conv1d.weight": "72aced7ecb6f3308ae1d4d2bc15ae25b38b5d01dbfcea8119d0f275f27f89c0c",
+        "backbone.layers.31.mixer.conv1d.bias": "7528dc3029445c57ba5d667b3e777b0546256f6904268b0e5189cc8ab0a630e8",
+        "backbone.layers.32.mixer.dt_bias": "1291bf7326684dfeef78b2fe3a1c2320f2b22fe6592cff6dbe716d688811fe8b",
+        "backbone.layers.32.mixer.A_log": "d3ee4375ad337d0cc017c59e93c1a275a5649770276cefcf9058a43697359af9",
+        "backbone.layers.32.mixer.D": "9b91843c8d97e58473eb99bc1fd10540a3ba3440d4d79a82577b46579e6c6c04",
+        "backbone.layers.32.mixer.conv1d.weight": "9677ef22cc6d7c9ad6379350d4e6d4f37728b0336b1dc3ecf9c7c6edb7b0a22c",
+        "backbone.layers.32.mixer.conv1d.bias": "db603f363889d727bc5b14cd0d9a132f63c547f33b9e2ca874a186f1cd519e50",
+        "backbone.layers.33.mixer.dt_bias": "671034faf837a3a064b45420ab7b2195bc42fbc3c3ca1f710af4fc531e3ecb1f",
+        "backbone.layers.33.mixer.A_log": "e3ec48e2b880768adc1527050e6bc556ab22fdfec36c494f855a4d6b100ee5ea",
+        "backbone.layers.33.mixer.D": "586b436e12f5fb752878435d9f470fd002d9a0e2fb3d65409402b4eed401b5d5",
+        "backbone.layers.33.mixer.conv1d.weight": "87c254c6107ab19ae344bc8a5ffcc457dd7032986ae4dde7718629081d6da398",
+        "backbone.layers.33.mixer.conv1d.bias": "38a580623b2f6f19eed16867388bc37aadfc02387aec79aeb9c71505f9088e51",
+        "backbone.layers.34.mixer.dt_bias": "35cd68aeead431973ef70bdbf0e1124941455a7de3564290fc1079aaa51210b9",
+        "backbone.layers.34.mixer.A_log": "2ba267a4fc86aefb6c5f6353d571eaee07489767f7391d41b61a6550786c835e",
+        "backbone.layers.34.mixer.D": "0d7f5f91c5d2e7b54508698836425801c8c120236cc34499e437f88817d80d5c",
+        "backbone.layers.34.mixer.conv1d.weight": "76538a7b0362f623d67f30f6bd5b4da5911f9536ae4d605983e536d890b49175",
+        "backbone.layers.34.mixer.conv1d.bias": "05b25f96883dbc27fd1baab476435d88ef21f0466177a5971e9873bf1e2aac0c",
+        "backbone.layers.35.mixer.dt_bias": "4e271173698295e02fe3f47e43faf1e05338db38ac697bc891f0e61eabf1f159",
+        "backbone.layers.35.mixer.A_log": "97e5d6bfebbba2843243da0471a042b4ef92b3c55beba5272f2982c1152483a5",
+        "backbone.layers.35.mixer.D": "0caeea446d35bfe9dbf5e9b26a84a5cf6c5f1ce1445ec58af1ba43e9ada65324",
+        "backbone.layers.35.mixer.conv1d.weight": "2a55721dba0ea86203c2f4bbdcc2cc6823a0c625733620e0c0c60e7a12a09fe3",
+        "backbone.layers.35.mixer.conv1d.bias": "b277e9c1d7de7d7fc88447a26801203743700a6a4901310b298ed1817faf4ff2",
+        "backbone.layers.36.mixer.dt_bias": "39d4835ea0cdc827b0968deafc0c0d45f524819048cffa165179614d1b50b8e4",
+        "backbone.layers.36.mixer.A_log": "d05e16e2f76329bc1b64c70736b6cb0476d64c74933bb50798248b880683dc29",
+        "backbone.layers.36.mixer.D": "c6143b54d67d933de4d0afcaa98681230cc5132666655412d9359ff27e35ae64",
+        "backbone.layers.36.mixer.conv1d.weight": "0b7402d2a4922e5c9fbae8fce224580d40fbbc5927b0ac1f646a2e5e5f7b40b4",
+        "backbone.layers.36.mixer.conv1d.bias": "5a3bb5587f05a1904f12779f363090d45b21cd6ca94064d5688f46b9520a4316",
+        "backbone.layers.37.mixer.dt_bias": "7fa97f465f46d7d49c6e250dc670484f0540ffc579589d7a7c82835dba869191",
+        "backbone.layers.37.mixer.A_log": "ca5d2d0168cb1a01d76d27ca191a6adf183817c190970a1a33779da8848f5668",
+        "backbone.layers.37.mixer.D": "d0a32750ff9b5e827e137f239acdbd8d28ecde58dda42ab9555ba390962ff626",
+        "backbone.layers.37.mixer.conv1d.weight": "19345ca24b3930cf1001d8784b4ab119048d15d04b02ba9dcc645653a809ae0d",
+        "backbone.layers.37.mixer.conv1d.bias": "17d828fcec482e4c5887d8eb3fe1459333b45cdd85cc88ce52cc97606c33e71a",
+        "backbone.layers.38.mixer.dt_bias": "061ccf5c8f95a1663f665cad6f4d39abc5a10cc3aa5ee489da261fe361a9176d",
+        "backbone.layers.38.mixer.A_log": "5d5a09e494b52a60a0ba0337277b666eaa48e98ab976da5c5b94bfe2fe24f5ed",
+        "backbone.layers.38.mixer.D": "98ba09fe907a61a443e167e3353c7ca8ee40fc2d8e47a6d41500684870c41827",
+        "backbone.layers.38.mixer.conv1d.weight": "57fa0b20a5450868cda63c18dabb3b657360cfd2d27633ac0da77e79b6e93a28",
+        "backbone.layers.38.mixer.conv1d.bias": "9caf82d89fd8f0920149a77cae16a7ba72dba299f6ff06423c0a5596dae8d5fc",
+        "backbone.layers.39.mixer.dt_bias": "9b380fb631b17078a624dc88c90de4d115963e9355a987fb69faa1637f72d1ec",
+        "backbone.layers.39.mixer.A_log": "18284f0941bccbdcc05602676b480fab3cd41e84b733ee3f563362c9cb76739e",
+        "backbone.layers.39.mixer.D": "84250a71646d0589a032f35c222f7b3fedaf1d472d97d3b9e2adbb11b53cd97d",
+        "backbone.layers.39.mixer.conv1d.weight": "51e38a6d49af9d572fa7f08d7b65df02def1c759f33de6cf51ddc592736fca12",
+        "backbone.layers.39.mixer.conv1d.bias": "8f498e795748a1e114e52715e9a63160f66c4eace76b9d1ff67b3da4a4a8968a",
+        "backbone.layers.40.mixer.dt_bias": "5ee07eefa9ba88c43d0c9b43280d5ec57fb2a16d8b9368f677d6fb3baf0cb60d",
+        "backbone.layers.40.mixer.A_log": "f57bf6e3709d4ec6c7fa4947380357faf5ea6d05d5914856979e564c6dea1948",
+        "backbone.layers.40.mixer.D": "affb722ec6de655ab2bbad726b2e0120e66b6531133b4ae01fb9f1edf90c0e1d",
+        "backbone.layers.40.mixer.conv1d.weight": "ae927d8741236fca965fe2028dceedc1811c1ff166acf4d7a7ec29e26d2eb09a",
+        "backbone.layers.40.mixer.conv1d.bias": "9313d66bf10b2cb23cde8723c2665feeff7dfd53bae4aa2dc7fce805e2b09713",
+        "backbone.layers.41.mixer.dt_bias": "47ee2a26e5060ee6a24d9880f5919c3837647d82a9a1cbb5def674e3691e642f",
+        "backbone.layers.41.mixer.A_log": "f6879fea619a2be2cfcae46cd05377528545eb6a62bf6fac70a1cf4f465cb74f",
+        "backbone.layers.41.mixer.D": "a0dd498f98283e33106675c0148d8c470de0ffb263f44c132cc3acd606930721",
+        "backbone.layers.41.mixer.conv1d.weight": "89152e5d2616cf6ddcacb51bd4b1f1b054f26fc08cd6624ef5b431bde424a360",
+        "backbone.layers.41.mixer.conv1d.bias": "a8993f0a36875a223544a35b9553bb64b97309df6e762c44517bfeb5386ee841",
+        "backbone.layers.42.mixer.dt_bias": "440ded94260ab51228f5094c6985f2cde93cc90e0cfa4e83bec65064482f7649",
+        "backbone.layers.42.mixer.A_log": "249fc5a91c1f15e8305b72eb61af7f4ccf5be63aa457ebdfeb38f60a8e4a3b6f",
+        "backbone.layers.42.mixer.D": "f60eddf54194b085a47c0e48782358d33d32c9858645b52bc8d010d86fd68ba9",
+        "backbone.layers.42.mixer.conv1d.weight": "da13483bc073d89009c8e9d05cf70ca89f031e162cc5404a0ac28c1d5b540bb6",
+        "backbone.layers.42.mixer.conv1d.bias": "dbeac231e6485daff825a874cd55f8da8384ebecd337348a6ed47424ae9e41c9",
+        "backbone.layers.43.mixer.dt_bias": "2c03c0820d17bff6a4406000d60b1649789e3c0a6967c257e38f402343db9b74",
+        "backbone.layers.43.mixer.A_log": "49bbfab5bef14c2bf238df459af7681750d714aac8cfd8ee9146dbe68a729f93",
+        "backbone.layers.43.mixer.D": "5c3ff72ef67a19d151b873fdb28f0357913e45538d309d35fad864e6d50b3b39",
+        "backbone.layers.43.mixer.conv1d.weight": "5e0bfabdfb68b8820d4083d0425c83fc2779b31b0aaf6d649114918bc04856c1",
+        "backbone.layers.43.mixer.conv1d.bias": "7de4a7e545e348907d4f154ed408d91ab8f8420be4002e5fefe3c59cfce36303",
+        "backbone.layers.44.mixer.dt_bias": "27ff0f9825db835728f903b85e28332ebb74fcdb63b029568360ec9d7cfeb35d",
+        "backbone.layers.44.mixer.A_log": "155c3d7eca7a9ddb33712b26487b95b04f523b219b231d41bc6e9f6d066987f9",
+        "backbone.layers.44.mixer.D": "c68b64b06ed794383384f9002c6ba0b58275105a20cd8cc226faffb885d9a535",
+        "backbone.layers.44.mixer.conv1d.weight": "b12ad8a8bb084785018d153dd71a6172d78d422535f741ffd68d0c89ffc120cf",
+        "backbone.layers.44.mixer.conv1d.bias": "938a1bca6d7e41a5581f6ee2312775489a4e6243bdfc3e8fd09316daece438e6",
+        "backbone.layers.45.mixer.dt_bias": "73f042043e635f13a0d122a4961e62978223a846164ff40005d62a8c1bb8d45f",
+        "backbone.layers.45.mixer.A_log": "6b29bb3ec4d760b328693ec2075273e2f87fcb477198ea99d2355ba1fbe3f2fe",
+        "backbone.layers.45.mixer.D": "dd647c522d145274b89d9e82275a14a09b893c18494bdc6b28e4ffb67bb6c29d",
+        "backbone.layers.45.mixer.conv1d.weight": "5c544fdc99c8c4d3ced0a4bfad4a32b7ead3ebab0eb60254a6f8307bedf0625d",
+        "backbone.layers.45.mixer.conv1d.bias": "f2f43f61ebc03bc0c8a7d6ff1259451c62d27d9a807e1ba304aa191c141764e1",
+        "backbone.layers.46.mixer.dt_bias": "f8caf32dddf92186fac1ba5b1ff4f181ccc0040ab1b38c461489cc356c50d33a",
+        "backbone.layers.46.mixer.A_log": "8a989920334bc92393686bbf2b2efa3611732fe53f84956d4de40fb861dc64e3",
+        "backbone.layers.46.mixer.D": "4834b609243d4475ae5e30871ee255334dada8949d02dac96a483f26cb192fa7",
+        "backbone.layers.46.mixer.conv1d.weight": "579dff7d8c5eac6701e7ceed5299beb4c6f1529227374f63825128f5aedf1a6b",
+        "backbone.layers.46.mixer.conv1d.bias": "a2ab3e03f854fc1a0a7c71e50b9801925508836cb7a02e076805fcdc774b2a88",
+        "backbone.layers.47.mixer.dt_bias": "bd0142a676b162c063ef0d3aac69e28a84b66a05477fba6035639dcf9b850b65",
+        "backbone.layers.47.mixer.A_log": "4f7d891c22784aad2cdaee0c5ce5fd1e33d6e71c3fbb845698ef84a717090b46",
+        "backbone.layers.47.mixer.D": "66718e3f205fd5d58d8e0a80d8c2d869a1e8af2172430de746bc20ec433200d2",
+        "backbone.layers.47.mixer.conv1d.weight": "420cb29e3b2893903f8c64866acfeb93954a739cc2b24b4281c1ad1924847c2d",
+        "backbone.layers.47.mixer.conv1d.bias": "8d5882044063d76d03d24bb0477e712f16213820012221f51672188558175259",
+        "backbone.layers.48.mixer.dt_bias": "23a9a99e94e54323779b8093cc5fcf089d2574c528bd896078d50ef52ff587db",
+        "backbone.layers.48.mixer.A_log": "a78fcbaf3ffdb027087186e2582b931121c2eab3ae481b06729f4bba2e7d973b",
+        "backbone.layers.48.mixer.D": "6cb037bd585ae7cf7f27b7d8e6e6364b148438c39a13669d6c8e666569675975",
+        "backbone.layers.48.mixer.conv1d.weight": "59d397baded0c2b3d29c1544f9981f8e2144eeaed1b39640333e97b62271c1f8",
+        "backbone.layers.48.mixer.conv1d.bias": "068d0a9c792c2082e49c3e9c991fbab2cdc8dbf4647e5d56d480d21496d32b20",
+        "backbone.layers.49.mixer.dt_bias": "0fcd19bb99e92f5cff77e6078429ce3a6d8857344b2a843c8d6a7e1f696925e5",
+        "backbone.layers.49.mixer.A_log": "4d44157348c9ddd310695dc14c864bbc15868da6dd3dd9b221c08ef6acac025a",
+        "backbone.layers.49.mixer.D": "e633566bf14b4724b48810efe18360b9ac69e95b4491dded550cff85ce11857a",
+        "backbone.layers.49.mixer.conv1d.weight": "833fd245bb69b6bf561ce8e8a3f8271bc90f7536c74e7815b400d89bdcb1334d",
+        "backbone.layers.49.mixer.conv1d.bias": "23c9fba917b74b1a2ae7366f54565a3d96d2d0fda4068dd1f24cb74d36fd0a1b",
+        "backbone.layers.50.mixer.dt_bias": "aadca8ec16a867cc51108504122036d3180b4a49cefeefdfc214a87ee6a04922",
+        "backbone.layers.50.mixer.A_log": "5c1fd8241fbcc1c27e66f4e9bf1a790783ec51e387b88605354f1d17f5310253",
+        "backbone.layers.50.mixer.D": "ae310a7f1e2aa98cd9fd8a9270af18a84c07b799cef3429a134e874b02e053b5",
+        "backbone.layers.50.mixer.conv1d.weight": "f84769bba2fee2a7098187bc41a2831446c872100f661a8d0d939d43ca4ca77b",
+        "backbone.layers.50.mixer.conv1d.bias": "0b205aeb8ee73e55fa2e78fbda95a0cf92a43f9a0b80444f5778dc083d1bb4d0",
+        "backbone.layers.51.mixer.dt_bias": "809ad982abbd2d789f5987a7f2cc7f8b3117e668c96af026c493e34743b3cbbd",
+        "backbone.layers.51.mixer.A_log": "49e32c8d2c13558901db8e4b04bdc2742b08e7202e72b286c722b18d47c9aa97",
+        "backbone.layers.51.mixer.D": "def5cfc13027bf23767a3350da1b773efb9fcb03142d328c0d6e7ea8e7f749c4",
+        "backbone.layers.51.mixer.conv1d.weight": "b003794db7bf6307c667045ffa915c53b7080c82cabe3c55d4b20339b33b5a8a",
+        "backbone.layers.51.mixer.conv1d.bias": "aee66d98ac1223d5b694da5a799baa9e0da8664a588288f3364f3bc37d1682ef",
+        "backbone.layers.52.mixer.dt_bias": "f74bef10810b0cb3a93c1f7c014da3f7443cec9852ac0edc274c8f481d8b0a49",
+        "backbone.layers.52.mixer.A_log": "fb590d261a373571292c894afcd7e71cab9ae39780ebca350c35581f0df6416d",
+        "backbone.layers.52.mixer.D": "40eae124031d35334db04160927348808b35efaccf64cc40116e67c4febe3909",
+        "backbone.layers.52.mixer.conv1d.weight": "9535472952b188f805d443ec6d38680a2a15db861a907fbed6fd3521a9560acf",
+        "backbone.layers.52.mixer.conv1d.bias": "e183dc4d8a06c4110da78d6f6db7f3d38f0c75e24062eda4d6f550dbbbbfb056",
+        "backbone.layers.53.mixer.dt_bias": "54c22bf7fb4a2652393889934c697e92dd607d863ca4342022a665dfdbfeca45",
+        "backbone.layers.53.mixer.A_log": "ec349f324dca3159cca46a3711c22df5e39bb4ce531f2d8c08ea20660a9cb783",
+        "backbone.layers.53.mixer.D": "02e9bc75761e09e3555dea47f2d592b82f0be4032b023ef2a966fa100e0c4195",
+        "backbone.layers.53.mixer.conv1d.weight": "cdee9ce12fdceab78e4c346057cb4cf946e646b0c46134b0605739f6385a7a77",
+        "backbone.layers.53.mixer.conv1d.bias": "61645607fed62f1d7afe76581081d9b3711b553fbd2d6edabec8737e962885d4",
+        "backbone.layers.54.mixer.dt_bias": "17947be77cb8cc01a782b111ac37b7c9f36feac7394e952dd4b65b241b10fddd",
+        "backbone.layers.54.mixer.A_log": "23998d19aa4a789eed263f7c89f64ce81c5e19581f185441dd72f075cc440da6",
+        "backbone.layers.54.mixer.D": "8e30d52e7ddf898f766aa1d730fbe8153198193cb6287955210b5f63d1e2c75e",
+        "backbone.layers.54.mixer.conv1d.weight": "ddb2b508247f0d0af9bc93fcc95893d538ccc9817c6aaf75566d4e98c95aa1c0",
+        "backbone.layers.54.mixer.conv1d.bias": "86f246f7939f535033a6ae09b8978c199f15b0191b86c2a1cd2713e430edd4f3",
+        "backbone.layers.55.mixer.dt_bias": "c62e1181d17ae9066f1580fc55bb69327cc3fd10a2dc2cdea946874edaaf83e3",
+        "backbone.layers.55.mixer.A_log": "6e0edce166fba392ad2e1052dc11cf69f4f99de6f0f9d15f1987c7e91bc7de8c",
+        "backbone.layers.55.mixer.D": "3213cef8067aff9ed891bae84b92ae1f2732b3bfc43a6c54725a9fae2e436c18",
+        "backbone.layers.55.mixer.conv1d.weight": "bcfe867de02764bc60add117d9e0835da99c653430372810c179dc7a2c71a360",
+        "backbone.layers.55.mixer.conv1d.bias": "8ecf0804842bb5da41cca59add2c0d47cfda3a2b12bbd38e972c6bd1f2290b10"
+      }
+    },
+    "bytes": 7283930,
+    "sha256": "eacde980d691552b33fcb1ccc244f6ccd13e229f1a07347da3b506357b44a59b",
+    "archive_byte_delta": 0
+  },
+  "trial_state_discarded": true,
+  "frozen_parameter_audit": {
+    "tensor_count": 394,
+    "before_sha256": {
+      "backbone.embedding.weight": "288a0cae67bb9be35ddb1b666d4c81a2fe1e5c769e836f8dc0d87246627023bd",
+      "backbone.layers.0.mixer.dt_bias": "575d992f7d30726a3ed0ef4404363b3bb05517d6c5c9919fe0ce6f71e82a2f95",
+      "backbone.layers.0.mixer.A_log": "29392b76e84485e739e55ec93ac1f3c9a5fdd773f1507e05a646594b3318d509",
+      "backbone.layers.0.mixer.D": "f403f7ff1c7b8bf49948587eba321a8b88d4e251298068f2bc7e7f81dac3aeaf",
+      "backbone.layers.0.mixer.in_proj.weight": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "backbone.layers.0.mixer.conv1d.weight": "6c20cbe43da8393c6b58312e7d08d28d6f11f2c27917f763c2ad43a400947a01",
+      "backbone.layers.0.mixer.conv1d.bias": "2f8af760ccc9b5c4a9571e6b2d7911341ae2de5a20f78d8a7e91ab78e2cb45c8",
+      "backbone.layers.0.mixer.out_proj.weight": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "backbone.layers.1.mixer.dt_bias": "ae3bc85972c86c363f53effd0dc73bbaf26e8e1dc3712b93a2b55e355c272d2a",
+      "backbone.layers.1.mixer.A_log": "c3e07ff4f6828621d19e6f9f485707a4e1a0dbc1523846859e3977c96a5c9955",
+      "backbone.layers.1.mixer.D": "3f8d560bb4c20630d019b88b266febddecb796b6107dc1383fedc5b8a940f93b",
+      "backbone.layers.1.mixer.in_proj.weight": "1e961fa6ed90650f949fce3b32c1fcfb276accd966ed66a3dd0d63d3d4f6463b",
+      "backbone.layers.1.mixer.conv1d.weight": "1466752dc9510ffa8f81980222280bd544cacfdf18b4828c44323993fc7259df",
+      "backbone.layers.1.mixer.conv1d.bias": "1bafe69217bc1f0b2897cbf9025a6566173295d880ffadf59fc34954598e6453",
+      "backbone.layers.1.mixer.out_proj.weight": "7a0dcefd2aa82ffc20482e4b13095fcb33560d6912305303c2cb2fda34d9e817",
+      "backbone.layers.2.mixer.dt_bias": "15cde4f788f1ff9485dc227f4e9ebce8086db1708b906f1f978da5f91575c0ee",
+      "backbone.layers.2.mixer.A_log": "5d489b5a3aea0568892de8ffe6bdb9f66393f63fd9950d46e68bce5890d8cc22",
+      "backbone.layers.2.mixer.D": "a8e6d5bb5ad6b6f5b2c348c29942d5257c8ba57ac1d5911979a267a9a7cc7c61",
+      "backbone.layers.2.mixer.in_proj.weight": "5e4e505cebf6d6810ad40170844dabbe4cf33e97ae29ab4a9cf20126bbac5e55",
+      "backbone.layers.2.mixer.conv1d.weight": "6b9e2f4ade006643ecd590ab25ca3589a261eb00a96cd7d7335206b80dba5524",
+      "backbone.layers.2.mixer.conv1d.bias": "4f456087ed19f4e735c6d6255b9cf1625cdee2bb5bf2445b3a8c17df6969e2d9",
+      "backbone.layers.2.mixer.out_proj.weight": "d0f1228216363f5fc3041451d3d4e76a282e3e6c45378f69eb58ce15530ad263",
+      "backbone.layers.3.mixer.dt_bias": "269a5fbcce1bc2c51819b1e7a5558a29775161ca550099a8a105961d11842405",
+      "backbone.layers.3.mixer.A_log": "0fcecbdfef16ee9a572cfbec4cedfab376b4c779389acaf0f52f548dc764ed73",
+      "backbone.layers.3.mixer.D": "1554e5ad7649f1544d2f41cde1e36eb3d68b19396feea8a3c84d8f3b9dd6ba57",
+      "backbone.layers.3.mixer.in_proj.weight": "f3385a66d8ce919096a9086dc7b0ddc9ccd9ced6cff4386539d4bb36893a2c0b",
+      "backbone.layers.3.mixer.conv1d.weight": "aa8686394d656efac69db1c9167911b2a3c34fc47e5abaf54730ab2dbf932e15",
+      "backbone.layers.3.mixer.conv1d.bias": "428fd49dc59e1387638268ad2a2009b78e311ccde29ae0ef25a5a45ea392db40",
+      "backbone.layers.3.mixer.out_proj.weight": "18adf873bd11b502b45dadb0b20cf299467fc6faa0f9dff849d66daad5b95d35",
+      "backbone.layers.4.mixer.dt_bias": "330c9ada10d50b5b1395a49c669a6c6866cb89c67b5dab528d216bd183d29306",
+      "backbone.layers.4.mixer.A_log": "81b2cb9c623779e72fc6f0baee4ce062d421bc3b2ee092df00b2da922752a18b",
+      "backbone.layers.4.mixer.D": "d60e0ec52a650f6df590923518c337ed37af616802d683947cfb8b2be9da3c04",
+      "backbone.layers.4.mixer.in_proj.weight": "19154f2f6bc502f9d08c451eb2c6797428e55704cc6a33047e81aa1db937d0b1",
+      "backbone.layers.4.mixer.conv1d.weight": "5d2e1b198cf100fcece9605aaed3bc93b5141a8a17311eb4b1942bb41826addc",
+      "backbone.layers.4.mixer.conv1d.bias": "020308daf8003db276077de20db5bf9b015ba5379195b4550cbc12f21d989f5b",
+      "backbone.layers.4.mixer.out_proj.weight": "41c72357e8333850a20d65fdfd05bded0ded46ef4ffe5248af42d5681525c46f",
+      "backbone.layers.5.mixer.dt_bias": "63264b7f6a174f9440dff8dc8ea288244c1bfd1d57521e59bddda1e1fa431610",
+      "backbone.layers.5.mixer.A_log": "1b53fda9c3153fec7f9df48545658001dde1edb43e6f459845b02cd0b77c5147",
+      "backbone.layers.5.mixer.D": "4172d001644056bd136afdf0858a678923d470657a551a643b765360d04ba519",
+      "backbone.layers.5.mixer.in_proj.weight": "089a3fb790a957a3a87f62e2fd71ce39238be81c205f41df3d34237b55b73b0b",
+      "backbone.layers.5.mixer.conv1d.weight": "79c906ba95e398316653dea595561039a13c17225d83ad84b6875ce1a33fc9e7",
+      "backbone.layers.5.mixer.conv1d.bias": "27c9d3e0cde45c9092fb572d44ce3a1af4a279679805dda4941eb7d63441c1bb",
+      "backbone.layers.5.mixer.out_proj.weight": "9b943e0409bcea2e22b19494aa2cedea196acbf80f95e02b2626d46b40c8923a",
+      "backbone.layers.6.mixer.dt_bias": "08a8f542317c36767a974f0703ead327a5750c2a2e99bf44ff78b6660763f564",
+      "backbone.layers.6.mixer.A_log": "0bb4b3272855d54a1554309ab0e12861b80f0c555c87fff6db317748c46d1d94",
+      "backbone.layers.6.mixer.D": "005598e55cbaf612df49f91a6bf3073ab4ce625a34fafd657c12ca61f12332d1",
+      "backbone.layers.6.mixer.in_proj.weight": "8f484049a0769a9588e1f54e1a0215c60c1a8f7b88c3ac2a0d01ecdeb42b9c87",
+      "backbone.layers.6.mixer.conv1d.weight": "c223dade29ec079d10aa9644114e22b65e4288de0a68c3fa4ead894f065fc2ad",
+      "backbone.layers.6.mixer.conv1d.bias": "bcab2f7846e401324b5d9deacfb94eb7dfbb2e0af81c212ae6d4b5b696e93467",
+      "backbone.layers.6.mixer.out_proj.weight": "5e5dae58a44d876854a9664f51c9c425b20909e0d23ec33e0f5c7f0f89fec68e",
+      "backbone.layers.7.mixer.dt_bias": "8121037a3fb7644e5e255a153151ad5e2d8c378c65571fb8e6bbcd758538fd21",
+      "backbone.layers.7.mixer.A_log": "a12135bb157b5ea0af3ee12034386adffcec65ec397100025981285b0fc13efb",
+      "backbone.layers.7.mixer.D": "2d7fdf8f427733a7c61baf62e757550b9e036a9a055eb6fc14a31917d0d4300c",
+      "backbone.layers.7.mixer.in_proj.weight": "bc1f3a6a9540e71abfb95760ff65c4fd515f6915cb34888228d10835cee77ed3",
+      "backbone.layers.7.mixer.conv1d.weight": "de368d0203ed30e65c31f983fd693d38c67540bc7548ec15aadf7a1f9dc6b36a",
+      "backbone.layers.7.mixer.conv1d.bias": "936c9391061cdba320210737ca1ce22fd4dad9b7dc013986ae62a466762a6cd8",
+      "backbone.layers.7.mixer.out_proj.weight": "862ba10823f6360b0e819765b9981be1dfa6a158086b80d3444260dbf3710631",
+      "backbone.layers.8.mixer.dt_bias": "d09c4c2c4fb2bf1ff7f998b49b31b971106e406d3a708e8a7eba2cff0496a9a5",
+      "backbone.layers.8.mixer.A_log": "ba4517666ce89351f5468bcc2645a1ea9fa211d23b6570b7cd39a28e0430bc5b",
+      "backbone.layers.8.mixer.D": "07c8e5a49539b5d3fb17eb46648f82c1f7fdeb64fce7688e9b4ea8b025254834",
+      "backbone.layers.8.mixer.in_proj.weight": "9241aadb0880673bfa3ef8ba1fe4941defa73e3cbc9e04b43c640a50f5af0feb",
+      "backbone.layers.8.mixer.conv1d.weight": "41bae34c06ae430d1f39c44e9d671e7a1de097564cd57f1fefb4a9f31a838a8f",
+      "backbone.layers.8.mixer.conv1d.bias": "8a9dcea999f18211d615924e737c2d1d5f97b71be36fa95c1ca30d68ba4b6e35",
+      "backbone.layers.8.mixer.out_proj.weight": "73c034e48ed1463a4f10c972afbf833746a20f60408d16d179e124eb35dd9fb8",
+      "backbone.layers.9.mixer.dt_bias": "47f82d0956f1410de8d2e3028613d87744fff36c40e01f101499275d9a1f246c",
+      "backbone.layers.9.mixer.A_log": "d12ee15e981b77f5d6ce618e0e954264ad591d5030feeb54df7bb6ae85041a14",
+      "backbone.layers.9.mixer.D": "45b1e4c49adf0de86e746ec6dbd3df451fc49923be6d147b64c98e3f509d0886",
+      "backbone.layers.9.mixer.in_proj.weight": "b2a8617c338561af787109b45b27706bb0b280fff0d3ebad00d119ffad48f187",
+      "backbone.layers.9.mixer.conv1d.weight": "2dc1137b6df8f51a8a518450ee93cc6bffce8a611691b3e66d6be38b71486391",
+      "backbone.layers.9.mixer.conv1d.bias": "4717f86a354f0c59d1e9b87d4b7585a7cea98b0bf55de0a21836ebc926ea7ba6",
+      "backbone.layers.9.mixer.out_proj.weight": "a0eed01718db853e8e99502e6bf98ca415c8b037959fde9c7e08274ae5ec1b29",
+      "backbone.layers.10.mixer.dt_bias": "d324777e66f0e6e4d99a1ef833e038402303c7a973c79b7e9eec5de728ee0994",
+      "backbone.layers.10.mixer.A_log": "549d1d9132b408b025c666aec65ba1a172b21f3fdaf7b0bc4f08e22c1c41e068",
+      "backbone.layers.10.mixer.D": "7d5dbad8b46b07489ac9840757e480904f6a0b0c333ea8c9be87fb7ce2be8369",
+      "backbone.layers.10.mixer.in_proj.weight": "36a3422185616b93e4c43a26060de8bb26c12ba8d2869ee9c13502d614357e1e",
+      "backbone.layers.10.mixer.conv1d.weight": "ab3baa93bfcc166d21ecfdd6a8020435d14cc8e9ac1298a561d8978a4a1ee3ab",
+      "backbone.layers.10.mixer.conv1d.bias": "6c10a33e19ca3fffd3811eea63e1cfbfff164474e6c7cd03fea1d060c2838f68",
+      "backbone.layers.10.mixer.out_proj.weight": "5ac19af21d9a6a59a9106b2fb75b1652d26c97c991e3541417798e2de60eb778",
+      "backbone.layers.11.mixer.dt_bias": "398a57d4a84fad84fe793c252c36689eb7222bf2c7dae842bd769aea8d132a8d",
+      "backbone.layers.11.mixer.A_log": "a49a4097c8b0b93687d7bca54c448edfd336695887835643c937a193b7645f8e",
+      "backbone.layers.11.mixer.D": "d37062a9603ed53aaf07f227312eac2896aa86a645b0a4013cd15be935d3176b",
+      "backbone.layers.11.mixer.in_proj.weight": "c497592b5042850803eed38fd284d2f1a06e4bffd2e06ce8a23269bdbb65d194",
+      "backbone.layers.11.mixer.conv1d.weight": "ee0b2719bd2f2b62edbe785d2147b03546d6d3041b79074ccd798695f13203de",
+      "backbone.layers.11.mixer.conv1d.bias": "cea5365c08c89d985b9e355ab8cb317a1ccdb27a625d68fb45a685916d5f508a",
+      "backbone.layers.11.mixer.out_proj.weight": "b970f1e57235ba9d3d7d84f7d4bdb17438d029984653b527ae8a6d575acd1891",
+      "backbone.layers.12.mixer.dt_bias": "8c838c8c0b2d299b3b927c826c5bd7cd94b062276337a426e327ce8d2e5d9615",
+      "backbone.layers.12.mixer.A_log": "c37e8e70f7036f00d6a6e775a55ffc34f672edce0d72c573dc703039381c8e72",
+      "backbone.layers.12.mixer.D": "2420796f486bf19ace80997a6b522feae3ff158e2eb7f971208ececf872d39aa",
+      "backbone.layers.12.mixer.in_proj.weight": "1dba6708eb351eaeb01550ed4ffbf0024d951b931ab68d95ee2ef9c754c6a7ed",
+      "backbone.layers.12.mixer.conv1d.weight": "bebbfe698927e5d6d94173d8cdc0004119b53051867e443a7434c63bbb4f5e97",
+      "backbone.layers.12.mixer.conv1d.bias": "34af93b560b686b68ca77a875da62ed0900dd584a668991b714b70b32ecc5fcc",
+      "backbone.layers.12.mixer.out_proj.weight": "bff49ec5058f026932644d65b11164acd4a470f669abd32b5448d9ce907a3b6c",
+      "backbone.layers.13.mixer.dt_bias": "18197d06a34ed3676a0bf74347d6d97dc6e7c35f5295f92a2b5e93b628b408f6",
+      "backbone.layers.13.mixer.A_log": "4d441f8ab4caa2078589fcf57fb5a5a28679a641ded4cfef767c632971cf9ab9",
+      "backbone.layers.13.mixer.D": "57f2216c11bd9372c4195f4629809b66288a3f656f2f37e02a955bbbb9c10544",
+      "backbone.layers.13.mixer.in_proj.weight": "4d7a47148d4a6b6a536c7c77d365040da23a800fec446c2334fbe9321f7a66f4",
+      "backbone.layers.13.mixer.conv1d.weight": "3acf8890e7923c823748643a95d17ca047634a4c01f251939d6ec431ca925e68",
+      "backbone.layers.13.mixer.conv1d.bias": "497b7c5ac2401cca830c0178689ab7ff534a6efff0da08f47e66f834ac430d4e",
+      "backbone.layers.13.mixer.out_proj.weight": "8f8fc3a5f0f50da76f92aeac6c05ef4c258a1feba6fd66b27c1f8bab1dad5c56",
+      "backbone.layers.14.mixer.dt_bias": "d7ba3283e57c1d6667dafc6a5557bc0283b6083ca738eb24bc16e7bc5ebbbfe9",
+      "backbone.layers.14.mixer.A_log": "612e1d1902aff391bac31159c8cb257d87d8b45007a5caa20fc0d0f86877affe",
+      "backbone.layers.14.mixer.D": "8608fca8fa70a7abe2a4f30750450782f8bcfc6e1c328d3fca2c446ef7ff5750",
+      "backbone.layers.14.mixer.in_proj.weight": "fc2db9c425c8f206314d5a5a56986efb4979c4b81bcb58f5c4c7fbdba981a662",
+      "backbone.layers.14.mixer.conv1d.weight": "207d18b40a9ae29b5dd59fae18785e75f4a55546c1251dadeefcdfec5e1061ae",
+      "backbone.layers.14.mixer.conv1d.bias": "9b7a78d13c5cf9dc2bdbba42e8dfb7dcd36dccfa188608eded62fc5e4120f9c1",
+      "backbone.layers.14.mixer.out_proj.weight": "bd80ed76c8430cca41e09f45346faaa1b08b479e3187f5dd8d11af81f49bf474",
+      "backbone.layers.15.mixer.dt_bias": "03d06adfb765cd1c63511a591af2b922594ca984d9d02191990aed377ab87a7f",
+      "backbone.layers.15.mixer.A_log": "5570e0a435b5edcbd1128dbdbc536a59e5a65cd2ca20d6e17a97fe2f02630172",
+      "backbone.layers.15.mixer.D": "fef0f1d04b18aacc04c7e1ddcf0effed779c6e95dbbe769ec656c35d176ca803",
+      "backbone.layers.15.mixer.in_proj.weight": "49a39a68932a59c5db53ac5172392a92f5f58706339103ed9c8836c74a54c1bf",
+      "backbone.layers.15.mixer.conv1d.weight": "302cea25cf918972d29affd7d73b0fca03dd237e736f7da89a066aecb90d8557",
+      "backbone.layers.15.mixer.conv1d.bias": "d89d957103a8bc734d9b4f1c092b25f1560e785f1919db467c222f9353e2750c",
+      "backbone.layers.15.mixer.out_proj.weight": "65cd797637c7ff987dfc91a95604ddaa857eeeca3d68dad8e2fe297d3243f1a4",
+      "backbone.layers.16.mixer.dt_bias": "56bbfd60436a32ec7d72a51ea63f95e86b0ba57016422a180dc28e8edaba05d0",
+      "backbone.layers.16.mixer.A_log": "28dc31e731f08a54d3863b59a5771ac77087b99d7f95f9a0060b8bb826b6892c",
+      "backbone.layers.16.mixer.D": "e8083fd430522a2bacf26ce7fe30348102c101e811927f4543db403724f7bd94",
+      "backbone.layers.16.mixer.in_proj.weight": "929f3d4f80e099c400c58a1f5b28aba4c001748641381253161599b419795265",
+      "backbone.layers.16.mixer.conv1d.weight": "c5e1703d843e11393887d7031286f517bbbd31794018ec275d761470b494600f",
+      "backbone.layers.16.mixer.conv1d.bias": "78af0ceaf23cb00b0536a85962eac2db567fbb670d70191d2d182fa53ac1688c",
+      "backbone.layers.16.mixer.out_proj.weight": "e46c7c53c282ce3a855af8663347589dc6ac9c4a7a806e62eadc569c87a82cb4",
+      "backbone.layers.17.mixer.dt_bias": "da30edbdcb7abd589e0f5be03acb09f8e313d50cf6e2895ea510e1bbd866e10b",
+      "backbone.layers.17.mixer.A_log": "19fb22c89739c883c9b4f8194b23f158e73ed8977319e97490934013d78992fd",
+      "backbone.layers.17.mixer.D": "d3c6e51127a62f41bdcc8c25feab179e952572a107647d25a9119c70a23de797",
+      "backbone.layers.17.mixer.in_proj.weight": "f352ba90de5d005208df0375d093d63a9df4ba600ca9071ed91f9dd7e45c425c",
+      "backbone.layers.17.mixer.conv1d.weight": "2d8f6e155e96d9180819637800d896672ddbc91f82c158eab2fb2d5082ec0b8e",
+      "backbone.layers.17.mixer.conv1d.bias": "9b1677920accdb43d90bada8e0506cf83c8a18eb26f398710e6f5bae2cf4b9c6",
+      "backbone.layers.17.mixer.out_proj.weight": "ee93d897df3e460fe6383b7b42f579e5cccb07873dc2c26a681ece61f69ca872",
+      "backbone.layers.18.mixer.dt_bias": "caf798ab038bbe6db8ecabd667b6b8f9832f81e578660c9de7e5645ad0d4bc5d",
+      "backbone.layers.18.mixer.A_log": "5c35bd6083c3feff4bead9e2dc49ba8982161ad7e0d97d8ae7de42647c69688d",
+      "backbone.layers.18.mixer.D": "abb5386c7f4d69371ac5c5ca3102958b09f9f8ae1a3a9fa0aa30c6265092cdb8",
+      "backbone.layers.18.mixer.in_proj.weight": "6d2c4378b823aba6cbfd3b89a39327a8f2db533ed4c45dbc567045ca85b1df4a",
+      "backbone.layers.18.mixer.conv1d.weight": "e995e5de14b4ee1032fff9dcb5dc8b1237d99c2de0ce5faff9e8f139d674df97",
+      "backbone.layers.18.mixer.conv1d.bias": "0d2ffc81c63e92124c27558f04bc3000ee08cd253e81932d87d9cd45e002aded",
+      "backbone.layers.18.mixer.out_proj.weight": "5e3cb23f4203f749e46d81d49a4904908f48c7c84ca244f9d512471587f9f6cc",
+      "backbone.layers.19.mixer.dt_bias": "fafee561285a386364dd8bd49ca8b045c843e15d969b711630a193a3c86fe037",
+      "backbone.layers.19.mixer.A_log": "10865c8e3bb5785b848efb7a887909e5dd5e008f8a275d8655fda2b7edb84000",
+      "backbone.layers.19.mixer.D": "f4c1bf7c3dd76270406c68c1ccc17c30a699106d618dcd40b2b8078dcaed76b7",
+      "backbone.layers.19.mixer.in_proj.weight": "c564d26e0ba450a41f1855708e8afbfae7cbf40b4114e3a47c7e54842132526e",
+      "backbone.layers.19.mixer.conv1d.weight": "e10180afd81ce19d7d22072984fcf64e730dfe3bb477ada00205d5846e33ac44",
+      "backbone.layers.19.mixer.conv1d.bias": "072c36c348e2c3d96c4c6c172f3d0b1fd55c75876c75a9e18bcc4d113aece5dd",
+      "backbone.layers.19.mixer.out_proj.weight": "5d4477b3158e8188cfdecd9ec62d416b4aa9b5cf31ac9647d3ee265a180a4d74",
+      "backbone.layers.20.mixer.dt_bias": "26134afcf405687849544834016e542c1c58a6d5adfbc8240aac49638608a861",
+      "backbone.layers.20.mixer.A_log": "b0b072bf883570b33eba9fa410a2d2cbe622db9ab7a6bc563c504c5d716352e5",
+      "backbone.layers.20.mixer.D": "a238032bdaada9b645f91e1c63b5e0b3db1eab1ad64486f99e7d8fe7806cde1c",
+      "backbone.layers.20.mixer.in_proj.weight": "9401c4e0a93e9828c85ab5a00a76f79f57cb4db272c408bb72fae0fe184733ec",
+      "backbone.layers.20.mixer.conv1d.weight": "2dd7a3dd802dc375cf3d5ae9ff7ec4dcb5941ae7fd25557ac1d6e2d646511be7",
+      "backbone.layers.20.mixer.conv1d.bias": "400d3fa9aa1336b93699fe8af01d48f8f706f3796c265408ecf9a15a559bb69a",
+      "backbone.layers.20.mixer.out_proj.weight": "ed672b54567649ebaa94d392558ab03ed00322fe0a57ba00598b1c94cb400109",
+      "backbone.layers.21.mixer.dt_bias": "b20c56a2c64efcff68b3e93d6b8514034ca5d5546856071a9398095d275b8b4c",
+      "backbone.layers.21.mixer.A_log": "5239beb13dbce70934dc6919697a07f3b6dd77f90d4a2583129e2a779d20f3f5",
+      "backbone.layers.21.mixer.D": "2851559df57450185bae0f482b9be52e42265df4d1c4c88e16357a59f6fa3e15",
+      "backbone.layers.21.mixer.in_proj.weight": "225c80997e9b73af44bd9506ee19362b4d08de382e0e1da649c5414c3d8bf55a",
+      "backbone.layers.21.mixer.conv1d.weight": "bcf01d6be9d30e54c1db3d97970864950267452d52498b5bb16eea5e0a7b08be",
+      "backbone.layers.21.mixer.conv1d.bias": "5fcf3613c6df9a4f2d99129a88a6dbd88d807ba3f7631fd1287fa0856b57a993",
+      "backbone.layers.21.mixer.out_proj.weight": "d8e02fd36d55abed919be03bf1d87f646db0b22564c8789376670471419cf8df",
+      "backbone.layers.22.mixer.dt_bias": "1629d1e393ad3c37f1da0f068d94e157e63c37eb7548b3e44125308b3a7ccd62",
+      "backbone.layers.22.mixer.A_log": "845e54a627c0e0a25e0ffe725aba0113e43b9ed454fd09faa0542f379d06ebe7",
+      "backbone.layers.22.mixer.D": "560c88a129a0fc7887f022437ff18351d4647a800bffe402e39633331571a145",
+      "backbone.layers.22.mixer.in_proj.weight": "a1ba77d51c53398d2112fd50051c0dfd5e0551542102c05ed64693c1c6d73f9b",
+      "backbone.layers.22.mixer.conv1d.weight": "cec6dfc0500b9cbc4bf6c83ffe60b0d916876a190ae13e623cf72947a5104935",
+      "backbone.layers.22.mixer.conv1d.bias": "25028a667430f08788bcf140e2ff926e903cd621ccfc7ace87bcf0b65765b101",
+      "backbone.layers.22.mixer.out_proj.weight": "c16fba7e05be5540b6bcd14cdca9cabb7a6c6b73bafa4beff0c0293dbe3ce37d",
+      "backbone.layers.23.mixer.dt_bias": "62460522d608fcb2491b08c60a786297e7f35abf22250529d8a17417b73a075a",
+      "backbone.layers.23.mixer.A_log": "256b45c7be3a4c714ebd96c5bd329c7f8ecc56b0826e2ce974d839e266d47ef3",
+      "backbone.layers.23.mixer.D": "ea60d8fd560951d90850a68d2e5d7f02fc49c12841c7bbd0d9411e3696e4afa1",
+      "backbone.layers.23.mixer.in_proj.weight": "54786f7ee1d6c168bb7949f0d0b5d8293787bdd7ab83b5593b839f09df907289",
+      "backbone.layers.23.mixer.conv1d.weight": "9e799b05ab5bb8001a337a71abf442faa52aba1ef1d1fa61f6fb588a030113e7",
+      "backbone.layers.23.mixer.conv1d.bias": "ca5342e86d03bec00d41086f66b480f4cc5e2fe509293acb59ffc2289becf02c",
+      "backbone.layers.23.mixer.out_proj.weight": "9daf19d3b96756ce57d3b7501f46c1f5ba96968c754a101d238301d085fe560f",
+      "backbone.layers.24.mixer.dt_bias": "39582e76d30b090ba934dfb12c1e9352eeb31e98ff91cbebc7adf05866e9ea0d",
+      "backbone.layers.24.mixer.A_log": "4c8064143205ada0e96b336941ac55f7197848aa7918b2e840fc970cfcd2bb7a",
+      "backbone.layers.24.mixer.D": "c277c3b967a492735fbcbcec26e532f4b6607282f664c10cd72bc859206219c1",
+      "backbone.layers.24.mixer.in_proj.weight": "0a0b671e0d324dc132ad5d3e89c045de03813677d7377d77151d64f35fe76393",
+      "backbone.layers.24.mixer.conv1d.weight": "7a2d3eeaf6a70a17b79ae7aaede083dd03dee250a00399009ea451cc42fe7d03",
+      "backbone.layers.24.mixer.conv1d.bias": "1ffbd7d1b80471daf04af1993702bd8dad51936492fbc9bfb45b997fa59e1171",
+      "backbone.layers.24.mixer.out_proj.weight": "06138a031fa223967c975103c1131c9b14d0a0a8e913163f6dcb851e3cb98eb3",
+      "backbone.layers.25.mixer.dt_bias": "33269b569cd020ff52d7a8a4b57f59259e6f20d6ff929caf74006f2f79ff7a70",
+      "backbone.layers.25.mixer.A_log": "634260bcad92801b7d10fcc8fa0fd32d7ba6303155adf2521328e6f665cc2b51",
+      "backbone.layers.25.mixer.D": "920a89b75261ef527ce072f36e935475f37a3ead7cac42c33e5a38dcf5318119",
+      "backbone.layers.25.mixer.in_proj.weight": "cdc939f85c3cd80429cba51144b80ccc97bf7c1fabf66c367bcd9f2fa687f967",
+      "backbone.layers.25.mixer.conv1d.weight": "c417ed3d8092ca914285332d84b0c204ada28b804677dda6463472e6c59a8ab1",
+      "backbone.layers.25.mixer.conv1d.bias": "ba65e8274dd4aaf833500e40f74e273ecf86d2edb73bc7376e0311b3bf7d73fc",
+      "backbone.layers.25.mixer.out_proj.weight": "e03882f403ff41afd2c5adc2d158c910d238f0acebd314df580cfbe9d40c513f",
+      "backbone.layers.26.mixer.dt_bias": "50f2caf9766bd297c1f9f16b96b3990a628752bc545e16dd1c84042633921bfe",
+      "backbone.layers.26.mixer.A_log": "09c4b20ab9cb3e3d9e2c7fd24fd8cb66352eb085bc1a83c89affc955b59c54f3",
+      "backbone.layers.26.mixer.D": "220c27d710e3cb3e3621d6511cf85a26e1623fe3e178189570c6c6c37144652b",
+      "backbone.layers.26.mixer.in_proj.weight": "a65257875471d10e04283331b2a916e50c9cc93a58d8ede1f38ee79b9e47f764",
+      "backbone.layers.26.mixer.conv1d.weight": "ca1ed45a5ddbaa3625d5ac91eba345c4af8feae39a92481574eca76d69a15990",
+      "backbone.layers.26.mixer.conv1d.bias": "1f0eeb3761cf264e20b57e2823a807a337ed335783767d81b7d43e305cac3ebd",
+      "backbone.layers.26.mixer.out_proj.weight": "60581d05a9f748a2a5dd8ee5b06ab93d7cce858de5811591078bb42db477eb9c",
+      "backbone.layers.27.mixer.dt_bias": "fea735358e84b4fa3d1724dd2a6e03006ac8a27e484d1804b24a6aef42ffab09",
+      "backbone.layers.27.mixer.A_log": "a3a4ea97dd46282a53ce070e5db10954d794a466331889afaf52c411d3a06942",
+      "backbone.layers.27.mixer.D": "505141a60590d7933d9ab19de1c35a6ac0e9c953f5126a9b4e2109e0dd510c94",
+      "backbone.layers.27.mixer.in_proj.weight": "15034dd171ecdedfe4ada0e2682faabbcebbce29ffdf43581a6e25acb73927c2",
+      "backbone.layers.27.mixer.conv1d.weight": "fb9fccc4a87f7096335d33581c48715b9274c6ea6087d6843104253e4fd32eef",
+      "backbone.layers.27.mixer.conv1d.bias": "c5ab9a61189144f5fa46cb277a73157ff2c46c6799bab8906da7e4a6e0f1df6f",
+      "backbone.layers.27.mixer.out_proj.weight": "336148c867bfbb10cbe43600c38fa0f7a5cb58b0084c3819aa829fe493bbaf15",
+      "backbone.layers.28.mixer.dt_bias": "58ca53e6860d866c746ce73692e7ba63c1cb4a784422fa8e177644a901c7f77e",
+      "backbone.layers.28.mixer.A_log": "a75d221bb3297d1041bb5589d1106b4bbdfec488e34255de0e1cd03f20290bc7",
+      "backbone.layers.28.mixer.D": "f080d472359a57018234ee32dc9e99d9f4181fa59a88d1b7e22a3ed313593dac",
+      "backbone.layers.28.mixer.in_proj.weight": "b0bbe0bc2c2b38113593dea7858a47cea9598037c596cf43df3604dbec67d93b",
+      "backbone.layers.28.mixer.conv1d.weight": "f0c9a06697227bb14f3915a6350dd99914317e1a61ba19644c1b678da57f0296",
+      "backbone.layers.28.mixer.conv1d.bias": "72d1f45edd6593d5f99049026ecf2741ba6df2efe71e078e10a93d4668a84e81",
+      "backbone.layers.28.mixer.out_proj.weight": "18b4e6f28f1acf4d86e62d7dab7dba083f9d84dee831adf28afc098820e75330",
+      "backbone.layers.29.mixer.dt_bias": "af38750da64c057b7a71009edd4eb40a3af42162b6c7efac9eeaad380d430357",
+      "backbone.layers.29.mixer.A_log": "9c6b2a26a52931a7226d3e1d94ae1d7d6941f25f5d20cac02978f7d7903a4b32",
+      "backbone.layers.29.mixer.D": "34ec92f2f0417360ad2bcec676346ef5c903905e71dc91f21d5f7dd3a412217b",
+      "backbone.layers.29.mixer.in_proj.weight": "42cdbaaa96bda366ea601db324a5c718361114f7b4cf4c51f812287f66791578",
+      "backbone.layers.29.mixer.conv1d.weight": "1b49521951ccecdb84c437b260b352f4d9002bf9f83b33eae8071243814c9820",
+      "backbone.layers.29.mixer.conv1d.bias": "b1a093af7c4f5b43e3b4168ab301e8fd4f8eb4945b1fd18be55d320253c57958",
+      "backbone.layers.29.mixer.out_proj.weight": "54c9724db56c376c94a4805f777f923e6c5647816fe36421ce7f0acc84327c25",
+      "backbone.layers.30.mixer.dt_bias": "60af789d442f0a8809967c8dc2f804aabdef826126615deda6e174c9e4d4ddb6",
+      "backbone.layers.30.mixer.A_log": "be73553b772adc0c015324fc0bfc2ce358ca250c18cdaa885e351905ace5936c",
+      "backbone.layers.30.mixer.D": "2cc12741fa7e45dc342c0fe275669dd06525ba8f38b4b9c9fc88569bf8dc51f8",
+      "backbone.layers.30.mixer.in_proj.weight": "a186f70805a768f942ed8e0753040d4e43ee8f813940be44f721941cd560d1c3",
+      "backbone.layers.30.mixer.conv1d.weight": "afa0c6eaee3d7b8631e6b3b0da76a4a4735f1077409c0da0bb95a003717f7761",
+      "backbone.layers.30.mixer.conv1d.bias": "3f0d8d9f7dadf6957251a1032c26a3124e84a9994d2303581a270f7009eb51ac",
+      "backbone.layers.30.mixer.out_proj.weight": "d4d0d6f34730dcf9aa17c13a6878b34059ee95840e6c279c0080e92ff77cc689",
+      "backbone.layers.31.mixer.dt_bias": "7d5c2871ec08174f6b13748229c1da78b992e7b8cacf72b0eebf0e0f6127e3be",
+      "backbone.layers.31.mixer.A_log": "9b00d81564617e621f95aa7f3d67a1cd534632d66fe99da77f529b00635292cc",
+      "backbone.layers.31.mixer.D": "d377cc4a701f89da641a04033892ced50d7ec6f2edb2f341ade6a926e704daa1",
+      "backbone.layers.31.mixer.in_proj.weight": "f9ab45fb63088bf130522ed1332bb64144aad2f17e8e7580ed43fc2ae0a64788",
+      "backbone.layers.31.mixer.conv1d.weight": "72aced7ecb6f3308ae1d4d2bc15ae25b38b5d01dbfcea8119d0f275f27f89c0c",
+      "backbone.layers.31.mixer.conv1d.bias": "7528dc3029445c57ba5d667b3e777b0546256f6904268b0e5189cc8ab0a630e8",
+      "backbone.layers.31.mixer.out_proj.weight": "336d9edd16bd4b0053a3755ca50cf4b22a113b62d3bb9512add2beebf37f2c2b",
+      "backbone.layers.32.mixer.dt_bias": "1291bf7326684dfeef78b2fe3a1c2320f2b22fe6592cff6dbe716d688811fe8b",
+      "backbone.layers.32.mixer.A_log": "d3ee4375ad337d0cc017c59e93c1a275a5649770276cefcf9058a43697359af9",
+      "backbone.layers.32.mixer.D": "9b91843c8d97e58473eb99bc1fd10540a3ba3440d4d79a82577b46579e6c6c04",
+      "backbone.layers.32.mixer.in_proj.weight": "7fa1f64d2c7a6cd493aed52ca46c8515d3f0518b04b7020642f6c5e1b58e9df5",
+      "backbone.layers.32.mixer.conv1d.weight": "9677ef22cc6d7c9ad6379350d4e6d4f37728b0336b1dc3ecf9c7c6edb7b0a22c",
+      "backbone.layers.32.mixer.conv1d.bias": "db603f363889d727bc5b14cd0d9a132f63c547f33b9e2ca874a186f1cd519e50",
+      "backbone.layers.32.mixer.out_proj.weight": "d64d7115a2f84655cb2fe393569f51d88498f05a4838d91f93faafeb4040510a",
+      "backbone.layers.33.mixer.dt_bias": "671034faf837a3a064b45420ab7b2195bc42fbc3c3ca1f710af4fc531e3ecb1f",
+      "backbone.layers.33.mixer.A_log": "e3ec48e2b880768adc1527050e6bc556ab22fdfec36c494f855a4d6b100ee5ea",
+      "backbone.layers.33.mixer.D": "586b436e12f5fb752878435d9f470fd002d9a0e2fb3d65409402b4eed401b5d5",
+      "backbone.layers.33.mixer.in_proj.weight": "7c77c55eb8925d4c305a10c69ca81a96e75bbb6adcdb2b27de2b3915d6d10eb9",
+      "backbone.layers.33.mixer.conv1d.weight": "87c254c6107ab19ae344bc8a5ffcc457dd7032986ae4dde7718629081d6da398",
+      "backbone.layers.33.mixer.conv1d.bias": "38a580623b2f6f19eed16867388bc37aadfc02387aec79aeb9c71505f9088e51",
+      "backbone.layers.33.mixer.out_proj.weight": "ae6dfaae914f40abd1223f245f34492ebedde73c395104f3043b903ef537e164",
+      "backbone.layers.34.mixer.dt_bias": "35cd68aeead431973ef70bdbf0e1124941455a7de3564290fc1079aaa51210b9",
+      "backbone.layers.34.mixer.A_log": "2ba267a4fc86aefb6c5f6353d571eaee07489767f7391d41b61a6550786c835e",
+      "backbone.layers.34.mixer.D": "0d7f5f91c5d2e7b54508698836425801c8c120236cc34499e437f88817d80d5c",
+      "backbone.layers.34.mixer.in_proj.weight": "ccaa93f53a94ee24eae51c9bdb223bfd94f4faa629aa6547ccc3e746d220d68e",
+      "backbone.layers.34.mixer.conv1d.weight": "76538a7b0362f623d67f30f6bd5b4da5911f9536ae4d605983e536d890b49175",
+      "backbone.layers.34.mixer.conv1d.bias": "05b25f96883dbc27fd1baab476435d88ef21f0466177a5971e9873bf1e2aac0c",
+      "backbone.layers.34.mixer.out_proj.weight": "0e9ebe3df3dbbd95d231f2d026b300e0bbb84b8469c381548fb880f07bff73ca",
+      "backbone.layers.35.mixer.dt_bias": "4e271173698295e02fe3f47e43faf1e05338db38ac697bc891f0e61eabf1f159",
+      "backbone.layers.35.mixer.A_log": "97e5d6bfebbba2843243da0471a042b4ef92b3c55beba5272f2982c1152483a5",
+      "backbone.layers.35.mixer.D": "0caeea446d35bfe9dbf5e9b26a84a5cf6c5f1ce1445ec58af1ba43e9ada65324",
+      "backbone.layers.35.mixer.in_proj.weight": "75f1e1d275700ede4ebde0544b3f75eba9101d808a2c4048a1fd4650b2e71761",
+      "backbone.layers.35.mixer.conv1d.weight": "2a55721dba0ea86203c2f4bbdcc2cc6823a0c625733620e0c0c60e7a12a09fe3",
+      "backbone.layers.35.mixer.conv1d.bias": "b277e9c1d7de7d7fc88447a26801203743700a6a4901310b298ed1817faf4ff2",
+      "backbone.layers.35.mixer.out_proj.weight": "d3bb3e20c0dcaa0cf6c7813b2d0ca80442441c5388e694d3ede147145ca9a4d9",
+      "backbone.layers.36.mixer.dt_bias": "39d4835ea0cdc827b0968deafc0c0d45f524819048cffa165179614d1b50b8e4",
+      "backbone.layers.36.mixer.A_log": "d05e16e2f76329bc1b64c70736b6cb0476d64c74933bb50798248b880683dc29",
+      "backbone.layers.36.mixer.D": "c6143b54d67d933de4d0afcaa98681230cc5132666655412d9359ff27e35ae64",
+      "backbone.layers.36.mixer.in_proj.weight": "530cd72090569e0e6ab6bc7505a617ffa387bccb93bb4326e0da8aa1eae3b709",
+      "backbone.layers.36.mixer.conv1d.weight": "0b7402d2a4922e5c9fbae8fce224580d40fbbc5927b0ac1f646a2e5e5f7b40b4",
+      "backbone.layers.36.mixer.conv1d.bias": "5a3bb5587f05a1904f12779f363090d45b21cd6ca94064d5688f46b9520a4316",
+      "backbone.layers.36.mixer.out_proj.weight": "34a681836911073f54b93bf21ed6bfbd1047213af1bc2142b29cae4e4d7deba3",
+      "backbone.layers.37.mixer.dt_bias": "7fa97f465f46d7d49c6e250dc670484f0540ffc579589d7a7c82835dba869191",
+      "backbone.layers.37.mixer.A_log": "ca5d2d0168cb1a01d76d27ca191a6adf183817c190970a1a33779da8848f5668",
+      "backbone.layers.37.mixer.D": "d0a32750ff9b5e827e137f239acdbd8d28ecde58dda42ab9555ba390962ff626",
+      "backbone.layers.37.mixer.in_proj.weight": "9a9893fb8e76e36ded556bbd3587f0acd74868b09aff9b38817f05eed507ea26",
+      "backbone.layers.37.mixer.conv1d.weight": "19345ca24b3930cf1001d8784b4ab119048d15d04b02ba9dcc645653a809ae0d",
+      "backbone.layers.37.mixer.conv1d.bias": "17d828fcec482e4c5887d8eb3fe1459333b45cdd85cc88ce52cc97606c33e71a",
+      "backbone.layers.37.mixer.out_proj.weight": "3f90bedb48e888a7ce273a65256dae7ced5ff3f8fcd55872972f3f5da2361b16",
+      "backbone.layers.38.mixer.dt_bias": "061ccf5c8f95a1663f665cad6f4d39abc5a10cc3aa5ee489da261fe361a9176d",
+      "backbone.layers.38.mixer.A_log": "5d5a09e494b52a60a0ba0337277b666eaa48e98ab976da5c5b94bfe2fe24f5ed",
+      "backbone.layers.38.mixer.D": "98ba09fe907a61a443e167e3353c7ca8ee40fc2d8e47a6d41500684870c41827",
+      "backbone.layers.38.mixer.in_proj.weight": "32ee35d349fb626a81883a8eacd96e49be34763b08eac6342e9afcb6b5c81758",
+      "backbone.layers.38.mixer.conv1d.weight": "57fa0b20a5450868cda63c18dabb3b657360cfd2d27633ac0da77e79b6e93a28",
+      "backbone.layers.38.mixer.conv1d.bias": "9caf82d89fd8f0920149a77cae16a7ba72dba299f6ff06423c0a5596dae8d5fc",
+      "backbone.layers.38.mixer.out_proj.weight": "72b2adfc8ba15e7d5df7e2f408813ba137cfe09bbd8d0830356212a914a1336d",
+      "backbone.layers.39.mixer.dt_bias": "9b380fb631b17078a624dc88c90de4d115963e9355a987fb69faa1637f72d1ec",
+      "backbone.layers.39.mixer.A_log": "18284f0941bccbdcc05602676b480fab3cd41e84b733ee3f563362c9cb76739e",
+      "backbone.layers.39.mixer.D": "84250a71646d0589a032f35c222f7b3fedaf1d472d97d3b9e2adbb11b53cd97d",
+      "backbone.layers.39.mixer.in_proj.weight": "c8dbab8b57bab97007d0ac25575e5cd0bcb958476392d8dd5bed71708b281009",
+      "backbone.layers.39.mixer.conv1d.weight": "51e38a6d49af9d572fa7f08d7b65df02def1c759f33de6cf51ddc592736fca12",
+      "backbone.layers.39.mixer.conv1d.bias": "8f498e795748a1e114e52715e9a63160f66c4eace76b9d1ff67b3da4a4a8968a",
+      "backbone.layers.39.mixer.out_proj.weight": "af670109703d667f5c370c32da6beb7dc107d03eac3b4cd1aa22a51d66c86f07",
+      "backbone.layers.40.mixer.dt_bias": "5ee07eefa9ba88c43d0c9b43280d5ec57fb2a16d8b9368f677d6fb3baf0cb60d",
+      "backbone.layers.40.mixer.A_log": "f57bf6e3709d4ec6c7fa4947380357faf5ea6d05d5914856979e564c6dea1948",
+      "backbone.layers.40.mixer.D": "affb722ec6de655ab2bbad726b2e0120e66b6531133b4ae01fb9f1edf90c0e1d",
+      "backbone.layers.40.mixer.in_proj.weight": "46db5e295ba25addbfa55bb4fb3364e53336da6e781a5a63ee798d3b881b32c2",
+      "backbone.layers.40.mixer.conv1d.weight": "ae927d8741236fca965fe2028dceedc1811c1ff166acf4d7a7ec29e26d2eb09a",
+      "backbone.layers.40.mixer.conv1d.bias": "9313d66bf10b2cb23cde8723c2665feeff7dfd53bae4aa2dc7fce805e2b09713",
+      "backbone.layers.40.mixer.out_proj.weight": "b56db12f91bb6f8baf57bd2c3a32e9b451a877a0fe24ee73ed931644d8d66867",
+      "backbone.layers.41.mixer.dt_bias": "47ee2a26e5060ee6a24d9880f5919c3837647d82a9a1cbb5def674e3691e642f",
+      "backbone.layers.41.mixer.A_log": "f6879fea619a2be2cfcae46cd05377528545eb6a62bf6fac70a1cf4f465cb74f",
+      "backbone.layers.41.mixer.D": "a0dd498f98283e33106675c0148d8c470de0ffb263f44c132cc3acd606930721",
+      "backbone.layers.41.mixer.in_proj.weight": "532bd12868a87a54f43fa0ddf20995458df232a571d3fd943124a070c1701e23",
+      "backbone.layers.41.mixer.conv1d.weight": "89152e5d2616cf6ddcacb51bd4b1f1b054f26fc08cd6624ef5b431bde424a360",
+      "backbone.layers.41.mixer.conv1d.bias": "a8993f0a36875a223544a35b9553bb64b97309df6e762c44517bfeb5386ee841",
+      "backbone.layers.41.mixer.out_proj.weight": "2c567ef1177eba0cd1c5e72d8a26ab34e4bc784a2925cdd836c81f016a1ee8ac",
+      "backbone.layers.42.mixer.dt_bias": "440ded94260ab51228f5094c6985f2cde93cc90e0cfa4e83bec65064482f7649",
+      "backbone.layers.42.mixer.A_log": "249fc5a91c1f15e8305b72eb61af7f4ccf5be63aa457ebdfeb38f60a8e4a3b6f",
+      "backbone.layers.42.mixer.D": "f60eddf54194b085a47c0e48782358d33d32c9858645b52bc8d010d86fd68ba9",
+      "backbone.layers.42.mixer.in_proj.weight": "0bd87e4be25414499e7bf18f85dc3acd70223202c4d142a1a963991a9dc6e1d5",
+      "backbone.layers.42.mixer.conv1d.weight": "da13483bc073d89009c8e9d05cf70ca89f031e162cc5404a0ac28c1d5b540bb6",
+      "backbone.layers.42.mixer.conv1d.bias": "dbeac231e6485daff825a874cd55f8da8384ebecd337348a6ed47424ae9e41c9",
+      "backbone.layers.42.mixer.out_proj.weight": "26f523a31fc5ce2ad1d36be8145158409c779ba3fde6a2fa50df3033ad604ce8",
+      "backbone.layers.43.mixer.dt_bias": "2c03c0820d17bff6a4406000d60b1649789e3c0a6967c257e38f402343db9b74",
+      "backbone.layers.43.mixer.A_log": "49bbfab5bef14c2bf238df459af7681750d714aac8cfd8ee9146dbe68a729f93",
+      "backbone.layers.43.mixer.D": "5c3ff72ef67a19d151b873fdb28f0357913e45538d309d35fad864e6d50b3b39",
+      "backbone.layers.43.mixer.in_proj.weight": "2dedd35b6e1a0f22dc73303626776a9b7553c749f1fd32a1c45d4ce7c11776a2",
+      "backbone.layers.43.mixer.conv1d.weight": "5e0bfabdfb68b8820d4083d0425c83fc2779b31b0aaf6d649114918bc04856c1",
+      "backbone.layers.43.mixer.conv1d.bias": "7de4a7e545e348907d4f154ed408d91ab8f8420be4002e5fefe3c59cfce36303",
+      "backbone.layers.43.mixer.out_proj.weight": "0dda43ad4adf46f1b667b44258d414eeb0d94423102aa76550fb5f91e8ea0517",
+      "backbone.layers.44.mixer.dt_bias": "27ff0f9825db835728f903b85e28332ebb74fcdb63b029568360ec9d7cfeb35d",
+      "backbone.layers.44.mixer.A_log": "155c3d7eca7a9ddb33712b26487b95b04f523b219b231d41bc6e9f6d066987f9",
+      "backbone.layers.44.mixer.D": "c68b64b06ed794383384f9002c6ba0b58275105a20cd8cc226faffb885d9a535",
+      "backbone.layers.44.mixer.in_proj.weight": "cc0643c7250eec6479bd8d87bdd382772e5be0c884aeff69df11fd04d8e1529c",
+      "backbone.layers.44.mixer.conv1d.weight": "b12ad8a8bb084785018d153dd71a6172d78d422535f741ffd68d0c89ffc120cf",
+      "backbone.layers.44.mixer.conv1d.bias": "938a1bca6d7e41a5581f6ee2312775489a4e6243bdfc3e8fd09316daece438e6",
+      "backbone.layers.44.mixer.out_proj.weight": "8ae12ab47b36a27e099addd545f776b935990f129abd27e7ee5fec8c479cb275",
+      "backbone.layers.45.mixer.dt_bias": "73f042043e635f13a0d122a4961e62978223a846164ff40005d62a8c1bb8d45f",
+      "backbone.layers.45.mixer.A_log": "6b29bb3ec4d760b328693ec2075273e2f87fcb477198ea99d2355ba1fbe3f2fe",
+      "backbone.layers.45.mixer.D": "dd647c522d145274b89d9e82275a14a09b893c18494bdc6b28e4ffb67bb6c29d",
+      "backbone.layers.45.mixer.in_proj.weight": "3008a4e45156777e1aad947d15fb312ad9e3b32b40be8ed0832fc570c8f95395",
+      "backbone.layers.45.mixer.conv1d.weight": "5c544fdc99c8c4d3ced0a4bfad4a32b7ead3ebab0eb60254a6f8307bedf0625d",
+      "backbone.layers.45.mixer.conv1d.bias": "f2f43f61ebc03bc0c8a7d6ff1259451c62d27d9a807e1ba304aa191c141764e1",
+      "backbone.layers.45.mixer.out_proj.weight": "ab4fbbfcfdd5061d64f23a0ea0ea45fcdcb977650188ef4e64a40baea53c1260",
+      "backbone.layers.46.mixer.dt_bias": "f8caf32dddf92186fac1ba5b1ff4f181ccc0040ab1b38c461489cc356c50d33a",
+      "backbone.layers.46.mixer.A_log": "8a989920334bc92393686bbf2b2efa3611732fe53f84956d4de40fb861dc64e3",
+      "backbone.layers.46.mixer.D": "4834b609243d4475ae5e30871ee255334dada8949d02dac96a483f26cb192fa7",
+      "backbone.layers.46.mixer.in_proj.weight": "111ccb5a0896e2c53527a8802848438f487adbfdea0936d200ac01e5a4c6b66a",
+      "backbone.layers.46.mixer.conv1d.weight": "579dff7d8c5eac6701e7ceed5299beb4c6f1529227374f63825128f5aedf1a6b",
+      "backbone.layers.46.mixer.conv1d.bias": "a2ab3e03f854fc1a0a7c71e50b9801925508836cb7a02e076805fcdc774b2a88",
+      "backbone.layers.46.mixer.out_proj.weight": "b1bb6143977982d126d4366141f2f32162ad5f386d374a2f8ee1702a5410ca9d",
+      "backbone.layers.47.mixer.dt_bias": "bd0142a676b162c063ef0d3aac69e28a84b66a05477fba6035639dcf9b850b65",
+      "backbone.layers.47.mixer.A_log": "4f7d891c22784aad2cdaee0c5ce5fd1e33d6e71c3fbb845698ef84a717090b46",
+      "backbone.layers.47.mixer.D": "66718e3f205fd5d58d8e0a80d8c2d869a1e8af2172430de746bc20ec433200d2",
+      "backbone.layers.47.mixer.in_proj.weight": "a24961e5a3a1ae38504c4faee40a8913102cb3c33ce0aed299c722e94b7c24c3",
+      "backbone.layers.47.mixer.conv1d.weight": "420cb29e3b2893903f8c64866acfeb93954a739cc2b24b4281c1ad1924847c2d",
+      "backbone.layers.47.mixer.conv1d.bias": "8d5882044063d76d03d24bb0477e712f16213820012221f51672188558175259",
+      "backbone.layers.47.mixer.out_proj.weight": "df622ca02087e0046bd89ea479088204bfc50239c06c1709b47b054b7f25353b",
+      "backbone.layers.48.mixer.dt_bias": "23a9a99e94e54323779b8093cc5fcf089d2574c528bd896078d50ef52ff587db",
+      "backbone.layers.48.mixer.A_log": "a78fcbaf3ffdb027087186e2582b931121c2eab3ae481b06729f4bba2e7d973b",
+      "backbone.layers.48.mixer.D": "6cb037bd585ae7cf7f27b7d8e6e6364b148438c39a13669d6c8e666569675975",
+      "backbone.layers.48.mixer.in_proj.weight": "bfc4c6cc746d695e4c7011dfaf2ce474e388d3b215d9739b20b83710896dbfd3",
+      "backbone.layers.48.mixer.conv1d.weight": "59d397baded0c2b3d29c1544f9981f8e2144eeaed1b39640333e97b62271c1f8",
+      "backbone.layers.48.mixer.conv1d.bias": "068d0a9c792c2082e49c3e9c991fbab2cdc8dbf4647e5d56d480d21496d32b20",
+      "backbone.layers.48.mixer.out_proj.weight": "7ddc984510e1100dab88777275dd9661002a91f790b18344d7fae75c8dad3822",
+      "backbone.layers.49.mixer.dt_bias": "0fcd19bb99e92f5cff77e6078429ce3a6d8857344b2a843c8d6a7e1f696925e5",
+      "backbone.layers.49.mixer.A_log": "4d44157348c9ddd310695dc14c864bbc15868da6dd3dd9b221c08ef6acac025a",
+      "backbone.layers.49.mixer.D": "e633566bf14b4724b48810efe18360b9ac69e95b4491dded550cff85ce11857a",
+      "backbone.layers.49.mixer.in_proj.weight": "5be6f52a88259dcbbed0ef4f938207954c53b067252119d4f61d12430a1aae75",
+      "backbone.layers.49.mixer.conv1d.weight": "833fd245bb69b6bf561ce8e8a3f8271bc90f7536c74e7815b400d89bdcb1334d",
+      "backbone.layers.49.mixer.conv1d.bias": "23c9fba917b74b1a2ae7366f54565a3d96d2d0fda4068dd1f24cb74d36fd0a1b",
+      "backbone.layers.49.mixer.out_proj.weight": "a5fd9de26693011b4949d8ccd824ee893437197b6ad5b32c4c9f6083dddc6ec9",
+      "backbone.layers.50.mixer.dt_bias": "aadca8ec16a867cc51108504122036d3180b4a49cefeefdfc214a87ee6a04922",
+      "backbone.layers.50.mixer.A_log": "5c1fd8241fbcc1c27e66f4e9bf1a790783ec51e387b88605354f1d17f5310253",
+      "backbone.layers.50.mixer.D": "ae310a7f1e2aa98cd9fd8a9270af18a84c07b799cef3429a134e874b02e053b5",
+      "backbone.layers.50.mixer.in_proj.weight": "899db347bcd143d4cf7213d1ee5d8b355f91df585f3e6683b3330c5be2a9e80a",
+      "backbone.layers.50.mixer.conv1d.weight": "f84769bba2fee2a7098187bc41a2831446c872100f661a8d0d939d43ca4ca77b",
+      "backbone.layers.50.mixer.conv1d.bias": "0b205aeb8ee73e55fa2e78fbda95a0cf92a43f9a0b80444f5778dc083d1bb4d0",
+      "backbone.layers.50.mixer.out_proj.weight": "0f92d49946bedeb5a8050d2cb4100f584532cd1ebd8e5b2a9b9c9e16d3a20c6f",
+      "backbone.layers.51.mixer.dt_bias": "809ad982abbd2d789f5987a7f2cc7f8b3117e668c96af026c493e34743b3cbbd",
+      "backbone.layers.51.mixer.A_log": "49e32c8d2c13558901db8e4b04bdc2742b08e7202e72b286c722b18d47c9aa97",
+      "backbone.layers.51.mixer.D": "def5cfc13027bf23767a3350da1b773efb9fcb03142d328c0d6e7ea8e7f749c4",
+      "backbone.layers.51.mixer.in_proj.weight": "df55b0c77ea7941737160d63f36a7ae4a104f18cbc30ea7073bc767fbf6cb173",
+      "backbone.layers.51.mixer.conv1d.weight": "b003794db7bf6307c667045ffa915c53b7080c82cabe3c55d4b20339b33b5a8a",
+      "backbone.layers.51.mixer.conv1d.bias": "aee66d98ac1223d5b694da5a799baa9e0da8664a588288f3364f3bc37d1682ef",
+      "backbone.layers.51.mixer.out_proj.weight": "925ee9d7e28e813a6d3108675f5d3bfef2820a3df78a9b3df3de7c57db62987e",
+      "backbone.layers.52.mixer.dt_bias": "f74bef10810b0cb3a93c1f7c014da3f7443cec9852ac0edc274c8f481d8b0a49",
+      "backbone.layers.52.mixer.A_log": "fb590d261a373571292c894afcd7e71cab9ae39780ebca350c35581f0df6416d",
+      "backbone.layers.52.mixer.D": "40eae124031d35334db04160927348808b35efaccf64cc40116e67c4febe3909",
+      "backbone.layers.52.mixer.in_proj.weight": "8861a9ef0aa90d987d1ff75d403de0d97dd50de5a4bb1d5b7ceab20538f43548",
+      "backbone.layers.52.mixer.conv1d.weight": "9535472952b188f805d443ec6d38680a2a15db861a907fbed6fd3521a9560acf",
+      "backbone.layers.52.mixer.conv1d.bias": "e183dc4d8a06c4110da78d6f6db7f3d38f0c75e24062eda4d6f550dbbbbfb056",
+      "backbone.layers.52.mixer.out_proj.weight": "9180c91c5e947e9cb08dcd2d12f42a567ec23866cf6c6a41e0dff31628280a23",
+      "backbone.layers.53.mixer.dt_bias": "54c22bf7fb4a2652393889934c697e92dd607d863ca4342022a665dfdbfeca45",
+      "backbone.layers.53.mixer.A_log": "ec349f324dca3159cca46a3711c22df5e39bb4ce531f2d8c08ea20660a9cb783",
+      "backbone.layers.53.mixer.D": "02e9bc75761e09e3555dea47f2d592b82f0be4032b023ef2a966fa100e0c4195",
+      "backbone.layers.53.mixer.in_proj.weight": "ada3a82172f2eb71de908883bb1ee716deaa7629b2d602ea65d93537af6ff225",
+      "backbone.layers.53.mixer.conv1d.weight": "cdee9ce12fdceab78e4c346057cb4cf946e646b0c46134b0605739f6385a7a77",
+      "backbone.layers.53.mixer.conv1d.bias": "61645607fed62f1d7afe76581081d9b3711b553fbd2d6edabec8737e962885d4",
+      "backbone.layers.53.mixer.out_proj.weight": "26134cf9aea1676c534e684924e3373d2f56f0e53a46b118c5112d87b3156590",
+      "backbone.layers.54.mixer.dt_bias": "17947be77cb8cc01a782b111ac37b7c9f36feac7394e952dd4b65b241b10fddd",
+      "backbone.layers.54.mixer.A_log": "23998d19aa4a789eed263f7c89f64ce81c5e19581f185441dd72f075cc440da6",
+      "backbone.layers.54.mixer.D": "8e30d52e7ddf898f766aa1d730fbe8153198193cb6287955210b5f63d1e2c75e",
+      "backbone.layers.54.mixer.in_proj.weight": "f9c81621d1dcb3869d1bbca699e07af435aef5910e432db2d9c7fc469c63f403",
+      "backbone.layers.54.mixer.conv1d.weight": "ddb2b508247f0d0af9bc93fcc95893d538ccc9817c6aaf75566d4e98c95aa1c0",
+      "backbone.layers.54.mixer.conv1d.bias": "86f246f7939f535033a6ae09b8978c199f15b0191b86c2a1cd2713e430edd4f3",
+      "backbone.layers.54.mixer.out_proj.weight": "15d890ee6c84f7e44794b9ac2421788b4d578c0a3effc860bfb742e5ec205ba9",
+      "backbone.layers.55.mixer.dt_bias": "c62e1181d17ae9066f1580fc55bb69327cc3fd10a2dc2cdea946874edaaf83e3",
+      "backbone.layers.55.mixer.A_log": "6e0edce166fba392ad2e1052dc11cf69f4f99de6f0f9d15f1987c7e91bc7de8c",
+      "backbone.layers.55.mixer.D": "3213cef8067aff9ed891bae84b92ae1f2732b3bfc43a6c54725a9fae2e436c18",
+      "backbone.layers.55.mixer.in_proj.weight": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "backbone.layers.55.mixer.conv1d.weight": "bcfe867de02764bc60add117d9e0835da99c653430372810c179dc7a2c71a360",
+      "backbone.layers.55.mixer.conv1d.bias": "8ecf0804842bb5da41cca59add2c0d47cfda3a2b12bbd38e972c6bd1f2290b10",
+      "backbone.layers.55.mixer.out_proj.weight": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "lm_head.weight": "169d2f19d0cdff2b72e65b7a9cecf87f5799e7922e29eba136886281f79ac4ae"
+    },
+    "after_sha256": {
+      "backbone.embedding.weight": "288a0cae67bb9be35ddb1b666d4c81a2fe1e5c769e836f8dc0d87246627023bd",
+      "backbone.layers.0.mixer.dt_bias": "575d992f7d30726a3ed0ef4404363b3bb05517d6c5c9919fe0ce6f71e82a2f95",
+      "backbone.layers.0.mixer.A_log": "29392b76e84485e739e55ec93ac1f3c9a5fdd773f1507e05a646594b3318d509",
+      "backbone.layers.0.mixer.D": "f403f7ff1c7b8bf49948587eba321a8b88d4e251298068f2bc7e7f81dac3aeaf",
+      "backbone.layers.0.mixer.in_proj.weight": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "backbone.layers.0.mixer.conv1d.weight": "6c20cbe43da8393c6b58312e7d08d28d6f11f2c27917f763c2ad43a400947a01",
+      "backbone.layers.0.mixer.conv1d.bias": "2f8af760ccc9b5c4a9571e6b2d7911341ae2de5a20f78d8a7e91ab78e2cb45c8",
+      "backbone.layers.0.mixer.out_proj.weight": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "backbone.layers.1.mixer.dt_bias": "ae3bc85972c86c363f53effd0dc73bbaf26e8e1dc3712b93a2b55e355c272d2a",
+      "backbone.layers.1.mixer.A_log": "c3e07ff4f6828621d19e6f9f485707a4e1a0dbc1523846859e3977c96a5c9955",
+      "backbone.layers.1.mixer.D": "3f8d560bb4c20630d019b88b266febddecb796b6107dc1383fedc5b8a940f93b",
+      "backbone.layers.1.mixer.in_proj.weight": "1e961fa6ed90650f949fce3b32c1fcfb276accd966ed66a3dd0d63d3d4f6463b",
+      "backbone.layers.1.mixer.conv1d.weight": "1466752dc9510ffa8f81980222280bd544cacfdf18b4828c44323993fc7259df",
+      "backbone.layers.1.mixer.conv1d.bias": "1bafe69217bc1f0b2897cbf9025a6566173295d880ffadf59fc34954598e6453",
+      "backbone.layers.1.mixer.out_proj.weight": "7a0dcefd2aa82ffc20482e4b13095fcb33560d6912305303c2cb2fda34d9e817",
+      "backbone.layers.2.mixer.dt_bias": "15cde4f788f1ff9485dc227f4e9ebce8086db1708b906f1f978da5f91575c0ee",
+      "backbone.layers.2.mixer.A_log": "5d489b5a3aea0568892de8ffe6bdb9f66393f63fd9950d46e68bce5890d8cc22",
+      "backbone.layers.2.mixer.D": "a8e6d5bb5ad6b6f5b2c348c29942d5257c8ba57ac1d5911979a267a9a7cc7c61",
+      "backbone.layers.2.mixer.in_proj.weight": "5e4e505cebf6d6810ad40170844dabbe4cf33e97ae29ab4a9cf20126bbac5e55",
+      "backbone.layers.2.mixer.conv1d.weight": "6b9e2f4ade006643ecd590ab25ca3589a261eb00a96cd7d7335206b80dba5524",
+      "backbone.layers.2.mixer.conv1d.bias": "4f456087ed19f4e735c6d6255b9cf1625cdee2bb5bf2445b3a8c17df6969e2d9",
+      "backbone.layers.2.mixer.out_proj.weight": "d0f1228216363f5fc3041451d3d4e76a282e3e6c45378f69eb58ce15530ad263",
+      "backbone.layers.3.mixer.dt_bias": "269a5fbcce1bc2c51819b1e7a5558a29775161ca550099a8a105961d11842405",
+      "backbone.layers.3.mixer.A_log": "0fcecbdfef16ee9a572cfbec4cedfab376b4c779389acaf0f52f548dc764ed73",
+      "backbone.layers.3.mixer.D": "1554e5ad7649f1544d2f41cde1e36eb3d68b19396feea8a3c84d8f3b9dd6ba57",
+      "backbone.layers.3.mixer.in_proj.weight": "f3385a66d8ce919096a9086dc7b0ddc9ccd9ced6cff4386539d4bb36893a2c0b",
+      "backbone.layers.3.mixer.conv1d.weight": "aa8686394d656efac69db1c9167911b2a3c34fc47e5abaf54730ab2dbf932e15",
+      "backbone.layers.3.mixer.conv1d.bias": "428fd49dc59e1387638268ad2a2009b78e311ccde29ae0ef25a5a45ea392db40",
+      "backbone.layers.3.mixer.out_proj.weight": "18adf873bd11b502b45dadb0b20cf299467fc6faa0f9dff849d66daad5b95d35",
+      "backbone.layers.4.mixer.dt_bias": "330c9ada10d50b5b1395a49c669a6c6866cb89c67b5dab528d216bd183d29306",
+      "backbone.layers.4.mixer.A_log": "81b2cb9c623779e72fc6f0baee4ce062d421bc3b2ee092df00b2da922752a18b",
+      "backbone.layers.4.mixer.D": "d60e0ec52a650f6df590923518c337ed37af616802d683947cfb8b2be9da3c04",
+      "backbone.layers.4.mixer.in_proj.weight": "19154f2f6bc502f9d08c451eb2c6797428e55704cc6a33047e81aa1db937d0b1",
+      "backbone.layers.4.mixer.conv1d.weight": "5d2e1b198cf100fcece9605aaed3bc93b5141a8a17311eb4b1942bb41826addc",
+      "backbone.layers.4.mixer.conv1d.bias": "020308daf8003db276077de20db5bf9b015ba5379195b4550cbc12f21d989f5b",
+      "backbone.layers.4.mixer.out_proj.weight": "41c72357e8333850a20d65fdfd05bded0ded46ef4ffe5248af42d5681525c46f",
+      "backbone.layers.5.mixer.dt_bias": "63264b7f6a174f9440dff8dc8ea288244c1bfd1d57521e59bddda1e1fa431610",
+      "backbone.layers.5.mixer.A_log": "1b53fda9c3153fec7f9df48545658001dde1edb43e6f459845b02cd0b77c5147",
+      "backbone.layers.5.mixer.D": "4172d001644056bd136afdf0858a678923d470657a551a643b765360d04ba519",
+      "backbone.layers.5.mixer.in_proj.weight": "089a3fb790a957a3a87f62e2fd71ce39238be81c205f41df3d34237b55b73b0b",
+      "backbone.layers.5.mixer.conv1d.weight": "79c906ba95e398316653dea595561039a13c17225d83ad84b6875ce1a33fc9e7",
+      "backbone.layers.5.mixer.conv1d.bias": "27c9d3e0cde45c9092fb572d44ce3a1af4a279679805dda4941eb7d63441c1bb",
+      "backbone.layers.5.mixer.out_proj.weight": "9b943e0409bcea2e22b19494aa2cedea196acbf80f95e02b2626d46b40c8923a",
+      "backbone.layers.6.mixer.dt_bias": "08a8f542317c36767a974f0703ead327a5750c2a2e99bf44ff78b6660763f564",
+      "backbone.layers.6.mixer.A_log": "0bb4b3272855d54a1554309ab0e12861b80f0c555c87fff6db317748c46d1d94",
+      "backbone.layers.6.mixer.D": "005598e55cbaf612df49f91a6bf3073ab4ce625a34fafd657c12ca61f12332d1",
+      "backbone.layers.6.mixer.in_proj.weight": "8f484049a0769a9588e1f54e1a0215c60c1a8f7b88c3ac2a0d01ecdeb42b9c87",
+      "backbone.layers.6.mixer.conv1d.weight": "c223dade29ec079d10aa9644114e22b65e4288de0a68c3fa4ead894f065fc2ad",
+      "backbone.layers.6.mixer.conv1d.bias": "bcab2f7846e401324b5d9deacfb94eb7dfbb2e0af81c212ae6d4b5b696e93467",
+      "backbone.layers.6.mixer.out_proj.weight": "5e5dae58a44d876854a9664f51c9c425b20909e0d23ec33e0f5c7f0f89fec68e",
+      "backbone.layers.7.mixer.dt_bias": "8121037a3fb7644e5e255a153151ad5e2d8c378c65571fb8e6bbcd758538fd21",
+      "backbone.layers.7.mixer.A_log": "a12135bb157b5ea0af3ee12034386adffcec65ec397100025981285b0fc13efb",
+      "backbone.layers.7.mixer.D": "2d7fdf8f427733a7c61baf62e757550b9e036a9a055eb6fc14a31917d0d4300c",
+      "backbone.layers.7.mixer.in_proj.weight": "bc1f3a6a9540e71abfb95760ff65c4fd515f6915cb34888228d10835cee77ed3",
+      "backbone.layers.7.mixer.conv1d.weight": "de368d0203ed30e65c31f983fd693d38c67540bc7548ec15aadf7a1f9dc6b36a",
+      "backbone.layers.7.mixer.conv1d.bias": "936c9391061cdba320210737ca1ce22fd4dad9b7dc013986ae62a466762a6cd8",
+      "backbone.layers.7.mixer.out_proj.weight": "862ba10823f6360b0e819765b9981be1dfa6a158086b80d3444260dbf3710631",
+      "backbone.layers.8.mixer.dt_bias": "d09c4c2c4fb2bf1ff7f998b49b31b971106e406d3a708e8a7eba2cff0496a9a5",
+      "backbone.layers.8.mixer.A_log": "ba4517666ce89351f5468bcc2645a1ea9fa211d23b6570b7cd39a28e0430bc5b",
+      "backbone.layers.8.mixer.D": "07c8e5a49539b5d3fb17eb46648f82c1f7fdeb64fce7688e9b4ea8b025254834",
+      "backbone.layers.8.mixer.in_proj.weight": "9241aadb0880673bfa3ef8ba1fe4941defa73e3cbc9e04b43c640a50f5af0feb",
+      "backbone.layers.8.mixer.conv1d.weight": "41bae34c06ae430d1f39c44e9d671e7a1de097564cd57f1fefb4a9f31a838a8f",
+      "backbone.layers.8.mixer.conv1d.bias": "8a9dcea999f18211d615924e737c2d1d5f97b71be36fa95c1ca30d68ba4b6e35",
+      "backbone.layers.8.mixer.out_proj.weight": "73c034e48ed1463a4f10c972afbf833746a20f60408d16d179e124eb35dd9fb8",
+      "backbone.layers.9.mixer.dt_bias": "47f82d0956f1410de8d2e3028613d87744fff36c40e01f101499275d9a1f246c",
+      "backbone.layers.9.mixer.A_log": "d12ee15e981b77f5d6ce618e0e954264ad591d5030feeb54df7bb6ae85041a14",
+      "backbone.layers.9.mixer.D": "45b1e4c49adf0de86e746ec6dbd3df451fc49923be6d147b64c98e3f509d0886",
+      "backbone.layers.9.mixer.in_proj.weight": "b2a8617c338561af787109b45b27706bb0b280fff0d3ebad00d119ffad48f187",
+      "backbone.layers.9.mixer.conv1d.weight": "2dc1137b6df8f51a8a518450ee93cc6bffce8a611691b3e66d6be38b71486391",
+      "backbone.layers.9.mixer.conv1d.bias": "4717f86a354f0c59d1e9b87d4b7585a7cea98b0bf55de0a21836ebc926ea7ba6",
+      "backbone.layers.9.mixer.out_proj.weight": "a0eed01718db853e8e99502e6bf98ca415c8b037959fde9c7e08274ae5ec1b29",
+      "backbone.layers.10.mixer.dt_bias": "d324777e66f0e6e4d99a1ef833e038402303c7a973c79b7e9eec5de728ee0994",
+      "backbone.layers.10.mixer.A_log": "549d1d9132b408b025c666aec65ba1a172b21f3fdaf7b0bc4f08e22c1c41e068",
+      "backbone.layers.10.mixer.D": "7d5dbad8b46b07489ac9840757e480904f6a0b0c333ea8c9be87fb7ce2be8369",
+      "backbone.layers.10.mixer.in_proj.weight": "36a3422185616b93e4c43a26060de8bb26c12ba8d2869ee9c13502d614357e1e",
+      "backbone.layers.10.mixer.conv1d.weight": "ab3baa93bfcc166d21ecfdd6a8020435d14cc8e9ac1298a561d8978a4a1ee3ab",
+      "backbone.layers.10.mixer.conv1d.bias": "6c10a33e19ca3fffd3811eea63e1cfbfff164474e6c7cd03fea1d060c2838f68",
+      "backbone.layers.10.mixer.out_proj.weight": "5ac19af21d9a6a59a9106b2fb75b1652d26c97c991e3541417798e2de60eb778",
+      "backbone.layers.11.mixer.dt_bias": "398a57d4a84fad84fe793c252c36689eb7222bf2c7dae842bd769aea8d132a8d",
+      "backbone.layers.11.mixer.A_log": "a49a4097c8b0b93687d7bca54c448edfd336695887835643c937a193b7645f8e",
+      "backbone.layers.11.mixer.D": "d37062a9603ed53aaf07f227312eac2896aa86a645b0a4013cd15be935d3176b",
+      "backbone.layers.11.mixer.in_proj.weight": "c497592b5042850803eed38fd284d2f1a06e4bffd2e06ce8a23269bdbb65d194",
+      "backbone.layers.11.mixer.conv1d.weight": "ee0b2719bd2f2b62edbe785d2147b03546d6d3041b79074ccd798695f13203de",
+      "backbone.layers.11.mixer.conv1d.bias": "cea5365c08c89d985b9e355ab8cb317a1ccdb27a625d68fb45a685916d5f508a",
+      "backbone.layers.11.mixer.out_proj.weight": "b970f1e57235ba9d3d7d84f7d4bdb17438d029984653b527ae8a6d575acd1891",
+      "backbone.layers.12.mixer.dt_bias": "8c838c8c0b2d299b3b927c826c5bd7cd94b062276337a426e327ce8d2e5d9615",
+      "backbone.layers.12.mixer.A_log": "c37e8e70f7036f00d6a6e775a55ffc34f672edce0d72c573dc703039381c8e72",
+      "backbone.layers.12.mixer.D": "2420796f486bf19ace80997a6b522feae3ff158e2eb7f971208ececf872d39aa",
+      "backbone.layers.12.mixer.in_proj.weight": "1dba6708eb351eaeb01550ed4ffbf0024d951b931ab68d95ee2ef9c754c6a7ed",
+      "backbone.layers.12.mixer.conv1d.weight": "bebbfe698927e5d6d94173d8cdc0004119b53051867e443a7434c63bbb4f5e97",
+      "backbone.layers.12.mixer.conv1d.bias": "34af93b560b686b68ca77a875da62ed0900dd584a668991b714b70b32ecc5fcc",
+      "backbone.layers.12.mixer.out_proj.weight": "bff49ec5058f026932644d65b11164acd4a470f669abd32b5448d9ce907a3b6c",
+      "backbone.layers.13.mixer.dt_bias": "18197d06a34ed3676a0bf74347d6d97dc6e7c35f5295f92a2b5e93b628b408f6",
+      "backbone.layers.13.mixer.A_log": "4d441f8ab4caa2078589fcf57fb5a5a28679a641ded4cfef767c632971cf9ab9",
+      "backbone.layers.13.mixer.D": "57f2216c11bd9372c4195f4629809b66288a3f656f2f37e02a955bbbb9c10544",
+      "backbone.layers.13.mixer.in_proj.weight": "4d7a47148d4a6b6a536c7c77d365040da23a800fec446c2334fbe9321f7a66f4",
+      "backbone.layers.13.mixer.conv1d.weight": "3acf8890e7923c823748643a95d17ca047634a4c01f251939d6ec431ca925e68",
+      "backbone.layers.13.mixer.conv1d.bias": "497b7c5ac2401cca830c0178689ab7ff534a6efff0da08f47e66f834ac430d4e",
+      "backbone.layers.13.mixer.out_proj.weight": "8f8fc3a5f0f50da76f92aeac6c05ef4c258a1feba6fd66b27c1f8bab1dad5c56",
+      "backbone.layers.14.mixer.dt_bias": "d7ba3283e57c1d6667dafc6a5557bc0283b6083ca738eb24bc16e7bc5ebbbfe9",
+      "backbone.layers.14.mixer.A_log": "612e1d1902aff391bac31159c8cb257d87d8b45007a5caa20fc0d0f86877affe",
+      "backbone.layers.14.mixer.D": "8608fca8fa70a7abe2a4f30750450782f8bcfc6e1c328d3fca2c446ef7ff5750",
+      "backbone.layers.14.mixer.in_proj.weight": "fc2db9c425c8f206314d5a5a56986efb4979c4b81bcb58f5c4c7fbdba981a662",
+      "backbone.layers.14.mixer.conv1d.weight": "207d18b40a9ae29b5dd59fae18785e75f4a55546c1251dadeefcdfec5e1061ae",
+      "backbone.layers.14.mixer.conv1d.bias": "9b7a78d13c5cf9dc2bdbba42e8dfb7dcd36dccfa188608eded62fc5e4120f9c1",
+      "backbone.layers.14.mixer.out_proj.weight": "bd80ed76c8430cca41e09f45346faaa1b08b479e3187f5dd8d11af81f49bf474",
+      "backbone.layers.15.mixer.dt_bias": "03d06adfb765cd1c63511a591af2b922594ca984d9d02191990aed377ab87a7f",
+      "backbone.layers.15.mixer.A_log": "5570e0a435b5edcbd1128dbdbc536a59e5a65cd2ca20d6e17a97fe2f02630172",
+      "backbone.layers.15.mixer.D": "fef0f1d04b18aacc04c7e1ddcf0effed779c6e95dbbe769ec656c35d176ca803",
+      "backbone.layers.15.mixer.in_proj.weight": "49a39a68932a59c5db53ac5172392a92f5f58706339103ed9c8836c74a54c1bf",
+      "backbone.layers.15.mixer.conv1d.weight": "302cea25cf918972d29affd7d73b0fca03dd237e736f7da89a066aecb90d8557",
+      "backbone.layers.15.mixer.conv1d.bias": "d89d957103a8bc734d9b4f1c092b25f1560e785f1919db467c222f9353e2750c",
+      "backbone.layers.15.mixer.out_proj.weight": "65cd797637c7ff987dfc91a95604ddaa857eeeca3d68dad8e2fe297d3243f1a4",
+      "backbone.layers.16.mixer.dt_bias": "56bbfd60436a32ec7d72a51ea63f95e86b0ba57016422a180dc28e8edaba05d0",
+      "backbone.layers.16.mixer.A_log": "28dc31e731f08a54d3863b59a5771ac77087b99d7f95f9a0060b8bb826b6892c",
+      "backbone.layers.16.mixer.D": "e8083fd430522a2bacf26ce7fe30348102c101e811927f4543db403724f7bd94",
+      "backbone.layers.16.mixer.in_proj.weight": "929f3d4f80e099c400c58a1f5b28aba4c001748641381253161599b419795265",
+      "backbone.layers.16.mixer.conv1d.weight": "c5e1703d843e11393887d7031286f517bbbd31794018ec275d761470b494600f",
+      "backbone.layers.16.mixer.conv1d.bias": "78af0ceaf23cb00b0536a85962eac2db567fbb670d70191d2d182fa53ac1688c",
+      "backbone.layers.16.mixer.out_proj.weight": "e46c7c53c282ce3a855af8663347589dc6ac9c4a7a806e62eadc569c87a82cb4",
+      "backbone.layers.17.mixer.dt_bias": "da30edbdcb7abd589e0f5be03acb09f8e313d50cf6e2895ea510e1bbd866e10b",
+      "backbone.layers.17.mixer.A_log": "19fb22c89739c883c9b4f8194b23f158e73ed8977319e97490934013d78992fd",
+      "backbone.layers.17.mixer.D": "d3c6e51127a62f41bdcc8c25feab179e952572a107647d25a9119c70a23de797",
+      "backbone.layers.17.mixer.in_proj.weight": "f352ba90de5d005208df0375d093d63a9df4ba600ca9071ed91f9dd7e45c425c",
+      "backbone.layers.17.mixer.conv1d.weight": "2d8f6e155e96d9180819637800d896672ddbc91f82c158eab2fb2d5082ec0b8e",
+      "backbone.layers.17.mixer.conv1d.bias": "9b1677920accdb43d90bada8e0506cf83c8a18eb26f398710e6f5bae2cf4b9c6",
+      "backbone.layers.17.mixer.out_proj.weight": "ee93d897df3e460fe6383b7b42f579e5cccb07873dc2c26a681ece61f69ca872",
+      "backbone.layers.18.mixer.dt_bias": "caf798ab038bbe6db8ecabd667b6b8f9832f81e578660c9de7e5645ad0d4bc5d",
+      "backbone.layers.18.mixer.A_log": "5c35bd6083c3feff4bead9e2dc49ba8982161ad7e0d97d8ae7de42647c69688d",
+      "backbone.layers.18.mixer.D": "abb5386c7f4d69371ac5c5ca3102958b09f9f8ae1a3a9fa0aa30c6265092cdb8",
+      "backbone.layers.18.mixer.in_proj.weight": "6d2c4378b823aba6cbfd3b89a39327a8f2db533ed4c45dbc567045ca85b1df4a",
+      "backbone.layers.18.mixer.conv1d.weight": "e995e5de14b4ee1032fff9dcb5dc8b1237d99c2de0ce5faff9e8f139d674df97",
+      "backbone.layers.18.mixer.conv1d.bias": "0d2ffc81c63e92124c27558f04bc3000ee08cd253e81932d87d9cd45e002aded",
+      "backbone.layers.18.mixer.out_proj.weight": "5e3cb23f4203f749e46d81d49a4904908f48c7c84ca244f9d512471587f9f6cc",
+      "backbone.layers.19.mixer.dt_bias": "fafee561285a386364dd8bd49ca8b045c843e15d969b711630a193a3c86fe037",
+      "backbone.layers.19.mixer.A_log": "10865c8e3bb5785b848efb7a887909e5dd5e008f8a275d8655fda2b7edb84000",
+      "backbone.layers.19.mixer.D": "f4c1bf7c3dd76270406c68c1ccc17c30a699106d618dcd40b2b8078dcaed76b7",
+      "backbone.layers.19.mixer.in_proj.weight": "c564d26e0ba450a41f1855708e8afbfae7cbf40b4114e3a47c7e54842132526e",
+      "backbone.layers.19.mixer.conv1d.weight": "e10180afd81ce19d7d22072984fcf64e730dfe3bb477ada00205d5846e33ac44",
+      "backbone.layers.19.mixer.conv1d.bias": "072c36c348e2c3d96c4c6c172f3d0b1fd55c75876c75a9e18bcc4d113aece5dd",
+      "backbone.layers.19.mixer.out_proj.weight": "5d4477b3158e8188cfdecd9ec62d416b4aa9b5cf31ac9647d3ee265a180a4d74",
+      "backbone.layers.20.mixer.dt_bias": "26134afcf405687849544834016e542c1c58a6d5adfbc8240aac49638608a861",
+      "backbone.layers.20.mixer.A_log": "b0b072bf883570b33eba9fa410a2d2cbe622db9ab7a6bc563c504c5d716352e5",
+      "backbone.layers.20.mixer.D": "a238032bdaada9b645f91e1c63b5e0b3db1eab1ad64486f99e7d8fe7806cde1c",
+      "backbone.layers.20.mixer.in_proj.weight": "9401c4e0a93e9828c85ab5a00a76f79f57cb4db272c408bb72fae0fe184733ec",
+      "backbone.layers.20.mixer.conv1d.weight": "2dd7a3dd802dc375cf3d5ae9ff7ec4dcb5941ae7fd25557ac1d6e2d646511be7",
+      "backbone.layers.20.mixer.conv1d.bias": "400d3fa9aa1336b93699fe8af01d48f8f706f3796c265408ecf9a15a559bb69a",
+      "backbone.layers.20.mixer.out_proj.weight": "ed672b54567649ebaa94d392558ab03ed00322fe0a57ba00598b1c94cb400109",
+      "backbone.layers.21.mixer.dt_bias": "b20c56a2c64efcff68b3e93d6b8514034ca5d5546856071a9398095d275b8b4c",
+      "backbone.layers.21.mixer.A_log": "5239beb13dbce70934dc6919697a07f3b6dd77f90d4a2583129e2a779d20f3f5",
+      "backbone.layers.21.mixer.D": "2851559df57450185bae0f482b9be52e42265df4d1c4c88e16357a59f6fa3e15",
+      "backbone.layers.21.mixer.in_proj.weight": "225c80997e9b73af44bd9506ee19362b4d08de382e0e1da649c5414c3d8bf55a",
+      "backbone.layers.21.mixer.conv1d.weight": "bcf01d6be9d30e54c1db3d97970864950267452d52498b5bb16eea5e0a7b08be",
+      "backbone.layers.21.mixer.conv1d.bias": "5fcf3613c6df9a4f2d99129a88a6dbd88d807ba3f7631fd1287fa0856b57a993",
+      "backbone.layers.21.mixer.out_proj.weight": "d8e02fd36d55abed919be03bf1d87f646db0b22564c8789376670471419cf8df",
+      "backbone.layers.22.mixer.dt_bias": "1629d1e393ad3c37f1da0f068d94e157e63c37eb7548b3e44125308b3a7ccd62",
+      "backbone.layers.22.mixer.A_log": "845e54a627c0e0a25e0ffe725aba0113e43b9ed454fd09faa0542f379d06ebe7",
+      "backbone.layers.22.mixer.D": "560c88a129a0fc7887f022437ff18351d4647a800bffe402e39633331571a145",
+      "backbone.layers.22.mixer.in_proj.weight": "a1ba77d51c53398d2112fd50051c0dfd5e0551542102c05ed64693c1c6d73f9b",
+      "backbone.layers.22.mixer.conv1d.weight": "cec6dfc0500b9cbc4bf6c83ffe60b0d916876a190ae13e623cf72947a5104935",
+      "backbone.layers.22.mixer.conv1d.bias": "25028a667430f08788bcf140e2ff926e903cd621ccfc7ace87bcf0b65765b101",
+      "backbone.layers.22.mixer.out_proj.weight": "c16fba7e05be5540b6bcd14cdca9cabb7a6c6b73bafa4beff0c0293dbe3ce37d",
+      "backbone.layers.23.mixer.dt_bias": "62460522d608fcb2491b08c60a786297e7f35abf22250529d8a17417b73a075a",
+      "backbone.layers.23.mixer.A_log": "256b45c7be3a4c714ebd96c5bd329c7f8ecc56b0826e2ce974d839e266d47ef3",
+      "backbone.layers.23.mixer.D": "ea60d8fd560951d90850a68d2e5d7f02fc49c12841c7bbd0d9411e3696e4afa1",
+      "backbone.layers.23.mixer.in_proj.weight": "54786f7ee1d6c168bb7949f0d0b5d8293787bdd7ab83b5593b839f09df907289",
+      "backbone.layers.23.mixer.conv1d.weight": "9e799b05ab5bb8001a337a71abf442faa52aba1ef1d1fa61f6fb588a030113e7",
+      "backbone.layers.23.mixer.conv1d.bias": "ca5342e86d03bec00d41086f66b480f4cc5e2fe509293acb59ffc2289becf02c",
+      "backbone.layers.23.mixer.out_proj.weight": "9daf19d3b96756ce57d3b7501f46c1f5ba96968c754a101d238301d085fe560f",
+      "backbone.layers.24.mixer.dt_bias": "39582e76d30b090ba934dfb12c1e9352eeb31e98ff91cbebc7adf05866e9ea0d",
+      "backbone.layers.24.mixer.A_log": "4c8064143205ada0e96b336941ac55f7197848aa7918b2e840fc970cfcd2bb7a",
+      "backbone.layers.24.mixer.D": "c277c3b967a492735fbcbcec26e532f4b6607282f664c10cd72bc859206219c1",
+      "backbone.layers.24.mixer.in_proj.weight": "0a0b671e0d324dc132ad5d3e89c045de03813677d7377d77151d64f35fe76393",
+      "backbone.layers.24.mixer.conv1d.weight": "7a2d3eeaf6a70a17b79ae7aaede083dd03dee250a00399009ea451cc42fe7d03",
+      "backbone.layers.24.mixer.conv1d.bias": "1ffbd7d1b80471daf04af1993702bd8dad51936492fbc9bfb45b997fa59e1171",
+      "backbone.layers.24.mixer.out_proj.weight": "06138a031fa223967c975103c1131c9b14d0a0a8e913163f6dcb851e3cb98eb3",
+      "backbone.layers.25.mixer.dt_bias": "33269b569cd020ff52d7a8a4b57f59259e6f20d6ff929caf74006f2f79ff7a70",
+      "backbone.layers.25.mixer.A_log": "634260bcad92801b7d10fcc8fa0fd32d7ba6303155adf2521328e6f665cc2b51",
+      "backbone.layers.25.mixer.D": "920a89b75261ef527ce072f36e935475f37a3ead7cac42c33e5a38dcf5318119",
+      "backbone.layers.25.mixer.in_proj.weight": "cdc939f85c3cd80429cba51144b80ccc97bf7c1fabf66c367bcd9f2fa687f967",
+      "backbone.layers.25.mixer.conv1d.weight": "c417ed3d8092ca914285332d84b0c204ada28b804677dda6463472e6c59a8ab1",
+      "backbone.layers.25.mixer.conv1d.bias": "ba65e8274dd4aaf833500e40f74e273ecf86d2edb73bc7376e0311b3bf7d73fc",
+      "backbone.layers.25.mixer.out_proj.weight": "e03882f403ff41afd2c5adc2d158c910d238f0acebd314df580cfbe9d40c513f",
+      "backbone.layers.26.mixer.dt_bias": "50f2caf9766bd297c1f9f16b96b3990a628752bc545e16dd1c84042633921bfe",
+      "backbone.layers.26.mixer.A_log": "09c4b20ab9cb3e3d9e2c7fd24fd8cb66352eb085bc1a83c89affc955b59c54f3",
+      "backbone.layers.26.mixer.D": "220c27d710e3cb3e3621d6511cf85a26e1623fe3e178189570c6c6c37144652b",
+      "backbone.layers.26.mixer.in_proj.weight": "a65257875471d10e04283331b2a916e50c9cc93a58d8ede1f38ee79b9e47f764",
+      "backbone.layers.26.mixer.conv1d.weight": "ca1ed45a5ddbaa3625d5ac91eba345c4af8feae39a92481574eca76d69a15990",
+      "backbone.layers.26.mixer.conv1d.bias": "1f0eeb3761cf264e20b57e2823a807a337ed335783767d81b7d43e305cac3ebd",
+      "backbone.layers.26.mixer.out_proj.weight": "60581d05a9f748a2a5dd8ee5b06ab93d7cce858de5811591078bb42db477eb9c",
+      "backbone.layers.27.mixer.dt_bias": "fea735358e84b4fa3d1724dd2a6e03006ac8a27e484d1804b24a6aef42ffab09",
+      "backbone.layers.27.mixer.A_log": "a3a4ea97dd46282a53ce070e5db10954d794a466331889afaf52c411d3a06942",
+      "backbone.layers.27.mixer.D": "505141a60590d7933d9ab19de1c35a6ac0e9c953f5126a9b4e2109e0dd510c94",
+      "backbone.layers.27.mixer.in_proj.weight": "15034dd171ecdedfe4ada0e2682faabbcebbce29ffdf43581a6e25acb73927c2",
+      "backbone.layers.27.mixer.conv1d.weight": "fb9fccc4a87f7096335d33581c48715b9274c6ea6087d6843104253e4fd32eef",
+      "backbone.layers.27.mixer.conv1d.bias": "c5ab9a61189144f5fa46cb277a73157ff2c46c6799bab8906da7e4a6e0f1df6f",
+      "backbone.layers.27.mixer.out_proj.weight": "336148c867bfbb10cbe43600c38fa0f7a5cb58b0084c3819aa829fe493bbaf15",
+      "backbone.layers.28.mixer.dt_bias": "58ca53e6860d866c746ce73692e7ba63c1cb4a784422fa8e177644a901c7f77e",
+      "backbone.layers.28.mixer.A_log": "a75d221bb3297d1041bb5589d1106b4bbdfec488e34255de0e1cd03f20290bc7",
+      "backbone.layers.28.mixer.D": "f080d472359a57018234ee32dc9e99d9f4181fa59a88d1b7e22a3ed313593dac",
+      "backbone.layers.28.mixer.in_proj.weight": "b0bbe0bc2c2b38113593dea7858a47cea9598037c596cf43df3604dbec67d93b",
+      "backbone.layers.28.mixer.conv1d.weight": "f0c9a06697227bb14f3915a6350dd99914317e1a61ba19644c1b678da57f0296",
+      "backbone.layers.28.mixer.conv1d.bias": "72d1f45edd6593d5f99049026ecf2741ba6df2efe71e078e10a93d4668a84e81",
+      "backbone.layers.28.mixer.out_proj.weight": "18b4e6f28f1acf4d86e62d7dab7dba083f9d84dee831adf28afc098820e75330",
+      "backbone.layers.29.mixer.dt_bias": "af38750da64c057b7a71009edd4eb40a3af42162b6c7efac9eeaad380d430357",
+      "backbone.layers.29.mixer.A_log": "9c6b2a26a52931a7226d3e1d94ae1d7d6941f25f5d20cac02978f7d7903a4b32",
+      "backbone.layers.29.mixer.D": "34ec92f2f0417360ad2bcec676346ef5c903905e71dc91f21d5f7dd3a412217b",
+      "backbone.layers.29.mixer.in_proj.weight": "42cdbaaa96bda366ea601db324a5c718361114f7b4cf4c51f812287f66791578",
+      "backbone.layers.29.mixer.conv1d.weight": "1b49521951ccecdb84c437b260b352f4d9002bf9f83b33eae8071243814c9820",
+      "backbone.layers.29.mixer.conv1d.bias": "b1a093af7c4f5b43e3b4168ab301e8fd4f8eb4945b1fd18be55d320253c57958",
+      "backbone.layers.29.mixer.out_proj.weight": "54c9724db56c376c94a4805f777f923e6c5647816fe36421ce7f0acc84327c25",
+      "backbone.layers.30.mixer.dt_bias": "60af789d442f0a8809967c8dc2f804aabdef826126615deda6e174c9e4d4ddb6",
+      "backbone.layers.30.mixer.A_log": "be73553b772adc0c015324fc0bfc2ce358ca250c18cdaa885e351905ace5936c",
+      "backbone.layers.30.mixer.D": "2cc12741fa7e45dc342c0fe275669dd06525ba8f38b4b9c9fc88569bf8dc51f8",
+      "backbone.layers.30.mixer.in_proj.weight": "a186f70805a768f942ed8e0753040d4e43ee8f813940be44f721941cd560d1c3",
+      "backbone.layers.30.mixer.conv1d.weight": "afa0c6eaee3d7b8631e6b3b0da76a4a4735f1077409c0da0bb95a003717f7761",
+      "backbone.layers.30.mixer.conv1d.bias": "3f0d8d9f7dadf6957251a1032c26a3124e84a9994d2303581a270f7009eb51ac",
+      "backbone.layers.30.mixer.out_proj.weight": "d4d0d6f34730dcf9aa17c13a6878b34059ee95840e6c279c0080e92ff77cc689",
+      "backbone.layers.31.mixer.dt_bias": "7d5c2871ec08174f6b13748229c1da78b992e7b8cacf72b0eebf0e0f6127e3be",
+      "backbone.layers.31.mixer.A_log": "9b00d81564617e621f95aa7f3d67a1cd534632d66fe99da77f529b00635292cc",
+      "backbone.layers.31.mixer.D": "d377cc4a701f89da641a04033892ced50d7ec6f2edb2f341ade6a926e704daa1",
+      "backbone.layers.31.mixer.in_proj.weight": "f9ab45fb63088bf130522ed1332bb64144aad2f17e8e7580ed43fc2ae0a64788",
+      "backbone.layers.31.mixer.conv1d.weight": "72aced7ecb6f3308ae1d4d2bc15ae25b38b5d01dbfcea8119d0f275f27f89c0c",
+      "backbone.layers.31.mixer.conv1d.bias": "7528dc3029445c57ba5d667b3e777b0546256f6904268b0e5189cc8ab0a630e8",
+      "backbone.layers.31.mixer.out_proj.weight": "336d9edd16bd4b0053a3755ca50cf4b22a113b62d3bb9512add2beebf37f2c2b",
+      "backbone.layers.32.mixer.dt_bias": "1291bf7326684dfeef78b2fe3a1c2320f2b22fe6592cff6dbe716d688811fe8b",
+      "backbone.layers.32.mixer.A_log": "d3ee4375ad337d0cc017c59e93c1a275a5649770276cefcf9058a43697359af9",
+      "backbone.layers.32.mixer.D": "9b91843c8d97e58473eb99bc1fd10540a3ba3440d4d79a82577b46579e6c6c04",
+      "backbone.layers.32.mixer.in_proj.weight": "7fa1f64d2c7a6cd493aed52ca46c8515d3f0518b04b7020642f6c5e1b58e9df5",
+      "backbone.layers.32.mixer.conv1d.weight": "9677ef22cc6d7c9ad6379350d4e6d4f37728b0336b1dc3ecf9c7c6edb7b0a22c",
+      "backbone.layers.32.mixer.conv1d.bias": "db603f363889d727bc5b14cd0d9a132f63c547f33b9e2ca874a186f1cd519e50",
+      "backbone.layers.32.mixer.out_proj.weight": "d64d7115a2f84655cb2fe393569f51d88498f05a4838d91f93faafeb4040510a",
+      "backbone.layers.33.mixer.dt_bias": "671034faf837a3a064b45420ab7b2195bc42fbc3c3ca1f710af4fc531e3ecb1f",
+      "backbone.layers.33.mixer.A_log": "e3ec48e2b880768adc1527050e6bc556ab22fdfec36c494f855a4d6b100ee5ea",
+      "backbone.layers.33.mixer.D": "586b436e12f5fb752878435d9f470fd002d9a0e2fb3d65409402b4eed401b5d5",
+      "backbone.layers.33.mixer.in_proj.weight": "7c77c55eb8925d4c305a10c69ca81a96e75bbb6adcdb2b27de2b3915d6d10eb9",
+      "backbone.layers.33.mixer.conv1d.weight": "87c254c6107ab19ae344bc8a5ffcc457dd7032986ae4dde7718629081d6da398",
+      "backbone.layers.33.mixer.conv1d.bias": "38a580623b2f6f19eed16867388bc37aadfc02387aec79aeb9c71505f9088e51",
+      "backbone.layers.33.mixer.out_proj.weight": "ae6dfaae914f40abd1223f245f34492ebedde73c395104f3043b903ef537e164",
+      "backbone.layers.34.mixer.dt_bias": "35cd68aeead431973ef70bdbf0e1124941455a7de3564290fc1079aaa51210b9",
+      "backbone.layers.34.mixer.A_log": "2ba267a4fc86aefb6c5f6353d571eaee07489767f7391d41b61a6550786c835e",
+      "backbone.layers.34.mixer.D": "0d7f5f91c5d2e7b54508698836425801c8c120236cc34499e437f88817d80d5c",
+      "backbone.layers.34.mixer.in_proj.weight": "ccaa93f53a94ee24eae51c9bdb223bfd94f4faa629aa6547ccc3e746d220d68e",
+      "backbone.layers.34.mixer.conv1d.weight": "76538a7b0362f623d67f30f6bd5b4da5911f9536ae4d605983e536d890b49175",
+      "backbone.layers.34.mixer.conv1d.bias": "05b25f96883dbc27fd1baab476435d88ef21f0466177a5971e9873bf1e2aac0c",
+      "backbone.layers.34.mixer.out_proj.weight": "0e9ebe3df3dbbd95d231f2d026b300e0bbb84b8469c381548fb880f07bff73ca",
+      "backbone.layers.35.mixer.dt_bias": "4e271173698295e02fe3f47e43faf1e05338db38ac697bc891f0e61eabf1f159",
+      "backbone.layers.35.mixer.A_log": "97e5d6bfebbba2843243da0471a042b4ef92b3c55beba5272f2982c1152483a5",
+      "backbone.layers.35.mixer.D": "0caeea446d35bfe9dbf5e9b26a84a5cf6c5f1ce1445ec58af1ba43e9ada65324",
+      "backbone.layers.35.mixer.in_proj.weight": "75f1e1d275700ede4ebde0544b3f75eba9101d808a2c4048a1fd4650b2e71761",
+      "backbone.layers.35.mixer.conv1d.weight": "2a55721dba0ea86203c2f4bbdcc2cc6823a0c625733620e0c0c60e7a12a09fe3",
+      "backbone.layers.35.mixer.conv1d.bias": "b277e9c1d7de7d7fc88447a26801203743700a6a4901310b298ed1817faf4ff2",
+      "backbone.layers.35.mixer.out_proj.weight": "d3bb3e20c0dcaa0cf6c7813b2d0ca80442441c5388e694d3ede147145ca9a4d9",
+      "backbone.layers.36.mixer.dt_bias": "39d4835ea0cdc827b0968deafc0c0d45f524819048cffa165179614d1b50b8e4",
+      "backbone.layers.36.mixer.A_log": "d05e16e2f76329bc1b64c70736b6cb0476d64c74933bb50798248b880683dc29",
+      "backbone.layers.36.mixer.D": "c6143b54d67d933de4d0afcaa98681230cc5132666655412d9359ff27e35ae64",
+      "backbone.layers.36.mixer.in_proj.weight": "530cd72090569e0e6ab6bc7505a617ffa387bccb93bb4326e0da8aa1eae3b709",
+      "backbone.layers.36.mixer.conv1d.weight": "0b7402d2a4922e5c9fbae8fce224580d40fbbc5927b0ac1f646a2e5e5f7b40b4",
+      "backbone.layers.36.mixer.conv1d.bias": "5a3bb5587f05a1904f12779f363090d45b21cd6ca94064d5688f46b9520a4316",
+      "backbone.layers.36.mixer.out_proj.weight": "34a681836911073f54b93bf21ed6bfbd1047213af1bc2142b29cae4e4d7deba3",
+      "backbone.layers.37.mixer.dt_bias": "7fa97f465f46d7d49c6e250dc670484f0540ffc579589d7a7c82835dba869191",
+      "backbone.layers.37.mixer.A_log": "ca5d2d0168cb1a01d76d27ca191a6adf183817c190970a1a33779da8848f5668",
+      "backbone.layers.37.mixer.D": "d0a32750ff9b5e827e137f239acdbd8d28ecde58dda42ab9555ba390962ff626",
+      "backbone.layers.37.mixer.in_proj.weight": "9a9893fb8e76e36ded556bbd3587f0acd74868b09aff9b38817f05eed507ea26",
+      "backbone.layers.37.mixer.conv1d.weight": "19345ca24b3930cf1001d8784b4ab119048d15d04b02ba9dcc645653a809ae0d",
+      "backbone.layers.37.mixer.conv1d.bias": "17d828fcec482e4c5887d8eb3fe1459333b45cdd85cc88ce52cc97606c33e71a",
+      "backbone.layers.37.mixer.out_proj.weight": "3f90bedb48e888a7ce273a65256dae7ced5ff3f8fcd55872972f3f5da2361b16",
+      "backbone.layers.38.mixer.dt_bias": "061ccf5c8f95a1663f665cad6f4d39abc5a10cc3aa5ee489da261fe361a9176d",
+      "backbone.layers.38.mixer.A_log": "5d5a09e494b52a60a0ba0337277b666eaa48e98ab976da5c5b94bfe2fe24f5ed",
+      "backbone.layers.38.mixer.D": "98ba09fe907a61a443e167e3353c7ca8ee40fc2d8e47a6d41500684870c41827",
+      "backbone.layers.38.mixer.in_proj.weight": "32ee35d349fb626a81883a8eacd96e49be34763b08eac6342e9afcb6b5c81758",
+      "backbone.layers.38.mixer.conv1d.weight": "57fa0b20a5450868cda63c18dabb3b657360cfd2d27633ac0da77e79b6e93a28",
+      "backbone.layers.38.mixer.conv1d.bias": "9caf82d89fd8f0920149a77cae16a7ba72dba299f6ff06423c0a5596dae8d5fc",
+      "backbone.layers.38.mixer.out_proj.weight": "72b2adfc8ba15e7d5df7e2f408813ba137cfe09bbd8d0830356212a914a1336d",
+      "backbone.layers.39.mixer.dt_bias": "9b380fb631b17078a624dc88c90de4d115963e9355a987fb69faa1637f72d1ec",
+      "backbone.layers.39.mixer.A_log": "18284f0941bccbdcc05602676b480fab3cd41e84b733ee3f563362c9cb76739e",
+      "backbone.layers.39.mixer.D": "84250a71646d0589a032f35c222f7b3fedaf1d472d97d3b9e2adbb11b53cd97d",
+      "backbone.layers.39.mixer.in_proj.weight": "c8dbab8b57bab97007d0ac25575e5cd0bcb958476392d8dd5bed71708b281009",
+      "backbone.layers.39.mixer.conv1d.weight": "51e38a6d49af9d572fa7f08d7b65df02def1c759f33de6cf51ddc592736fca12",
+      "backbone.layers.39.mixer.conv1d.bias": "8f498e795748a1e114e52715e9a63160f66c4eace76b9d1ff67b3da4a4a8968a",
+      "backbone.layers.39.mixer.out_proj.weight": "af670109703d667f5c370c32da6beb7dc107d03eac3b4cd1aa22a51d66c86f07",
+      "backbone.layers.40.mixer.dt_bias": "5ee07eefa9ba88c43d0c9b43280d5ec57fb2a16d8b9368f677d6fb3baf0cb60d",
+      "backbone.layers.40.mixer.A_log": "f57bf6e3709d4ec6c7fa4947380357faf5ea6d05d5914856979e564c6dea1948",
+      "backbone.layers.40.mixer.D": "affb722ec6de655ab2bbad726b2e0120e66b6531133b4ae01fb9f1edf90c0e1d",
+      "backbone.layers.40.mixer.in_proj.weight": "46db5e295ba25addbfa55bb4fb3364e53336da6e781a5a63ee798d3b881b32c2",
+      "backbone.layers.40.mixer.conv1d.weight": "ae927d8741236fca965fe2028dceedc1811c1ff166acf4d7a7ec29e26d2eb09a",
+      "backbone.layers.40.mixer.conv1d.bias": "9313d66bf10b2cb23cde8723c2665feeff7dfd53bae4aa2dc7fce805e2b09713",
+      "backbone.layers.40.mixer.out_proj.weight": "b56db12f91bb6f8baf57bd2c3a32e9b451a877a0fe24ee73ed931644d8d66867",
+      "backbone.layers.41.mixer.dt_bias": "47ee2a26e5060ee6a24d9880f5919c3837647d82a9a1cbb5def674e3691e642f",
+      "backbone.layers.41.mixer.A_log": "f6879fea619a2be2cfcae46cd05377528545eb6a62bf6fac70a1cf4f465cb74f",
+      "backbone.layers.41.mixer.D": "a0dd498f98283e33106675c0148d8c470de0ffb263f44c132cc3acd606930721",
+      "backbone.layers.41.mixer.in_proj.weight": "532bd12868a87a54f43fa0ddf20995458df232a571d3fd943124a070c1701e23",
+      "backbone.layers.41.mixer.conv1d.weight": "89152e5d2616cf6ddcacb51bd4b1f1b054f26fc08cd6624ef5b431bde424a360",
+      "backbone.layers.41.mixer.conv1d.bias": "a8993f0a36875a223544a35b9553bb64b97309df6e762c44517bfeb5386ee841",
+      "backbone.layers.41.mixer.out_proj.weight": "2c567ef1177eba0cd1c5e72d8a26ab34e4bc784a2925cdd836c81f016a1ee8ac",
+      "backbone.layers.42.mixer.dt_bias": "440ded94260ab51228f5094c6985f2cde93cc90e0cfa4e83bec65064482f7649",
+      "backbone.layers.42.mixer.A_log": "249fc5a91c1f15e8305b72eb61af7f4ccf5be63aa457ebdfeb38f60a8e4a3b6f",
+      "backbone.layers.42.mixer.D": "f60eddf54194b085a47c0e48782358d33d32c9858645b52bc8d010d86fd68ba9",
+      "backbone.layers.42.mixer.in_proj.weight": "0bd87e4be25414499e7bf18f85dc3acd70223202c4d142a1a963991a9dc6e1d5",
+      "backbone.layers.42.mixer.conv1d.weight": "da13483bc073d89009c8e9d05cf70ca89f031e162cc5404a0ac28c1d5b540bb6",
+      "backbone.layers.42.mixer.conv1d.bias": "dbeac231e6485daff825a874cd55f8da8384ebecd337348a6ed47424ae9e41c9",
+      "backbone.layers.42.mixer.out_proj.weight": "26f523a31fc5ce2ad1d36be8145158409c779ba3fde6a2fa50df3033ad604ce8",
+      "backbone.layers.43.mixer.dt_bias": "2c03c0820d17bff6a4406000d60b1649789e3c0a6967c257e38f402343db9b74",
+      "backbone.layers.43.mixer.A_log": "49bbfab5bef14c2bf238df459af7681750d714aac8cfd8ee9146dbe68a729f93",
+      "backbone.layers.43.mixer.D": "5c3ff72ef67a19d151b873fdb28f0357913e45538d309d35fad864e6d50b3b39",
+      "backbone.layers.43.mixer.in_proj.weight": "2dedd35b6e1a0f22dc73303626776a9b7553c749f1fd32a1c45d4ce7c11776a2",
+      "backbone.layers.43.mixer.conv1d.weight": "5e0bfabdfb68b8820d4083d0425c83fc2779b31b0aaf6d649114918bc04856c1",
+      "backbone.layers.43.mixer.conv1d.bias": "7de4a7e545e348907d4f154ed408d91ab8f8420be4002e5fefe3c59cfce36303",
+      "backbone.layers.43.mixer.out_proj.weight": "0dda43ad4adf46f1b667b44258d414eeb0d94423102aa76550fb5f91e8ea0517",
+      "backbone.layers.44.mixer.dt_bias": "27ff0f9825db835728f903b85e28332ebb74fcdb63b029568360ec9d7cfeb35d",
+      "backbone.layers.44.mixer.A_log": "155c3d7eca7a9ddb33712b26487b95b04f523b219b231d41bc6e9f6d066987f9",
+      "backbone.layers.44.mixer.D": "c68b64b06ed794383384f9002c6ba0b58275105a20cd8cc226faffb885d9a535",
+      "backbone.layers.44.mixer.in_proj.weight": "cc0643c7250eec6479bd8d87bdd382772e5be0c884aeff69df11fd04d8e1529c",
+      "backbone.layers.44.mixer.conv1d.weight": "b12ad8a8bb084785018d153dd71a6172d78d422535f741ffd68d0c89ffc120cf",
+      "backbone.layers.44.mixer.conv1d.bias": "938a1bca6d7e41a5581f6ee2312775489a4e6243bdfc3e8fd09316daece438e6",
+      "backbone.layers.44.mixer.out_proj.weight": "8ae12ab47b36a27e099addd545f776b935990f129abd27e7ee5fec8c479cb275",
+      "backbone.layers.45.mixer.dt_bias": "73f042043e635f13a0d122a4961e62978223a846164ff40005d62a8c1bb8d45f",
+      "backbone.layers.45.mixer.A_log": "6b29bb3ec4d760b328693ec2075273e2f87fcb477198ea99d2355ba1fbe3f2fe",
+      "backbone.layers.45.mixer.D": "dd647c522d145274b89d9e82275a14a09b893c18494bdc6b28e4ffb67bb6c29d",
+      "backbone.layers.45.mixer.in_proj.weight": "3008a4e45156777e1aad947d15fb312ad9e3b32b40be8ed0832fc570c8f95395",
+      "backbone.layers.45.mixer.conv1d.weight": "5c544fdc99c8c4d3ced0a4bfad4a32b7ead3ebab0eb60254a6f8307bedf0625d",
+      "backbone.layers.45.mixer.conv1d.bias": "f2f43f61ebc03bc0c8a7d6ff1259451c62d27d9a807e1ba304aa191c141764e1",
+      "backbone.layers.45.mixer.out_proj.weight": "ab4fbbfcfdd5061d64f23a0ea0ea45fcdcb977650188ef4e64a40baea53c1260",
+      "backbone.layers.46.mixer.dt_bias": "f8caf32dddf92186fac1ba5b1ff4f181ccc0040ab1b38c461489cc356c50d33a",
+      "backbone.layers.46.mixer.A_log": "8a989920334bc92393686bbf2b2efa3611732fe53f84956d4de40fb861dc64e3",
+      "backbone.layers.46.mixer.D": "4834b609243d4475ae5e30871ee255334dada8949d02dac96a483f26cb192fa7",
+      "backbone.layers.46.mixer.in_proj.weight": "111ccb5a0896e2c53527a8802848438f487adbfdea0936d200ac01e5a4c6b66a",
+      "backbone.layers.46.mixer.conv1d.weight": "579dff7d8c5eac6701e7ceed5299beb4c6f1529227374f63825128f5aedf1a6b",
+      "backbone.layers.46.mixer.conv1d.bias": "a2ab3e03f854fc1a0a7c71e50b9801925508836cb7a02e076805fcdc774b2a88",
+      "backbone.layers.46.mixer.out_proj.weight": "b1bb6143977982d126d4366141f2f32162ad5f386d374a2f8ee1702a5410ca9d",
+      "backbone.layers.47.mixer.dt_bias": "bd0142a676b162c063ef0d3aac69e28a84b66a05477fba6035639dcf9b850b65",
+      "backbone.layers.47.mixer.A_log": "4f7d891c22784aad2cdaee0c5ce5fd1e33d6e71c3fbb845698ef84a717090b46",
+      "backbone.layers.47.mixer.D": "66718e3f205fd5d58d8e0a80d8c2d869a1e8af2172430de746bc20ec433200d2",
+      "backbone.layers.47.mixer.in_proj.weight": "a24961e5a3a1ae38504c4faee40a8913102cb3c33ce0aed299c722e94b7c24c3",
+      "backbone.layers.47.mixer.conv1d.weight": "420cb29e3b2893903f8c64866acfeb93954a739cc2b24b4281c1ad1924847c2d",
+      "backbone.layers.47.mixer.conv1d.bias": "8d5882044063d76d03d24bb0477e712f16213820012221f51672188558175259",
+      "backbone.layers.47.mixer.out_proj.weight": "df622ca02087e0046bd89ea479088204bfc50239c06c1709b47b054b7f25353b",
+      "backbone.layers.48.mixer.dt_bias": "23a9a99e94e54323779b8093cc5fcf089d2574c528bd896078d50ef52ff587db",
+      "backbone.layers.48.mixer.A_log": "a78fcbaf3ffdb027087186e2582b931121c2eab3ae481b06729f4bba2e7d973b",
+      "backbone.layers.48.mixer.D": "6cb037bd585ae7cf7f27b7d8e6e6364b148438c39a13669d6c8e666569675975",
+      "backbone.layers.48.mixer.in_proj.weight": "bfc4c6cc746d695e4c7011dfaf2ce474e388d3b215d9739b20b83710896dbfd3",
+      "backbone.layers.48.mixer.conv1d.weight": "59d397baded0c2b3d29c1544f9981f8e2144eeaed1b39640333e97b62271c1f8",
+      "backbone.layers.48.mixer.conv1d.bias": "068d0a9c792c2082e49c3e9c991fbab2cdc8dbf4647e5d56d480d21496d32b20",
+      "backbone.layers.48.mixer.out_proj.weight": "7ddc984510e1100dab88777275dd9661002a91f790b18344d7fae75c8dad3822",
+      "backbone.layers.49.mixer.dt_bias": "0fcd19bb99e92f5cff77e6078429ce3a6d8857344b2a843c8d6a7e1f696925e5",
+      "backbone.layers.49.mixer.A_log": "4d44157348c9ddd310695dc14c864bbc15868da6dd3dd9b221c08ef6acac025a",
+      "backbone.layers.49.mixer.D": "e633566bf14b4724b48810efe18360b9ac69e95b4491dded550cff85ce11857a",
+      "backbone.layers.49.mixer.in_proj.weight": "5be6f52a88259dcbbed0ef4f938207954c53b067252119d4f61d12430a1aae75",
+      "backbone.layers.49.mixer.conv1d.weight": "833fd245bb69b6bf561ce8e8a3f8271bc90f7536c74e7815b400d89bdcb1334d",
+      "backbone.layers.49.mixer.conv1d.bias": "23c9fba917b74b1a2ae7366f54565a3d96d2d0fda4068dd1f24cb74d36fd0a1b",
+      "backbone.layers.49.mixer.out_proj.weight": "a5fd9de26693011b4949d8ccd824ee893437197b6ad5b32c4c9f6083dddc6ec9",
+      "backbone.layers.50.mixer.dt_bias": "aadca8ec16a867cc51108504122036d3180b4a49cefeefdfc214a87ee6a04922",
+      "backbone.layers.50.mixer.A_log": "5c1fd8241fbcc1c27e66f4e9bf1a790783ec51e387b88605354f1d17f5310253",
+      "backbone.layers.50.mixer.D": "ae310a7f1e2aa98cd9fd8a9270af18a84c07b799cef3429a134e874b02e053b5",
+      "backbone.layers.50.mixer.in_proj.weight": "899db347bcd143d4cf7213d1ee5d8b355f91df585f3e6683b3330c5be2a9e80a",
+      "backbone.layers.50.mixer.conv1d.weight": "f84769bba2fee2a7098187bc41a2831446c872100f661a8d0d939d43ca4ca77b",
+      "backbone.layers.50.mixer.conv1d.bias": "0b205aeb8ee73e55fa2e78fbda95a0cf92a43f9a0b80444f5778dc083d1bb4d0",
+      "backbone.layers.50.mixer.out_proj.weight": "0f92d49946bedeb5a8050d2cb4100f584532cd1ebd8e5b2a9b9c9e16d3a20c6f",
+      "backbone.layers.51.mixer.dt_bias": "809ad982abbd2d789f5987a7f2cc7f8b3117e668c96af026c493e34743b3cbbd",
+      "backbone.layers.51.mixer.A_log": "49e32c8d2c13558901db8e4b04bdc2742b08e7202e72b286c722b18d47c9aa97",
+      "backbone.layers.51.mixer.D": "def5cfc13027bf23767a3350da1b773efb9fcb03142d328c0d6e7ea8e7f749c4",
+      "backbone.layers.51.mixer.in_proj.weight": "df55b0c77ea7941737160d63f36a7ae4a104f18cbc30ea7073bc767fbf6cb173",
+      "backbone.layers.51.mixer.conv1d.weight": "b003794db7bf6307c667045ffa915c53b7080c82cabe3c55d4b20339b33b5a8a",
+      "backbone.layers.51.mixer.conv1d.bias": "aee66d98ac1223d5b694da5a799baa9e0da8664a588288f3364f3bc37d1682ef",
+      "backbone.layers.51.mixer.out_proj.weight": "925ee9d7e28e813a6d3108675f5d3bfef2820a3df78a9b3df3de7c57db62987e",
+      "backbone.layers.52.mixer.dt_bias": "f74bef10810b0cb3a93c1f7c014da3f7443cec9852ac0edc274c8f481d8b0a49",
+      "backbone.layers.52.mixer.A_log": "fb590d261a373571292c894afcd7e71cab9ae39780ebca350c35581f0df6416d",
+      "backbone.layers.52.mixer.D": "40eae124031d35334db04160927348808b35efaccf64cc40116e67c4febe3909",
+      "backbone.layers.52.mixer.in_proj.weight": "8861a9ef0aa90d987d1ff75d403de0d97dd50de5a4bb1d5b7ceab20538f43548",
+      "backbone.layers.52.mixer.conv1d.weight": "9535472952b188f805d443ec6d38680a2a15db861a907fbed6fd3521a9560acf",
+      "backbone.layers.52.mixer.conv1d.bias": "e183dc4d8a06c4110da78d6f6db7f3d38f0c75e24062eda4d6f550dbbbbfb056",
+      "backbone.layers.52.mixer.out_proj.weight": "9180c91c5e947e9cb08dcd2d12f42a567ec23866cf6c6a41e0dff31628280a23",
+      "backbone.layers.53.mixer.dt_bias": "54c22bf7fb4a2652393889934c697e92dd607d863ca4342022a665dfdbfeca45",
+      "backbone.layers.53.mixer.A_log": "ec349f324dca3159cca46a3711c22df5e39bb4ce531f2d8c08ea20660a9cb783",
+      "backbone.layers.53.mixer.D": "02e9bc75761e09e3555dea47f2d592b82f0be4032b023ef2a966fa100e0c4195",
+      "backbone.layers.53.mixer.in_proj.weight": "ada3a82172f2eb71de908883bb1ee716deaa7629b2d602ea65d93537af6ff225",
+      "backbone.layers.53.mixer.conv1d.weight": "cdee9ce12fdceab78e4c346057cb4cf946e646b0c46134b0605739f6385a7a77",
+      "backbone.layers.53.mixer.conv1d.bias": "61645607fed62f1d7afe76581081d9b3711b553fbd2d6edabec8737e962885d4",
+      "backbone.layers.53.mixer.out_proj.weight": "26134cf9aea1676c534e684924e3373d2f56f0e53a46b118c5112d87b3156590",
+      "backbone.layers.54.mixer.dt_bias": "17947be77cb8cc01a782b111ac37b7c9f36feac7394e952dd4b65b241b10fddd",
+      "backbone.layers.54.mixer.A_log": "23998d19aa4a789eed263f7c89f64ce81c5e19581f185441dd72f075cc440da6",
+      "backbone.layers.54.mixer.D": "8e30d52e7ddf898f766aa1d730fbe8153198193cb6287955210b5f63d1e2c75e",
+      "backbone.layers.54.mixer.in_proj.weight": "f9c81621d1dcb3869d1bbca699e07af435aef5910e432db2d9c7fc469c63f403",
+      "backbone.layers.54.mixer.conv1d.weight": "ddb2b508247f0d0af9bc93fcc95893d538ccc9817c6aaf75566d4e98c95aa1c0",
+      "backbone.layers.54.mixer.conv1d.bias": "86f246f7939f535033a6ae09b8978c199f15b0191b86c2a1cd2713e430edd4f3",
+      "backbone.layers.54.mixer.out_proj.weight": "15d890ee6c84f7e44794b9ac2421788b4d578c0a3effc860bfb742e5ec205ba9",
+      "backbone.layers.55.mixer.dt_bias": "c62e1181d17ae9066f1580fc55bb69327cc3fd10a2dc2cdea946874edaaf83e3",
+      "backbone.layers.55.mixer.A_log": "6e0edce166fba392ad2e1052dc11cf69f4f99de6f0f9d15f1987c7e91bc7de8c",
+      "backbone.layers.55.mixer.D": "3213cef8067aff9ed891bae84b92ae1f2732b3bfc43a6c54725a9fae2e436c18",
+      "backbone.layers.55.mixer.in_proj.weight": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "backbone.layers.55.mixer.conv1d.weight": "bcfe867de02764bc60add117d9e0835da99c653430372810c179dc7a2c71a360",
+      "backbone.layers.55.mixer.conv1d.bias": "8ecf0804842bb5da41cca59add2c0d47cfda3a2b12bbd38e972c6bd1f2290b10",
+      "backbone.layers.55.mixer.out_proj.weight": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "lm_head.weight": "169d2f19d0cdff2b72e65b7a9cecf87f5799e7922e29eba136886281f79ac4ae"
+    },
+    "bitwise_unchanged": true
+  },
+  "elapsed_seconds": 187.97972512245178,
+  "gpu_memory": {
+    "peak_allocated_bytes": 35774360064,
+    "peak_reserved_bytes": 35926310912,
+    "current_allocated_bytes": 33357065728,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  }
+}

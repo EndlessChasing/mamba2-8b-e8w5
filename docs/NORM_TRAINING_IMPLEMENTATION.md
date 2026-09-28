@@ -50,9 +50,14 @@ python scripts/train_norm_compensation.py --mode smoke \
   --work-dir artifacts/norm_compensation_v1_smoke_work \
   --report reports/norm_compensation_v1_smoke.json
 python scripts/train_norm_compensation.py --mode train \
-  --work-dir artifacts/norm_compensation_v1_work \
+  --work-dir artifacts/norm_compensation_v1_train_work \
   --report reports/norm_compensation_v1_train.json \
   --smoke-report reports/norm_compensation_v1_smoke.json
 ```
 
 Publication, pushes and uploads remain on hold.
+
+The fixed run and independent evaluation are now complete. See
+[results](NORM_COMPENSATION_RESULTS.md): PPL improved, recall lost one case, and
+the combined advancement gate failed. Existing output paths are preserved;
+choose fresh paths for a reproduction.

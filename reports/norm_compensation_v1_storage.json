@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "scope": "Actual file bytes in named directories; excludes original source, calibration, software, reports outside these directories, prior experiments and prepared releases",
+  "directories": {
+    "parent": {
+      "path": "artifacts/e8w5_v1",
+      "files": 118,
+      "bytes": 2886686334
+    },
+    "overlay": {
+      "path": "artifacts/norm_compensation_v1",
+      "files": 2,
+      "bytes": 7346899
+    },
+    "training_work": {
+      "path": "artifacts/norm_compensation_v1_train_work",
+      "files": 131,
+      "bytes": 1088773116
+    },
+    "smoke_work": {
+      "path": "artifacts/norm_compensation_v1_smoke_work",
+      "files": 2,
+      "bytes": 7284010
+    }
+  },
+  "physical_parent_plus_overlay_bytes": 2894033233,
+  "training_and_smoke_work_bytes": 1096057126
+}
