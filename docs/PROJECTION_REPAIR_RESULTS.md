@@ -52,7 +52,7 @@ Evidence:
 - Receipt: `reports/small_projection_interaction_v1.json`, SHA256
   `540fb0048fce5d8ea3683f4b89aefc4c6ecf21ae4f3d236d6fa646ebf725dc03`.
 
-## Candidate-input cross-moment pilot: running
+## Candidate-input cross-moment pilot: completed, advancement failed
 
 The predeclared pilot compares current E8, original weights requantized under
 the candidate's input covariance, and a teacher-output cross-moment target
@@ -70,6 +70,57 @@ math, rank-deficient inputs, actual teacher FP16 rounding, independent moment
 collection and native replacement scoring. The runtime also performs a discarded
 32-token GPU pairing check before collecting the full pilot statistics.
 
+The32-token GPU pairing check passed. Full statistics cover65,536 fit and32,768
+heldout projection positions. All12 replacement files decode exactly, with each
+six-file arm occupying82,270,119 bytes, equal to its parent files. All507 original
+parameter content hashes and references were restored. The run exited normally
+in301.735s; peak allocated42,345,822,720 bytes.
+
+Native FP16 heldout projection error reductions, cross-moment versus current:
+
+|Projection|Relative MSE reduction|
+|---|---:|
+|layer0.in_proj|24.5859%|
+|layer0.out_proj|−4.3806%|
+|layer18.in_proj|19.3627%|
+|layer18.out_proj|14.9362%|
+|layer55.in_proj|15.5052%|
+|layer55.out_proj|44.9978%|
+
+Median local error reduction is17.4340% versus current E8 and17.2237% versus
+H-refresh. Five of six matrices improve, but layer0.out_proj violates the
+predeclared maximum0.1% regression condition.
+
+More importantly, the jointly installed six matrices worsen heldout TRAIN PPL:
+
+|Joint six-matrix arm|PPL on32,752 heldout TRAIN targets|Change vs current|
+|---|---:|---:|
+|Current E8|8.423374233|reference|
+|H-refresh control|8.424745839|+0.0163%|
+|Cross-moment repair|9.147628791|+8.5982%|
+
+The advancement gate fails on both the single-matrix regression and joint PPL.
+No112-matrix expansion or full-validation scoring is performed for this route.
+These TRAIN PPL values use different inputs from the full-validation table above.
+
+This result demonstrates that lowering the selected teacher-internal projection
+MSE on a frozen candidate prefix does not ensure lower language loss when several
+matrices are installed together. It does not isolate the exact cause of that
+mismatch: local target choice, already-adapted small tensors, quantization of the
+new target and stale later-layer inputs can all contribute. The H-refresh control
+also changes fitting intervals relative to the original package; comparison with
+current E8 alone cannot isolate a pure prefix-covariance effect. Cross-moment and
+H-refresh do share the same new inputs/statistics.
+
+The next hypothesis is direct end-to-end CE/KL training of a small per-projection
+prototype correction table with fixed E8 indices. It changes the objective to
+language loss and requires a separately declared training/export protocol.
+No learned-codebook PPL result is available yet; current best full-validation
+quality remains8.359867548 with the all-small overlay.
+
 Protocol: `docs/PROJECTION_CROSSMOMENT_PILOT_PROTOCOL.md`, SHA256
 `c330e52da1295eb9239dc30104c49ddefb43d8f76db87e368d5548a65d2aa511`.
-No pilot quality result or larger expansion is claimed yet.
+Receipt: `reports/projection_crossmoment_pilot_v1.json`; all native per-coordinate
+errors, z/x/B/C/dt partitions, fit/heldout proxy metrics, solves and PPL rows are
+retained for audit. SHA256:
+`034a161df40fa4dac5be99b25545f9087da6695accc414a852fafe0e47228f87`.
