@@ -164,3 +164,11 @@ completed prototype recipe or promote its failed candidate.
 - [x] Complete three fixed updates on64 TRAIN windows/131,008 targets per pass, then the fourth final TRAIN evaluation. Export/reload beta0.9864529967308044 (T1.013733044872986), four payload bytes plus96,550-byte manifest; fit PPL8.185296703→8.182022042 improves0.0400066%.
 - [x] Score the seven separate, previously unused TRAIN windows/14,329 targets: source7.008538754, base8.219889723, scaled8.215166553. Five windows improve, two worsen and argmax changes0. The0.0574603% reduction fails the1% screen. See [final results](docs/SCALAR_TEMPERATURE_RESULTS.md).
 - [x] Apply the declared stop: full validation not performed, no fitting expansion/intermediate selection/promotion. Complete-validation/source+5% results remain unmeasured. Retain the accepted model/distribution; no new MK or publication. The small benefit does not prove all calibration methods ineffective.
+
+## W4 vocabulary penalty diagnostic
+
+- [x] Declare the [fixed four-arm protocol](docs/VOCAB_W4_DIAGNOSTIC_PROTOCOL.md): W5/W5, W4/W5, W5/W4 and W4/W4 embedding/head combinations on the same already-observed64 reserved TRAIN windows/131,008 targets per arm. Implementation is pending; there is no quality result yet.
+- [ ] Write actual group128 W4 vocabulary files from the original BF16 checkpoint through the existing writer's FP32 row conversion; verify actual serialized readback. Do not requantize decoded W5 or pre-cast source values to FP16.
+- [ ] Verify all507 expected tensor hashes for every arm, keeping all112 E8 projections and393 small tensors fixed. Complete all four arms and the repeated W5/W5 baseline control unless integrity/numerical checks fail.
+- [ ] Measure paired PPL/NLL, per-window changes and the vocabulary interaction. Count actual files/scales/headers; expected raw savings for both matrices are262,144,000 bytes, not a measured entropy-coded package size.
+- [ ] Record the diagnostic and its limits without promotion or a combined projection-reallocation claim. The observed TRAIN set is not fresh generalization evidence; no validation/test/MK or publication is authorized by this diagnostic.
