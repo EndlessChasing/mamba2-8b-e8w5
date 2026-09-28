@@ -1,9 +1,12 @@
 # Teacher-KL experiment readiness
 
-**Smoke completed:** the [discarded training-only GPU smoke](TEACHER_KL_SMOKE_RESULTS.md)
-passed and its actual process exited0. All trial state was discarded. This
-readiness snapshot establishes no completed formal448-update export or quality
-result. Publication remains held; MK is deferred.
+**Final outcome:** smoke,448-update training and independent reserved evaluation
+completed with exit code0. The [combined reserved gate failed](TEACHER_KL_COMPENSATION_RESULTS.md):
+PPL worsened2.0769%, although teacher KL improved21.6746%. Full validation was
+skipped; its source+5% target is unmeasured for this candidate. The fixed recipe
+is stopped with no extra updates or promotion. Accepted all-small remains
+unchanged, publication held and MK deferred. The readiness record below
+preserves the source/data identities used for the completed experiment.
 
 The [frozen protocol](TEACHER_KL_COMPENSATION_PROTOCOL.md) resets to accepted
 all-small with fresh rank-4 factors. Pure teacher→student KL is the optimization
