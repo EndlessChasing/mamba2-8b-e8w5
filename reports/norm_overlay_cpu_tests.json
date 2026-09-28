@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "test_command": "/home/horde/.venvs/lodram/bin/python -m unittest tests.test_norm_overlay -v",
+  "host": "horde-gpu",
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "reported_test_seconds": 0.123,
+  "gpu_used": false,
+  "source_sha256": {
+    "mamba_e8w5/norm_overlay.py": "2e911764fe065c9dfe7971dff02f17c92911530c02ca5b16c78d2f42af450385",
+    "scripts/evaluate_norm_compensation.py": "ca24b909f33fe118edfb7f48c2f6e9287a3043274604eaac87d9fbd328db0a01",
+    "tests/test_norm_overlay.py": "34d6ede02056f8d98debc3a2a6ca18975c5e28c6651cb2fd02834f8cec1e78e8"
+  },
+  "scope": "CPU boundary and development-gate tests; not training, model-quality evaluation, or a completed8B norm overlay."
+}
