@@ -1,0 +1,32 @@
+{
+  "actual_file_bytes": 2660171471,
+  "complete": true,
+  "container": "mamba2-8b-e8w5.huff",
+  "entropy": {
+    "e8": {
+      "huffman_average_bits": 15.094016461688529,
+      "shannon_bits": 15.06634678182679,
+      "symbols": 767033344
+    },
+    "embedding": {
+      "huffman_average_bits": 4.4453391489982605,
+      "shannon_bits": 4.410649212134179,
+      "symbols": 2097152000
+    }
+  },
+  "files_verified": 118,
+  "independent_chunks_verified": 342,
+  "note": "Exact to quantized raw files; no claim of lossless recovery of source floating-point model.",
+  "original_package_bytes": 2886729362,
+  "pinned_candidate_identity": {
+    "complete": true,
+    "container_sha256": "46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd",
+    "members_matched_to_pinned_manifest": 118,
+    "previous_full_readback_files": 118,
+    "raw_file_ledger_revalidated": true,
+    "raw_manifest_sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8",
+    "scope": "Identity audit against pinned manifest and completed full readback; no new quality score."
+  },
+  "sha256": "46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd",
+  "trusted_source_bound": true
+}

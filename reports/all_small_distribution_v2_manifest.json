@@ -1,0 +1,185 @@
+{
+  "assets": [
+    {
+      "bytes": 2959,
+      "path": "MODEL_CARD.md",
+      "role": "model-card",
+      "sha256": "6c56587c8635d930bf83de8394ce10fb140dcfe9eb04b5e87d76244e187aa76a"
+    },
+    {
+      "bytes": 462,
+      "path": "config.json",
+      "role": "configuration",
+      "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c"
+    },
+    {
+      "bytes": 1198,
+      "path": "container_verification.json",
+      "role": "verification",
+      "sha256": "58a65639c3dc0977ad56da4c44d80f0ca127dba21237f83f14414995244eadec"
+    },
+    {
+      "bytes": 11358,
+      "path": "licenses/APACHE-2.0.txt",
+      "role": "license",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 11348,
+      "path": "licenses/MAMBA-APACHE-2.0.txt",
+      "role": "license",
+      "sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5"
+    },
+    {
+      "bytes": 2162,
+      "path": "licenses/NVIDIA_MAMBA2_MODEL_CARD.md",
+      "role": "license",
+      "sha256": "2e83defa8c178beb564f510fff383e6e7876d0e3eee044266318c59493e5ecc3"
+    },
+    {
+      "bytes": 35149,
+      "path": "licenses/PROJECT-LICENSE",
+      "role": "license",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "bytes": 35149,
+      "path": "licenses/QUIP-SHARP-GPL-3.0.txt",
+      "role": "license",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "bytes": 4107,
+      "path": "licenses/THIRD_PARTY.md",
+      "role": "license",
+      "sha256": "c5aab9a240bdabf3a25d02a7fe42c905c7134361eba3504b0d51a27140bb2d6b"
+    },
+    {
+      "bytes": 1500000000,
+      "path": "mamba2-8b-e8w5.huff.part-00001-of-00002",
+      "role": "weight-container-part",
+      "sha256": "c1e07c7090249ca61b64a3a2146a1a33b5fec22824962397f3a53dc337ed185b"
+    },
+    {
+      "bytes": 1160171471,
+      "path": "mamba2-8b-e8w5.huff.part-00002-of-00002",
+      "role": "weight-container-part",
+      "sha256": "2249cb4aca6cf40355d87b7c10b56c06773ec99933e19448ae045caa36a7fd72"
+    },
+    {
+      "bytes": 4573028,
+      "path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "role": "tokenizer",
+      "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+    },
+    {
+      "bytes": 246900,
+      "path": "raw_manifest.json",
+      "role": "quantization-manifest",
+      "sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8"
+    },
+    {
+      "bytes": 36369,
+      "path": "reports/provenance-02-SNAPSHOT_PROVENANCE.json",
+      "role": "provenance-report",
+      "sha256": "78e6738aba34591b65b9e4ba96031e10699ddd75bf8f0d31c1569a40bb2985b4"
+    },
+    {
+      "bytes": 6511,
+      "path": "reports/provenance-03-source_model.json",
+      "role": "provenance-report",
+      "sha256": "3d940064c4e76d8822394e929fc90d4d5f88e01ff33c0d3af53df197ac87e7b1"
+    },
+    {
+      "bytes": 1147,
+      "path": "reports/provenance-04-source_download.json",
+      "role": "provenance-report",
+      "sha256": "f4b1ef422d5918df010976121c2049c9239774d12dca5db2cd09504cd86739e9"
+    },
+    {
+      "bytes": 892,
+      "path": "reports/provenance-05-all_small_resolved_v1_composition.json",
+      "role": "provenance-report",
+      "sha256": "3ce670e21cd874ea730c8d1de8d875412611c2aa79d65e11df6398c62df9e0fb"
+    },
+    {
+      "bytes": 651,
+      "path": "reports/provenance-06-all_small_resolved_v1_huffman_identity.json",
+      "role": "provenance-report",
+      "sha256": "00ddbc4ef4f3118e1f22cd66f83fad2f32447d29861da33732f451fb7686a571"
+    },
+    {
+      "bytes": 1056199,
+      "path": "reports/quality-01-small_compensation_v1_eval.json",
+      "role": "quality-report",
+      "sha256": "957de68b6dc8ac3410f9edebc11b3991879a6b3b139f49e55b3ef7f3116c7206"
+    },
+    {
+      "bytes": 4972868,
+      "path": "source.zip",
+      "role": "corresponding-source",
+      "sha256": "3599fc3652e17fe0b16e507911d93aeed537eb2fde43cc7b678e1faf22e0f419"
+    }
+  ],
+  "complete": true,
+  "container": {
+    "bytes": 2660171471,
+    "format": "E8HUF001",
+    "parts": [
+      {
+        "bytes": 1500000000,
+        "offset": 0,
+        "path": "mamba2-8b-e8w5.huff.part-00001-of-00002",
+        "sha256": "c1e07c7090249ca61b64a3a2146a1a33b5fec22824962397f3a53dc337ed185b"
+      },
+      {
+        "bytes": 1160171471,
+        "offset": 1500000000,
+        "path": "mamba2-8b-e8w5.huff.part-00002-of-00002",
+        "sha256": "2249cb4aca6cf40355d87b7c10b56c06773ec99933e19448ae045caa36a7fd72"
+      }
+    ],
+    "raw_manifest_sha256": "bc554db936b13cbbeaeef5267d96b8d6ba7c183bf740c7e64e5f26ac7c478af8",
+    "raw_members": 118,
+    "raw_package_bytes": 2886729362,
+    "sha256": "46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd"
+  },
+  "created_utc": "2026-09-28T05:17:46.973693+00:00",
+  "format": "MAMBA2_E8W5_RELEASE_V1",
+  "integrity_note": "Asset SHA values are inside this manifest. Its own SHA is printed in the build/verify receipt and must be trusted separately for authenticity.",
+  "quality": {
+    "reports": [
+      "reports/quality-01-small_compensation_v1_eval.json"
+    ],
+    "smallest_claim": "not certified by packaging",
+    "status": "reports-attached-no-automatic-pass"
+  },
+  "sizes": {
+    "all_asset_bytes": 2671169928,
+    "configuration_bytes": 462,
+    "manifest_bytes": 6543,
+    "scope": "Every shipped file, including licenses, source, reports and this manifest; no external weight base.",
+    "tokenizer_bytes": 4573028,
+    "total_release_bytes": 2671176471,
+    "weight_container_bytes": 2660171471
+  },
+  "software": {
+    "git_commit": null,
+    "git_metadata_present": false,
+    "git_worktree_dirty": null,
+    "snapshot_provenance": {
+      "bytes": 36369,
+      "exported_archive_sha256": "bb40cf50ea97622225e5c6b0a18debc1c6ae8de7d17f3134dd424e3ae7f8559e",
+      "exported_git_commit": "dd653cb0bd66f44bfeb8d9ffa9ac8e627838952f",
+      "exported_git_tree": "bbd3601b4321e3e69475510ab4494863d2464d1c",
+      "path": "SNAPSHOT_PROVENANCE.json",
+      "scope": "Export identity declared by the snapshot producer; this builder hashes the provenance file, not the external exported archive.",
+      "sha256": "78e6738aba34591b65b9e4ba96031e10699ddd75bf8f0d31c1569a40bb2985b4"
+    },
+    "source_archive": "source.zip"
+  },
+  "tokenizer": {
+    "path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+    "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+  }
+}

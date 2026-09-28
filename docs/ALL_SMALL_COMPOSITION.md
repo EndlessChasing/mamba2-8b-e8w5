@@ -77,7 +77,7 @@ total. Tokenizer, source, licenses, quality reports, container overhead and the
 outer release manifest belong to the later release total and are excluded here.
 Composition did not remeasure quality or execute the GPU model.
 
-## Verified weight container; complete release remains unbuilt
+## Verified weight container and offline distribution
 
 The separate CPU-only pack completed, with full trusted readback of118 files and
 342 independent chunk checks. A subsequent identity audit matched all118 members
@@ -91,7 +91,7 @@ receipts report that CUDA was not initialized:
 | --- | ---: | ---: |
 |117 raw data files, excluding manifest |2,886,482,462 B |2,886,482,462 B |
 |Huffman weight container, including raw manifest |2,660,128,443 B |2,660,171,471 B |
-|Complete release with tokenizer/software/licenses/outer metadata |2,666,260,364 B |Not built |
+|Complete release with tokenizer/software/licenses/outer metadata |2,666,260,364 B |2,671,176,471 B |
 
 All-small container SHA-256:
 `46be4e12d18ed36e33adf002962f0b7bcafe8478b249b628eca853930d43efcd`.
@@ -101,10 +101,12 @@ software, licenses, quality reports and outer release metadata. The complete
 release size in the original column belongs to the earlier original package.
 
 Exact file identity binds the all-small container to the existing full-validation
-PPL8.359867548. Packing did not remeasure PPL, MK or test quality, and no
-all-small archived-software GPU restore smoke has run. The next complete release
-build can use `scripts/package_release.py` with the pinned tokenizer and actual
-quality report; it must count every additional shipped asset and its manifest.
+PPL8.359867548. The separate complete distribution includes the pinned tokenizer,
+fixed corresponding source, licenses, actual quality/provenance reports and
+outer metadata. Its real restore command reproduced all118 raw files exactly.
+See the [complete distribution audit](ALL_SMALL_DISTRIBUTION.md). Packing and
+restoration did not remeasure PPL, MK or test quality, and no all-small
+archived-software GPU restore smoke has run. Publication remains on hold.
 
 Following normal release restoration, the existing frozen loader supports this
 all-small representation directly:

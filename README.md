@@ -8,7 +8,7 @@ All **8,236,999,680 parameters** have been quantized or retained and independent
 
 ## Original candidate: measured test quality
 
-The following test, runtime-memory and restored-package measurements describe the original `e8w5_v1` candidate before compensation training. The best all-small candidate above has separate full-validation and verified weight-container evidence; its test quality and complete release remain unmeasured/unbuilt.
+The following test, runtime-memory and restored-generation measurements describe the original `e8w5_v1` candidate before compensation training. The best all-small candidate above has separate full-validation, complete offline-distribution and CPU restoration evidence; its test quality and archived-software GPU generation remain unmeasured.
 
 | Full test measurement | Original weights cast to FP16 | Original `e8w5_v1` reconstructed to FP16 |
 | --- | ---: | ---: |
@@ -34,9 +34,9 @@ The staged original `e8w5_v1` complete release occupies **2,666,260,364 bytes**.
 | --- | ---: | ---: |
 |117 raw data files, excluding manifest |2,886,482,462 B |2,886,482,462 B |
 |Huffman weight container, including raw manifest |2,660,128,443 B |**2,660,171,471 B** |
-|Complete release, including tokenizer/software/licenses/outer metadata |2,666,260,364 B |Not built |
+|Complete release, including tokenizer/software/licenses/outer metadata |2,666,260,364 B |**2,671,176,471 B** |
 
-The all-small container passed complete readback of **118 files**, **342 independent chunk checks**, and a subsequent identity audit against its pinned resolved manifest. See the [readback receipt](reports/all_small_resolved_v1_huffman.json), [identity receipt](reports/all_small_resolved_v1_huffman_identity.json), and [composition details](docs/ALL_SMALL_COMPOSITION.md). Its size includes the raw manifest and all decoding metadata, but excludes the tokenizer, software, licenses and outer release metadata. It retains the previously measured full-validation **PPL8.359867548** through exact file identity; packing did not rerun PPL. An all-small complete release and archived-software GPU restoration check have not been performed.
+The all-small container passed complete readback of **118 files**, **342 independent chunk checks**, and a subsequent identity audit against its pinned resolved manifest. See the [readback receipt](reports/all_small_resolved_v1_huffman.json), [identity receipt](reports/all_small_resolved_v1_huffman_identity.json), and [composition details](docs/ALL_SMALL_COMPOSITION.md). The complete offline distribution additionally includes the tokenizer, fixed corresponding source, licenses, reports and outer metadata. Its actual CPU restore command reproduced **all 118 raw files exactly**; see the [distribution audit](docs/ALL_SMALL_DISTRIBUTION.md) and [build/restore receipt](reports/all_small_distribution_v2_job.json). It retains the previously measured full-validation **PPL8.359867548** through exact file identity; packing did not rerun PPL. Archived-software GPU loading/generation remains pending, and publication remains on hold.
 
 Source: [nvidia/mamba2-8b-3t-4k](https://huggingface.co/nvidia/mamba2-8b-3t-4k), Apache-2.0. The software and QuIP#-derived components are distributed under GPL-3.0; upstream model attribution is separate. See [license scope](licenses/THIRD_PARTY.md), [pinned sources](docs/SOURCES.md), and [comparison limits](docs/COMPARISON.md).
 
