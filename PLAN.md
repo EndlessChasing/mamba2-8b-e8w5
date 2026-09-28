@@ -205,3 +205,11 @@ completed prototype recipe or promote its failed candidate.
 - [x] Reproduce all six fixed current files (layers 0/18/55, input/output) exactly: indices, full raw bytes/metadata and GPU-decoded FP16 identities. All replay checks passed before joint selection.
 - [x] Complete the six-matrix original-TRAIN-H screen: all six improve by 1.71120%–1.92112%; median 1.839555%, zero of six at least 2%. The 5%/four-at-2% expansion gate fails. Screen exit 0, process absent; independent CPU audit of all 12 files and gate passes. See [final screen results](docs/JOINT_AXIS_SELECTION_RESULTS.md).
 - [x] Apply the declared stop: no all-112 joint overlay, PPL evaluation, checkpoint selection or publication. Pilot replacement data have exactly zero byte delta; the six joint matrix stages cost 5.4934x the greedy replay time. Current best complete-validation PPL remains 7.977512009; the remaining PPL objective is still open.
+
+## Current-axis small-tensor readaptation
+
+- [x] Freeze the [diagnosis and readaptation protocol](docs/AXIS_SMALL_READAPTATION_PROTOCOL.md) before measurements, following the user's option1: fixed current-axis baseline,393 existing small tensors,448 TRAIN windows once,lr3e-5 and mixed CE/KL.
+- [ ] Complete current-old393 / current-source393 / restored-old393 diagnostic on64 observed reserved TRAIN windows, with fixed114 large tensors and exact baseline repetition. The diagnostic does not select training initialization.
+- [ ] Pass CPU input checks and current-axis native/functional/checkpoint/chunk/export smoke, discarding every smoke update.
+- [ ] Starting from current old-trained393, finish448 successful updates and independent final393 FP16 readback; preserve parameter count, record exact raw byte delta, and keep all114 large tensors fixed.
+- [ ] Independently score current/readapted/restored-current on64 reserved windows; only a1% paired PPL gain enables source/current/readapted130-window validation. Report the source+5% target separately. No publication or MK.
