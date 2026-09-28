@@ -1,0 +1,5811 @@
+{
+  "complete": true,
+  "raw_dir": "artifacts/e8w5_v1",
+  "manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "device": "cuda",
+  "dtype": "float16",
+  "rows_per_chunk": 128,
+  "original_checkpoint_loaded": false,
+  "audit_source_sha256": "23d8dceccda91348c614fefaa3e763910b3c28afc37db4410554e7b90cefc31e",
+  "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "codec_source_sha256": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+  "torch_version": "2.11.0+cu128",
+  "numpy_version": "1.26.4",
+  "note": "Exact loaded-weight integrity only. Full FP16 reference residency, not compressed inference residency or model-quality validation.",
+  "verified_tensors": 507,
+  "parameter_count": 8236999680,
+  "e8_projections_verified": 112,
+  "w5_vocabularies_verified": 2,
+  "fp16_tensors_verified": 393,
+  "all_parameters_covered": true,
+  "independent_vocabularies": true,
+  "tensor_byte_encoding": "IEEE754 FP16 little-endian row-major",
+  "tensors": [
+    {
+      "name": "backbone.layers.0.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "1e961fa6ed90650f949fce3b32c1fcfb276accd966ed66a3dd0d63d3d4f6463b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "7a0dcefd2aa82ffc20482e4b13095fcb33560d6912305303c2cb2fda34d9e817",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "5e4e505cebf6d6810ad40170844dabbe4cf33e97ae29ab4a9cf20126bbac5e55",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "d0f1228216363f5fc3041451d3d4e76a282e3e6c45378f69eb58ce15530ad263",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "f3385a66d8ce919096a9086dc7b0ddc9ccd9ced6cff4386539d4bb36893a2c0b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "18adf873bd11b502b45dadb0b20cf299467fc6faa0f9dff849d66daad5b95d35",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "19154f2f6bc502f9d08c451eb2c6797428e55704cc6a33047e81aa1db937d0b1",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "41c72357e8333850a20d65fdfd05bded0ded46ef4ffe5248af42d5681525c46f",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "089a3fb790a957a3a87f62e2fd71ce39238be81c205f41df3d34237b55b73b0b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "9b943e0409bcea2e22b19494aa2cedea196acbf80f95e02b2626d46b40c8923a",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "8f484049a0769a9588e1f54e1a0215c60c1a8f7b88c3ac2a0d01ecdeb42b9c87",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "5e5dae58a44d876854a9664f51c9c425b20909e0d23ec33e0f5c7f0f89fec68e",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "bc1f3a6a9540e71abfb95760ff65c4fd515f6915cb34888228d10835cee77ed3",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "862ba10823f6360b0e819765b9981be1dfa6a158086b80d3444260dbf3710631",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "9241aadb0880673bfa3ef8ba1fe4941defa73e3cbc9e04b43c640a50f5af0feb",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "73c034e48ed1463a4f10c972afbf833746a20f60408d16d179e124eb35dd9fb8",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "b2a8617c338561af787109b45b27706bb0b280fff0d3ebad00d119ffad48f187",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "a0eed01718db853e8e99502e6bf98ca415c8b037959fde9c7e08274ae5ec1b29",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "36a3422185616b93e4c43a26060de8bb26c12ba8d2869ee9c13502d614357e1e",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "5ac19af21d9a6a59a9106b2fb75b1652d26c97c991e3541417798e2de60eb778",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "c497592b5042850803eed38fd284d2f1a06e4bffd2e06ce8a23269bdbb65d194",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "b970f1e57235ba9d3d7d84f7d4bdb17438d029984653b527ae8a6d575acd1891",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "1dba6708eb351eaeb01550ed4ffbf0024d951b931ab68d95ee2ef9c754c6a7ed",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "bff49ec5058f026932644d65b11164acd4a470f669abd32b5448d9ce907a3b6c",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "4d7a47148d4a6b6a536c7c77d365040da23a800fec446c2334fbe9321f7a66f4",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "8f8fc3a5f0f50da76f92aeac6c05ef4c258a1feba6fd66b27c1f8bab1dad5c56",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "fc2db9c425c8f206314d5a5a56986efb4979c4b81bcb58f5c4c7fbdba981a662",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "bd80ed76c8430cca41e09f45346faaa1b08b479e3187f5dd8d11af81f49bf474",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "49a39a68932a59c5db53ac5172392a92f5f58706339103ed9c8836c74a54c1bf",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "65cd797637c7ff987dfc91a95604ddaa857eeeca3d68dad8e2fe297d3243f1a4",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "929f3d4f80e099c400c58a1f5b28aba4c001748641381253161599b419795265",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "e46c7c53c282ce3a855af8663347589dc6ac9c4a7a806e62eadc569c87a82cb4",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "f352ba90de5d005208df0375d093d63a9df4ba600ca9071ed91f9dd7e45c425c",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "ee93d897df3e460fe6383b7b42f579e5cccb07873dc2c26a681ece61f69ca872",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "6d2c4378b823aba6cbfd3b89a39327a8f2db533ed4c45dbc567045ca85b1df4a",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "5e3cb23f4203f749e46d81d49a4904908f48c7c84ca244f9d512471587f9f6cc",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "c564d26e0ba450a41f1855708e8afbfae7cbf40b4114e3a47c7e54842132526e",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "5d4477b3158e8188cfdecd9ec62d416b4aa9b5cf31ac9647d3ee265a180a4d74",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "9401c4e0a93e9828c85ab5a00a76f79f57cb4db272c408bb72fae0fe184733ec",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "ed672b54567649ebaa94d392558ab03ed00322fe0a57ba00598b1c94cb400109",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "225c80997e9b73af44bd9506ee19362b4d08de382e0e1da649c5414c3d8bf55a",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "d8e02fd36d55abed919be03bf1d87f646db0b22564c8789376670471419cf8df",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "a1ba77d51c53398d2112fd50051c0dfd5e0551542102c05ed64693c1c6d73f9b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "c16fba7e05be5540b6bcd14cdca9cabb7a6c6b73bafa4beff0c0293dbe3ce37d",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "54786f7ee1d6c168bb7949f0d0b5d8293787bdd7ab83b5593b839f09df907289",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "9daf19d3b96756ce57d3b7501f46c1f5ba96968c754a101d238301d085fe560f",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "0a0b671e0d324dc132ad5d3e89c045de03813677d7377d77151d64f35fe76393",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "06138a031fa223967c975103c1131c9b14d0a0a8e913163f6dcb851e3cb98eb3",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "cdc939f85c3cd80429cba51144b80ccc97bf7c1fabf66c367bcd9f2fa687f967",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "e03882f403ff41afd2c5adc2d158c910d238f0acebd314df580cfbe9d40c513f",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "a65257875471d10e04283331b2a916e50c9cc93a58d8ede1f38ee79b9e47f764",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "60581d05a9f748a2a5dd8ee5b06ab93d7cce858de5811591078bb42db477eb9c",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "15034dd171ecdedfe4ada0e2682faabbcebbce29ffdf43581a6e25acb73927c2",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "336148c867bfbb10cbe43600c38fa0f7a5cb58b0084c3819aa829fe493bbaf15",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "b0bbe0bc2c2b38113593dea7858a47cea9598037c596cf43df3604dbec67d93b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "18b4e6f28f1acf4d86e62d7dab7dba083f9d84dee831adf28afc098820e75330",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "42cdbaaa96bda366ea601db324a5c718361114f7b4cf4c51f812287f66791578",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "54c9724db56c376c94a4805f777f923e6c5647816fe36421ce7f0acc84327c25",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "a186f70805a768f942ed8e0753040d4e43ee8f813940be44f721941cd560d1c3",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "d4d0d6f34730dcf9aa17c13a6878b34059ee95840e6c279c0080e92ff77cc689",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "f9ab45fb63088bf130522ed1332bb64144aad2f17e8e7580ed43fc2ae0a64788",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "336d9edd16bd4b0053a3755ca50cf4b22a113b62d3bb9512add2beebf37f2c2b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "7fa1f64d2c7a6cd493aed52ca46c8515d3f0518b04b7020642f6c5e1b58e9df5",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "d64d7115a2f84655cb2fe393569f51d88498f05a4838d91f93faafeb4040510a",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "7c77c55eb8925d4c305a10c69ca81a96e75bbb6adcdb2b27de2b3915d6d10eb9",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "ae6dfaae914f40abd1223f245f34492ebedde73c395104f3043b903ef537e164",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "ccaa93f53a94ee24eae51c9bdb223bfd94f4faa629aa6547ccc3e746d220d68e",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "0e9ebe3df3dbbd95d231f2d026b300e0bbb84b8469c381548fb880f07bff73ca",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "75f1e1d275700ede4ebde0544b3f75eba9101d808a2c4048a1fd4650b2e71761",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "d3bb3e20c0dcaa0cf6c7813b2d0ca80442441c5388e694d3ede147145ca9a4d9",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "530cd72090569e0e6ab6bc7505a617ffa387bccb93bb4326e0da8aa1eae3b709",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "34a681836911073f54b93bf21ed6bfbd1047213af1bc2142b29cae4e4d7deba3",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "9a9893fb8e76e36ded556bbd3587f0acd74868b09aff9b38817f05eed507ea26",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "3f90bedb48e888a7ce273a65256dae7ced5ff3f8fcd55872972f3f5da2361b16",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "32ee35d349fb626a81883a8eacd96e49be34763b08eac6342e9afcb6b5c81758",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "72b2adfc8ba15e7d5df7e2f408813ba137cfe09bbd8d0830356212a914a1336d",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "c8dbab8b57bab97007d0ac25575e5cd0bcb958476392d8dd5bed71708b281009",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "af670109703d667f5c370c32da6beb7dc107d03eac3b4cd1aa22a51d66c86f07",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "46db5e295ba25addbfa55bb4fb3364e53336da6e781a5a63ee798d3b881b32c2",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "b56db12f91bb6f8baf57bd2c3a32e9b451a877a0fe24ee73ed931644d8d66867",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "532bd12868a87a54f43fa0ddf20995458df232a571d3fd943124a070c1701e23",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "2c567ef1177eba0cd1c5e72d8a26ab34e4bc784a2925cdd836c81f016a1ee8ac",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "0bd87e4be25414499e7bf18f85dc3acd70223202c4d142a1a963991a9dc6e1d5",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "26f523a31fc5ce2ad1d36be8145158409c779ba3fde6a2fa50df3033ad604ce8",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "2dedd35b6e1a0f22dc73303626776a9b7553c749f1fd32a1c45d4ce7c11776a2",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "0dda43ad4adf46f1b667b44258d414eeb0d94423102aa76550fb5f91e8ea0517",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "cc0643c7250eec6479bd8d87bdd382772e5be0c884aeff69df11fd04d8e1529c",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "8ae12ab47b36a27e099addd545f776b935990f129abd27e7ee5fec8c479cb275",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "3008a4e45156777e1aad947d15fb312ad9e3b32b40be8ed0832fc570c8f95395",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "ab4fbbfcfdd5061d64f23a0ea0ea45fcdcb977650188ef4e64a40baea53c1260",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "111ccb5a0896e2c53527a8802848438f487adbfdea0936d200ac01e5a4c6b66a",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "b1bb6143977982d126d4366141f2f32162ad5f386d374a2f8ee1702a5410ca9d",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "a24961e5a3a1ae38504c4faee40a8913102cb3c33ce0aed299c722e94b7c24c3",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "df622ca02087e0046bd89ea479088204bfc50239c06c1709b47b054b7f25353b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "bfc4c6cc746d695e4c7011dfaf2ce474e388d3b215d9739b20b83710896dbfd3",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "7ddc984510e1100dab88777275dd9661002a91f790b18344d7fae75c8dad3822",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "5be6f52a88259dcbbed0ef4f938207954c53b067252119d4f61d12430a1aae75",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "a5fd9de26693011b4949d8ccd824ee893437197b6ad5b32c4c9f6083dddc6ec9",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "899db347bcd143d4cf7213d1ee5d8b355f91df585f3e6683b3330c5be2a9e80a",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "0f92d49946bedeb5a8050d2cb4100f584532cd1ebd8e5b2a9b9c9e16d3a20c6f",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "df55b0c77ea7941737160d63f36a7ae4a104f18cbc30ea7073bc767fbf6cb173",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "925ee9d7e28e813a6d3108675f5d3bfef2820a3df78a9b3df3de7c57db62987e",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "8861a9ef0aa90d987d1ff75d403de0d97dd50de5a4bb1d5b7ceab20538f43548",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "9180c91c5e947e9cb08dcd2d12f42a567ec23866cf6c6a41e0dff31628280a23",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "ada3a82172f2eb71de908883bb1ee716deaa7629b2d602ea65d93537af6ff225",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "26134cf9aea1676c534e684924e3373d2f56f0e53a46b118c5112d87b3156590",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "f9c81621d1dcb3869d1bbca699e07af435aef5910e432db2d9c7fc469c63f403",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "15d890ee6c84f7e44794b9ac2421788b4d578c0a3effc860bfb742e5ec205ba9",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.in_proj.weight",
+      "family": "e8",
+      "shape": [
+        18560,
+        4096
+      ],
+      "parameters": 76021760,
+      "decoded_fp16_sha256": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.out_proj.weight",
+      "family": "e8",
+      "shape": [
+        4096,
+        8192
+      ],
+      "parameters": 33554432,
+      "decoded_fp16_sha256": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "quantizer_hash_equal": true
+    },
+    {
+      "name": "backbone.embedding.weight",
+      "family": "w5",
+      "shape": [
+        256000,
+        4096
+      ],
+      "parameters": 1048576000,
+      "rows_compared": 256000,
+      "batches_compared": 2000,
+      "decoded_fp16_sha256": "288a0cae67bb9be35ddb1b666d4c81a2fe1e5c769e836f8dc0d87246627023bd",
+      "independent_cpu_decoded_fp16_sha256": "288a0cae67bb9be35ddb1b666d4c81a2fe1e5c769e836f8dc0d87246627023bd",
+      "independent_cpu_decode_equal": true
+    },
+    {
+      "name": "lm_head.weight",
+      "family": "w5",
+      "shape": [
+        256000,
+        4096
+      ],
+      "parameters": 1048576000,
+      "rows_compared": 256000,
+      "batches_compared": 2000,
+      "decoded_fp16_sha256": "169d2f19d0cdff2b72e65b7a9cecf87f5799e7922e29eba136886281f79ac4ae",
+      "independent_cpu_decoded_fp16_sha256": "169d2f19d0cdff2b72e65b7a9cecf87f5799e7922e29eba136886281f79ac4ae",
+      "independent_cpu_decode_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "575d992f7d30726a3ed0ef4404363b3bb05517d6c5c9919fe0ce6f71e82a2f95",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "29392b76e84485e739e55ec93ac1f3c9a5fdd773f1507e05a646594b3318d509",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f403f7ff1c7b8bf49948587eba321a8b88d4e251298068f2bc7e7f81dac3aeaf",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "6c20cbe43da8393c6b58312e7d08d28d6f11f2c27917f763c2ad43a400947a01",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "2f8af760ccc9b5c4a9571e6b2d7911341ae2de5a20f78d8a7e91ab78e2cb45c8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "2dc7d90e518356c594e0b8ccc49246f2b0538d11176dc515d3dbbcf728b9d399",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.0.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "5562a9691038b64dc2b252531869400abc26cbeb3c6c2fcc20ddf3f2dcebae4f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "ae3bc85972c86c363f53effd0dc73bbaf26e8e1dc3712b93a2b55e355c272d2a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "c3e07ff4f6828621d19e6f9f485707a4e1a0dbc1523846859e3977c96a5c9955",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "3f8d560bb4c20630d019b88b266febddecb796b6107dc1383fedc5b8a940f93b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "1466752dc9510ffa8f81980222280bd544cacfdf18b4828c44323993fc7259df",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "1bafe69217bc1f0b2897cbf9025a6566173295d880ffadf59fc34954598e6453",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "c67bd1ff390b579f7baa69cd9f2de1d2b6ce72c73371481b9de9addbe340506f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.1.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "9e29e2f3de238898a191e6bbba0b0852e2f15dd41466879da36be8d518b2199d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "15cde4f788f1ff9485dc227f4e9ebce8086db1708b906f1f978da5f91575c0ee",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5d489b5a3aea0568892de8ffe6bdb9f66393f63fd9950d46e68bce5890d8cc22",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a8e6d5bb5ad6b6f5b2c348c29942d5257c8ba57ac1d5911979a267a9a7cc7c61",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "6b9e2f4ade006643ecd590ab25ca3589a261eb00a96cd7d7335206b80dba5524",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "4f456087ed19f4e735c6d6255b9cf1625cdee2bb5bf2445b3a8c17df6969e2d9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "51b44f3709aef25e046659951ac9c318492f578e513ff84816fb41ef36119108",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.2.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "bab85a52f73b19bfe8ebfa48bf15b30bee7ecb683bbfcd7d34eb75ee30b53fd2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "269a5fbcce1bc2c51819b1e7a5558a29775161ca550099a8a105961d11842405",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "0fcecbdfef16ee9a572cfbec4cedfab376b4c779389acaf0f52f548dc764ed73",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "1554e5ad7649f1544d2f41cde1e36eb3d68b19396feea8a3c84d8f3b9dd6ba57",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "aa8686394d656efac69db1c9167911b2a3c34fc47e5abaf54730ab2dbf932e15",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "428fd49dc59e1387638268ad2a2009b78e311ccde29ae0ef25a5a45ea392db40",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "bc0e2fdc620a26d59c1dae62a1596ce4d03a75c78231c884cfbd13e6535b8ad7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.3.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "01ed7860131cd8bcefabff40c3228132fc222b7a5eeddec03e7a4d13fd137758",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "330c9ada10d50b5b1395a49c669a6c6866cb89c67b5dab528d216bd183d29306",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "81b2cb9c623779e72fc6f0baee4ce062d421bc3b2ee092df00b2da922752a18b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d60e0ec52a650f6df590923518c337ed37af616802d683947cfb8b2be9da3c04",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "5d2e1b198cf100fcece9605aaed3bc93b5141a8a17311eb4b1942bb41826addc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "020308daf8003db276077de20db5bf9b015ba5379195b4550cbc12f21d989f5b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "3b91251395dfbf0093dacfacd7b2c2c83758057a0a0280e0c4e46c08c6d37e34",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.4.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "f2ce50fb37126ddd30ba3beb7b213b331c1746bdc0c60ec6c5c26fd82e1ecd0c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "63264b7f6a174f9440dff8dc8ea288244c1bfd1d57521e59bddda1e1fa431610",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "1b53fda9c3153fec7f9df48545658001dde1edb43e6f459845b02cd0b77c5147",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4172d001644056bd136afdf0858a678923d470657a551a643b765360d04ba519",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "79c906ba95e398316653dea595561039a13c17225d83ad84b6875ce1a33fc9e7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "27c9d3e0cde45c9092fb572d44ce3a1af4a279679805dda4941eb7d63441c1bb",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "1e5d36f08245f889d3509d61eaf571c5aadd5fc230e98eb021241e81fdbeb7e2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.5.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "ad44f74b2f588a6b5f106e3ed44aab1e31ee3366352869d7d7f17011236e9b60",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "08a8f542317c36767a974f0703ead327a5750c2a2e99bf44ff78b6660763f564",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "0bb4b3272855d54a1554309ab0e12861b80f0c555c87fff6db317748c46d1d94",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "005598e55cbaf612df49f91a6bf3073ab4ce625a34fafd657c12ca61f12332d1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "c223dade29ec079d10aa9644114e22b65e4288de0a68c3fa4ead894f065fc2ad",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "bcab2f7846e401324b5d9deacfb94eb7dfbb2e0af81c212ae6d4b5b696e93467",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "1c912801c88b08ee0a2fa7db0f57a9b16368da6ff49c796d8209b618473a1141",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.6.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "7f520131c6694231b0fd73c6b1dc2a7700af71abbd9837f5c3abfe00f310d423",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "8121037a3fb7644e5e255a153151ad5e2d8c378c65571fb8e6bbcd758538fd21",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a12135bb157b5ea0af3ee12034386adffcec65ec397100025981285b0fc13efb",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "2d7fdf8f427733a7c61baf62e757550b9e036a9a055eb6fc14a31917d0d4300c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "de368d0203ed30e65c31f983fd693d38c67540bc7548ec15aadf7a1f9dc6b36a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "936c9391061cdba320210737ca1ce22fd4dad9b7dc013986ae62a466762a6cd8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "cbde1a4a5b92ebacdf70c419a6665b14e385e6664ef8be0431ee7bcbbb39bfc2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.7.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "bf6fb10ee195f462fc56f2ebdf5bc90868903e11ad112be734047f8b22840778",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d09c4c2c4fb2bf1ff7f998b49b31b971106e406d3a708e8a7eba2cff0496a9a5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "ba4517666ce89351f5468bcc2645a1ea9fa211d23b6570b7cd39a28e0430bc5b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "07c8e5a49539b5d3fb17eb46648f82c1f7fdeb64fce7688e9b4ea8b025254834",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "41bae34c06ae430d1f39c44e9d671e7a1de097564cd57f1fefb4a9f31a838a8f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "8a9dcea999f18211d615924e737c2d1d5f97b71be36fa95c1ca30d68ba4b6e35",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "ab220986a488e55cee281f84419c114813490af4b37eb867dc455a6a4fe7205a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.8.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "5f27b8fa0c87417559de141558cfc2c1c26b157e54bf882da11253f8f714960d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "47f82d0956f1410de8d2e3028613d87744fff36c40e01f101499275d9a1f246c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d12ee15e981b77f5d6ce618e0e954264ad591d5030feeb54df7bb6ae85041a14",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "45b1e4c49adf0de86e746ec6dbd3df451fc49923be6d147b64c98e3f509d0886",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "2dc1137b6df8f51a8a518450ee93cc6bffce8a611691b3e66d6be38b71486391",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "4717f86a354f0c59d1e9b87d4b7585a7cea98b0bf55de0a21836ebc926ea7ba6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "d5d1b32718b3dbc5b52ce69864b34f87dbefdc438c11db6c3ae77f5d7dcbe1b1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.9.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "c44b6d08369d2d42e241d4e82632dbb6fd7b6d3cfae96bfb40205a2effb3b2d9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d324777e66f0e6e4d99a1ef833e038402303c7a973c79b7e9eec5de728ee0994",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "549d1d9132b408b025c666aec65ba1a172b21f3fdaf7b0bc4f08e22c1c41e068",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "7d5dbad8b46b07489ac9840757e480904f6a0b0c333ea8c9be87fb7ce2be8369",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "ab3baa93bfcc166d21ecfdd6a8020435d14cc8e9ac1298a561d8978a4a1ee3ab",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "6c10a33e19ca3fffd3811eea63e1cfbfff164474e6c7cd03fea1d060c2838f68",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "93a7cdeafbebfa45e2bacf2c853000d821c55c481ed9e95a9edff4c1dfeaa237",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.10.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "81d316cd8e282e0da65590159338cc18f24d79687577225b90a5d87ed493539d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "398a57d4a84fad84fe793c252c36689eb7222bf2c7dae842bd769aea8d132a8d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a49a4097c8b0b93687d7bca54c448edfd336695887835643c937a193b7645f8e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d37062a9603ed53aaf07f227312eac2896aa86a645b0a4013cd15be935d3176b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "ee0b2719bd2f2b62edbe785d2147b03546d6d3041b79074ccd798695f13203de",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "cea5365c08c89d985b9e355ab8cb317a1ccdb27a625d68fb45a685916d5f508a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "1ef490c7f176e9579103f56505be102504700a07a3eb3cfc84cb35988d0cbd4b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.11.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "2fabc03b5ba35332dde5bdab5a195ee2063b7e28e464f3c5b404f74632d1e184",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "8c838c8c0b2d299b3b927c826c5bd7cd94b062276337a426e327ce8d2e5d9615",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "c37e8e70f7036f00d6a6e775a55ffc34f672edce0d72c573dc703039381c8e72",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "2420796f486bf19ace80997a6b522feae3ff158e2eb7f971208ececf872d39aa",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "bebbfe698927e5d6d94173d8cdc0004119b53051867e443a7434c63bbb4f5e97",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "34af93b560b686b68ca77a875da62ed0900dd584a668991b714b70b32ecc5fcc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "c78f9b596a2729d871881b54081c09469c26fdd0b67468b83ecd5211ba926c00",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.12.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "18979a2dd8e980e4e4fcc04e43e8e03ad79e7e984f7f80300cf16dac1ad561de",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "18197d06a34ed3676a0bf74347d6d97dc6e7c35f5295f92a2b5e93b628b408f6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4d441f8ab4caa2078589fcf57fb5a5a28679a641ded4cfef767c632971cf9ab9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "57f2216c11bd9372c4195f4629809b66288a3f656f2f37e02a955bbbb9c10544",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "3acf8890e7923c823748643a95d17ca047634a4c01f251939d6ec431ca925e68",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "497b7c5ac2401cca830c0178689ab7ff534a6efff0da08f47e66f834ac430d4e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "84e3df57faa920d2c26e13dfae0edf677c4e887f4c1e708e0a5d18b8cdd6011e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.13.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "3d6c40cbdd1a5583b6a7cd541f7e6fa4e1c129471ed87f8735f072f01688c5c6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d7ba3283e57c1d6667dafc6a5557bc0283b6083ca738eb24bc16e7bc5ebbbfe9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "612e1d1902aff391bac31159c8cb257d87d8b45007a5caa20fc0d0f86877affe",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "8608fca8fa70a7abe2a4f30750450782f8bcfc6e1c328d3fca2c446ef7ff5750",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "207d18b40a9ae29b5dd59fae18785e75f4a55546c1251dadeefcdfec5e1061ae",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "9b7a78d13c5cf9dc2bdbba42e8dfb7dcd36dccfa188608eded62fc5e4120f9c1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "acf3b8e8c612b8aa54cc0131925e527de166cd6177c2178b2610d9169da4d0e8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.14.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "4c5734dd29096b6224aaafe294714a1b5312503bf11faa53c524d14c2e0daa97",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "03d06adfb765cd1c63511a591af2b922594ca984d9d02191990aed377ab87a7f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5570e0a435b5edcbd1128dbdbc536a59e5a65cd2ca20d6e17a97fe2f02630172",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "fef0f1d04b18aacc04c7e1ddcf0effed779c6e95dbbe769ec656c35d176ca803",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "302cea25cf918972d29affd7d73b0fca03dd237e736f7da89a066aecb90d8557",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "d89d957103a8bc734d9b4f1c092b25f1560e785f1919db467c222f9353e2750c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "26ebe92cc7717d77c45c7e0cb8cbb5fab5ea878ed77d0736842cfcb817056187",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.15.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "f5776f81ddb0776e09eba6807b30abccedbdbed440a16de704005b0768d48c85",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "56bbfd60436a32ec7d72a51ea63f95e86b0ba57016422a180dc28e8edaba05d0",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "28dc31e731f08a54d3863b59a5771ac77087b99d7f95f9a0060b8bb826b6892c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "e8083fd430522a2bacf26ce7fe30348102c101e811927f4543db403724f7bd94",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "c5e1703d843e11393887d7031286f517bbbd31794018ec275d761470b494600f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "78af0ceaf23cb00b0536a85962eac2db567fbb670d70191d2d182fa53ac1688c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "aec366d8c69394679d6cd4e1c72b72b98213c5c63c839d6ba3e0d4ab86d2c644",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.16.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "d6910544ccd022e809030c347fddd6153bfccdc0e70a9884f8b7660e8ced8ffa",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "da30edbdcb7abd589e0f5be03acb09f8e313d50cf6e2895ea510e1bbd866e10b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "19fb22c89739c883c9b4f8194b23f158e73ed8977319e97490934013d78992fd",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d3c6e51127a62f41bdcc8c25feab179e952572a107647d25a9119c70a23de797",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "2d8f6e155e96d9180819637800d896672ddbc91f82c158eab2fb2d5082ec0b8e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "9b1677920accdb43d90bada8e0506cf83c8a18eb26f398710e6f5bae2cf4b9c6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "2961d4c1a59b3497f57d0249d5fae9aa8aa79bfb14747711102a44334cb64162",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.17.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "0dbda8b78265d62ed2101015cceac59fa93d7ff5a1d1a9a255b063eb5fb46b71",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "caf798ab038bbe6db8ecabd667b6b8f9832f81e578660c9de7e5645ad0d4bc5d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5c35bd6083c3feff4bead9e2dc49ba8982161ad7e0d97d8ae7de42647c69688d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "abb5386c7f4d69371ac5c5ca3102958b09f9f8ae1a3a9fa0aa30c6265092cdb8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "e995e5de14b4ee1032fff9dcb5dc8b1237d99c2de0ce5faff9e8f139d674df97",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "0d2ffc81c63e92124c27558f04bc3000ee08cd253e81932d87d9cd45e002aded",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "eb30150bd7cba908da56f4f0fd6199f06a5941645a067c0f9fe64da2cfb21ffc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.18.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "995ca90d9a99a38c557cecf8ae6262cdbd785a8d2dc080c5676711203a5c789c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "fafee561285a386364dd8bd49ca8b045c843e15d969b711630a193a3c86fe037",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "10865c8e3bb5785b848efb7a887909e5dd5e008f8a275d8655fda2b7edb84000",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f4c1bf7c3dd76270406c68c1ccc17c30a699106d618dcd40b2b8078dcaed76b7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "e10180afd81ce19d7d22072984fcf64e730dfe3bb477ada00205d5846e33ac44",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "072c36c348e2c3d96c4c6c172f3d0b1fd55c75876c75a9e18bcc4d113aece5dd",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "1f72d6a7157d56fc4ae4524c131f3f6874a7855ba37eea2eb71dc285b64fb2c4",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.19.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "1d073b4d344e004814677ed176b3a9b62a5126b78e7c9f9fc37f0133bda6607c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "26134afcf405687849544834016e542c1c58a6d5adfbc8240aac49638608a861",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "b0b072bf883570b33eba9fa410a2d2cbe622db9ab7a6bc563c504c5d716352e5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a238032bdaada9b645f91e1c63b5e0b3db1eab1ad64486f99e7d8fe7806cde1c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "2dd7a3dd802dc375cf3d5ae9ff7ec4dcb5941ae7fd25557ac1d6e2d646511be7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "400d3fa9aa1336b93699fe8af01d48f8f706f3796c265408ecf9a15a559bb69a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "dad789985cfc12c5b2064e81e9bbb2710553ba912b5cb87b8ff3a08f1c87d3a8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.20.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "5599a9e958c94b2ed441e2dd1d404df9db1c0c169471849b7f7f51eb133bef16",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "b20c56a2c64efcff68b3e93d6b8514034ca5d5546856071a9398095d275b8b4c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5239beb13dbce70934dc6919697a07f3b6dd77f90d4a2583129e2a779d20f3f5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "2851559df57450185bae0f482b9be52e42265df4d1c4c88e16357a59f6fa3e15",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "bcf01d6be9d30e54c1db3d97970864950267452d52498b5bb16eea5e0a7b08be",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "5fcf3613c6df9a4f2d99129a88a6dbd88d807ba3f7631fd1287fa0856b57a993",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "63cb1c9f7c34ec2611e2fef89b755637d42985bf9874e4981b96a5b9330b5851",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.21.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "09eac8ee9f6cd1828078d4d5e700ffda829e6a2bbdfe45f7a381cf2dca5bdd42",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "1629d1e393ad3c37f1da0f068d94e157e63c37eb7548b3e44125308b3a7ccd62",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "845e54a627c0e0a25e0ffe725aba0113e43b9ed454fd09faa0542f379d06ebe7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "560c88a129a0fc7887f022437ff18351d4647a800bffe402e39633331571a145",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "cec6dfc0500b9cbc4bf6c83ffe60b0d916876a190ae13e623cf72947a5104935",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "25028a667430f08788bcf140e2ff926e903cd621ccfc7ace87bcf0b65765b101",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "6bc7d193ad54fe2ee961e7fbda0898b083e56a08286d433e8ea83c9791b8f2d5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.22.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "6f74012a93ec2813c4b9542f7082b1fcf1591331aa333412f2718430f5217c1e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "62460522d608fcb2491b08c60a786297e7f35abf22250529d8a17417b73a075a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "256b45c7be3a4c714ebd96c5bd329c7f8ecc56b0826e2ce974d839e266d47ef3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "ea60d8fd560951d90850a68d2e5d7f02fc49c12841c7bbd0d9411e3696e4afa1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "9e799b05ab5bb8001a337a71abf442faa52aba1ef1d1fa61f6fb588a030113e7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "ca5342e86d03bec00d41086f66b480f4cc5e2fe509293acb59ffc2289becf02c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "26b3e10dd4898678e40eaa535f4f200ae096a7e566e24d3cbbf7b527b2f67e5e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.23.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "c817ced803c1d381cb9c0eb3322e5cf18a3701772b00fee4997f8dab9c2cc6cc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "39582e76d30b090ba934dfb12c1e9352eeb31e98ff91cbebc7adf05866e9ea0d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4c8064143205ada0e96b336941ac55f7197848aa7918b2e840fc970cfcd2bb7a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "c277c3b967a492735fbcbcec26e532f4b6607282f664c10cd72bc859206219c1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "7a2d3eeaf6a70a17b79ae7aaede083dd03dee250a00399009ea451cc42fe7d03",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "1ffbd7d1b80471daf04af1993702bd8dad51936492fbc9bfb45b997fa59e1171",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "defd9fddb23b67208233e7b657e55960cba45003d5636e7a1ddca64e64de00a4",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.24.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "5a85ce8fc16972fd0219563bc5465d1bbd2d238b8f49d4f7e32fdb7ee287d5b5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "33269b569cd020ff52d7a8a4b57f59259e6f20d6ff929caf74006f2f79ff7a70",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "634260bcad92801b7d10fcc8fa0fd32d7ba6303155adf2521328e6f665cc2b51",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "920a89b75261ef527ce072f36e935475f37a3ead7cac42c33e5a38dcf5318119",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "c417ed3d8092ca914285332d84b0c204ada28b804677dda6463472e6c59a8ab1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "ba65e8274dd4aaf833500e40f74e273ecf86d2edb73bc7376e0311b3bf7d73fc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "c8635dde354623fbfc1f101bd23dd06aea895dcbe0638c423a78fcc0928d904b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.25.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "428fe2cd8377e08f72255b42a74501984e919bdee4907f9d7457b5c4becc8547",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "50f2caf9766bd297c1f9f16b96b3990a628752bc545e16dd1c84042633921bfe",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "09c4b20ab9cb3e3d9e2c7fd24fd8cb66352eb085bc1a83c89affc955b59c54f3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "220c27d710e3cb3e3621d6511cf85a26e1623fe3e178189570c6c6c37144652b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "ca1ed45a5ddbaa3625d5ac91eba345c4af8feae39a92481574eca76d69a15990",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "1f0eeb3761cf264e20b57e2823a807a337ed335783767d81b7d43e305cac3ebd",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "5895f01973b6ac66ca6dc1d4239e9cbb56dfe8a9b052959ca904456b1c28be67",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.26.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "dd50e679bda5b158354eca362245dad141a3c21ae5741698f588a587fb12c80d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "fea735358e84b4fa3d1724dd2a6e03006ac8a27e484d1804b24a6aef42ffab09",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a3a4ea97dd46282a53ce070e5db10954d794a466331889afaf52c411d3a06942",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "505141a60590d7933d9ab19de1c35a6ac0e9c953f5126a9b4e2109e0dd510c94",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "fb9fccc4a87f7096335d33581c48715b9274c6ea6087d6843104253e4fd32eef",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "c5ab9a61189144f5fa46cb277a73157ff2c46c6799bab8906da7e4a6e0f1df6f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "50a06f98f38f67642de181721c9e55f55349fd1688fdcfa32366c4ebb877bdf6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.27.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "f52a1de1e8c66b9ec8019b87d0c65d58a49f7b0c72f7ac5a76a2c1be033409d2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "58ca53e6860d866c746ce73692e7ba63c1cb4a784422fa8e177644a901c7f77e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a75d221bb3297d1041bb5589d1106b4bbdfec488e34255de0e1cd03f20290bc7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f080d472359a57018234ee32dc9e99d9f4181fa59a88d1b7e22a3ed313593dac",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "f0c9a06697227bb14f3915a6350dd99914317e1a61ba19644c1b678da57f0296",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "72d1f45edd6593d5f99049026ecf2741ba6df2efe71e078e10a93d4668a84e81",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "0aedafd4438f82aae40dceb70dc90eb793717a9a3003926877312d043ab67739",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.28.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "3e885238ffc01b721de1579a8d0e7fb624779ea1f8281f3188265de4913e0074",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "af38750da64c057b7a71009edd4eb40a3af42162b6c7efac9eeaad380d430357",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "9c6b2a26a52931a7226d3e1d94ae1d7d6941f25f5d20cac02978f7d7903a4b32",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "34ec92f2f0417360ad2bcec676346ef5c903905e71dc91f21d5f7dd3a412217b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "1b49521951ccecdb84c437b260b352f4d9002bf9f83b33eae8071243814c9820",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "b1a093af7c4f5b43e3b4168ab301e8fd4f8eb4945b1fd18be55d320253c57958",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "d08ffea1f5a5e6f7e677687923490e5a44d612f324519d1d401026a70c42dca9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.29.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "9a2aa638bc4c696d19960f272c53c465af7e1aefcbed57ec73910c9bcebe0650",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "60af789d442f0a8809967c8dc2f804aabdef826126615deda6e174c9e4d4ddb6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "be73553b772adc0c015324fc0bfc2ce358ca250c18cdaa885e351905ace5936c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "2cc12741fa7e45dc342c0fe275669dd06525ba8f38b4b9c9fc88569bf8dc51f8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "afa0c6eaee3d7b8631e6b3b0da76a4a4735f1077409c0da0bb95a003717f7761",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "3f0d8d9f7dadf6957251a1032c26a3124e84a9994d2303581a270f7009eb51ac",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "9e2ab3e210498b2e112d80a0047d41080e13929a5a222b31c9f1883d6a558d72",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.30.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "77dfff6725bf5fb1bdf61246549174ad9dc8cada01e5ae5b236cf47b32289b83",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "7d5c2871ec08174f6b13748229c1da78b992e7b8cacf72b0eebf0e0f6127e3be",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "9b00d81564617e621f95aa7f3d67a1cd534632d66fe99da77f529b00635292cc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d377cc4a701f89da641a04033892ced50d7ec6f2edb2f341ade6a926e704daa1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "72aced7ecb6f3308ae1d4d2bc15ae25b38b5d01dbfcea8119d0f275f27f89c0c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "7528dc3029445c57ba5d667b3e777b0546256f6904268b0e5189cc8ab0a630e8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "ddd20046c075ded99e1a929bd20f0c8a5487c39f3a4fd14fb9d96d67762987f0",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.31.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "91021b027b364e8c80684278e5d8ae72dd4ce447f9a3b32169f466b277e1d4b6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "1291bf7326684dfeef78b2fe3a1c2320f2b22fe6592cff6dbe716d688811fe8b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d3ee4375ad337d0cc017c59e93c1a275a5649770276cefcf9058a43697359af9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "9b91843c8d97e58473eb99bc1fd10540a3ba3440d4d79a82577b46579e6c6c04",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "9677ef22cc6d7c9ad6379350d4e6d4f37728b0336b1dc3ecf9c7c6edb7b0a22c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "db603f363889d727bc5b14cd0d9a132f63c547f33b9e2ca874a186f1cd519e50",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "59128fc8319125515a5e3d7a641a875a1790e78eb3572ca6805b51c4bee08fc3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.32.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "85ee33d860c5d68a96301e435c588a6f326169d9b6ff81e49a17d2a95fd96455",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "671034faf837a3a064b45420ab7b2195bc42fbc3c3ca1f710af4fc531e3ecb1f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "e3ec48e2b880768adc1527050e6bc556ab22fdfec36c494f855a4d6b100ee5ea",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "586b436e12f5fb752878435d9f470fd002d9a0e2fb3d65409402b4eed401b5d5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "87c254c6107ab19ae344bc8a5ffcc457dd7032986ae4dde7718629081d6da398",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "38a580623b2f6f19eed16867388bc37aadfc02387aec79aeb9c71505f9088e51",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "35846c570f491ec0cb8f86e46decb88a0734dd431cd51419c03031767abf34f5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.33.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "b553ea94ea3b619e0c0a5c605f5fc959329ba42fca542b60926ae48e326b6fe1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "35cd68aeead431973ef70bdbf0e1124941455a7de3564290fc1079aaa51210b9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "2ba267a4fc86aefb6c5f6353d571eaee07489767f7391d41b61a6550786c835e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "0d7f5f91c5d2e7b54508698836425801c8c120236cc34499e437f88817d80d5c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "76538a7b0362f623d67f30f6bd5b4da5911f9536ae4d605983e536d890b49175",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "05b25f96883dbc27fd1baab476435d88ef21f0466177a5971e9873bf1e2aac0c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "3fa1221d75daa25405a0e88bcd2e1c56f56da5d401a0d924bd765df43ad09238",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.34.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "d85bb56c4bbf9d032530af16540b5e0730cec734d1df58893e16a5025bb23775",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4e271173698295e02fe3f47e43faf1e05338db38ac697bc891f0e61eabf1f159",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "97e5d6bfebbba2843243da0471a042b4ef92b3c55beba5272f2982c1152483a5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "0caeea446d35bfe9dbf5e9b26a84a5cf6c5f1ce1445ec58af1ba43e9ada65324",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "2a55721dba0ea86203c2f4bbdcc2cc6823a0c625733620e0c0c60e7a12a09fe3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "b277e9c1d7de7d7fc88447a26801203743700a6a4901310b298ed1817faf4ff2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "b349e1cfde0daf0a0489e5a6a1493488dca663d85f59a9b0c444ef18f1d7cf61",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.35.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "02d45b99deb96f5b2ba06fb445e676ab517ae9de09e3ab073a89c300d1d68d89",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "39d4835ea0cdc827b0968deafc0c0d45f524819048cffa165179614d1b50b8e4",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d05e16e2f76329bc1b64c70736b6cb0476d64c74933bb50798248b880683dc29",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "c6143b54d67d933de4d0afcaa98681230cc5132666655412d9359ff27e35ae64",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "0b7402d2a4922e5c9fbae8fce224580d40fbbc5927b0ac1f646a2e5e5f7b40b4",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "5a3bb5587f05a1904f12779f363090d45b21cd6ca94064d5688f46b9520a4316",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "7a91711f5ddf6d7e6eeef1cbae70d6e51df9f26dd8e3681180c456df8249d1c2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.36.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "5b0463dab176c1aea4336ffb6e748c23c104f5f6636d0fd1ec2d28d12dce1875",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "7fa97f465f46d7d49c6e250dc670484f0540ffc579589d7a7c82835dba869191",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "ca5d2d0168cb1a01d76d27ca191a6adf183817c190970a1a33779da8848f5668",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "d0a32750ff9b5e827e137f239acdbd8d28ecde58dda42ab9555ba390962ff626",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "19345ca24b3930cf1001d8784b4ab119048d15d04b02ba9dcc645653a809ae0d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "17d828fcec482e4c5887d8eb3fe1459333b45cdd85cc88ce52cc97606c33e71a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "cc1413622366432ad32d0f312abdb6635487b213144dfe7bc16f52ea57e7fd9f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.37.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "a89b7145356590ddbbff47a18beca350004e67d3ebf99a5906d0b5078a604b07",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "061ccf5c8f95a1663f665cad6f4d39abc5a10cc3aa5ee489da261fe361a9176d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5d5a09e494b52a60a0ba0337277b666eaa48e98ab976da5c5b94bfe2fe24f5ed",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "98ba09fe907a61a443e167e3353c7ca8ee40fc2d8e47a6d41500684870c41827",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "57fa0b20a5450868cda63c18dabb3b657360cfd2d27633ac0da77e79b6e93a28",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "9caf82d89fd8f0920149a77cae16a7ba72dba299f6ff06423c0a5596dae8d5fc",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "b049e6e4da87e179f36a61396813fd540aacb6b73ffed3282c91a44e3edcb068",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.38.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "19c5ebc7de9cee118883b267470901048adffffe3424a2793aedcf127332b204",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "9b380fb631b17078a624dc88c90de4d115963e9355a987fb69faa1637f72d1ec",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "18284f0941bccbdcc05602676b480fab3cd41e84b733ee3f563362c9cb76739e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "84250a71646d0589a032f35c222f7b3fedaf1d472d97d3b9e2adbb11b53cd97d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "51e38a6d49af9d572fa7f08d7b65df02def1c759f33de6cf51ddc592736fca12",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "8f498e795748a1e114e52715e9a63160f66c4eace76b9d1ff67b3da4a4a8968a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "16e3e991c07b727359ef69516c31853398fd5827735d0f416f7077ffe9211de7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.39.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "3327514c1bef70a69f384698244da77c203b86b2c869cbbe4fd364cecab11199",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5ee07eefa9ba88c43d0c9b43280d5ec57fb2a16d8b9368f677d6fb3baf0cb60d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f57bf6e3709d4ec6c7fa4947380357faf5ea6d05d5914856979e564c6dea1948",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "affb722ec6de655ab2bbad726b2e0120e66b6531133b4ae01fb9f1edf90c0e1d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "ae927d8741236fca965fe2028dceedc1811c1ff166acf4d7a7ec29e26d2eb09a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "9313d66bf10b2cb23cde8723c2665feeff7dfd53bae4aa2dc7fce805e2b09713",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "99059b40a20237f88a69cb9aacaaaa3dc13fd8a8fcdd88d72a71cdd80552d70e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.40.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "bf30af844cea24801de8f4723be1c268d072034dee59f66d84be4aa68fed4391",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "47ee2a26e5060ee6a24d9880f5919c3837647d82a9a1cbb5def674e3691e642f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f6879fea619a2be2cfcae46cd05377528545eb6a62bf6fac70a1cf4f465cb74f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a0dd498f98283e33106675c0148d8c470de0ffb263f44c132cc3acd606930721",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "89152e5d2616cf6ddcacb51bd4b1f1b054f26fc08cd6624ef5b431bde424a360",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "a8993f0a36875a223544a35b9553bb64b97309df6e762c44517bfeb5386ee841",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "5c587ed32028a0286770adbe32849399ff1c4196593ca9e844170cf51bcc5b38",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.41.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "40d6612ceed7df0429106b726925c4a45ea83efe961d6140875f9543a9a6ec71",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "440ded94260ab51228f5094c6985f2cde93cc90e0cfa4e83bec65064482f7649",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "249fc5a91c1f15e8305b72eb61af7f4ccf5be63aa457ebdfeb38f60a8e4a3b6f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f60eddf54194b085a47c0e48782358d33d32c9858645b52bc8d010d86fd68ba9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "da13483bc073d89009c8e9d05cf70ca89f031e162cc5404a0ac28c1d5b540bb6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "dbeac231e6485daff825a874cd55f8da8384ebecd337348a6ed47424ae9e41c9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "6667f30a637e350682ecc8a3cf2198548ab78469911dde3b1ae4943abfe9e3aa",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.42.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "aa9fae823de02810653c52b050070f50da962cefbdc1e9decbe39b0b6d8bb5d3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "2c03c0820d17bff6a4406000d60b1649789e3c0a6967c257e38f402343db9b74",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "49bbfab5bef14c2bf238df459af7681750d714aac8cfd8ee9146dbe68a729f93",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5c3ff72ef67a19d151b873fdb28f0357913e45538d309d35fad864e6d50b3b39",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "5e0bfabdfb68b8820d4083d0425c83fc2779b31b0aaf6d649114918bc04856c1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "7de4a7e545e348907d4f154ed408d91ab8f8420be4002e5fefe3c59cfce36303",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "58e1e3b0ec08587101e6763aee3d97a3a0b447177fcdd0f9545b558814e1e252",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.43.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "5370a0ef81e6a56b40e9fc15379fab1041af9820be02686c83502a57c453875b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "27ff0f9825db835728f903b85e28332ebb74fcdb63b029568360ec9d7cfeb35d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "155c3d7eca7a9ddb33712b26487b95b04f523b219b231d41bc6e9f6d066987f9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "c68b64b06ed794383384f9002c6ba0b58275105a20cd8cc226faffb885d9a535",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "b12ad8a8bb084785018d153dd71a6172d78d422535f741ffd68d0c89ffc120cf",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "938a1bca6d7e41a5581f6ee2312775489a4e6243bdfc3e8fd09316daece438e6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "21c3fb89f54f8b7fba8b6b0fbb1eff24b4a13f4f05c9a94465ef0b76654c7e0b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.44.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "c5a14436d4a811481c4a2721084397fe1bf4b8a4718ea9fb60e053fe6454d3b7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "73f042043e635f13a0d122a4961e62978223a846164ff40005d62a8c1bb8d45f",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "6b29bb3ec4d760b328693ec2075273e2f87fcb477198ea99d2355ba1fbe3f2fe",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "dd647c522d145274b89d9e82275a14a09b893c18494bdc6b28e4ffb67bb6c29d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "5c544fdc99c8c4d3ced0a4bfad4a32b7ead3ebab0eb60254a6f8307bedf0625d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "f2f43f61ebc03bc0c8a7d6ff1259451c62d27d9a807e1ba304aa191c141764e1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "b092e6e4324da326fb861227817c38f2b09ed66c2f8cca03089569c760bce4cd",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.45.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "49f30d35192740e313602ffba85390aed06821c36ff1c65e6be293f3ae9ac972",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f8caf32dddf92186fac1ba5b1ff4f181ccc0040ab1b38c461489cc356c50d33a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "8a989920334bc92393686bbf2b2efa3611732fe53f84956d4de40fb861dc64e3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4834b609243d4475ae5e30871ee255334dada8949d02dac96a483f26cb192fa7",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "579dff7d8c5eac6701e7ceed5299beb4c6f1529227374f63825128f5aedf1a6b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "a2ab3e03f854fc1a0a7c71e50b9801925508836cb7a02e076805fcdc774b2a88",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "69a4f3b5a185a9a35c0f231f67dc5a465ead6fb5404953af562bed10f7539d50",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.46.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "c421c4c3824bfa538102a680c5cadfff3ee40c0639f3a0e727348a541a58f1b1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "bd0142a676b162c063ef0d3aac69e28a84b66a05477fba6035639dcf9b850b65",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4f7d891c22784aad2cdaee0c5ce5fd1e33d6e71c3fbb845698ef84a717090b46",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "66718e3f205fd5d58d8e0a80d8c2d869a1e8af2172430de746bc20ec433200d2",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "420cb29e3b2893903f8c64866acfeb93954a739cc2b24b4281c1ad1924847c2d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "8d5882044063d76d03d24bb0477e712f16213820012221f51672188558175259",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "a153d49d4f0eca3739ff3bb2aa3e3bd71d6bc87fa616bfef9890b8989dd55f59",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.47.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "c5ab9dc43617118fd6eb9f7cf6edec79d6d6e7a6d15e7b9a1d10f4c8e8f824d1",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "23a9a99e94e54323779b8093cc5fcf089d2574c528bd896078d50ef52ff587db",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "a78fcbaf3ffdb027087186e2582b931121c2eab3ae481b06729f4bba2e7d973b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "6cb037bd585ae7cf7f27b7d8e6e6364b148438c39a13669d6c8e666569675975",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "59d397baded0c2b3d29c1544f9981f8e2144eeaed1b39640333e97b62271c1f8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "068d0a9c792c2082e49c3e9c991fbab2cdc8dbf4647e5d56d480d21496d32b20",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "f7b8841dfe8b9774ee6ca50c96b5ba0e23da626bb3fea597c69520b00c050b87",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.48.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "ac7f7955b75579f0638d3e64e6c3380386515b8cb1ed160a1578c20df13d1175",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "0fcd19bb99e92f5cff77e6078429ce3a6d8857344b2a843c8d6a7e1f696925e5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "4d44157348c9ddd310695dc14c864bbc15868da6dd3dd9b221c08ef6acac025a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "e633566bf14b4724b48810efe18360b9ac69e95b4491dded550cff85ce11857a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "833fd245bb69b6bf561ce8e8a3f8271bc90f7536c74e7815b400d89bdcb1334d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "23c9fba917b74b1a2ae7366f54565a3d96d2d0fda4068dd1f24cb74d36fd0a1b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "f255dc5c52a27300e359207e369a61ee8fc793825933f3e183c9013b04e998cb",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.49.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "f5b08cea96d8f46f81c7488b8d62cd4daa861c3a9c720fc3826850c2295e6153",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "aadca8ec16a867cc51108504122036d3180b4a49cefeefdfc214a87ee6a04922",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "5c1fd8241fbcc1c27e66f4e9bf1a790783ec51e387b88605354f1d17f5310253",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "ae310a7f1e2aa98cd9fd8a9270af18a84c07b799cef3429a134e874b02e053b5",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "f84769bba2fee2a7098187bc41a2831446c872100f661a8d0d939d43ca4ca77b",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "0b205aeb8ee73e55fa2e78fbda95a0cf92a43f9a0b80444f5778dc083d1bb4d0",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "cdcf9fb2e68b7eb03f98839d8f612a1ce94e25590813f9f29b4f44bb68e6dee8",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.50.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "6436551798c81da55ca6367216278a121ae1720616f9610a5c687a4a0e06fef3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "809ad982abbd2d789f5987a7f2cc7f8b3117e668c96af026c493e34743b3cbbd",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "49e32c8d2c13558901db8e4b04bdc2742b08e7202e72b286c722b18d47c9aa97",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "def5cfc13027bf23767a3350da1b773efb9fcb03142d328c0d6e7ea8e7f749c4",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "b003794db7bf6307c667045ffa915c53b7080c82cabe3c55d4b20339b33b5a8a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "aee66d98ac1223d5b694da5a799baa9e0da8664a588288f3364f3bc37d1682ef",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "f62951febc3c24829e24fa5a9f4c316f5ab0df289dd473db02ded6e1e3487e3a",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.51.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "dc862c6c47dc5ad41303a2baa6b173c25c3affed57f49205b0aa04412749226e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "f74bef10810b0cb3a93c1f7c014da3f7443cec9852ac0edc274c8f481d8b0a49",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "fb590d261a373571292c894afcd7e71cab9ae39780ebca350c35581f0df6416d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "40eae124031d35334db04160927348808b35efaccf64cc40116e67c4febe3909",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "9535472952b188f805d443ec6d38680a2a15db861a907fbed6fd3521a9560acf",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "e183dc4d8a06c4110da78d6f6db7f3d38f0c75e24062eda4d6f550dbbbbfb056",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "e33b3417a787b99f5c0649a7aa3123204099f411a93ee44fc07a84bb03545ffe",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.52.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "50817ac8acd636b72e33ed1e9de0d29d58c4bbb6d7751a55997f4ccaf40887d9",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "54c22bf7fb4a2652393889934c697e92dd607d863ca4342022a665dfdbfeca45",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "ec349f324dca3159cca46a3711c22df5e39bb4ce531f2d8c08ea20660a9cb783",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "02e9bc75761e09e3555dea47f2d592b82f0be4032b023ef2a966fa100e0c4195",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "cdee9ce12fdceab78e4c346057cb4cf946e646b0c46134b0605739f6385a7a77",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "61645607fed62f1d7afe76581081d9b3711b553fbd2d6edabec8737e962885d4",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "880d1f7d6901bfee82c5bd36f45dfbe367700596558fa7da2481c39a466f5e0d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.53.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "c72b82592f1abaadc353befea342fe8b220c3f64ed8aa4d5044110dcafcc6776",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "17947be77cb8cc01a782b111ac37b7c9f36feac7394e952dd4b65b241b10fddd",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "23998d19aa4a789eed263f7c89f64ce81c5e19581f185441dd72f075cc440da6",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "8e30d52e7ddf898f766aa1d730fbe8153198193cb6287955210b5f63d1e2c75e",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "ddb2b508247f0d0af9bc93fcc95893d538ccc9817c6aaf75566d4e98c95aa1c0",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "86f246f7939f535033a6ae09b8978c199f15b0191b86c2a1cd2713e430edd4f3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "643eaf1bf34c823b7f1edf43a4446c766b91589a5103916d837cc21a7b5e3f99",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.54.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "34f792867f2eb4849503b03959193ccd9e2db3017e61fc1f8ae2fed08f18d5fa",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.dt_bias",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "c62e1181d17ae9066f1580fc55bb69327cc3fd10a2dc2cdea946874edaaf83e3",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.A_log",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "6e0edce166fba392ad2e1052dc11cf69f4f99de6f0f9d15f1987c7e91bc7de8c",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.D",
+      "family": "fp16",
+      "shape": [
+        128
+      ],
+      "parameters": 128,
+      "decoded_fp16_sha256": "3213cef8067aff9ed891bae84b92ae1f2732b3bfc43a6c54725a9fae2e436c18",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.conv1d.weight",
+      "family": "fp16",
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "parameters": 40960,
+      "decoded_fp16_sha256": "bcfe867de02764bc60add117d9e0835da99c653430372810c179dc7a2c71a360",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.conv1d.bias",
+      "family": "fp16",
+      "shape": [
+        10240
+      ],
+      "parameters": 10240,
+      "decoded_fp16_sha256": "8ecf0804842bb5da41cca59add2c0d47cfda3a2b12bbd38e972c6bd1f2290b10",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.mixer.norm.weight",
+      "family": "fp16",
+      "shape": [
+        8192
+      ],
+      "parameters": 8192,
+      "decoded_fp16_sha256": "e6b57a00377e4f6d0ed915979dfdb47d5094c80b8943029641deb38d479c886d",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.layers.55.norm.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "0cebaa98b5f5c71290d4f5855504bd69063e5122d4b22c097a915536ee54de32",
+      "stored_fp16_hash_equal": true
+    },
+    {
+      "name": "backbone.norm_f.weight",
+      "family": "fp16",
+      "shape": [
+        4096
+      ],
+      "parameters": 4096,
+      "decoded_fp16_sha256": "faaec522c44fb91b13d39994ddcab415ca0f106eefd127a2fd437b2303759860",
+      "stored_fp16_hash_equal": true
+    }
+  ],
+  "package_receipt": {
+    "format": "E8/W5 raw package decoded to FP16",
+    "manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "verified_files": {
+      "config.json": {
+        "bytes": 462,
+        "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c"
+      },
+      "e8_codebook.bin": {
+        "bytes": 1024,
+        "sha256": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce"
+      },
+      "embedding.uniform": {
+        "bytes": 671744079,
+        "sha256": "038d44d2039659de786b743bae6858fd0c8e65be85a1843bd5eb1c36f672ca68"
+      },
+      "layer0.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d9f7352c9bbb620f26b4d17130e75f784d3c3b6e3ba8d75c0c2416e9cb4bb963"
+      },
+      "layer0.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "521ef83aa0694f5f3b62d41a579cc4b72cb2e13be1cb07e69b5d7137612e14fb"
+      },
+      "layer1.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e3b3b490299aa0ac1c91d2dc273c8de8892e73f28d068b4f2a5b170c588952ba"
+      },
+      "layer1.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "9fcd9fe47220f99b633253827c03c92d467d2cefa7421b8f27743ee2684062ec"
+      },
+      "layer10.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e293d53b90803db28b0e961557b845edfd6cb38b8bf2552f1818ed9f93df939b"
+      },
+      "layer10.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "ec7e7799cdf58cf3df30be7d7c8081da8de9fc376e81fb15b885a0f7ad606273"
+      },
+      "layer11.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e82b75d632e77d39f5382b95086f2b79db6cd74ea7364db410ee31e557c764cc"
+      },
+      "layer11.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "e95443b57b8eb624674433b138dc84ae4392683599de5a53feb6797618f1ef07"
+      },
+      "layer12.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "9676c53b749fb53e1c0c8eebea24d4f85f34ab4e42974f476aef2635980b53ad"
+      },
+      "layer12.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "7bc59adf0ee878068b09fbf751f362c62e0acc0769e61a471649a6c30477ec51"
+      },
+      "layer13.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e6b227eb4b295d377629097e9db4bffcbb36dbb2bca3f8cf3923de339db07692"
+      },
+      "layer13.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "900e90ebab1165685346018a63eb83abd285d0141d0838c4df9f961595d11e5a"
+      },
+      "layer14.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "053130870977f39797d4368624888969b2b13a88d407b01283eb3963cd52867b"
+      },
+      "layer14.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "195c6226bcd5acc04f3c9d2b63323358c51f06ded5a074aaa09ca59f20f0ceae"
+      },
+      "layer15.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "071070416b9f527eb33eb17258fdab3207edab65c4a5c573a6c7aed73a424afa"
+      },
+      "layer15.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8f96acc32d6b05a8293e6d932180ab468bc18a9116b1c129f313c98979547a70"
+      },
+      "layer16.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "930909d6c708d2d8801119b6b5c9f2e261dcc829407154a88a40e0e178cfe71b"
+      },
+      "layer16.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "45d01bfc97a6ee5a40a90579d874f53aac8b0616aea52ea18264878ce8a86b57"
+      },
+      "layer17.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0f951ca5ea1dfd40defeb3af2893082e67b18cc041e71d01f47128c5dd964742"
+      },
+      "layer17.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "dd407aa3a154c5b9c05f2d77080325eaa677f43ff633c6a4634d9518cfdfe5eb"
+      },
+      "layer18.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "412eb8b779d7444aef5e3b3b6a67b1fb102e7fdefc48d2f1839a14c20eabd50a"
+      },
+      "layer18.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "639a80ce0c6d59731c774c7675e64d2ac04f88f0294fcaecbe4bf01286067f4f"
+      },
+      "layer19.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "04d6657f8fa787924e1fc91a3aaf6f792b6d0362e4ca6eb15bc42567a3fe87f9"
+      },
+      "layer19.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "75adf6fe0964adc323eb9c4e84d0a48b34cc7f5332f36eccc481f10adbdeb2a8"
+      },
+      "layer2.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "559cb52293069b83d3afe4dfd1764b7475e452c615c7bbfce1043b7c0405b4c4"
+      },
+      "layer2.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "75ddfc49e62bcf84f63f3ec1c3c5568afd20b55dda6d2b87ff46325a97b0c8ce"
+      },
+      "layer20.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "6f75ba3f78d8d41a09d26c37e244dee1f88765bbfcdad12f5f9247e177a094ba"
+      },
+      "layer20.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d3af68f4e4ed3fbf642fb4e79d01358708207a95ee5923fb19628518938bc048"
+      },
+      "layer21.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "786143f77a3d9231b634ab5d14877d0814787dff3e5281cbe07c1f01f54dfd62"
+      },
+      "layer21.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8d0e019b1d1ee1037ccdb78d5058a5b8602ad48bf375ff6a196ec928e708071a"
+      },
+      "layer22.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "50f190935fa282411bdd81b66359bf0e83d75c3729e4e5e0fc1970d51bbc1561"
+      },
+      "layer22.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "07e922fbf147ddf4930ff12e9b4488c43684b737339671c388d7277a80011ec4"
+      },
+      "layer23.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "cfb05edb20e635ba3fb3511cdc002827e11fbd176b7d16ba721604193db44d32"
+      },
+      "layer23.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "47d710a8951f0db57f66a32dfceb7d228b55ede5f55ed5447b6e73362e01966d"
+      },
+      "layer24.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "9dfc53e8d04eb76506a26e6c2cd79cae8a183586bb4cc246b440f261f2809f48"
+      },
+      "layer24.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "98d7bfb990bdc96ddcabcf34572f93723aa9ef26de382451c13df4ec417146fe"
+      },
+      "layer25.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "b17501a9106c3a076eb442fd4c0cb9384557acd3b793410ea0d37a73ad4cd000"
+      },
+      "layer25.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "f273ff073eb0e4987443c39a68bdb81b2d132e10db417a0aa1427676f87ffd8d"
+      },
+      "layer26.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "726bfbeb183304d556959f9daa642d63b9ca2d66d7b98c6e2cb9920205c2c325"
+      },
+      "layer26.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8d3e9df4fc208b3bc174cdb9c4213d3117f32123a814a3877cf2950af1d7cd0b"
+      },
+      "layer27.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d3acbb4d5f1e27ba2700258b24c3691b6a485e5dda9e94e26b135995ba5d6dea"
+      },
+      "layer27.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "a70710813e2032414c47e8badb3c25652cacfdce14ffaa87a2c4e375fd2febaa"
+      },
+      "layer28.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "41a7a58a2170a9333beade5531e50066f4236fb1e1fcdcbe67bb44fb7af98d78"
+      },
+      "layer28.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "45b16b4f7b63a49512bc2f89d4e9e50a78e901faa281d95abce516535baf7690"
+      },
+      "layer29.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0db524e39b47a0655ffd0ff1df829920ccdd573266d67bd5394473cfaf9d62b4"
+      },
+      "layer29.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d952d522b0c499e6431af076f7ea0973757eab3237556b980c436e5a5deed08f"
+      },
+      "layer3.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "01594381462d6ddbec4730d248d88d5620ffba74abfd0bf84d0bcbfc4140c606"
+      },
+      "layer3.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "9980c41736c84e57216df9d4d29907960d9a208270c1c6479c937eba9d8db9be"
+      },
+      "layer30.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0ca11b1acc96d419e02a8f9ce6afb8f72493543ebcf4a160c4fd831d1dad9da2"
+      },
+      "layer30.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d820ccf1fa4851ad7a00d554a5c304eefa7db9a73dd179394344c54c91e87d43"
+      },
+      "layer31.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "993a1ef103af50fe4ed41507b8f50043a7e315dbe27645fbd5ccd82dec8f0c38"
+      },
+      "layer31.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "594f386cffbdf3c5cf785e69c07798342e2bb919b30f6ae2d6e4a41ee0a61280"
+      },
+      "layer32.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "100e966681bc8f7788d751d0fcb30846fb11b82d410c087347e8c2042be03817"
+      },
+      "layer32.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "798384906b1ccb64f094c9f5345f09d12b6c97b6caf97466ff169376d7dcbf76"
+      },
+      "layer33.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "49e096dd1b965bef0665b5b8383e4c211bfe6bcd0b255dd87a01ee778977fb6a"
+      },
+      "layer33.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8dfb511b61a27318309ba368e7283c0f6645d111380529ccb2c2cf6952fb26ea"
+      },
+      "layer34.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d887808a0827d8fa3b360a00337e4a6df832478aebc111646ea8b4f244bfa830"
+      },
+      "layer34.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "f2f90e86112a11b66a7f4b2679b3a7675be5ae436817ee76748a994bdbe9e8ab"
+      },
+      "layer35.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "75f7e7517e4e15c2cc55a9486134febc8dcf99a7d8910db995a91973ae10f0f5"
+      },
+      "layer35.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "1bb2b8bc9d9633d7bbb359638ad5b57c085f318cdd52a460f4b68a982e24507b"
+      },
+      "layer36.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "acec9445bdfd7002e86379e6937e5f8a36b78fb58f5fc68776329abaa09c3f2a"
+      },
+      "layer36.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "889dffeaee6509414e13ce5da5ed4d401401fb1c98068f9d3efc08dd15920038"
+      },
+      "layer37.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "8daac0f7f07ba02722042726a8ca8586b05a709e8474776005e01391aef2d040"
+      },
+      "layer37.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d4819c1d7da3348e70163f1fa5c47a3b0886cbb0391b5d68e272683516d57f94"
+      },
+      "layer38.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "a44d33dfe23080cf8ae055340e929a21f9203ee314279d9b5e6aaf74315b29ac"
+      },
+      "layer38.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "033c7c8385d5d430ac3a272c26a898e40a3dabc98e23ba24ce740c4d9811faa5"
+      },
+      "layer39.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "dc7dd24ef0d340a0363439fbf03fe7194b703c62d4b464f7204512260ddc1203"
+      },
+      "layer39.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "96d48b0407088200e03ded203c94473cb101aa5ca98836bce7dd2f21415b5bb5"
+      },
+      "layer4.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0350b10bb3e25b36df518f5ce754a91661dbfeee7ead4e9433c8fbbe09786e2c"
+      },
+      "layer4.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "7b9009c6c4f78fa3f77d8fc751a2a937643b97d6dbdca83ebaeb61f44c0e68d2"
+      },
+      "layer40.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "ccc650cb662ebb4bec700ae0ab50f1c1a45cb391c17311f084d0103e239d0de7"
+      },
+      "layer40.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "20160d7a3bd0862206de99f06318155b24e2bd90c6afb4a6ada556ed72b7e4b1"
+      },
+      "layer41.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "60765008c93242bc8548eacc700d3ba7f8ead577a1b769b73839134b0bd160ec"
+      },
+      "layer41.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "14363bbfc5ba3f7e876ae7d0db649a008b2d36e53d5a1080e7fe980ab5276611"
+      },
+      "layer42.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "fcbd72d3f30af3028f0ac5f6462ce05ca5adee56a611e592c80414364e5b55b3"
+      },
+      "layer42.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "487c6505a9072477cb52d8163f9cbcf313ba99ca05272f30b6020c98e90a9f08"
+      },
+      "layer43.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "059101a4836252f4b67f0f7d6f597ed1f5450c1aa93a262e578b2562bf39ee7d"
+      },
+      "layer43.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "190dbffae69b8468a3bff03051f5770fb18e78a69ec1d27d5d1a5434b4e3287d"
+      },
+      "layer44.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "fc0f5795e79ad7f421299cffbc58de1aff0ce3fcb0d74497baedabeb54d3247a"
+      },
+      "layer44.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "49ac0a6d50a2b23c1b1a83d594660b73320faf0bfbc5cf20a17e20eeb3602979"
+      },
+      "layer45.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "ac0013e9565740209affaa587da77608b212dea7028de911fef59e7ff549289d"
+      },
+      "layer45.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "dd3469e1edda156c92d63779c1cf8448e0f5e6e55ad7f65ebc4dddf5c08aed13"
+      },
+      "layer46.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "dbfe46d951fdc933273b844c36b7f20b1051b1b8d5b0e9f7f049a3c303742ff4"
+      },
+      "layer46.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "bec5727fdd2f13bd5c50e23cad9c050f7d685db348e07bbe6dbc5ac08dddccb4"
+      },
+      "layer47.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "25bdeced69d48de1a7d32ef3610ba3536c26b575fa769f98d1ccdabc06a8b26c"
+      },
+      "layer47.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "84f54317e7eabddb119dd34c31325b81b589d251506b40065cabb9e397d38618"
+      },
+      "layer48.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "380e929721a0f455b311d20222a509fae8101f83d6a393ba41dbf7711c4d812e"
+      },
+      "layer48.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "fb04bc61fee6e5287e8690456da96761ff0d79fe32cde058d7ef915021e7a1ec"
+      },
+      "layer49.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d875ed8e8f32d92c925b24f58886b0d436c0890ffa2aa750bd4b3a0ae3ee411d"
+      },
+      "layer49.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "5c7ddb03fe88b5b3db3da3d08a2d4b81b33d4589c671084de8ab9602640e64f7"
+      },
+      "layer5.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "f4d726a1f1dd642f21a6719709347b9de77273061174ce7ae9e4134391127e9b"
+      },
+      "layer5.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "caab619b217f97c9e7865ec40b35267a474faae26487ffcf0f39180f90ea333d"
+      },
+      "layer50.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d6e2786ff98594d5953c4fd28de0113d47bec1de0eb405ebaca3053ccc8c2f9d"
+      },
+      "layer50.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "f0c29af4c20c18791257af77b71ecc375ed6f3e6146e4667e1cf063cddd9f116"
+      },
+      "layer51.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "c4a2b73a1010744e1c048c64a50a2624b46764ae2371c5d5e24ec145ea558c02"
+      },
+      "layer51.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "66d6027804a9f9da53b509678c61c383224e264cac0ea0ed50f9cca2c30c970b"
+      },
+      "layer52.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "6b6666e6ea53479b184991a506bfc03c27604ffdc20ae37a42d883a8c849b1d3"
+      },
+      "layer52.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "85a718e3efd72bdbac843ecf448880816ae8c8d9f316944716d87274597d58ca"
+      },
+      "layer53.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "685670e0a056b94018cd43fe07b908963a0913b99b5e6c80543e901a40618145"
+      },
+      "layer53.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "dd45fba958c4752038f212eb0d1cd2359849c7ca9746b3f6016d076173327d1a"
+      },
+      "layer54.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "610eeb3f011c366321c0f632cc2b83cd1e1cf72ae0d56e6e9ca55cbf1e129a31"
+      },
+      "layer54.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "845383a65dec2eb157ddf4662b0f501fb4db59fd737c2ca56aa5917ebde6d1bc"
+      },
+      "layer55.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "baef19318f0bd852c20c351588ca5f9692a37a5a194671dd7f7f50a542b2d2ac"
+      },
+      "layer55.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "83212d462a311cd1af94656182be2d00b75a0b74da2824892fc14fc8a12e11e8"
+      },
+      "layer6.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "dde527c3174140d129cdcbe8e5d9f6762e9592be377516d26b907832f403b9e7"
+      },
+      "layer6.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "e6629903b316bf20644893ec3d9935ec458472794bcc2f7fbce712af01770253"
+      },
+      "layer7.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "88a6a0b81996b72abb8c6abf018d5bf1f9616be16cd5d65803bb64b837aa2ae4"
+      },
+      "layer7.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "13721e3ab7a83fc71211dfba9126db7d6a2f7b71346942f91ec957fcc2d9a8a1"
+      },
+      "layer8.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "c38080dc193e798599bb1e4c7833cfc6565e97de9a0c09cae94e30e2006ded8c"
+      },
+      "layer8.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "ba52f4eae7e4fbf4ae48d0d3e33fa556991105e9b542cd6b0d1ec95875a82f4d"
+      },
+      "layer9.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "bd80cbcbd0aaf342e542196bcff68c3d31cf35c7c3333dd7ddbc18c6ebba7f16"
+      },
+      "layer9.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "04cc564fd1d674a70401dce370efab14dd770327c38b411a6b34eed3e376b5f4"
+      },
+      "lm_head.uniform": {
+        "bytes": 671744079,
+        "sha256": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98"
+      },
+      "other_fp16.pt": {
+        "bytes": 7283930,
+        "sha256": "c114c632eb38a81b7927c90aa20d289528992049bf1f9831a43a1291721d7b15"
+      }
+    },
+    "verified_file_bytes": 2886482462,
+    "parameter_count": 8236999680
+  },
+  "load_seconds": 99.88285699300468,
+  "audit_seconds": 77.3365137630608,
+  "elapsed_seconds": 177.21937120403163,
+  "peak_cuda_allocated_bytes": 16839754752,
+  "peak_cuda_reserved_bytes": 18593349632,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

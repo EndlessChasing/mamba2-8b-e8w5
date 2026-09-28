@@ -27,7 +27,7 @@
     ]
   },
   "architecture": {
-    "status": "Verified against the official 507-tensor inventory and checkpoint arguments; numerical runtime smoke tracked separately",
+    "status": "Verified against the downloaded official tensor inventory and checkpoint args; source overrides community conversion defaults",
     "num_parameters_expected": 8236999680,
     "d_model": 4096,
     "n_layer": 56,
@@ -42,7 +42,13 @@
     "rms_norm": true,
     "chunk_size": 128,
     "norm_epsilon": 1e-05,
-    "inventory_receipt": "source_tensor_inventory.json"
+    "inventory_receipt": "source_tensor_inventory.json",
+    "evidence": [
+      "source_tensor_inventory.json",
+      "source_args_audit.json"
+    ],
+    "source_parameter_dtype": "bfloat16",
+    "baseline_compute_dtype": "float16; source is cast for the reference quality protocol"
   },
   "tokenizer_semantics": {
     "implementation": "Native SentencePiece encode_as_ids and decode_ids; no automatically inserted BOS or EOS",

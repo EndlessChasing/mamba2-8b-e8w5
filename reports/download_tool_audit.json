@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "scope": "Static outer-release naming audit and small offline downloader fixtures; not a real published-release download",
+  "tests": {
+    "offline_unittest_cases": 10,
+    "passed": 10,
+    "torch_required": false,
+    "network_payload_downloads": false
+  },
+  "layout": {
+    "model_weight_parts_assumed": 2,
+    "report_names_are_examples_with_the_packager_unique_role_number_prefix": true,
+    "outer_paths_checked": [
+      "release_manifest.json",
+      "mamba2-8b-e8w5.huff.part-00001-of-00002",
+      "mamba2-8b-e8w5.huff.part-00002-of-00002",
+      "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "config.json",
+      "source.zip",
+      "raw_manifest.json",
+      "container_verification.json",
+      "MODEL_CARD.md",
+      "licenses/THIRD_PARTY.md",
+      "licenses/NVIDIA_MAMBA2_MODEL_CARD.md",
+      "licenses/MAMBA-APACHE-2.0.txt",
+      "licenses/QUIP-SHARP-GPL-3.0.txt",
+      "licenses/APACHE-2.0.txt",
+      "licenses/PROJECT-LICENSE",
+      "reports/quality-01-quality_comparison.json",
+      "reports/quality-02-baseline_full.json",
+      "reports/quality-03-candidate_full.json",
+      "reports/provenance-04-source_model.json",
+      "reports/provenance-05-source_download.json"
+    ],
+    "flat_basename_collisions": [],
+    "invariant": "Any additional weight part gets a unique numbered basename; each report gets unique role-number prefix. Actual release manifest must be rechecked before upload."
+  },
+  "files": {
+    "scripts/download_release.py": "507b928871b3dd56fdfe9fd2fbda021f8fcf9a622f37344ba79d6841b1ea8458",
+    "tests/test_download_release.py": "1c82e395a01ad4ea635bb5aa23b5517c51b20d040d8def7be31599839ad1dd65",
+    "docs/DOWNLOAD.md": "2462b6ac818c6ae1b0c3bf0bfa5f0f49c7128a25911df503d4d1076677240790"
+  },
+  "independent_review": "Runtime agent found no blocker; case-insensitive parent directory alias rejection added from review."
+}

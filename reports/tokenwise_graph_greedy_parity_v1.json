@@ -1,0 +1,1545 @@
+{
+  "complete": true,
+  "suite": "dev",
+  "execution": "tokenwise",
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "weight_format": "original weights cast to FP16",
+  "raw_package": null,
+  "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "evaluation_source_sha256": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+  "package_receipt": {
+    "format": "original BF16 checkpoint cast to requested dtype",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "parameter_count": 8236999680
+  },
+  "implementation": {
+    "name": "CUDA graph replay of native tokenwise steps",
+    "graph_source_sha256": "285c6fc96b1b02c5e802b6b62354d7bb2ef595f30cad9c2a4b8fbe24287f0183",
+    "driver_source_sha256": "b8b54da06ba42a1c5ca86c1ddb7bc1aa8091ebd464a7a7e3db5788066e54a132",
+    "bitwise_parity": {
+      "sha256": "07efb1b02fc5abe1dd899107723be4ac4c22a83083a941de6a75849728fed61a",
+      "receipt": {
+        "complete": true,
+        "implementation": "native tokenwise CUDA graph",
+        "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+        "graph_source_sha256": "285c6fc96b1b02c5e802b6b62354d7bb2ef595f30cad9c2a4b8fbe24287f0183",
+        "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+        "package_receipt": {
+          "format": "original BF16 checkpoint cast to requested dtype",
+          "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+          "parameter_count": 8236999680
+        },
+        "environment": {
+          "python": "3.10.12",
+          "packages": {
+            "torch": "2.11.0+cu128",
+            "mamba-ssm": "2.3.2.post1",
+            "numpy": "1.26.4",
+            "triton": "3.6.0",
+            "datasets": "4.8.5",
+            "sentencepiece": "0.2.1"
+          },
+          "cuda_runtime": "12.8",
+          "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+          "tf32_matmul": false
+        },
+        "token_sha256_int64le": "a90ad8a3a638d8566f643a4cb4ee333ae03bbdacecb53c0dd537d50ae672c9a3",
+        "parity": {
+          "tokens": 128,
+          "hidden_bitwise_equal": true,
+          "all_caches_bitwise_equal": true,
+          "all_hidden_finite": true,
+          "capture_state_reset_verified": true,
+          "hidden_max_absolute_error": 0.0,
+          "hidden_relative_error": 0.0,
+          "cache_tensors": [
+            {
+              "layer": 0,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 0,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 1,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 1,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 2,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 2,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 3,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 3,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 4,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 4,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 5,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 5,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 6,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 6,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 7,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 7,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 8,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 8,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 9,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 9,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 10,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 10,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 11,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 11,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 12,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 12,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 13,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 13,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 14,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 14,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 15,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 15,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 16,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 16,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 17,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 17,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 18,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 18,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 19,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 19,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 20,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 20,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 21,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 21,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 22,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 22,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 23,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 23,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 24,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 24,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 25,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 25,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 26,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 26,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 27,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 27,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 28,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 28,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 29,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 29,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 30,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 30,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 31,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 31,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 32,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 32,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 33,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 33,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 34,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 34,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 35,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 35,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 36,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 36,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 37,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 37,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 38,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 38,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 39,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 39,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 40,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 40,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 41,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 41,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 42,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 42,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 43,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 43,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 44,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 44,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 45,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 45,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 46,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 46,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 47,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 47,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 48,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 48,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 49,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 49,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 50,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 50,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 51,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 51,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 52,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 52,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 53,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 53,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 54,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 54,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 55,
+              "cache": "conv",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                10240,
+                4
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            },
+            {
+              "layer": 55,
+              "cache": "ssm",
+              "dtype": "torch.float16",
+              "shape": [
+                1,
+                128,
+                64,
+                128
+              ],
+              "bitwise_equal": true,
+              "max_absolute_error": 0.0
+            }
+          ],
+          "cache_bytes": 122028032,
+          "plain_seconds": 14.54415328009054,
+          "capture_seconds": 0.20315019704867154,
+          "graph_seconds": 2.166777175036259,
+          "steady_sequence_speedup": 6.712343773811056,
+          "plain_tokens_per_second": 8.80078733598187,
+          "graph_tokens_per_second": 59.07391007931309,
+          "timing_limit": "Single ordered measurement on a shared GPU; includes normal first-token prefill and output copies, excludes graph construction.",
+          "state_rule": "First token uses native prefill; remaining native steps write FP16 conv/SSM caches after every token.",
+          "second_sequence_hidden_bitwise_equal": true,
+          "second_sequence_caches_bitwise_equal": true,
+          "passed": true
+        },
+        "gpu_memory": {
+          "peak_allocated_bytes": 16942438400,
+          "peak_reserved_bytes": 17230200832,
+          "current_allocated_bytes": 16549801984,
+          "note": "Decoded FP16 quality reference, not compressed model residency"
+        }
+      }
+    },
+    "greedy_parity": null,
+    "capture_seconds": 8.044143793056719,
+    "parity_scope": "Source-model implementation checks; not a proof for every possible input or quantized weight value."
+  },
+  "greedy_parity": {
+    "passed": true,
+    "case_id": "validation-n16-t0-s0",
+    "prompt_token_sha256_int64le": "56e05dd4a92ec1bc55ad1a3c3a8c358b711e75a365c1f9f442f756316d3d230f",
+    "prompt_tokens": 263,
+    "plain_generated_ids": [
+      251490,
+      251574,
+      251525,
+      251556,
+      251574,
+      251581,
+      251581,
+      14,
+      14,
+      155786,
+      276,
+      2184
+    ],
+    "graph_generated_ids": [
+      251490,
+      251574,
+      251525,
+      251556,
+      251574,
+      251581,
+      251581,
+      14,
+      14,
+      155786,
+      276,
+      2184
+    ],
+    "plain_output": "613677\n\nLookup the value",
+    "graph_output": "613677\n\nLookup the value",
+    "plain_cache_bytes": 122028032,
+    "graph_cache_bytes": 122028032,
+    "plain_seconds": 9.276768938056193,
+    "graph_seconds": 8.132311813998967,
+    "timing_limit": "Single ordered run on a shared GPU; no dedicated throughput claim.",
+    "scope": "One validation prompt; parity of native-vs-graph outputs, not a recall-quality result."
+  },
+  "gpu_memory": {
+    "peak_allocated_bytes": 16942437888,
+    "peak_reserved_bytes": 17202937856,
+    "current_allocated_bytes": 16671839744,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  }
+}

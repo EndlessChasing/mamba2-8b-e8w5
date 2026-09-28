@@ -67,7 +67,7 @@ def git_value(*arguments):
 def software_snapshot(path):
     """Ship matching small source files, including dirty changes, not Git history."""
     candidates = set()
-    for name in ("mamba_e8w5", "scripts", "tests", "docs", "licenses", "third_party"):
+    for name in ("mamba_e8w5", "scripts", "tests", "docs", "licenses", "third_party", "reports"):
         directory = ROOT / name
         if directory.exists():
             candidates.update(p for p in directory.rglob("*") if p.is_file())

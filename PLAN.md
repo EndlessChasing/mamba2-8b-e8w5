@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: source/runtime checks and 65,536-token calibration passed; first full-size E8 layer pilot running. No complete compressed 8B model or quality result yet.
+Status: all 8.237B parameters quantized and independently decoded; raw data files 2,886,482,462 bytes. Development PPL +17.6%; full and tokenwise quality measurements running. No model release yet.
 
 ## Scope
 
@@ -28,9 +28,9 @@ Status: source/runtime checks and 65,536-token calibration passed; first full-si
 ## Compression
 
 - [x] Collect train-only FP32 input covariances for all112 projections.
-- [ ] Generate and decode-check every E8 matrix; bind resumption to source/config/calibration/code hashes.
-- [ ] Stream W5 embedding and lm_head separately, including all scales and rounding rules.
-- [ ] Save all remaining model parameters and configuration; verify complete parameter coverage.
+- [x] Generate and decode-check every E8 matrix; bind resumption to source/config/calibration/code hashes.
+- [x] Stream W5 embedding and lm_head separately, including all scales and rounding rules.
+- [x] Save all remaining model parameters and configuration; verify complete parameter coverage.
 - [ ] Build actual entropy-coded container with all tables, offsets, padding and metadata counted.
 - [ ] Restore complete package with SHA256 equality and independent chunk decoding checks.
 
