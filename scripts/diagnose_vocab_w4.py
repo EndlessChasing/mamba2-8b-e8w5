@@ -203,7 +203,11 @@ def self_test():
     with tempfile.TemporaryDirectory() as tmp:
         path=Path(tmp)/'fixture.uniform';info=codec.write_uniform(path,weight,bits=4,device='cpu',rows_per_chunk=2)
         x=weight.float().reshape(-1,128);s=(x.abs().amax(-1,keepdim=True)/7).half().float();s=torch.where(s==0,1,s)
-        expected=(torch.round(x/s).clamp(-7,7)*s).half().reshape_as(weight);actual=codec.read_uniform(path)
+        expected=(torch.round(x/s).clamp(-7,7)*s).half().reshape_as(weight)
+        # Unsigned offset codes do not retain IEEE negative-zero signs.
+        # Match that format contract before requiring byte-exact readback.
+        expected=torch.where(expected==0,torch.zeros_like(expected),expected)
+        actual=codec.read_uniform(path)
         assert raw_tensor_hash(expected)==raw_tensor_hash(actual)
         assert raw_tensor_hash(codec.read_uniform_rows(path,1,4))==raw_tensor_hash(expected[1:4])
         assert [len(v) for _,v in codec.iter_uniform(path,chunk_rows=2)]==[2,2,1]
