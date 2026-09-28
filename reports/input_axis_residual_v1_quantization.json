@@ -1,0 +1,4066 @@
+{
+  "format": "MAMBA2_INPUT_AXIS_RESIDUAL_V1",
+  "complete": true,
+  "script_sha256": "b06c947c0b034c645ea66f70432eb929df7c7791c31bc4f720d42fe65d960aa7",
+  "fitting_language_loss": false,
+  "mode": "quantization",
+  "quantization_matrices": 56,
+  "binding": {
+    "protocol_sha256": "bf4af74313812a5f20373e9cfa68654b2cbe39a66841788ae4c66e965aa80088",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "calibration_manifest_sha256": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+    "codec_source_sha256": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+    "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+    "quip_sha256": {
+      "lib/codebook/latticee8_padded12.py": "af3442929e4dd033f1a9776eab36bea42ba9dd17761a3d0056639f0db7c4e75f",
+      "lib/algo/quip.py": "abd4986cbd636dea77809bc0b816964f406e0f2440cdde39cc83ba7734052fc4"
+    },
+    "builder_source_sha256": "b06c947c0b034c645ea66f70432eb929df7c7791c31bc4f720d42fe65d960aa7",
+    "verifier_source_sha256": "baff8c56c875258830ac00076f880105b7933a173f57ba0bf38e27cbf1436c06",
+    "checked_input_sha256": {
+      "/home/horde/Mamba2-8B-E8W5/docs/INPUT_AXIS_RESIDUAL_PROTOCOL.md": "bf4af74313812a5f20373e9cfa68654b2cbe39a66841788ae4c66e965aa80088",
+      "/home/horde/Mamba2-8B-E8W5/reports/vocab_w4_v1.json": "3ae1bb986ddfa7f2e514fb2451885a83feee5b6c5cc3a1924f248b4a259e353b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/manifest.json": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/small_compensation_v1/manifest.json": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/small_compensation_v1/other_fp16.pt": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/manifest.json": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+      "/home/horde/Mamba2-8B-E8W5/models/source/model_optim_rng.pt": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/evaluation.py": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/small_overlay.py": "3512c1b232c4039c16a26ffc0fe8c2eac1be6bb9c704ccbcb1d4e8e7788a1286",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/norm_training.py": "25ac3ec6ba167902014018f99fbf8dbbc659e0e4903f80baf28e28a4a3e74087",
+      "/home/horde/Mamba2-8B-E8W5/scripts/train_norm_compensation.py": "da1818af295738cfa8a012b35ff0d1f007c410f27988d9bdaf88425fbedc47f2",
+      "/home/horde/Mamba2-8B-E8W5/scripts/train_low_rank_compensation.py": "fdcb974e7abcd9379a6da900cd5801839e03973275010185f59235d67d938273",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/low_rank_training.py": "1948c89100750477e2bacda8013c97ff3e2ccbde0e444b961092f28c96c7f503",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/low_rank_residual.py": "050bc995c14477189b5b919d8d75c31e6c18dd4815d0de54cb72da39f6e083d6",
+      "/home/horde/Mamba2-8B-E8W5/scripts/evaluate_teacher_kl_compensation.py": "b899318efba83afe9b8a091f7456d92aa9c929a0e2b43875725a5d4372cea071",
+      "/home/horde/Mamba2-8B-E8W5/scripts/evaluate_small_compensation.py": "2102d406da33482303f0dd9a6446b1c070fdf28ecade70e9ab8da9cdfd0202be",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/quantize.py": "7a63da784932e53eecfa49e1403d140e142f05d97b1621729af7fe3f20b03b08",
+      "/home/horde/Mamba2-8B-E8W5/third_party/quip-sharp/lib/codebook/latticee8_padded12.py": "af3442929e4dd033f1a9776eab36bea42ba9dd17761a3d0056639f0db7c4e75f",
+      "/home/horde/Mamba2-8B-E8W5/third_party/quip-sharp/lib/algo/quip.py": "abd4986cbd636dea77809bc0b816964f406e0f2440cdde39cc83ba7734052fc4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/config.json": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/e8_codebook.bin": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/embedding.uniform": "038d44d2039659de786b743bae6858fd0c8e65be85a1843bd5eb1c36f672ca68",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer0.in_proj.e8": "d9f7352c9bbb620f26b4d17130e75f784d3c3b6e3ba8d75c0c2416e9cb4bb963",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer0.out_proj.e8": "521ef83aa0694f5f3b62d41a579cc4b72cb2e13be1cb07e69b5d7137612e14fb",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer1.in_proj.e8": "e3b3b490299aa0ac1c91d2dc273c8de8892e73f28d068b4f2a5b170c588952ba",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer1.out_proj.e8": "9fcd9fe47220f99b633253827c03c92d467d2cefa7421b8f27743ee2684062ec",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer10.in_proj.e8": "e293d53b90803db28b0e961557b845edfd6cb38b8bf2552f1818ed9f93df939b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer10.out_proj.e8": "ec7e7799cdf58cf3df30be7d7c8081da8de9fc376e81fb15b885a0f7ad606273",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer11.in_proj.e8": "e82b75d632e77d39f5382b95086f2b79db6cd74ea7364db410ee31e557c764cc",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer11.out_proj.e8": "e95443b57b8eb624674433b138dc84ae4392683599de5a53feb6797618f1ef07",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer12.in_proj.e8": "9676c53b749fb53e1c0c8eebea24d4f85f34ab4e42974f476aef2635980b53ad",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer12.out_proj.e8": "7bc59adf0ee878068b09fbf751f362c62e0acc0769e61a471649a6c30477ec51",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer13.in_proj.e8": "e6b227eb4b295d377629097e9db4bffcbb36dbb2bca3f8cf3923de339db07692",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer13.out_proj.e8": "900e90ebab1165685346018a63eb83abd285d0141d0838c4df9f961595d11e5a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer14.in_proj.e8": "053130870977f39797d4368624888969b2b13a88d407b01283eb3963cd52867b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer14.out_proj.e8": "195c6226bcd5acc04f3c9d2b63323358c51f06ded5a074aaa09ca59f20f0ceae",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer15.in_proj.e8": "071070416b9f527eb33eb17258fdab3207edab65c4a5c573a6c7aed73a424afa",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer15.out_proj.e8": "8f96acc32d6b05a8293e6d932180ab468bc18a9116b1c129f313c98979547a70",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer16.in_proj.e8": "930909d6c708d2d8801119b6b5c9f2e261dcc829407154a88a40e0e178cfe71b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer16.out_proj.e8": "45d01bfc97a6ee5a40a90579d874f53aac8b0616aea52ea18264878ce8a86b57",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer17.in_proj.e8": "0f951ca5ea1dfd40defeb3af2893082e67b18cc041e71d01f47128c5dd964742",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer17.out_proj.e8": "dd407aa3a154c5b9c05f2d77080325eaa677f43ff633c6a4634d9518cfdfe5eb",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer18.in_proj.e8": "412eb8b779d7444aef5e3b3b6a67b1fb102e7fdefc48d2f1839a14c20eabd50a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer18.out_proj.e8": "639a80ce0c6d59731c774c7675e64d2ac04f88f0294fcaecbe4bf01286067f4f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer19.in_proj.e8": "04d6657f8fa787924e1fc91a3aaf6f792b6d0362e4ca6eb15bc42567a3fe87f9",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer19.out_proj.e8": "75adf6fe0964adc323eb9c4e84d0a48b34cc7f5332f36eccc481f10adbdeb2a8",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer2.in_proj.e8": "559cb52293069b83d3afe4dfd1764b7475e452c615c7bbfce1043b7c0405b4c4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer2.out_proj.e8": "75ddfc49e62bcf84f63f3ec1c3c5568afd20b55dda6d2b87ff46325a97b0c8ce",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer20.in_proj.e8": "6f75ba3f78d8d41a09d26c37e244dee1f88765bbfcdad12f5f9247e177a094ba",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer20.out_proj.e8": "d3af68f4e4ed3fbf642fb4e79d01358708207a95ee5923fb19628518938bc048",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer21.in_proj.e8": "786143f77a3d9231b634ab5d14877d0814787dff3e5281cbe07c1f01f54dfd62",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer21.out_proj.e8": "8d0e019b1d1ee1037ccdb78d5058a5b8602ad48bf375ff6a196ec928e708071a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer22.in_proj.e8": "50f190935fa282411bdd81b66359bf0e83d75c3729e4e5e0fc1970d51bbc1561",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer22.out_proj.e8": "07e922fbf147ddf4930ff12e9b4488c43684b737339671c388d7277a80011ec4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer23.in_proj.e8": "cfb05edb20e635ba3fb3511cdc002827e11fbd176b7d16ba721604193db44d32",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer23.out_proj.e8": "47d710a8951f0db57f66a32dfceb7d228b55ede5f55ed5447b6e73362e01966d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer24.in_proj.e8": "9dfc53e8d04eb76506a26e6c2cd79cae8a183586bb4cc246b440f261f2809f48",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer24.out_proj.e8": "98d7bfb990bdc96ddcabcf34572f93723aa9ef26de382451c13df4ec417146fe",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer25.in_proj.e8": "b17501a9106c3a076eb442fd4c0cb9384557acd3b793410ea0d37a73ad4cd000",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer25.out_proj.e8": "f273ff073eb0e4987443c39a68bdb81b2d132e10db417a0aa1427676f87ffd8d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer26.in_proj.e8": "726bfbeb183304d556959f9daa642d63b9ca2d66d7b98c6e2cb9920205c2c325",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer26.out_proj.e8": "8d3e9df4fc208b3bc174cdb9c4213d3117f32123a814a3877cf2950af1d7cd0b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer27.in_proj.e8": "d3acbb4d5f1e27ba2700258b24c3691b6a485e5dda9e94e26b135995ba5d6dea",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer27.out_proj.e8": "a70710813e2032414c47e8badb3c25652cacfdce14ffaa87a2c4e375fd2febaa",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer28.in_proj.e8": "41a7a58a2170a9333beade5531e50066f4236fb1e1fcdcbe67bb44fb7af98d78",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer28.out_proj.e8": "45b16b4f7b63a49512bc2f89d4e9e50a78e901faa281d95abce516535baf7690",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer29.in_proj.e8": "0db524e39b47a0655ffd0ff1df829920ccdd573266d67bd5394473cfaf9d62b4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer29.out_proj.e8": "d952d522b0c499e6431af076f7ea0973757eab3237556b980c436e5a5deed08f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer3.in_proj.e8": "01594381462d6ddbec4730d248d88d5620ffba74abfd0bf84d0bcbfc4140c606",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer3.out_proj.e8": "9980c41736c84e57216df9d4d29907960d9a208270c1c6479c937eba9d8db9be",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer30.in_proj.e8": "0ca11b1acc96d419e02a8f9ce6afb8f72493543ebcf4a160c4fd831d1dad9da2",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer30.out_proj.e8": "d820ccf1fa4851ad7a00d554a5c304eefa7db9a73dd179394344c54c91e87d43",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer31.in_proj.e8": "993a1ef103af50fe4ed41507b8f50043a7e315dbe27645fbd5ccd82dec8f0c38",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer31.out_proj.e8": "594f386cffbdf3c5cf785e69c07798342e2bb919b30f6ae2d6e4a41ee0a61280",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer32.in_proj.e8": "100e966681bc8f7788d751d0fcb30846fb11b82d410c087347e8c2042be03817",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer32.out_proj.e8": "798384906b1ccb64f094c9f5345f09d12b6c97b6caf97466ff169376d7dcbf76",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer33.in_proj.e8": "49e096dd1b965bef0665b5b8383e4c211bfe6bcd0b255dd87a01ee778977fb6a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer33.out_proj.e8": "8dfb511b61a27318309ba368e7283c0f6645d111380529ccb2c2cf6952fb26ea",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer34.in_proj.e8": "d887808a0827d8fa3b360a00337e4a6df832478aebc111646ea8b4f244bfa830",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer34.out_proj.e8": "f2f90e86112a11b66a7f4b2679b3a7675be5ae436817ee76748a994bdbe9e8ab",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer35.in_proj.e8": "75f7e7517e4e15c2cc55a9486134febc8dcf99a7d8910db995a91973ae10f0f5",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer35.out_proj.e8": "1bb2b8bc9d9633d7bbb359638ad5b57c085f318cdd52a460f4b68a982e24507b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer36.in_proj.e8": "acec9445bdfd7002e86379e6937e5f8a36b78fb58f5fc68776329abaa09c3f2a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer36.out_proj.e8": "889dffeaee6509414e13ce5da5ed4d401401fb1c98068f9d3efc08dd15920038",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer37.in_proj.e8": "8daac0f7f07ba02722042726a8ca8586b05a709e8474776005e01391aef2d040",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer37.out_proj.e8": "d4819c1d7da3348e70163f1fa5c47a3b0886cbb0391b5d68e272683516d57f94",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer38.in_proj.e8": "a44d33dfe23080cf8ae055340e929a21f9203ee314279d9b5e6aaf74315b29ac",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer38.out_proj.e8": "033c7c8385d5d430ac3a272c26a898e40a3dabc98e23ba24ce740c4d9811faa5",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer39.in_proj.e8": "dc7dd24ef0d340a0363439fbf03fe7194b703c62d4b464f7204512260ddc1203",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer39.out_proj.e8": "96d48b0407088200e03ded203c94473cb101aa5ca98836bce7dd2f21415b5bb5",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer4.in_proj.e8": "0350b10bb3e25b36df518f5ce754a91661dbfeee7ead4e9433c8fbbe09786e2c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer4.out_proj.e8": "7b9009c6c4f78fa3f77d8fc751a2a937643b97d6dbdca83ebaeb61f44c0e68d2",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer40.in_proj.e8": "ccc650cb662ebb4bec700ae0ab50f1c1a45cb391c17311f084d0103e239d0de7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer40.out_proj.e8": "20160d7a3bd0862206de99f06318155b24e2bd90c6afb4a6ada556ed72b7e4b1",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer41.in_proj.e8": "60765008c93242bc8548eacc700d3ba7f8ead577a1b769b73839134b0bd160ec",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer41.out_proj.e8": "14363bbfc5ba3f7e876ae7d0db649a008b2d36e53d5a1080e7fe980ab5276611",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer42.in_proj.e8": "fcbd72d3f30af3028f0ac5f6462ce05ca5adee56a611e592c80414364e5b55b3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer42.out_proj.e8": "487c6505a9072477cb52d8163f9cbcf313ba99ca05272f30b6020c98e90a9f08",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer43.in_proj.e8": "059101a4836252f4b67f0f7d6f597ed1f5450c1aa93a262e578b2562bf39ee7d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer43.out_proj.e8": "190dbffae69b8468a3bff03051f5770fb18e78a69ec1d27d5d1a5434b4e3287d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer44.in_proj.e8": "fc0f5795e79ad7f421299cffbc58de1aff0ce3fcb0d74497baedabeb54d3247a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer44.out_proj.e8": "49ac0a6d50a2b23c1b1a83d594660b73320faf0bfbc5cf20a17e20eeb3602979",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer45.in_proj.e8": "ac0013e9565740209affaa587da77608b212dea7028de911fef59e7ff549289d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer45.out_proj.e8": "dd3469e1edda156c92d63779c1cf8448e0f5e6e55ad7f65ebc4dddf5c08aed13",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer46.in_proj.e8": "dbfe46d951fdc933273b844c36b7f20b1051b1b8d5b0e9f7f049a3c303742ff4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer46.out_proj.e8": "bec5727fdd2f13bd5c50e23cad9c050f7d685db348e07bbe6dbc5ac08dddccb4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer47.in_proj.e8": "25bdeced69d48de1a7d32ef3610ba3536c26b575fa769f98d1ccdabc06a8b26c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer47.out_proj.e8": "84f54317e7eabddb119dd34c31325b81b589d251506b40065cabb9e397d38618",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer48.in_proj.e8": "380e929721a0f455b311d20222a509fae8101f83d6a393ba41dbf7711c4d812e",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer48.out_proj.e8": "fb04bc61fee6e5287e8690456da96761ff0d79fe32cde058d7ef915021e7a1ec",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer49.in_proj.e8": "d875ed8e8f32d92c925b24f58886b0d436c0890ffa2aa750bd4b3a0ae3ee411d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer49.out_proj.e8": "5c7ddb03fe88b5b3db3da3d08a2d4b81b33d4589c671084de8ab9602640e64f7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer5.in_proj.e8": "f4d726a1f1dd642f21a6719709347b9de77273061174ce7ae9e4134391127e9b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer5.out_proj.e8": "caab619b217f97c9e7865ec40b35267a474faae26487ffcf0f39180f90ea333d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer50.in_proj.e8": "d6e2786ff98594d5953c4fd28de0113d47bec1de0eb405ebaca3053ccc8c2f9d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer50.out_proj.e8": "f0c29af4c20c18791257af77b71ecc375ed6f3e6146e4667e1cf063cddd9f116",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer51.in_proj.e8": "c4a2b73a1010744e1c048c64a50a2624b46764ae2371c5d5e24ec145ea558c02",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer51.out_proj.e8": "66d6027804a9f9da53b509678c61c383224e264cac0ea0ed50f9cca2c30c970b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer52.in_proj.e8": "6b6666e6ea53479b184991a506bfc03c27604ffdc20ae37a42d883a8c849b1d3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer52.out_proj.e8": "85a718e3efd72bdbac843ecf448880816ae8c8d9f316944716d87274597d58ca",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer53.in_proj.e8": "685670e0a056b94018cd43fe07b908963a0913b99b5e6c80543e901a40618145",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer53.out_proj.e8": "dd45fba958c4752038f212eb0d1cd2359849c7ca9746b3f6016d076173327d1a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer54.in_proj.e8": "610eeb3f011c366321c0f632cc2b83cd1e1cf72ae0d56e6e9ca55cbf1e129a31",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer54.out_proj.e8": "845383a65dec2eb157ddf4662b0f501fb4db59fd737c2ca56aa5917ebde6d1bc",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer55.in_proj.e8": "baef19318f0bd852c20c351588ca5f9692a37a5a194671dd7f7f50a542b2d2ac",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer55.out_proj.e8": "83212d462a311cd1af94656182be2d00b75a0b74da2824892fc14fc8a12e11e8",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer6.in_proj.e8": "dde527c3174140d129cdcbe8e5d9f6762e9592be377516d26b907832f403b9e7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer6.out_proj.e8": "e6629903b316bf20644893ec3d9935ec458472794bcc2f7fbce712af01770253",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer7.in_proj.e8": "88a6a0b81996b72abb8c6abf018d5bf1f9616be16cd5d65803bb64b837aa2ae4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer7.out_proj.e8": "13721e3ab7a83fc71211dfba9126db7d6a2f7b71346942f91ec957fcc2d9a8a1",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer8.in_proj.e8": "c38080dc193e798599bb1e4c7833cfc6565e97de9a0c09cae94e30e2006ded8c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer8.out_proj.e8": "ba52f4eae7e4fbf4ae48d0d3e33fa556991105e9b542cd6b0d1ec95875a82f4d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer9.in_proj.e8": "bd80cbcbd0aaf342e542196bcff68c3d31cf35c7c3333dd7ddbc18c6ebba7f16",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/layer9.out_proj.e8": "04cc564fd1d674a70401dce370efab14dd770327c38b411a6b34eed3e376b5f4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/lm_head.uniform": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/other_fp16.pt": "c114c632eb38a81b7927c90aa20d289528992049bf1f9831a43a1291721d7b15",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer0.in_proj.pt": "e74482d71d0f0a4b2e92ef14037a9595de600eb46df90fffbd5e3174d5d9b0aa",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer1.in_proj.pt": "120b91426e995f6f088b5f99fe6792d86b0abf8f5acdc11ecbccce992f2e5fb2",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer2.in_proj.pt": "35526a7bd3273aa7a9fb173030e69e4bcdb59c9ae2919b3eeb9bb8523ec00d87",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer3.in_proj.pt": "15ffaa2382f5aeb2b6c175ba041b8e12fcb53efacc87b9e1818c60a5ec6e2ee5",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer4.in_proj.pt": "a08b20a7c60bcc6bbf8b3c3d3a320ae45544a2e03ffe58aa5ed372924a0713f5",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer5.in_proj.pt": "b12c0af5bb2c8dfb09d9c0f9fe53344a87c8cb1b9f9b1af17a6034972e91fcee",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer6.in_proj.pt": "79bf08df209f128b30805f49551a812ad034b94eac6e52e61280a435742ca5e7",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer7.in_proj.pt": "7f21830566cbefa23c1e7f1798b35fd5b23bdd1dc191134478381826c41db839",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer8.in_proj.pt": "33667b393e89252ca71c9d35cfe4539856719eeb0191e122bc9b8f449a92842c",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer9.in_proj.pt": "9752313a6e7db8d37992dfcac384548c8795fd21dd83ce4e720b3247ca2078d6",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer10.in_proj.pt": "3a77e509e690cd02946fc430e032c8ef7723150e67be7f5dfe93e24837cd01a0",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer11.in_proj.pt": "b19441bb3deb4cccd76c0219d6a063eeb1e3b25ff2b7a4019e18642c0866318e",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer12.in_proj.pt": "1ef8c7a31ba72c65ccc31e68f1530edff287d6baf088f65069a08bd9e92bb209",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer13.in_proj.pt": "cbddba3430b9e09c1683ca74b89e930b7710edc32631e02b123e484a188017c4",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer14.in_proj.pt": "7fe1bb43e2e51c61b2ab89d91c254a9d4b1471fff227665ff6606399f18c1f7c",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer15.in_proj.pt": "ba9428360f12b04c5e7bcb7feafda92e3551de6468b2fb909a659dd863e23170",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer16.in_proj.pt": "8b98c7970ea0026202a2424203ff03c1a5ce96726aefd59782733a6f98103799",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer17.in_proj.pt": "1e87a1503bcdbf315729b6571f63445d5b290f9e76b8c8bf048819ad2da33c31",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer18.in_proj.pt": "ada71a4959b741b47bd10153ba50b43f46e65a0eb8661ccae994c1515e6b1699",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer19.in_proj.pt": "07bb722edfacef8618c56be0666998bdb40b479871c981a93caaa7a2bb34d54f",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer20.in_proj.pt": "f319d877e832e2ac343c2a550765b9e9df95c72c45ba694c6e96e3f63a734898",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer21.in_proj.pt": "85fb969dc424d6700f5c21cc70807c25be556a2059af8729e77d93defef05999",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer22.in_proj.pt": "ccacb6fc2b926ef5ac545035d72258ab6d9abca515079d20be34652f9a8cbae2",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer23.in_proj.pt": "3d4ffea2f878b2513f89b0b0df3afa3249b4017d139de0816e4fa74bd0e02d2c",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer24.in_proj.pt": "c7274f30eb9d6b9d2c2da8ae8692972d8c0140f34008ba390a0050a4ca8a7ac7",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer25.in_proj.pt": "967f35b53a48833a823d40e05070aae4c01d117bc30c69a996d0dac4d9312ea1",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer26.in_proj.pt": "60bd6e0569616667d39e679085d98d1262b1a303684d0bcf1172b16e3d46098a",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer27.in_proj.pt": "078fd3756e52adf95ac5aabc8a421f7dfaad7547a4252b0ecb05109e1bc5f648",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer28.in_proj.pt": "939506ba220b57e69b630fc7a0ffebac9ccda8aa815483e03c02ae2fdc22da32",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer29.in_proj.pt": "100f9240f458bd51db0f3e22d2ce2c2670d85515be0ee8b1a5d3a8d22178cb51",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer30.in_proj.pt": "2761cef64e6beff0621c318445ad721f2d56a423f2b52cc7b043ace55828a4c7",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer31.in_proj.pt": "55fbe8ccf1b93134d6279832a56725aba8c4b6768c744ba31f3a327f0664443c",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer32.in_proj.pt": "a5698d9dea3b796283c6f72875b52187ec4a7d5d165dea85244b2b1468c651b4",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer33.in_proj.pt": "98706c81b45d8203e6e02ab5db4a2f50bff11dc5fa3e0fb695c3734790df1d5a",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer34.in_proj.pt": "a352d15818857c99f0876f8ecdcb3a4e7ff7ac6dfa65cad908b9054a3bd0ec79",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer35.in_proj.pt": "43a5d82a387d9dcd76bdcaa2de77c17d144f1bf494581083ce438246962d7cc9",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer36.in_proj.pt": "32a62d31da32adccb93b18eb15ba639c55757a4a023cc203e7eaef2cf7054f35",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer37.in_proj.pt": "8c314c2d3d3e557dea4731d578a610eed0a1c56865737b3f7adfc55b34080658",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer38.in_proj.pt": "b9bb988bc96106fb276cb70e145d6f91e027dbaa3774d8793b9d61b9440ad45a",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer39.in_proj.pt": "4a76ed7441f645bd8cc7b995436f89380398c67b846c6cf2a387f3ff838da089",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer40.in_proj.pt": "2e440e2a6d891ddf0ec39f911c590fc9f991fd4ee8e93d5dfb6965ad583f0cc7",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer41.in_proj.pt": "8260323601544b3e14431346e9227579c42bd23d1630712606592cdf77339015",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer42.in_proj.pt": "613d33543b5bccb201b2dccaf3717151c38f134414d25a6208a6e62e66dbe981",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer43.in_proj.pt": "e75aa214cbc8368bc4f75bb5f1b6cbd675003239bd6aac39976aef3939808fcb",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer44.in_proj.pt": "9d2b424c96891bd17a3904bb83b7beda5dd37c1ff7dea17a40dbc813934ca8cf",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer45.in_proj.pt": "a13e6c5fe5e9abdc6cba5d8f5b397ff8f5fdf13008d5314f14de294fc0801a74",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer46.in_proj.pt": "b273c0b5372e08ba1f531cf241852d632c0de0f6d216ef9496eb4ec3545e8b82",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer47.in_proj.pt": "f3eeb58c72a4ea238d52fe9653cb6288bca57c405225af709dfabca2a99c0f8f",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer48.in_proj.pt": "d6607a257b3adf8cb1f6a470d21d585035525db50d223956261d613068546a01",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer49.in_proj.pt": "a75d176c8caec4bace114ce6c712cfe3f1f91485d210b6e6bc42559bdeb38e47",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer50.in_proj.pt": "476597bb2a2a784470da6d8b8c2d94f283910fde542fc5c519883ba43f7bcae7",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer51.in_proj.pt": "5008735134074c71f68a18babeaca1a038bed5db68b6080fb52f917058c3bdf0",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer52.in_proj.pt": "e512dfedf1c92a616e6ef0f916722dd5cb264c6b15968f6e95f96b14ea8b3699",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer53.in_proj.pt": "97ff7e2b5ac209f04588f98bc7a39009cadacd79690219d9366603db2be91b9b",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer54.in_proj.pt": "b5586420dfb9a16fa3220b11e45456c5af2ffb8e327000cd889246404c99c6a4",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/layer55.in_proj.pt": "de97c43d4d82bdc16b681c902c4d11d412eb7be4f11d2f5e8cc961bff84ad0ac",
+      "/home/horde/Mamba2-8B-E8W5/scripts/quantize_input_axis_residual.py": "b06c947c0b034c645ea66f70432eb929df7c7791c31bc4f720d42fe65d960aa7",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/input_axis_residual.py": "baff8c56c875258830ac00076f880105b7933a173f57ba0bf38e27cbf1436c06"
+    }
+  },
+  "model_config": {
+    "d_model": 4096,
+    "d_intermediate": 0,
+    "n_layer": 56,
+    "vocab_size": 256000,
+    "ssm_cfg": {
+      "layer": "Mamba2",
+      "d_state": 128,
+      "d_conv": 4,
+      "expand": 2,
+      "headdim": 64,
+      "ngroups": 8,
+      "chunk_size": 128,
+      "rmsnorm": true,
+      "norm_before_gate": false,
+      "use_mem_eff_path": false
+    },
+    "rms_norm": true,
+    "residual_in_fp32": false,
+    "fused_add_norm": false,
+    "pad_vocab_size_multiple": 128,
+    "tie_embeddings": false
+  },
+  "recipe": {
+    "residual_bits": 4,
+    "index_bits": 20,
+    "values_per_index": 8,
+    "tune_iters": 2,
+    "damping": 0.01,
+    "scale_override": 0.9,
+    "feedback": true,
+    "seed_rule": "1000 + 2*layer"
+  },
+  "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "small_manifest_sha256": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006",
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+  "inherited_files": {
+    "config.json": {
+      "bytes": 462,
+      "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c",
+      "origin": "parent"
+    },
+    "e8_codebook.bin": {
+      "bytes": 1024,
+      "sha256": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce",
+      "origin": "parent"
+    },
+    "embedding.uniform": {
+      "bytes": 671744079,
+      "sha256": "038d44d2039659de786b743bae6858fd0c8e65be85a1843bd5eb1c36f672ca68",
+      "origin": "parent"
+    },
+    "layer0.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "521ef83aa0694f5f3b62d41a579cc4b72cb2e13be1cb07e69b5d7137612e14fb",
+      "origin": "parent"
+    },
+    "layer1.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "9fcd9fe47220f99b633253827c03c92d467d2cefa7421b8f27743ee2684062ec",
+      "origin": "parent"
+    },
+    "layer10.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "ec7e7799cdf58cf3df30be7d7c8081da8de9fc376e81fb15b885a0f7ad606273",
+      "origin": "parent"
+    },
+    "layer11.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "e95443b57b8eb624674433b138dc84ae4392683599de5a53feb6797618f1ef07",
+      "origin": "parent"
+    },
+    "layer12.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "7bc59adf0ee878068b09fbf751f362c62e0acc0769e61a471649a6c30477ec51",
+      "origin": "parent"
+    },
+    "layer13.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "900e90ebab1165685346018a63eb83abd285d0141d0838c4df9f961595d11e5a",
+      "origin": "parent"
+    },
+    "layer14.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "195c6226bcd5acc04f3c9d2b63323358c51f06ded5a074aaa09ca59f20f0ceae",
+      "origin": "parent"
+    },
+    "layer15.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "8f96acc32d6b05a8293e6d932180ab468bc18a9116b1c129f313c98979547a70",
+      "origin": "parent"
+    },
+    "layer16.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "45d01bfc97a6ee5a40a90579d874f53aac8b0616aea52ea18264878ce8a86b57",
+      "origin": "parent"
+    },
+    "layer17.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "dd407aa3a154c5b9c05f2d77080325eaa677f43ff633c6a4634d9518cfdfe5eb",
+      "origin": "parent"
+    },
+    "layer18.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "639a80ce0c6d59731c774c7675e64d2ac04f88f0294fcaecbe4bf01286067f4f",
+      "origin": "parent"
+    },
+    "layer19.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "75adf6fe0964adc323eb9c4e84d0a48b34cc7f5332f36eccc481f10adbdeb2a8",
+      "origin": "parent"
+    },
+    "layer2.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "75ddfc49e62bcf84f63f3ec1c3c5568afd20b55dda6d2b87ff46325a97b0c8ce",
+      "origin": "parent"
+    },
+    "layer20.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "d3af68f4e4ed3fbf642fb4e79d01358708207a95ee5923fb19628518938bc048",
+      "origin": "parent"
+    },
+    "layer21.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "8d0e019b1d1ee1037ccdb78d5058a5b8602ad48bf375ff6a196ec928e708071a",
+      "origin": "parent"
+    },
+    "layer22.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "07e922fbf147ddf4930ff12e9b4488c43684b737339671c388d7277a80011ec4",
+      "origin": "parent"
+    },
+    "layer23.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "47d710a8951f0db57f66a32dfceb7d228b55ede5f55ed5447b6e73362e01966d",
+      "origin": "parent"
+    },
+    "layer24.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "98d7bfb990bdc96ddcabcf34572f93723aa9ef26de382451c13df4ec417146fe",
+      "origin": "parent"
+    },
+    "layer25.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "f273ff073eb0e4987443c39a68bdb81b2d132e10db417a0aa1427676f87ffd8d",
+      "origin": "parent"
+    },
+    "layer26.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "8d3e9df4fc208b3bc174cdb9c4213d3117f32123a814a3877cf2950af1d7cd0b",
+      "origin": "parent"
+    },
+    "layer27.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "a70710813e2032414c47e8badb3c25652cacfdce14ffaa87a2c4e375fd2febaa",
+      "origin": "parent"
+    },
+    "layer28.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "45b16b4f7b63a49512bc2f89d4e9e50a78e901faa281d95abce516535baf7690",
+      "origin": "parent"
+    },
+    "layer29.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "d952d522b0c499e6431af076f7ea0973757eab3237556b980c436e5a5deed08f",
+      "origin": "parent"
+    },
+    "layer3.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "9980c41736c84e57216df9d4d29907960d9a208270c1c6479c937eba9d8db9be",
+      "origin": "parent"
+    },
+    "layer30.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "d820ccf1fa4851ad7a00d554a5c304eefa7db9a73dd179394344c54c91e87d43",
+      "origin": "parent"
+    },
+    "layer31.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "594f386cffbdf3c5cf785e69c07798342e2bb919b30f6ae2d6e4a41ee0a61280",
+      "origin": "parent"
+    },
+    "layer32.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "798384906b1ccb64f094c9f5345f09d12b6c97b6caf97466ff169376d7dcbf76",
+      "origin": "parent"
+    },
+    "layer33.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "8dfb511b61a27318309ba368e7283c0f6645d111380529ccb2c2cf6952fb26ea",
+      "origin": "parent"
+    },
+    "layer34.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "f2f90e86112a11b66a7f4b2679b3a7675be5ae436817ee76748a994bdbe9e8ab",
+      "origin": "parent"
+    },
+    "layer35.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "1bb2b8bc9d9633d7bbb359638ad5b57c085f318cdd52a460f4b68a982e24507b",
+      "origin": "parent"
+    },
+    "layer36.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "889dffeaee6509414e13ce5da5ed4d401401fb1c98068f9d3efc08dd15920038",
+      "origin": "parent"
+    },
+    "layer37.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "d4819c1d7da3348e70163f1fa5c47a3b0886cbb0391b5d68e272683516d57f94",
+      "origin": "parent"
+    },
+    "layer38.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "033c7c8385d5d430ac3a272c26a898e40a3dabc98e23ba24ce740c4d9811faa5",
+      "origin": "parent"
+    },
+    "layer39.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "96d48b0407088200e03ded203c94473cb101aa5ca98836bce7dd2f21415b5bb5",
+      "origin": "parent"
+    },
+    "layer4.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "7b9009c6c4f78fa3f77d8fc751a2a937643b97d6dbdca83ebaeb61f44c0e68d2",
+      "origin": "parent"
+    },
+    "layer40.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "20160d7a3bd0862206de99f06318155b24e2bd90c6afb4a6ada556ed72b7e4b1",
+      "origin": "parent"
+    },
+    "layer41.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "14363bbfc5ba3f7e876ae7d0db649a008b2d36e53d5a1080e7fe980ab5276611",
+      "origin": "parent"
+    },
+    "layer42.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "487c6505a9072477cb52d8163f9cbcf313ba99ca05272f30b6020c98e90a9f08",
+      "origin": "parent"
+    },
+    "layer43.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "190dbffae69b8468a3bff03051f5770fb18e78a69ec1d27d5d1a5434b4e3287d",
+      "origin": "parent"
+    },
+    "layer44.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "49ac0a6d50a2b23c1b1a83d594660b73320faf0bfbc5cf20a17e20eeb3602979",
+      "origin": "parent"
+    },
+    "layer45.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "dd3469e1edda156c92d63779c1cf8448e0f5e6e55ad7f65ebc4dddf5c08aed13",
+      "origin": "parent"
+    },
+    "layer46.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "bec5727fdd2f13bd5c50e23cad9c050f7d685db348e07bbe6dbc5ac08dddccb4",
+      "origin": "parent"
+    },
+    "layer47.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "84f54317e7eabddb119dd34c31325b81b589d251506b40065cabb9e397d38618",
+      "origin": "parent"
+    },
+    "layer48.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "fb04bc61fee6e5287e8690456da96761ff0d79fe32cde058d7ef915021e7a1ec",
+      "origin": "parent"
+    },
+    "layer49.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "5c7ddb03fe88b5b3db3da3d08a2d4b81b33d4589c671084de8ab9602640e64f7",
+      "origin": "parent"
+    },
+    "layer5.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "caab619b217f97c9e7865ec40b35267a474faae26487ffcf0f39180f90ea333d",
+      "origin": "parent"
+    },
+    "layer50.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "f0c29af4c20c18791257af77b71ecc375ed6f3e6146e4667e1cf063cddd9f116",
+      "origin": "parent"
+    },
+    "layer51.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "66d6027804a9f9da53b509678c61c383224e264cac0ea0ed50f9cca2c30c970b",
+      "origin": "parent"
+    },
+    "layer52.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "85a718e3efd72bdbac843ecf448880816ae8c8d9f316944716d87274597d58ca",
+      "origin": "parent"
+    },
+    "layer53.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "dd45fba958c4752038f212eb0d1cd2359849c7ca9746b3f6016d076173327d1a",
+      "origin": "parent"
+    },
+    "layer54.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "845383a65dec2eb157ddf4662b0f501fb4db59fd737c2ca56aa5917ebde6d1bc",
+      "origin": "parent"
+    },
+    "layer55.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "83212d462a311cd1af94656182be2d00b75a0b74da2824892fc14fc8a12e11e8",
+      "origin": "parent"
+    },
+    "layer6.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "e6629903b316bf20644893ec3d9935ec458472794bcc2f7fbce712af01770253",
+      "origin": "parent"
+    },
+    "layer7.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "13721e3ab7a83fc71211dfba9126db7d6a2f7b71346942f91ec957fcc2d9a8a1",
+      "origin": "parent"
+    },
+    "layer8.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "ba52f4eae7e4fbf4ae48d0d3e33fa556991105e9b542cd6b0d1ec95875a82f4d",
+      "origin": "parent"
+    },
+    "layer9.out_proj.e8": {
+      "bytes": 8406718,
+      "sha256": "04cc564fd1d674a70401dce370efab14dd770327c38b411a6b34eed3e376b5f4",
+      "origin": "parent"
+    },
+    "lm_head.uniform": {
+      "bytes": 671744079,
+      "sha256": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98",
+      "origin": "parent"
+    },
+    "other_fp16.pt": {
+      "bytes": 7283930,
+      "sha256": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+      "origin": "small_compensation_v1"
+    }
+  },
+  "matrices": {
+    "layer0.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.3089366853237152,
+      "relative_calibration_output_error": 0.060841333121061325,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1000,
+      "axis_residual_amplitude": 0.5132194757461548,
+      "payload_bytes": 23767828,
+      "file": "layer0.in_proj.e8",
+      "source_key": "backbone.layers.0.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "b1cadcc9fb8a2dbb3f761444374fb64c228433bcf75314ba26101d1e19d13b31",
+      "hessian_sha256": "e74482d71d0f0a4b2e92ef14037a9595de600eb46df90fffbd5e3174d5d9b0aa",
+      "bytes": 23768030,
+      "sha256": "b9bced2b14abac77e7a4b6df9e58149f1341d79c13281cefa34b4b82290797ef",
+      "decoded_fp16_sha256": "6d7409e4683d47b672dd34753beba82ff2d5e0016c2267dca6141135fb6fb5e4",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5132194757461548,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5132194757461548
+        },
+        "header_sha256": "a229e6c25a7244e0891fdccb6eb4487f7f25f9c246536fea219a5ed092a07441",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 4.382168779964559,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer1.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.31341198086738586,
+      "relative_calibration_output_error": 0.06777577102184296,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1002,
+      "axis_residual_amplitude": 0.5130860805511475,
+      "payload_bytes": 23767828,
+      "file": "layer1.in_proj.e8",
+      "source_key": "backbone.layers.1.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "36da74702e619fb5d5cf6618011ace0a29d6d2e0224233c36788452bcf512e53",
+      "hessian_sha256": "120b91426e995f6f088b5f99fe6792d86b0abf8f5acdc11ecbccce992f2e5fb2",
+      "bytes": 23768030,
+      "sha256": "c9b375f2ce868b41e807996e78a6161527ea55891c2f6ed17df372b142a353a3",
+      "decoded_fp16_sha256": "966c7a520936efaaf6e0d91a8d4ca3c9329f4c9d631f377b0c64c0d9cec3eead",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5130860805511475,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5130860805511475
+        },
+        "header_sha256": "66202b80dd0e6a827ab36baed8244b0a1e58e8c20537121970235fc89ef52b24",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.53076171700377,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer2.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.3036474585533142,
+      "relative_calibration_output_error": 0.08545728772878647,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1004,
+      "axis_residual_amplitude": 0.5127896070480347,
+      "payload_bytes": 23767828,
+      "file": "layer2.in_proj.e8",
+      "source_key": "backbone.layers.2.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "b7227c2576f9ef6f42bd8955f0adccfa9f4e3815154fc33ea00ea0d2026776d3",
+      "hessian_sha256": "35526a7bd3273aa7a9fb173030e69e4bcdb59c9ae2919b3eeb9bb8523ec00d87",
+      "bytes": 23768030,
+      "sha256": "86b112916178464dced1f273e604859794aecaa127993cfbb21aa24335a637c3",
+      "decoded_fp16_sha256": "437825675bb1e226641d21131361b81f9e1cff5c9abf25e78c9fbccb46f5726b",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5127896070480347,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5127896070480347
+        },
+        "header_sha256": "4aa97cb09e4bad7463a746f37c767708aff774506a3f369ba03c6d81eff17e4a",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.5367939729476348,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer3.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2991008162498474,
+      "relative_calibration_output_error": 0.08948377519845963,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1006,
+      "axis_residual_amplitude": 0.5126669406890869,
+      "payload_bytes": 23767828,
+      "file": "layer3.in_proj.e8",
+      "source_key": "backbone.layers.3.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "cbc459f6626588e94879a4d4746d45bf534c476bf5a234778ff09833e31dfdca",
+      "hessian_sha256": "15ffaa2382f5aeb2b6c175ba041b8e12fcb53efacc87b9e1818c60a5ec6e2ee5",
+      "bytes": 23768030,
+      "sha256": "adbf5bf5a743401d45ec5120b9d7524427b43d05b2422cd0cdb85c66c4cee531",
+      "decoded_fp16_sha256": "5799da0173a26b3185efa6a6a69bda699879a5763d4d0cbfb7ed86c15519759d",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5126669406890869,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5126669406890869
+        },
+        "header_sha256": "8b9074ad791a231aea4a5e306fc0d102d7d8d700bd75f265cf6f7a4942f077e3",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.520994674996473,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer4.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2963390350341797,
+      "relative_calibration_output_error": 0.09266898781061172,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1008,
+      "axis_residual_amplitude": 0.5129227042198181,
+      "payload_bytes": 23767828,
+      "file": "layer4.in_proj.e8",
+      "source_key": "backbone.layers.4.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "27787f1cf003a0caeec655498eef99bd80a234fbd82c602f4a8072c9b4435512",
+      "hessian_sha256": "a08b20a7c60bcc6bbf8b3c3d3a320ae45544a2e03ffe58aa5ed372924a0713f5",
+      "bytes": 23768030,
+      "sha256": "1f9b254ced5796c6b6ffdb54aa67b407b7e0ac64efb80676d5ff921b45dd4d2f",
+      "decoded_fp16_sha256": "ddd5f9468c51b4f50b95379a96ba932c2522700f59c496a1666a9188b6aedc61",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5129227042198181,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5129227042198181
+        },
+        "header_sha256": "180ad8f6ceee29dfd7358b5074135ed378f83c3ba2aa77632c79c2594c4a2b39",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.512028263998218,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer5.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29243454337120056,
+      "relative_calibration_output_error": 0.09897065907716751,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1010,
+      "axis_residual_amplitude": 0.5129530429840088,
+      "payload_bytes": 23767828,
+      "file": "layer5.in_proj.e8",
+      "source_key": "backbone.layers.5.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "c15563eccd22b739650ea297441ada55346213872c2bdf80952faa27d99c1ca6",
+      "hessian_sha256": "b12c0af5bb2c8dfb09d9c0f9fe53344a87c8cb1b9f9b1af17a6034972e91fcee",
+      "bytes": 23768030,
+      "sha256": "998ecd1176c7033f91e3cde3a770aee68a4491cc71c67d02b21b2f72ff5cd8cf",
+      "decoded_fp16_sha256": "e930de795df7403671259d88729ce45ee988d81a9754241a691e14e10c86c019",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5129530429840088,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5129530429840088
+        },
+        "header_sha256": "f7bb87f1618ea1e3570e02428901c05c0f3ec8ca9b135d4b8a86e6206f0427c7",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.541914063040167,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer6.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2907373309135437,
+      "relative_calibration_output_error": 0.10424883663654327,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1012,
+      "axis_residual_amplitude": 0.5128554701805115,
+      "payload_bytes": 23767828,
+      "file": "layer6.in_proj.e8",
+      "source_key": "backbone.layers.6.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "50e9e9c3a9f730e17919ac7d9b65840c20913a79cbcb37dfd76bfcbe8cf587b4",
+      "hessian_sha256": "79bf08df209f128b30805f49551a812ad034b94eac6e52e61280a435742ca5e7",
+      "bytes": 23768030,
+      "sha256": "a48b8cc3f9fd39b226d64a2e40fbfc60139e179a9e4309b36c6e78109a24f58d",
+      "decoded_fp16_sha256": "e712eaa3bb34beb046a570adc326c6ef1255c94444cf1f76ef2841110baf900f",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5128554701805115,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5128554701805115
+        },
+        "header_sha256": "79bbb9f25b4a14b6f0efe343ba73e6756ea9225659f00f45707d63aafdff33a4",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.561561089940369,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer7.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.28998446464538574,
+      "relative_calibration_output_error": 0.10645837336778641,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1014,
+      "axis_residual_amplitude": 0.5129136443138123,
+      "payload_bytes": 23767828,
+      "file": "layer7.in_proj.e8",
+      "source_key": "backbone.layers.7.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "b11b186c9d328dcd5406820ef5e1453b3b032d972688f62e8f65313d04d03f33",
+      "hessian_sha256": "7f21830566cbefa23c1e7f1798b35fd5b23bdd1dc191134478381826c41db839",
+      "bytes": 23768030,
+      "sha256": "48ca556f31153a0a7eb9a3a1c67841242be2a1400ffb7debe6626a8b73b03c06",
+      "decoded_fp16_sha256": "e9656e15b46329396ae30e20a391fb5280dc8fc27469ac286c58dd0bfef2805b",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5129136443138123,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5129136443138123
+        },
+        "header_sha256": "d3f9f6d37cad2cc2bdd37f7d9ff7078ca5bd9d5a67b174e3b6f0fe0d336ad836",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.493781610042788,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer8.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29012155532836914,
+      "relative_calibration_output_error": 0.10879065841436386,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1016,
+      "axis_residual_amplitude": 0.5126474499702454,
+      "payload_bytes": 23767828,
+      "file": "layer8.in_proj.e8",
+      "source_key": "backbone.layers.8.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "1307252665e8f85ed0d05cec54c00c32385e8e13fd70e2f750ad9db004a21053",
+      "hessian_sha256": "33667b393e89252ca71c9d35cfe4539856719eeb0191e122bc9b8f449a92842c",
+      "bytes": 23768030,
+      "sha256": "da815b531220afb53282424881a961b2c3b990e641919df44b7f9409aaa78f60",
+      "decoded_fp16_sha256": "3b2f0699b9029d93a321e0d1a43aafebc2d4cdd4b9ebf83e9814a9cfe0e05357",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5126474499702454,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5126474499702454
+        },
+        "header_sha256": "42a2d6516335a2cc4f5e587f7f0c3d1bf0720225c9999447a26cbe54323ca2b2",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.50339998700656,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer9.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2893078923225403,
+      "relative_calibration_output_error": 0.11018840223550797,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1018,
+      "axis_residual_amplitude": 0.5124773383140564,
+      "payload_bytes": 23767828,
+      "file": "layer9.in_proj.e8",
+      "source_key": "backbone.layers.9.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "de6faae8eda09b7e30e2be9f56da5d64606c9e6c1d7b52f742a2b30a1c093727",
+      "hessian_sha256": "9752313a6e7db8d37992dfcac384548c8795fd21dd83ce4e720b3247ca2078d6",
+      "bytes": 23768030,
+      "sha256": "cba4a6aa2bcf368822622a39d1850eaa90cd026ba1c0012b720d8ed8955c6a3e",
+      "decoded_fp16_sha256": "e77c8a7e327344e22e3ea1f9777ebb5061bae134f8803720d74c823fe34bc765",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5124773383140564,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5124773383140564
+        },
+        "header_sha256": "28665eb0d8acb5160d24d29db5271ac0b57fe8cb36bcc65586bbc4bd85d7e99e",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.5124959719832987,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer10.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2899167835712433,
+      "relative_calibration_output_error": 0.10935670882463455,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1020,
+      "axis_residual_amplitude": 0.5135867595672607,
+      "payload_bytes": 23767828,
+      "file": "layer10.in_proj.e8",
+      "source_key": "backbone.layers.10.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "4e48104b8e395596e00e3043364977253dca77f385380561b077c612126658a9",
+      "hessian_sha256": "3a77e509e690cd02946fc430e032c8ef7723150e67be7f5dfe93e24837cd01a0",
+      "bytes": 23768030,
+      "sha256": "5d3575a3c5722933a3df92bf6148fa576cbc7d039588f6bdb86e083d2756d763",
+      "decoded_fp16_sha256": "4a48a7fd2f47329ce7da34962a1983ec0ea3a8329102df387b503a520c0dde1a",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5135867595672607,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5135867595672607
+        },
+        "header_sha256": "5b0064bbc8cb4f897255375a100435cbbb3a7a5ddd25bca54a496656549f568a",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.499906671931967,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer11.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2911760210990906,
+      "relative_calibration_output_error": 0.1016053706407547,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1022,
+      "axis_residual_amplitude": 0.5121763944625854,
+      "payload_bytes": 23767828,
+      "file": "layer11.in_proj.e8",
+      "source_key": "backbone.layers.11.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "024144dcaaff5a4a9bd1bbced11b02de97cb0a7b01b2b85efe3e6d6c4b04c0d7",
+      "hessian_sha256": "b19441bb3deb4cccd76c0219d6a063eeb1e3b25ff2b7a4019e18642c0866318e",
+      "bytes": 23768030,
+      "sha256": "2eb3d2ba59297e599024e835bfda5e83f8123ca70dc57bde0b887beda3dc7783",
+      "decoded_fp16_sha256": "d7042a5dadcf14033f8c770cdedc0cd65ab360bceb422597268b4f93f19772dc",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5121763944625854,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5121763944625854
+        },
+        "header_sha256": "6fbc48b555866041e71226eb22e1060e3f164a4a9e9540897419c0c37c65df90",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.479406374040991,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer12.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2906036376953125,
+      "relative_calibration_output_error": 0.1047787070274353,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1024,
+      "axis_residual_amplitude": 0.512785017490387,
+      "payload_bytes": 23767828,
+      "file": "layer12.in_proj.e8",
+      "source_key": "backbone.layers.12.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "6b19af1f2627be4365ceb05ed2d49fe36e4146cab696771aafb7c9c6364e8c15",
+      "hessian_sha256": "1ef8c7a31ba72c65ccc31e68f1530edff287d6baf088f65069a08bd9e92bb209",
+      "bytes": 23768029,
+      "sha256": "c35de0c6da9c21825bfc5a8ed7bcddd8e2d6cc022b9f55250a0e9052179e9439",
+      "decoded_fp16_sha256": "89585b4831ab292c979a50f242a5c3697cdc85d514400dbb9eef99d1f7f4fc77",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.512785017490387,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.512785017490387
+        },
+        "header_sha256": "535ea4c4b949e39efa6efc1526b1ee53076572b94b0a1e78a5009326f8d61743",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.463594560045749,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer13.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29106637835502625,
+      "relative_calibration_output_error": 0.10851674526929855,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1026,
+      "axis_residual_amplitude": 0.5130800008773804,
+      "payload_bytes": 23767828,
+      "file": "layer13.in_proj.e8",
+      "source_key": "backbone.layers.13.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "3dab627c248e1cb0d82c17f139d9e746cdfeaaeda7a723f3c7efeefc8fb44c44",
+      "hessian_sha256": "cbddba3430b9e09c1683ca74b89e930b7710edc32631e02b123e484a188017c4",
+      "bytes": 23768030,
+      "sha256": "0823f1c3f1bcaf01e8b47250668966fb351d7a428ebd87d40e54f467fcf67d68",
+      "decoded_fp16_sha256": "49395405f331b95101af4635a6579b454c810d26ca9c356dbc13b253681b9ede",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5130800008773804,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5130800008773804
+        },
+        "header_sha256": "df89991ae45dd78c44d64cd13ca5b3871bfff4e9cc3b968428ae099fe7d0c34c",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4830617260886356,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer14.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.289342999458313,
+      "relative_calibration_output_error": 0.1166062280535698,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1028,
+      "axis_residual_amplitude": 0.5121063590049744,
+      "payload_bytes": 23767828,
+      "file": "layer14.in_proj.e8",
+      "source_key": "backbone.layers.14.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "362017372412cdfd5b54a4763ee4a5dfd83588bbfe3ebc0c4760c20974331412",
+      "hessian_sha256": "7fe1bb43e2e51c61b2ab89d91c254a9d4b1471fff227665ff6606399f18c1f7c",
+      "bytes": 23768030,
+      "sha256": "934757dd9c995e79cf111e1b9546dfde18645842933c33603eb436cf1a37c6ae",
+      "decoded_fp16_sha256": "aadae665d3f2fff14b5888060a903779f1bf6ef1535e8a5c2bc0d40b96284b80",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5121063590049744,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5121063590049744
+        },
+        "header_sha256": "64f85c23ca55edc33c8acabbbfc874fb644c641bff04b1bbae1613cd5a1143e9",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4763154699467123,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer15.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.28852754831314087,
+      "relative_calibration_output_error": 0.11778069287538528,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1030,
+      "axis_residual_amplitude": 0.5122865438461304,
+      "payload_bytes": 23767828,
+      "file": "layer15.in_proj.e8",
+      "source_key": "backbone.layers.15.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "ae8becafe575b68dfc48cd8281e1b8ff607e628f8b00a84bd2115fd054ed33ce",
+      "hessian_sha256": "ba9428360f12b04c5e7bcb7feafda92e3551de6468b2fb909a659dd863e23170",
+      "bytes": 23768030,
+      "sha256": "b34dfe4a5c161c5ef92fcc1762d5d19d5a1a2647a01cab36bcf370418e397560",
+      "decoded_fp16_sha256": "028456996e71cc2681e8989c167ce5794a399faea3bcdded99c4ada4d7c285ac",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5122865438461304,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5122865438461304
+        },
+        "header_sha256": "f457cd9d0176714b69aa38c3123bcca9c070af2f9054f34b8bd461ef085a21ed",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.50681833201088,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer16.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2888668477535248,
+      "relative_calibration_output_error": 0.11115650832653046,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1032,
+      "axis_residual_amplitude": 0.5121411085128784,
+      "payload_bytes": 23767828,
+      "file": "layer16.in_proj.e8",
+      "source_key": "backbone.layers.16.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "f4d525467e5b0e27e118fa0b7d175b0d9548f5956965f670a6bf5ebbffe00b38",
+      "hessian_sha256": "8b98c7970ea0026202a2424203ff03c1a5ce96726aefd59782733a6f98103799",
+      "bytes": 23768030,
+      "sha256": "de8229892639ae4a88e914bb30e018f98f510ecd6f646f71667b3972a0f5ea33",
+      "decoded_fp16_sha256": "20551eaa414534f6fd8ff06ed35ea55e73f59180062a5702f63aa4c348c9788c",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5121411085128784,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5121411085128784
+        },
+        "header_sha256": "735344519a26c1ed1de0b6e6ea91963af6bb7507944be5b3c09f0b90a1f7f40c",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.500080843921751,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer17.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2880264222621918,
+      "relative_calibration_output_error": 0.11185953766107559,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1034,
+      "axis_residual_amplitude": 0.512785792350769,
+      "payload_bytes": 23767828,
+      "file": "layer17.in_proj.e8",
+      "source_key": "backbone.layers.17.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "e609fd2276508b17332178274fa59a63bef6af13f0e102127da0980612764f98",
+      "hessian_sha256": "1e87a1503bcdbf315729b6571f63445d5b290f9e76b8c8bf048819ad2da33c31",
+      "bytes": 23768029,
+      "sha256": "5842699af1cd44d5ac91eb1fb73f3608ebd97b645acc3054242299c0945f8d3a",
+      "decoded_fp16_sha256": "24396825da2cfb53f489e30a14670f2fa95d14f8b4c6f888ac61e27fa23fcdd5",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.512785792350769,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.512785792350769
+        },
+        "header_sha256": "a47ea3a9e3dde1868ab4a321d30d0da13dab2c44e7dbab18ba0f7844fb79e955",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.475615817005746,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer18.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2874469459056854,
+      "relative_calibration_output_error": 0.12140291184186935,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1036,
+      "axis_residual_amplitude": 0.5118247270584106,
+      "payload_bytes": 23767828,
+      "file": "layer18.in_proj.e8",
+      "source_key": "backbone.layers.18.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "fbe6195084eba1a2fc1a8f7db579e9ddbb2b681b2766aa307aaa728254df60dc",
+      "hessian_sha256": "ada71a4959b741b47bd10153ba50b43f46e65a0eb8661ccae994c1515e6b1699",
+      "bytes": 23768030,
+      "sha256": "420b26f5fa3ef9e366acd5dae043c6853afa8209b29a3c6c1f7bd90537d8c397",
+      "decoded_fp16_sha256": "585ab7cf91c39952b6a89f008343e7717a65d3d283587ddbf2f5decc7b192edb",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5118247270584106,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5118247270584106
+        },
+        "header_sha256": "8c418cc93b10217b4d1e277699b94416dd74b6be3552ebf7bcd1d5911ee8d7f4",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4887880799360573,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer19.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2871147096157074,
+      "relative_calibration_output_error": 0.11864954978227615,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1038,
+      "axis_residual_amplitude": 0.513512909412384,
+      "payload_bytes": 23767828,
+      "file": "layer19.in_proj.e8",
+      "source_key": "backbone.layers.19.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "4e76eb79f87e93ad1550e43a860ce8f984c2a18d46a006153d9ba4fa6f90ef90",
+      "hessian_sha256": "07bb722edfacef8618c56be0666998bdb40b479871c981a93caaa7a2bb34d54f",
+      "bytes": 23768029,
+      "sha256": "dcbaf2b7d6533bdb5c12bad767b085f634698d7ac2fb40eff9ff7fff34afde6f",
+      "decoded_fp16_sha256": "9249eb995bd291cd83576b60a6e75a11b2117e2a55ff4143248d1e8b74293c84",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.513512909412384,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.513512909412384
+        },
+        "header_sha256": "c1b4707414c0d25713b4720e7a6d343ba8b46ed5920aaea46538f8630e88623e",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.4996455429354683,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer20.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2878788411617279,
+      "relative_calibration_output_error": 0.11414259672164917,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1040,
+      "axis_residual_amplitude": 0.5120159387588501,
+      "payload_bytes": 23767828,
+      "file": "layer20.in_proj.e8",
+      "source_key": "backbone.layers.20.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "c429c6262d8772220a5906d79fe3176483709e14c243b476d83274f299e72f31",
+      "hessian_sha256": "f319d877e832e2ac343c2a550765b9e9df95c72c45ba694c6e96e3f63a734898",
+      "bytes": 23768030,
+      "sha256": "355c5eb1c4b0f5faa5e18e8645c3286a06f8e05f9b6da199fb8d4c3cfd698451",
+      "decoded_fp16_sha256": "84839a6aecea79086d706bd434d7a13c416390b3c24137975af3ed8901f4ed1d",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5120159387588501,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5120159387588501
+        },
+        "header_sha256": "2706f5f6dbb5cfb8474672fad41fd4d1b2e25e93c2c8d88ac591326f82478fb9",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4921069639967754,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer21.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.28822946548461914,
+      "relative_calibration_output_error": 0.1156880110502243,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1042,
+      "axis_residual_amplitude": 0.512457013130188,
+      "payload_bytes": 23767828,
+      "file": "layer21.in_proj.e8",
+      "source_key": "backbone.layers.21.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "ca358f474dfa3e2253b75c455f1432e4a1b266570c506533b8b1aac8849ba9a7",
+      "hessian_sha256": "85fb969dc424d6700f5c21cc70807c25be556a2059af8729e77d93defef05999",
+      "bytes": 23768029,
+      "sha256": "df979b7a200941a46568932a4220608e5b1a51e7d1619b6cfbd17481d3f838e7",
+      "decoded_fp16_sha256": "b72553a0d9588b21180d82a6f9f0307964c2672661874bde2fb0fac2f10c1bdd",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.512457013130188,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.512457013130188
+        },
+        "header_sha256": "f206f7b3262bc462ecd9977642ff75ba685024a79399cfb0bfbc1594cb76821b",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.488238572026603,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer22.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.288327157497406,
+      "relative_calibration_output_error": 0.11513251066207886,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1044,
+      "axis_residual_amplitude": 0.513469398021698,
+      "payload_bytes": 23767828,
+      "file": "layer22.in_proj.e8",
+      "source_key": "backbone.layers.22.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "30721d307a48a85ad1791caa2ad44c83e0c5f82f1378af625435b32d11c753d5",
+      "hessian_sha256": "ccacb6fc2b926ef5ac545035d72258ab6d9abca515079d20be34652f9a8cbae2",
+      "bytes": 23768029,
+      "sha256": "3a688c2897b99135057745b78cf13d4ba87d5cc1ffd56189a0a1bca4f541b0e4",
+      "decoded_fp16_sha256": "ce839d6e109b655c5057bab9f25166e42c8c2a8b18bbbce6370f1a13fd32a23e",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.513469398021698,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.513469398021698
+        },
+        "header_sha256": "7fa6071dcc0050a8cc750f625d70c39ecec8c8a91ab0419246b40aa593ac77c9",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.4679646840086207,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer23.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2885039746761322,
+      "relative_calibration_output_error": 0.11139166355133057,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1046,
+      "axis_residual_amplitude": 0.5126373767852783,
+      "payload_bytes": 23767828,
+      "file": "layer23.in_proj.e8",
+      "source_key": "backbone.layers.23.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "4805adfbdffea479a5ee73f2379a892dc76e838da519e132667c1ee6b4efc186",
+      "hessian_sha256": "3d4ffea2f878b2513f89b0b0df3afa3249b4017d139de0816e4fa74bd0e02d2c",
+      "bytes": 23768030,
+      "sha256": "8eaef98b728af4802bc0cd0c1275e0649a20567ff92c7e7670a243d0322ffc58",
+      "decoded_fp16_sha256": "0d807730c11a16fb8758dbc8c65d4273fd66b96408a113a448390352a60195fc",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5126373767852783,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5126373767852783
+        },
+        "header_sha256": "f8c8b5b2bbea0d191e0959609db1f853299dfa481193855c3485b4d8371e286b",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4865673219319433,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer24.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2886365056037903,
+      "relative_calibration_output_error": 0.11740656942129135,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1048,
+      "axis_residual_amplitude": 0.5125927925109863,
+      "payload_bytes": 23767828,
+      "file": "layer24.in_proj.e8",
+      "source_key": "backbone.layers.24.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "675506517adaca966104a69065d38704927824ce78fb2a406d9f5057da343bc1",
+      "hessian_sha256": "c7274f30eb9d6b9d2c2da8ae8692972d8c0140f34008ba390a0050a4ca8a7ac7",
+      "bytes": 23768030,
+      "sha256": "f8664603fc183564131620c3ac6a1b219b5e0863f55a17365e9bed073ed61855",
+      "decoded_fp16_sha256": "049713ce9fbd9ffbab15a4b8cff0ce82533a258ff4f3117371b67ecc45e7f797",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5125927925109863,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5125927925109863
+        },
+        "header_sha256": "0279e93051242e870e2e5daa6304d3916a539c4c0c65fb23d067e305afaa7811",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.464850013027899,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer25.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2895154654979706,
+      "relative_calibration_output_error": 0.12338632345199585,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1050,
+      "axis_residual_amplitude": 0.512687623500824,
+      "payload_bytes": 23767828,
+      "file": "layer25.in_proj.e8",
+      "source_key": "backbone.layers.25.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "e1a6fff9607ce3f377b448be13170987e7d14da201c9d0f72194a2d879c636b2",
+      "hessian_sha256": "967f35b53a48833a823d40e05070aae4c01d117bc30c69a996d0dac4d9312ea1",
+      "bytes": 23768029,
+      "sha256": "ef4abe53d24d84a361d1859358bfe491f20c07453f7457ba7f22015e0183d533",
+      "decoded_fp16_sha256": "f7356a969d8c98e065bb15fdf82a6425fe9d46343bdc4d149aed93f8dc70ef04",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.512687623500824,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.512687623500824
+        },
+        "header_sha256": "2da62be10d21972c8367b1cab4a15c51060e7683870b300275eea5d9e3aa1f56",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.4488710209261626,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer26.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2898375988006592,
+      "relative_calibration_output_error": 0.12244950979948044,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1052,
+      "axis_residual_amplitude": 0.5130819082260132,
+      "payload_bytes": 23767828,
+      "file": "layer26.in_proj.e8",
+      "source_key": "backbone.layers.26.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "6c0cb27d76f718584923c266da541dbb4be72b881ca5bb7c3a8d99085166714e",
+      "hessian_sha256": "60bd6e0569616667d39e679085d98d1262b1a303684d0bcf1172b16e3d46098a",
+      "bytes": 23768030,
+      "sha256": "ca437bba33e25dbbe9667b154285596471eb1595a7b3834ad24ca2625182b552",
+      "decoded_fp16_sha256": "767eb57e63add30de23cdcd448127ab7013061335dc96bc77ded1d79def15260",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5130819082260132,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5130819082260132
+        },
+        "header_sha256": "12c9ba7d32471318959d3ccc9cf5611fbd5fca263d0a43df67edebbade016bad",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.463738151011057,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer27.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29011258482933044,
+      "relative_calibration_output_error": 0.11909285187721252,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1054,
+      "axis_residual_amplitude": 0.5114879608154297,
+      "payload_bytes": 23767828,
+      "file": "layer27.in_proj.e8",
+      "source_key": "backbone.layers.27.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "1cc0c89b80f4ebf144ca2758926f2bb0330b8d10578cfb4184faefe0fe3875f3",
+      "hessian_sha256": "078fd3756e52adf95ac5aabc8a421f7dfaad7547a4252b0ecb05109e1bc5f648",
+      "bytes": 23768030,
+      "sha256": "2bafd6e245434bab80631da6bad8ed4c23620775a27e4666f009115ee565b5cf",
+      "decoded_fp16_sha256": "4eab88819bb143967dbab6b1d5372457cb236a13cd76bf2cd22421fea3cb9a20",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5114879608154297,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5114879608154297
+        },
+        "header_sha256": "9e931ff8751a25a10ca4d1cf27fae6fcfe4e418a7318192abea6a1bbb680b819",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4492725268937647,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer28.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2907978594303131,
+      "relative_calibration_output_error": 0.11499849706888199,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1056,
+      "axis_residual_amplitude": 0.5124928951263428,
+      "payload_bytes": 23767828,
+      "file": "layer28.in_proj.e8",
+      "source_key": "backbone.layers.28.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "93ec984ed730d3468a3f06c374c41bc3a3b22ef09ac62b175687b2e651ac73e1",
+      "hessian_sha256": "939506ba220b57e69b630fc7a0ffebac9ccda8aa815483e03c02ae2fdc22da32",
+      "bytes": 23768030,
+      "sha256": "063f075d9889a5695d2a1c3f6e2e616b384defb41ba9a442b63e546c4bc182e7",
+      "decoded_fp16_sha256": "a8cac89ac424c854af2bf1b1378c133ef5f695cce6dfe063a856d4dccbeca652",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5124928951263428,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5124928951263428
+        },
+        "header_sha256": "77523f28f77ff6a8ae3d607465d5da81263381373381e59fcdc9ac2a9eec24a6",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.477677785907872,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer29.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29096493124961853,
+      "relative_calibration_output_error": 0.11393910646438599,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1058,
+      "axis_residual_amplitude": 0.5127645134925842,
+      "payload_bytes": 23767828,
+      "file": "layer29.in_proj.e8",
+      "source_key": "backbone.layers.29.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "4d542f030b3514bc93eec5f1dfa21ab88991c5a8447f5b09b09d37f07f7cbc4b",
+      "hessian_sha256": "100f9240f458bd51db0f3e22d2ce2c2670d85515be0ee8b1a5d3a8d22178cb51",
+      "bytes": 23768030,
+      "sha256": "64766364474591fbf5bb9e48d07accdd733089e44e6a894f893201993c140c05",
+      "decoded_fp16_sha256": "04e1f2b4d4f377b62703e8e5c2e149058d01d1cf78cac46c2c2f8c356ff70379",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5127645134925842,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5127645134925842
+        },
+        "header_sha256": "f752389a737589b3b039e1a3f56db7aad8967a8dff2076c752223d2157c0ee9b",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4679403339978307,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer30.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.291310578584671,
+      "relative_calibration_output_error": 0.11209923028945923,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1060,
+      "axis_residual_amplitude": 0.5124194622039795,
+      "payload_bytes": 23767828,
+      "file": "layer30.in_proj.e8",
+      "source_key": "backbone.layers.30.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "6b6f1e67fada3ff139a3ab0a09b3df6cb4efa5c9b130eb8660939fa0f7d791ce",
+      "hessian_sha256": "2761cef64e6beff0621c318445ad721f2d56a423f2b52cc7b043ace55828a4c7",
+      "bytes": 23768030,
+      "sha256": "02a6ac54141a202397808846b348dc39e49e44f8ead3059058252b83e8c00a97",
+      "decoded_fp16_sha256": "8c8dd815d36a53899c3922a2aa9999082f8477fa2a9599674b99f0c96c022808",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5124194622039795,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5124194622039795
+        },
+        "header_sha256": "80144531ec2aac7543642794d4761c84cc3a2dcdb178df0ae27eb1ce97a58d45",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.560738623025827,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer31.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29197677969932556,
+      "relative_calibration_output_error": 0.11596886068582535,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1062,
+      "axis_residual_amplitude": 0.5123070478439331,
+      "payload_bytes": 23767828,
+      "file": "layer31.in_proj.e8",
+      "source_key": "backbone.layers.31.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "6dede03b0ab5ada8ca78a601e28afa371ae015332058fe85f1416ce1c8492798",
+      "hessian_sha256": "55fbe8ccf1b93134d6279832a56725aba8c4b6768c744ba31f3a327f0664443c",
+      "bytes": 23768030,
+      "sha256": "eb0baa9cf98ba8996bd8ba74a4c0e492af359576447e540d4bb7893c5e130936",
+      "decoded_fp16_sha256": "ac4ec102870574a08f5dc771e45e2b59e40527095c54783a35ba104c7c38a72b",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5123070478439331,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5123070478439331
+        },
+        "header_sha256": "cb103ef2cf742f61c6edea645315867427d8caf448324aaffaa33e205d6f35a2",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4480781300226226,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer32.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.292559415102005,
+      "relative_calibration_output_error": 0.11321524530649185,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1064,
+      "axis_residual_amplitude": 0.5123522281646729,
+      "payload_bytes": 23767828,
+      "file": "layer32.in_proj.e8",
+      "source_key": "backbone.layers.32.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "dfb2281acd576b830461b21a6258de5cc2dc3838eb640014142607df4cc9455c",
+      "hessian_sha256": "a5698d9dea3b796283c6f72875b52187ec4a7d5d165dea85244b2b1468c651b4",
+      "bytes": 23768030,
+      "sha256": "e2aef10b9e304a48d3120e4067b63e4f4048a60f584c1d97f6a19cf4e5ccfcba",
+      "decoded_fp16_sha256": "5a9b36da019e1e90d40685943a988769b6cccc0ba59d54333f5d04c32f62bf27",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5123522281646729,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5123522281646729
+        },
+        "header_sha256": "41fb23403a2854d83b616df87abe638b51235131383e2891efd18a8076fef6ee",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4792249710299075,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer33.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2934302091598511,
+      "relative_calibration_output_error": 0.1104220598936081,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1066,
+      "axis_residual_amplitude": 0.5124814510345459,
+      "payload_bytes": 23767828,
+      "file": "layer33.in_proj.e8",
+      "source_key": "backbone.layers.33.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "ca04694cf081fc7130357a7dedf5e43f5b0dff98f328cd059da7d50fdbc233f0",
+      "hessian_sha256": "98706c81b45d8203e6e02ab5db4a2f50bff11dc5fa3e0fb695c3734790df1d5a",
+      "bytes": 23768030,
+      "sha256": "1ad5782521c831d9c68690b629e781162aa6bbb67893654818cc4d9438ec9290",
+      "decoded_fp16_sha256": "647f4b358cc90bff3c6c244485dab2bbd00a790ed702db6cff03f4d2ff74b103",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5124814510345459,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5124814510345459
+        },
+        "header_sha256": "c3ec788f778eb8cee16ad8808ba4cd47301fa60854bbaf2c1ae6b84e1761480c",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.462667703977786,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer34.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2936161756515503,
+      "relative_calibration_output_error": 0.11065827310085297,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1068,
+      "axis_residual_amplitude": 0.51231849193573,
+      "payload_bytes": 23767828,
+      "file": "layer34.in_proj.e8",
+      "source_key": "backbone.layers.34.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "d8e8aca94515c8a78466966a593a32bb46024505e07babfb3be688fcfa68d745",
+      "hessian_sha256": "a352d15818857c99f0876f8ecdcb3a4e7ff7ac6dfa65cad908b9054a3bd0ec79",
+      "bytes": 23768028,
+      "sha256": "9e1d6f88b1871ef9c32618cc2adc27af3d699c371c1177efdde47b04c02cef77",
+      "decoded_fp16_sha256": "4b8557813103f817da0f987c446118344b2675e49c981fd8feea233da49ea0b1",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 200,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.51231849193573,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.51231849193573
+        },
+        "header_sha256": "0cee7d4f8b651487e62bdd0d12cdec420a8d5f2fc3e2c8c55406e6023db60419",
+        "bytes": 23768028
+      },
+      "elapsed_seconds": 3.455765860970132,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer35.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2943306565284729,
+      "relative_calibration_output_error": 0.11108475923538208,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1070,
+      "axis_residual_amplitude": 0.5129584074020386,
+      "payload_bytes": 23767828,
+      "file": "layer35.in_proj.e8",
+      "source_key": "backbone.layers.35.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "3342e1783cc1044e192f3eebcba615486e97794c8bd2f3c2c4f64f5cb7bc1984",
+      "hessian_sha256": "43a5d82a387d9dcd76bdcaa2de77c17d144f1bf494581083ce438246962d7cc9",
+      "bytes": 23768030,
+      "sha256": "398835e213d2bda007708d94a668ea605ff88fac1cebd6010aed66a1cb9859fb",
+      "decoded_fp16_sha256": "16b09a0bb5272d6da03b661e157b750c12476f04c3240a269b20370cedaea9dd",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5129584074020386,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5129584074020386
+        },
+        "header_sha256": "31cd3169237121bfe366e2b4b2f985321ead3945e2b9293847d265f09d5b6298",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.451386451954022,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer36.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29446592926979065,
+      "relative_calibration_output_error": 0.11054551601409912,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1072,
+      "axis_residual_amplitude": 0.5124297738075256,
+      "payload_bytes": 23767828,
+      "file": "layer36.in_proj.e8",
+      "source_key": "backbone.layers.36.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "8bd00b613832ceca62c9e6d7bd4c331b0450dbd9bb5170b0d79780c248d41396",
+      "hessian_sha256": "32a62d31da32adccb93b18eb15ba639c55757a4a023cc203e7eaef2cf7054f35",
+      "bytes": 23768030,
+      "sha256": "db859a76b2d503c3d75a419873b5a34cb30db1bed1d53a2f9bb42ec3d4770cca",
+      "decoded_fp16_sha256": "f54608fedfc5fae43cda4a08f20f2dd69cb963e021b67919d55ab9fd1e80ccdb",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5124297738075256,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5124297738075256
+        },
+        "header_sha256": "b9c29fba4391c21f6f7839e962c6192364b155754ceb8ee0789f0bd9165f2e08",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4354630949674174,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer37.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2941344678401947,
+      "relative_calibration_output_error": 0.10605649650096893,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1074,
+      "axis_residual_amplitude": 0.5128697156906128,
+      "payload_bytes": 23767828,
+      "file": "layer37.in_proj.e8",
+      "source_key": "backbone.layers.37.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "b9faa187db7897854555ba07430c0fe82fd3a4424f70d39e2524eaeb971c4603",
+      "hessian_sha256": "8c314c2d3d3e557dea4731d578a610eed0a1c56865737b3f7adfc55b34080658",
+      "bytes": 23768030,
+      "sha256": "54e67888621f3df95ac95c389805dce5b8742d7083eb6dd60d29eaaececf8f1f",
+      "decoded_fp16_sha256": "85037d0674e2167b8396841792e12a6b6790b9ca91681cb4862d3f71f9a2aa10",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5128697156906128,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5128697156906128
+        },
+        "header_sha256": "78ed0be7bace68848636c294dce179c650d388640a2a4b02acef44db0da5373f",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4542399930069223,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer38.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29455816745758057,
+      "relative_calibration_output_error": 0.1022891029715538,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1076,
+      "axis_residual_amplitude": 0.513045072555542,
+      "payload_bytes": 23767828,
+      "file": "layer38.in_proj.e8",
+      "source_key": "backbone.layers.38.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "95788afc5ae0519a37b08d3845cd88b7690dd79a5324621329b0a7ee7ac06cdd",
+      "hessian_sha256": "b9bb988bc96106fb276cb70e145d6f91e027dbaa3774d8793b9d61b9440ad45a",
+      "bytes": 23768029,
+      "sha256": "e787d59d1efe138f7ad76677c9bfa5d56f45fa3a4115618523842660ed82bcbf",
+      "decoded_fp16_sha256": "f48ad16e31200aa461f6d517466006593ac5de776161ea1804438b5f5566858e",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.513045072555542,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.513045072555542
+        },
+        "header_sha256": "79413d388a2ac0ee8bb586dd3ae94853226b1a07c727f4014817f900a4441a97",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.44056166394148,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer39.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.294016033411026,
+      "relative_calibration_output_error": 0.10858600586652756,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1078,
+      "axis_residual_amplitude": 0.5131464600563049,
+      "payload_bytes": 23767828,
+      "file": "layer39.in_proj.e8",
+      "source_key": "backbone.layers.39.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "7b94daeb9c4c0f36f45a6b0359303f737a5c51869070b2c8519d118e254db3fb",
+      "hessian_sha256": "4a76ed7441f645bd8cc7b995436f89380398c67b846c6cf2a387f3ff838da089",
+      "bytes": 23768030,
+      "sha256": "ca34fe736cde5c2ee2a0cd10089ffe57f2c0c92c537f304064292628811c836e",
+      "decoded_fp16_sha256": "8ff0f93b3d328c919532b1bda5e37e0b5158c5a76fc95be98e5444c9d2c1c347",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5131464600563049,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5131464600563049
+        },
+        "header_sha256": "c5146544f6fa02f2a58399783d0af93c20310878a21bf3683da4673ae139cb26",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.5754864760674536,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer40.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2937772870063782,
+      "relative_calibration_output_error": 0.10781279951334,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1080,
+      "axis_residual_amplitude": 0.5127745270729065,
+      "payload_bytes": 23767828,
+      "file": "layer40.in_proj.e8",
+      "source_key": "backbone.layers.40.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "8bbd294481276bfd3c3c351180c9db509ec80cbbb570a0847be2f5efb32c3e61",
+      "hessian_sha256": "2e440e2a6d891ddf0ec39f911c590fc9f991fd4ee8e93d5dfb6965ad583f0cc7",
+      "bytes": 23768030,
+      "sha256": "ac749b61716d76ff35db50b668f55fc5c8ff6a8a63b72b5b2f8db44e9c416876",
+      "decoded_fp16_sha256": "363d1cf05d8a91d07f2d657d69ab94778dfbc41ce1baa4f664dbc00a6a3fd939",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5127745270729065,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5127745270729065
+        },
+        "header_sha256": "235978fa2c1af435c152feb67e9c5b6abb582ec4fba98293d55cbc191003b029",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.551105575985275,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer41.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2934821546077728,
+      "relative_calibration_output_error": 0.10850789397954941,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1082,
+      "axis_residual_amplitude": 0.513036847114563,
+      "payload_bytes": 23767828,
+      "file": "layer41.in_proj.e8",
+      "source_key": "backbone.layers.41.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "8912dc9118855a72193692376e0cc5af90567092b13701139949f60997794517",
+      "hessian_sha256": "8260323601544b3e14431346e9227579c42bd23d1630712606592cdf77339015",
+      "bytes": 23768029,
+      "sha256": "96827a9ce7cbedbe181dc2e994edc1ab55cae5ce6d902ce04a7af33e9c331e21",
+      "decoded_fp16_sha256": "5afcbf43d993ad372d989e42171f878bf8534e64fe6a861dfe2e5231ad1c47e5",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.513036847114563,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.513036847114563
+        },
+        "header_sha256": "1141cd7ab9f4808865d06f3ee415f05a60a2cc78f165c8591dd0b53f15041c62",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.575129415956326,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer42.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29297634959220886,
+      "relative_calibration_output_error": 0.11079075932502747,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1084,
+      "axis_residual_amplitude": 0.5123478770256042,
+      "payload_bytes": 23767828,
+      "file": "layer42.in_proj.e8",
+      "source_key": "backbone.layers.42.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "7c29b32e8598f8c7be1124acbc01786c5e87b7283c3156a46420a56faefe0d38",
+      "hessian_sha256": "613d33543b5bccb201b2dccaf3717151c38f134414d25a6208a6e62e66dbe981",
+      "bytes": 23768030,
+      "sha256": "724b459916a8576505993f0912a24cf7d5059cd262ddf3c1a7d4f1c47bbafd01",
+      "decoded_fp16_sha256": "0281a19f8200337b27a6b38a6b2e1ed02f0893ac09121e4da3460235e7529700",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5123478770256042,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5123478770256042
+        },
+        "header_sha256": "8117cdeb5f8e234de9738ac35b106c2634d14d6879381eb8c5284511c4365088",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.5885155940195546,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer43.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29228004813194275,
+      "relative_calibration_output_error": 0.11430823802947998,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1086,
+      "axis_residual_amplitude": 0.5121240615844727,
+      "payload_bytes": 23767828,
+      "file": "layer43.in_proj.e8",
+      "source_key": "backbone.layers.43.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "eefd923eb6d650df9de96775db71b5856a3eef4150bed258ba2862ec0a45aada",
+      "hessian_sha256": "e75aa214cbc8368bc4f75bb5f1b6cbd675003239bd6aac39976aef3939808fcb",
+      "bytes": 23768030,
+      "sha256": "acd577bd0f4d63e8bc41856a42945de90f9372b82968ae98a43e5398fc7b5995",
+      "decoded_fp16_sha256": "a4214cb3e23ec1c401a430591dd3ac3344f9f12f2f174244f499bb24fd8bda01",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5121240615844727,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5121240615844727
+        },
+        "header_sha256": "3bbd5c09dc646d0168ed2cf39a66914a07b94500e08dcbaec94a9b7d34355d71",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.539554232964292,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer44.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29178768396377563,
+      "relative_calibration_output_error": 0.11320400983095169,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1088,
+      "axis_residual_amplitude": 0.5127162933349609,
+      "payload_bytes": 23767828,
+      "file": "layer44.in_proj.e8",
+      "source_key": "backbone.layers.44.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "ea1e32d473ba9e1675b2fb388a848c0082639f1148a5b92e0ea8ea4ccb498297",
+      "hessian_sha256": "9d2b424c96891bd17a3904bb83b7beda5dd37c1ff7dea17a40dbc813934ca8cf",
+      "bytes": 23768030,
+      "sha256": "3c8b9643a8e6ee4cd8878e79969c4692d1e2ccbdb92a30bcb3c440495bb9ea8f",
+      "decoded_fp16_sha256": "25691c4f845c5489ec2e2de93b8dfa906a33009ccfafba43f16cd0ce69fb7b93",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5127162933349609,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5127162933349609
+        },
+        "header_sha256": "67991872a2de76e75e173131a0d6cc7a13f37d3016838a4be57cfdcad17d46a6",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.5048759588971734,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer45.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29129648208618164,
+      "relative_calibration_output_error": 0.10984450578689575,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1090,
+      "axis_residual_amplitude": 0.5123200416564941,
+      "payload_bytes": 23767828,
+      "file": "layer45.in_proj.e8",
+      "source_key": "backbone.layers.45.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "762fa7766c36f437a646445e6b88c99ec40694ebd58344721b1faf9c84faafc3",
+      "hessian_sha256": "a13e6c5fe5e9abdc6cba5d8f5b397ff8f5fdf13008d5314f14de294fc0801a74",
+      "bytes": 23768030,
+      "sha256": "f09e77c769004f606b34a408efeda8e6e0b2dcaa33c806c215a5141f1ffb824c",
+      "decoded_fp16_sha256": "4473e58867bc40d758f9d23388cb00dae79598919eb07ae418086a2f0670d56b",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5123200416564941,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5123200416564941
+        },
+        "header_sha256": "f3ab4d3958cc59bbbfa81f9168b161c13cef852ca37b7e5dc39b546ba38d0a21",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.5014660350279883,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer46.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.290662556886673,
+      "relative_calibration_output_error": 0.1107669472694397,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1092,
+      "axis_residual_amplitude": 0.5128560066223145,
+      "payload_bytes": 23767828,
+      "file": "layer46.in_proj.e8",
+      "source_key": "backbone.layers.46.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "b360f639c96a3e24eba3b7a44f2d2f145326d0742cca7577dc347ec4ab99ad9f",
+      "hessian_sha256": "b273c0b5372e08ba1f531cf241852d632c0de0f6d216ef9496eb4ec3545e8b82",
+      "bytes": 23768030,
+      "sha256": "eaab663cd907a6f76394bd33f8be7c5a609f5e22ac97db47a17606c98a29c4f6",
+      "decoded_fp16_sha256": "d96e780110c909f5f735676657c050dbda31117aabb1132e26d6d977f441214d",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5128560066223145,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5128560066223145
+        },
+        "header_sha256": "b846b1bf57021ae6aa526189406561e4225f385e50e2983c66965451de00dec9",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.512650938006118,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer47.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2898784875869751,
+      "relative_calibration_output_error": 0.11054984480142593,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1094,
+      "axis_residual_amplitude": 0.5122286081314087,
+      "payload_bytes": 23767828,
+      "file": "layer47.in_proj.e8",
+      "source_key": "backbone.layers.47.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "1cf2640bd163d8dd0e975f861fea1563b6595c3c180743e4cd86caa170b788ed",
+      "hessian_sha256": "f3eeb58c72a4ea238d52fe9653cb6288bca57c405225af709dfabca2a99c0f8f",
+      "bytes": 23768030,
+      "sha256": "cf03db1cb44ab52eb82eb272b7994eb5fe64f6e3b71a0bbf29dedffc214aeb14",
+      "decoded_fp16_sha256": "6553b29f52bcd4cd2c0a608f69611d3e2a3f39bcf511abc349c20a7bbdb916bf",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5122286081314087,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5122286081314087
+        },
+        "header_sha256": "e8cb7cf0448d416dc810bba39755ba98f4a4f1972609da9f32b3b9bed04e314c",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.442857182933949,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer48.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.28944697976112366,
+      "relative_calibration_output_error": 0.11096348613500595,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1096,
+      "axis_residual_amplitude": 0.5123311281204224,
+      "payload_bytes": 23767828,
+      "file": "layer48.in_proj.e8",
+      "source_key": "backbone.layers.48.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "8f6a2e19e82f0fb5c15b045e1607d56eeead59c3353a7999c4ce9dd4b774fa52",
+      "hessian_sha256": "d6607a257b3adf8cb1f6a470d21d585035525db50d223956261d613068546a01",
+      "bytes": 23768030,
+      "sha256": "2895aee870434423596414f97d9d44b31d2a6dbef86b0592b1644cc24e6dde02",
+      "decoded_fp16_sha256": "04840a98cddb2a966e3e4128988c6f75f3a5507da68ea2bcc07ad37183eeba29",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5123311281204224,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5123311281204224
+        },
+        "header_sha256": "ef97fe533cc3678b562d92c999e912995e150412bc12f7eb06ec6cd76d1d2117",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4464253140613437,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer49.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2889575660228729,
+      "relative_calibration_output_error": 0.11298073083162308,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1098,
+      "axis_residual_amplitude": 0.5130280256271362,
+      "payload_bytes": 23767828,
+      "file": "layer49.in_proj.e8",
+      "source_key": "backbone.layers.49.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "13d7950d7bc7b6f583c3d72611d3ccb9e2515cfc2a76f8c4876f59de5cb7a2cc",
+      "hessian_sha256": "a75d176c8caec4bace114ce6c712cfe3f1f91485d210b6e6bc42559bdeb38e47",
+      "bytes": 23768030,
+      "sha256": "b4d1ec45f4e3a2cac082542c67788c4525e8e2648bd98c2bef1646a3af78b59f",
+      "decoded_fp16_sha256": "fd0334143cf56f57f2efa17172473a28f3bda3d52006e516e4278ed62aa1e176",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5130280256271362,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5130280256271362
+        },
+        "header_sha256": "00f9a75ed4f61a188bf3654d9ee91bae9219158c518b1ecbf345b90dd9a791c0",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.4932835979852825,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer50.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2884766757488251,
+      "relative_calibration_output_error": 0.10849182307720184,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1100,
+      "axis_residual_amplitude": 0.5124046802520752,
+      "payload_bytes": 23767828,
+      "file": "layer50.in_proj.e8",
+      "source_key": "backbone.layers.50.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "bb5656cb3cfac8eb2ac710433dc861ee89c688cf7bbdde153274b603f82fd442",
+      "hessian_sha256": "476597bb2a2a784470da6d8b8c2d94f283910fde542fc5c519883ba43f7bcae7",
+      "bytes": 23768030,
+      "sha256": "0a6b57973f1a011b966b9b04d97ff213e53744a02fd3273c44fec9cab654b33a",
+      "decoded_fp16_sha256": "9793cc8758d983dbc1ec831cf33daab5de096d61774bc3796363eb4f15c9e3cf",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5124046802520752,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5124046802520752
+        },
+        "header_sha256": "5505d85821a9cde524dbd74dd33d6c7cfdd0d9d40c5f39c575b01f3483a0d945",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.537973678903654,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer51.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2883146405220032,
+      "relative_calibration_output_error": 0.10418062657117844,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1102,
+      "axis_residual_amplitude": 0.5135771036148071,
+      "payload_bytes": 23767828,
+      "file": "layer51.in_proj.e8",
+      "source_key": "backbone.layers.51.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "6f55dff73d46871cc3db790f3e687fd5cd6c2332613b558364a8730fc1ac9161",
+      "hessian_sha256": "5008735134074c71f68a18babeaca1a038bed5db68b6080fb52f917058c3bdf0",
+      "bytes": 23768030,
+      "sha256": "17924f5e808aaa508fde6afee7f5ad65deb589ec43fa98d37202e54c32d3891e",
+      "decoded_fp16_sha256": "537f206ea620d450bf9340c2c96cb503931fa3e35d66c86930f99aa2fa24cca2",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5135771036148071,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5135771036148071
+        },
+        "header_sha256": "492c231234f1fc2e9e3f21943b0f968b242db249443ff65a53388877ddfd9519",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.552936571999453,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer52.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2881220877170563,
+      "relative_calibration_output_error": 0.10449910908937454,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1104,
+      "axis_residual_amplitude": 0.5128985047340393,
+      "payload_bytes": 23767828,
+      "file": "layer52.in_proj.e8",
+      "source_key": "backbone.layers.52.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "718303138a0cfe46a674be1ae86a446ef8e3635ae1ad1e3cfec02c51ed9e5d4c",
+      "hessian_sha256": "e512dfedf1c92a616e6ef0f916722dd5cb264c6b15968f6e95f96b14ea8b3699",
+      "bytes": 23768030,
+      "sha256": "8fcebb788026a54d7ec0bb626bc214c1c29cf503e6a2f7c8b55af6b3afaea5be",
+      "decoded_fp16_sha256": "c2f1382ab22f6b7f98e3454bf949168a8d6ca717b00389ff262a28d6362819ab",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5128985047340393,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5128985047340393
+        },
+        "header_sha256": "f5898d0dcc76c8dd2fd7ff47661eec9b54945c8d8132acfb20241dab750672c7",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.528987515019253,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer53.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.28827399015426636,
+      "relative_calibration_output_error": 0.09945721179246902,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1106,
+      "axis_residual_amplitude": 0.5128055214881897,
+      "payload_bytes": 23767828,
+      "file": "layer53.in_proj.e8",
+      "source_key": "backbone.layers.53.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "793bee852e0fa245f639a10abc13b3e7b332976257f422c6dbb9af12958dede2",
+      "hessian_sha256": "97ff7e2b5ac209f04588f98bc7a39009cadacd79690219d9366603db2be91b9b",
+      "bytes": 23768030,
+      "sha256": "9f9d08491d0fad59e68ac53c5e0d3e71ad90be8adb766597c4160ec70889bb4a",
+      "decoded_fp16_sha256": "3a13b5561f0e3f494d1c194e2c34b6cd2b7befce3373d6ad217bb49f67f53c3e",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5128055214881897,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5128055214881897
+        },
+        "header_sha256": "fb0c7fc772f699773c21b97926548a00cb1d59fa59cf8ea09444f8da547aed34",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.471185078029521,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer54.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.2898504137992859,
+      "relative_calibration_output_error": 0.08598438650369644,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1108,
+      "axis_residual_amplitude": 0.513257622718811,
+      "payload_bytes": 23767828,
+      "file": "layer54.in_proj.e8",
+      "source_key": "backbone.layers.54.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "39888b21369d1fec7c35e24f5b3acfe677bd98c2787ec965fff0f18215b9f96b",
+      "hessian_sha256": "b5586420dfb9a16fa3220b11e45456c5af2ffb8e327000cd889246404c99c6a4",
+      "bytes": 23768029,
+      "sha256": "09c9dd50a8078b909afde8c147da222be7bc26496e2975146d8bf30f7225b26c",
+      "decoded_fp16_sha256": "e738aa279e413bbc0cdb48202383ac060fbc09c897df2f3b88a1a497c13f0972",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 201,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.513257622718811,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.513257622718811
+        },
+        "header_sha256": "3ecb0c2544f591ed733ed6b4a2c527d4e2b5b704e62c5ff93e0df0a32350238e",
+        "bytes": 23768029
+      },
+      "elapsed_seconds": 3.501632691011764,
+      "peak_cuda_allocated_bytes": 3771000832
+    },
+    "layer55.in_proj": {
+      "shape": [
+        18560,
+        4096
+      ],
+      "index_bits": 20,
+      "values_per_index": 8,
+      "relative_weight_error": 0.29328879714012146,
+      "relative_calibration_output_error": 0.06996792554855347,
+      "feedback": true,
+      "damping": 0.01,
+      "scale_override": 0.9,
+      "tune_iters": 2,
+      "seed": 1110,
+      "axis_residual_amplitude": 0.5132623910903931,
+      "payload_bytes": 23767828,
+      "file": "layer55.in_proj.e8",
+      "source_key": "backbone.layers.55.mixer.in_proj.weight",
+      "source_dtype": "torch.bfloat16",
+      "source_tensor_sha256": "25d254ef0f9b8be97c72aa671d98564aaa8a5f2261534c949a2bef249b43cb4f",
+      "hessian_sha256": "de97c43d4d82bdc16b681c902c4d11d412eb7be4f11d2f5e8cc961bff84ad0ac",
+      "bytes": 23768030,
+      "sha256": "fe01b46fa24380f0696ed0479e0545e19af347b698ea6f963bc55b9700fdd0eb",
+      "decoded_fp16_sha256": "ce2b1a2557221b3e3ccad4a377dc2f357716030232f13fd809fe6df3cc4e67bd",
+      "disk_roundtrip_fp16_equal": true,
+      "packed_indices_equal": true,
+      "layout": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_count": 9502720,
+        "index_bits": 20,
+        "header_bytes": 202,
+        "base_uint16_bytes": 19005440,
+        "axis_nibble_bytes": 4751360,
+        "balance_fp16_bytes": 8192,
+        "input_sign_bytes": 512,
+        "output_sign_bytes": 2320,
+        "scale_fp32_bytes": 4,
+        "axis_residual_amplitude": 0.5132623910903931,
+        "header": {
+          "format": "mamba-e8-dct-hadamard-v1",
+          "shape": [
+            18560,
+            4096
+          ],
+          "index_order": "row-major",
+          "rotation": "dct2-kron-hadamard; maximal power-of-two factor",
+          "axis_residual_amplitude": 0.5132623910903931
+        },
+        "header_sha256": "e1265f3c84d033309f721e5ac53f2dc5acce2940b3b55ad2638a2cc5ed42f36d",
+        "bytes": 23768030
+      },
+      "elapsed_seconds": 3.49760585592594,
+      "peak_cuda_allocated_bytes": 3771000832
+    }
+  },
+  "files": {
+    "layer0.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "b9bced2b14abac77e7a4b6df9e58149f1341d79c13281cefa34b4b82290797ef",
+      "decoded_fp16_sha256": "6d7409e4683d47b672dd34753beba82ff2d5e0016c2267dca6141135fb6fb5e4"
+    },
+    "layer1.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "c9b375f2ce868b41e807996e78a6161527ea55891c2f6ed17df372b142a353a3",
+      "decoded_fp16_sha256": "966c7a520936efaaf6e0d91a8d4ca3c9329f4c9d631f377b0c64c0d9cec3eead"
+    },
+    "layer2.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "86b112916178464dced1f273e604859794aecaa127993cfbb21aa24335a637c3",
+      "decoded_fp16_sha256": "437825675bb1e226641d21131361b81f9e1cff5c9abf25e78c9fbccb46f5726b"
+    },
+    "layer3.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "adbf5bf5a743401d45ec5120b9d7524427b43d05b2422cd0cdb85c66c4cee531",
+      "decoded_fp16_sha256": "5799da0173a26b3185efa6a6a69bda699879a5763d4d0cbfb7ed86c15519759d"
+    },
+    "layer4.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "1f9b254ced5796c6b6ffdb54aa67b407b7e0ac64efb80676d5ff921b45dd4d2f",
+      "decoded_fp16_sha256": "ddd5f9468c51b4f50b95379a96ba932c2522700f59c496a1666a9188b6aedc61"
+    },
+    "layer5.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "998ecd1176c7033f91e3cde3a770aee68a4491cc71c67d02b21b2f72ff5cd8cf",
+      "decoded_fp16_sha256": "e930de795df7403671259d88729ce45ee988d81a9754241a691e14e10c86c019"
+    },
+    "layer6.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "a48b8cc3f9fd39b226d64a2e40fbfc60139e179a9e4309b36c6e78109a24f58d",
+      "decoded_fp16_sha256": "e712eaa3bb34beb046a570adc326c6ef1255c94444cf1f76ef2841110baf900f"
+    },
+    "layer7.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "48ca556f31153a0a7eb9a3a1c67841242be2a1400ffb7debe6626a8b73b03c06",
+      "decoded_fp16_sha256": "e9656e15b46329396ae30e20a391fb5280dc8fc27469ac286c58dd0bfef2805b"
+    },
+    "layer8.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "da815b531220afb53282424881a961b2c3b990e641919df44b7f9409aaa78f60",
+      "decoded_fp16_sha256": "3b2f0699b9029d93a321e0d1a43aafebc2d4cdd4b9ebf83e9814a9cfe0e05357"
+    },
+    "layer9.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "cba4a6aa2bcf368822622a39d1850eaa90cd026ba1c0012b720d8ed8955c6a3e",
+      "decoded_fp16_sha256": "e77c8a7e327344e22e3ea1f9777ebb5061bae134f8803720d74c823fe34bc765"
+    },
+    "layer10.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "5d3575a3c5722933a3df92bf6148fa576cbc7d039588f6bdb86e083d2756d763",
+      "decoded_fp16_sha256": "4a48a7fd2f47329ce7da34962a1983ec0ea3a8329102df387b503a520c0dde1a"
+    },
+    "layer11.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "2eb3d2ba59297e599024e835bfda5e83f8123ca70dc57bde0b887beda3dc7783",
+      "decoded_fp16_sha256": "d7042a5dadcf14033f8c770cdedc0cd65ab360bceb422597268b4f93f19772dc"
+    },
+    "layer12.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "c35de0c6da9c21825bfc5a8ed7bcddd8e2d6cc022b9f55250a0e9052179e9439",
+      "decoded_fp16_sha256": "89585b4831ab292c979a50f242a5c3697cdc85d514400dbb9eef99d1f7f4fc77"
+    },
+    "layer13.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "0823f1c3f1bcaf01e8b47250668966fb351d7a428ebd87d40e54f467fcf67d68",
+      "decoded_fp16_sha256": "49395405f331b95101af4635a6579b454c810d26ca9c356dbc13b253681b9ede"
+    },
+    "layer14.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "934757dd9c995e79cf111e1b9546dfde18645842933c33603eb436cf1a37c6ae",
+      "decoded_fp16_sha256": "aadae665d3f2fff14b5888060a903779f1bf6ef1535e8a5c2bc0d40b96284b80"
+    },
+    "layer15.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "b34dfe4a5c161c5ef92fcc1762d5d19d5a1a2647a01cab36bcf370418e397560",
+      "decoded_fp16_sha256": "028456996e71cc2681e8989c167ce5794a399faea3bcdded99c4ada4d7c285ac"
+    },
+    "layer16.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "de8229892639ae4a88e914bb30e018f98f510ecd6f646f71667b3972a0f5ea33",
+      "decoded_fp16_sha256": "20551eaa414534f6fd8ff06ed35ea55e73f59180062a5702f63aa4c348c9788c"
+    },
+    "layer17.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "5842699af1cd44d5ac91eb1fb73f3608ebd97b645acc3054242299c0945f8d3a",
+      "decoded_fp16_sha256": "24396825da2cfb53f489e30a14670f2fa95d14f8b4c6f888ac61e27fa23fcdd5"
+    },
+    "layer18.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "420b26f5fa3ef9e366acd5dae043c6853afa8209b29a3c6c1f7bd90537d8c397",
+      "decoded_fp16_sha256": "585ab7cf91c39952b6a89f008343e7717a65d3d283587ddbf2f5decc7b192edb"
+    },
+    "layer19.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "dcbaf2b7d6533bdb5c12bad767b085f634698d7ac2fb40eff9ff7fff34afde6f",
+      "decoded_fp16_sha256": "9249eb995bd291cd83576b60a6e75a11b2117e2a55ff4143248d1e8b74293c84"
+    },
+    "layer20.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "355c5eb1c4b0f5faa5e18e8645c3286a06f8e05f9b6da199fb8d4c3cfd698451",
+      "decoded_fp16_sha256": "84839a6aecea79086d706bd434d7a13c416390b3c24137975af3ed8901f4ed1d"
+    },
+    "layer21.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "df979b7a200941a46568932a4220608e5b1a51e7d1619b6cfbd17481d3f838e7",
+      "decoded_fp16_sha256": "b72553a0d9588b21180d82a6f9f0307964c2672661874bde2fb0fac2f10c1bdd"
+    },
+    "layer22.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "3a688c2897b99135057745b78cf13d4ba87d5cc1ffd56189a0a1bca4f541b0e4",
+      "decoded_fp16_sha256": "ce839d6e109b655c5057bab9f25166e42c8c2a8b18bbbce6370f1a13fd32a23e"
+    },
+    "layer23.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "8eaef98b728af4802bc0cd0c1275e0649a20567ff92c7e7670a243d0322ffc58",
+      "decoded_fp16_sha256": "0d807730c11a16fb8758dbc8c65d4273fd66b96408a113a448390352a60195fc"
+    },
+    "layer24.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "f8664603fc183564131620c3ac6a1b219b5e0863f55a17365e9bed073ed61855",
+      "decoded_fp16_sha256": "049713ce9fbd9ffbab15a4b8cff0ce82533a258ff4f3117371b67ecc45e7f797"
+    },
+    "layer25.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "ef4abe53d24d84a361d1859358bfe491f20c07453f7457ba7f22015e0183d533",
+      "decoded_fp16_sha256": "f7356a969d8c98e065bb15fdf82a6425fe9d46343bdc4d149aed93f8dc70ef04"
+    },
+    "layer26.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "ca437bba33e25dbbe9667b154285596471eb1595a7b3834ad24ca2625182b552",
+      "decoded_fp16_sha256": "767eb57e63add30de23cdcd448127ab7013061335dc96bc77ded1d79def15260"
+    },
+    "layer27.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "2bafd6e245434bab80631da6bad8ed4c23620775a27e4666f009115ee565b5cf",
+      "decoded_fp16_sha256": "4eab88819bb143967dbab6b1d5372457cb236a13cd76bf2cd22421fea3cb9a20"
+    },
+    "layer28.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "063f075d9889a5695d2a1c3f6e2e616b384defb41ba9a442b63e546c4bc182e7",
+      "decoded_fp16_sha256": "a8cac89ac424c854af2bf1b1378c133ef5f695cce6dfe063a856d4dccbeca652"
+    },
+    "layer29.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "64766364474591fbf5bb9e48d07accdd733089e44e6a894f893201993c140c05",
+      "decoded_fp16_sha256": "04e1f2b4d4f377b62703e8e5c2e149058d01d1cf78cac46c2c2f8c356ff70379"
+    },
+    "layer30.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "02a6ac54141a202397808846b348dc39e49e44f8ead3059058252b83e8c00a97",
+      "decoded_fp16_sha256": "8c8dd815d36a53899c3922a2aa9999082f8477fa2a9599674b99f0c96c022808"
+    },
+    "layer31.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "eb0baa9cf98ba8996bd8ba74a4c0e492af359576447e540d4bb7893c5e130936",
+      "decoded_fp16_sha256": "ac4ec102870574a08f5dc771e45e2b59e40527095c54783a35ba104c7c38a72b"
+    },
+    "layer32.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "e2aef10b9e304a48d3120e4067b63e4f4048a60f584c1d97f6a19cf4e5ccfcba",
+      "decoded_fp16_sha256": "5a9b36da019e1e90d40685943a988769b6cccc0ba59d54333f5d04c32f62bf27"
+    },
+    "layer33.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "1ad5782521c831d9c68690b629e781162aa6bbb67893654818cc4d9438ec9290",
+      "decoded_fp16_sha256": "647f4b358cc90bff3c6c244485dab2bbd00a790ed702db6cff03f4d2ff74b103"
+    },
+    "layer34.in_proj.e8": {
+      "bytes": 23768028,
+      "sha256": "9e1d6f88b1871ef9c32618cc2adc27af3d699c371c1177efdde47b04c02cef77",
+      "decoded_fp16_sha256": "4b8557813103f817da0f987c446118344b2675e49c981fd8feea233da49ea0b1"
+    },
+    "layer35.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "398835e213d2bda007708d94a668ea605ff88fac1cebd6010aed66a1cb9859fb",
+      "decoded_fp16_sha256": "16b09a0bb5272d6da03b661e157b750c12476f04c3240a269b20370cedaea9dd"
+    },
+    "layer36.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "db859a76b2d503c3d75a419873b5a34cb30db1bed1d53a2f9bb42ec3d4770cca",
+      "decoded_fp16_sha256": "f54608fedfc5fae43cda4a08f20f2dd69cb963e021b67919d55ab9fd1e80ccdb"
+    },
+    "layer37.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "54e67888621f3df95ac95c389805dce5b8742d7083eb6dd60d29eaaececf8f1f",
+      "decoded_fp16_sha256": "85037d0674e2167b8396841792e12a6b6790b9ca91681cb4862d3f71f9a2aa10"
+    },
+    "layer38.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "e787d59d1efe138f7ad76677c9bfa5d56f45fa3a4115618523842660ed82bcbf",
+      "decoded_fp16_sha256": "f48ad16e31200aa461f6d517466006593ac5de776161ea1804438b5f5566858e"
+    },
+    "layer39.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "ca34fe736cde5c2ee2a0cd10089ffe57f2c0c92c537f304064292628811c836e",
+      "decoded_fp16_sha256": "8ff0f93b3d328c919532b1bda5e37e0b5158c5a76fc95be98e5444c9d2c1c347"
+    },
+    "layer40.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "ac749b61716d76ff35db50b668f55fc5c8ff6a8a63b72b5b2f8db44e9c416876",
+      "decoded_fp16_sha256": "363d1cf05d8a91d07f2d657d69ab94778dfbc41ce1baa4f664dbc00a6a3fd939"
+    },
+    "layer41.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "96827a9ce7cbedbe181dc2e994edc1ab55cae5ce6d902ce04a7af33e9c331e21",
+      "decoded_fp16_sha256": "5afcbf43d993ad372d989e42171f878bf8534e64fe6a861dfe2e5231ad1c47e5"
+    },
+    "layer42.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "724b459916a8576505993f0912a24cf7d5059cd262ddf3c1a7d4f1c47bbafd01",
+      "decoded_fp16_sha256": "0281a19f8200337b27a6b38a6b2e1ed02f0893ac09121e4da3460235e7529700"
+    },
+    "layer43.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "acd577bd0f4d63e8bc41856a42945de90f9372b82968ae98a43e5398fc7b5995",
+      "decoded_fp16_sha256": "a4214cb3e23ec1c401a430591dd3ac3344f9f12f2f174244f499bb24fd8bda01"
+    },
+    "layer44.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "3c8b9643a8e6ee4cd8878e79969c4692d1e2ccbdb92a30bcb3c440495bb9ea8f",
+      "decoded_fp16_sha256": "25691c4f845c5489ec2e2de93b8dfa906a33009ccfafba43f16cd0ce69fb7b93"
+    },
+    "layer45.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "f09e77c769004f606b34a408efeda8e6e0b2dcaa33c806c215a5141f1ffb824c",
+      "decoded_fp16_sha256": "4473e58867bc40d758f9d23388cb00dae79598919eb07ae418086a2f0670d56b"
+    },
+    "layer46.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "eaab663cd907a6f76394bd33f8be7c5a609f5e22ac97db47a17606c98a29c4f6",
+      "decoded_fp16_sha256": "d96e780110c909f5f735676657c050dbda31117aabb1132e26d6d977f441214d"
+    },
+    "layer47.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "cf03db1cb44ab52eb82eb272b7994eb5fe64f6e3b71a0bbf29dedffc214aeb14",
+      "decoded_fp16_sha256": "6553b29f52bcd4cd2c0a608f69611d3e2a3f39bcf511abc349c20a7bbdb916bf"
+    },
+    "layer48.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "2895aee870434423596414f97d9d44b31d2a6dbef86b0592b1644cc24e6dde02",
+      "decoded_fp16_sha256": "04840a98cddb2a966e3e4128988c6f75f3a5507da68ea2bcc07ad37183eeba29"
+    },
+    "layer49.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "b4d1ec45f4e3a2cac082542c67788c4525e8e2648bd98c2bef1646a3af78b59f",
+      "decoded_fp16_sha256": "fd0334143cf56f57f2efa17172473a28f3bda3d52006e516e4278ed62aa1e176"
+    },
+    "layer50.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "0a6b57973f1a011b966b9b04d97ff213e53744a02fd3273c44fec9cab654b33a",
+      "decoded_fp16_sha256": "9793cc8758d983dbc1ec831cf33daab5de096d61774bc3796363eb4f15c9e3cf"
+    },
+    "layer51.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "17924f5e808aaa508fde6afee7f5ad65deb589ec43fa98d37202e54c32d3891e",
+      "decoded_fp16_sha256": "537f206ea620d450bf9340c2c96cb503931fa3e35d66c86930f99aa2fa24cca2"
+    },
+    "layer52.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "8fcebb788026a54d7ec0bb626bc214c1c29cf503e6a2f7c8b55af6b3afaea5be",
+      "decoded_fp16_sha256": "c2f1382ab22f6b7f98e3454bf949168a8d6ca717b00389ff262a28d6362819ab"
+    },
+    "layer53.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "9f9d08491d0fad59e68ac53c5e0d3e71ad90be8adb766597c4160ec70889bb4a",
+      "decoded_fp16_sha256": "3a13b5561f0e3f494d1c194e2c34b6cd2b7befce3373d6ad217bb49f67f53c3e"
+    },
+    "layer54.in_proj.e8": {
+      "bytes": 23768029,
+      "sha256": "09c9dd50a8078b909afde8c147da222be7bc26496e2975146d8bf30f7225b26c",
+      "decoded_fp16_sha256": "e738aa279e413bbc0cdb48202383ac060fbc09c897df2f3b88a1a497c13f0972"
+    },
+    "layer55.in_proj.e8": {
+      "bytes": 23768030,
+      "sha256": "fe01b46fa24380f0696ed0479e0545e19af347b698ea6f963bc55b9700fdd0eb",
+      "decoded_fp16_sha256": "ce2b1a2557221b3e3ccad4a377dc2f357716030232f13fd809fe6df3cc4e67bd"
+    }
+  },
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "data_file_bytes": 1331009669,
+  "storage": {
+    "new_overlay_bytes": 1331009669,
+    "replaced_e8_bytes": 1064932680,
+    "raw_delta_including_changed_headers": 266076989,
+    "extra_code_plane_bytes": 266076160,
+    "baseline_logical_data_bytes": 2886482462,
+    "complete_distribution_built": false
+  },
+  "manifest_sha256": "0fabdec5f6713f4530723f1e6a8c0e8b34563edea015441035613e5232347c85",
+  "manifest_bytes": 168431,
+  "elapsed_seconds": 271.8820599790197
+}
