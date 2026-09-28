@@ -3,8 +3,8 @@
 Status on2026-09-28: the source/current MK baseline, native correctness checks,
 final1536 training/export and all DEV measurements are complete. The original
 strict DEV run failed its historical cross-process MK replay prerequisite.
-The separate terminal audit passed. Prospective full PPL and independent
-confirmation are pending. No promotion or publication.
+The separate terminal audit and prospective full PPL passed. Independent
+confirmation is running. No promotion or publication.
 
 ## Completed baseline
 
@@ -91,7 +91,11 @@ bindings. These are correctness checks and do not establish recall/PPL quality.
   explicitly amended continuation protocol; original strict replay failure
   remains preserved. CPU audit12.6830 seconds, exit0, CUDA uninitialized,
   report SHA256 `6e89f9bcdaacabcbc9613713256874a7aa741b71ba289ed57fe745deb1a99074`.
-- [ ] Conditional complete130-window PPL no greater than paired current.
+- [x] Complete130-window PPL no greater than paired current:7.622396588→
+  7.593163114,130/130 windows improve,264,764 targets/4,137 CE chunks per arm.
+  Current/restored/historical chunks match exactly;507/224 and167 bound-file
+  checks pass. Independent receipt audit passes. GPU exit0 in287.4773 seconds;
+  report SHA256 `06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961`.
 - [ ] Conditional independent384+384 confirmation MK with positive paired
   gain/confidence and no increased removed-target false recall.
 
@@ -127,3 +131,27 @@ quality thresholds. A CPU audit must first establish complete restored controls
 and actual-file integrity, followed by prospective full130-window PPL and the
 previously unopened CONFIRM set. Candidate, soft gates and numerical profile
 remain identical. The prepared hard0 fallback is not triggered or evaluated.
+
+## Complete PPL and fresh confirmation preparation
+
+Full same-process PPL is7.622396587826496 (current),7.593163113563457 (soft
+adapter), and7.622396587826496 (restored). The candidate improves all130
+windows by0.3835207723% in aggregate. Total NLL falls1017.3771133423 over
+264,764 targets. There are129 full2048-target windows and one572-target
+tail; the last CE chunk has60 targets. Every baseline/restored/historical
+CE chunk, window NLL and aggregate matches exactly.
+
+The terminal report has2,703,975 bytes, exit0, with evaluator process absence
+verified. Independent receipt-only audit:
+`reports/resurface_soft_continuation_v1_full_independent_audit.json`, SHA256
+`14a9bb85a95dcdd6429e12409c73336765e546a9ae09b43b2c0bd28bdcc2d515`.
+The corpus has informed previous development; this is complete validation
+measurement, not untouched natural-language generalization evidence.
+
+Only after full PPL passed, the previously absent CONFIRM directory was
+created using the original frozen split contract. Preparation exit0 in
+2.8924 seconds, CUDA uninitialized,768 unique prompts with exact raw/token
+roundtrip and normal384/removed384 coverage. Actual manifest SHA256
+`0abb3e1ef2994e2088b8da0f0f605371e980f5afa3ea9df5335ff19d3f5b3dec`.
+The new ranges separate numeric instances, while the three template families
+remain shared. No confirmation fitting or prior score inspection occurred.

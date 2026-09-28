@@ -1,0 +1,35 @@
+{
+  "status": "finished",
+  "pid": 3779812,
+  "started_unix": 1790618600.013217,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "scripts/evaluate_resurface_continuation.py",
+    "--stage",
+    "full",
+    "--prior-report",
+    "reports/resurface_soft_continuation_v1_dev_audit.json",
+    "--prior-report-sha",
+    "6e89f9bcdaacabcbc9613713256874a7aa741b71ba289ed57fe745deb1a99074",
+    "--report",
+    "reports/resurface_soft_continuation_v1_full_eval.json"
+  ],
+  "code_pins": {
+    "scripts/evaluate_resurface_continuation.py": "3ab56d0483f1a0b8e3c531829daa6ab6f7dfcb693288f455f8dc28e4d4baa308",
+    "docs/RESURFACE_SOFT_CONTINUATION_PROTOCOL.md": "f6be64321c214bb7b229ae658b24aa75b8a0f3ec17a9df9059c4303920cdbabf"
+  },
+  "required_reports": {
+    "reports/resurface_readapted_v1_train.json": "e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6",
+    "reports/resurface_soft_continuation_v1_dev_audit.json": "6e89f9bcdaacabcbc9613713256874a7aa741b71ba289ed57fe745deb1a99074"
+  },
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99988712,
+  "exit_code": 0,
+  "finished_unix": 1790618887.4905095,
+  "wall_seconds": 287.4772927761078,
+  "log_sha256": "23c0ce1f87eee54768d3a2c109276afd63a9a74e8f0052048d4d5a42afe3fdb9",
+  "report_sha256": "06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961",
+  "report_bytes": 2703975,
+  "report_complete": true
+}

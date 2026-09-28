@@ -1,0 +1,117 @@
+{
+  "format": "MAMBA2_RESURFACE_FULL_PPL_INDEPENDENT_RECEIPT_AUDIT_V1",
+  "complete": true,
+  "inputs": {
+    "evaluation": {
+      "file": "reports/resurface_soft_continuation_v1_full_eval.json",
+      "bytes": 2703975,
+      "sha256": "06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961"
+    },
+    "process": {
+      "file": "reports/resurface_soft_continuation_v1_full_eval_process.json",
+      "bytes": 1418,
+      "sha256": "d3446e42bfd95a2e724cb34080e74f72d73d32295f1c2cd1a7e7754fe8885faf"
+    },
+    "historical_current": {
+      "file": "reports/axis_small_readaptation_v1_eval.json",
+      "bytes": 2821435,
+      "sha256": "3c6d840315b7552be5530ea884d0a9c620219df8dbbdad1a98b4cdd6e89ad1b4"
+    },
+    "passed_dev_audit": {
+      "file": "reports/resurface_soft_continuation_v1_dev_audit.json",
+      "bytes": 85475,
+      "sha256": "6e89f9bcdaacabcbc9613713256874a7aa741b71ba289ed57fe745deb1a99074"
+    },
+    "adapter_manifest": {
+      "file": "reports/resurface_readapted_v1_manifest.json",
+      "bytes": 294171,
+      "sha256": "5660676adb45806052cbaab7f5e50056769c4f5e106d5a49cf148f025bf2b7a8"
+    },
+    "training_report": {
+      "file": "reports/resurface_readapted_v1_train.json",
+      "bytes": 5381094,
+      "sha256": "e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6"
+    }
+  },
+  "source_sha256": "3ab56d0483f1a0b8e3c531829daa6ab6f7dfcb693288f455f8dc28e4d4baa308",
+  "protocol_sha256": "f6be64321c214bb7b229ae658b24aa75b8a0f3ec17a9df9059c4303920cdbabf",
+  "candidate_identity": {
+    "protocol_sha256": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6",
+    "gate_mode": "soft",
+    "adapter_sha256": "1e9857feaf80ede6525cce839726883f6230c98a067cb226eb2f095693ea803e",
+    "overlay_manifest_sha256": "5660676adb45806052cbaab7f5e50056769c4f5e106d5a49cf148f025bf2b7a8",
+    "training_report_sha256": "e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6",
+    "checkpoint_sha256": "03ed8da1d7c49fde4b70c053719eff19b715393d7b96dc41427f3cfc62af3fba",
+    "training_manifest_sha256": "dfe076ef18d5b0610e016d41d00a38948f3878b7c67d9cd8f6f46237e09d7e11",
+    "base_ppl_report_sha256": "3c6d840315b7552be5530ea884d0a9c620219df8dbbdad1a98b4cdd6e89ad1b4"
+  },
+  "terminal_exit_code": 0,
+  "process_wall_seconds": 287.4772927761078,
+  "evaluation_elapsed_seconds": 285.2411433689995,
+  "recomputed_summaries": {
+    "current_readapted": {
+      "windows": 130,
+      "target_tokens": 264764,
+      "nll": 537759.7333316803,
+      "mean_nll": 2.031090833087883,
+      "ppl": 7.622396587826496
+    },
+    "active_resurface": {
+      "windows": 130,
+      "target_tokens": 264764,
+      "nll": 536742.356218338,
+      "mean_nll": 2.027248252097483,
+      "ppl": 7.593163113563457
+    },
+    "restored_current": {
+      "windows": 130,
+      "target_tokens": 264764,
+      "nll": 537759.7333316803,
+      "mean_nll": 2.031090833087883,
+      "ppl": 7.622396587826496
+    }
+  },
+  "window_change": {
+    "improved": 130,
+    "worsened": 0,
+    "equal": 0,
+    "ppl_absolute_delta": -0.029233474263039128,
+    "ppl_relative_change": -0.003835207723214884,
+    "ppl_percent_change": -0.3835207723214884,
+    "nll_delta": -1017.3771133422852,
+    "mean_nll_delta": -0.003842580990399913
+  },
+  "coverage": {
+    "windows_per_arm": 130,
+    "target_tokens_per_arm": 264764,
+    "full2048_windows": 129,
+    "last_window_targets": 572,
+    "last_chunk_targets": 60,
+    "ce_chunks_per_arm": 4137
+  },
+  "checks": {
+    "all_window_nll_and_ppl_reconstructed": true,
+    "all_three_token_plans_identical": true,
+    "historical_and_restored_current_bitwise_CE_NLL_PPL": true,
+    "base507_recorded_content_and_identity_before_after_exact": true,
+    "adapter224_recorded_content_and_identity_before_after_exact": true,
+    "candidate_export_and_final_checkpoint_binding_exact": true,
+    "native_environment_and_precision_flags_unchanged": true,
+    "final_recorded_bound_file_audit_complete": true,
+    "prior_dev_gate_bound": true
+  },
+  "recorded_bound_file_count": 167,
+  "gate": {
+    "current_ppl": 7.622396587826496,
+    "active_ppl": 7.593163113563457,
+    "ppl_no_regression": true,
+    "ppl_epsilon": 0.0,
+    "passed": true
+  },
+  "limits": [
+    "CPU arithmetic and receipt audit only; no model binaries rehashed or GPU inference repeated by this audit.",
+    "Actual507/224/file/master claims are checked against evaluator and training proofs, not fresh hardware measurements.",
+    "No CONFIRM raw/token data opened. Full PPL pass does not establish recall confirmation or publication authorization.",
+    "Original strict historical-MK replay failure remains preserved."
+  ]
+}
