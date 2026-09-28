@@ -1,0 +1,22 @@
+{
+  "format": "MAMBA2_PROTOTYPE_TRAINING_CPU_TEST_V1",
+  "complete": true,
+  "passed": true,
+  "exit_code": 0,
+  "tests_run": 6,
+  "test_seconds": 10.502,
+  "execution_host": "horde-gpu",
+  "cuda_visible_devices": "",
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python -m unittest tests.test_prototype_training -v",
+  "sources": {
+    "mamba_e8w5/prototype_training.py": "7bbf4835120d45dd988aa185cbe5a3e7da6fb1f70e6d6b2a939fc46bc434c00e",
+    "tests/test_prototype_training.py": "271208dd6cfd0f9bf7c8433e9db155a7d24da4ff4cedbe15704de3c30bd60d26",
+    "mamba_e8w5/learned_e8_codebook.py": "b244b93dabb9a85487f4745588e7c0dd922274768223da94bf368aecfe10843f",
+    "mamba_e8w5/norm_training.py": "25ac3ec6ba167902014018f99fbf8dbbc659e0e4903f80baf28e28a4a3e74087"
+  },
+  "limitations": [
+    "Synthetic two-layer CPU model with actual pinned E8 decoding only.",
+    "Real-model GPU backward/memory/stability require a separate smoke.",
+    "No model quality claim and no GPU job launched by bank implementation agent."
+  ]
+}

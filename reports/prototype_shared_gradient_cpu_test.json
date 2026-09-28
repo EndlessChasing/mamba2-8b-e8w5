@@ -1,0 +1,23 @@
+{
+  "format": "MAMBA2_PROTOTYPE_SHARED_GRADIENT_CPU_TEST_V1",
+  "complete": true,
+  "cpu_only": true,
+  "gpu_used": false,
+  "tests": 1,
+  "failures": 0,
+  "errors": 0,
+  "exit_code": 0,
+  "unittest_elapsed_seconds": 9.633,
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python -m unittest discover -s tests -p test_prototype_shared_gradient.py -v",
+  "source_sha256": {
+    "mamba_e8w5/learned_e8_codebook.py": "b244b93dabb9a85487f4745588e7c0dd922274768223da94bf368aecfe10843f",
+    "tests/test_prototype_shared_gradient.py": "bcfcebde828e32349b1c51d024301656d267d485b2827ed1224727e7691b0378"
+  },
+  "checks": [
+    "Repeated identical uint16 codes plus distinct low bits sharing one high8 prototype",
+    "Manual scalar sign/prototype sum across occurrences",
+    "Actual corrected_grid(cb,master.half()) path at zero and nonzero table values",
+    "Full256x8 FP32 master gradient equals manually accumulated sum rounded through actualFP16 table cast"
+  ],
+  "prior_seven_test_receipt_unchanged": true
+}

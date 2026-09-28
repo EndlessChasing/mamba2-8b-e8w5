@@ -1,0 +1,18 @@
+{
+  "format": "MAMBA2_LEARNED_E8_FOUNDATION_CPU_TESTS_V1",
+  "complete": true,
+  "cpu_only": true,
+  "gpu_used": false,
+  "host": "horde-gpu",
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python -m unittest discover -s tests -p test_learned_e8_codebook.py -v",
+  "exit_code": 0,
+  "tests": 7,
+  "failures": 0,
+  "errors": 0,
+  "unittest_elapsed_seconds": 10.150,
+  "source_sha256": {
+    "mamba_e8w5/learned_e8_codebook.py": "b244b93dabb9a85487f4745588e7c0dd922274768223da94bf368aecfe10843f",
+    "tests/test_learned_e8_codebook.py": "57cddec716c0843e7049b5b638a25f979bba930384c6a32fca85be1565f39e4d"
+  },
+  "evidence_scope": "Original completed CPU run; this receipt documents that run without rerunning it. All65536 zero and nonzero codewords, inverse FP16 decode, adjoint, payload validation, mutated book rejection and4128-byte disk roundtrip were checked. No model training or quality result is claimed."
+}
