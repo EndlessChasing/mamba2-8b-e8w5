@@ -1,0 +1,20 @@
+{
+  "format": "MAMBA2_JOINT_AXIS_SCREEN_CPU_AUDIT_V1",
+  "complete": true,
+  "script_sha256": "6eefc8488e0a7aa2aa73cbc508eb2c4fcaf81f8a96098a8c90df54abf75867cf",
+  "protocol_sha256": "73c175d7a81886cc7102640966d0b2b8ff47734234d586f7c584f222e0a03bcd",
+  "scope": "Actual-file/provenance audit and reported-GPU-objective gate recomputation; no repeated GPU decode or dense-H computation.",
+  "gpu_work_performed": false,
+  "self_test": {
+    "passed": true,
+    "cuda_initialized": false,
+    "checks": [
+      "Six-matrix squared-error gate, incomplete coverage and malformed/zero error handling",
+      "Actual20bit boundary code roundtrip, full greedy-byte equality and one-codeword replacement",
+      "Bytewise fixed header/amplitude/FP16balance/sign/FP32scale and metadata-change rejection"
+    ]
+  },
+  "mode": "self_test",
+  "cuda_initialized": false,
+  "elapsed_seconds": 0.005162262008525431
+}

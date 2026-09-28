@@ -1,0 +1,22 @@
+{
+  "status": "finished",
+  "pid": 3293969,
+  "started_unix": 1790608738.4365177,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/screen_joint_axis.py"
+  ],
+  "script_sha256": "014822bf77d928e3a1cd8163574c5616bcba23342f607fe4ceb66f479945f34c",
+  "selector_sha256": "b84525d4ba2da0cc711b5e140bfc55ff631055fcfa0dd583d92237dbac6adbba",
+  "cpu_receipt_sha256": "aab5bc24a182faeaba5731f30b53174829c5074c83dbd4175f739eab1200c897",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99002554,
+  "exit_code": 0,
+  "finished_unix": 1790608965.566693,
+  "wall_seconds": 227.13017582893372,
+  "log_sha256": "19f6896aa6af41bfcf58024427944438e1084412629c9290d22585e87d6f92d5",
+  "report_sha256": "79999e75928e88bd3ada934c4d35f6442d6c139a5504f3b3b3e2277b19b51b04",
+  "report_bytes": 99050,
+  "report_complete": true
+}
