@@ -51,7 +51,7 @@ The smoke export is discarded and is not an eligible trained candidate.
 See [smoke report](../reports/axis_small_readaptation_v1_smoke.json) and
 [process receipt](../reports/axis_small_readaptation_v1_smoke_process.json).
 
-## Training and independent quality: pending
+## Fixed readaptation training: complete
 
 The declared recipe adjusts393 existing tensors /3,580,928 parameters for448
 successful updates /917,056 targets, one pass over the prepared TRAIN schedule.
@@ -60,9 +60,36 @@ Only the final448 checkpoint is eligible. Native evaluation reloads actual FP16
 exports, checks all507 tensors and exact baseline repetition, and requires at
 least1% paired development PPL improvement before complete validation.
 
-Formal training starts in a fresh process from current old-trained393 with
-fresh optimizer, scaler and fixed RNG. No candidate-quality result is claimed
-by this pending section.
+Formal training started in a fresh process from current old-trained393 with
+fresh optimizer, scaler and fixed RNG. It completed448 successful updates in448
+attempts, zero overflows and917,056 targets. All393 exported tensors changed;
+every exported FP16 value matches its final448 FP32 master after rounding.
+The frozen underlying507, teacher507 and fixed114 content checks pass, as does
+native/functional export parity. The final checkpoint is43,741,489 bytes.
+
+Whole-process wall time is629.6042 seconds; recorded update times sum to381.2600
+seconds (median0.808873 seconds). Peak allocated memory is36,041,105,920 bytes.
+These timings include a single fixed recipe, not a performance benchmark.
+
+The replacement `other_fp16.pt` is7,283,930 bytes, exactly the old file size.
+Raw inference data remain3,138,928,792 bytes: zero replacement-byte delta.
+The new provenance manifest is239,782 bytes, counted separately; no complete
+new distribution or entropy-coded package has been built.
+
+See [training report](../reports/axis_small_readaptation_v1_train.json) and
+[process receipt](../reports/axis_small_readaptation_v1_train_process.json).
+Training report SHA256:
+`d5cc4e8d6a9c7d85c806014fc53ab7e90cd0e2af7fcc7b406218046df2acec75`.
+
+## Independent native quality: pending
+
+Independent actual-checkpoint/export CPU verification passes with CUDA
+uninitialized: all393 rounded masters, the448-step schedule/attempt history,
+code/data/receipt identities,116 inherited files and storage counts agree.
+See [verification report](../reports/axis_small_readaptation_v1_verify.json) and
+[process receipt](../reports/axis_small_readaptation_v1_verify_process.json).
+The final candidate is awaiting native PPL scoring; training completion and
+integrity checks are not evidence of a quality gain.
 
 ## Integrity preparation
 
@@ -72,9 +99,8 @@ declared protocol file had not yet been copied remotely; its failure receipt
 is preserved. Copying that exact file resolved the setup issue without a code
 change. The independent evaluator CPU self-test and separate code review pass.
 
-The current raw model data are3,138,928,792 bytes. A new replacement file and its
-manifest must be measured after training; unchanged parameter count alone does
-not establish unchanged serialized bytes. Execution decodes weights to FP16;
+Both current and readapted raw model data are3,138,928,792 bytes. The replacement
+file and new manifest are measured separately above. Execution decodes weights to FP16;
 these tests do not establish compact GPU residency. Development data have been
 used previously, and any later complete validation is also observed research
 data, not an untouched test set.
