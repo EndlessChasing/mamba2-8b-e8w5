@@ -217,8 +217,8 @@ completed prototype recipe or promote its failed candidate.
 ## User-directed MK validation and Resurface repair
 
 - [x] Freeze the [Stage1 MK baseline protocol](docs/MK_RESURFACE_PROTOCOL.md) before measurements: original source and actual final448 readapted current model,384 normal+384 removed-binding prompts per arm, native prefill/recurrent decode, no fitting or publication.
-- [ ] Pass current-file/prompt CPU verification and independent baseline evaluator review.
+- [x] Pass current-file/prompt CPU verification and independent baseline evaluator review. Preserve the initial Wilson endpoint self-test failure and corrected attempt2: all actual final448/export/prompt checks pass, CUDA uninitialized, exit0.
 - [ ] Complete paired MK baseline, all507 audits and12 exact prompt replays per arm.
-- [ ] Declare the separate native no-EMA Resurface adapter, disjoint data, bounded training and final selection recipe before training.
+- [x] Declare the separate [native no-EMA Resurface recipe](docs/RESURFACE_READAPTED_TRAINING_PROTOCOL.md) before training: post-D soft gated readout,1,154,104 new parameters,1536 fixed updates and prose CE/KL/closure protection. All507 base tensors stay frozen. Prepare and independently retokenize1536 disjoint TRAIN cases: all answers require7 tokens,10,752 answer targets, maximum prompt1236 tokens. Mixed first-digit value pools avoid a fixed answer-prefix shortcut; confirmation is not yet prepared or scored.
 - [ ] Validate adapter identity, cache-step placement, checkpoint gradients and multi-token answer loss; fit only declared TRAIN data with frozen backbone.
 - [ ] Verify actual final adapter and require independent MK improvement, no increased deleted-target matches and complete same-enabled-model PPL no worse than7.622396588. Keep publication on hold.

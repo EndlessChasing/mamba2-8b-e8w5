@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "script_sha256": "2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7",
+  "command": "ssh horde-gpu 'cd /home/horde/Mamba2-8B-E8W5 && CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python -m mamba_e8w5.resurface_native --self-test'",
+  "exit_code": 0,
+  "tool_wall_time_seconds": 2.912309,
+  "result": {
+    "complete": true,
+    "tests": [
+      "zero soft adapter native prefill/recurrent-call/cache parity; external inventory",
+      "soft zero-V staggered gradients: V nonzero; router and amplitudes zero",
+      "checkpoint/native outputs, returned capture and every adapter gradient exact",
+      "exception cleanup, empty opening mask and duplicate attachment rejected",
+      "real FP16 file roundtrip/native parity/no overwrite/nonfinite rejection/hook removal",
+      "hard closed-gate dead point, explicit opening gradients and threshold inference",
+      "no task-specific gate mode; all base tensors/content unchanged"
+    ],
+    "passed": 7,
+    "cuda_initialized": false,
+    "production_trainables": 1154104,
+    "production_fp16_payload_bytes": 2308208,
+    "toy_export_bytes": 3725,
+    "scope": "CPU toy hooks only; native8B GPU parity/quality unmeasured"
+  },
+  "prior_attempt": {
+    "exit_code": 1,
+    "error": "AttributeError: module 'hashlib' has no attribute 'file_digest'",
+    "resolution": "Use streamed SHA256 compatible with remote Python3.10; no adapter math change."
+  }
+}
