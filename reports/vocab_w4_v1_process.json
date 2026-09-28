@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "started_at_unix": 1790602603.8248441,
+  "argv": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/diagnose_vocab_w4.py",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/vocab_w4_v1.json"
+  ],
+  "script_sha256": "c1dd8343a204923d6799f5b4eed31a6f0ffee1bc0774b2deaa15f34e0d54091d",
+  "cpu_receipt_sha256": "8ad3659f7b8b5fc2106434a9d5d569d351e7a6322f092fec54bc7caceb6c758a",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "log_path": "/home/horde/Mamba2-8B-E8W5/reports/vocab_w4_v1.log",
+  "pid": 2998002,
+  "process_start_ticks": 98389093,
+  "command_line": "/home/horde/.venvs/lodram/bin/python -u /home/horde/Mamba2-8B-E8W5/scripts/diagnose_vocab_w4.py --report /home/horde/Mamba2-8B-E8W5/reports/vocab_w4_v1.json ",
+  "exit_code": 0,
+  "finished_at_unix": 1790602995.911024,
+  "wall_seconds": 392.0861802101135,
+  "report_sha256": "3ae1bb986ddfa7f2e514fb2451885a83feee5b6c5cc3a1924f248b4a259e353b",
+  "report_bytes": 1533504,
+  "experiment_complete": true,
+  "error": null
+}

@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold. The fixed scalar-temperature experiment completed three TRAIN updates plus the final pass, exporting T=1.013733. Its separate seven-window screen improves PPL8.219889723→8.215166553 by0.05746%, below the1% gate; full validation is skipped and this recipe stops without extra fitting or promotion. Its full-validation/source+5% target remains unmeasured. Accepted all-small full-validation PPL8.359867548 and its distribution remain unchanged; prior prototype8.306585062 remains the numerical low but failed its1% gate. Earlier output-diagnostic and failed teacher-KL results remain recorded. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
+Status: publication remains on hold. The four-arm W4 vocabulary diagnostic completed on64 observed reserved TRAIN windows: W4 embedding costs0.158945% PPL, W4 head5.307371%, both5.504915%; each actual W4 file saves131,072,000 raw bytes. Baseline repeat and all507 tensor audits pass. No promotion or full-validation result follows. The next primary plan is nominal2.5-bit enhanced input projections +W4 embedding/W5 head, a preliminary net135,004,160 raw-byte addition before new metadata; implementation/benefit pending. Scalar-temperature fitting remains stopped after its failed1% screen. Accepted all-small full-validation PPL8.359867548 and its distribution remain unchanged; prior prototype8.306585062 remains the numerical low but failed its1% gate. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
 
 ## Scope
 
@@ -167,8 +167,11 @@ completed prototype recipe or promote its failed candidate.
 
 ## W4 vocabulary penalty diagnostic
 
-- [x] Declare the [fixed four-arm protocol](docs/VOCAB_W4_DIAGNOSTIC_PROTOCOL.md): W5/W5, W4/W5, W5/W4 and W4/W4 embedding/head combinations on the same already-observed64 reserved TRAIN windows/131,008 targets per arm. Implementation is pending; there is no quality result yet.
-- [ ] Write actual group128 W4 vocabulary files from the original BF16 checkpoint through the existing writer's FP32 row conversion; verify actual serialized readback. Do not requantize decoded W5 or pre-cast source values to FP16.
-- [ ] Verify all507 expected tensor hashes for every arm, keeping all112 E8 projections and393 small tensors fixed. Complete all four arms and the repeated W5/W5 baseline control unless integrity/numerical checks fail.
-- [ ] Measure paired PPL/NLL, per-window changes and the vocabulary interaction. Count actual files/scales/headers; expected raw savings for both matrices are262,144,000 bytes, not a measured entropy-coded package size.
-- [ ] Record the diagnostic and its limits without promotion or a combined projection-reallocation claim. The observed TRAIN set is not fresh generalization evidence; no validation/test/MK or publication is authorized by this diagnostic.
+- [x] Declare and complete the [fixed four-arm protocol](docs/VOCAB_W4_DIAGNOSTIC_PROTOCOL.md) on64 already-observed reserved TRAIN windows/131,008 targets per arm; no fitting or full validation.
+- [x] Write/read actual group128 W4 files from original BF16 checkpoint values through writer FP32 row conversion. Each file is540,672,079 bytes and saves131,072,000 bytes against W5; both save262,144,000 raw bytes. No new complete or entropy-coded package is claimed.
+- [x] Preserve the initial CPU signed-zero oracle failure, correct expected zero representation to the existing unsigned-code format, and pass bounded CPU checks. Codec/runtime, protocol and model weights remain unchanged.
+- [x] Verify all507 expected hashes before/after every arm, with all112 E8 and393 small tensors fixed. Restore W5/W5 and reproduce all64 baseline windows/2048 CE chunks exactly.
+- [x] Measure baseline8.397361922, W4 embedding8.410709113 (+0.158945%), W4 head8.843041048 (+5.307371%) and both8.859629527 (+5.504915%). Embedding improves18/64 windows; head/both improve0/64. See [final diagnostic results](docs/VOCAB_W4_DIAGNOSTIC_RESULTS.md).
+- [x] Retain diagnostic limits: observed TRAIN, no fresh/full-validation/test/MK quality, no promotion/publication, no guarantee vocabulary savings produce a useful combined model.
+- [x] Declare the separate [input-axis residual protocol](docs/INPUT_AXIS_RESIDUAL_PROTOCOL.md) for nominal2.5-bit enhanced input projections with W4 embedding/W5 head.
+- [ ] Implement and evaluate that separately declared candidate. Preliminary net payload growth is135,004,160 bytes (4.6771% of current raw data) before new headers/metadata; neither an actual package nor a quality gain is measured yet.
