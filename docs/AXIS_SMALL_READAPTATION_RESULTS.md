@@ -81,15 +81,63 @@ See [training report](../reports/axis_small_readaptation_v1_train.json) and
 Training report SHA256:
 `d5cc4e8d6a9c7d85c806014fc53ab7e90cd0e2af7fcc7b406218046df2acec75`.
 
-## Independent native quality: pending
+## Independent native quality: complete
 
 Independent actual-checkpoint/export CPU verification passes with CUDA
 uninitialized: all393 rounded masters, the448-step schedule/attempt history,
 code/data/receipt identities,116 inherited files and storage counts agree.
 See [verification report](../reports/axis_small_readaptation_v1_verify.json) and
 [process receipt](../reports/axis_small_readaptation_v1_verify_process.json).
-The final candidate is awaiting native PPL scoring; training completion and
-integrity checks are not evidence of a quality gain.
+
+Development uses64 observed reserved TRAIN windows /131,008 targets. Current
+PPL8.013059657099294 becomes7.6242504268035765: **4.85219% lower**, with all64
+windows improving. The restored baseline reproduces all64 windows /2,048 CE
+chunks exactly. The declared1% development gate passes, enabling full validation.
+
+Complete WikiText-2 validation uses the same130 windows /264,764 targets for
+all three native arms, including the572-target final window and60-target final
+CE chunk. Weights and state are evaluated in the established FP16 reference
+path; logits enter full-vocabulary CE in FP32 with FP64 host accumulation.
+
+| Complete-validation arm | PPL | Relative to original source |
+|---|---:|---:|
+| Original FP16 source | 7.334175947 | reference |
+| Current axis weights + old small parameters | 7.977512009 | +8.77176% |
+| Current axis weights + readapted small parameters | **7.622396588** | **+3.92983%** |
+
+Readaptation lowers paired complete-validation PPL by **4.45146%**, with
+**130/130 windows improving** and mean NLL lower by0.0455357514 nats per target.
+Both declared conditions pass: at least1% paired improvement and PPL no greater
+than source+5% (**7.700884744684501**). Source and current baseline also reproduce
+their historical complete-validation PPL exactly; the gates use this run's
+same-process scores.
+
+All507 actual tensors are checked before/after each native arm. The114 large
+weights remain fixed; the candidate contains exactly the393 independently
+verified replacements. Final current507 restoration, fixed114 identity/content
+checks and bound-input rechecks pass. Report complete; process exit0 in583.6383
+seconds and absent after completion. The five diagnostic/smoke/train/verify/eval
+processes were all absent at the final check.
+
+See [native evaluation report](../reports/axis_small_readaptation_v1_eval.json),
+[process receipt](../reports/axis_small_readaptation_v1_eval_process.json) and
+[actual manifest copy](../reports/axis_small_readaptation_v1_manifest.json).
+Evaluation report SHA256:
+`3c6d840315b7552be5530ea884d0a9c620219df8dbbdad1a98b4cdd6e89ad1b4`.
+
+## Conclusion and scope
+
+Option1 is effective for the declared PPL objective: readapting existing small
+parameters reduces loss at unchanged raw weight-file size and reaches the
+source+5% threshold. This is the lowest measured compressed-candidate
+complete-validation PPL in this project so far. It does not prove a global
+minimum, equal source quality, or that old-parameter mismatch was the dominant
+cause; the diagnostic showed those old parameters remained useful.
+
+No MK/recall, untouched test or compact-runtime validation was performed.
+The historical all-small packaged distribution remains unchanged. The new
+candidate is a verified remote overlay with local code/metadata/reports;
+no complete package, GitHub push or model publication was performed.
 
 ## Integrity preparation
 
@@ -102,5 +150,5 @@ change. The independent evaluator CPU self-test and separate code review pass.
 Both current and readapted raw model data are3,138,928,792 bytes. The replacement
 file and new manifest are measured separately above. Execution decodes weights to FP16;
 these tests do not establish compact GPU residency. Development data have been
-used previously, and any later complete validation is also observed research
-data, not an untouched test set.
+used previously, and complete validation is also observed research data,
+not an untouched test set.

@@ -194,9 +194,9 @@ completed prototype recipe or promote its failed candidate.
 - [x] Finish all 507 actual tensor audits, exact token/window pairing, final paired-baseline restoration and bound-file rechecks. The final report is complete, the process exited 0 and is absent. See [final results and receipts](docs/OUTPUT_AXIS_RESIDUAL_RESULTS.md).
 - [x] Record actual raw data 3,138,928,792 bytes: 117,440,512 extra code bytes plus 829 changed-header bytes above the paired baseline. Historical cumulative PPL improvement versus all-small is 4.57370%, not a fourth same-process arm. Retain the tested gain and unchanged historical distribution; no new complete package, promotion, test/MK measurement or publication. This fixed recipe is complete.
 
-## Remaining PPL objective
+## PPL objective
 
-- [ ] Reduce complete-validation PPL from 7.977512009 to at most 7.700884745 (the paired source +5% target), with all added weight data counted. Declare the next experiment before measuring it. Recall/Resurface and publication remain deferred.
+- [x] Reduce complete-validation PPL from7.977512009 to at most7.700884745 (paired source+5%): the fixed current-axis small-tensor readaptation reaches7.622396588, source+3.92983%, with zero raw weight-file byte delta. This PPL target is met; recall/Resurface and publication remain deferred.
 
 ## Same-capacity joint E8/axis selection
 
@@ -212,4 +212,4 @@ completed prototype recipe or promote its failed candidate.
 - [x] Complete current-old393 / current-source393 / restored-old393 diagnostic on64 observed reserved TRAIN windows: PPL8.013059657 /8.190893923 /8.013059657. Original small values worsen PPL2.21931%; current adaptation remains useful. Fixed114/507 audits and all64 repeated windows pass, exit0. The diagnostic does not select training initialization. See [results](docs/AXIS_SMALL_READAPTATION_RESULTS.md).
 - [x] Pass CPU input checks and current-axis native/functional/checkpoint/chunk/export smoke. Checkpoint and chunk hidden gradients match exactly; one2047-target update succeeds with zero overflow; actual FP16 native export matches. Fixed114 and underlying/teacher507 audits pass; all smoke updates discarded. Start formal training from fresh process/optimizer/scaler/RNG.
 - [x] Starting from current old-trained393, finish448 successful updates/448 attempts/zero overflows and917,056 targets. All393 changed exports equal final448 rounded masters; independent CPU verification passes with CUDA uninitialized. Fixed114, underlying507 and teacher507 audits pass. Actual replacement file7,283,930 bytes gives zero raw-byte delta; total3,138,928,792 bytes plus239,782-byte new manifest. Native PPL evaluation follows.
-- [ ] Independently score current/readapted/restored-current on64 reserved windows; only a1% paired PPL gain enables source/current/readapted130-window validation. Report the source+5% target separately. No publication or MK.
+- [x] Independently score current/readapted/restored-current on64 reserved windows:8.013059657→7.624250427,4.85219% gain,64/64 improve and exact baseline repeat. The1% gate enables complete source/current/readapted validation:7.334175947 /7.977512009 /7.622396588 on130 windows/264,764 targets. Paired improvement4.45146%,130/130 improve; source+3.92983% passes the+5% target. All507/114, tail, restoration and final input checks pass; reportcomplete/exit0/processabsent. No new complete package, MK or publication. See [final results](docs/AXIS_SMALL_READAPTATION_RESULTS.md).
