@@ -116,5 +116,9 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 
 While the fixed prototype job runs, the [conditional low-rank repair note](docs/CONDITIONAL_LOW_RANK_REPAIR.md)
 records exact additional factor capacities and a possible native FP16 training
-contract. This is preparation only. A new experiment has not been selected,
-implemented or measured; the next decision waits for the prototype result.
+contract. The isolated [CPU factor representation](docs/LOW_RANK_RESIDUAL_IMPLEMENTATION.md)
+now has 11 passing checks for strict file readback, resource bounds, independent
+merge arithmetic and gradient/replay behavior. This is preparation only: no
+low-rank training recipe, GPU path or model experiment has been selected,
+implemented or measured. The next experiment decision waits for the prototype
+result.

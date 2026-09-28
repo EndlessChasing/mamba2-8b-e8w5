@@ -1,8 +1,10 @@
 # Conditional low-rank residual repair — draft
 
-**Hypothetical preparation, pending the current prototype-training result.**
-No low-rank experiment has been selected, implemented or run. No expected PPL
-gain is assumed. Publication remains on hold.
+**Conditional preparation, pending the current prototype-training result.**
+No low-rank model experiment has been selected or run. An isolated
+[CPU factor format and merge helper](LOW_RANK_RESIDUAL_IMPLEMENTATION.md) is
+implemented and checked; a training recipe, GPU path and model loader are not
+implemented. No expected PPL gain is assumed. Publication remains on hold.
 
 ## Representation and exact value capacity
 
@@ -32,10 +34,11 @@ uncompressed factor-value bytes; the frozen base remains required.
 | Output 56 | 8 | 5,505,024 | 11,010,048 | 10.500000 | 0.412180% |
 | Output 56 | 16 | 11,010,048 | 22,020,096 | 21.000000 | 0.824359% |
 
-**Format assumption, not an implemented format:** one file per projection,
-containing both factors and a 32-byte header, would add another 3,584 B for
-all 112 or 1,792 B for output 56. A manifest, loader source and any revised
-container metadata are additional and must be measured after packaging.
+The isolated CPU format stores both factors and a 32-byte header in one file
+per projection. If used by a future model experiment, these headers would add
+another 3,584 B for all 112 or 1,792 B for output 56. No model factor set has
+been trained or packaged. A manifest, loader source and any revised container
+metadata are additional and must be measured after packaging.
 No entropy-compression benefit is credited. For example, rank-8 output factors
 plus these headers add 11,011,840 B; the value-only percentages exclude headers.
 If a future baseline includes prototype files, count those as well and update

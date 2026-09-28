@@ -1,0 +1,57 @@
+{
+  "format": "MAMBA2_LOW_RANK_RESIDUAL_CPU_TEST_RECEIPT_V1",
+  "complete": true,
+  "passed": true,
+  "created_utc": "2026-09-28T07:09:14.307Z",
+  "scope": "CPU representation preparation only; no model training, CUDA execution or quality measurement",
+  "remote_host": "horde-gpu",
+  "remote_cwd": "/home/horde/Mamba2-8B-E8W5",
+  "command": "CUDA_VISIBLE_DEVICES='' /home/horde/.venvs/lodram/bin/python -m unittest tests.test_low_rank_residual -v",
+  "execution_receipt": {
+    "tool": "exec_command/write_stdin",
+    "session_id": 34989,
+    "final_chunk_id": "4ed46d",
+    "exit_code": 0
+  },
+  "tests": 11,
+  "test_runner_elapsed_seconds": 0.908,
+  "test_cpu_threads": 2,
+  "combined_stdout_stderr": "test_checkpoint_replay_agrees_with_tiny_direct_forward_and_gradients (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_handmade_wire_format_and_deterministic_roundtrip (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_header_and_length_rejections_before_array_allocation (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_merge_rejects_wrong_base_overflow_and_cpu_autocast (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_nonfinite_file_payloads_rejected_in_both_factors (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_nonzero_merge_matches_independent_dyadic_arithmetic (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_preexisting_partial_and_destination_are_preserved (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_signed_zero_follows_native_addition_not_a_zero_shortcut (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_strict_tensor_and_resource_bounds (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_zero_initialization_retains_correct_factor_gradient (tests.test_low_rank_residual.LowRankResidualTests) ... ok\ntest_zero_merge_preserves_values_without_touching_base (tests.test_low_rank_residual.LowRankResidualTests) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.908s\n\nOK\n",
+  "environment_probe": {
+    "scope": "Separate read-only probe after tests, same interpreter and CUDA-hidden environment",
+    "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+    "platform": "Linux-5.15.0-181-generic-x86_64-with-glibc2.35",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "compiled_cuda": "12.8",
+    "CUDA_VISIBLE_DEVICES": "",
+    "cuda_initialized": false
+  },
+  "sha256": {
+    "mamba_e8w5/low_rank_residual.py": "050bc995c14477189b5b919d8d75c31e6c18dd4815d0de54cb72da39f6e083d6",
+    "tests/test_low_rank_residual.py": "c087c2e855f736b20dce6b972a8e17acbe681b981131938a567f6d2a78ba1d9b",
+    "docs/LOW_RANK_RESIDUAL_IMPLEMENTATION.md": "eab5b78e054ac8702396cdc9de047ff2ab3b19d93e1d5912eb87f1b140ecb5a3"
+  },
+  "limits": {
+    "max_dimension": 65536,
+    "max_rank": 256,
+    "max_merged_matrix_elements": 100000000,
+    "max_factor_payload_bytes": 33554432
+  },
+  "assertions": [
+    "Hand-packed wire oracle and deterministic byte readback",
+    "Strict geometry, dtype, finite payload and exact file length",
+    "Malformed/oversize headers rejected before array allocation",
+    "Exclusive destination and partial-file preservation",
+    "Native FP32 merge with final FP16 rounding",
+    "Signed-zero arithmetic explicitly preserved as native behavior",
+    "Frozen base bytes, version and gradient boundary unchanged",
+    "Analytic zero-B gradient and checkpoint/direct tiny CPU gradient equality"
+  ],
+  "limitations": [
+    "CPU-only tensor API; no CUDA parity or timing established",
+    "No decoder gradient, trainer, experiment selection or quality claim",
+    "File receipts are not authenticated model manifests",
+    "Bytewise zero-residual preservation is not claimed for negative-zero base values"
+  ]
+}
