@@ -3,8 +3,8 @@
 Status on2026-09-28: the source/current MK baseline, native correctness checks,
 final1536 training/export and all DEV measurements are complete. The original
 strict DEV run failed its historical cross-process MK replay prerequisite.
-Paired DEV results are promising; their separate terminal audit and prospective
-full PPL/independent confirmation are pending. No promotion or publication.
+The separate terminal audit passed. Prospective full PPL and independent
+confirmation are pending. No promotion or publication.
 
 ## Completed baseline
 
@@ -87,7 +87,10 @@ bindings. These are correctness checks and do not establish recall/PPL quality.
   `e64effbceda78b82488fd69608d6338fd2bb6e4b535c1d8eca12ddee789f70b6`;
   final checkpoint15,850,619 bytes, SHA256
   `03ed8da1d7c49fde4b70c053719eff19b715393d7b96dc41427f3cfc62af3fba`.
-- [ ] Same-enabled-adapter DEV MK and64-window PPL joint screen.
+- [x] Same-enabled-adapter DEV MK and64-window PPL paired audit under the
+  explicitly amended continuation protocol; original strict replay failure
+  remains preserved. CPU audit12.6830 seconds, exit0, CUDA uninitialized,
+  report SHA256 `6e89f9bcdaacabcbc9613713256874a7aa741b71ba289ed57fe745deb1a99074`.
 - [ ] Conditional complete130-window PPL no greater than paired current.
 - [ ] Conditional independent384+384 confirmation MK with positive paired
   gain/confidence and no increased removed-target false recall.

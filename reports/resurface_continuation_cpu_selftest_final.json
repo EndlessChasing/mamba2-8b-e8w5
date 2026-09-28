@@ -1,0 +1,27 @@
+{
+  "format": "MAMBA2_RESURFACE_SOFT_CONTINUATION_V1",
+  "complete": true,
+  "stage": null,
+  "script_sha256": "3ab56d0483f1a0b8e3c531829daa6ab6f7dfcb693288f455f8dc28e4d4baa308",
+  "protocol_sha256": "f6be64321c214bb7b229ae658b24aa75b8a0f3ec17a9df9059c4303920cdbabf",
+  "original_training_protocol_sha256": "469063147d892282a2bdad8558afca8466d6f365f1efe14ecbba7417e9857dd6",
+  "gate_mode": "soft",
+  "original_strict_protocol_pass_claimed": false,
+  "post_observation_prerequisite_amendment": true,
+  "fitting_performed": false,
+  "publication_performed": false,
+  "automatic_next_stage": false,
+  "self_test": {
+    "passed": true,
+    "tests": [
+      "Accept exactly declared original failure",
+      "Reject completed/different-failure/missing-restoration/oldpassed-gate receipts",
+      "Reject running/success/boolean-code/wrong-hash process receipts",
+      "Reject768-row fresh-cache replay corruption",
+      "Reject restored generated-ID mismatch"
+    ]
+  },
+  "mode": "self_test",
+  "cuda_initialized": false,
+  "elapsed_seconds": 0.08863030094653368
+}

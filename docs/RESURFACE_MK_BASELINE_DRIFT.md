@@ -77,3 +77,23 @@ No per-token hidden/logit/cache-value traces or historical kernel selections
 exist in these receipts. Cause attribution remains unresolved. Await the
 frozen run's full restored-current arm for same-process paired evidence;
 a historical mismatch must remain a failure under its existing protocol.
+
+## Terminal observation and separate continuation
+
+The strict run terminated with exit1 and exactly the historical-MK error.
+Its final report is6,930,157 bytes, SHA256
+`12f8ba2cdaf19ab929aa7c1eac14a20033f0f31223b5ada7311f6014a2e81781`.
+All768 initial/restored MK rows and summaries match exactly, as do all64
+prose rows and CE chunks. The independent terminal drift receipt is
+`reports/resurface_mk_baseline_drift_terminal.json`, SHA256
+`c941cbd85209b076541bc65e094bd6af6d96516cf31eef2c54038ccf7851aef7`.
+This does not establish the cause of the earlier cross-process differences.
+
+The separately declared [continuation protocol](RESURFACE_SOFT_CONTINUATION_PROTOCOL.md)
+preserves this original failure and transparently removes only historical
+cross-process MK equality. Actual terminal CPU reanalysis passes, report
+SHA256 `6e89f9bcdaacabcbc9613713256874a7aa741b71ba289ed57fe745deb1a99074`:
+same-process MK112→346/384, removed controls0→0, PPL7.624250427→7.595032520,
+all restored/actual-export/507/224/final-file checks pass. The candidate and
+native numerical profile are unchanged. Prospective full PPL and independent
+confirmation are still required; no hard0 or deterministic-profile probe ran.
