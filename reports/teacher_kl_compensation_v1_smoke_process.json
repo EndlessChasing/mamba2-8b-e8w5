@@ -1,0 +1,73 @@
+{
+  "format": "MAMBA2_TEACHER_KL_STAGE_PROCESS_V1",
+  "complete": true,
+  "stage": "smoke",
+  "started_at_unix": 1790596366.672191,
+  "runner_identity": {
+    "pid": 2698329,
+    "present": true,
+    "state": "R",
+    "start_ticks": 97765374,
+    "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+    "argv": [
+      "/home/horde/.venvs/lodram/bin/python",
+      "-u",
+      "scripts/run_teacher_kl_stage.py",
+      "--stage",
+      "smoke",
+      "--protocol-sha256",
+      "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a"
+    ],
+    "live": true
+  },
+  "command": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/train_teacher_kl_compensation.py",
+    "--mode",
+    "smoke",
+    "--work-dir",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/teacher_kl_compensation_v1_smoke_work",
+    "--out-dir",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/teacher_kl_compensation_v1_smoke_unused",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/teacher_kl_compensation_v1_smoke.json",
+    "--protocol-sha256",
+    "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a"
+  ],
+  "script_sha256": "ce7e4eb448cb108c58f4406a5e68b7b11546ddf42f3be8064d26342cc8dbd8dc",
+  "supervisor_sha256": "b9abd6df7c01750ca551a4ff0668c6e4dc825c3ace8d70e22979dbee950d9a93",
+  "protocol_sha256": "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a",
+  "publication_performed": false,
+  "automatic_next_stage": false,
+  "log": "/home/horde/Mamba2-8B-E8W5/reports/teacher_kl_compensation_v1_smoke.log",
+  "child_report": "/home/horde/Mamba2-8B-E8W5/reports/teacher_kl_compensation_v1_smoke.json",
+  "child_identity": {
+    "pid": 2698330,
+    "present": true,
+    "state": "R",
+    "start_ticks": 97765378,
+    "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+    "argv": [
+      "/home/horde/.venvs/lodram/bin/python",
+      "-u",
+      "/home/horde/Mamba2-8B-E8W5/scripts/train_teacher_kl_compensation.py",
+      "--mode",
+      "smoke",
+      "--work-dir",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/teacher_kl_compensation_v1_smoke_work",
+      "--out-dir",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/teacher_kl_compensation_v1_smoke_unused",
+      "--report",
+      "/home/horde/Mamba2-8B-E8W5/reports/teacher_kl_compensation_v1_smoke.json",
+      "--protocol-sha256",
+      "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a"
+    ],
+    "live": true
+  },
+  "exit_code": 0,
+  "child_report_sha256": "69f07ca855b383424f713de4095a0fac25785e3fec02c75193fdc2b84ce19c00",
+  "reserved_gate": null,
+  "comparison": null,
+  "ended_at_unix": 1790596546.0778859
+}

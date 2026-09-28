@@ -1,10 +1,9 @@
 # Teacher-KL experiment readiness
 
-**Launch snapshot:** the discarded training-only GPU smoke has started under
-supervision (child PID2698330). This records the launch, not continuing process
-liveness. No completed smoke, formal448-update training or quality result is
-established in this snapshot. The final smoke outcome will be recorded separately.
-Publication remains held; MK is deferred.
+**Smoke completed:** the [discarded training-only GPU smoke](TEACHER_KL_SMOKE_RESULTS.md)
+passed and its actual process exited0. All trial state was discarded. This
+readiness snapshot establishes no completed formal448-update export or quality
+result. Publication remains held; MK is deferred.
 
 The [frozen protocol](TEACHER_KL_COMPENSATION_PROTOCOL.md) resets to accepted
 all-small with fresh rank-4 factors. Pure teacher→student KL is the optimization
