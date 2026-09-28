@@ -1,0 +1,43 @@
+{
+  "format": "MAMBA2_TEACHER_KL_EVALUATOR_CPU_CHECKS_V1",
+  "complete": true,
+  "passed": true,
+  "code_sha256": {
+    "scripts/evaluate_teacher_kl_compensation.py": "b899318efba83afe9b8a091f7456d92aa9c929a0e2b43875725a5d4372cea071",
+    "tests/test_teacher_kl_evaluation.py": "5783a4cb7d6d871b576f7c28b0de9b7b1a47b449ed0a7fc860b4294385666d0c"
+  },
+  "execution": {
+    "host": "horde-gpu",
+    "command": "CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python -m unittest tests.test_teacher_kl_evaluation -v",
+    "tests_run": 8,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0,
+    "unittest_elapsed_seconds": 0.922,
+    "gpu_operations": false,
+    "prepared_data_test_asserted_cuda_uninitialized": true
+  },
+  "checks": [
+    "Actual112 factor geometry and224 rounded FP32 master equality; signed-zero mismatch,missing file andwrongmasterdtype rejection",
+    "Independent448seededschedule,strictintegers,8retrylimit,917056successfultargets",
+    "Strict flatfile size/SHA/path/symlink rejection",
+    "Independent native half(base.float()+B16.float()@A16.float()) merge; unchanged base and locallydisabledautocast",
+    "Actual pinned448train/64heldout token files and zerooverlap verified onCPU",
+    "Reserved64 rows and131008targets;PPL>=1%improvement plusstrictlylowerKL bothrequired; exactsourceCErepeatandtoken/chunktamperrejection",
+    "Failedreservedgate never enters validation callback; inconsistentboolean decisions rejected",
+    "Conditional full130window/264764targetweightedPPL and twoindependentfinalgates"
+  ],
+  "data_manifest_sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+  "protocol_sha256": "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a",
+  "preliminary_run": {
+    "tests_run": 8,
+    "passed": 7,
+    "errors": 1,
+    "reason": "Prepared-data directory became available before evaluator pins were filled; pending-pin guard failed closed. No algorithm or test threshold changed; fixed actual pins inserted and same suite rerun."
+  },
+  "limits": [
+    "CPUboundaryandsmallsyntheticproofsonly;noGPUqualityscoreoractualfinalcandidateyet",
+    "Reservedloss uses pinnedpreviouslyaudited native diagnostic score_window, nottraininglosshelper or bank",
+    "Nooldboundfileschanged;nosmoke/train/evaluationGPUlaunchbythisagent"
+  ]
+}

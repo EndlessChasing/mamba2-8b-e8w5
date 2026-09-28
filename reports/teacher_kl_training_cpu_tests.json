@@ -1,0 +1,91 @@
+{
+  "format": "MAMBA2_TEACHER_KL_LOSS_AND_DATA_CPU_TESTS_V1",
+  "complete": true,
+  "passed": true,
+  "recorded_at_utc": "2026-09-28T11:52:17.503573+00:00",
+  "host": "horde-gpu",
+  "python": "3.10.12",
+  "torch": "2.11.0+cu128",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "cuda_initialized": false
+  },
+  "command": "CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python -m unittest tests.test_teacher_kl_training -v",
+  "test_count": 4,
+  "test_run_seconds": 0.491,
+  "exit_code": 0,
+  "tests": [
+    {
+      "name": "test_dense_kl_gradient_tail_and_single_scaling",
+      "passed": true,
+      "scope": "CPU FP16 native heads, FP32 full-vocabulary teacher-to-student KL; dense-gradient comparison, short tail and scale16 applied once; no teacher/head gradients"
+    },
+    {
+      "name": "test_label_permutation_changes_ce_only_not_kl_or_gradients",
+      "passed": true,
+      "scope": "Labels alter detached CE but preserve exact KL value and student gradients"
+    },
+    {
+      "name": "test_native_precision_context_and_invalid_forward",
+      "passed": true,
+      "scope": "Local autocast disabled and caller context preserved; invalid chunks and nonfinite hidden states rejected"
+    },
+    {
+      "name": "test_actual_pinned_partition_and_single_pass_schedule",
+      "passed": true,
+      "scope": "Real pinned source interval families, deterministic519/64/448/7 partition, zero overlap,448-window CPU permutation and malformed prior count rejection"
+    }
+  ],
+  "code_sha256": {
+    "mamba_e8w5/teacher_kl_training.py": "1806f84c38dd7c4f44ca9825a7a45b2e75cdca0356192b9a1804f7abc50c2e77",
+    "scripts/prepare_teacher_kl_data.py": "4e528dbaa965110a908c56f2386b12483c23d4bc1e8f80a341875ed00728cd13",
+    "tests/test_teacher_kl_training.py": "1e3fb3912c4628c54ebb713647f06eb05d95425b9aa57acd89924746a54d5a53"
+  },
+  "protocol_sha256": "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a",
+  "actual_preparation": {
+    "complete": true,
+    "exit_code": 0,
+    "manifest_sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+    "remote_directory": "/home/horde/Mamba2-8B-E8W5/training_data/teacher_kl_compensation_v1",
+    "local_manifest": "reports/teacher_kl_compensation_v1_data_manifest.json",
+    "training_tokens_file_sha256": "e54b02e5162e042a9cdd504f4eb1b1652724fb240bbc2c97608967aa26297233",
+    "heldout_tokens_file_sha256": "a3fc0803052890d973b74f91581a6bfc1d2f93ed28db5725f23c16eb8ec20546",
+    "training_tokens_sha256_int64le": "049dfb6847d778897fd19b67653c3189f29fbc19a36022e8a4801306d08228bc",
+    "heldout_tokens_sha256_int64le": "b72dc740425c71f5a67010d7a7e0a9e43d648a816c74bc83c81209a8f0c0a0d1",
+    "training_target_exposures": 917056,
+    "heldout_targets": 131008,
+    "overlap": {
+      "grid_blocks": 1237,
+      "excluded_grid_blocks": 718,
+      "eligible_blocks": 519,
+      "reserved_blocks": 64,
+      "remaining_after_reservation": 455,
+      "training_blocks": 448,
+      "unused_blocks": 7,
+      "training_heldout_overlap_tokens": 0,
+      "internal_overlap_tokens": {
+        "training": 0,
+        "heldout": 0
+      },
+      "previous_family_overlap_tokens": {
+        "original_calibration": 0,
+        "all_small_training": 0,
+        "crossmoment_fit": 0,
+        "crossmoment_heldout": 0,
+        "prototype_training": 0,
+        "low_rank_training": 0,
+        "generalization_fresh": 0
+      },
+      "all_previous_overlap_tokens": 0,
+      "minimum_training_start_gap": 2048,
+      "minimum_heldout_start_gap": 30720
+    },
+    "disk_roundtrip_equal": true,
+    "verify_data_after_write_passed": true,
+    "cuda_initialized": false
+  },
+  "limitations": [
+    "CPU helper/data checks only; no 8B GPU smoke, training or quality evaluation performed by this work.",
+    "Prepared heldout data are integrity-read on CPU only; no heldout model scoring or fitting."
+  ]
+}
