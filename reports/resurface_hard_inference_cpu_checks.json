@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "scope": "CPU toy implementation checks only; no model-quality or GPU result",
+  "command": "CUDA_VISIBLE_DEVICES= /home/horde/.venvs/lodram/bin/python tests/test_resurface_hard_inference.py --report reports/resurface_hard_inference_cpu_checks.json",
+  "exit_code": 0,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "cuda_initialized": false,
+  "elapsed_seconds": 0.01934472902212292,
+  "policy": "RESURFACE_POST_D_HARD0_GATE1_EXACT_CLOSED_V1",
+  "source_sha256": "8793ea76856f40edd9cec43b0a716a6a16b8385ce26d5351514e6c6ca6614891",
+  "test_sha256": "db4a7603eabbb917cdf5e1856a725f3a7ceff278447088c4b8ea204b8c4938eb",
+  "frozen_native_sha256": "2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7",
+  "failure_details": []
+}
