@@ -86,11 +86,15 @@ epoch-end checkpoint evaluations or final fixed-model TRAIN PPL**.
 | 3 | 1.00045 | 1.80820 | 0.19271 |
 | 4 | 0.92048 | 1.61726 | 0.22370 |
 
-Falling training CE, a late KL rebound and worse validation PPL are consistent
-with overfitting, but do not prove its mechanism. A narrow posthoc comparison
-of the fixed final candidate on fit versus fresh TRAIN windows is planned;
-it has not run, and no new training is scheduled by that diagnostic. This
-negative result applies to the declared recipe, not all possible low-rank repairs.
+The completed [fixed-model TRAIN diagnostic](LOW_RANK_GENERALIZATION_RESULTS.md)
+now measures fitting PPL8.714097→4.247930 (−51.2522%) but fresh PPL8.510325→8.691613
+(+2.1302%). All64 fresh windows also worsen in teacher KL. This strongly supports
+overfitting in this recipe, while different text subsets and multiple changed
+recipe components prevent a causal attribution to one mechanism. The diagnostic
+did not train or promote a model. A separate [pure teacher-KL protocol](TEACHER_KL_COMPENSATION_PROTOCOL.md)
+resets to accepted all-small, uses fresh factors and a reserved-window gate;
+it has not run. This negative result applies to the declared recipe, not all
+possible low-rank repairs.
 
 [Prototype compensation](PROTOTYPE_COMPENSATION_RESULTS.md) still has the
 lowest measured compact-candidate PPL, **8.306585062**, but also failed its

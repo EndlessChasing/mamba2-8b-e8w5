@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold at the user's request. Rank-4 compensation completed all 1,024 updates, verified export and independent full validation: PPL 8.630189440 versus accepted all-small 8.359867548 and FP16 source 7.334175947. This is a 3.2336% regression versus the base and a 17.6709% source gap; both quality gates failed. Stop this fixed recipe without extra epochs, checkpoint selection or a rank sweep. The all-small model/distribution remains unchanged. Prototype PPL 8.306585062 remains the lowest measured compact-candidate value, but its 0.6374% gain also failed the 1% advancement gate and was not promoted. A narrow fit-versus-fresh TRAIN diagnostic is planned; no new training has begun. MK remains deferred with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
+Status: publication remains on hold at the user's request. Rank-4 compensation completed all 1,024 updates, verified export and independent full validation: PPL 8.630189440 versus accepted all-small 8.359867548 and FP16 source 7.334175947. This is a 3.2336% regression versus the base and a 17.6709% source gap; both quality gates failed. Stop this fixed recipe without extra epochs, checkpoint selection or a rank sweep. The all-small model/distribution remains unchanged. Prototype PPL 8.306585062 remains the lowest measured compact-candidate value, but its 0.6374% gain also failed the 1% advancement gate and was not promoted. The completed fit-versus-fresh TRAIN diagnostic supports overfitting; a separately declared pure teacher-KL experiment is being prepared, with no result yet. MK remains deferred with no assumed Resurface recovery. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -138,4 +138,12 @@ completed prototype recipe or promote its failed candidate.
 - [x] Independently verify final 224 rounded masters, 112 factor files, native export parity and all 507 frozen tensor hashes. Factor files occupy 15,658,496 bytes plus a 198,517-byte manifest; no new complete distribution or compact inference-memory result is claimed.
 - [x] Measure native same-process source/all-small/candidate full-validation PPL on 264,764 targets and 130 windows: 7.334175947 / 8.359867548 / 8.630189440. Four windows improve and 126 worsen. Both the >=1% advancement and source+5% gates fail.
 - [x] Preserve the negative result and stop this fixed recipe without extra epochs, checkpoint selection or a rank sweep. Retain the accepted all-small model/distribution; MK remains deferred and publication held.
-- [ ] Run a narrow posthoc fit-versus-fresh TRAIN diagnostic on the fixed final candidate. Online training CE decreased while validation worsened; this suggests overfitting but does not establish its mechanism. No new training is scheduled by this diagnostic.
+- [x] Complete the final-only fit-versus-fresh TRAIN diagnostic: fitting PPL8.714097→4.247930, fresh PPL8.510325→8.691613; all64 fresh teacher-KL values worsen. All320 repeated source CE rows are exact; the112 merged/507 complete candidate hashes match final validation. This supports overfitting without isolating causality. See [diagnostic results](docs/LOW_RANK_GENERALIZATION_RESULTS.md).
+
+## Separate teacher-KL compensation
+
+- [x] Declare the [fixed protocol](docs/TEACHER_KL_COMPENSATION_PROTOCOL.md): reset accepted all-small and fresh rank4 factors, pure teacher KL with CE logging only, learning rate1e-4,448 fresh TRAIN windows once and64 reserved windows. Exclude every previous fitting and observed diagnostic interval;7 eligible windows remain unused.
+- [ ] Prepare and verify the new token sets, pure-KL gradients and independent evaluator; pass a discarded training-only GPU smoke before launch.
+- [ ] Complete exactly448 successful updates with no intermediate quality selection, and independently verify the final224 masters/112 files plus507 frozen baseline tensors.
+- [ ] Evaluate the64 reserved windows. Require both>=1% PPL improvement and lower mean teacher KL; if either fails, stop and skip full validation.
+- [ ] Only after the reserved gate passes, measure full130-window/264,764-target paired validation and report the>=1% improvement and source+5% targets separately. No publication, MK, rank sweep or extra epochs follows automatically.
