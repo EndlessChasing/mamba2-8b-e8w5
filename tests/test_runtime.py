@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 
 from mamba_e8w5.calibration import window_starts
-from mamba_e8w5.evaluation import ppl_windows, synthetic_mk_cases
+from mamba_e8w5.evaluation import evaluate_ppl, ppl_windows, synthetic_mk_cases
 from mamba_e8w5.runtime import MODEL_CONFIG, make_model, normalize_source_key, normalize_source_state
 
 
@@ -52,6 +52,19 @@ class ProtocolTests(unittest.TestCase):
         self.assertEqual(model.backbone.layers[0].mixer.norm.group_size, 1024)
         self.assertEqual(sum(p.numel() for p in model.parameters()), 8236999680)
         self.assertIsNot(model.backbone.embedding.weight, model.lm_head.weight)
+        self.assertFalse(model.backbone.residual_in_fp32)
+
+    def test_ppl_rejects_nonfinite_model_output(self):
+        class NonfiniteModel(torch.nn.Module):
+            def __init__(self):
+                super().__init__()
+                self.lm_head = torch.nn.Linear(8, 16)
+
+            def backbone(self, ids):
+                return torch.full((*ids.shape, 8), float("nan"))
+
+        with self.assertRaisesRegex(RuntimeError, "Nonfinite hidden"):
+            evaluate_ppl(NonfiniteModel(), [(0, torch.arange(8))])
 
 
 @unittest.skipUnless(torch.cuda.is_available(), "Small numerical test requires a CUDA runtime")
