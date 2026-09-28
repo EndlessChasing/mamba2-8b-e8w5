@@ -1,5 +1,8 @@
 # Existing-metadata training: read-only design audit
 
+
+**Later algebra audit:** with fixed E8 indices/rotation/scale, input-balance fitting is continuously redundant with the already trained immediate block and gated norm gains. FP16 rounding can differ, but this is not 688,128 new independent correction modes. See [balance/norm equivalence](BALANCE_NORM_EQUIVALENCE.md); balance-only fitting is not prioritized as a major next repair.
+
 **Status: initial design audit with a measured norm-only follow-up; other proposals remain unmeasured.**
 The eight-sweep experiment has since completed and stopped. The norm-only option
 has now completed under the separate [declared protocol](NORM_COMPENSATION_PROTOCOL.md),
