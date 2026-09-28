@@ -1,0 +1,36 @@
+{
+  "status": "finished",
+  "pid": 3385464,
+  "started_unix": 1790610618.7129605,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "scripts/train_axis_small.py",
+    "--mode",
+    "smoke",
+    "--report",
+    "reports/axis_small_readaptation_v1_smoke.json",
+    "--work-dir",
+    "training_runs/axis_small_readaptation_v1_smoke",
+    "--overlay-dir",
+    "artifacts/axis_small_readaptation_v1"
+  ],
+  "code_pins": {
+    "mamba_e8w5/axis_small_base.py": "4e7026475fc97b005105b27043a15bae83c576934612b1e346576438eef4da70",
+    "scripts/train_axis_small.py": "7c03ccedc5bd1e5886aa82afac84640ac9d2c0e427455d8fb6bac327f42701af",
+    "docs/AXIS_SMALL_READAPTATION_PROTOCOL.md": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282"
+  },
+  "required_reports": {
+    "reports/axis_small_v1_cpu.json": "fe734fd48820b66c875d185253f4feb569ccfded2405fa9b50f013edad5c6531",
+    "reports/axis_small_diagnostic_v1.json": "7a4d9ad7793773e2b09859eafd201189344d529c0c6d7bf4995af6370dfcdc09"
+  },
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99190582,
+  "exit_code": 0,
+  "finished_unix": 1790610845.672309,
+  "wall_seconds": 226.95934867858887,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "report_sha256": "38bcd06094487c85efd8f286b32cd2417ab05ab8f6cd5ebbb5dad5dde78f47fe",
+  "report_bytes": 535608,
+  "report_complete": true
+}

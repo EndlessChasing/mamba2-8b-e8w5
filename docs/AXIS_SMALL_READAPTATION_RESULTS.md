@@ -34,6 +34,23 @@ passed. Report SHA256:
 See [report](../reports/axis_small_diagnostic_v1.json) and
 [process receipt](../reports/axis_small_diagnostic_v1_process.json).
 
+## GPU training smoke: complete
+
+The discarded smoke passes: native/functional hidden and last-eight-position
+logit hashes agree, checkpoint gradient maximum difference is0, and all seven
+small-parameter families have finite nonzero gradients. Full-vocabulary chunked
+loss differs from the direct five-target objective by1.13249e-7, with identical
+hidden gradients. One2047-target update succeeds without overflow; loss scale
+remains1024. Actual serialized FP16 tensors equal rounded masters, and native
+export hidden/logit hashes match. All underlying/teacher507 audits and fixed114
+checks pass, and every trial master is reset to its original value.
+
+Smoke terminal exit0;226.9593 seconds including loading/audits. Peak allocated
+GPU memory is35,771,876,864 bytes for decoded student+teacher quality reference.
+The smoke export is discarded and is not an eligible trained candidate.
+See [smoke report](../reports/axis_small_readaptation_v1_smoke.json) and
+[process receipt](../reports/axis_small_readaptation_v1_smoke_process.json).
+
 ## Training and independent quality: pending
 
 The declared recipe adjusts393 existing tensors /3,580,928 parameters for448
@@ -43,7 +60,9 @@ Only the final448 checkpoint is eligible. Native evaluation reloads actual FP16
 exports, checks all507 tensors and exact baseline repetition, and requires at
 least1% paired development PPL improvement before complete validation.
 
-No training or candidate-quality result is claimed by this pending section.
+Formal training starts in a fresh process from current old-trained393 with
+fresh optimizer, scaler and fixed RNG. No candidate-quality result is claimed
+by this pending section.
 
 ## Integrity preparation
 
