@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "stage": "eval",
+  "started_at_unix": 1790604150.5623953,
+  "argv": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/evaluate_input_axis_residual.py",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/input_axis_residual_v1_eval.json"
+  ],
+  "script_sha256": "c8dece7ec209b74ef65244086c7c245f08a59ea344124559f964e44c8a2540f0",
+  "cpu_receipt_sha256": "546300a6ceb9ed51db39c8ef73fbfe1d5fafec00c47204bdf977a93800c4f58f",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "log_path": "/home/horde/Mamba2-8B-E8W5/reports/input_axis_residual_v1_eval.log",
+  "pid": 3073004,
+  "process_start_ticks": 98543767,
+  "command_line": "/home/horde/.venvs/lodram/bin/python -u /home/horde/Mamba2-8B-E8W5/scripts/evaluate_input_axis_residual.py --report /home/horde/Mamba2-8B-E8W5/reports/input_axis_residual_v1_eval.json ",
+  "exit_code": 0,
+  "finished_at_unix": 1790604789.0251598,
+  "wall_seconds": 638.4627647399902,
+  "report_sha256": "1dd6be0ddb4481e765da2658926ecea92183521ac9862b914fc3d3ba2a80a7eb",
+  "report_bytes": 3040232,
+  "experiment_complete": true,
+  "error": null
+}
