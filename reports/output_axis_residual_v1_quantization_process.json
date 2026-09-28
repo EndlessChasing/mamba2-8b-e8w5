@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "stage": "quantize",
+  "started_at_unix": 1790605504.6327019,
+  "argv": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/quantize_output_axis_residual.py",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/output_axis_residual_v1_quantization.json"
+  ],
+  "script_sha256": "786bf33186848cd620d83107a98b9082f3ae81d4e0a6a1b3d0ba6ae776b1fc65",
+  "cpu_receipt_sha256": "c57e8cbdcec09db6af9b63458b85808993f66480e17fcda334fb7f0fb7ad0107",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "log_path": "/home/horde/Mamba2-8B-E8W5/reports/output_axis_residual_v1_quantization.log",
+  "pid": 3138943,
+  "process_start_ticks": 98679174,
+  "command_line": "/home/horde/.venvs/lodram/bin/python -u /home/horde/Mamba2-8B-E8W5/scripts/quantize_output_axis_residual.py --report /home/horde/Mamba2-8B-E8W5/reports/output_axis_residual_v1_quantization.json ",
+  "exit_code": 0,
+  "finished_at_unix": 1790605976.877942,
+  "wall_seconds": 472.245240688324,
+  "report_sha256": "678b5a215a9f8404a6c9baa510e62a4378e0e2e8c57ff5fd477bbbe8d3673c2f",
+  "report_bytes": 193162,
+  "experiment_complete": true,
+  "error": null
+}
