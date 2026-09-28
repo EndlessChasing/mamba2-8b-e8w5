@@ -5,6 +5,7 @@ __pycache__/
 models/
 artifacts/
 calibration/
+training_data/
 *.safetensors
 *.pt
 *.bin

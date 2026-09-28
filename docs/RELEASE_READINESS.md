@@ -1,7 +1,6 @@
 # Release readiness: local 8B candidate
 
-
-**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) has completed full validation for the fixed norm candidate and is preparing training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold. [Complete validation](NORM_PPL_RESULTS.md) confirms PPL **8.83656 → 8.58964 (−2.7943%)**, versus original FP16 **7.33418 (+17.1180% remaining gap)**.
 
 Evidence snapshot: **2026-09-28 UTC** (2026-09-27 Pacific).
 This is a completion checklist, not permission to publish.

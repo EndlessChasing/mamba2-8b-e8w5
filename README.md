@@ -1,7 +1,6 @@
 # Mamba-2 8B E8/W5
 
-
-**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](docs/PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](docs/PPL_PRIORITY_CONTINUATION.md) has completed full validation for the fixed norm candidate and is preparing training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold. [Complete validation](docs/NORM_PPL_RESULTS.md) confirms PPL **8.83656 → 8.58964 (−2.7943%)**, versus original FP16 **7.33418 (+17.1180% remaining gap)**.
 
 An experimental compact version of NVIDIA’s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head.
 
@@ -21,7 +20,7 @@ The [PPL diagnosis](docs/PPL_DIAGNOSIS.md) records controlled component and proj
 
 A separate [eight-sweep repair experiment](docs/E8_REFINEMENT_RESULTS.md) improved all 112 projection reconstruction proxies at unchanged raw bitrate. Paired development PPL improved only **0.461%**, with recall unchanged, missing the predeclared 1% advancement threshold. This route stopped; no refined full-validation result or entropy-coded package is claimed.
 
-The subsequent [existing-norm compensation experiment](docs/NORM_COMPENSATION_RESULTS.md) trained 692,224 existing parameters at unchanged raw capacity. Development PPL improved **2.942%**, but normal recall fell **10/12→9/12**. Its combined gate failed, so full validation was skipped and this recipe stopped. It is not a promoted replacement for the original candidate.
+The subsequent [existing-norm compensation experiment](docs/NORM_COMPENSATION_RESULTS.md) trained 692,224 existing parameters at unchanged raw capacity. Development PPL improved **2.942%**, but normal recall fell **10/12→9/12**. Its original combined gate failed, so that protocol stopped before full validation; the subsequent user-directed PPL-only evaluation is reported above. It is not a promoted replacement for the original candidate.
 
 The decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
 

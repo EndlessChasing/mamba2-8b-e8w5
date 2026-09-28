@@ -1,7 +1,6 @@
 # First 8B candidate: measured results
 
-
-**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) has completed full validation for the fixed norm candidate and is preparing training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold. [Complete validation](NORM_PPL_RESULTS.md) confirms PPL **8.83656 → 8.58964 (−2.7943%)**, versus original FP16 **7.33418 (+17.1180% remaining gap)**.
 
 Candidate `e8w5_v1`; raw manifest SHA-256:
 `ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed`.
@@ -47,4 +46,4 @@ The [component diagnosis](PPL_DIAGNOSIS.md) locates the dominant loss in E8 proj
 
 The [eight-sweep experiment](E8_REFINEMENT_RESULTS.md) generated all112 projections at unchanged raw bitrate. Squared calibration-output errors improved for all112 (median1.8970%), but paired development PPL improved only9.237164→9.194595 (0.460844%); normal MK remained10/12 and controls0/12. This failed the [predeclared](REFINEMENT_PROTOCOL.md)1% PPL advancement threshold. The route is stopped, full validation was skipped, and the original candidate remains unchanged. No refined Huffman size or full-test quality is claimed.
 
-The separate [norm-only experiment](NORM_COMPENSATION_RESULTS.md) completed 128 fixed training updates on the original parent, without adding parameters or raw payload bytes. Paired development PPL improved 9.237164→8.965396 (2.9421%), but normal MK decreased 10/12→9/12; controls stayed 0/12. The combined gate failed and full validation was skipped. This is a development PPL/recall tradeoff, with no new full-corpus or entropy-package claim.
+The separate [norm-only experiment](NORM_COMPENSATION_RESULTS.md) completed 128 fixed training updates on the original parent, without adding parameters or raw payload bytes. Paired development PPL improved 9.237164→8.965396 (2.9421%), but normal MK decreased 10/12→9/12; controls stayed 0/12. The original combined gate failed and initially blocked full validation; the subsequent user-directed PPL-only evaluation is reported above. This is a development PPL/recall tradeoff, with no new full-corpus or entropy-package claim.

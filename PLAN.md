@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Under their original gates neither advanced to full validation. The user subsequently directed PPL-first work: the norm candidate is now entering a separately recorded full-validation run, and a larger all-small-tensor training experiment is being prepared. MK remains disclosed evidence rather than a blocker for this continuation. The GitHub release remains a draft with zero assets.
+Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Under their original gates neither advanced to full validation. The user subsequently directed PPL-first work: the norm candidate completed separately recorded full validation (8.83656→8.58964, −2.7943%; still +17.1180% versus source), and a larger all-small-tensor training experiment is being prepared. MK remains disclosed evidence rather than a blocker for this continuation. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -67,7 +67,7 @@ This is an improvement screen, not the original-model +5% PPL quality gate. Equa
 - [x] Run the fixed four passes / 128 successful updates on the 32 calibration training windows: 128 attempts, zero overflows, 262,016 target exposures; only the final checkpoint exported.
 - [x] Export and independently verify the complete small-tensor replacement: all 394 frozen GPU tensor hashes unchanged, all 113 rounded masters match export, all 280 protected small tensors exact, original E8/W5 inherited. Logical raw data remains 2,886,482,462 bytes.
 - [x] Compare original parent and reloaded candidate in one process: PPL 9.237164→8.965396 (−2.9421%); normal MK 10/12→9/12; controls 0/12 unchanged. PPL gate passed; combined gate failed.
-- [x] Preserve the negative combined result and stop this fixed recipe. Full validation was skipped; the source-relative quality target remains unestablished for this candidate. See docs/NORM_COMPENSATION_RESULTS.md.
+- [x] Preserve the negative combined result and stop this fixed recipe. Full validation was skipped; the original combined gate remains failed. The later PPL-only full validation is recorded separately below. See docs/NORM_COMPENSATION_RESULTS.md.
 
 This route adds no inference tensor fields; actual archive and metadata bytes must still be measured. No publication or test-set evaluation is authorized by this experiment.
 
@@ -85,8 +85,8 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 
 - [x] Record the user decision to prioritize PPL and defer recall work, while preserving the earlier failed combined gate: docs/PPL_PRIORITY_CONTINUATION.md.
 - [x] Confirm the actual source and candidate architectures are pure Mamba-2: 56 Mamba blocks, zero attention/independent MLP/MoE; reports/pure_mamba2_architecture_audit.json.
-- [ ] Run separate full-validation PPL for original source, original E8/W5, and fixed norm-v1 export with exact paired inputs.
-- [ ] Freeze the next all-small-tensor protocol: 393 existing tensors, 256 disjoint train windows excluding the old 32, 1024 fixed updates.
+- [x] Run separate full-validation PPL for original source, original E8/W5, and fixed norm-v1 export with exact paired inputs: 7.334176 / 8.836560 / 8.589641, all 264,764 targets; docs/NORM_PPL_RESULTS.md.
+- [x] Freeze the next all-small-tensor protocol: 393 existing tensors, 256 disjoint train windows excluding the old 32, 1024 fixed updates.
 - [ ] Pass new CPU and GPU checks covering convolution and recurrent parameter gradients, resumption, and actual FP16 export.
 - [ ] Train, export and independently audit the final checkpoint without changing E8/W5 or payload capacity.
 - [ ] Measure complete validation PPL, source-relative gap and gain over norm-v1; report recall as unmeasured for this candidate.

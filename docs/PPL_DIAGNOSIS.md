@@ -1,7 +1,7 @@
 # Why the first 8B E8/W5 candidate loses PPL quality
 
 
-**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) now evaluates the fixed norm candidate on full validation and prepares training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold.
+**Subsequent user direction:** prioritize PPL recovery and defer recall work. A [separate continuation](PPL_PRIORITY_CONTINUATION.md) has completed full validation for the fixed norm candidate and is preparing training of all existing small tensors. The original combined-gate failure remains recorded; MK no longer blocks this PPL research. Publication remains on hold. [Complete validation](NORM_PPL_RESULTS.md) confirms PPL **8.83656 → 8.58964 (−2.7943%)**, versus original FP16 **7.33418 (+17.1180% remaining gap)**.
 
 Model publication is on hold at the user's request. The existing GitHub release
 is a draft with zero uploaded assets. The original candidate and its quality
