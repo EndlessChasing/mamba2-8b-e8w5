@@ -31,8 +31,15 @@ The per-token FP16-cache check covers four validation windows and 24 validation 
 - All 507 loaded tensors and all 8,236,999,680 parameters passed the [independent decode audit](../reports/decoded_weight_audit.json).
 - 112 E8 projections match the quantizer's FP16 result hashes. Both complete 256,000-by-4096 W5 vocabularies match an independent CPU bit decoder. The remaining 393 FP16 tensors match the stored values.
 - Raw data files total 2,886,482,462 bytes. This excludes the raw manifest and separately shipped tokenizer/metadata. Use the final release manifest for complete entropy-coded storage accounting.
+- The verified local Huffman container is 2,660,128,443 bytes; the immutable prepared distribution is 2,666,260,364 bytes including its manifest. It remains unpublished. The [actual restore](../reports/release_restore_local_v1.json) reproduced all118 files, and [generation with archived software](../reports/restored_inference_local_v1.json) used only restored model/tokenizer inputs.
 - Full prefill evaluation: baseline peak allocated 17,076,597,760 B; candidate 17,355,670,016 B allocated and 18,599,641,088 B reserved. The reference fully expands quantized weights to FP16.
 - Batch-one FP16 convolution plus SSM state: 122,028,032 B (116.375 MiB).
 - The original checkpoint is BF16; this comparison casts it to FP16. The complete original Megatron runtime was not executed. Native BF16 quality equivalence, compressed GPU residency, ASIC power and energy, and global minimum model size are not established.
 
 The corresponding code, calibration hashes, environment versions, dataset/tokenizer identities and quality reports are retained for reproduction. No benchmark timing here is an isolated performance claim.
+
+## Subsequent diagnosis and experiments
+
+The [component diagnosis](PPL_DIAGNOSIS.md) locates the dominant loss in E8 projections: entire-validation PPL is 7.334168 for original, 8.729770 for E8-only, 7.415406 for W5-only and 8.836527 for the full candidate. This does not replace the test results above. A limited BF16/FP16 original-runtime control differs by only0.022579% PPL; original Megatron parity remains unverified.
+
+The [eight-sweep experiment](E8_REFINEMENT_RESULTS.md) generated all112 projections at unchanged raw bitrate. Squared calibration-output errors improved for all112 (median1.8970%), but paired development PPL improved only9.237164→9.194595 (0.460844%); normal MK remained10/12 and controls0/12. This failed the [predeclared](REFINEMENT_PROTOCOL.md)1% PPL advancement threshold. The route is stopped, full validation was skipped, and the original candidate remains unchanged. No refined Huffman size or full-test quality is claimed.

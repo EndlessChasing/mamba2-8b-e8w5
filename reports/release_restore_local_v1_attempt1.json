@@ -1,0 +1,17 @@
+{
+  "complete": false,
+  "elapsed_seconds": 6.254040458006784,
+  "error": "ValueError: 'artifacts/release-e8w5-v0.1.0' is not in the subpath of '/home/horde/Mamba2-8B-E8W5' OR one path is relative and the other is absolute.",
+  "estimated_peak_additional_bytes": 5651387805,
+  "expected_release_manifest_sha256": "d5f5c77eba397c6706a1b59290f37fd1754728b9e00637aed8a390c1d6922ff1",
+  "free_disk_bytes_after": 38852374528,
+  "free_disk_bytes_before": 38852390912,
+  "gpu_inference_run": false,
+  "huffman_source_sha256": "ce07b211670c1afbdb14fa73753cc4ef4e8ecdd425347c269b5aa9f6cca7e6ac",
+  "original_raw_dir": "artifacts/e8w5_v1",
+  "purpose": "Local end-user restore and original-raw SHA verification; no upload or inference",
+  "release_dir": "artifacts/release-e8w5-v0.1.0",
+  "restored_dir": "artifacts/restore-check-v0.1.0",
+  "script_source_sha256": "bf0205aab20602cb3636311df6d5b0a3db602ce492ceb638156ce59e41d7dcad",
+  "steps": {}
+}

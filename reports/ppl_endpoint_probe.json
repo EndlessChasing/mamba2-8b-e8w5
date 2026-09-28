@@ -1,0 +1,204 @@
+{
+  "complete": true,
+  "script_sha256": "f18140a3d0093d1c02d59d1f16cf07ed5ae2a5bebd8faf31d691a411326a3934",
+  "sample_weight_checks": {
+    "layer0.in_proj": {
+      "actual": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "expected": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "equal": true,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "layer0.out_proj": {
+      "actual": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "expected": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "equal": true,
+      "stride": [
+        8192,
+        1
+      ]
+    },
+    "layer55.in_proj": {
+      "actual": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "expected": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "equal": true,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "layer55.out_proj": {
+      "actual": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "expected": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "equal": true,
+      "stride": [
+        8192,
+        1
+      ]
+    }
+  },
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-2-raw-v1",
+    "split": "validation",
+    "revision_argument": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_fingerprint": "51d84d52d095f90d",
+    "document_join": "two newline characters",
+    "text_sha256": "b44fb967f92b525731216a507d1fbc44b97446b7ef0a2b4d1a893f81f1bbc29e",
+    "token_stream_sha256_int64le": "5bbeae08ba8eb34a482f3b6e9d17b182e67229dd14b2853d87f89fc72e5ad027",
+    "total_tokens": 264765,
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "automatic_special_tokens": false
+  },
+  "direct_quantized_first": {
+    "ppl": 9.237163950650674,
+    "nll": 9106.370178222656,
+    "target_tokens": 4096,
+    "execution": "prefill",
+    "windows": [
+      {
+        "start": 0,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+        "nll": 1759.6221542358398,
+        "ppl": 5.5754944834505835
+      },
+      {
+        "start": 87913,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+        "nll": 2805.0748138427734,
+        "ppl": 15.476625801040592
+      },
+      {
+        "start": 175826,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+        "nll": 2377.655601501465,
+        "ppl": 10.195325167725429
+      },
+      {
+        "start": 263740,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+        "nll": 2164.017608642578,
+        "ppl": 8.275492581361501
+      }
+    ],
+    "elapsed_seconds": 6.091787099838257,
+    "cache_dtype": "SSD scan internal precision",
+    "cache_bytes": null,
+    "logits_chunk_tokens": 64,
+    "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+  },
+  "direct_quantized_second": {
+    "ppl": 9.237163950650674,
+    "nll": 9106.370178222656,
+    "target_tokens": 4096,
+    "execution": "prefill",
+    "windows": [
+      {
+        "start": 0,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+        "nll": 1759.6221542358398,
+        "ppl": 5.5754944834505835
+      },
+      {
+        "start": 87913,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+        "nll": 2805.0748138427734,
+        "ppl": 15.476625801040592
+      },
+      {
+        "start": 175826,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+        "nll": 2377.655601501465,
+        "ppl": 10.195325167725429
+      },
+      {
+        "start": 263740,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+        "nll": 2164.017608642578,
+        "ppl": 8.275492581361501
+      }
+    ],
+    "elapsed_seconds": 0.34891581535339355,
+    "cache_dtype": "SSD scan internal precision",
+    "cache_bytes": null,
+    "logits_chunk_tokens": 64,
+    "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+  },
+  "buffer_names": {
+    "source": [],
+    "quantized": []
+  },
+  "parameter_stride_differences": {},
+  "module_scalar_differences": {},
+  "hidden_parity": {
+    "bitwise_equal": true,
+    "max_absolute_error": 0.0
+  },
+  "hidden_sha256": {
+    "direct": "88f419d409a243792cfeb649e22e59f4959fcf55ed59dca0ce42469be5f7c798",
+    "swapped": "88f419d409a243792cfeb649e22e59f4959fcf55ed59dca0ce42469be5f7c798"
+  },
+  "swapped_all_parameters": {
+    "ppl": 9.237163950650674,
+    "nll": 9106.370178222656,
+    "target_tokens": 4096,
+    "execution": "prefill",
+    "windows": [
+      {
+        "start": 0,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+        "nll": 1759.6221542358398,
+        "ppl": 5.5754944834505835
+      },
+      {
+        "start": 87913,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+        "nll": 2805.0748138427734,
+        "ppl": 15.476625801040592
+      },
+      {
+        "start": 175826,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+        "nll": 2377.655601501465,
+        "ppl": 10.195325167725429
+      },
+      {
+        "start": 263740,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+        "nll": 2164.017608642578,
+        "ppl": 8.275492581361501
+      }
+    ],
+    "elapsed_seconds": 0.3967442512512207,
+    "cache_dtype": "SSD scan internal precision",
+    "cache_bytes": null,
+    "logits_chunk_tokens": 64,
+    "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+  }
+}

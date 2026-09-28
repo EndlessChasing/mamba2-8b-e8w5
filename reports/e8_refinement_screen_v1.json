@@ -1,0 +1,513 @@
+{
+  "format": "MAMBA2_E8W5_REFINEMENT_SCREEN_V1",
+  "complete": true,
+  "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "binding": {
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "hessian_manifest_sha256": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+    "codec_source_sha256": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+    "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+    "script_source_sha256": "bea578bdeee0d15686149129ec30919a94c9f882f774fddc55a38c5b3570db54",
+    "quip_sha256": {
+      "lib/codebook/latticee8_padded12.py": "af3442929e4dd033f1a9776eab36bea42ba9dd17761a3d0056639f0db7c4e75f",
+      "lib/algo/quip.py": "abd4986cbd636dea77809bc0b816964f406e0f2440cdde39cc83ba7734052fc4"
+    },
+    "scale": 0.9,
+    "damping": 0.01,
+    "tune_iters": 8
+  },
+  "predeclared_labels": [
+    "layer0.in_proj",
+    "layer0.out_proj",
+    "layer18.in_proj",
+    "layer18.out_proj",
+    "layer55.in_proj",
+    "layer55.out_proj"
+  ],
+  "sweeps": [
+    2,
+    8
+  ],
+  "expansion_gate": {
+    "median_relative_mse_reduction_at_least": 0.01,
+    "individual_relative_mse_reduction_at_least": 0.005,
+    "minimum_individual_passes": 4,
+    "maximum_individual_regression": 0.001
+  },
+  "calibration_split": "train",
+  "evaluation_data_used": false,
+  "metric": "Original undamped H=X.T X/T; projection-output squared error, FP32 GEMM with FP64 accumulation",
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "matrices": {
+    "layer0.in_proj": {
+      "2": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.397442489862442,
+        "relative_calibration_output_error": 0.08087341487407684,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 2,
+        "seed": 1000,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 19016468,
+        "original_hessian_weighted_squared_error": 48.061342266986905,
+        "original_hessian_reference_squared_output": 7348.257130717499,
+        "mean_output_squared_error": 0.002589511975591967,
+        "mean_reference_output_squared": 0.3959190264395204,
+        "relative_output_mse": 0.0065405090502452376,
+        "file": "layer0.in_proj.e8",
+        "source_key": "backbone.layers.0.mixer.in_proj.weight",
+        "hessian_sha256": "e74482d71d0f0a4b2e92ef14037a9595de600eb46df90fffbd5e3174d5d9b0aa",
+        "bytes": 19016655,
+        "sha256": "d9f7352c9bbb620f26b4d17130e75f784d3c3b6e3ba8d75c0c2416e9cb4bb963",
+        "decoded_fp16_sha256": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": true,
+        "quantization_seconds": 3.32603168906644,
+        "elapsed_seconds": 4.097475985996425,
+        "peak_cuda_allocated_bytes": 3464816640
+      },
+      "8": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.3989199995994568,
+        "relative_calibration_output_error": 0.080388642847538,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 8,
+        "seed": 1000,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 19016468,
+        "original_hessian_weighted_squared_error": 47.486887923840335,
+        "original_hessian_reference_squared_output": 7348.257130717499,
+        "mean_output_squared_error": 0.002558560771758639,
+        "mean_reference_output_squared": 0.3959190264395204,
+        "relative_output_mse": 0.006462333459363256,
+        "file": "layer0.in_proj.e8",
+        "source_key": "backbone.layers.0.mixer.in_proj.weight",
+        "hessian_sha256": "e74482d71d0f0a4b2e92ef14037a9595de600eb46df90fffbd5e3174d5d9b0aa",
+        "bytes": 19016655,
+        "sha256": "a52529f714ceedf27fec8832716096e67848b59f9c778e08e54db3bb918edb58",
+        "decoded_fp16_sha256": "c0e2fc2f1f535ba79463be736d5fcc2399fd3ebfacf700b38fc71dd6f015acde",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": null,
+        "quantization_seconds": 7.603128195041791,
+        "elapsed_seconds": 8.303728305036202,
+        "peak_cuda_allocated_bytes": 3464816640
+      }
+    },
+    "layer0.out_proj": {
+      "2": {
+        "shape": [
+          4096,
+          8192
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.42937833070755005,
+        "relative_calibration_output_error": 0.15011894702911377,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 2,
+        "seed": 1001,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 8406532,
+        "original_hessian_weighted_squared_error": 0.014038683777352717,
+        "original_hessian_reference_squared_output": 0.6229530297361576,
+        "mean_output_squared_error": 3.427413031580253e-06,
+        "mean_reference_output_squared": 0.0001520881420254291,
+        "relative_output_mse": 0.022535701902434906,
+        "file": "layer0.out_proj.e8",
+        "source_key": "backbone.layers.0.mixer.out_proj.weight",
+        "hessian_sha256": "aa46eae63009c88cb302e9d574e321a696d83e31d01c855933591fb7f344ab5d",
+        "bytes": 8406718,
+        "sha256": "521ef83aa0694f5f3b62d41a579cc4b72cb2e13be1cb07e69b5d7137612e14fb",
+        "decoded_fp16_sha256": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": true,
+        "quantization_seconds": 3.9178081089630723,
+        "elapsed_seconds": 4.331414407934062,
+        "peak_cuda_allocated_bytes": 2796455936
+      },
+      "8": {
+        "shape": [
+          4096,
+          8192
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.43134060502052307,
+        "relative_calibration_output_error": 0.14846889674663544,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 8,
+        "seed": 1001,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 8406532,
+        "original_hessian_weighted_squared_error": 0.01373176262357711,
+        "original_hessian_reference_squared_output": 0.6229530297361576,
+        "mean_output_squared_error": 3.3524811092717553e-06,
+        "mean_reference_output_squared": 0.0001520881420254291,
+        "relative_output_mse": 0.022043014429824655,
+        "file": "layer0.out_proj.e8",
+        "source_key": "backbone.layers.0.mixer.out_proj.weight",
+        "hessian_sha256": "aa46eae63009c88cb302e9d574e321a696d83e31d01c855933591fb7f344ab5d",
+        "bytes": 8406718,
+        "sha256": "e69392272191077d124dccaa2ea36ad9b4d801ba03d42a2458726999a8131488",
+        "decoded_fp16_sha256": "b9da3ae329b444323d0b166536506632dbb334b3d220eee01f575a58f55dc2a2",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": null,
+        "quantization_seconds": 11.754669968038797,
+        "elapsed_seconds": 12.232774670002982,
+        "peak_cuda_allocated_bytes": 2796455936
+      }
+    },
+    "layer18.in_proj": {
+      "2": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.37075597047805786,
+        "relative_calibration_output_error": 0.16073042154312134,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 2,
+        "seed": 1036,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 19016468,
+        "original_hessian_weighted_squared_error": 222.93194021213495,
+        "original_hessian_reference_squared_output": 8629.311466516338,
+        "mean_output_squared_error": 0.012011419192464167,
+        "mean_reference_output_squared": 0.464941350566613,
+        "relative_output_mse": 0.025834267435723098,
+        "file": "layer18.in_proj.e8",
+        "source_key": "backbone.layers.18.mixer.in_proj.weight",
+        "hessian_sha256": "ada71a4959b741b47bd10153ba50b43f46e65a0eb8661ccae994c1515e6b1699",
+        "bytes": 19016655,
+        "sha256": "412eb8b779d7444aef5e3b3b6a67b1fb102e7fdefc48d2f1839a14c20eabd50a",
+        "decoded_fp16_sha256": "6d2c4378b823aba6cbfd3b89a39327a8f2db533ed4c45dbc567045ca85b1df4a",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": true,
+        "quantization_seconds": 2.4574183649383485,
+        "elapsed_seconds": 3.0650518669281155,
+        "peak_cuda_allocated_bytes": 3733252608
+      },
+      "8": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.37181487679481506,
+        "relative_calibration_output_error": 0.1591760665178299,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 8,
+        "seed": 1036,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 19016468,
+        "original_hessian_weighted_squared_error": 218.6410129703298,
+        "original_hessian_reference_squared_output": 8629.311466516338,
+        "mean_output_squared_error": 0.011780226991935873,
+        "mean_reference_output_squared": 0.464941350566613,
+        "relative_output_mse": 0.025337017190618965,
+        "file": "layer18.in_proj.e8",
+        "source_key": "backbone.layers.18.mixer.in_proj.weight",
+        "hessian_sha256": "ada71a4959b741b47bd10153ba50b43f46e65a0eb8661ccae994c1515e6b1699",
+        "bytes": 19016655,
+        "sha256": "1bbe7745b65c592b99171c778cd649eb9a943759ba8497a3518d9f485aefb9e5",
+        "decoded_fp16_sha256": "98c9285b58c053ca5b3c019a7f465db6d5fd9bd5125646aa1f56a056e411bb0d",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": null,
+        "quantization_seconds": 7.1279011010192335,
+        "elapsed_seconds": 7.708110328065231,
+        "peak_cuda_allocated_bytes": 3733252608
+      }
+    },
+    "layer18.out_proj": {
+      "2": {
+        "shape": [
+          4096,
+          8192
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.39109930396080017,
+        "relative_calibration_output_error": 0.22993794083595276,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 2,
+        "seed": 1037,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 8406532,
+        "original_hessian_weighted_squared_error": 2.5635481194337064,
+        "original_hessian_reference_squared_output": 48.486428198308445,
+        "mean_output_squared_error": 0.0006258662400961197,
+        "mean_reference_output_squared": 0.011837506884352648,
+        "relative_output_mse": 0.052871457327168955,
+        "file": "layer18.out_proj.e8",
+        "source_key": "backbone.layers.18.mixer.out_proj.weight",
+        "hessian_sha256": "bfee4172cae27a38b0c675f5ab6e9b74b7dc9372c4ae8cb51fd99e1535a4712b",
+        "bytes": 8406718,
+        "sha256": "639a80ce0c6d59731c774c7675e64d2ac04f88f0294fcaecbe4bf01286067f4f",
+        "decoded_fp16_sha256": "5e3cb23f4203f749e46d81d49a4904908f48c7c84ca244f9d512471587f9f6cc",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": true,
+        "quantization_seconds": 3.9430896670091897,
+        "elapsed_seconds": 4.356990445987321,
+        "peak_cuda_allocated_bytes": 2796455936
+      },
+      "8": {
+        "shape": [
+          4096,
+          8192
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.39250895380973816,
+        "relative_calibration_output_error": 0.22748488187789917,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 8,
+        "seed": 1037,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 8406532,
+        "original_hessian_weighted_squared_error": 2.50914221693572,
+        "original_hessian_reference_squared_output": 48.486428198308445,
+        "mean_output_squared_error": 0.0006125835490565722,
+        "mean_reference_output_squared": 0.011837506884352648,
+        "relative_output_mse": 0.05174937214746737,
+        "file": "layer18.out_proj.e8",
+        "source_key": "backbone.layers.18.mixer.out_proj.weight",
+        "hessian_sha256": "bfee4172cae27a38b0c675f5ab6e9b74b7dc9372c4ae8cb51fd99e1535a4712b",
+        "bytes": 8406718,
+        "sha256": "43a58a4c1ce318903a45f0cdd3a4a831527a95638ae63e5a93be631a7716a971",
+        "decoded_fp16_sha256": "5773fcf812e1ab0a195a27207f13738d873ca93ee3bd298e4bbad271dd1a30e9",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": null,
+        "quantization_seconds": 11.041339633986354,
+        "elapsed_seconds": 11.47264143906068,
+        "peak_cuda_allocated_bytes": 2796455936
+      }
+    },
+    "layer55.in_proj": {
+      "2": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.37824511528015137,
+        "relative_calibration_output_error": 0.09240894019603729,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 2,
+        "seed": 1110,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 19016468,
+        "original_hessian_weighted_squared_error": 363.01489744875084,
+        "original_hessian_reference_squared_output": 42510.52619075576,
+        "mean_output_squared_error": 0.019558992319437005,
+        "mean_reference_output_squared": 2.290437833553651,
+        "relative_output_mse": 0.008539411999273046,
+        "file": "layer55.in_proj.e8",
+        "source_key": "backbone.layers.55.mixer.in_proj.weight",
+        "hessian_sha256": "de97c43d4d82bdc16b681c902c4d11d412eb7be4f11d2f5e8cc961bff84ad0ac",
+        "bytes": 19016655,
+        "sha256": "baef19318f0bd852c20c351588ca5f9692a37a5a194671dd7f7f50a542b2d2ac",
+        "decoded_fp16_sha256": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": true,
+        "quantization_seconds": 2.542698062956333,
+        "elapsed_seconds": 3.1282854370074347,
+        "peak_cuda_allocated_bytes": 3733252608
+      },
+      "8": {
+        "shape": [
+          18560,
+          4096
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.3794429898262024,
+        "relative_calibration_output_error": 0.09192944318056107,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 8,
+        "seed": 1110,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 19016468,
+        "original_hessian_weighted_squared_error": 359.2573642810622,
+        "original_hessian_reference_squared_output": 42510.52619075576,
+        "mean_output_squared_error": 0.01935653902376413,
+        "mean_reference_output_squared": 2.290437833553651,
+        "relative_output_mse": 0.008451021346312705,
+        "file": "layer55.in_proj.e8",
+        "source_key": "backbone.layers.55.mixer.in_proj.weight",
+        "hessian_sha256": "de97c43d4d82bdc16b681c902c4d11d412eb7be4f11d2f5e8cc961bff84ad0ac",
+        "bytes": 19016655,
+        "sha256": "8d05c2941e9c24ec9ba00e24f9fe2df431f096d0c66932749135a72131dac19a",
+        "decoded_fp16_sha256": "38ec77a678639852143da0d7fed895c93490266d190a6a88b487ded146e9004c",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": null,
+        "quantization_seconds": 7.141320191905834,
+        "elapsed_seconds": 7.687860842910595,
+        "peak_cuda_allocated_bytes": 3733252608
+      }
+    },
+    "layer55.out_proj": {
+      "2": {
+        "shape": [
+          4096,
+          8192
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.4856128692626953,
+        "relative_calibration_output_error": 0.04675653576850891,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 2,
+        "seed": 1111,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 8406532,
+        "original_hessian_weighted_squared_error": 275.1358174861237,
+        "original_hessian_reference_squared_output": 125852.66726363021,
+        "mean_output_squared_error": 0.06717183044094817,
+        "mean_reference_output_squared": 30.72574884365972,
+        "relative_output_mse": 0.002186173908493987,
+        "file": "layer55.out_proj.e8",
+        "source_key": "backbone.layers.55.mixer.out_proj.weight",
+        "hessian_sha256": "a852561b84d5b8cca268bda2474cc5f4778ca4bd3037d0782b474a7b17cfe2d0",
+        "bytes": 8406718,
+        "sha256": "83212d462a311cd1af94656182be2d00b75a0b74da2824892fc14fc8a12e11e8",
+        "decoded_fp16_sha256": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": true,
+        "quantization_seconds": 3.8204315289622173,
+        "elapsed_seconds": 4.2207045739050955,
+        "peak_cuda_allocated_bytes": 2796455936
+      },
+      "8": {
+        "shape": [
+          4096,
+          8192
+        ],
+        "index_bits": 16,
+        "values_per_index": 8,
+        "relative_weight_error": 0.48745501041412354,
+        "relative_calibration_output_error": 0.04643045738339424,
+        "feedback": true,
+        "damping": 0.01,
+        "scale_override": 0.9,
+        "tune_iters": 8,
+        "seed": 1111,
+        "axis_residual_amplitude": 0.0,
+        "payload_bytes": 8406532,
+        "original_hessian_weighted_squared_error": 271.31158443952773,
+        "original_hessian_reference_squared_output": 125852.66726363021,
+        "mean_output_squared_error": 0.06623817979480658,
+        "mean_reference_output_squared": 30.72574884365972,
+        "relative_output_mse": 0.0021557873213064057,
+        "file": "layer55.out_proj.e8",
+        "source_key": "backbone.layers.55.mixer.out_proj.weight",
+        "hessian_sha256": "a852561b84d5b8cca268bda2474cc5f4778ca4bd3037d0782b474a7b17cfe2d0",
+        "bytes": 8406718,
+        "sha256": "96cc3fe90e88312e70b8082915e0e33ba290f85b03f504245f808390e056becf",
+        "decoded_fp16_sha256": "61ac3502b344a36506f5061d5e37ac61dac936079497e5279b745756a5b0d28c",
+        "disk_roundtrip_fp16_equal": true,
+        "baseline_decoded_and_raw_sha_match": null,
+        "quantization_seconds": 10.578961528022774,
+        "elapsed_seconds": 10.962916848948225,
+        "peak_cuda_allocated_bytes": 2796455936
+      }
+    }
+  },
+  "comparisons": {
+    "layer0.in_proj": {
+      "relative_output_mse_reduction": 0.011952523921521019,
+      "quantization_time_ratio": 2.2859458074423396,
+      "raw_bytes_unchanged": true
+    },
+    "layer0.out_proj": {
+      "relative_output_mse_reduction": 0.021862530607800523,
+      "quantization_time_ratio": 3.000317943379292,
+      "raw_bytes_unchanged": true
+    },
+    "layer18.in_proj": {
+      "relative_output_mse_reduction": 0.019247700610877216,
+      "quantization_time_ratio": 2.9005647563792247,
+      "raw_bytes_unchanged": true
+    },
+    "layer18.out_proj": {
+      "relative_output_mse_reduction": 0.02122289107255182,
+      "quantization_time_ratio": 2.800174626097495,
+      "raw_bytes_unchanged": true
+    },
+    "layer55.in_proj": {
+      "relative_output_mse_reduction": 0.010350906241304081,
+      "quantization_time_ratio": 2.808560047276236,
+      "raw_bytes_unchanged": true
+    },
+    "layer55.out_proj": {
+      "relative_output_mse_reduction": 0.013899437308953155,
+      "quantization_time_ratio": 2.769048849017442,
+      "raw_bytes_unchanged": true
+    }
+  },
+  "limitations": [
+    "Six matrices are a bounded screen, not a full-model repair.",
+    "A calibration MSE gain does not establish PPL or recall improvement.",
+    "Raw E8 byte equality does not imply identical Huffman file size."
+  ],
+  "gate_result": {
+    "median_relative_mse_reduction": 0.016573568959915186,
+    "individual_pass_count": 6,
+    "worst_relative_mse_reduction": 0.010350906241304081,
+    "pass": true
+  },
+  "timing": {
+    "2": {
+      "sum_quantization_seconds": 20.0074774218956,
+      "sum_with_readback_and_metrics_seconds": 23.199922717758454,
+      "estimated_full112_quantization_seconds": 373.4729118753845
+    },
+    "8": {
+      "sum_quantization_seconds": 55.24732061801478,
+      "sum_with_readback_and_metrics_seconds": 58.36803243402392,
+      "estimated_full112_quantization_seconds": 1031.2833182029426
+    }
+  },
+  "aggregate_weighted_mse_reduction": 0.013712366625192818,
+  "elapsed_seconds": 106.99703281396069
+}

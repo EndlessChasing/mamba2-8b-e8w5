@@ -1,0 +1,297 @@
+{
+  "complete": true,
+  "script_sha256": "ce488ded9dad145f26ff2435b79eb67b08664fa33957c419977b0511de1b4200",
+  "frozen_codec_sha256": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+  "device": "cpu",
+  "gpu_used": false,
+  "algebraic_transform_oracles": [
+    {
+      "shape": [
+        160,
+        128
+      ],
+      "weight_rotation_vs_explicit_kron_relative_error": 3.758424909566961e-07,
+      "hessian_rotation_vs_explicit_kron_relative_error": 2.3808514791732883e-07,
+      "no_quantization_inverse_relative_error": 3.242917625400326e-07,
+      "weighted_objective_original": 2.0934876681626577,
+      "weighted_objective_transformed": 2.093487308475692,
+      "weighted_objective_relative_difference": 1.718123163634463e-07,
+      "block_ldl_reconstruction_relative_error": 2.6744339448752897e-07,
+      "pass": true
+    },
+    {
+      "shape": [
+        144,
+        384
+      ],
+      "weight_rotation_vs_explicit_kron_relative_error": 4.4945855931664655e-07,
+      "hessian_rotation_vs_explicit_kron_relative_error": 5.484085672027591e-07,
+      "no_quantization_inverse_relative_error": 3.261314608712616e-07,
+      "weighted_objective_original": 5.598275359578594,
+      "weighted_objective_transformed": 5.598275156920504,
+      "weighted_objective_relative_difference": 3.62000931365848e-08,
+      "block_ldl_reconstruction_relative_error": 3.054743113428124e-07,
+      "pass": true
+    }
+  ],
+  "actual_in_projection_output_axis": {
+    "dimension": 18560,
+    "dct_factor": [
+      145,
+      145
+    ],
+    "dct_orthogonality_relative_error": 2.918875636556718e-07,
+    "roundtrip_relative_error": 4.2180179338989315e-07
+  },
+  "buffered_vs_unbuffered_upstream_ldlq": [
+    {
+      "tuning_sweeps": 0,
+      "values_equal": true,
+      "indices_equal": true,
+      "different_indices": 0,
+      "buffered_weighted_loss": 383.27445947540104,
+      "unbuffered_weighted_loss": 383.27445947540104
+    },
+    {
+      "tuning_sweeps": 2,
+      "values_equal": true,
+      "indices_equal": true,
+      "different_indices": 0,
+      "buffered_weighted_loss": 364.34394482683206,
+      "unbuffered_weighted_loss": 364.34394482683206
+    }
+  ],
+  "e8_codebook_vs_exhaustive_nearest": [
+    {
+      "input_scale": 0.1,
+      "vectors": 32,
+      "maximum_excess_squared_error_vs_exhaustive": 5.551115123125783e-17,
+      "all_nearest_to_tolerance": true
+    },
+    {
+      "input_scale": 0.9,
+      "vectors": 32,
+      "maximum_excess_squared_error_vs_exhaustive": 1.3322676295501878e-15,
+      "all_nearest_to_tolerance": true
+    },
+    {
+      "input_scale": 1.5,
+      "vectors": 32,
+      "maximum_excess_squared_error_vs_exhaustive": 4.440892098500626e-15,
+      "all_nearest_to_tolerance": true
+    },
+    {
+      "input_scale": 3.0,
+      "vectors": 32,
+      "maximum_excess_squared_error_vs_exhaustive": 1.4210854715202004e-14,
+      "all_nearest_to_tolerance": true
+    }
+  ],
+  "all_synthetic_math_checks_pass": true,
+  "limitations": [
+    "Synthetic CPU algebra/oracle checks do not measure 8B language quality.",
+    "Matching upstream code does not establish global optimality of LDLQ or optimal damping/scale.",
+    "No GPU evaluation, layer restoration, or original-source-model tensor loading was performed."
+  ],
+  "selected_actual_hessian_diagonals": [
+    {
+      "label": "layer18.out_proj",
+      "sha256": "bfee4172cae27a38b0c675f5ab6e9b74b7dc9372c4ae8cb51fd99e1535a4712b",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.2733011867105404e-10,
+      "diagonal_max": 0.21526262164115906,
+      "diagonal_mean": 0.006582653580247471,
+      "zero_diagonal_channels": 0,
+      "normalized_diagonal_quantiles": {
+        "0.0": 1.934328111282246e-08,
+        "0.01": 0.1725137108214929,
+        "0.1": 0.4112631432612069,
+        "0.25": 0.5639320107122487,
+        "0.5": 0.7865017093243805,
+        "0.75": 1.1525242700647338,
+        "0.9": 1.6955395909541353,
+        "0.99": 4.054936649829201,
+        "1.0": 32.70149629126715
+      },
+      "damping_diagnostics": [
+        {
+          "relative_damping": 0.0001,
+          "channels_below_damping": 3,
+          "fraction_channels_below_damping": 0.0003662109375,
+          "fraction_original_trace_below_damping": 8.290364593529021e-09,
+          "added_trace_fraction": 0.0001,
+          "median_damping_to_original_diagonal_ratio": 0.00012713891302376692
+        },
+        {
+          "relative_damping": 0.001,
+          "channels_below_damping": 8,
+          "fraction_channels_below_damping": 0.0009765625,
+          "fraction_original_trace_below_damping": 2.255528443606481e-07,
+          "added_trace_fraction": 0.001,
+          "median_damping_to_original_diagonal_ratio": 0.001271389130237669
+        },
+        {
+          "relative_damping": 0.003,
+          "channels_below_damping": 9,
+          "fraction_channels_below_damping": 0.0010986328125,
+          "fraction_original_trace_below_damping": 3.687147576276417e-07,
+          "added_trace_fraction": 0.003,
+          "median_damping_to_original_diagonal_ratio": 0.003814167390713007
+        },
+        {
+          "relative_damping": 0.01,
+          "channels_below_damping": 9,
+          "fraction_channels_below_damping": 0.0010986328125,
+          "fraction_original_trace_below_damping": 3.687147576276417e-07,
+          "added_trace_fraction": 0.01,
+          "median_damping_to_original_diagonal_ratio": 0.01271389130237669
+        },
+        {
+          "relative_damping": 0.03,
+          "channels_below_damping": 10,
+          "fraction_channels_below_damping": 0.001220703125,
+          "fraction_original_trace_below_damping": 3.958667195892738e-06,
+          "added_trace_fraction": 0.03,
+          "median_damping_to_original_diagonal_ratio": 0.038141673907130066
+        }
+      ],
+      "scope": "Read-only diagonal diagnostic; this ratio is not the matrix condition number."
+    },
+    {
+      "label": "layer43.out_proj",
+      "sha256": "40af65f663e22cf69ffa6b8809901f1a389da497e6b870676d3e1321cc1d4c32",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 0.0,
+      "diagonal_max": 37.04854965209961,
+      "diagonal_mean": 0.27615556685581577,
+      "zero_diagonal_channels": 1,
+      "normalized_diagonal_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.04588518575494394,
+        "0.1": 0.19397406675443746,
+        "0.25": 0.3745293120990181,
+        "0.5": 0.6338489752421963,
+        "0.75": 1.0248525271575435,
+        "0.9": 1.7150862194113645,
+        "0.99": 7.028818379589767,
+        "1.0": 134.15825751375533
+      },
+      "damping_diagnostics": [
+        {
+          "relative_damping": 0.0001,
+          "channels_below_damping": 5,
+          "fraction_channels_below_damping": 0.0006103515625,
+          "fraction_original_trace_below_damping": 1.2584068521734324e-08,
+          "added_trace_fraction": 0.0001,
+          "median_damping_to_original_diagonal_ratio": 0.00015776202394349463
+        },
+        {
+          "relative_damping": 0.001,
+          "channels_below_damping": 5,
+          "fraction_channels_below_damping": 0.0006103515625,
+          "fraction_original_trace_below_damping": 1.2584068521734324e-08,
+          "added_trace_fraction": 0.001,
+          "median_damping_to_original_diagonal_ratio": 0.0015776202394349463
+        },
+        {
+          "relative_damping": 0.003,
+          "channels_below_damping": 5,
+          "fraction_channels_below_damping": 0.0006103515625,
+          "fraction_original_trace_below_damping": 1.2584068521734324e-08,
+          "added_trace_fraction": 0.003,
+          "median_damping_to_original_diagonal_ratio": 0.004732860718304839
+        },
+        {
+          "relative_damping": 0.01,
+          "channels_below_damping": 5,
+          "fraction_channels_below_damping": 0.0006103515625,
+          "fraction_original_trace_below_damping": 1.2584068521734324e-08,
+          "added_trace_fraction": 0.01,
+          "median_damping_to_original_diagonal_ratio": 0.015776202394349462
+        },
+        {
+          "relative_damping": 0.03,
+          "channels_below_damping": 34,
+          "fraction_channels_below_damping": 0.004150390625,
+          "fraction_original_trace_below_damping": 8.256044684329579e-05,
+          "added_trace_fraction": 0.03,
+          "median_damping_to_original_diagonal_ratio": 0.04732860718304839
+        }
+      ],
+      "scope": "Read-only diagonal diagnostic; this ratio is not the matrix condition number."
+    },
+    {
+      "label": "layer55.out_proj",
+      "sha256": "a852561b84d5b8cca268bda2474cc5f4778ca4bd3037d0782b474a7b17cfe2d0",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.347861156020258e-09,
+      "diagonal_max": 1300.749267578125,
+      "diagonal_mean": 6.957403443505365,
+      "zero_diagonal_channels": 0,
+      "normalized_diagonal_quantiles": {
+        "0.0": 1.9373048680660697e-10,
+        "0.01": 0.002006586766416977,
+        "0.1": 0.016708754973438083,
+        "0.25": 0.03391602811855751,
+        "0.5": 0.05697260640335106,
+        "0.75": 0.14969756868347045,
+        "0.9": 0.7706834433621219,
+        "0.99": 21.14414352123045,
+        "1.0": 186.95901109376595
+      },
+      "damping_diagnostics": [
+        {
+          "relative_damping": 0.0001,
+          "channels_below_damping": 8,
+          "fraction_channels_below_damping": 0.0009765625,
+          "fraction_original_trace_below_damping": 2.0198297114365413e-10,
+          "added_trace_fraction": 0.0001,
+          "median_damping_to_original_diagonal_ratio": 0.001755191107601005
+        },
+        {
+          "relative_damping": 0.001,
+          "channels_below_damping": 37,
+          "fraction_channels_below_damping": 0.0045166015625,
+          "fraction_original_trace_below_damping": 2.273072076761897e-06,
+          "added_trace_fraction": 0.001,
+          "median_damping_to_original_diagonal_ratio": 0.017551911076010052
+        },
+        {
+          "relative_damping": 0.003,
+          "channels_below_damping": 113,
+          "fraction_channels_below_damping": 0.0137939453125,
+          "fraction_original_trace_below_damping": 1.939387741981649e-05,
+          "added_trace_fraction": 0.003,
+          "median_damping_to_original_diagonal_ratio": 0.052655733228030153
+        },
+        {
+          "relative_damping": 0.01,
+          "channels_below_damping": 473,
+          "fraction_channels_below_damping": 0.0577392578125,
+          "fraction_original_trace_below_damping": 0.00031290208165632975,
+          "added_trace_fraction": 0.01,
+          "median_damping_to_original_diagonal_ratio": 0.17551911076010052
+        },
+        {
+          "relative_damping": 0.03,
+          "channels_below_damping": 1724,
+          "fraction_channels_below_damping": 0.21044921875,
+          "fraction_original_trace_below_damping": 0.0035015536662960514,
+          "added_trace_fraction": 0.03,
+          "median_damping_to_original_diagonal_ratio": 0.5265573322803014
+        }
+      ],
+      "scope": "Read-only diagonal diagnostic; this ratio is not the matrix condition number."
+    }
+  ],
+  "elapsed_seconds": 13.67732881498523
+}

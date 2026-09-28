@@ -2,7 +2,7 @@
 
 An experimental compact version of NVIDIA’s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head.
 
-All **8,236,999,680 parameters** have been quantized or retained and independently verified. The raw weight data occupies **2,886,482,462 bytes** before entropy coding, tokenizer and release metadata. The first release is being packaged. Its exact archive and complete download sizes will be recorded in the release manifest.
+All **8,236,999,680 parameters** have been quantized or retained and independently verified. The raw weight data occupies **2,886,482,462 bytes** before entropy coding, tokenizer and release metadata. **Model publication remains on hold after the failed quality gate.** The release is a draft with no uploaded assets.
 
 ## Measured quality
 
@@ -14,7 +14,13 @@ All **8,236,999,680 parameters** have been quantized or retained and independent
 
 PPL increases **20.21%** and recall decreases **6.25 percentage points**. This fails the provisional quality-retention target; the release is experimental and does not claim equal quality. Measurements use 2,048-target windows with state reset and SSD prefill; per-token FP16-state validation is reported separately. The MK task is new and has limited sample size. See the [frozen protocol](docs/EVALUATION.md) and [full paired results](reports/comparison_full_prefill.json).
 
+The [PPL diagnosis](docs/PPL_DIAGNOSIS.md) records controlled component and projection-role interventions, independent codec checks and numerical reproducibility limits. Entire-validation confirmation (264,764 targets) gives original PPL7.3342, E8-only8.7298, W5-only7.4154, and complete E8/W5 8.8365. This locates the main quality loss in E8 projection quantization; model publication remains on hold.
+
+A separate [eight-sweep repair experiment](docs/E8_REFINEMENT_RESULTS.md) improved all 112 projection reconstruction proxies at unchanged raw bitrate. Paired development PPL improved only **0.461%**, with recall unchanged, missing the predeclared 1% advancement threshold. This route stopped; no refined full-validation result or entropy-coded package is claimed.
+
 The decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
+
+The staged complete package occupies **2,666,260,364 bytes**. Its actual restore command reproduced all118 raw files exactly; generation also passed using the archived software, restored tokenizer and restored weights, with no original checkpoint as an input. This establishes package usability, not a quality pass. See the [restore receipt](reports/release_restore_local_v1.json) and [generation smoke](reports/restored_inference_local_v1.json). The package remains unpublished.
 
 Source: [nvidia/mamba2-8b-3t-4k](https://huggingface.co/nvidia/mamba2-8b-3t-4k), Apache-2.0. The software and QuIP#-derived components are distributed under GPL-3.0; upstream model attribution is separate. See [license scope](licenses/THIRD_PARTY.md), [pinned sources](docs/SOURCES.md), and [comparison limits](docs/COMPARISON.md).
 

@@ -1,0 +1,1249 @@
+{
+  "complete": true,
+  "format": "MAMBA2_E8W5_REFINEMENT_SUMMARY_V1",
+  "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "overlay_manifest_sha256": "5c7d912bb06e0af107218418f575d04c5b789f910568f0c847fa0322228fd035",
+  "screen_report_sha256": "a97afa3cb3252164dc90251e3733cc9bc26d52f829933c906a7758eb0132a22f",
+  "integrity_report_sha256": "ad9fbe2afb07196b04e1e9f6784d531a764de14c15f4b04bd2f646e76aec56cc",
+  "script_sha256": "b068870cfc4f55935b9c2e61c6bd32531e449dacb993b19a47fcafee12a480b9",
+  "quality_evaluated": false,
+  "original_hessian_squared_error": {
+    "all112": {
+      "matrices": 112,
+      "median_relative_reduction": 0.01897035625632093,
+      "mean_relative_reduction": 0.017996188551373762,
+      "minimum_relative_reduction": 0.010350906241304081,
+      "maximum_relative_reduction": 0.023663221537640222,
+      "worst_matrix": "layer55.in_proj",
+      "best_matrix": "layer1.out_proj",
+      "number_improved": 112,
+      "number_worsened": 0,
+      "number_unchanged": 0
+    },
+    "in_proj": {
+      "matrices": 56,
+      "median_relative_reduction": 0.016381121993959302,
+      "mean_relative_reduction": 0.01576007712458218,
+      "minimum_relative_reduction": 0.010350906241304081,
+      "maximum_relative_reduction": 0.01932999655689238,
+      "worst_matrix": "layer55.in_proj",
+      "best_matrix": "layer20.in_proj",
+      "number_improved": 56,
+      "number_worsened": 0,
+      "number_unchanged": 0
+    },
+    "out_proj": {
+      "matrices": 56,
+      "median_relative_reduction": 0.02045677881415897,
+      "mean_relative_reduction": 0.020232299978165346,
+      "minimum_relative_reduction": 0.013899437308953155,
+      "maximum_relative_reduction": 0.023663221537640222,
+      "worst_matrix": "layer55.out_proj",
+      "best_matrix": "layer1.out_proj",
+      "number_improved": 56,
+      "number_worsened": 0,
+      "number_unchanged": 0
+    }
+  },
+  "per_matrix": {
+    "layer0.in_proj": {
+      "relative_squared_output_error_reduction": 0.011952523921521019,
+      "parent_original_hessian_squared_error": 48.061342266986905,
+      "candidate_original_hessian_squared_error": 47.486887923840335,
+      "comparison_precision": "Both arms independently accumulated original-H J using FP32 GEMM and FP64 reductions"
+    },
+    "layer0.out_proj": {
+      "relative_squared_output_error_reduction": 0.021862530607800523,
+      "parent_original_hessian_squared_error": 0.014038683777352717,
+      "candidate_original_hessian_squared_error": 0.01373176262357711,
+      "comparison_precision": "Both arms independently accumulated original-H J using FP32 GEMM and FP64 reductions"
+    },
+    "layer18.in_proj": {
+      "relative_squared_output_error_reduction": 0.019247700610877216,
+      "parent_original_hessian_squared_error": 222.93194021213495,
+      "candidate_original_hessian_squared_error": 218.6410129703298,
+      "comparison_precision": "Both arms independently accumulated original-H J using FP32 GEMM and FP64 reductions"
+    },
+    "layer18.out_proj": {
+      "relative_squared_output_error_reduction": 0.02122289107255182,
+      "parent_original_hessian_squared_error": 2.5635481194337064,
+      "candidate_original_hessian_squared_error": 2.50914221693572,
+      "comparison_precision": "Both arms independently accumulated original-H J using FP32 GEMM and FP64 reductions"
+    },
+    "layer55.in_proj": {
+      "relative_squared_output_error_reduction": 0.010350906241304081,
+      "parent_original_hessian_squared_error": 363.01489744875084,
+      "candidate_original_hessian_squared_error": 359.2573642810622,
+      "comparison_precision": "Both arms independently accumulated original-H J using FP32 GEMM and FP64 reductions"
+    },
+    "layer55.out_proj": {
+      "relative_squared_output_error_reduction": 0.013899437308953155,
+      "parent_original_hessian_squared_error": 275.1358174861237,
+      "candidate_original_hessian_squared_error": 271.31158443952773,
+      "comparison_precision": "Both arms independently accumulated original-H J using FP32 GEMM and FP64 reductions"
+    },
+    "layer1.in_proj": {
+      "relative_squared_output_error_reduction": 0.01700912615337702,
+      "parent_original_hessian_squared_error": 511.38434078917237,
+      "candidate_original_hessian_squared_error": 502.68614002382776,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer1.out_proj": {
+      "relative_squared_output_error_reduction": 0.023663221537640222,
+      "parent_original_hessian_squared_error": 0.012362857467423532,
+      "candidate_original_hessian_squared_error": 0.012070312432333618,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer2.in_proj": {
+      "relative_squared_output_error_reduction": 0.01623714607339588,
+      "parent_original_hessian_squared_error": 594.5198735339209,
+      "candidate_original_hessian_squared_error": 584.8665675038137,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer2.out_proj": {
+      "relative_squared_output_error_reduction": 0.022442148727292555,
+      "parent_original_hessian_squared_error": 0.01922193841923944,
+      "candidate_original_hessian_squared_error": 0.018790556818408008,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer3.in_proj": {
+      "relative_squared_output_error_reduction": 0.016470112178315066,
+      "parent_original_hessian_squared_error": 613.2507240645168,
+      "candidate_original_hessian_squared_error": 603.1504158457413,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer3.out_proj": {
+      "relative_squared_output_error_reduction": 0.02187626201800752,
+      "parent_original_hessian_squared_error": 0.027908852758190574,
+      "candidate_original_hessian_squared_error": 0.027298311382630405,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer4.in_proj": {
+      "relative_squared_output_error_reduction": 0.01674004720588851,
+      "parent_original_hessian_squared_error": 671.5740852105954,
+      "candidate_original_hessian_squared_error": 660.3319033219186,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer4.out_proj": {
+      "relative_squared_output_error_reduction": 0.021051094348909727,
+      "parent_original_hessian_squared_error": 0.03971995490897605,
+      "candidate_original_hessian_squared_error": 0.03888380639065275,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer5.in_proj": {
+      "relative_squared_output_error_reduction": 0.016584825448370477,
+      "parent_original_hessian_squared_error": 651.2601180279146,
+      "candidate_original_hessian_squared_error": 640.4590826489365,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer5.out_proj": {
+      "relative_squared_output_error_reduction": 0.02063423883879878,
+      "parent_original_hessian_squared_error": 0.05756786032991337,
+      "candidate_original_hessian_squared_error": 0.05637999135042733,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer6.in_proj": {
+      "relative_squared_output_error_reduction": 0.016820677698341613,
+      "parent_original_hessian_squared_error": 742.3801922106919,
+      "candidate_original_hessian_squared_error": 729.892854267883,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer6.out_proj": {
+      "relative_squared_output_error_reduction": 0.020544971075219465,
+      "parent_original_hessian_squared_error": 0.08831929682026964,
+      "candidate_original_hessian_squared_error": 0.08650477942171347,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer7.in_proj": {
+      "relative_squared_output_error_reduction": 0.016723389971414093,
+      "parent_original_hessian_squared_error": 545.2394269868197,
+      "candidate_original_hessian_squared_error": 536.1211754215287,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer7.out_proj": {
+      "relative_squared_output_error_reduction": 0.020777791255429223,
+      "parent_original_hessian_squared_error": 0.13891972612914205,
+      "candidate_original_hessian_squared_error": 0.13603328105836934,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer8.in_proj": {
+      "relative_squared_output_error_reduction": 0.0172756681001327,
+      "parent_original_hessian_squared_error": 506.4268199984918,
+      "candidate_original_hessian_squared_error": 497.6779583391922,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer8.out_proj": {
+      "relative_squared_output_error_reduction": 0.020458614143822884,
+      "parent_original_hessian_squared_error": 0.18374559449921535,
+      "candidate_original_hessian_squared_error": 0.17998641428072856,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer9.in_proj": {
+      "relative_squared_output_error_reduction": 0.017215422810039627,
+      "parent_original_hessian_squared_error": 488.2037407682821,
+      "candidate_original_hessian_squared_error": 479.79910695351316,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer9.out_proj": {
+      "relative_squared_output_error_reduction": 0.02056778493133904,
+      "parent_original_hessian_squared_error": 0.2721451307933241,
+      "candidate_original_hessian_squared_error": 0.2665477082730559,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer10.in_proj": {
+      "relative_squared_output_error_reduction": 0.01767142520814824,
+      "parent_original_hessian_squared_error": 325.5908392052779,
+      "candidate_original_hessian_squared_error": 319.83718504180365,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer10.out_proj": {
+      "relative_squared_output_error_reduction": 0.01989762421729735,
+      "parent_original_hessian_squared_error": 0.39611740546052565,
+      "candidate_original_hessian_squared_error": 0.3882356101807413,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer11.in_proj": {
+      "relative_squared_output_error_reduction": 0.01810639855614804,
+      "parent_original_hessian_squared_error": 379.94137907544706,
+      "candidate_original_hessian_squared_error": 373.0620090379345,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer11.out_proj": {
+      "relative_squared_output_error_reduction": 0.02048173102145623,
+      "parent_original_hessian_squared_error": 0.4611487493171806,
+      "candidate_original_hessian_squared_error": 0.45170362467278513,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer12.in_proj": {
+      "relative_squared_output_error_reduction": 0.01828341584692994,
+      "parent_original_hessian_squared_error": 295.1286970505592,
+      "candidate_original_hessian_squared_error": 289.7327363540212,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer12.out_proj": {
+      "relative_squared_output_error_reduction": 0.020359899475457355,
+      "parent_original_hessian_squared_error": 0.674848447186179,
+      "candidate_original_hessian_squared_error": 0.6611086006402999,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer13.in_proj": {
+      "relative_squared_output_error_reduction": 0.018787012017733917,
+      "parent_original_hessian_squared_error": 340.1862207851055,
+      "candidate_original_hessian_squared_error": 333.7951381669482,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer13.out_proj": {
+      "relative_squared_output_error_reduction": 0.020643865473773948,
+      "parent_original_hessian_squared_error": 0.7742454101172213,
+      "candidate_original_hessian_squared_error": 0.7582619920270743,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer14.in_proj": {
+      "relative_squared_output_error_reduction": 0.018796719638677684,
+      "parent_original_hessian_squared_error": 298.78897912672755,
+      "candidate_original_hessian_squared_error": 293.17272645495575,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer14.out_proj": {
+      "relative_squared_output_error_reduction": 0.020011604897230195,
+      "parent_original_hessian_squared_error": 0.9853736564312073,
+      "candidate_original_hessian_squared_error": 0.965654748142567,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer15.in_proj": {
+      "relative_squared_output_error_reduction": 0.018857156153482157,
+      "parent_original_hessian_squared_error": 324.4737500771186,
+      "candidate_original_hessian_squared_error": 318.3550979042085,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer15.out_proj": {
+      "relative_squared_output_error_reduction": 0.019880590138043108,
+      "parent_original_hessian_squared_error": 1.2797860305726758,
+      "candidate_original_hessian_squared_error": 1.2543431290344673,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer16.in_proj": {
+      "relative_squared_output_error_reduction": 0.01886834922165037,
+      "parent_original_hessian_squared_error": 410.3489392278802,
+      "candidate_original_hessian_squared_error": 402.60633213979474,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer16.out_proj": {
+      "relative_squared_output_error_reduction": 0.020621743711878415,
+      "parent_original_hessian_squared_error": 1.597263614983041,
+      "candidate_original_hessian_squared_error": 1.5643252540745523,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer17.in_proj": {
+      "relative_squared_output_error_reduction": 0.018708949549361642,
+      "parent_original_hessian_squared_error": 233.69746017868786,
+      "candidate_original_hessian_squared_error": 229.32522618639084,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer17.out_proj": {
+      "relative_squared_output_error_reduction": 0.020548176363064607,
+      "parent_original_hessian_squared_error": 2.1351866791358884,
+      "candidate_original_hessian_squared_error": 2.091312486684938,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer19.in_proj": {
+      "relative_squared_output_error_reduction": 0.019157551125538075,
+      "parent_original_hessian_squared_error": 294.2269792318536,
+      "candidate_original_hessian_squared_error": 288.5903108347067,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer19.out_proj": {
+      "relative_squared_output_error_reduction": 0.020614887537680815,
+      "parent_original_hessian_squared_error": 3.2462500509331558,
+      "candidate_original_hessian_squared_error": 3.179328971213978,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer20.in_proj": {
+      "relative_squared_output_error_reduction": 0.01932999655689238,
+      "parent_original_hessian_squared_error": 256.0206189886919,
+      "candidate_original_hessian_squared_error": 251.07174130514701,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer20.out_proj": {
+      "relative_squared_output_error_reduction": 0.019668064996871015,
+      "parent_original_hessian_squared_error": 4.047140619967609,
+      "candidate_original_hessian_squared_error": 3.9675411952026094,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer21.in_proj": {
+      "relative_squared_output_error_reduction": 0.019005391571812802,
+      "parent_original_hessian_squared_error": 273.6887816115631,
+      "candidate_original_hessian_squared_error": 268.487219148223,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer21.out_proj": {
+      "relative_squared_output_error_reduction": 0.02027071345303666,
+      "parent_original_hessian_squared_error": 4.9390178611098285,
+      "candidate_original_hessian_squared_error": 4.838900445307841,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer22.in_proj": {
+      "relative_squared_output_error_reduction": 0.018884275094899428,
+      "parent_original_hessian_squared_error": 254.4228873280073,
+      "candidate_original_hessian_squared_error": 249.61829553326663,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer22.out_proj": {
+      "relative_squared_output_error_reduction": 0.0209914865581714,
+      "parent_original_hessian_squared_error": 5.765817284932573,
+      "candidate_original_hessian_squared_error": 5.644784208899038,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer23.in_proj": {
+      "relative_squared_output_error_reduction": 0.018876862488786728,
+      "parent_original_hessian_squared_error": 231.1132862570375,
+      "candidate_original_hessian_squared_error": 226.75059253303178,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer23.out_proj": {
+      "relative_squared_output_error_reduction": 0.02125273390440996,
+      "parent_original_hessian_squared_error": 7.864858451449317,
+      "candidate_original_hessian_squared_error": 7.697708707584815,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer24.in_proj": {
+      "relative_squared_output_error_reduction": 0.01911348911195343,
+      "parent_original_hessian_squared_error": 384.3423825851798,
+      "candidate_original_hessian_squared_error": 376.9962586403757,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer24.out_proj": {
+      "relative_squared_output_error_reduction": 0.01926447618933691,
+      "parent_original_hessian_squared_error": 10.352672464450894,
+      "candidate_original_hessian_squared_error": 10.153233652263475,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer25.in_proj": {
+      "relative_squared_output_error_reduction": 0.0177614716910941,
+      "parent_original_hessian_squared_error": 231.49102083380836,
+      "candidate_original_hessian_squared_error": 227.37939962052621,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer25.out_proj": {
+      "relative_squared_output_error_reduction": 0.019804814105007562,
+      "parent_original_hessian_squared_error": 12.396734763816715,
+      "candidate_original_hessian_squared_error": 12.151219736310239,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer26.in_proj": {
+      "relative_squared_output_error_reduction": 0.017458192277363227,
+      "parent_original_hessian_squared_error": 261.7102054853637,
+      "candidate_original_hessian_squared_error": 257.141218397052,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer26.out_proj": {
+      "relative_squared_output_error_reduction": 0.019766583463692755,
+      "parent_original_hessian_squared_error": 14.814400787108625,
+      "candidate_original_hessian_squared_error": 14.521570697485647,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer27.in_proj": {
+      "relative_squared_output_error_reduction": 0.016919824491535174,
+      "parent_original_hessian_squared_error": 245.58603343105506,
+      "candidate_original_hessian_squared_error": 241.4307608478293,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer27.out_proj": {
+      "relative_squared_output_error_reduction": 0.02045494348449506,
+      "parent_original_hessian_squared_error": 19.82468082721269,
+      "candidate_original_hessian_squared_error": 19.419168101293902,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer28.in_proj": {
+      "relative_squared_output_error_reduction": 0.01684547969864969,
+      "parent_original_hessian_squared_error": 302.96429147937346,
+      "candidate_original_hessian_squared_error": 297.86071265784193,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer28.out_proj": {
+      "relative_squared_output_error_reduction": 0.020952987068524886,
+      "parent_original_hessian_squared_error": 23.943815638357695,
+      "candidate_original_hessian_squared_error": 23.44212117891604,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer29.in_proj": {
+      "relative_squared_output_error_reduction": 0.017150137819604727,
+      "parent_original_hessian_squared_error": 345.3891799099017,
+      "candidate_original_hessian_squared_error": 339.46570787304665,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer29.out_proj": {
+      "relative_squared_output_error_reduction": 0.020839288214411833,
+      "parent_original_hessian_squared_error": 29.29886236498732,
+      "candidate_original_hessian_squared_error": 28.688294927808965,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer30.in_proj": {
+      "relative_squared_output_error_reduction": 0.01629213180960354,
+      "parent_original_hessian_squared_error": 427.3062279201088,
+      "candidate_original_hessian_squared_error": 420.34449853176994,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer30.out_proj": {
+      "relative_squared_output_error_reduction": 0.019926594197428482,
+      "parent_original_hessian_squared_error": 34.98160884451934,
+      "candidate_original_hessian_squared_error": 34.28454452070143,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer31.in_proj": {
+      "relative_squared_output_error_reduction": 0.01531475494432899,
+      "parent_original_hessian_squared_error": 443.3353733103172,
+      "candidate_original_hessian_squared_error": 436.54580070991716,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer31.out_proj": {
+      "relative_squared_output_error_reduction": 0.02013875732983983,
+      "parent_original_hessian_squared_error": 36.99446645458433,
+      "candidate_original_hessian_squared_error": 36.24944387210856,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer32.in_proj": {
+      "relative_squared_output_error_reduction": 0.015083925783178187,
+      "parent_original_hessian_squared_error": 450.5535358289127,
+      "candidate_original_hessian_squared_error": 443.75741973312086,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer32.out_proj": {
+      "relative_squared_output_error_reduction": 0.021164536983332205,
+      "parent_original_hessian_squared_error": 42.019074847407694,
+      "candidate_original_hessian_squared_error": 41.12976058379434,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer33.in_proj": {
+      "relative_squared_output_error_reduction": 0.01564717154254991,
+      "parent_original_hessian_squared_error": 495.01289072645034,
+      "candidate_original_hessian_squared_error": 487.2673391094801,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer33.out_proj": {
+      "relative_squared_output_error_reduction": 0.02049301298022943,
+      "parent_original_hessian_squared_error": 56.457652213203374,
+      "candidate_original_hessian_squared_error": 55.300664813564914,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer34.in_proj": {
+      "relative_squared_output_error_reduction": 0.01534066620339869,
+      "parent_original_hessian_squared_error": 496.1322934609046,
+      "candidate_original_hessian_squared_error": 488.52129355419424,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer34.out_proj": {
+      "relative_squared_output_error_reduction": 0.01893532094082906,
+      "parent_original_hessian_squared_error": 59.185534905482164,
+      "candidate_original_hessian_squared_error": 58.064837806992216,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer35.in_proj": {
+      "relative_squared_output_error_reduction": 0.014478311859455584,
+      "parent_original_hessian_squared_error": 437.64077310815884,
+      "candidate_original_hessian_squared_error": 431.3044735126857,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer35.out_proj": {
+      "relative_squared_output_error_reduction": 0.020505839914360835,
+      "parent_original_hessian_squared_error": 58.53826930548733,
+      "candidate_original_hessian_squared_error": 57.33789292624526,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer36.in_proj": {
+      "relative_squared_output_error_reduction": 0.01443643894962321,
+      "parent_original_hessian_squared_error": 430.3581854125562,
+      "candidate_original_hessian_squared_error": 424.14534574237723,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer36.out_proj": {
+      "relative_squared_output_error_reduction": 0.02035922388148992,
+      "parent_original_hessian_squared_error": 55.545997104528695,
+      "candidate_original_hessian_squared_error": 54.41512371375701,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer37.in_proj": {
+      "relative_squared_output_error_reduction": 0.014077574075905264,
+      "parent_original_hessian_squared_error": 482.635510652807,
+      "candidate_original_hessian_squared_error": 475.84117349992977,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer37.out_proj": {
+      "relative_squared_output_error_reduction": 0.02067359835472915,
+      "parent_original_hessian_squared_error": 64.0610256569153,
+      "candidate_original_hessian_squared_error": 62.73665374229223,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer38.in_proj": {
+      "relative_squared_output_error_reduction": 0.013673502743590582,
+      "parent_original_hessian_squared_error": 558.3416733384448,
+      "candidate_original_hessian_squared_error": 550.7071869361906,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer38.out_proj": {
+      "relative_squared_output_error_reduction": 0.01904347742064194,
+      "parent_original_hessian_squared_error": 69.01416799010535,
+      "candidate_original_hessian_squared_error": 67.69989824028139,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer39.in_proj": {
+      "relative_squared_output_error_reduction": 0.013462265205445134,
+      "parent_original_hessian_squared_error": 417.488204834383,
+      "candidate_original_hessian_squared_error": 411.86786790075735,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer39.out_proj": {
+      "relative_squared_output_error_reduction": 0.019205888535695603,
+      "parent_original_hessian_squared_error": 72.42777525694986,
+      "candidate_original_hessian_squared_error": 71.03673547847646,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer40.in_proj": {
+      "relative_squared_output_error_reduction": 0.013571925818903652,
+      "parent_original_hessian_squared_error": 442.5295621953121,
+      "candidate_original_hessian_squared_error": 436.5235838045254,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer40.out_proj": {
+      "relative_squared_output_error_reduction": 0.019656488740556588,
+      "parent_original_hessian_squared_error": 64.41889113920774,
+      "candidate_original_hessian_squared_error": 63.15264193085077,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer41.in_proj": {
+      "relative_squared_output_error_reduction": 0.013367616347958244,
+      "parent_original_hessian_squared_error": 388.66293574970905,
+      "candidate_original_hessian_squared_error": 383.4674387359358,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer41.out_proj": {
+      "relative_squared_output_error_reduction": 0.020549376107631634,
+      "parent_original_hessian_squared_error": 77.97727595634277,
+      "candidate_original_hessian_squared_error": 76.3748915848673,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer42.in_proj": {
+      "relative_squared_output_error_reduction": 0.013425782588311952,
+      "parent_original_hessian_squared_error": 363.2326301341585,
+      "candidate_original_hessian_squared_error": 358.3559478129966,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer42.out_proj": {
+      "relative_squared_output_error_reduction": 0.018216502740524332,
+      "parent_original_hessian_squared_error": 92.85938684411778,
+      "candidate_original_hessian_squared_error": 91.1678135691885,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer43.in_proj": {
+      "relative_squared_output_error_reduction": 0.0131914058837872,
+      "parent_original_hessian_squared_error": 364.3333861379707,
+      "candidate_original_hessian_squared_error": 359.52731656441017,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer43.out_proj": {
+      "relative_squared_output_error_reduction": 0.020102138479408116,
+      "parent_original_hessian_squared_error": 84.14611475787005,
+      "candidate_original_hessian_squared_error": 82.45459790650318,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer44.in_proj": {
+      "relative_squared_output_error_reduction": 0.012988299731443664,
+      "parent_original_hessian_squared_error": 358.9873779187256,
+      "candidate_original_hessian_squared_error": 354.3247422545121,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer44.out_proj": {
+      "relative_squared_output_error_reduction": 0.021001310061958378,
+      "parent_original_hessian_squared_error": 89.38860009965381,
+      "candidate_original_hessian_squared_error": 87.51132239295659,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer45.in_proj": {
+      "relative_squared_output_error_reduction": 0.013038503521105249,
+      "parent_original_hessian_squared_error": 404.361974807137,
+      "candidate_original_hessian_squared_error": 399.0896997748131,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer45.out_proj": {
+      "relative_squared_output_error_reduction": 0.02006508950771091,
+      "parent_original_hessian_squared_error": 96.58069729999578,
+      "candidate_original_hessian_squared_error": 94.64279696395423,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer46.in_proj": {
+      "relative_squared_output_error_reduction": 0.013063919324243334,
+      "parent_original_hessian_squared_error": 365.9669345483015,
+      "candidate_original_hessian_squared_error": 361.18597204002185,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer46.out_proj": {
+      "relative_squared_output_error_reduction": 0.02031609432832271,
+      "parent_original_hessian_squared_error": 112.60185446508768,
+      "candidate_original_hessian_squared_error": 110.31422456823088,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer47.in_proj": {
+      "relative_squared_output_error_reduction": 0.01311682333602826,
+      "parent_original_hessian_squared_error": 352.9229242578882,
+      "candidate_original_hessian_squared_error": 348.29369660916296,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer47.out_proj": {
+      "relative_squared_output_error_reduction": 0.020570472539835905,
+      "parent_original_hessian_squared_error": 108.65699843997173,
+      "candidate_original_hessian_squared_error": 106.4218726373013,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer48.in_proj": {
+      "relative_squared_output_error_reduction": 0.013096185598272081,
+      "parent_original_hessian_squared_error": 368.1596898945925,
+      "candidate_original_hessian_squared_error": 363.3382022659306,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer48.out_proj": {
+      "relative_squared_output_error_reduction": 0.019689261715391204,
+      "parent_original_hessian_squared_error": 129.56107311333338,
+      "candidate_original_hessian_squared_error": 127.01011123667803,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer49.in_proj": {
+      "relative_squared_output_error_reduction": 0.012985658187920746,
+      "parent_original_hessian_squared_error": 329.5085892731686,
+      "candidate_original_hessian_squared_error": 325.22970336288324,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer49.out_proj": {
+      "relative_squared_output_error_reduction": 0.02072195387025566,
+      "parent_original_hessian_squared_error": 118.37475731704929,
+      "candidate_original_hessian_squared_error": 115.9218010565227,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer50.in_proj": {
+      "relative_squared_output_error_reduction": 0.013102926209673682,
+      "parent_original_hessian_squared_error": 383.49268284893833,
+      "candidate_original_hessian_squared_error": 378.4678065236189,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer50.out_proj": {
+      "relative_squared_output_error_reduction": 0.01862342054205879,
+      "parent_original_hessian_squared_error": 139.34430939530486,
+      "candidate_original_hessian_squared_error": 136.74924172129334,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer51.in_proj": {
+      "relative_squared_output_error_reduction": 0.012258710675866924,
+      "parent_original_hessian_squared_error": 373.2396426542271,
+      "candidate_original_hessian_squared_error": 368.6642058621649,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer51.out_proj": {
+      "relative_squared_output_error_reduction": 0.020334500389189825,
+      "parent_original_hessian_squared_error": 143.15154389829397,
+      "candidate_original_hessian_squared_error": 140.240628773181,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer52.in_proj": {
+      "relative_squared_output_error_reduction": 0.01242265925053343,
+      "parent_original_hessian_squared_error": 328.4604892494542,
+      "candidate_original_hessian_squared_error": 324.3801365142448,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer52.out_proj": {
+      "relative_squared_output_error_reduction": 0.020277085262585648,
+      "parent_original_hessian_squared_error": 154.52999807861326,
+      "candidate_original_hessian_squared_error": 151.39658013194602,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer53.in_proj": {
+      "relative_squared_output_error_reduction": 0.012203289432461517,
+      "parent_original_hessian_squared_error": 328.83873557871584,
+      "candidate_original_hessian_squared_error": 324.8258213118441,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer53.out_proj": {
+      "relative_squared_output_error_reduction": 0.020428852789801666,
+      "parent_original_hessian_squared_error": 164.76710366934518,
+      "candidate_original_hessian_squared_error": 161.40110076388214,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer54.in_proj": {
+      "relative_squared_output_error_reduction": 0.01171422541977385,
+      "parent_original_hessian_squared_error": 352.0382587438397,
+      "candidate_original_hessian_squared_error": 347.9144032245297,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    },
+    "layer54.out_proj": {
+      "relative_squared_output_error_reduction": 0.01668280102384656,
+      "parent_original_hessian_squared_error": 191.0838686063517,
+      "candidate_original_hessian_squared_error": 187.8960544475251,
+      "comparison_precision": "Parent recorded FP32 relative RMS proxy squared; candidate independent original-H relative MSE. Reconstructed parent J uses the same reference-output denominator; tiny accumulation precision differences remain."
+    }
+  },
+  "bytes": {
+    "parent_raw_payload_bytes": 2886482462,
+    "replacement_projection_raw_bytes": 1535708888,
+    "inherited_raw_payload_bytes": 1350773574,
+    "logical_candidate_raw_payload_bytes": 2886482462,
+    "physical_parent_plus_overlay_directory_bytes": 4422600757,
+    "physical_parent_overlay_pilot_work_bytes": 4587330346,
+    "physical_directory_inventory": {
+      "parent": {
+        "files": 118,
+        "bytes": 2886686334,
+        "file_bytes": {
+          "config.json": 462,
+          "e8_codebook.bin": 1024,
+          "embedding.uniform": 671744079,
+          "layer0.in_proj.e8": 19016655,
+          "layer0.out_proj.e8": 8406718,
+          "layer1.in_proj.e8": 19016655,
+          "layer1.out_proj.e8": 8406718,
+          "layer10.in_proj.e8": 19016655,
+          "layer10.out_proj.e8": 8406718,
+          "layer11.in_proj.e8": 19016655,
+          "layer11.out_proj.e8": 8406718,
+          "layer12.in_proj.e8": 19016655,
+          "layer12.out_proj.e8": 8406718,
+          "layer13.in_proj.e8": 19016655,
+          "layer13.out_proj.e8": 8406718,
+          "layer14.in_proj.e8": 19016655,
+          "layer14.out_proj.e8": 8406718,
+          "layer15.in_proj.e8": 19016655,
+          "layer15.out_proj.e8": 8406718,
+          "layer16.in_proj.e8": 19016655,
+          "layer16.out_proj.e8": 8406718,
+          "layer17.in_proj.e8": 19016655,
+          "layer17.out_proj.e8": 8406718,
+          "layer18.in_proj.e8": 19016655,
+          "layer18.out_proj.e8": 8406718,
+          "layer19.in_proj.e8": 19016655,
+          "layer19.out_proj.e8": 8406718,
+          "layer2.in_proj.e8": 19016655,
+          "layer2.out_proj.e8": 8406718,
+          "layer20.in_proj.e8": 19016655,
+          "layer20.out_proj.e8": 8406718,
+          "layer21.in_proj.e8": 19016655,
+          "layer21.out_proj.e8": 8406718,
+          "layer22.in_proj.e8": 19016655,
+          "layer22.out_proj.e8": 8406718,
+          "layer23.in_proj.e8": 19016655,
+          "layer23.out_proj.e8": 8406718,
+          "layer24.in_proj.e8": 19016655,
+          "layer24.out_proj.e8": 8406718,
+          "layer25.in_proj.e8": 19016655,
+          "layer25.out_proj.e8": 8406718,
+          "layer26.in_proj.e8": 19016655,
+          "layer26.out_proj.e8": 8406718,
+          "layer27.in_proj.e8": 19016655,
+          "layer27.out_proj.e8": 8406718,
+          "layer28.in_proj.e8": 19016655,
+          "layer28.out_proj.e8": 8406718,
+          "layer29.in_proj.e8": 19016655,
+          "layer29.out_proj.e8": 8406718,
+          "layer3.in_proj.e8": 19016655,
+          "layer3.out_proj.e8": 8406718,
+          "layer30.in_proj.e8": 19016655,
+          "layer30.out_proj.e8": 8406718,
+          "layer31.in_proj.e8": 19016655,
+          "layer31.out_proj.e8": 8406718,
+          "layer32.in_proj.e8": 19016655,
+          "layer32.out_proj.e8": 8406718,
+          "layer33.in_proj.e8": 19016655,
+          "layer33.out_proj.e8": 8406718,
+          "layer34.in_proj.e8": 19016655,
+          "layer34.out_proj.e8": 8406718,
+          "layer35.in_proj.e8": 19016655,
+          "layer35.out_proj.e8": 8406718,
+          "layer36.in_proj.e8": 19016655,
+          "layer36.out_proj.e8": 8406718,
+          "layer37.in_proj.e8": 19016655,
+          "layer37.out_proj.e8": 8406718,
+          "layer38.in_proj.e8": 19016655,
+          "layer38.out_proj.e8": 8406718,
+          "layer39.in_proj.e8": 19016655,
+          "layer39.out_proj.e8": 8406718,
+          "layer4.in_proj.e8": 19016655,
+          "layer4.out_proj.e8": 8406718,
+          "layer40.in_proj.e8": 19016655,
+          "layer40.out_proj.e8": 8406718,
+          "layer41.in_proj.e8": 19016655,
+          "layer41.out_proj.e8": 8406718,
+          "layer42.in_proj.e8": 19016655,
+          "layer42.out_proj.e8": 8406718,
+          "layer43.in_proj.e8": 19016655,
+          "layer43.out_proj.e8": 8406718,
+          "layer44.in_proj.e8": 19016655,
+          "layer44.out_proj.e8": 8406718,
+          "layer45.in_proj.e8": 19016655,
+          "layer45.out_proj.e8": 8406718,
+          "layer46.in_proj.e8": 19016655,
+          "layer46.out_proj.e8": 8406718,
+          "layer47.in_proj.e8": 19016655,
+          "layer47.out_proj.e8": 8406718,
+          "layer48.in_proj.e8": 19016655,
+          "layer48.out_proj.e8": 8406718,
+          "layer49.in_proj.e8": 19016655,
+          "layer49.out_proj.e8": 8406718,
+          "layer5.in_proj.e8": 19016655,
+          "layer5.out_proj.e8": 8406718,
+          "layer50.in_proj.e8": 19016655,
+          "layer50.out_proj.e8": 8406718,
+          "layer51.in_proj.e8": 19016655,
+          "layer51.out_proj.e8": 8406718,
+          "layer52.in_proj.e8": 19016655,
+          "layer52.out_proj.e8": 8406718,
+          "layer53.in_proj.e8": 19016655,
+          "layer53.out_proj.e8": 8406718,
+          "layer54.in_proj.e8": 19016655,
+          "layer54.out_proj.e8": 8406718,
+          "layer55.in_proj.e8": 19016655,
+          "layer55.out_proj.e8": 8406718,
+          "layer6.in_proj.e8": 19016655,
+          "layer6.out_proj.e8": 8406718,
+          "layer7.in_proj.e8": 19016655,
+          "layer7.out_proj.e8": 8406718,
+          "layer8.in_proj.e8": 19016655,
+          "layer8.out_proj.e8": 8406718,
+          "layer9.in_proj.e8": 19016655,
+          "layer9.out_proj.e8": 8406718,
+          "lm_head.uniform": 671744079,
+          "manifest.json": 203872,
+          "other_fp16.pt": 7283930
+        }
+      },
+      "overlay": {
+        "files": 113,
+        "bytes": 1535914423,
+        "file_bytes": {
+          "layer0.in_proj.e8": 19016655,
+          "layer0.out_proj.e8": 8406718,
+          "layer1.in_proj.e8": 19016655,
+          "layer1.out_proj.e8": 8406718,
+          "layer10.in_proj.e8": 19016655,
+          "layer10.out_proj.e8": 8406718,
+          "layer11.in_proj.e8": 19016655,
+          "layer11.out_proj.e8": 8406718,
+          "layer12.in_proj.e8": 19016655,
+          "layer12.out_proj.e8": 8406718,
+          "layer13.in_proj.e8": 19016655,
+          "layer13.out_proj.e8": 8406718,
+          "layer14.in_proj.e8": 19016655,
+          "layer14.out_proj.e8": 8406718,
+          "layer15.in_proj.e8": 19016655,
+          "layer15.out_proj.e8": 8406718,
+          "layer16.in_proj.e8": 19016655,
+          "layer16.out_proj.e8": 8406718,
+          "layer17.in_proj.e8": 19016655,
+          "layer17.out_proj.e8": 8406718,
+          "layer18.in_proj.e8": 19016655,
+          "layer18.out_proj.e8": 8406718,
+          "layer19.in_proj.e8": 19016655,
+          "layer19.out_proj.e8": 8406718,
+          "layer2.in_proj.e8": 19016655,
+          "layer2.out_proj.e8": 8406718,
+          "layer20.in_proj.e8": 19016655,
+          "layer20.out_proj.e8": 8406718,
+          "layer21.in_proj.e8": 19016655,
+          "layer21.out_proj.e8": 8406718,
+          "layer22.in_proj.e8": 19016655,
+          "layer22.out_proj.e8": 8406718,
+          "layer23.in_proj.e8": 19016655,
+          "layer23.out_proj.e8": 8406718,
+          "layer24.in_proj.e8": 19016655,
+          "layer24.out_proj.e8": 8406718,
+          "layer25.in_proj.e8": 19016655,
+          "layer25.out_proj.e8": 8406718,
+          "layer26.in_proj.e8": 19016655,
+          "layer26.out_proj.e8": 8406718,
+          "layer27.in_proj.e8": 19016655,
+          "layer27.out_proj.e8": 8406718,
+          "layer28.in_proj.e8": 19016655,
+          "layer28.out_proj.e8": 8406718,
+          "layer29.in_proj.e8": 19016655,
+          "layer29.out_proj.e8": 8406718,
+          "layer3.in_proj.e8": 19016655,
+          "layer3.out_proj.e8": 8406718,
+          "layer30.in_proj.e8": 19016655,
+          "layer30.out_proj.e8": 8406718,
+          "layer31.in_proj.e8": 19016655,
+          "layer31.out_proj.e8": 8406718,
+          "layer32.in_proj.e8": 19016655,
+          "layer32.out_proj.e8": 8406718,
+          "layer33.in_proj.e8": 19016655,
+          "layer33.out_proj.e8": 8406718,
+          "layer34.in_proj.e8": 19016655,
+          "layer34.out_proj.e8": 8406718,
+          "layer35.in_proj.e8": 19016655,
+          "layer35.out_proj.e8": 8406718,
+          "layer36.in_proj.e8": 19016655,
+          "layer36.out_proj.e8": 8406718,
+          "layer37.in_proj.e8": 19016655,
+          "layer37.out_proj.e8": 8406718,
+          "layer38.in_proj.e8": 19016655,
+          "layer38.out_proj.e8": 8406718,
+          "layer39.in_proj.e8": 19016655,
+          "layer39.out_proj.e8": 8406718,
+          "layer4.in_proj.e8": 19016655,
+          "layer4.out_proj.e8": 8406718,
+          "layer40.in_proj.e8": 19016655,
+          "layer40.out_proj.e8": 8406718,
+          "layer41.in_proj.e8": 19016655,
+          "layer41.out_proj.e8": 8406718,
+          "layer42.in_proj.e8": 19016655,
+          "layer42.out_proj.e8": 8406718,
+          "layer43.in_proj.e8": 19016655,
+          "layer43.out_proj.e8": 8406718,
+          "layer44.in_proj.e8": 19016655,
+          "layer44.out_proj.e8": 8406718,
+          "layer45.in_proj.e8": 19016655,
+          "layer45.out_proj.e8": 8406718,
+          "layer46.in_proj.e8": 19016655,
+          "layer46.out_proj.e8": 8406718,
+          "layer47.in_proj.e8": 19016655,
+          "layer47.out_proj.e8": 8406718,
+          "layer48.in_proj.e8": 19016655,
+          "layer48.out_proj.e8": 8406718,
+          "layer49.in_proj.e8": 19016655,
+          "layer49.out_proj.e8": 8406718,
+          "layer5.in_proj.e8": 19016655,
+          "layer5.out_proj.e8": 8406718,
+          "layer50.in_proj.e8": 19016655,
+          "layer50.out_proj.e8": 8406718,
+          "layer51.in_proj.e8": 19016655,
+          "layer51.out_proj.e8": 8406718,
+          "layer52.in_proj.e8": 19016655,
+          "layer52.out_proj.e8": 8406718,
+          "layer53.in_proj.e8": 19016655,
+          "layer53.out_proj.e8": 8406718,
+          "layer54.in_proj.e8": 19016655,
+          "layer54.out_proj.e8": 8406718,
+          "layer55.in_proj.e8": 19016655,
+          "layer55.out_proj.e8": 8406718,
+          "layer6.in_proj.e8": 19016655,
+          "layer6.out_proj.e8": 8406718,
+          "layer7.in_proj.e8": 19016655,
+          "layer7.out_proj.e8": 8406718,
+          "layer8.in_proj.e8": 19016655,
+          "layer8.out_proj.e8": 8406718,
+          "layer9.in_proj.e8": 19016655,
+          "layer9.out_proj.e8": 8406718,
+          "manifest.json": 205535
+        }
+      },
+      "pilot": {
+        "files": 14,
+        "bytes": 164572248,
+        "file_bytes": {
+          "report.json": 21207,
+          "tune2/layer0.in_proj.e8": 19016655,
+          "tune2/layer0.out_proj.e8": 8406718,
+          "tune2/layer18.in_proj.e8": 19016655,
+          "tune2/layer18.out_proj.e8": 8406718,
+          "tune2/layer55.in_proj.e8": 19016655,
+          "tune2/layer55.out_proj.e8": 8406718,
+          "tune8/layer0.in_proj.e8": 19016655,
+          "tune8/layer0.out_proj.e8": 8406718,
+          "tune8/layer18.in_proj.e8": 19016655,
+          "tune8/layer18.out_proj.e8": 8406718,
+          "tune8/layer55.in_proj.e8": 19016655,
+          "tune8/layer55.out_proj.e8": 8406718,
+          "tune8/manifest.json": 10803
+        }
+      },
+      "transaction_work": {
+        "files": 112,
+        "bytes": 157341,
+        "file_bytes": {
+          "layer0.in_proj.json": 1445,
+          "layer0.out_proj.json": 1457,
+          "layer1.in_proj.json": 1400,
+          "layer1.out_proj.json": 1409,
+          "layer10.in_proj.json": 1403,
+          "layer10.out_proj.json": 1407,
+          "layer11.in_proj.json": 1400,
+          "layer11.out_proj.json": 1411,
+          "layer12.in_proj.json": 1398,
+          "layer12.out_proj.json": 1406,
+          "layer13.in_proj.json": 1402,
+          "layer13.out_proj.json": 1408,
+          "layer14.in_proj.json": 1403,
+          "layer14.out_proj.json": 1407,
+          "layer15.in_proj.json": 1400,
+          "layer15.out_proj.json": 1407,
+          "layer16.in_proj.json": 1403,
+          "layer16.out_proj.json": 1406,
+          "layer17.in_proj.json": 1401,
+          "layer17.out_proj.json": 1403,
+          "layer18.in_proj.json": 1449,
+          "layer18.out_proj.json": 1453,
+          "layer19.in_proj.json": 1400,
+          "layer19.out_proj.json": 1407,
+          "layer2.in_proj.json": 1398,
+          "layer2.out_proj.json": 1408,
+          "layer20.in_proj.json": 1402,
+          "layer20.out_proj.json": 1406,
+          "layer21.in_proj.json": 1400,
+          "layer21.out_proj.json": 1406,
+          "layer22.in_proj.json": 1400,
+          "layer22.out_proj.json": 1406,
+          "layer23.in_proj.json": 1403,
+          "layer23.out_proj.json": 1405,
+          "layer24.in_proj.json": 1401,
+          "layer24.out_proj.json": 1405,
+          "layer25.in_proj.json": 1400,
+          "layer25.out_proj.json": 1403,
+          "layer26.in_proj.json": 1400,
+          "layer26.out_proj.json": 1404,
+          "layer27.in_proj.json": 1399,
+          "layer27.out_proj.json": 1404,
+          "layer28.in_proj.json": 1402,
+          "layer28.out_proj.json": 1403,
+          "layer29.in_proj.json": 1402,
+          "layer29.out_proj.json": 1405,
+          "layer3.in_proj.json": 1397,
+          "layer3.out_proj.json": 1406,
+          "layer30.in_proj.json": 1401,
+          "layer30.out_proj.json": 1404,
+          "layer31.in_proj.json": 1400,
+          "layer31.out_proj.json": 1402,
+          "layer32.in_proj.json": 1402,
+          "layer32.out_proj.json": 1402,
+          "layer33.in_proj.json": 1400,
+          "layer33.out_proj.json": 1403,
+          "layer34.in_proj.json": 1400,
+          "layer34.out_proj.json": 1405,
+          "layer35.in_proj.json": 1401,
+          "layer35.out_proj.json": 1403,
+          "layer36.in_proj.json": 1400,
+          "layer36.out_proj.json": 1405,
+          "layer37.in_proj.json": 1402,
+          "layer37.out_proj.json": 1400,
+          "layer38.in_proj.json": 1402,
+          "layer38.out_proj.json": 1405,
+          "layer39.in_proj.json": 1402,
+          "layer39.out_proj.json": 1404,
+          "layer4.in_proj.json": 1399,
+          "layer4.out_proj.json": 1405,
+          "layer40.in_proj.json": 1402,
+          "layer40.out_proj.json": 1403,
+          "layer41.in_proj.json": 1401,
+          "layer41.out_proj.json": 1399,
+          "layer42.in_proj.json": 1398,
+          "layer42.out_proj.json": 1399,
+          "layer43.in_proj.json": 1399,
+          "layer43.out_proj.json": 1401,
+          "layer44.in_proj.json": 1399,
+          "layer44.out_proj.json": 1402,
+          "layer45.in_proj.json": 1402,
+          "layer45.out_proj.json": 1401,
+          "layer46.in_proj.json": 1404,
+          "layer46.out_proj.json": 1404,
+          "layer47.in_proj.json": 1403,
+          "layer47.out_proj.json": 1401,
+          "layer48.in_proj.json": 1399,
+          "layer48.out_proj.json": 1403,
+          "layer49.in_proj.json": 1400,
+          "layer49.out_proj.json": 1401,
+          "layer5.in_proj.json": 1398,
+          "layer5.out_proj.json": 1407,
+          "layer50.in_proj.json": 1401,
+          "layer50.out_proj.json": 1400,
+          "layer51.in_proj.json": 1399,
+          "layer51.out_proj.json": 1400,
+          "layer52.in_proj.json": 1404,
+          "layer52.out_proj.json": 1402,
+          "layer53.in_proj.json": 1401,
+          "layer53.out_proj.json": 1400,
+          "layer54.in_proj.json": 1400,
+          "layer54.out_proj.json": 1401,
+          "layer55.in_proj.json": 1447,
+          "layer55.out_proj.json": 1453,
+          "layer6.in_proj.json": 1395,
+          "layer6.out_proj.json": 1406,
+          "layer7.in_proj.json": 1396,
+          "layer7.out_proj.json": 1404,
+          "layer8.in_proj.json": 1401,
+          "layer8.out_proj.json": 1404,
+          "layer9.in_proj.json": 1400,
+          "layer9.out_proj.json": 1404
+        }
+      }
+    },
+    "scope": "Logical raw payload excludes manifests, tokenizer, software, licenses and quality reports. Physical counts include all files in the four named experiment directories, including their manifests/receipts; source checkpoint and calibration are separate reproduction inputs. No refined Huffman archive has been built."
+  },
+  "timing": {
+    "sum_all112_quantization_seconds_including_retained_pilots": 1006.3510157192359,
+    "sum_all112_entry_elapsed_seconds_including_retained_pilots": 1074.478090417455,
+    "sessions": [
+      {
+        "start_time_unix": 1790557946.8351038,
+        "matrices": [
+          "layer1.in_proj",
+          "layer1.out_proj",
+          "layer2.in_proj",
+          "layer2.out_proj",
+          "layer3.in_proj",
+          "layer3.out_proj",
+          "layer4.in_proj",
+          "layer4.out_proj",
+          "layer5.in_proj",
+          "layer5.out_proj",
+          "layer6.in_proj",
+          "layer6.out_proj",
+          "layer7.in_proj",
+          "layer7.out_proj",
+          "layer8.in_proj",
+          "layer8.out_proj",
+          "layer9.in_proj",
+          "layer9.out_proj",
+          "layer10.in_proj",
+          "layer10.out_proj",
+          "layer11.in_proj",
+          "layer11.out_proj",
+          "layer12.in_proj",
+          "layer12.out_proj",
+          "layer13.in_proj",
+          "layer13.out_proj",
+          "layer14.in_proj",
+          "layer14.out_proj",
+          "layer15.in_proj",
+          "layer15.out_proj",
+          "layer16.in_proj",
+          "layer16.out_proj",
+          "layer17.in_proj",
+          "layer17.out_proj",
+          "layer19.in_proj",
+          "layer19.out_proj",
+          "layer20.in_proj",
+          "layer20.out_proj",
+          "layer21.in_proj",
+          "layer21.out_proj",
+          "layer22.in_proj",
+          "layer22.out_proj",
+          "layer23.in_proj",
+          "layer23.out_proj",
+          "layer24.in_proj",
+          "layer24.out_proj",
+          "layer25.in_proj",
+          "layer25.out_proj",
+          "layer26.in_proj",
+          "layer26.out_proj",
+          "layer27.in_proj",
+          "layer27.out_proj",
+          "layer28.in_proj",
+          "layer28.out_proj",
+          "layer29.in_proj",
+          "layer29.out_proj",
+          "layer30.in_proj",
+          "layer30.out_proj",
+          "layer31.in_proj",
+          "layer31.out_proj",
+          "layer32.in_proj",
+          "layer32.out_proj",
+          "layer33.in_proj",
+          "layer33.out_proj",
+          "layer34.in_proj",
+          "layer34.out_proj",
+          "layer35.in_proj",
+          "layer35.out_proj",
+          "layer36.in_proj",
+          "layer36.out_proj",
+          "layer37.in_proj",
+          "layer37.out_proj",
+          "layer38.in_proj",
+          "layer38.out_proj",
+          "layer39.in_proj",
+          "layer39.out_proj",
+          "layer40.in_proj",
+          "layer40.out_proj",
+          "layer41.in_proj",
+          "layer41.out_proj",
+          "layer42.in_proj",
+          "layer42.out_proj",
+          "layer43.in_proj",
+          "layer43.out_proj",
+          "layer44.in_proj",
+          "layer44.out_proj",
+          "layer45.in_proj",
+          "layer45.out_proj",
+          "layer46.in_proj",
+          "layer46.out_proj",
+          "layer47.in_proj",
+          "layer47.out_proj",
+          "layer48.in_proj",
+          "layer48.out_proj",
+          "layer49.in_proj",
+          "layer49.out_proj",
+          "layer50.in_proj",
+          "layer50.out_proj",
+          "layer51.in_proj",
+          "layer51.out_proj",
+          "layer52.in_proj",
+          "layer52.out_proj",
+          "layer53.in_proj",
+          "layer53.out_proj",
+          "layer54.in_proj",
+          "layer54.out_proj"
+        ],
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "torch": "2.11.0+cu128",
+        "tf32_matmul": false,
+        "elapsed_seconds_including_setup": 1139.9001842440339,
+        "complete": true
+      }
+    ],
+    "maximum_recorded_cuda_allocated_bytes": 3733252608
+  },
+  "coverage": {
+    "replacement_matrices": 112,
+    "retained_pilot_files": 6,
+    "resolved_parameter_tensors": 507,
+    "resolved_parameters": 8236999680
+  },
+  "limitations": [
+    "Training-proxy reporting only; there is no new acceptance threshold for these112 matrices.",
+    "The six-matrix predeclared gate was applied before full expansion; this summary does not change that gate.",
+    "Projection-output MSE improvement does not establish PPL, MK or source-relative quality.",
+    "Full-model decoded-hash verification belongs to the subsequent GPU evaluator; this receipt records CPU container/provenance verification."
+  ]
+}

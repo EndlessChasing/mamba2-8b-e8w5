@@ -1,0 +1,3448 @@
+{
+  "complete": true,
+  "scope": "Refinement development comparison; no publication approval",
+  "script_sha256": "3f4224cdb2c6e76af1d0fb2a942774cb28ac7471b2629dcd1b6b368f3d78d80f",
+  "refinement_protocol_sha256": "70fcc73a51bea70d0b308881af31482dce0f3e83175c03cbca2484ca230e6b89",
+  "overlay_receipt": {
+    "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "overlay_manifest_sha256": "5c7d912bb06e0af107218418f575d04c5b789f910568f0c847fa0322228fd035",
+    "calibration_manifest_sha256": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+    "binding": {
+      "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+      "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+      "hessian_manifest_sha256": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+      "codec_source_sha256": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+      "quip_sha256": {
+        "lib/codebook/latticee8_padded12.py": "af3442929e4dd033f1a9776eab36bea42ba9dd17761a3d0056639f0db7c4e75f",
+        "lib/algo/quip.py": "abd4986cbd636dea77809bc0b816964f406e0f2440cdde39cc83ba7734052fc4"
+      },
+      "refinement_protocol_sha256": "70fcc73a51bea70d0b308881af31482dce0f3e83175c03cbca2484ca230e6b89",
+      "screen_report_sha256": "a97afa3cb3252164dc90251e3733cc9bc26d52f829933c906a7758eb0132a22f",
+      "screen_driver_sha256": "bea578bdeee0d15686149129ec30919a94c9f882f774fddc55a38c5b3570db54",
+      "builder_source_sha256": "a2420b445c894aa80c39f89e354a9bd1fa32bb0b04b8a5420e3b5e1a78710471"
+    },
+    "recipe": {
+      "tune_iters": 8,
+      "scale_override": 0.9,
+      "damping": 0.01,
+      "buffer_width": 128,
+      "residual_bits": 0,
+      "index_bits": 16,
+      "seed_rule": "1000 + 2*layer + part"
+    },
+    "inherited_files": {
+      "config.json": {
+        "bytes": 462,
+        "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c"
+      },
+      "e8_codebook.bin": {
+        "bytes": 1024,
+        "sha256": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce"
+      },
+      "embedding.uniform": {
+        "bytes": 671744079,
+        "sha256": "038d44d2039659de786b743bae6858fd0c8e65be85a1843bd5eb1c36f672ca68"
+      },
+      "lm_head.uniform": {
+        "bytes": 671744079,
+        "sha256": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98"
+      },
+      "other_fp16.pt": {
+        "bytes": 7283930,
+        "sha256": "c114c632eb38a81b7927c90aa20d289528992049bf1f9831a43a1291721d7b15"
+      }
+    },
+    "screen_receipt": {
+      "screen_report_sha256": "a97afa3cb3252164dc90251e3733cc9bc26d52f829933c906a7758eb0132a22f",
+      "protocol_sha256": "70fcc73a51bea70d0b308881af31482dce0f3e83175c03cbca2484ca230e6b89",
+      "gate_recomputed": true,
+      "median_relative_mse_reduction": 0.016573568959915186,
+      "individual_pass_count": 6,
+      "worst_relative_mse_reduction": 0.010350906241304081,
+      "passed": true
+    },
+    "replacement_matrices": 112,
+    "native_in_proj_row_roles": {
+      "z": [
+        0,
+        8192
+      ],
+      "x": [
+        8192,
+        16384
+      ],
+      "B": [
+        16384,
+        17408
+      ],
+      "C": [
+        17408,
+        18432
+      ],
+      "dt": [
+        18432,
+        18560
+      ]
+    },
+    "parent_verified_file_bytes": 2886482462,
+    "overlay_verified_file_bytes": 1535708888,
+    "logical_candidate_data_bytes": 2886482462,
+    "logical_reused_parent_data_bytes": 1350773574,
+    "original_projection_bytes_replaced_logically": 1535708888,
+    "additive_overlay_disk_bytes": 1535914423,
+    "combined_parent_plus_overlay_disk_bytes": 4422600757,
+    "manifest_bytes": {
+      "parent": 203872,
+      "overlay": 205535
+    },
+    "storage_note": "Logical candidate reuses parent W5/FP16/config/codebook and replaces its E8 matrices. Actual experimental disk keeps the entire parent plus overlay. Tokenizer is counted separately below; executable code/licenses are not included, so these are not release archive byte totals.",
+    "resolved_files": {
+      "config.json": {
+        "origin": "parent",
+        "bytes": 462,
+        "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c"
+      },
+      "e8_codebook.bin": {
+        "origin": "parent",
+        "bytes": 1024,
+        "sha256": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce"
+      },
+      "embedding.uniform": {
+        "origin": "parent",
+        "bytes": 671744079,
+        "sha256": "038d44d2039659de786b743bae6858fd0c8e65be85a1843bd5eb1c36f672ca68"
+      },
+      "lm_head.uniform": {
+        "origin": "parent",
+        "bytes": 671744079,
+        "sha256": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98"
+      },
+      "other_fp16.pt": {
+        "origin": "parent",
+        "bytes": 7283930,
+        "sha256": "c114c632eb38a81b7927c90aa20d289528992049bf1f9831a43a1291721d7b15"
+      },
+      "layer0.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "a52529f714ceedf27fec8832716096e67848b59f9c778e08e54db3bb918edb58"
+      },
+      "layer0.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "e69392272191077d124dccaa2ea36ad9b4d801ba03d42a2458726999a8131488"
+      },
+      "layer18.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "1bbe7745b65c592b99171c778cd649eb9a943759ba8497a3518d9f485aefb9e5"
+      },
+      "layer18.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "43a58a4c1ce318903a45f0cdd3a4a831527a95638ae63e5a93be631a7716a971"
+      },
+      "layer55.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "8d05c2941e9c24ec9ba00e24f9fe2df431f096d0c66932749135a72131dac19a"
+      },
+      "layer55.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "96cc3fe90e88312e70b8082915e0e33ba290f85b03f504245f808390e056becf"
+      },
+      "layer1.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "6f3bc4ce51e550c1bf6072c569509ece59d1cde8ca89f4e9ff6c7422e09a161f"
+      },
+      "layer1.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "dfc80186d5cf1358956b1a8c4cb6050a79d489e650c0008545c6c597bc369272"
+      },
+      "layer2.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "32e0bc0f58f62134638b4c4f609bcb47539157aa7b3079148dddf47889aad59c"
+      },
+      "layer2.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "cc3b1a1c3b85524f5fa0db5ed69454143f3a9de5421a31fab614fe95ae1f285c"
+      },
+      "layer3.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "ec7f15d976ff8d66f4741f0c097d9b1da76699d76c9a37e36f72d382da879473"
+      },
+      "layer3.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "b470a9422975f739041d335a48af9e42d9002fe11b5ab804fff6958a888bfcc3"
+      },
+      "layer4.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "d4459a66663b82e6d88dc907ab3ed924ad271da5ec5dec22a7919e70ea73c073"
+      },
+      "layer4.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "29a9b14ccfe595600386de46afdb38f74c79b65c5ccb0083da1ce6ef9b042f91"
+      },
+      "layer5.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "3357f90cea17c793e02b8feb9fc321346902bffe2c55b1cca6da11207bff6af7"
+      },
+      "layer5.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "4af7e0a6659adbe05bd693835fc343fc8413c072c64958d501666d4c38311993"
+      },
+      "layer6.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "50649a59493ed7e7190f1a84d49d7777ed24fc763839212fade458f54781f6ca"
+      },
+      "layer6.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "bba8242b611d7b4a70c530d0425aad769e24c09cc601a785dde3ff935af0b201"
+      },
+      "layer7.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "84608c697e7efea1debaced348fc237d4ef6228ce4ca1f9905c78fcd57e92ad8"
+      },
+      "layer7.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "a5267e73df4855495d8ab4039fc95e80d3a7de4239cddf1511b5a25f298eccaf"
+      },
+      "layer8.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "4d8f1ef9951d9cc33171817cd1d07f800a14039311f410d8f2608a6104d91b82"
+      },
+      "layer8.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "2b44e2243379412f438e64e7383e520efafb7a8867ccf41e882383f803c00131"
+      },
+      "layer9.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "07524f47531d24cebfc20352f62f3b187e4181eb2d4fa5b6bc8f0943751ad990"
+      },
+      "layer9.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "fdd2d30c98aedd76d94a504ede16a4ab8105d1e9079e4fc964004f06c471d1f6"
+      },
+      "layer10.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "e53da4f629df2b6b9ebbc0237c108094eb47f194079795770664797b47fe3adc"
+      },
+      "layer10.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "24542d9f65d11088639162659048aa90e136b65d10cf1410243e0add26cb7cad"
+      },
+      "layer11.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "95bcddef28b6933fd16b68bc3f7fdf95a3737d9e08c879c699ebecd1fc7fb461"
+      },
+      "layer11.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "f25966ce0dd8d5e2be9aabdea79badb507b8e434623c63d7847e4350fd385fe5"
+      },
+      "layer12.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "b4c55ed7c60b5659b0d56fdd8571513cf2a360ff6641be77c3c827179479e154"
+      },
+      "layer12.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "360708464566eb6daf9acd97746b4ace494bdede78941296ca5d6102d1d0748b"
+      },
+      "layer13.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "565a139e5aea1501eac950826fb06d5c0b3d24a27cba22bba2e5402e6ecd3ffc"
+      },
+      "layer13.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "17a74d49c0145fa8df1a8d8d6cd0f81461da65eaa64cf03ba05d40e7ac4a83a8"
+      },
+      "layer14.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "0474c3727ddf8909035fb20215522211c8d3fed85fad7f3b3d5f5a90db5be3e9"
+      },
+      "layer14.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "fa25995d432f9a829d102f403bc4e01d2c6f61090a09474aef3572430411d9a1"
+      },
+      "layer15.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "b3035c2527f31ae942af2d729426ce9c37dacdee7abd2c3ccedded8da6db101c"
+      },
+      "layer15.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "e5ada4f72201a9d8dd8800e0513c18481e6403f4a5189b9ef839d3bdadf15178"
+      },
+      "layer16.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "f13a65052ab18ddc4440981b89afdb1b360c1e11030d5e92e1e2e99fa231637b"
+      },
+      "layer16.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "6b057bfa471bdf71917c738ade598aacd8140243760db93753628401a6c3e76f"
+      },
+      "layer17.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "41a1d71da67131d811832d3d868fcf85e0b2aa4e97b334e195d5340147851dac"
+      },
+      "layer17.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "a85d382e1330f1f3d21ac1da818f57384a8c6b0a4adbb8b0af9b850a51795cd4"
+      },
+      "layer19.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "58e9f6c22a5de99f59587f1f18a6c39c951e2aca7f56e0beb984fba6d2c0c678"
+      },
+      "layer19.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "aeaa7a1e861baf350b346ebbe1dbf9e6fd9825c394920a92cc5510c27393d853"
+      },
+      "layer20.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "630987241819698ab8e1067d7e9fb975f9b7249c40d10bc2c3951e32912ea86e"
+      },
+      "layer20.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "ad1f29d20526fb0dc3c1d7e7dbccaa381745c9f48dafdcff962fd08309741d42"
+      },
+      "layer21.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "02bf8209417ad41dcbb795cc3d1afaf4a65a9e7f8a40420a3644c9ad4ced5640"
+      },
+      "layer21.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "fc1712cb2be6003cb7d192bcbbf64dd8ebd4e56736c14119f15f1b0c172bb2a3"
+      },
+      "layer22.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "550b84405b06a171ff4ae17491473a2277a3db91335c288c297a7a6ef6bd592c"
+      },
+      "layer22.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "848921a5a916a6644cd682965265bc154a02e8228e3c1e5abd421ac9e726646f"
+      },
+      "layer23.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "38e5aaea16ba1a9c87d7c2833ba36fffdf3382d55a4f3362079e8058e14f3944"
+      },
+      "layer23.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "1c5988e4de65b81e8e26c73a56d4aeab6054a2ba7bb4b87974237c6a64a62f74"
+      },
+      "layer24.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "1703e0c7e00568c0930e1112f1593bc5b958f6cd839f400d0efbdfdc8df87123"
+      },
+      "layer24.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "dbca4db9cbfe09905cac2aed24a1386c2670dfa0782b3ed68405f1f57e9d6444"
+      },
+      "layer25.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "8c46fa79e462df9dee36c85760ad6b154529b32ecc791c68d11fd0fa40f61758"
+      },
+      "layer25.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "200cafe13ccb211fff988d6a90d942626a21b3f7037a6f5f1c7954d288b01e34"
+      },
+      "layer26.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "cce6c2d64e4c33be038a6941ee6698120ab76b6352aa07805198a287360147a6"
+      },
+      "layer26.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "dd2edf6a912475865fba5fdcdf035a4e5a66fcf01c4fd292146daed634c49073"
+      },
+      "layer27.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "fe6542a4aeeacfefab3dafea24c45de5d18dc18bc5a1e2bf36a4daba7c0b41ba"
+      },
+      "layer27.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "37f8b8e8156e42a8582193e263dcd84bca135b6a61bb43da420fd4cfc438bf2d"
+      },
+      "layer28.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "37686077a268f16a3bd615111dafee20998e413cce1af453e73174e0cdc0f7cf"
+      },
+      "layer28.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "2eebc718f9033ba52c4a378fab81106aacf2113cf0ea0f97700b59b0a06bf947"
+      },
+      "layer29.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "878b6419169691a54c30cf70dcf70a0c147b61657004910735ea60ac5e653606"
+      },
+      "layer29.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "69e78f4fbcf881dee6ba099d1338cc4d6a526d67b724080532bf0087951b0518"
+      },
+      "layer30.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "c74f0abb75cbe48fc5053c0a09353924cceb37d7462c15ddffb461bfa52c2952"
+      },
+      "layer30.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "1c1fbfb2b6f5bd63b3b869828e871b1a369122efe7c0ecca5dca933b051076cf"
+      },
+      "layer31.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "0e2ccd278a0c00408a81571b9629c4b28ba8ffaff3cc1aee895b29ebf91765d1"
+      },
+      "layer31.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "9b441e1cc4b703c3594a72b6acb1d0fb607fe756b5dc4e633f5d354cee6d7f34"
+      },
+      "layer32.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "fe39c04d4327d1dd3098b5fe76439b9d14da9877025a710dc34c676c669610db"
+      },
+      "layer32.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "92f2eadb17a15561846622c83904ecdadf1829d9acf1e6e8501a444a6590ec83"
+      },
+      "layer33.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "639e55b5406439b3bf300d7368323598ef23ffd6884291e23af32f34fc61ca5c"
+      },
+      "layer33.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "82dda0566e2fc3ce25a571cfcdcc9cd537b71913055f3f47f3b6729816546ebf"
+      },
+      "layer34.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "9b65d8f5e04e3a4a49b4ec523ecbd14088e835e4052d21ebbf2a4478d1f322c1"
+      },
+      "layer34.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "c5b32aaed73353e0fbd22cd77be0b6263ef155f77b32cd5ba99c9e61488182a8"
+      },
+      "layer35.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "624eef1d948dd230b5b40af9cf5a5dbf542b6257ed43ba20c3a46fd9474f1503"
+      },
+      "layer35.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "ea782af4b4090c52701e5194b934692d6eb93d3257831c46fcf181ea2d875546"
+      },
+      "layer36.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "1ccfdc59e71ab966cea19850a74960bf7dc41347aec2068f7005adc0e1896b83"
+      },
+      "layer36.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "d28896cade1d532d28ec692fd1b70891b3b8f27205fbb61f9633e38e2fc0cc23"
+      },
+      "layer37.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "f857ce450f51d71dbb5c041f726a58c9f3e4e80314c3ed144b39f62a83944da0"
+      },
+      "layer37.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "2523809ed380f38408ed0fcaf3b17e892d30e81818d3870c125a57e3eb705d81"
+      },
+      "layer38.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "17cf0cbbd1002ac3dc13d99b983257c4753094a6b3a223c38aeeba5f088a6e20"
+      },
+      "layer38.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "79c149346e11fd510ec42fafb4d66cbc8a41a5a0992797f6d9b8b21f01e2e90f"
+      },
+      "layer39.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "8ca29830fee3ad3452a2de7fbbdc47574aed8211657bc63e9b7ae0797375355f"
+      },
+      "layer39.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "995172bc25c05bb41dcbc4e95905bb9501ec5a4fb9da065aecf40f3e50b720d7"
+      },
+      "layer40.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "049ac786f14d389b0e2e97b5990acf508bb117fc0a6fdd61beceeb882c72381f"
+      },
+      "layer40.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "0cae8f1250c5f2a1166a5c63c8ceefa7ab2b40a7dd5d0220bce272fabd53474a"
+      },
+      "layer41.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "1e8b10c9ed6aa661eb0443f7c1a5a6a7cddccca60a02029029a06d141d03da49"
+      },
+      "layer41.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "c11e5a6053ced50811851a299f48a5b0e99814fbb06d15184b39e80a73d3aca8"
+      },
+      "layer42.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "9ba49ae6b67bbe1cd29ba163fc94cf867deb9dce16bc1ee9a90ae1e3e74c89e8"
+      },
+      "layer42.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "7a4f60ebc6a1fe31730a2e193fa685b64d9f84ce2f1db438c5804acdd39b871d"
+      },
+      "layer43.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "3ae166a50d08e48e47d68e5b0fa4e439633a4cda380da3865ee21dd92dfd5853"
+      },
+      "layer43.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "188cf5f2423827de5731df384387747a76810456f081a59eb3ffb09b222977d3"
+      },
+      "layer44.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "2e0a33a4a14bd640cb2f15c504ffe65d998e5ccaf6f886f21d8fea83534f1397"
+      },
+      "layer44.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "385a179388dcff723737fb9804c75bda33247762373d88b1c175dd5d67c3c38a"
+      },
+      "layer45.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "3309cc5b193c51825ec0a1b8403abbc93c86fb98c8081d1595ceaf999713ae8a"
+      },
+      "layer45.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "8f0ab7eccf31948c38813a048a02fbc63793251e8a7c1e16d7b1de2ad9f2b3aa"
+      },
+      "layer46.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "edffe74a3f53bd4afe4a147b4d57c450499415f76a532ca127df3e232689b574"
+      },
+      "layer46.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "939056cddad981499e034082c6d5f5a937d7cce9673863221da3c9e3654c3529"
+      },
+      "layer47.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "fdd7e049974a77909dc41041ba3eaee6f07ac7b4ff7c60224880586095ee3dbb"
+      },
+      "layer47.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "24692f0a2fca44f4e799890e0edcecd1690bd81fdccba91bf29419ff1fdb5d43"
+      },
+      "layer48.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "7c17a219d2cc7cc47f60eabd9f4323edd588b42f2b7fa99fdd08866ba28d3a3a"
+      },
+      "layer48.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "1b138ba936fee92b3c3a4dd381e298273f5cb56bea0046ed1d7e7d1561fe82a0"
+      },
+      "layer49.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "419e34720f8efc4076fbc9fcdda9c8368fc6adec34605753cb7c25cf07ec017b"
+      },
+      "layer49.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "320a7446086cc16149aabf3af40eea7a9ed453dd316a8813f11c13a1d48bf05f"
+      },
+      "layer50.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "ad9abdf34b9b258280772cf1d5e45c48f3a45a609648863e54e3e3dc848fd31e"
+      },
+      "layer50.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "82c2eda1169c8208cfd7284bf96d5e45375b7eb85c614bf8480ee82070f269d0"
+      },
+      "layer51.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "47486a0696febffe3d3d9385001b9e53f707d394d02f3bda21a73485099e8591"
+      },
+      "layer51.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "5ebe85309f6c49164dc3d7a482df31f1269690aacea9033ef8406e3dad05537b"
+      },
+      "layer52.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "bd69890eee9a50566e56a2e325bbb3184052f7abc7b1a794ff57f8c4688d9a42"
+      },
+      "layer52.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "246aac09aa2fd1f82418e14220ee904a82fa1db8172d099ccb552f22eeeba31c"
+      },
+      "layer53.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "a629c3187bf65eb76ce0479731786358cf871671c11fc1630479c739afc95bc3"
+      },
+      "layer53.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "03f524d4f0fbf1339d3b0d6ec6fea47d1fe693a31691bf4031f297b5d8a97b65"
+      },
+      "layer54.in_proj.e8": {
+        "origin": "overlay",
+        "bytes": 19016655,
+        "sha256": "367d43aa611ae810e36f0f28c1c41b8c57a5a719749750fdbee28d2298199217"
+      },
+      "layer54.out_proj.e8": {
+        "origin": "overlay",
+        "bytes": 8406718,
+        "sha256": "bca37fb0bae5b43ee0064577bcbd69483b757c951007d1b6debd4a7f7b586f43"
+      }
+    },
+    "resolved_file_ledger_sha256": "8ccbdd93ce233fc02c981ca601156b28f61d6b742edb59822c8389b2090f079e",
+    "tokenizer_bytes": 4573028,
+    "logical_candidate_with_manifests_tokenizer_bytes": 2891464897
+  },
+  "verify_only": false,
+  "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "evaluation_source_sha256": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+  "decoded_hash_helper_sha256": "23d8dceccda91348c614fefaa3e763910b3c28afc37db4410554e7b90cefc31e",
+  "codec_source_sha256": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "execution": "prefill",
+  "cache_dtype": "FP16 for MK generation; SSD scan for prose prefill",
+  "declared_dev_gate": {
+    "candidate_PPL_at_most_parent_times": 0.99,
+    "normal_MK": "correct count must not decrease",
+    "target_removed_MK": "correct count must not increase",
+    "limitation": "24 public dev cases are a screen; near-zero baseline recall cannot establish preservation"
+  },
+  "historical_dev_protocol_reference_sha256": "a5502e5cdccfeccc42baf4e57772e257a75cc61c329651818989b3e6b8ffed8e",
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-2-raw-v1",
+    "split": "validation",
+    "revision_argument": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_fingerprint": "51d84d52d095f90d",
+    "document_join": "two newline characters",
+    "text_sha256": "b44fb967f92b525731216a507d1fbc44b97446b7ef0a2b4d1a893f81f1bbc29e",
+    "token_stream_sha256_int64le": "5bbeae08ba8eb34a482f3b6e9d17b182e67229dd14b2853d87f89fc72e5ad027",
+    "total_tokens": 264765,
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "automatic_special_tokens": false
+  },
+  "parent_package_receipt": {
+    "format": "E8/W5 raw package decoded to FP16",
+    "manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "verified_files": {
+      "config.json": {
+        "bytes": 462,
+        "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c"
+      },
+      "e8_codebook.bin": {
+        "bytes": 1024,
+        "sha256": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce"
+      },
+      "embedding.uniform": {
+        "bytes": 671744079,
+        "sha256": "038d44d2039659de786b743bae6858fd0c8e65be85a1843bd5eb1c36f672ca68"
+      },
+      "layer0.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d9f7352c9bbb620f26b4d17130e75f784d3c3b6e3ba8d75c0c2416e9cb4bb963"
+      },
+      "layer0.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "521ef83aa0694f5f3b62d41a579cc4b72cb2e13be1cb07e69b5d7137612e14fb"
+      },
+      "layer1.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e3b3b490299aa0ac1c91d2dc273c8de8892e73f28d068b4f2a5b170c588952ba"
+      },
+      "layer1.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "9fcd9fe47220f99b633253827c03c92d467d2cefa7421b8f27743ee2684062ec"
+      },
+      "layer10.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e293d53b90803db28b0e961557b845edfd6cb38b8bf2552f1818ed9f93df939b"
+      },
+      "layer10.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "ec7e7799cdf58cf3df30be7d7c8081da8de9fc376e81fb15b885a0f7ad606273"
+      },
+      "layer11.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e82b75d632e77d39f5382b95086f2b79db6cd74ea7364db410ee31e557c764cc"
+      },
+      "layer11.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "e95443b57b8eb624674433b138dc84ae4392683599de5a53feb6797618f1ef07"
+      },
+      "layer12.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "9676c53b749fb53e1c0c8eebea24d4f85f34ab4e42974f476aef2635980b53ad"
+      },
+      "layer12.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "7bc59adf0ee878068b09fbf751f362c62e0acc0769e61a471649a6c30477ec51"
+      },
+      "layer13.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "e6b227eb4b295d377629097e9db4bffcbb36dbb2bca3f8cf3923de339db07692"
+      },
+      "layer13.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "900e90ebab1165685346018a63eb83abd285d0141d0838c4df9f961595d11e5a"
+      },
+      "layer14.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "053130870977f39797d4368624888969b2b13a88d407b01283eb3963cd52867b"
+      },
+      "layer14.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "195c6226bcd5acc04f3c9d2b63323358c51f06ded5a074aaa09ca59f20f0ceae"
+      },
+      "layer15.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "071070416b9f527eb33eb17258fdab3207edab65c4a5c573a6c7aed73a424afa"
+      },
+      "layer15.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8f96acc32d6b05a8293e6d932180ab468bc18a9116b1c129f313c98979547a70"
+      },
+      "layer16.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "930909d6c708d2d8801119b6b5c9f2e261dcc829407154a88a40e0e178cfe71b"
+      },
+      "layer16.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "45d01bfc97a6ee5a40a90579d874f53aac8b0616aea52ea18264878ce8a86b57"
+      },
+      "layer17.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0f951ca5ea1dfd40defeb3af2893082e67b18cc041e71d01f47128c5dd964742"
+      },
+      "layer17.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "dd407aa3a154c5b9c05f2d77080325eaa677f43ff633c6a4634d9518cfdfe5eb"
+      },
+      "layer18.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "412eb8b779d7444aef5e3b3b6a67b1fb102e7fdefc48d2f1839a14c20eabd50a"
+      },
+      "layer18.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "639a80ce0c6d59731c774c7675e64d2ac04f88f0294fcaecbe4bf01286067f4f"
+      },
+      "layer19.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "04d6657f8fa787924e1fc91a3aaf6f792b6d0362e4ca6eb15bc42567a3fe87f9"
+      },
+      "layer19.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "75adf6fe0964adc323eb9c4e84d0a48b34cc7f5332f36eccc481f10adbdeb2a8"
+      },
+      "layer2.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "559cb52293069b83d3afe4dfd1764b7475e452c615c7bbfce1043b7c0405b4c4"
+      },
+      "layer2.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "75ddfc49e62bcf84f63f3ec1c3c5568afd20b55dda6d2b87ff46325a97b0c8ce"
+      },
+      "layer20.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "6f75ba3f78d8d41a09d26c37e244dee1f88765bbfcdad12f5f9247e177a094ba"
+      },
+      "layer20.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d3af68f4e4ed3fbf642fb4e79d01358708207a95ee5923fb19628518938bc048"
+      },
+      "layer21.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "786143f77a3d9231b634ab5d14877d0814787dff3e5281cbe07c1f01f54dfd62"
+      },
+      "layer21.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8d0e019b1d1ee1037ccdb78d5058a5b8602ad48bf375ff6a196ec928e708071a"
+      },
+      "layer22.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "50f190935fa282411bdd81b66359bf0e83d75c3729e4e5e0fc1970d51bbc1561"
+      },
+      "layer22.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "07e922fbf147ddf4930ff12e9b4488c43684b737339671c388d7277a80011ec4"
+      },
+      "layer23.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "cfb05edb20e635ba3fb3511cdc002827e11fbd176b7d16ba721604193db44d32"
+      },
+      "layer23.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "47d710a8951f0db57f66a32dfceb7d228b55ede5f55ed5447b6e73362e01966d"
+      },
+      "layer24.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "9dfc53e8d04eb76506a26e6c2cd79cae8a183586bb4cc246b440f261f2809f48"
+      },
+      "layer24.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "98d7bfb990bdc96ddcabcf34572f93723aa9ef26de382451c13df4ec417146fe"
+      },
+      "layer25.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "b17501a9106c3a076eb442fd4c0cb9384557acd3b793410ea0d37a73ad4cd000"
+      },
+      "layer25.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "f273ff073eb0e4987443c39a68bdb81b2d132e10db417a0aa1427676f87ffd8d"
+      },
+      "layer26.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "726bfbeb183304d556959f9daa642d63b9ca2d66d7b98c6e2cb9920205c2c325"
+      },
+      "layer26.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8d3e9df4fc208b3bc174cdb9c4213d3117f32123a814a3877cf2950af1d7cd0b"
+      },
+      "layer27.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d3acbb4d5f1e27ba2700258b24c3691b6a485e5dda9e94e26b135995ba5d6dea"
+      },
+      "layer27.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "a70710813e2032414c47e8badb3c25652cacfdce14ffaa87a2c4e375fd2febaa"
+      },
+      "layer28.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "41a7a58a2170a9333beade5531e50066f4236fb1e1fcdcbe67bb44fb7af98d78"
+      },
+      "layer28.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "45b16b4f7b63a49512bc2f89d4e9e50a78e901faa281d95abce516535baf7690"
+      },
+      "layer29.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0db524e39b47a0655ffd0ff1df829920ccdd573266d67bd5394473cfaf9d62b4"
+      },
+      "layer29.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d952d522b0c499e6431af076f7ea0973757eab3237556b980c436e5a5deed08f"
+      },
+      "layer3.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "01594381462d6ddbec4730d248d88d5620ffba74abfd0bf84d0bcbfc4140c606"
+      },
+      "layer3.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "9980c41736c84e57216df9d4d29907960d9a208270c1c6479c937eba9d8db9be"
+      },
+      "layer30.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0ca11b1acc96d419e02a8f9ce6afb8f72493543ebcf4a160c4fd831d1dad9da2"
+      },
+      "layer30.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d820ccf1fa4851ad7a00d554a5c304eefa7db9a73dd179394344c54c91e87d43"
+      },
+      "layer31.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "993a1ef103af50fe4ed41507b8f50043a7e315dbe27645fbd5ccd82dec8f0c38"
+      },
+      "layer31.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "594f386cffbdf3c5cf785e69c07798342e2bb919b30f6ae2d6e4a41ee0a61280"
+      },
+      "layer32.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "100e966681bc8f7788d751d0fcb30846fb11b82d410c087347e8c2042be03817"
+      },
+      "layer32.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "798384906b1ccb64f094c9f5345f09d12b6c97b6caf97466ff169376d7dcbf76"
+      },
+      "layer33.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "49e096dd1b965bef0665b5b8383e4c211bfe6bcd0b255dd87a01ee778977fb6a"
+      },
+      "layer33.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "8dfb511b61a27318309ba368e7283c0f6645d111380529ccb2c2cf6952fb26ea"
+      },
+      "layer34.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d887808a0827d8fa3b360a00337e4a6df832478aebc111646ea8b4f244bfa830"
+      },
+      "layer34.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "f2f90e86112a11b66a7f4b2679b3a7675be5ae436817ee76748a994bdbe9e8ab"
+      },
+      "layer35.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "75f7e7517e4e15c2cc55a9486134febc8dcf99a7d8910db995a91973ae10f0f5"
+      },
+      "layer35.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "1bb2b8bc9d9633d7bbb359638ad5b57c085f318cdd52a460f4b68a982e24507b"
+      },
+      "layer36.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "acec9445bdfd7002e86379e6937e5f8a36b78fb58f5fc68776329abaa09c3f2a"
+      },
+      "layer36.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "889dffeaee6509414e13ce5da5ed4d401401fb1c98068f9d3efc08dd15920038"
+      },
+      "layer37.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "8daac0f7f07ba02722042726a8ca8586b05a709e8474776005e01391aef2d040"
+      },
+      "layer37.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "d4819c1d7da3348e70163f1fa5c47a3b0886cbb0391b5d68e272683516d57f94"
+      },
+      "layer38.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "a44d33dfe23080cf8ae055340e929a21f9203ee314279d9b5e6aaf74315b29ac"
+      },
+      "layer38.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "033c7c8385d5d430ac3a272c26a898e40a3dabc98e23ba24ce740c4d9811faa5"
+      },
+      "layer39.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "dc7dd24ef0d340a0363439fbf03fe7194b703c62d4b464f7204512260ddc1203"
+      },
+      "layer39.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "96d48b0407088200e03ded203c94473cb101aa5ca98836bce7dd2f21415b5bb5"
+      },
+      "layer4.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "0350b10bb3e25b36df518f5ce754a91661dbfeee7ead4e9433c8fbbe09786e2c"
+      },
+      "layer4.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "7b9009c6c4f78fa3f77d8fc751a2a937643b97d6dbdca83ebaeb61f44c0e68d2"
+      },
+      "layer40.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "ccc650cb662ebb4bec700ae0ab50f1c1a45cb391c17311f084d0103e239d0de7"
+      },
+      "layer40.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "20160d7a3bd0862206de99f06318155b24e2bd90c6afb4a6ada556ed72b7e4b1"
+      },
+      "layer41.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "60765008c93242bc8548eacc700d3ba7f8ead577a1b769b73839134b0bd160ec"
+      },
+      "layer41.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "14363bbfc5ba3f7e876ae7d0db649a008b2d36e53d5a1080e7fe980ab5276611"
+      },
+      "layer42.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "fcbd72d3f30af3028f0ac5f6462ce05ca5adee56a611e592c80414364e5b55b3"
+      },
+      "layer42.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "487c6505a9072477cb52d8163f9cbcf313ba99ca05272f30b6020c98e90a9f08"
+      },
+      "layer43.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "059101a4836252f4b67f0f7d6f597ed1f5450c1aa93a262e578b2562bf39ee7d"
+      },
+      "layer43.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "190dbffae69b8468a3bff03051f5770fb18e78a69ec1d27d5d1a5434b4e3287d"
+      },
+      "layer44.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "fc0f5795e79ad7f421299cffbc58de1aff0ce3fcb0d74497baedabeb54d3247a"
+      },
+      "layer44.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "49ac0a6d50a2b23c1b1a83d594660b73320faf0bfbc5cf20a17e20eeb3602979"
+      },
+      "layer45.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "ac0013e9565740209affaa587da77608b212dea7028de911fef59e7ff549289d"
+      },
+      "layer45.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "dd3469e1edda156c92d63779c1cf8448e0f5e6e55ad7f65ebc4dddf5c08aed13"
+      },
+      "layer46.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "dbfe46d951fdc933273b844c36b7f20b1051b1b8d5b0e9f7f049a3c303742ff4"
+      },
+      "layer46.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "bec5727fdd2f13bd5c50e23cad9c050f7d685db348e07bbe6dbc5ac08dddccb4"
+      },
+      "layer47.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "25bdeced69d48de1a7d32ef3610ba3536c26b575fa769f98d1ccdabc06a8b26c"
+      },
+      "layer47.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "84f54317e7eabddb119dd34c31325b81b589d251506b40065cabb9e397d38618"
+      },
+      "layer48.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "380e929721a0f455b311d20222a509fae8101f83d6a393ba41dbf7711c4d812e"
+      },
+      "layer48.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "fb04bc61fee6e5287e8690456da96761ff0d79fe32cde058d7ef915021e7a1ec"
+      },
+      "layer49.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d875ed8e8f32d92c925b24f58886b0d436c0890ffa2aa750bd4b3a0ae3ee411d"
+      },
+      "layer49.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "5c7ddb03fe88b5b3db3da3d08a2d4b81b33d4589c671084de8ab9602640e64f7"
+      },
+      "layer5.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "f4d726a1f1dd642f21a6719709347b9de77273061174ce7ae9e4134391127e9b"
+      },
+      "layer5.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "caab619b217f97c9e7865ec40b35267a474faae26487ffcf0f39180f90ea333d"
+      },
+      "layer50.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "d6e2786ff98594d5953c4fd28de0113d47bec1de0eb405ebaca3053ccc8c2f9d"
+      },
+      "layer50.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "f0c29af4c20c18791257af77b71ecc375ed6f3e6146e4667e1cf063cddd9f116"
+      },
+      "layer51.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "c4a2b73a1010744e1c048c64a50a2624b46764ae2371c5d5e24ec145ea558c02"
+      },
+      "layer51.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "66d6027804a9f9da53b509678c61c383224e264cac0ea0ed50f9cca2c30c970b"
+      },
+      "layer52.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "6b6666e6ea53479b184991a506bfc03c27604ffdc20ae37a42d883a8c849b1d3"
+      },
+      "layer52.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "85a718e3efd72bdbac843ecf448880816ae8c8d9f316944716d87274597d58ca"
+      },
+      "layer53.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "685670e0a056b94018cd43fe07b908963a0913b99b5e6c80543e901a40618145"
+      },
+      "layer53.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "dd45fba958c4752038f212eb0d1cd2359849c7ca9746b3f6016d076173327d1a"
+      },
+      "layer54.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "610eeb3f011c366321c0f632cc2b83cd1e1cf72ae0d56e6e9ca55cbf1e129a31"
+      },
+      "layer54.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "845383a65dec2eb157ddf4662b0f501fb4db59fd737c2ca56aa5917ebde6d1bc"
+      },
+      "layer55.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "baef19318f0bd852c20c351588ca5f9692a37a5a194671dd7f7f50a542b2d2ac"
+      },
+      "layer55.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "83212d462a311cd1af94656182be2d00b75a0b74da2824892fc14fc8a12e11e8"
+      },
+      "layer6.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "dde527c3174140d129cdcbe8e5d9f6762e9592be377516d26b907832f403b9e7"
+      },
+      "layer6.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "e6629903b316bf20644893ec3d9935ec458472794bcc2f7fbce712af01770253"
+      },
+      "layer7.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "88a6a0b81996b72abb8c6abf018d5bf1f9616be16cd5d65803bb64b837aa2ae4"
+      },
+      "layer7.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "13721e3ab7a83fc71211dfba9126db7d6a2f7b71346942f91ec957fcc2d9a8a1"
+      },
+      "layer8.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "c38080dc193e798599bb1e4c7833cfc6565e97de9a0c09cae94e30e2006ded8c"
+      },
+      "layer8.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "ba52f4eae7e4fbf4ae48d0d3e33fa556991105e9b542cd6b0d1ec95875a82f4d"
+      },
+      "layer9.in_proj.e8": {
+        "bytes": 19016655,
+        "sha256": "bd80cbcbd0aaf342e542196bcff68c3d31cf35c7c3333dd7ddbc18c6ebba7f16"
+      },
+      "layer9.out_proj.e8": {
+        "bytes": 8406718,
+        "sha256": "04cc564fd1d674a70401dce370efab14dd770327c38b411a6b34eed3e376b5f4"
+      },
+      "lm_head.uniform": {
+        "bytes": 671744079,
+        "sha256": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98"
+      },
+      "other_fp16.pt": {
+        "bytes": 7283930,
+        "sha256": "c114c632eb38a81b7927c90aa20d289528992049bf1f9831a43a1291721d7b15"
+      }
+    },
+    "verified_file_bytes": 2886482462,
+    "parameter_count": 8236999680
+  },
+  "parent_dev": {
+    "ppl": {
+      "ppl": 9.237163950650674,
+      "nll": 9106.370178222656,
+      "target_tokens": 4096,
+      "execution": "prefill",
+      "windows": [
+        {
+          "start": 0,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+          "nll": 1759.6221542358398,
+          "ppl": 5.5754944834505835
+        },
+        {
+          "start": 87913,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+          "nll": 2805.0748138427734,
+          "ppl": 15.476625801040592
+        },
+        {
+          "start": 175826,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+          "nll": 2377.655601501465,
+          "ppl": 10.195325167725429
+        },
+        {
+          "start": 263740,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+          "nll": 2164.017608642578,
+          "ppl": 8.275492581361501
+        }
+      ],
+      "elapsed_seconds": 6.946486234664917,
+      "cache_dtype": "SSD scan internal precision",
+      "cache_bytes": null,
+      "logits_chunk_tokens": 64,
+      "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+    },
+    "mk": {
+      "protocol": "public-mamba8-mk-v1",
+      "split": "validation",
+      "execution": "prefill",
+      "cache_dtype": "float16",
+      "prefill_rounding": "at end of prefill",
+      "generation": "greedy, at most 12 tokens, stop at EOS",
+      "matching": "first standalone six-digit integer equals answer",
+      "private_resurface_comparable": false,
+      "summary": {
+        "normal": {
+          "correct": 10,
+          "count": 12,
+          "accuracy": 0.8333333333333334
+        },
+        "target_removed": {
+          "correct": 0,
+          "count": 12,
+          "accuracy": 0.0
+        }
+      },
+      "cells": [
+        {
+          "N": 16,
+          "template": 0,
+          "condition": "normal",
+          "correct": 1,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t0-s0",
+            "validation-n16-t0-s1"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 0,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t0-s0-removed",
+            "validation-n16-t0-s1-removed"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 1,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t1-s0",
+            "validation-n16-t1-s1"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 1,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t1-s0-removed",
+            "validation-n16-t1-s1-removed"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 2,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t2-s0",
+            "validation-n16-t2-s1"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 2,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t2-s0-removed",
+            "validation-n16-t2-s1-removed"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 0,
+          "condition": "normal",
+          "correct": 1,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t0-s0",
+            "validation-n64-t0-s1"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 0,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t0-s0-removed",
+            "validation-n64-t0-s1-removed"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 1,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t1-s0",
+            "validation-n64-t1-s1"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 1,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t1-s0-removed",
+            "validation-n64-t1-s1-removed"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 2,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t2-s0",
+            "validation-n64-t2-s1"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 2,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t2-s0-removed",
+            "validation-n64-t2-s1-removed"
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "id": "validation-n16-t0-s0",
+          "N": 16,
+          "template": 0,
+          "query_position": 0,
+          "key": 127355,
+          "answer": "613677",
+          "condition": "normal",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "56e05dd4a92ec1bc55ad1a3c3a8c358b711e75a365c1f9f442f756316d3d230f",
+          "prompt": "Key-value records:\n127355: 613677\n117315: 628324\n114692: 601833\n176128: 677697\n141695: 615152\n113133: 627953\n119870: 660951\n117334: 661554\n148823: 634961\n102744: 631773\n139393: 658048\n134912: 641579\n130526: 603598\n103422: 656437\n136480: 602754\n160871: 679793\n\nLookup the value for key 127355.\nValue:",
+          "output": "613677\n\nLookup the value",
+          "generated_ids": [
+            251490,
+            251574,
+            251525,
+            251556,
+            251574,
+            251581,
+            251581,
+            14,
+            14,
+            155786,
+            276,
+            2184
+          ],
+          "prediction": "613677",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t0-s0-removed",
+          "N": 16,
+          "template": 0,
+          "query_position": 0,
+          "key": 127355,
+          "answer": "613677",
+          "condition": "target_removed",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "6ebf0fb04f3bea74d82afa771a5d814f6182aeaa4d4258b725758003258b6094",
+          "prompt": "Key-value records:\n190000: 690000\n117315: 628324\n114692: 601833\n176128: 677697\n141695: 615152\n113133: 627953\n119870: 660951\n117334: 661554\n148823: 634961\n102744: 631773\n139393: 658048\n134912: 641579\n130526: 603598\n103422: 656437\n136480: 602754\n160871: 679793\n\nLookup the value for key 127355.\nValue:",
+          "output": "600000\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251521,
+            251521,
+            251521,
+            251521,
+            251521,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "600000",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t0-s1",
+          "N": 16,
+          "template": 0,
+          "query_position": 15,
+          "key": 119356,
+          "answer": "663240",
+          "condition": "normal",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "73e107dc1d6615cc660d73d69c75ce5e2a46d221a52657b3420be5be409ed07f",
+          "prompt": "Key-value records:\n106296: 633341\n178216: 647626\n156400: 615570\n164889: 620180\n168523: 655752\n128851: 653483\n155001: 633801\n171574: 650274\n153586: 661896\n123381: 660549\n124877: 610230\n140655: 666673\n117844: 615514\n131582: 632095\n120154: 670716\n119356: 663240\n\nLookup the value for key 119356.\nValue:",
+          "output": "\n119356: 663",
+          "generated_ids": [
+            14,
+            251525,
+            251525,
+            251561,
+            251556,
+            251557,
+            251574,
+            251541,
+            251490,
+            251574,
+            251574,
+            251556
+          ],
+          "prediction": "119356",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t0-s1-removed",
+          "N": 16,
+          "template": 0,
+          "query_position": 15,
+          "key": 119356,
+          "answer": "663240",
+          "condition": "target_removed",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "a69c83fe0e2762002712c5f6c442a71e940b7fc2869f3ca911979ab5a0802698",
+          "prompt": "Key-value records:\n106296: 633341\n178216: 647626\n156400: 615570\n164889: 620180\n168523: 655752\n128851: 653483\n155001: 633801\n171574: 650274\n153586: 661896\n123381: 660549\n124877: 610230\n140655: 666673\n117844: 615514\n131582: 632095\n120154: 670716\n190001: 690001\n\nLookup the value for key 119356.\nValue:",
+          "output": "633341\n\nLookup the value",
+          "generated_ids": [
+            251490,
+            251574,
+            251556,
+            251556,
+            251556,
+            251564,
+            251525,
+            14,
+            14,
+            155786,
+            276,
+            2184
+          ],
+          "prediction": "633341",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s0",
+          "N": 16,
+          "template": 1,
+          "query_position": 0,
+          "key": 123068,
+          "answer": "612310",
+          "condition": "normal",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "47ebd1e8462df0fb3399d8971a8fd34293730709275797dcefd26a7e2b12ac77",
+          "prompt": "Key 123068 has value 612310.\nKey 128592 has value 627093.\nKey 160187 has value 632596.\nKey 134099 has value 619134.\nKey 177403 has value 601862.\nKey 114361 has value 652929.\nKey 154201 has value 624380.\nKey 125379 has value 612593.\nKey 165718 has value 604046.\nKey 105947 has value 634335.\nKey 135598 has value 601575.\nKey 150077 has value 600805.\nKey 160625 has value 655549.\nKey 139170 has value 646970.\nKey 157527 has value 618790.\nKey 171845 has value 631674.\n\nQuestion: What is the value of key 123068?\nAnswer:",
+          "output": "612310\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251525,
+            251527,
+            251556,
+            251525,
+            251521,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "612310",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s0-removed",
+          "N": 16,
+          "template": 1,
+          "query_position": 0,
+          "key": 123068,
+          "answer": "612310",
+          "condition": "target_removed",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "dd28914871d8eeca694538e5d9a4871139707de0d548f7ac4cb7635057b9891a",
+          "prompt": "Key 190000 has value 690000.\nKey 128592 has value 627093.\nKey 160187 has value 632596.\nKey 134099 has value 619134.\nKey 177403 has value 601862.\nKey 114361 has value 652929.\nKey 154201 has value 624380.\nKey 125379 has value 612593.\nKey 165718 has value 604046.\nKey 105947 has value 634335.\nKey 135598 has value 601575.\nKey 150077 has value 600805.\nKey 160625 has value 655549.\nKey 139170 has value 646970.\nKey 157527 has value 618790.\nKey 171845 has value 631674.\n\nQuestion: What is the value of key 123068?\nAnswer:",
+          "output": "623068\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251527,
+            251556,
+            251521,
+            251574,
+            251577,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "623068",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s1",
+          "N": 16,
+          "template": 1,
+          "query_position": 15,
+          "key": 136718,
+          "answer": "614737",
+          "condition": "normal",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "55bf6ea2cdfcbb641b851e542d3a95274525ac9f8054cf824ef919168b86ce35",
+          "prompt": "Key 105559 has value 613923.\nKey 158871 has value 616611.\nKey 126357 has value 641835.\nKey 154523 has value 636696.\nKey 128779 has value 602366.\nKey 134546 has value 670303.\nKey 164863 has value 677008.\nKey 157012 has value 621101.\nKey 150559 has value 610747.\nKey 140972 has value 671612.\nKey 136339 has value 669556.\nKey 155244 has value 647418.\nKey 144349 has value 660462.\nKey 157751 has value 628774.\nKey 144764 has value 649432.\nKey 136718 has value 614737.\n\nQuestion: What is the value of key 136718?\nAnswer:",
+          "output": "614737\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251525,
+            251564,
+            251581,
+            251556,
+            251581,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "614737",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s1-removed",
+          "N": 16,
+          "template": 1,
+          "query_position": 15,
+          "key": 136718,
+          "answer": "614737",
+          "condition": "target_removed",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "01a7c76bfb1f95fc61ba00401426ec0ad10401bc206d1567c6658b60ab2e5389",
+          "prompt": "Key 105559 has value 613923.\nKey 158871 has value 616611.\nKey 126357 has value 641835.\nKey 154523 has value 636696.\nKey 128779 has value 602366.\nKey 134546 has value 670303.\nKey 164863 has value 677008.\nKey 157012 has value 621101.\nKey 150559 has value 610747.\nKey 140972 has value 671612.\nKey 136339 has value 669556.\nKey 155244 has value 647418.\nKey 144349 has value 660462.\nKey 157751 has value 628774.\nKey 144764 has value 649432.\nKey 190001 has value 690001.\n\nQuestion: What is the value of key 136718?\nAnswer:",
+          "output": "636696\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251556,
+            251574,
+            251574,
+            251561,
+            251574,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "636696",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s0",
+          "N": 16,
+          "template": 2,
+          "query_position": 0,
+          "key": 160243,
+          "answer": "621890",
+          "condition": "normal",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "8af7800c6ba77c3e65ce1547b3c3a8f73554ae5309c626d85ff468473370413c",
+          "prompt": "Dictionary:\n160243 -> 621890\n172609 -> 629895\n121617 -> 678795\n150262 -> 653715\n176895 -> 654709\n129062 -> 657044\n179745 -> 668471\n167636 -> 656365\n107612 -> 629987\n117981 -> 606097\n156668 -> 620714\n156202 -> 606862\n129072 -> 609610\n151747 -> 640759\n149057 -> 633377\n103268 -> 617176\n\nReturn the stored value.\n160243 ->",
+          "output": "621890\n1726",
+          "generated_ids": [
+            251490,
+            251574,
+            251527,
+            251525,
+            251577,
+            251561,
+            251521,
+            14,
+            251525,
+            251581,
+            251527,
+            251574
+          ],
+          "prediction": "621890",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s0-removed",
+          "N": 16,
+          "template": 2,
+          "query_position": 0,
+          "key": 160243,
+          "answer": "621890",
+          "condition": "target_removed",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "928496fd8c03ec73b3fc06aceff3c33afed5142c67ca316789c69f678da284d1",
+          "prompt": "Dictionary:\n190000 -> 690000\n172609 -> 629895\n121617 -> 678795\n150262 -> 653715\n176895 -> 654709\n129062 -> 657044\n179745 -> 668471\n167636 -> 656365\n107612 -> 629987\n117981 -> 606097\n156668 -> 620714\n156202 -> 606862\n129072 -> 609610\n151747 -> 640759\n149057 -> 633377\n103268 -> 617176\n\nReturn the stored value.\n160243 ->",
+          "output": "606862\n1676",
+          "generated_ids": [
+            251490,
+            251574,
+            251521,
+            251574,
+            251577,
+            251574,
+            251527,
+            14,
+            251525,
+            251574,
+            251581,
+            251574
+          ],
+          "prediction": "606862",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s1",
+          "N": 16,
+          "template": 2,
+          "query_position": 15,
+          "key": 143354,
+          "answer": "635844",
+          "condition": "normal",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "7dd16e541ce09c2d7517194668f74467d0a3e3ca93f38e3eceb93cd10bc7d346",
+          "prompt": "Dictionary:\n151147 -> 620688\n176578 -> 627222\n121473 -> 677201\n158552 -> 605585\n169933 -> 604647\n101780 -> 611980\n115935 -> 646357\n139410 -> 633669\n119139 -> 641024\n116783 -> 677594\n139432 -> 604114\n167078 -> 646385\n127131 -> 660624\n172817 -> 664584\n175253 -> 608842\n143354 -> 635844\n\nReturn the stored value.\n143354 ->",
+          "output": "635844\n1728",
+          "generated_ids": [
+            251490,
+            251574,
+            251556,
+            251557,
+            251577,
+            251564,
+            251564,
+            14,
+            251525,
+            251581,
+            251527,
+            251577
+          ],
+          "prediction": "635844",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s1-removed",
+          "N": 16,
+          "template": 2,
+          "query_position": 15,
+          "key": 143354,
+          "answer": "635844",
+          "condition": "target_removed",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "9de2e446e38f18ce372780b09a63c7526b135fdb706eba2f6c91d8b925caaed8",
+          "prompt": "Dictionary:\n151147 -> 620688\n176578 -> 627222\n121473 -> 677201\n158552 -> 605585\n169933 -> 604647\n101780 -> 611980\n115935 -> 646357\n139410 -> 633669\n119139 -> 641024\n116783 -> 677594\n139432 -> 604114\n167078 -> 646385\n127131 -> 660624\n172817 -> 664584\n175253 -> 608842\n190001 -> 690001\n\nReturn the stored value.\n143354 ->",
+          "output": "604114\n1433",
+          "generated_ids": [
+            251490,
+            251574,
+            251521,
+            251564,
+            251525,
+            251525,
+            251564,
+            14,
+            251525,
+            251564,
+            251556,
+            251556
+          ],
+          "prediction": "604114",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s0",
+          "N": 64,
+          "template": 0,
+          "query_position": 0,
+          "key": 144408,
+          "answer": "637965",
+          "condition": "normal",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "e9155e70128b3298dfaa26516bfedaca301bba1ac194c721630b5a5e3a77a06e",
+          "prompt": "Key-value records:\n144408: 637965\n154068: 662818\n154656: 632676\n101839: 627304\n176354: 640232\n112807: 633060\n171655: 622770\n175907: 621335\n120417: 666387\n111299: 612336\n143894: 651818\n177046: 675776\n140080: 648966\n136368: 648546\n136316: 625303\n164326: 652743\n170633: 677098\n163105: 629053\n170296: 610439\n157278: 667794\n165835: 660115\n127862: 667631\n114739: 646982\n100670: 670895\n111220: 664270\n166249: 641308\n140349: 634179\n109256: 649948\n176986: 660576\n148036: 663038\n150549: 661273\n146690: 615737\n109464: 616862\n135109: 632363\n133909: 631478\n152041: 610497\n122012: 648968\n143599: 611738\n175527: 620532\n175769: 629206\n110999: 603871\n107252: 625764\n140936: 656480\n174515: 601079\n128405: 646623\n100586: 624950\n156378: 601271\n134359: 611577\n100078: 673400\n147183: 602146\n159295: 603666\n140326: 602005\n149774: 621121\n111414: 607050\n118773: 644638\n112940: 642305\n133790: 678352\n154638: 625898\n138034: 603676\n174192: 613421\n120992: 601032\n140793: 667057\n155582: 656478\n174879: 664882\n\nLookup the value for key 144408.\nValue:",
+          "output": "637965\n\n144",
+          "generated_ids": [
+            251490,
+            251574,
+            251556,
+            251581,
+            251561,
+            251574,
+            251557,
+            14,
+            14,
+            251525,
+            251564,
+            251564
+          ],
+          "prediction": "637965",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s0-removed",
+          "N": 64,
+          "template": 0,
+          "query_position": 0,
+          "key": 144408,
+          "answer": "637965",
+          "condition": "target_removed",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "70ec8246430fc278f5777e5f6b2a1291caad5262c612101500cdaf1435b7af6a",
+          "prompt": "Key-value records:\n190000: 690000\n154068: 662818\n154656: 632676\n101839: 627304\n176354: 640232\n112807: 633060\n171655: 622770\n175907: 621335\n120417: 666387\n111299: 612336\n143894: 651818\n177046: 675776\n140080: 648966\n136368: 648546\n136316: 625303\n164326: 652743\n170633: 677098\n163105: 629053\n170296: 610439\n157278: 667794\n165835: 660115\n127862: 667631\n114739: 646982\n100670: 670895\n111220: 664270\n166249: 641308\n140349: 634179\n109256: 649948\n176986: 660576\n148036: 663038\n150549: 661273\n146690: 615737\n109464: 616862\n135109: 632363\n133909: 631478\n152041: 610497\n122012: 648968\n143599: 611738\n175527: 620532\n175769: 629206\n110999: 603871\n107252: 625764\n140936: 656480\n174515: 601079\n128405: 646623\n100586: 624950\n156378: 601271\n134359: 611577\n100078: 673400\n147183: 602146\n159295: 603666\n140326: 602005\n149774: 621121\n111414: 607050\n118773: 644638\n112940: 642305\n133790: 678352\n154638: 625898\n138034: 603676\n174192: 613421\n120992: 601032\n140793: 667057\n155582: 656478\n174879: 664882\n\nLookup the value for key 144408.\nValue:",
+          "output": "133790\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251525,
+            251556,
+            251556,
+            251581,
+            251561,
+            251521,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "133790",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s1",
+          "N": 64,
+          "template": 0,
+          "query_position": 63,
+          "key": 168333,
+          "answer": "656026",
+          "condition": "normal",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "2991151d35d2f36dd72f4a4f217c1574513f01762b749c965e5a58f38b7aa00a",
+          "prompt": "Key-value records:\n119353: 663147\n106060: 636916\n125327: 640589\n159531: 661310\n178366: 648203\n173109: 662714\n105023: 630773\n148647: 602276\n158276: 632017\n178347: 658326\n161412: 668195\n111817: 649480\n122315: 622353\n152409: 626134\n160704: 636785\n168943: 604961\n141651: 613513\n125480: 643493\n161133: 676118\n144117: 644351\n142013: 607372\n115307: 650333\n138583: 614558\n175877: 668731\n101995: 669769\n104842: 633353\n140028: 646875\n156632: 620954\n103057: 661728\n117172: 604515\n169893: 653420\n116309: 660658\n130258: 642804\n118248: 658415\n145222: 674784\n132168: 602638\n159431: 635886\n133046: 676651\n177317: 645423\n130950: 669521\n157720: 614842\n164744: 619786\n170147: 629820\n136691: 645977\n134898: 678904\n137071: 653692\n104330: 641033\n125812: 623604\n161158: 677377\n141055: 679347\n144163: 605342\n103510: 665741\n146434: 613357\n113882: 655557\n118363: 660786\n114610: 678013\n124587: 647304\n121437: 630895\n158743: 610755\n141190: 624813\n114364: 647219\n111455: 621617\n107643: 659051\n168333: 656026\n\nLookup the value for key 168333.\nValue:",
+          "output": "668195\n\n168",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251577,
+            251525,
+            251561,
+            251557,
+            14,
+            14,
+            251525,
+            251574,
+            251577
+          ],
+          "prediction": "668195",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s1-removed",
+          "N": 64,
+          "template": 0,
+          "query_position": 63,
+          "key": 168333,
+          "answer": "656026",
+          "condition": "target_removed",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "679b4d4a9d32443948888de98dcc66b6bf539b9dd8f933fbe157888ade94bf44",
+          "prompt": "Key-value records:\n119353: 663147\n106060: 636916\n125327: 640589\n159531: 661310\n178366: 648203\n173109: 662714\n105023: 630773\n148647: 602276\n158276: 632017\n178347: 658326\n161412: 668195\n111817: 649480\n122315: 622353\n152409: 626134\n160704: 636785\n168943: 604961\n141651: 613513\n125480: 643493\n161133: 676118\n144117: 644351\n142013: 607372\n115307: 650333\n138583: 614558\n175877: 668731\n101995: 669769\n104842: 633353\n140028: 646875\n156632: 620954\n103057: 661728\n117172: 604515\n169893: 653420\n116309: 660658\n130258: 642804\n118248: 658415\n145222: 674784\n132168: 602638\n159431: 635886\n133046: 676651\n177317: 645423\n130950: 669521\n157720: 614842\n164744: 619786\n170147: 629820\n136691: 645977\n134898: 678904\n137071: 653692\n104330: 641033\n125812: 623604\n161158: 677377\n141055: 679347\n144163: 605342\n103510: 665741\n146434: 613357\n113882: 655557\n118363: 660786\n114610: 678013\n124587: 647304\n121437: 630895\n158743: 610755\n141190: 624813\n114364: 647219\n111455: 621617\n107643: 659051\n190001: 690001\n\nLookup the value for key 168333.\nValue:",
+          "output": "668731\n\n168",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251577,
+            251581,
+            251556,
+            251525,
+            14,
+            14,
+            251525,
+            251574,
+            251577
+          ],
+          "prediction": "668731",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s0",
+          "N": 64,
+          "template": 1,
+          "query_position": 0,
+          "key": 116205,
+          "answer": "644299",
+          "condition": "normal",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "af71fce93cac0e82ad12a7405b88c1b1e4643c6186ada4b16ae96f0e5643991f",
+          "prompt": "Key 116205 has value 644299.\nKey 125314 has value 610092.\nKey 159425 has value 645032.\nKey 155954 has value 638595.\nKey 123059 has value 667675.\nKey 115495 has value 668144.\nKey 128266 has value 665961.\nKey 137732 has value 655787.\nKey 115725 has value 632046.\nKey 123917 has value 667182.\nKey 126483 has value 617397.\nKey 125002 has value 677117.\nKey 151129 has value 632720.\nKey 173091 has value 638362.\nKey 167731 has value 659986.\nKey 143403 has value 660231.\nKey 122243 has value 634636.\nKey 124544 has value 619425.\nKey 118190 has value 629767.\nKey 156646 has value 622281.\nKey 151729 has value 662065.\nKey 123615 has value 627189.\nKey 161976 has value 655483.\nKey 175995 has value 671053.\nKey 154103 has value 639532.\nKey 143155 has value 672033.\nKey 123732 has value 607669.\nKey 105640 has value 661072.\nKey 119827 has value 677534.\nKey 133766 has value 655684.\nKey 102071 has value 629655.\nKey 136579 has value 657001.\nKey 123403 has value 665107.\nKey 149798 has value 653974.\nKey 163643 has value 626748.\nKey 168436 has value 610141.\nKey 159982 has value 625506.\nKey 103098 has value 629766.\nKey 148733 has value 655174.\nKey 171422 has value 622948.\nKey 106797 has value 651748.\nKey 176708 has value 662615.\nKey 119369 has value 658614.\nKey 110124 has value 661201.\nKey 172916 has value 610230.\nKey 157562 has value 676392.\nKey 151656 has value 608144.\nKey 137638 has value 610747.\nKey 144121 has value 661160.\nKey 177454 has value 664728.\nKey 178824 has value 607575.\nKey 171931 has value 621352.\nKey 108950 has value 640147.\nKey 119843 has value 657748.\nKey 113406 has value 663931.\nKey 168248 has value 666387.\nKey 117204 has value 642459.\nKey 129306 has value 664190.\nKey 118929 has value 643396.\nKey 102466 has value 678220.\nKey 133461 has value 676073.\nKey 117014 has value 620241.\nKey 153011 has value 628571.\nKey 130236 has value 652495.\n\nQuestion: What is the value of key 116205?\nAnswer:",
+          "output": "644299\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251564,
+            251527,
+            251561,
+            251561,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "644299",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s0-removed",
+          "N": 64,
+          "template": 1,
+          "query_position": 0,
+          "key": 116205,
+          "answer": "644299",
+          "condition": "target_removed",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "bbc9b7165d24d16591bb0c1dfa129e5d826ff05b5e2f25f369d00825bb5dc0dc",
+          "prompt": "Key 190000 has value 690000.\nKey 125314 has value 610092.\nKey 159425 has value 645032.\nKey 155954 has value 638595.\nKey 123059 has value 667675.\nKey 115495 has value 668144.\nKey 128266 has value 665961.\nKey 137732 has value 655787.\nKey 115725 has value 632046.\nKey 123917 has value 667182.\nKey 126483 has value 617397.\nKey 125002 has value 677117.\nKey 151129 has value 632720.\nKey 173091 has value 638362.\nKey 167731 has value 659986.\nKey 143403 has value 660231.\nKey 122243 has value 634636.\nKey 124544 has value 619425.\nKey 118190 has value 629767.\nKey 156646 has value 622281.\nKey 151729 has value 662065.\nKey 123615 has value 627189.\nKey 161976 has value 655483.\nKey 175995 has value 671053.\nKey 154103 has value 639532.\nKey 143155 has value 672033.\nKey 123732 has value 607669.\nKey 105640 has value 661072.\nKey 119827 has value 677534.\nKey 133766 has value 655684.\nKey 102071 has value 629655.\nKey 136579 has value 657001.\nKey 123403 has value 665107.\nKey 149798 has value 653974.\nKey 163643 has value 626748.\nKey 168436 has value 610141.\nKey 159982 has value 625506.\nKey 103098 has value 629766.\nKey 148733 has value 655174.\nKey 171422 has value 622948.\nKey 106797 has value 651748.\nKey 176708 has value 662615.\nKey 119369 has value 658614.\nKey 110124 has value 661201.\nKey 172916 has value 610230.\nKey 157562 has value 676392.\nKey 151656 has value 608144.\nKey 137638 has value 610747.\nKey 144121 has value 661160.\nKey 177454 has value 664728.\nKey 178824 has value 607575.\nKey 171931 has value 621352.\nKey 108950 has value 640147.\nKey 119843 has value 657748.\nKey 113406 has value 663931.\nKey 168248 has value 666387.\nKey 117204 has value 642459.\nKey 129306 has value 664190.\nKey 118929 has value 643396.\nKey 102466 has value 678220.\nKey 133461 has value 676073.\nKey 117014 has value 620241.\nKey 153011 has value 628571.\nKey 130236 has value 652495.\n\nQuestion: What is the value of key 116205?\nAnswer:",
+          "output": "666666\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251574,
+            251574,
+            251574,
+            251574,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "666666",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s1",
+          "N": 64,
+          "template": 1,
+          "query_position": 63,
+          "key": 101447,
+          "answer": "651086",
+          "condition": "normal",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "276e49d17d7b268f01e0087d34769ce9a2ba857fa038088c8a870499dc0146c8",
+          "prompt": "Key 121409 has value 650075.\nKey 136883 has value 619210.\nKey 101288 has value 667624.\nKey 130892 has value 672308.\nKey 178758 has value 606675.\nKey 114799 has value 603778.\nKey 142412 has value 600877.\nKey 128013 has value 623309.\nKey 106811 has value 657533.\nKey 133618 has value 652711.\nKey 137551 has value 655014.\nKey 125272 has value 630606.\nKey 131703 has value 635233.\nKey 130428 has value 623439.\nKey 177444 has value 678500.\nKey 177533 has value 601008.\nKey 164939 has value 624034.\nKey 163719 has value 669226.\nKey 170604 has value 642452.\nKey 175479 has value 621738.\nKey 131603 has value 626894.\nKey 131304 has value 665727.\nKey 149469 has value 620698.\nKey 162718 has value 606230.\nKey 117655 has value 610935.\nKey 175664 has value 610955.\nKey 123537 has value 619201.\nKey 149769 has value 661712.\nKey 119330 has value 632766.\nKey 126520 has value 657755.\nKey 163054 has value 657989.\nKey 174691 has value 614440.\nKey 179944 has value 616637.\nKey 113650 has value 606043.\nKey 111570 has value 610361.\nKey 155284 has value 637461.\nKey 137880 has value 676058.\nKey 127931 has value 611495.\nKey 137966 has value 664604.\nKey 106804 has value 667725.\nKey 156843 has value 637193.\nKey 144700 has value 618849.\nKey 126967 has value 616746.\nKey 158593 has value 615807.\nKey 149083 has value 651016.\nKey 134190 has value 662907.\nKey 134750 has value 601926.\nKey 150410 has value 665282.\nKey 114676 has value 612384.\nKey 148569 has value 661106.\nKey 122347 has value 644578.\nKey 138025 has value 654614.\nKey 153493 has value 600380.\nKey 137071 has value 637483.\nKey 128675 has value 664656.\nKey 160998 has value 611124.\nKey 164019 has value 661443.\nKey 101131 has value 631468.\nKey 169285 has value 660904.\nKey 173980 has value 634649.\nKey 164659 has value 647422.\nKey 149380 has value 651665.\nKey 172324 has value 614216.\nKey 101447 has value 651086.\n\nQuestion: What is the value of key 101447?\nAnswer:",
+          "output": "651086\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251557,
+            251525,
+            251521,
+            251577,
+            251574,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "651086",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s1-removed",
+          "N": 64,
+          "template": 1,
+          "query_position": 63,
+          "key": 101447,
+          "answer": "651086",
+          "condition": "target_removed",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "33b3ddc7678b6047a637b00db68e61ab64c9d308403c0ea1e782d05333bb6b30",
+          "prompt": "Key 121409 has value 650075.\nKey 136883 has value 619210.\nKey 101288 has value 667624.\nKey 130892 has value 672308.\nKey 178758 has value 606675.\nKey 114799 has value 603778.\nKey 142412 has value 600877.\nKey 128013 has value 623309.\nKey 106811 has value 657533.\nKey 133618 has value 652711.\nKey 137551 has value 655014.\nKey 125272 has value 630606.\nKey 131703 has value 635233.\nKey 130428 has value 623439.\nKey 177444 has value 678500.\nKey 177533 has value 601008.\nKey 164939 has value 624034.\nKey 163719 has value 669226.\nKey 170604 has value 642452.\nKey 175479 has value 621738.\nKey 131603 has value 626894.\nKey 131304 has value 665727.\nKey 149469 has value 620698.\nKey 162718 has value 606230.\nKey 117655 has value 610935.\nKey 175664 has value 610955.\nKey 123537 has value 619201.\nKey 149769 has value 661712.\nKey 119330 has value 632766.\nKey 126520 has value 657755.\nKey 163054 has value 657989.\nKey 174691 has value 614440.\nKey 179944 has value 616637.\nKey 113650 has value 606043.\nKey 111570 has value 610361.\nKey 155284 has value 637461.\nKey 137880 has value 676058.\nKey 127931 has value 611495.\nKey 137966 has value 664604.\nKey 106804 has value 667725.\nKey 156843 has value 637193.\nKey 144700 has value 618849.\nKey 126967 has value 616746.\nKey 158593 has value 615807.\nKey 149083 has value 651016.\nKey 134190 has value 662907.\nKey 134750 has value 601926.\nKey 150410 has value 665282.\nKey 114676 has value 612384.\nKey 148569 has value 661106.\nKey 122347 has value 644578.\nKey 138025 has value 654614.\nKey 153493 has value 600380.\nKey 137071 has value 637483.\nKey 128675 has value 664656.\nKey 160998 has value 611124.\nKey 164019 has value 661443.\nKey 101131 has value 631468.\nKey 169285 has value 660904.\nKey 173980 has value 634649.\nKey 164659 has value 647422.\nKey 149380 has value 651665.\nKey 172324 has value 614216.\nKey 190001 has value 690001.\n\nQuestion: What is the value of key 101447?\nAnswer:",
+          "output": "667624\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251581,
+            251574,
+            251527,
+            251564,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "667624",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s0",
+          "N": 64,
+          "template": 2,
+          "query_position": 0,
+          "key": 123260,
+          "answer": "677753",
+          "condition": "normal",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "ac29481f2eaaafb2ac7202bfadb415c5d502d797e7c84969f2a75c409cb4eeed",
+          "prompt": "Dictionary:\n123260 -> 677753\n123020 -> 638594\n130866 -> 612371\n174513 -> 660033\n150659 -> 638991\n111088 -> 641181\n116209 -> 627051\n153578 -> 628043\n169881 -> 607814\n104927 -> 649527\n112119 -> 642529\n130997 -> 633307\n172095 -> 670502\n167067 -> 640762\n120226 -> 642562\n115346 -> 649354\n163422 -> 661094\n166888 -> 601368\n139141 -> 614230\n163929 -> 676217\n152980 -> 650850\n156693 -> 677638\n162696 -> 656084\n129028 -> 651541\n113273 -> 639522\n111680 -> 645946\n122865 -> 668357\n179924 -> 662185\n106825 -> 627195\n169039 -> 648092\n116531 -> 620425\n139587 -> 654877\n131689 -> 664332\n128456 -> 659073\n162863 -> 606775\n109159 -> 608720\n146120 -> 648771\n146619 -> 600002\n110555 -> 615874\n140687 -> 665970\n164270 -> 644219\n104469 -> 611006\n109542 -> 623250\n166694 -> 611370\n146570 -> 633660\n111862 -> 660491\n121890 -> 676375\n141006 -> 671913\n102971 -> 640256\n113256 -> 646152\n149531 -> 620370\n111679 -> 676747\n122710 -> 659444\n147267 -> 612144\n152502 -> 613680\n116138 -> 601843\n161373 -> 637985\n105616 -> 600980\n142345 -> 633710\n123152 -> 618148\n177815 -> 641254\n130541 -> 661120\n124614 -> 629957\n155697 -> 606968\n\nReturn the stored value.\n123260 ->",
+          "output": "677753\n1230",
+          "generated_ids": [
+            251490,
+            251574,
+            251581,
+            251581,
+            251581,
+            251557,
+            251556,
+            14,
+            251525,
+            251527,
+            251556,
+            251521
+          ],
+          "prediction": "677753",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s0-removed",
+          "N": 64,
+          "template": 2,
+          "query_position": 0,
+          "key": 123260,
+          "answer": "677753",
+          "condition": "target_removed",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "1bf44569fdaef6144c1de11c6eea0ba6e5b038d7a7437be28f2ec9f913eb8db2",
+          "prompt": "Dictionary:\n190000 -> 690000\n123020 -> 638594\n130866 -> 612371\n174513 -> 660033\n150659 -> 638991\n111088 -> 641181\n116209 -> 627051\n153578 -> 628043\n169881 -> 607814\n104927 -> 649527\n112119 -> 642529\n130997 -> 633307\n172095 -> 670502\n167067 -> 640762\n120226 -> 642562\n115346 -> 649354\n163422 -> 661094\n166888 -> 601368\n139141 -> 614230\n163929 -> 676217\n152980 -> 650850\n156693 -> 677638\n162696 -> 656084\n129028 -> 651541\n113273 -> 639522\n111680 -> 645946\n122865 -> 668357\n179924 -> 662185\n106825 -> 627195\n169039 -> 648092\n116531 -> 620425\n139587 -> 654877\n131689 -> 664332\n128456 -> 659073\n162863 -> 606775\n109159 -> 608720\n146120 -> 648771\n146619 -> 600002\n110555 -> 615874\n140687 -> 665970\n164270 -> 644219\n104469 -> 611006\n109542 -> 623250\n166694 -> 611370\n146570 -> 633660\n111862 -> 660491\n121890 -> 676375\n141006 -> 671913\n102971 -> 640256\n113256 -> 646152\n149531 -> 620370\n111679 -> 676747\n122710 -> 659444\n147267 -> 612144\n152502 -> 613680\n116138 -> 601843\n161373 -> 637985\n105616 -> 600980\n142345 -> 633710\n123152 -> 618148\n177815 -> 641254\n130541 -> 661120\n124614 -> 629957\n155697 -> 606968\n\nReturn the stored value.\n123260 ->",
+          "output": "649354\n1228",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251561,
+            251556,
+            251557,
+            251564,
+            14,
+            251525,
+            251527,
+            251527,
+            251577
+          ],
+          "prediction": "649354",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s1",
+          "N": 64,
+          "template": 2,
+          "query_position": 63,
+          "key": 110134,
+          "answer": "649843",
+          "condition": "normal",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "e3e311b814fae10c1d523103031db7e4e43262d13f1b475244fe29d8d283305f",
+          "prompt": "Dictionary:\n119971 -> 672226\n161630 -> 619673\n119060 -> 620604\n146815 -> 666153\n178063 -> 640473\n168088 -> 634956\n151888 -> 630401\n171882 -> 646802\n113032 -> 628589\n145570 -> 645812\n149232 -> 675432\n143293 -> 659146\n149430 -> 676667\n141598 -> 668119\n137638 -> 631575\n101968 -> 619710\n149647 -> 608947\n125089 -> 654432\n128002 -> 674528\n133887 -> 676971\n125515 -> 609647\n138191 -> 662760\n105717 -> 635813\n114458 -> 610102\n154120 -> 619958\n115912 -> 616654\n143990 -> 672436\n114852 -> 631717\n149884 -> 640179\n175247 -> 655402\n163608 -> 600506\n175603 -> 608317\n169125 -> 678125\n141401 -> 650644\n171716 -> 664005\n157748 -> 661817\n104801 -> 674427\n143569 -> 607765\n171821 -> 601866\n165693 -> 628492\n123894 -> 662591\n124279 -> 656458\n145819 -> 614834\n149614 -> 657753\n160878 -> 658464\n164764 -> 661836\n111534 -> 649021\n121891 -> 652854\n148686 -> 635541\n161957 -> 621927\n146491 -> 655485\n129299 -> 652397\n102644 -> 672849\n145088 -> 609648\n123875 -> 678655\n175221 -> 643285\n152216 -> 600914\n155810 -> 648603\n112479 -> 628729\n160923 -> 641507\n161246 -> 641759\n167590 -> 649202\n120167 -> 614828\n110134 -> 649843\n\nReturn the stored value.\n110134 ->",
+          "output": "649843\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251561,
+            251577,
+            251564,
+            251556,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "649843",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s1-removed",
+          "N": 64,
+          "template": 2,
+          "query_position": 63,
+          "key": 110134,
+          "answer": "649843",
+          "condition": "target_removed",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "596525566f5e51cb5acc412365e64948d1e655c57147f73bc135fe5086b4f4b1",
+          "prompt": "Dictionary:\n119971 -> 672226\n161630 -> 619673\n119060 -> 620604\n146815 -> 666153\n178063 -> 640473\n168088 -> 634956\n151888 -> 630401\n171882 -> 646802\n113032 -> 628589\n145570 -> 645812\n149232 -> 675432\n143293 -> 659146\n149430 -> 676667\n141598 -> 668119\n137638 -> 631575\n101968 -> 619710\n149647 -> 608947\n125089 -> 654432\n128002 -> 674528\n133887 -> 676971\n125515 -> 609647\n138191 -> 662760\n105717 -> 635813\n114458 -> 610102\n154120 -> 619958\n115912 -> 616654\n143990 -> 672436\n114852 -> 631717\n149884 -> 640179\n175247 -> 655402\n163608 -> 600506\n175603 -> 608317\n169125 -> 678125\n141401 -> 650644\n171716 -> 664005\n157748 -> 661817\n104801 -> 674427\n143569 -> 607765\n171821 -> 601866\n165693 -> 628492\n123894 -> 662591\n124279 -> 656458\n145819 -> 614834\n149614 -> 657753\n160878 -> 658464\n164764 -> 661836\n111534 -> 649021\n121891 -> 652854\n148686 -> 635541\n161957 -> 621927\n146491 -> 655485\n129299 -> 652397\n102644 -> 672849\n145088 -> 609648\n123875 -> 678655\n175221 -> 643285\n152216 -> 600914\n155810 -> 648603\n112479 -> 628729\n160923 -> 641507\n161246 -> 641759\n167590 -> 649202\n120167 -> 614828\n190001 -> 690001\n\nReturn the stored value.\n110134 ->",
+          "output": "678653\n1101",
+          "generated_ids": [
+            251490,
+            251574,
+            251581,
+            251577,
+            251574,
+            251557,
+            251556,
+            14,
+            251525,
+            251525,
+            251521,
+            251525
+          ],
+          "prediction": "678653",
+          "correct": false,
+          "cache_bytes": 122028032
+        }
+      ],
+      "interpretation": "Small engineering screen; not statistical equivalence. Near-zero baseline recall cannot establish retained recall capacity.",
+      "elapsed_seconds": 13.571069478988647
+    }
+  },
+  "overlay_application": {
+    "decoded_fp16_hashes": {
+      "layer0.in_proj": "c0e2fc2f1f535ba79463be736d5fcc2399fd3ebfacf700b38fc71dd6f015acde",
+      "layer0.out_proj": "b9da3ae329b444323d0b166536506632dbb334b3d220eee01f575a58f55dc2a2",
+      "layer1.in_proj": "31ff96ac1c976dc9911afd5dd83d5a18998846f63bbd5c5761cf7ad704eeff2b",
+      "layer1.out_proj": "460cec862d43ffd80b3355580591d41ce5391d8cb48e4d3106acf3d51492a5a7",
+      "layer10.in_proj": "8669bc7f247d5a09fe30017948ce47787aa4f66734db67c6f54a2db1f6bbd5df",
+      "layer10.out_proj": "ddab8dad64da0b2830211af6ad3e673fb86b2e139fe9d9f48f99ce4d2eef3068",
+      "layer11.in_proj": "7e40bea8a2abc55a96616a94d522db1d2a499f2d319624f18785a214541db009",
+      "layer11.out_proj": "a320e62ef391a8c6165e2bafeb547c58450dc35f81a14241f1b42debb8611c93",
+      "layer12.in_proj": "6a89c9860cf295d774325f443957ae1d270710d127ef2462292a553b9d28e731",
+      "layer12.out_proj": "5751190a28d509062dadce527d6d323ab25c6068cea6f8c7085a1b908a527852",
+      "layer13.in_proj": "1581a8f31e5ae80af6e46241b4758d984b89cece0cc92cb9b0dbbedccb2dd538",
+      "layer13.out_proj": "15a90f4460ee418aa331b3f5efcacb1b149cb834fcbaa5d1248fa80f34704ad6",
+      "layer14.in_proj": "28a91069d68d3b9630ce1787b87b497cac761931e96e4969ac9eb9bff0f631f6",
+      "layer14.out_proj": "89cb379b378fd6d188beaa5be4ba3c3403087b7e4a982bbd17fe7525e6aa9d86",
+      "layer15.in_proj": "fa467ea643190e7aaf42542e5269052e1b42569edea702ae53858c3c482da2ee",
+      "layer15.out_proj": "a00d9cff86a812d0ccf69cc436b4f39d4ba80a133f897e4f28706f485547f8ae",
+      "layer16.in_proj": "1c388e96d58bed2653227f7229b1241c147108a2911d43b6f3592cee1a041f52",
+      "layer16.out_proj": "38b3b98200cbdb1e7c1d5028bbd0d30e28e65f8e7128575d3dd3eae347e0c7bd",
+      "layer17.in_proj": "c9f629f4bf3340721354defa9d226d75ca2ebe9756d0ecbb310063f7d18d5cdf",
+      "layer17.out_proj": "e1d8023e35b7e05dbeb6b4790fcbdf9991953ffaf8ee1e7dc4969f48f6924056",
+      "layer18.in_proj": "98c9285b58c053ca5b3c019a7f465db6d5fd9bd5125646aa1f56a056e411bb0d",
+      "layer18.out_proj": "5773fcf812e1ab0a195a27207f13738d873ca93ee3bd298e4bbad271dd1a30e9",
+      "layer19.in_proj": "71325d8db076876b9ad1ed0c00db0ebf01c3f594c1ddda4ce1a27648b9b9479c",
+      "layer19.out_proj": "f8b4adf47a19da16049f9d8ba26ded8243392f9b5ff1f0686109e35133077859",
+      "layer2.in_proj": "df7292f0d5cb3f8b9565305aeb8fe30c97ea85851a26739a261efb8fbf0b3396",
+      "layer2.out_proj": "eb6596b1f77667d9a98b67018fba92a138ecc7e4a45cc1bcfb550773521bf863",
+      "layer20.in_proj": "792a69e19b8d0d3c1c292932affe77985527d2d010df4898d7feb10f6e0ee145",
+      "layer20.out_proj": "372c946f2bb3cb34e9f9f0520888ffeb2d5d5998318904544900876ac77d7112",
+      "layer21.in_proj": "758107a6f53cfdabb83eefa2cbe6719fb8bfde0af066f131f5092bdf3aa7b42e",
+      "layer21.out_proj": "8aec0305e92c3d55961d826ec14efc40d1f65b35aac7f8bd17d4b4261da1c10d",
+      "layer22.in_proj": "c2932b220eff7ee3d49ef44e67425b51e2ed037fbb4755bf0a905190232b11d6",
+      "layer22.out_proj": "ec79675456ad22924ef51179a1b0ca3af1c1ee731dd922dd0df10a6b32570826",
+      "layer23.in_proj": "3717fe459d79f18b668ec30842b2c3859f6de172d7643229add9da808a5ff255",
+      "layer23.out_proj": "7428f67deefd996294772df040ad315ad5d7e94f50f27df4395307fc9aa81bf7",
+      "layer24.in_proj": "927c5f7bfdafa20b009b2c0555ddf30612185e39b17d930bc7ec8e2d73ed71cb",
+      "layer24.out_proj": "c2d442e63ffd3fd9574f7dc4779418bc51e849cbaee4088f1e934d2e8539a545",
+      "layer25.in_proj": "1511f21a28be5bfd6848a6391d03d80339b9b4da0418b0737dc208d54cd282b9",
+      "layer25.out_proj": "1c742dcc75f3076afd0c9784f3766cba20c3928f1f1f2bfc49b48b9ab97494ec",
+      "layer26.in_proj": "b3732969ae08336b732d4ee2c88c4f91e436d4a72b7995a7fd9860e4025d5dac",
+      "layer26.out_proj": "1248d4d34dd733f629131e8fce659de7a961828a9d7bb7cb12ac67b3c52879b8",
+      "layer27.in_proj": "37f88707a73e65c83dee4e34deb46e04c1237348cec85e2ce072885f22b5dedc",
+      "layer27.out_proj": "b3cadb334077afdd4587c82bf8e17bb548e8b7e8bae778bf7224f1e875bcff02",
+      "layer28.in_proj": "676db1f51a4ddea366856e7fc1820554890f7ee0b0a9fde965c09c45a9bfdcb2",
+      "layer28.out_proj": "74534b59d9fbe69a1173a8281969e6365963e1118b191a9c010956fa766c0714",
+      "layer29.in_proj": "dc5e01bd773f7bc238b55ade474bf9cf55f1af47fc799b0cdfd85913c3675e85",
+      "layer29.out_proj": "e15f92314529414b6efe80c91a83f592eee0bb193deb20ec44d2a2a318c8417d",
+      "layer3.in_proj": "2f891aa36d95808401827111c07af67877a5e7504674268388f0779f929b8859",
+      "layer3.out_proj": "7dd885d513c74c7c6966d3c5121a6a3ede42007ded6a45801a8d0c960e3bfdab",
+      "layer30.in_proj": "66b6a3fbc2358ff288be676fd7ff692b08b898e399b4543fc91d3226ad84a822",
+      "layer30.out_proj": "7e4db80018e94518f439ed8f3f2a1d00bec3580204d09f0ed9ad9bf00c68da54",
+      "layer31.in_proj": "16b81f1c5d997db2e3a66704c78d1b1a01e8943918a7dd2ff8f593115080e3e5",
+      "layer31.out_proj": "b8c903eb0b2cab621a12c6990ec586bb79deeecd501031fd8871d722c085523a",
+      "layer32.in_proj": "86be615dc9767c2050b880db792487d821ffd90f329ec1e8abb52b54c011d1bc",
+      "layer32.out_proj": "c5a58ac56e3b5a35391813a7b814621d137321b94f2a0d5f43d0e94c5ac966e2",
+      "layer33.in_proj": "3eaa3ebaaaf1f015110d178ce5104d4fd1e2562aea39a47c6d3a1891f67fc3fb",
+      "layer33.out_proj": "b80052e16463fd930fa607d376a2a7e1640d2fb99c5e4b345e0dcbe5f08f0730",
+      "layer34.in_proj": "12d631919034e0e1aa9974ec3a9c553adf9ec3a14b8d0a288ff1b861c3b6cb91",
+      "layer34.out_proj": "981368d47c535e35bbc186bb40b7d4491d4352fc88237d7622866a6c5deb1f6c",
+      "layer35.in_proj": "3c7107b884f84e1df45e1dd9fabc20bff43f4ad2c9db5faca2c47d696d24f3fd",
+      "layer35.out_proj": "1d8f7c232850d31422dd881cf048c51d71adcb535cfc43b8fecbae4eb183f99e",
+      "layer36.in_proj": "e628a5e1b7884a39ae5064f2322b35b1e5918cb5823767b995a9af1e5e0edcd9",
+      "layer36.out_proj": "d10c3b245cbef3339f562edcb5e17b823b4b9c810bdfbbb0a476f9dd4aef5c98",
+      "layer37.in_proj": "7fa304c42a176c0cd6ac035277538f85a08de5c129b61ab439be267d41684e20",
+      "layer37.out_proj": "6dd0d904ade6f19e387c02fcc30bff82290f775aeff54f9ee9e29955df945a88",
+      "layer38.in_proj": "7de13041fdd971d92089ba6d85aebc58a9ef600e41741e18a466aeebb6c72ad4",
+      "layer38.out_proj": "c5ddbbc130f58de90280bb18da337814e057e0b2562c66916e98dbeb23ff84a3",
+      "layer39.in_proj": "d564e1f8796375649852aa864ff5042d9723ff6ef6ea59064004e81cf42dfbf8",
+      "layer39.out_proj": "f3750c69c57738a1ba64227a8d05b68c35e9ceff9bacf7b9b63bdaad3cfe6c8b",
+      "layer4.in_proj": "b2ea115d4dde243ae59b65f2ec560772ec9b76324fce66001c66eadb8895fdc2",
+      "layer4.out_proj": "b626937babbce7453505cc0934e624963d94e1813220ecebe6817d2fc5cbf441",
+      "layer40.in_proj": "8990050b2f34159f48383dac350ebcd7e20049da38c3d77c0e4431833a5e551a",
+      "layer40.out_proj": "0e5e04d26272458005ab979796038619ccde8b103d79740ee7139c583bbcf9bf",
+      "layer41.in_proj": "1d82ed6b00e6d2585aa67d3fb8ea47d0b8d0152c6984256aa9e6080f3b4a2ed8",
+      "layer41.out_proj": "4e03b2245286e73a2d075eb9e35a1ff1c71bcce24247b605edacbcca49e4f280",
+      "layer42.in_proj": "37f4abc71e0e3247f03f1797b499dea7ceaddddcfa02a4b0d7861524ea9fe778",
+      "layer42.out_proj": "a2369b0d5499745f9e8f087dc4342b86fa02707dae1a0625a606c80b51c9bf24",
+      "layer43.in_proj": "6dd6db2fb1a773cc70a51507d55a351eb92cfbbe0ce5cbcaa8779cb2e8f224a5",
+      "layer43.out_proj": "d1bac99a277da65155ecf52dd80bf30a60c51cca795ddfc5f2945496c8c872e5",
+      "layer44.in_proj": "1c2b92af152b789844f0d03f6e979f589107e3abed26e6eed3a3221a27e3e5a7",
+      "layer44.out_proj": "3e0b076f111c52078e715c5940bfa1bac0fa2fc94c916885624d2fddd8ce3171",
+      "layer45.in_proj": "67c68da2654526ff2c336c0856189910712c32328ed5d42ee5af68b04e12589e",
+      "layer45.out_proj": "6a636af04cee380a9404363caa22ec76d925b3d434def30b07f4d091256c03e8",
+      "layer46.in_proj": "bb4ce121a838e83e4e2e03491c84d4a8c17fe1a2e363fc98a346e8b8774c248a",
+      "layer46.out_proj": "6017c5b8e7ea3368010ca10955c589eb9c318df9a2b0b45aa90e12bd650ae294",
+      "layer47.in_proj": "371df4fbe2be3cd6e13c61807b1a9807c7893c63284929497c5d743a70cf4588",
+      "layer47.out_proj": "47638a63eec17d6607dddd45efb716547f7c206326fe177246bc59b8a5f68b56",
+      "layer48.in_proj": "7c09e5c8fd7a9ce4837b5ba93c1c4f272b76f5afe771dd202ceaa9def7aa7a25",
+      "layer48.out_proj": "3f6940dcb8c5a2816ecee0b592d29d3a3bb88bee3f9cd26e52bf7346f29b43c7",
+      "layer49.in_proj": "18009f3c0bb5277bf91e9bb2af600314fe024ca40f480c437991dabf1230a59e",
+      "layer49.out_proj": "5f85779e8f5c1f2755aa9442d214b3c62a107bc3ad222b9a373bda158926f7a8",
+      "layer5.in_proj": "2e4a7d41323f2870eddb27aea5f1d8a71b524dacb1c7b1c0b3a12377459c443f",
+      "layer5.out_proj": "6a4208bebcdbd0e43829027041fc6c0a5bc74b1d6dc41d8da6922e9eb795532c",
+      "layer50.in_proj": "0fa834aba76b6223d023883c1bb73ca65e6acdd6bce26c6c63eb859ce3907318",
+      "layer50.out_proj": "1bc64c4aaf201c3297bc38dd31dca924e59f9a529321d83b3fa5897627f9a203",
+      "layer51.in_proj": "66676ffbb7af58df49b65659f6273650865ac31e0f164b45d82eb4aa84027d13",
+      "layer51.out_proj": "7dd9e64eb9fb6e69c43fbf0af4c5e73045f6689096fb0e5762dd21c0f7f55a37",
+      "layer52.in_proj": "1a18d65256c0c873e374f5afe22cec2eedeb7820e1d5dd7ad0e7e7efbb3391d8",
+      "layer52.out_proj": "f3af2c690cdac823f551d8959c6d86c7b7e5bcbbd7b4120bdc3da8d89fd5c3d7",
+      "layer53.in_proj": "5704d2db6964da52943010e60cd5abbc50954d9ef0e1440662c20d102cbfc826",
+      "layer53.out_proj": "449f0bde533b67d1555baf4f1b75b0537948b74eb0b85438e9a078f8566f6f2b",
+      "layer54.in_proj": "30b0ed9db5af62aa9e1dece588f8a28c8139931e0f8ea7755d5cc5780c67c270",
+      "layer54.out_proj": "0416d1d6605a20fd6108cd8e5cb6133f6e71145f1bdac9af7409232697251e17",
+      "layer55.in_proj": "38ec77a678639852143da0d7fed895c93490266d190a6a88b487ded146e9004c",
+      "layer55.out_proj": "61ac3502b344a36506f5061d5e37ac61dac936079497e5279b745756a5b0d28c",
+      "layer6.in_proj": "04521b3972f5366d482b9e351c3a6799cbf9ec1d9a5d118971fe2c68258f7b26",
+      "layer6.out_proj": "e7010ade7a1566b6fd4b57fb5cca615c23877a23a8117b1700737c31e190b4cf",
+      "layer7.in_proj": "59e6680eaf6db2c8a851e3c4c519351d0f0b94403cf7e47ed0d9651d35b91462",
+      "layer7.out_proj": "8c7ba671334d7123fbcb6f678d4ba27f74680826fa8327c0db85ea2a766e3e28",
+      "layer8.in_proj": "a98088eb1db0dccd3a76cd495311668a87d65b615709122ef5e5656fc5f46163",
+      "layer8.out_proj": "3a367a8640d61d0a4e5eed95e237de14d989282045f3d8eb309e501d98c770e1",
+      "layer9.in_proj": "a6c64e1b9330157c3a6d07f831e91bca86977df0f4dad2f97c8c514f2b2cf7b1",
+      "layer9.out_proj": "c14ea34ba80099daf080470185b285803dabbb3c7e32b40c5f23a22e114fe7f8"
+    },
+    "unchanged_parameter_objects": 395,
+    "resolved_parameter_tensors": 507,
+    "resolved_parameter_count": 8236999680,
+    "coverage": "Exactly112 E8 projections replaced; all W5 and other FP16 parameter objects retained"
+  },
+  "candidate_package_receipt": {
+    "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "overlay_manifest_sha256": "5c7d912bb06e0af107218418f575d04c5b789f910568f0c847fa0322228fd035",
+    "resolved_file_ledger_sha256": "8ccbdd93ce233fc02c981ca601156b28f61d6b742edb59822c8389b2090f079e",
+    "calibration_manifest_sha256": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+    "logical_candidate_data_bytes": 2886482462,
+    "format": "Resolved E8 refinement overlay plus unchanged parent files, decoded to FP16"
+  },
+  "candidate_dev": {
+    "ppl": {
+      "ppl": 9.194595024851887,
+      "nll": 9087.450374603271,
+      "target_tokens": 4096,
+      "execution": "prefill",
+      "windows": [
+        {
+          "start": 0,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+          "nll": 1751.3848838806152,
+          "ppl": 5.530823949147783
+        },
+        {
+          "start": 87913,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+          "nll": 2806.6353912353516,
+          "ppl": 15.500230181794251
+        },
+        {
+          "start": 175826,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+          "nll": 2365.2736053466797,
+          "ppl": 10.07278774660755
+        },
+        {
+          "start": 263740,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+          "nll": 2164.156494140625,
+          "ppl": 8.276615065595266
+        }
+      ],
+      "elapsed_seconds": 0.3508169651031494,
+      "cache_dtype": "SSD scan internal precision",
+      "cache_bytes": null,
+      "logits_chunk_tokens": 64,
+      "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+    },
+    "mk": {
+      "protocol": "public-mamba8-mk-v1",
+      "split": "validation",
+      "execution": "prefill",
+      "cache_dtype": "float16",
+      "prefill_rounding": "at end of prefill",
+      "generation": "greedy, at most 12 tokens, stop at EOS",
+      "matching": "first standalone six-digit integer equals answer",
+      "private_resurface_comparable": false,
+      "summary": {
+        "normal": {
+          "correct": 10,
+          "count": 12,
+          "accuracy": 0.8333333333333334
+        },
+        "target_removed": {
+          "correct": 0,
+          "count": 12,
+          "accuracy": 0.0
+        }
+      },
+      "cells": [
+        {
+          "N": 16,
+          "template": 0,
+          "condition": "normal",
+          "correct": 1,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t0-s0",
+            "validation-n16-t0-s1"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 0,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t0-s0-removed",
+            "validation-n16-t0-s1-removed"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 1,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t1-s0",
+            "validation-n16-t1-s1"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 1,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t1-s0-removed",
+            "validation-n16-t1-s1-removed"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 2,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t2-s0",
+            "validation-n16-t2-s1"
+          ]
+        },
+        {
+          "N": 16,
+          "template": 2,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            15
+          ],
+          "paired_case_ids": [
+            "validation-n16-t2-s0-removed",
+            "validation-n16-t2-s1-removed"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 0,
+          "condition": "normal",
+          "correct": 1,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t0-s0",
+            "validation-n64-t0-s1"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 0,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t0-s0-removed",
+            "validation-n64-t0-s1-removed"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 1,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t1-s0",
+            "validation-n64-t1-s1"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 1,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t1-s0-removed",
+            "validation-n64-t1-s1-removed"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 2,
+          "condition": "normal",
+          "correct": 2,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t2-s0",
+            "validation-n64-t2-s1"
+          ]
+        },
+        {
+          "N": 64,
+          "template": 2,
+          "condition": "target_removed",
+          "correct": 0,
+          "count": 2,
+          "query_positions": [
+            0,
+            63
+          ],
+          "paired_case_ids": [
+            "validation-n64-t2-s0-removed",
+            "validation-n64-t2-s1-removed"
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "id": "validation-n16-t0-s0",
+          "N": 16,
+          "template": 0,
+          "query_position": 0,
+          "key": 127355,
+          "answer": "613677",
+          "condition": "normal",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "56e05dd4a92ec1bc55ad1a3c3a8c358b711e75a365c1f9f442f756316d3d230f",
+          "prompt": "Key-value records:\n127355: 613677\n117315: 628324\n114692: 601833\n176128: 677697\n141695: 615152\n113133: 627953\n119870: 660951\n117334: 661554\n148823: 634961\n102744: 631773\n139393: 658048\n134912: 641579\n130526: 603598\n103422: 656437\n136480: 602754\n160871: 679793\n\nLookup the value for key 127355.\nValue:",
+          "output": "613677\n\nLookup the value",
+          "generated_ids": [
+            251490,
+            251574,
+            251525,
+            251556,
+            251574,
+            251581,
+            251581,
+            14,
+            14,
+            155786,
+            276,
+            2184
+          ],
+          "prediction": "613677",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t0-s0-removed",
+          "N": 16,
+          "template": 0,
+          "query_position": 0,
+          "key": 127355,
+          "answer": "613677",
+          "condition": "target_removed",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "6ebf0fb04f3bea74d82afa771a5d814f6182aeaa4d4258b725758003258b6094",
+          "prompt": "Key-value records:\n190000: 690000\n117315: 628324\n114692: 601833\n176128: 677697\n141695: 615152\n113133: 627953\n119870: 660951\n117334: 661554\n148823: 634961\n102744: 631773\n139393: 658048\n134912: 641579\n130526: 603598\n103422: 656437\n136480: 602754\n160871: 679793\n\nLookup the value for key 127355.\nValue:",
+          "output": "690000\n\nLookup the value",
+          "generated_ids": [
+            251490,
+            251574,
+            251561,
+            251521,
+            251521,
+            251521,
+            251521,
+            14,
+            14,
+            155786,
+            276,
+            2184
+          ],
+          "prediction": "690000",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t0-s1",
+          "N": 16,
+          "template": 0,
+          "query_position": 15,
+          "key": 119356,
+          "answer": "663240",
+          "condition": "normal",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "73e107dc1d6615cc660d73d69c75ce5e2a46d221a52657b3420be5be409ed07f",
+          "prompt": "Key-value records:\n106296: 633341\n178216: 647626\n156400: 615570\n164889: 620180\n168523: 655752\n128851: 653483\n155001: 633801\n171574: 650274\n153586: 661896\n123381: 660549\n124877: 610230\n140655: 666673\n117844: 615514\n131582: 632095\n120154: 670716\n119356: 663240\n\nLookup the value for key 119356.\nValue:",
+          "output": "\n119356: 663",
+          "generated_ids": [
+            14,
+            251525,
+            251525,
+            251561,
+            251556,
+            251557,
+            251574,
+            251541,
+            251490,
+            251574,
+            251574,
+            251556
+          ],
+          "prediction": "119356",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t0-s1-removed",
+          "N": 16,
+          "template": 0,
+          "query_position": 15,
+          "key": 119356,
+          "answer": "663240",
+          "condition": "target_removed",
+          "prompt_tokens": 263,
+          "prompt_token_sha256_int64le": "a69c83fe0e2762002712c5f6c442a71e940b7fc2869f3ca911979ab5a0802698",
+          "prompt": "Key-value records:\n106296: 633341\n178216: 647626\n156400: 615570\n164889: 620180\n168523: 655752\n128851: 653483\n155001: 633801\n171574: 650274\n153586: 661896\n123381: 660549\n124877: 610230\n140655: 666673\n117844: 615514\n131582: 632095\n120154: 670716\n190001: 690001\n\nLookup the value for key 119356.\nValue:",
+          "output": "\n119356:\n\n\n\n",
+          "generated_ids": [
+            14,
+            251525,
+            251525,
+            251561,
+            251556,
+            251557,
+            251574,
+            251541,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "119356",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s0",
+          "N": 16,
+          "template": 1,
+          "query_position": 0,
+          "key": 123068,
+          "answer": "612310",
+          "condition": "normal",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "47ebd1e8462df0fb3399d8971a8fd34293730709275797dcefd26a7e2b12ac77",
+          "prompt": "Key 123068 has value 612310.\nKey 128592 has value 627093.\nKey 160187 has value 632596.\nKey 134099 has value 619134.\nKey 177403 has value 601862.\nKey 114361 has value 652929.\nKey 154201 has value 624380.\nKey 125379 has value 612593.\nKey 165718 has value 604046.\nKey 105947 has value 634335.\nKey 135598 has value 601575.\nKey 150077 has value 600805.\nKey 160625 has value 655549.\nKey 139170 has value 646970.\nKey 157527 has value 618790.\nKey 171845 has value 631674.\n\nQuestion: What is the value of key 123068?\nAnswer:",
+          "output": "612310\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251525,
+            251527,
+            251556,
+            251525,
+            251521,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "612310",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s0-removed",
+          "N": 16,
+          "template": 1,
+          "query_position": 0,
+          "key": 123068,
+          "answer": "612310",
+          "condition": "target_removed",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "dd28914871d8eeca694538e5d9a4871139707de0d548f7ac4cb7635057b9891a",
+          "prompt": "Key 190000 has value 690000.\nKey 128592 has value 627093.\nKey 160187 has value 632596.\nKey 134099 has value 619134.\nKey 177403 has value 601862.\nKey 114361 has value 652929.\nKey 154201 has value 624380.\nKey 125379 has value 612593.\nKey 165718 has value 604046.\nKey 105947 has value 634335.\nKey 135598 has value 601575.\nKey 150077 has value 600805.\nKey 160625 has value 655549.\nKey 139170 has value 646970.\nKey 157527 has value 618790.\nKey 171845 has value 631674.\n\nQuestion: What is the value of key 123068?\nAnswer:",
+          "output": "623068\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251527,
+            251556,
+            251521,
+            251574,
+            251577,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "623068",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s1",
+          "N": 16,
+          "template": 1,
+          "query_position": 15,
+          "key": 136718,
+          "answer": "614737",
+          "condition": "normal",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "55bf6ea2cdfcbb641b851e542d3a95274525ac9f8054cf824ef919168b86ce35",
+          "prompt": "Key 105559 has value 613923.\nKey 158871 has value 616611.\nKey 126357 has value 641835.\nKey 154523 has value 636696.\nKey 128779 has value 602366.\nKey 134546 has value 670303.\nKey 164863 has value 677008.\nKey 157012 has value 621101.\nKey 150559 has value 610747.\nKey 140972 has value 671612.\nKey 136339 has value 669556.\nKey 155244 has value 647418.\nKey 144349 has value 660462.\nKey 157751 has value 628774.\nKey 144764 has value 649432.\nKey 136718 has value 614737.\n\nQuestion: What is the value of key 136718?\nAnswer:",
+          "output": "614737\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251525,
+            251564,
+            251581,
+            251556,
+            251581,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "614737",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t1-s1-removed",
+          "N": 16,
+          "template": 1,
+          "query_position": 15,
+          "key": 136718,
+          "answer": "614737",
+          "condition": "target_removed",
+          "prompt_tokens": 324,
+          "prompt_token_sha256_int64le": "01a7c76bfb1f95fc61ba00401426ec0ad10401bc206d1567c6658b60ab2e5389",
+          "prompt": "Key 105559 has value 613923.\nKey 158871 has value 616611.\nKey 126357 has value 641835.\nKey 154523 has value 636696.\nKey 128779 has value 602366.\nKey 134546 has value 670303.\nKey 164863 has value 677008.\nKey 157012 has value 621101.\nKey 150559 has value 610747.\nKey 140972 has value 671612.\nKey 136339 has value 669556.\nKey 155244 has value 647418.\nKey 144349 has value 660462.\nKey 157751 has value 628774.\nKey 144764 has value 649432.\nKey 190001 has value 690001.\n\nQuestion: What is the value of key 136718?\nAnswer:",
+          "output": "647418\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251581,
+            251564,
+            251525,
+            251577,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "647418",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s0",
+          "N": 16,
+          "template": 2,
+          "query_position": 0,
+          "key": 160243,
+          "answer": "621890",
+          "condition": "normal",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "8af7800c6ba77c3e65ce1547b3c3a8f73554ae5309c626d85ff468473370413c",
+          "prompt": "Dictionary:\n160243 -> 621890\n172609 -> 629895\n121617 -> 678795\n150262 -> 653715\n176895 -> 654709\n129062 -> 657044\n179745 -> 668471\n167636 -> 656365\n107612 -> 629987\n117981 -> 606097\n156668 -> 620714\n156202 -> 606862\n129072 -> 609610\n151747 -> 640759\n149057 -> 633377\n103268 -> 617176\n\nReturn the stored value.\n160243 ->",
+          "output": "621890\n1726",
+          "generated_ids": [
+            251490,
+            251574,
+            251527,
+            251525,
+            251577,
+            251561,
+            251521,
+            14,
+            251525,
+            251581,
+            251527,
+            251574
+          ],
+          "prediction": "621890",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s0-removed",
+          "N": 16,
+          "template": 2,
+          "query_position": 0,
+          "key": 160243,
+          "answer": "621890",
+          "condition": "target_removed",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "928496fd8c03ec73b3fc06aceff3c33afed5142c67ca316789c69f678da284d1",
+          "prompt": "Dictionary:\n190000 -> 690000\n172609 -> 629895\n121617 -> 678795\n150262 -> 653715\n176895 -> 654709\n129062 -> 657044\n179745 -> 668471\n167636 -> 656365\n107612 -> 629987\n117981 -> 606097\n156668 -> 620714\n156202 -> 606862\n129072 -> 609610\n151747 -> 640759\n149057 -> 633377\n103268 -> 617176\n\nReturn the stored value.\n160243 ->",
+          "output": "690000\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251561,
+            251521,
+            251521,
+            251521,
+            251521,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "690000",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s1",
+          "N": 16,
+          "template": 2,
+          "query_position": 15,
+          "key": 143354,
+          "answer": "635844",
+          "condition": "normal",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "7dd16e541ce09c2d7517194668f74467d0a3e3ca93f38e3eceb93cd10bc7d346",
+          "prompt": "Dictionary:\n151147 -> 620688\n176578 -> 627222\n121473 -> 677201\n158552 -> 605585\n169933 -> 604647\n101780 -> 611980\n115935 -> 646357\n139410 -> 633669\n119139 -> 641024\n116783 -> 677594\n139432 -> 604114\n167078 -> 646385\n127131 -> 660624\n172817 -> 664584\n175253 -> 608842\n143354 -> 635844\n\nReturn the stored value.\n143354 ->",
+          "output": "635844\n1670",
+          "generated_ids": [
+            251490,
+            251574,
+            251556,
+            251557,
+            251577,
+            251564,
+            251564,
+            14,
+            251525,
+            251574,
+            251581,
+            251521
+          ],
+          "prediction": "635844",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n16-t2-s1-removed",
+          "N": 16,
+          "template": 2,
+          "query_position": 15,
+          "key": 143354,
+          "answer": "635844",
+          "condition": "target_removed",
+          "prompt_tokens": 257,
+          "prompt_token_sha256_int64le": "9de2e446e38f18ce372780b09a63c7526b135fdb706eba2f6c91d8b925caaed8",
+          "prompt": "Dictionary:\n151147 -> 620688\n176578 -> 627222\n121473 -> 677201\n158552 -> 605585\n169933 -> 604647\n101780 -> 611980\n115935 -> 646357\n139410 -> 633669\n119139 -> 641024\n116783 -> 677594\n139432 -> 604114\n167078 -> 646385\n127131 -> 660624\n172817 -> 664584\n175253 -> 608842\n190001 -> 690001\n\nReturn the stored value.\n143354 ->",
+          "output": "641024\n1433",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251525,
+            251521,
+            251527,
+            251564,
+            14,
+            251525,
+            251564,
+            251556,
+            251556
+          ],
+          "prediction": "641024",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s0",
+          "N": 64,
+          "template": 0,
+          "query_position": 0,
+          "key": 144408,
+          "answer": "637965",
+          "condition": "normal",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "e9155e70128b3298dfaa26516bfedaca301bba1ac194c721630b5a5e3a77a06e",
+          "prompt": "Key-value records:\n144408: 637965\n154068: 662818\n154656: 632676\n101839: 627304\n176354: 640232\n112807: 633060\n171655: 622770\n175907: 621335\n120417: 666387\n111299: 612336\n143894: 651818\n177046: 675776\n140080: 648966\n136368: 648546\n136316: 625303\n164326: 652743\n170633: 677098\n163105: 629053\n170296: 610439\n157278: 667794\n165835: 660115\n127862: 667631\n114739: 646982\n100670: 670895\n111220: 664270\n166249: 641308\n140349: 634179\n109256: 649948\n176986: 660576\n148036: 663038\n150549: 661273\n146690: 615737\n109464: 616862\n135109: 632363\n133909: 631478\n152041: 610497\n122012: 648968\n143599: 611738\n175527: 620532\n175769: 629206\n110999: 603871\n107252: 625764\n140936: 656480\n174515: 601079\n128405: 646623\n100586: 624950\n156378: 601271\n134359: 611577\n100078: 673400\n147183: 602146\n159295: 603666\n140326: 602005\n149774: 621121\n111414: 607050\n118773: 644638\n112940: 642305\n133790: 678352\n154638: 625898\n138034: 603676\n174192: 613421\n120992: 601032\n140793: 667057\n155582: 656478\n174879: 664882\n\nLookup the value for key 144408.\nValue:",
+          "output": "637965\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251556,
+            251581,
+            251561,
+            251574,
+            251557,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "637965",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s0-removed",
+          "N": 64,
+          "template": 0,
+          "query_position": 0,
+          "key": 144408,
+          "answer": "637965",
+          "condition": "target_removed",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "70ec8246430fc278f5777e5f6b2a1291caad5262c612101500cdaf1435b7af6a",
+          "prompt": "Key-value records:\n190000: 690000\n154068: 662818\n154656: 632676\n101839: 627304\n176354: 640232\n112807: 633060\n171655: 622770\n175907: 621335\n120417: 666387\n111299: 612336\n143894: 651818\n177046: 675776\n140080: 648966\n136368: 648546\n136316: 625303\n164326: 652743\n170633: 677098\n163105: 629053\n170296: 610439\n157278: 667794\n165835: 660115\n127862: 667631\n114739: 646982\n100670: 670895\n111220: 664270\n166249: 641308\n140349: 634179\n109256: 649948\n176986: 660576\n148036: 663038\n150549: 661273\n146690: 615737\n109464: 616862\n135109: 632363\n133909: 631478\n152041: 610497\n122012: 648968\n143599: 611738\n175527: 620532\n175769: 629206\n110999: 603871\n107252: 625764\n140936: 656480\n174515: 601079\n128405: 646623\n100586: 624950\n156378: 601271\n134359: 611577\n100078: 673400\n147183: 602146\n159295: 603666\n140326: 602005\n149774: 621121\n111414: 607050\n118773: 644638\n112940: 642305\n133790: 678352\n154638: 625898\n138034: 603676\n174192: 613421\n120992: 601032\n140793: 667057\n155582: 656478\n174879: 664882\n\nLookup the value for key 144408.\nValue:",
+          "output": "666388\n\nKey-value",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251574,
+            251556,
+            251577,
+            251577,
+            14,
+            14,
+            10064,
+            251522,
+            6562
+          ],
+          "prediction": "666388",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s1",
+          "N": 64,
+          "template": 0,
+          "query_position": 63,
+          "key": 168333,
+          "answer": "656026",
+          "condition": "normal",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "2991151d35d2f36dd72f4a4f217c1574513f01762b749c965e5a58f38b7aa00a",
+          "prompt": "Key-value records:\n119353: 663147\n106060: 636916\n125327: 640589\n159531: 661310\n178366: 648203\n173109: 662714\n105023: 630773\n148647: 602276\n158276: 632017\n178347: 658326\n161412: 668195\n111817: 649480\n122315: 622353\n152409: 626134\n160704: 636785\n168943: 604961\n141651: 613513\n125480: 643493\n161133: 676118\n144117: 644351\n142013: 607372\n115307: 650333\n138583: 614558\n175877: 668731\n101995: 669769\n104842: 633353\n140028: 646875\n156632: 620954\n103057: 661728\n117172: 604515\n169893: 653420\n116309: 660658\n130258: 642804\n118248: 658415\n145222: 674784\n132168: 602638\n159431: 635886\n133046: 676651\n177317: 645423\n130950: 669521\n157720: 614842\n164744: 619786\n170147: 629820\n136691: 645977\n134898: 678904\n137071: 653692\n104330: 641033\n125812: 623604\n161158: 677377\n141055: 679347\n144163: 605342\n103510: 665741\n146434: 613357\n113882: 655557\n118363: 660786\n114610: 678013\n124587: 647304\n121437: 630895\n158743: 610755\n141190: 624813\n114364: 647219\n111455: 621617\n107643: 659051\n168333: 656026\n\nLookup the value for key 168333.\nValue:",
+          "output": "668195\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251577,
+            251525,
+            251561,
+            251557,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "668195",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t0-s1-removed",
+          "N": 64,
+          "template": 0,
+          "query_position": 63,
+          "key": 168333,
+          "answer": "656026",
+          "condition": "target_removed",
+          "prompt_tokens": 983,
+          "prompt_token_sha256_int64le": "679b4d4a9d32443948888de98dcc66b6bf539b9dd8f933fbe157888ade94bf44",
+          "prompt": "Key-value records:\n119353: 663147\n106060: 636916\n125327: 640589\n159531: 661310\n178366: 648203\n173109: 662714\n105023: 630773\n148647: 602276\n158276: 632017\n178347: 658326\n161412: 668195\n111817: 649480\n122315: 622353\n152409: 626134\n160704: 636785\n168943: 604961\n141651: 613513\n125480: 643493\n161133: 676118\n144117: 644351\n142013: 607372\n115307: 650333\n138583: 614558\n175877: 668731\n101995: 669769\n104842: 633353\n140028: 646875\n156632: 620954\n103057: 661728\n117172: 604515\n169893: 653420\n116309: 660658\n130258: 642804\n118248: 658415\n145222: 674784\n132168: 602638\n159431: 635886\n133046: 676651\n177317: 645423\n130950: 669521\n157720: 614842\n164744: 619786\n170147: 629820\n136691: 645977\n134898: 678904\n137071: 653692\n104330: 641033\n125812: 623604\n161158: 677377\n141055: 679347\n144163: 605342\n103510: 665741\n146434: 613357\n113882: 655557\n118363: 660786\n114610: 678013\n124587: 647304\n121437: 630895\n158743: 610755\n141190: 624813\n114364: 647219\n111455: 621617\n107643: 659051\n190001: 690001\n\nLookup the value for key 168333.\nValue:",
+          "output": "668731\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251577,
+            251581,
+            251556,
+            251525,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "668731",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s0",
+          "N": 64,
+          "template": 1,
+          "query_position": 0,
+          "key": 116205,
+          "answer": "644299",
+          "condition": "normal",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "af71fce93cac0e82ad12a7405b88c1b1e4643c6186ada4b16ae96f0e5643991f",
+          "prompt": "Key 116205 has value 644299.\nKey 125314 has value 610092.\nKey 159425 has value 645032.\nKey 155954 has value 638595.\nKey 123059 has value 667675.\nKey 115495 has value 668144.\nKey 128266 has value 665961.\nKey 137732 has value 655787.\nKey 115725 has value 632046.\nKey 123917 has value 667182.\nKey 126483 has value 617397.\nKey 125002 has value 677117.\nKey 151129 has value 632720.\nKey 173091 has value 638362.\nKey 167731 has value 659986.\nKey 143403 has value 660231.\nKey 122243 has value 634636.\nKey 124544 has value 619425.\nKey 118190 has value 629767.\nKey 156646 has value 622281.\nKey 151729 has value 662065.\nKey 123615 has value 627189.\nKey 161976 has value 655483.\nKey 175995 has value 671053.\nKey 154103 has value 639532.\nKey 143155 has value 672033.\nKey 123732 has value 607669.\nKey 105640 has value 661072.\nKey 119827 has value 677534.\nKey 133766 has value 655684.\nKey 102071 has value 629655.\nKey 136579 has value 657001.\nKey 123403 has value 665107.\nKey 149798 has value 653974.\nKey 163643 has value 626748.\nKey 168436 has value 610141.\nKey 159982 has value 625506.\nKey 103098 has value 629766.\nKey 148733 has value 655174.\nKey 171422 has value 622948.\nKey 106797 has value 651748.\nKey 176708 has value 662615.\nKey 119369 has value 658614.\nKey 110124 has value 661201.\nKey 172916 has value 610230.\nKey 157562 has value 676392.\nKey 151656 has value 608144.\nKey 137638 has value 610747.\nKey 144121 has value 661160.\nKey 177454 has value 664728.\nKey 178824 has value 607575.\nKey 171931 has value 621352.\nKey 108950 has value 640147.\nKey 119843 has value 657748.\nKey 113406 has value 663931.\nKey 168248 has value 666387.\nKey 117204 has value 642459.\nKey 129306 has value 664190.\nKey 118929 has value 643396.\nKey 102466 has value 678220.\nKey 133461 has value 676073.\nKey 117014 has value 620241.\nKey 153011 has value 628571.\nKey 130236 has value 652495.\n\nQuestion: What is the value of key 116205?\nAnswer:",
+          "output": "644299\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251564,
+            251527,
+            251561,
+            251561,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "644299",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s0-removed",
+          "N": 64,
+          "template": 1,
+          "query_position": 0,
+          "key": 116205,
+          "answer": "644299",
+          "condition": "target_removed",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "bbc9b7165d24d16591bb0c1dfa129e5d826ff05b5e2f25f369d00825bb5dc0dc",
+          "prompt": "Key 190000 has value 690000.\nKey 125314 has value 610092.\nKey 159425 has value 645032.\nKey 155954 has value 638595.\nKey 123059 has value 667675.\nKey 115495 has value 668144.\nKey 128266 has value 665961.\nKey 137732 has value 655787.\nKey 115725 has value 632046.\nKey 123917 has value 667182.\nKey 126483 has value 617397.\nKey 125002 has value 677117.\nKey 151129 has value 632720.\nKey 173091 has value 638362.\nKey 167731 has value 659986.\nKey 143403 has value 660231.\nKey 122243 has value 634636.\nKey 124544 has value 619425.\nKey 118190 has value 629767.\nKey 156646 has value 622281.\nKey 151729 has value 662065.\nKey 123615 has value 627189.\nKey 161976 has value 655483.\nKey 175995 has value 671053.\nKey 154103 has value 639532.\nKey 143155 has value 672033.\nKey 123732 has value 607669.\nKey 105640 has value 661072.\nKey 119827 has value 677534.\nKey 133766 has value 655684.\nKey 102071 has value 629655.\nKey 136579 has value 657001.\nKey 123403 has value 665107.\nKey 149798 has value 653974.\nKey 163643 has value 626748.\nKey 168436 has value 610141.\nKey 159982 has value 625506.\nKey 103098 has value 629766.\nKey 148733 has value 655174.\nKey 171422 has value 622948.\nKey 106797 has value 651748.\nKey 176708 has value 662615.\nKey 119369 has value 658614.\nKey 110124 has value 661201.\nKey 172916 has value 610230.\nKey 157562 has value 676392.\nKey 151656 has value 608144.\nKey 137638 has value 610747.\nKey 144121 has value 661160.\nKey 177454 has value 664728.\nKey 178824 has value 607575.\nKey 171931 has value 621352.\nKey 108950 has value 640147.\nKey 119843 has value 657748.\nKey 113406 has value 663931.\nKey 168248 has value 666387.\nKey 117204 has value 642459.\nKey 129306 has value 664190.\nKey 118929 has value 643396.\nKey 102466 has value 678220.\nKey 133461 has value 676073.\nKey 117014 has value 620241.\nKey 153011 has value 628571.\nKey 130236 has value 652495.\n\nQuestion: What is the value of key 116205?\nAnswer:",
+          "output": "664190\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251564,
+            251525,
+            251561,
+            251521,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "664190",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s1",
+          "N": 64,
+          "template": 1,
+          "query_position": 63,
+          "key": 101447,
+          "answer": "651086",
+          "condition": "normal",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "276e49d17d7b268f01e0087d34769ce9a2ba857fa038088c8a870499dc0146c8",
+          "prompt": "Key 121409 has value 650075.\nKey 136883 has value 619210.\nKey 101288 has value 667624.\nKey 130892 has value 672308.\nKey 178758 has value 606675.\nKey 114799 has value 603778.\nKey 142412 has value 600877.\nKey 128013 has value 623309.\nKey 106811 has value 657533.\nKey 133618 has value 652711.\nKey 137551 has value 655014.\nKey 125272 has value 630606.\nKey 131703 has value 635233.\nKey 130428 has value 623439.\nKey 177444 has value 678500.\nKey 177533 has value 601008.\nKey 164939 has value 624034.\nKey 163719 has value 669226.\nKey 170604 has value 642452.\nKey 175479 has value 621738.\nKey 131603 has value 626894.\nKey 131304 has value 665727.\nKey 149469 has value 620698.\nKey 162718 has value 606230.\nKey 117655 has value 610935.\nKey 175664 has value 610955.\nKey 123537 has value 619201.\nKey 149769 has value 661712.\nKey 119330 has value 632766.\nKey 126520 has value 657755.\nKey 163054 has value 657989.\nKey 174691 has value 614440.\nKey 179944 has value 616637.\nKey 113650 has value 606043.\nKey 111570 has value 610361.\nKey 155284 has value 637461.\nKey 137880 has value 676058.\nKey 127931 has value 611495.\nKey 137966 has value 664604.\nKey 106804 has value 667725.\nKey 156843 has value 637193.\nKey 144700 has value 618849.\nKey 126967 has value 616746.\nKey 158593 has value 615807.\nKey 149083 has value 651016.\nKey 134190 has value 662907.\nKey 134750 has value 601926.\nKey 150410 has value 665282.\nKey 114676 has value 612384.\nKey 148569 has value 661106.\nKey 122347 has value 644578.\nKey 138025 has value 654614.\nKey 153493 has value 600380.\nKey 137071 has value 637483.\nKey 128675 has value 664656.\nKey 160998 has value 611124.\nKey 164019 has value 661443.\nKey 101131 has value 631468.\nKey 169285 has value 660904.\nKey 173980 has value 634649.\nKey 164659 has value 647422.\nKey 149380 has value 651665.\nKey 172324 has value 614216.\nKey 101447 has value 651086.\n\nQuestion: What is the value of key 101447?\nAnswer:",
+          "output": "651086\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251557,
+            251525,
+            251521,
+            251577,
+            251574,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "651086",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t1-s1-removed",
+          "N": 64,
+          "template": 1,
+          "query_position": 63,
+          "key": 101447,
+          "answer": "651086",
+          "condition": "target_removed",
+          "prompt_tokens": 1236,
+          "prompt_token_sha256_int64le": "33b3ddc7678b6047a637b00db68e61ab64c9d308403c0ea1e782d05333bb6b30",
+          "prompt": "Key 121409 has value 650075.\nKey 136883 has value 619210.\nKey 101288 has value 667624.\nKey 130892 has value 672308.\nKey 178758 has value 606675.\nKey 114799 has value 603778.\nKey 142412 has value 600877.\nKey 128013 has value 623309.\nKey 106811 has value 657533.\nKey 133618 has value 652711.\nKey 137551 has value 655014.\nKey 125272 has value 630606.\nKey 131703 has value 635233.\nKey 130428 has value 623439.\nKey 177444 has value 678500.\nKey 177533 has value 601008.\nKey 164939 has value 624034.\nKey 163719 has value 669226.\nKey 170604 has value 642452.\nKey 175479 has value 621738.\nKey 131603 has value 626894.\nKey 131304 has value 665727.\nKey 149469 has value 620698.\nKey 162718 has value 606230.\nKey 117655 has value 610935.\nKey 175664 has value 610955.\nKey 123537 has value 619201.\nKey 149769 has value 661712.\nKey 119330 has value 632766.\nKey 126520 has value 657755.\nKey 163054 has value 657989.\nKey 174691 has value 614440.\nKey 179944 has value 616637.\nKey 113650 has value 606043.\nKey 111570 has value 610361.\nKey 155284 has value 637461.\nKey 137880 has value 676058.\nKey 127931 has value 611495.\nKey 137966 has value 664604.\nKey 106804 has value 667725.\nKey 156843 has value 637193.\nKey 144700 has value 618849.\nKey 126967 has value 616746.\nKey 158593 has value 615807.\nKey 149083 has value 651016.\nKey 134190 has value 662907.\nKey 134750 has value 601926.\nKey 150410 has value 665282.\nKey 114676 has value 612384.\nKey 148569 has value 661106.\nKey 122347 has value 644578.\nKey 138025 has value 654614.\nKey 153493 has value 600380.\nKey 137071 has value 637483.\nKey 128675 has value 664656.\nKey 160998 has value 611124.\nKey 164019 has value 661443.\nKey 101131 has value 631468.\nKey 169285 has value 660904.\nKey 173980 has value 634649.\nKey 164659 has value 647422.\nKey 149380 has value 651665.\nKey 172324 has value 614216.\nKey 190001 has value 690001.\n\nQuestion: What is the value of key 101447?\nAnswer:",
+          "output": "667624\n\nQuestion: What",
+          "generated_ids": [
+            251490,
+            251574,
+            251574,
+            251581,
+            251574,
+            251527,
+            251564,
+            14,
+            14,
+            75493,
+            251541,
+            1853
+          ],
+          "prediction": "667624",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s0",
+          "N": 64,
+          "template": 2,
+          "query_position": 0,
+          "key": 123260,
+          "answer": "677753",
+          "condition": "normal",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "ac29481f2eaaafb2ac7202bfadb415c5d502d797e7c84969f2a75c409cb4eeed",
+          "prompt": "Dictionary:\n123260 -> 677753\n123020 -> 638594\n130866 -> 612371\n174513 -> 660033\n150659 -> 638991\n111088 -> 641181\n116209 -> 627051\n153578 -> 628043\n169881 -> 607814\n104927 -> 649527\n112119 -> 642529\n130997 -> 633307\n172095 -> 670502\n167067 -> 640762\n120226 -> 642562\n115346 -> 649354\n163422 -> 661094\n166888 -> 601368\n139141 -> 614230\n163929 -> 676217\n152980 -> 650850\n156693 -> 677638\n162696 -> 656084\n129028 -> 651541\n113273 -> 639522\n111680 -> 645946\n122865 -> 668357\n179924 -> 662185\n106825 -> 627195\n169039 -> 648092\n116531 -> 620425\n139587 -> 654877\n131689 -> 664332\n128456 -> 659073\n162863 -> 606775\n109159 -> 608720\n146120 -> 648771\n146619 -> 600002\n110555 -> 615874\n140687 -> 665970\n164270 -> 644219\n104469 -> 611006\n109542 -> 623250\n166694 -> 611370\n146570 -> 633660\n111862 -> 660491\n121890 -> 676375\n141006 -> 671913\n102971 -> 640256\n113256 -> 646152\n149531 -> 620370\n111679 -> 676747\n122710 -> 659444\n147267 -> 612144\n152502 -> 613680\n116138 -> 601843\n161373 -> 637985\n105616 -> 600980\n142345 -> 633710\n123152 -> 618148\n177815 -> 641254\n130541 -> 661120\n124614 -> 629957\n155697 -> 606968\n\nReturn the stored value.\n123260 ->",
+          "output": "677753\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251581,
+            251581,
+            251581,
+            251557,
+            251556,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "677753",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s0-removed",
+          "N": 64,
+          "template": 2,
+          "query_position": 0,
+          "key": 123260,
+          "answer": "677753",
+          "condition": "target_removed",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "1bf44569fdaef6144c1de11c6eea0ba6e5b038d7a7437be28f2ec9f913eb8db2",
+          "prompt": "Dictionary:\n190000 -> 690000\n123020 -> 638594\n130866 -> 612371\n174513 -> 660033\n150659 -> 638991\n111088 -> 641181\n116209 -> 627051\n153578 -> 628043\n169881 -> 607814\n104927 -> 649527\n112119 -> 642529\n130997 -> 633307\n172095 -> 670502\n167067 -> 640762\n120226 -> 642562\n115346 -> 649354\n163422 -> 661094\n166888 -> 601368\n139141 -> 614230\n163929 -> 676217\n152980 -> 650850\n156693 -> 677638\n162696 -> 656084\n129028 -> 651541\n113273 -> 639522\n111680 -> 645946\n122865 -> 668357\n179924 -> 662185\n106825 -> 627195\n169039 -> 648092\n116531 -> 620425\n139587 -> 654877\n131689 -> 664332\n128456 -> 659073\n162863 -> 606775\n109159 -> 608720\n146120 -> 648771\n146619 -> 600002\n110555 -> 615874\n140687 -> 665970\n164270 -> 644219\n104469 -> 611006\n109542 -> 623250\n166694 -> 611370\n146570 -> 633660\n111862 -> 660491\n121890 -> 676375\n141006 -> 671913\n102971 -> 640256\n113256 -> 646152\n149531 -> 620370\n111679 -> 676747\n122710 -> 659444\n147267 -> 612144\n152502 -> 613680\n116138 -> 601843\n161373 -> 637985\n105616 -> 600980\n142345 -> 633710\n123152 -> 618148\n177815 -> 641254\n130541 -> 661120\n124614 -> 629957\n155697 -> 606968\n\nReturn the stored value.\n123260 ->",
+          "output": "648771\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251577,
+            251581,
+            251581,
+            251525,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "648771",
+          "correct": false,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s1",
+          "N": 64,
+          "template": 2,
+          "query_position": 63,
+          "key": 110134,
+          "answer": "649843",
+          "condition": "normal",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "e3e311b814fae10c1d523103031db7e4e43262d13f1b475244fe29d8d283305f",
+          "prompt": "Dictionary:\n119971 -> 672226\n161630 -> 619673\n119060 -> 620604\n146815 -> 666153\n178063 -> 640473\n168088 -> 634956\n151888 -> 630401\n171882 -> 646802\n113032 -> 628589\n145570 -> 645812\n149232 -> 675432\n143293 -> 659146\n149430 -> 676667\n141598 -> 668119\n137638 -> 631575\n101968 -> 619710\n149647 -> 608947\n125089 -> 654432\n128002 -> 674528\n133887 -> 676971\n125515 -> 609647\n138191 -> 662760\n105717 -> 635813\n114458 -> 610102\n154120 -> 619958\n115912 -> 616654\n143990 -> 672436\n114852 -> 631717\n149884 -> 640179\n175247 -> 655402\n163608 -> 600506\n175603 -> 608317\n169125 -> 678125\n141401 -> 650644\n171716 -> 664005\n157748 -> 661817\n104801 -> 674427\n143569 -> 607765\n171821 -> 601866\n165693 -> 628492\n123894 -> 662591\n124279 -> 656458\n145819 -> 614834\n149614 -> 657753\n160878 -> 658464\n164764 -> 661836\n111534 -> 649021\n121891 -> 652854\n148686 -> 635541\n161957 -> 621927\n146491 -> 655485\n129299 -> 652397\n102644 -> 672849\n145088 -> 609648\n123875 -> 678655\n175221 -> 643285\n152216 -> 600914\n155810 -> 648603\n112479 -> 628729\n160923 -> 641507\n161246 -> 641759\n167590 -> 649202\n120167 -> 614828\n110134 -> 649843\n\nReturn the stored value.\n110134 ->",
+          "output": "649843\n\n\n\n\n",
+          "generated_ids": [
+            251490,
+            251574,
+            251564,
+            251561,
+            251577,
+            251564,
+            251556,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "prediction": "649843",
+          "correct": true,
+          "cache_bytes": 122028032
+        },
+        {
+          "id": "validation-n64-t2-s1-removed",
+          "N": 64,
+          "template": 2,
+          "query_position": 63,
+          "key": 110134,
+          "answer": "649843",
+          "condition": "target_removed",
+          "prompt_tokens": 977,
+          "prompt_token_sha256_int64le": "596525566f5e51cb5acc412365e64948d1e655c57147f73bc135fe5086b4f4b1",
+          "prompt": "Dictionary:\n119971 -> 672226\n161630 -> 619673\n119060 -> 620604\n146815 -> 666153\n178063 -> 640473\n168088 -> 634956\n151888 -> 630401\n171882 -> 646802\n113032 -> 628589\n145570 -> 645812\n149232 -> 675432\n143293 -> 659146\n149430 -> 676667\n141598 -> 668119\n137638 -> 631575\n101968 -> 619710\n149647 -> 608947\n125089 -> 654432\n128002 -> 674528\n133887 -> 676971\n125515 -> 609647\n138191 -> 662760\n105717 -> 635813\n114458 -> 610102\n154120 -> 619958\n115912 -> 616654\n143990 -> 672436\n114852 -> 631717\n149884 -> 640179\n175247 -> 655402\n163608 -> 600506\n175603 -> 608317\n169125 -> 678125\n141401 -> 650644\n171716 -> 664005\n157748 -> 661817\n104801 -> 674427\n143569 -> 607765\n171821 -> 601866\n165693 -> 628492\n123894 -> 662591\n124279 -> 656458\n145819 -> 614834\n149614 -> 657753\n160878 -> 658464\n164764 -> 661836\n111534 -> 649021\n121891 -> 652854\n148686 -> 635541\n161957 -> 621927\n146491 -> 655485\n129299 -> 652397\n102644 -> 672849\n145088 -> 609648\n123875 -> 678655\n175221 -> 643285\n152216 -> 600914\n155810 -> 648603\n112479 -> 628729\n160923 -> 641507\n161246 -> 641759\n167590 -> 649202\n120167 -> 614828\n190001 -> 690001\n\nReturn the stored value.\n110134 ->",
+          "output": "678653\n1101",
+          "generated_ids": [
+            251490,
+            251574,
+            251581,
+            251577,
+            251574,
+            251557,
+            251556,
+            14,
+            251525,
+            251525,
+            251521,
+            251525
+          ],
+          "prediction": "678653",
+          "correct": false,
+          "cache_bytes": 122028032
+        }
+      ],
+      "interpretation": "Small engineering screen; not statistical equivalence. Near-zero baseline recall cannot establish retained recall capacity.",
+      "elapsed_seconds": 11.534892797470093
+    }
+  },
+  "dev_comparison": {
+    "mean_nll_improvement": 0.004619092680513859,
+    "ppl_relative_change": -0.004608441078474912,
+    "gate_passed": false,
+    "paired_MK": [
+      {
+        "id": "validation-n16-t0-s0",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n16-t0-s0-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n16-t0-s1",
+        "condition": "normal",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n16-t0-s1-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n16-t1-s0",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n16-t1-s0-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n16-t1-s1",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n16-t1-s1-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n16-t2-s0",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n16-t2-s0-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n16-t2-s1",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n16-t2-s1-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t0-s0",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n64-t0-s0-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t0-s1",
+        "condition": "normal",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t0-s1-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t1-s0",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n64-t1-s0-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t1-s1",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n64-t1-s1-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t2-s0",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n64-t2-s0-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      },
+      {
+        "id": "validation-n64-t2-s1",
+        "condition": "normal",
+        "parent_correct": true,
+        "candidate_correct": true
+      },
+      {
+        "id": "validation-n64-t2-s1-removed",
+        "condition": "target_removed",
+        "parent_correct": false,
+        "candidate_correct": false
+      }
+    ]
+  },
+  "full_validation_skipped": "Predeclared development gate did not pass",
+  "quality_evaluated": true,
+  "elapsed_seconds": 120.92522358091082,
+  "gpu_memory": {
+    "peak_allocated_bytes": 30166538240,
+    "peak_reserved_bytes": 31371296768,
+    "current_allocated_bytes": 29090790912,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  }
+}

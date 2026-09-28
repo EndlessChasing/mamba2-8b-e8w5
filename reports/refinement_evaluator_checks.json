@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "GPU_evaluation_performed": false,
+  "script_sha256": "3f4224cdb2c6e76af1d0fb2a942774cb28ac7471b2629dcd1b6b368f3d78d80f",
+  "tests_sha256": "493b5b864349dc3d26bc50a2aaaef47e52f0f15d66150011417ede3c14262af4",
+  "tests": {
+    "returncode": 0,
+    "output": "test_complete_ledger_accounting (test_refinement_overlay.OverlayGuards.test_complete_ledger_accounting) ... ok\ntest_header_rejects_residual_bits_and_length_mismatch (test_refinement_overlay.OverlayGuards.test_header_rejects_residual_bits_and_length_mismatch) ... ok\ntest_reject_calibration_substitution (test_refinement_overlay.OverlayGuards.test_reject_calibration_substitution) ... ok\ntest_reject_changed_payload (test_refinement_overlay.OverlayGuards.test_reject_changed_payload) ... ok\ntest_reject_failed_screen_even_when_marked_passed (test_refinement_overlay.OverlayGuards.test_reject_failed_screen_even_when_marked_passed) ... ok\ntest_reject_missing_inherited_file (test_refinement_overlay.OverlayGuards.test_reject_missing_inherited_file) ... ok\ntest_reject_missing_projection (test_refinement_overlay.OverlayGuards.test_reject_missing_projection) ... ok\ntest_reject_new_recipe (test_refinement_overlay.OverlayGuards.test_reject_new_recipe) ... ok\ntest_reject_partial_screen (test_refinement_overlay.OverlayGuards.test_reject_partial_screen) ... ok\ntest_reject_protocol_substitution (test_refinement_overlay.OverlayGuards.test_reject_protocol_substitution) ... ok\ntest_reject_seed_change (test_refinement_overlay.OverlayGuards.test_reject_seed_change) ... ok\ntest_reject_unlisted_disk_entry (test_refinement_overlay.OverlayGuards.test_reject_unlisted_disk_entry) ... ok\ntest_reject_wrong_parent (test_refinement_overlay.OverlayGuards.test_reject_wrong_parent) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.439s\n\nOK\n"
+  },
+  "real_completed_screen_schema_check": {
+    "screen_report_sha256": "a97afa3cb3252164dc90251e3733cc9bc26d52f829933c906a7758eb0132a22f",
+    "protocol_sha256": "70fcc73a51bea70d0b308881af31482dce0f3e83175c03cbca2484ca230e6b89",
+    "gate_recomputed": true,
+    "median_relative_mse_reduction": 0.016573568959915186,
+    "individual_pass_count": 6,
+    "worst_relative_mse_reduction": 0.010350906241304081,
+    "passed": true
+  },
+  "limitation": "Synthetic ledger fixtures and actual screen receipt only; full overlay loading awaits completed112-file candidate and GPU coordination."
+}

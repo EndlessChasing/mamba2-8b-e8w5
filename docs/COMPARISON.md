@@ -1,10 +1,10 @@
 # Public size comparison and smallest-model claim
 
-Audit date: 2026-09-27. Target: a compact, reproducible, openly released quantization of the complete pure NVIDIA Mamba-2 8B base model. The release preserves the 56-layer architecture and full vocabulary. A smallest-model claim is a goal until actual packing and quality checks complete.
+Public inventory audit date: 2026-09-27. Target: a compact, reproducible, openly released quantization of the complete pure NVIDIA Mamba-2 8B base model. The candidate preserves the 56-layer architecture and full vocabulary. Its local size, restoration and quality are now measured, but model publication is on hold and its quality-retention target failed. A global smallest-model claim remains unestablished.
 
 ## Same-base inventory
 
-The table records weight-file byte counts from publisher Hugging Face LFS metadata. It does not substitute for download verification, resident GPU memory measurement, or evaluation under the same tokenizer and protocol.
+Competitor rows record weight-file byte counts from publisher Hugging Face LFS metadata at pinned revisions. This project's row records its verified local Huffman container. These are different storage formats; the table does not substitute for download verification of competitors, resident GPU memory measurements, or equal-quality evaluation under the same tokenizer and protocol.
 
 | Artifact | Exact weight-file bytes | Decimal GB | Evidence |
 | --- | ---: | ---: | --- |
@@ -13,9 +13,11 @@ The table records weight-file byte counts from publisher Hugging Face LFS metada
 | Quamba2 8B W4AX | 4,247,971,564 | 4.248 | [Publisher](https://huggingface.co/ut-enyac/quamba2-8b-converted-w4aX/tree/6d03f97e4b77f2688965653e517bde480a7c88ef) |
 | UniQL 8B W4A16 | 4,253,398,040 | 4.253 | [Publisher](https://huggingface.co/ut-enyac/mamba2-8b-converted-uniql-1.0-masked-lora-rft-w4a16/tree/220a411ffc885f1543fc19afcfe90b793fa61153) |
 | Quamba2 8B W4A16 | 4,253,601,410 | 4.254 | [Publisher](https://huggingface.co/ut-enyac/quamba2-8b-converted-w4a16/tree/997f760f29c10574ee8363b8680d636048dee048) |
-| This project E8/W5 | Pending measured output | Pending | No completed 8B size or quality claim in this audit |
+| This project E8/W5, unpublished two-sweep candidate | 2,660,128,443 | 2.660 | Verified local Huffman weight container; [restore receipt](../reports/release_restore_local_v1.json), [quality results](RESULTS.md) |
 
 Each listed competitor also includes the original 4,573,028-byte SentencePiece model and smaller configuration/license files. The original checkpoint is a serialized Megatron container, so its total byte count includes format overhead. Competitor byte identities and source revisions are recorded in [source_model.json](../reports/source_model.json).
+
+This project's complete prepared distribution is **2,666,260,364 bytes**, including tokenizer, software, licenses, reports and its manifest. The model container passed complete byte-for-byte restoration and generation using its archived software. Its full-test PPL increased **20.208%** and normal public MK decreased from **18/48 to15/48** relative to its original FP16-cast baseline. Competitor quality was not rerun under this exact protocol, and no equal-quality superiority is established. The separate eight-sweep experiment is not included in these counts or results.
 
 Quamba reports W4A8/W4A16/W4AX support and measured GPU inference in its [paper](https://arxiv.org/abs/2503.22879) and [official project page](https://hychiang.info/projects/quamba2/). Those reported results establish neither this project's quality nor its speed. A smaller E8 package could still require more decode work or more runtime memory.
 
@@ -32,10 +34,11 @@ The Quamba model repositories include a `license.txt` with UT Austin Research Li
 - [x] Freeze exact official source model and tokenizer identity.
 - [x] Enumerate publicly accessible same-base comparison artifacts.
 - [x] Verify downloaded source bytes and tensor inventory.
-- [ ] Complete quantization of every intended projection and both vocabulary matrices.
-- [ ] Pack and read back every quantized tensor; publish all stored byte counts and SHA-256 manifests.
-- [ ] Report original FP16-cast baseline and E8/W5 quality under a fixed tokenizer and PPL/MK protocol; identify comparison artifacts whose quality was not remeasured.
-- [ ] Measure peak runtime memory and decode behavior separately from archive size.
+- [x] Complete quantization of every intended projection and both vocabulary matrices.
+- [x] Pack and read back every quantized tensor; retain exact byte counts and SHA-256 manifests locally.
+- [x] Report original FP16-cast baseline and E8/W5 quality under a fixed tokenizer and PPL/MK protocol; competitor quality remains unmeasured in that protocol.
+- [x] Measure peak runtime memory and decode behavior separately from archive size.
+- [ ] Obtain authorization to resume publication, then publish the complete model bytes, explicit quality failure and manifests.
 - [ ] Recheck the public inventory on the release date.
 
-Suitable language after these gates: “Smallest weight archive among the enumerated pure NVIDIA Mamba-2 8B releases checked on [date], at [bytes], with the quality and runtime results below.” An unqualified worldwide smallest or equal-quality claim would require stronger evidence.
+Current suitable language: “An unpublished E8/W5 candidate with a verified 2.660 GB weight container and measured quality loss.” After publication and a refreshed inventory, any smallest-among-enumerated statement must specify date, exact artifacts, storage formats, all required bytes, quality differences and runtime limits. An unqualified worldwide smallest or equal-quality claim is not supported.

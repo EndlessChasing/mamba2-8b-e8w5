@@ -1,0 +1,375 @@
+{
+  "complete": true,
+  "scope": "Read-only metadata and source audit, no new model evaluations. Cross-model measurements use different protocols and are not directly comparable.",
+  "codec_function_body_ast_equal_to_2p7b": {
+    "vector_quantize": true,
+    "rotate_last": true,
+    "block_ldl": true,
+    "decode_e8": true,
+    "rotation_factors": false
+  },
+  "current_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "prior_manifest_sha256": "949cc2e0a0cac184b3ed53e1765b90cab9c4db68e0a1e6f41212e6bef8f1c82f",
+  "error_summaries": {
+    "mamba2_2p7b": {
+      "in_proj": {
+        "relative_weight_error": {
+          "min": 0.3612409234046936,
+          "median": 0.3634331077337265,
+          "mean": 0.36766423657536507,
+          "max": 0.4243507981300354,
+          "worst_5": [
+            [
+              "layer1.in_proj",
+              0.4243507981300354
+            ],
+            [
+              "layer2.in_proj",
+              0.4087856709957123
+            ],
+            [
+              "layer3.in_proj",
+              0.39681312441825867
+            ],
+            [
+              "layer4.in_proj",
+              0.38874781131744385
+            ],
+            [
+              "layer0.in_proj",
+              0.38533252477645874
+            ]
+          ]
+        },
+        "relative_calibration_output_error": {
+          "min": 0.10820414125919342,
+          "median": 0.17931847274303436,
+          "mean": 0.1737966154469177,
+          "max": 0.20327550172805786,
+          "worst_5": [
+            [
+              "layer31.in_proj",
+              0.20327550172805786
+            ],
+            [
+              "layer30.in_proj",
+              0.19777058064937592
+            ],
+            [
+              "layer33.in_proj",
+              0.19659008085727692
+            ],
+            [
+              "layer53.in_proj",
+              0.19546961784362793
+            ],
+            [
+              "layer54.in_proj",
+              0.19430066645145416
+            ]
+          ]
+        }
+      },
+      "out_proj": {
+        "relative_weight_error": {
+          "min": 0.3731159567832947,
+          "median": 0.3974338620901108,
+          "mean": 0.40099887596443295,
+          "max": 0.44834429025650024,
+          "worst_5": [
+            [
+              "layer1.out_proj",
+              0.44834429025650024
+            ],
+            [
+              "layer11.out_proj",
+              0.4427514374256134
+            ],
+            [
+              "layer6.out_proj",
+              0.4411410093307495
+            ],
+            [
+              "layer4.out_proj",
+              0.4393731951713562
+            ],
+            [
+              "layer5.out_proj",
+              0.4307692348957062
+            ]
+          ]
+        },
+        "relative_calibration_output_error": {
+          "min": 0.026025021448731422,
+          "median": 0.17469151318073273,
+          "mean": 0.1734331284824293,
+          "max": 0.21745140850543976,
+          "worst_5": [
+            [
+              "layer59.out_proj",
+              0.21745140850543976
+            ],
+            [
+              "layer58.out_proj",
+              0.21219761669635773
+            ],
+            [
+              "layer57.out_proj",
+              0.20946744084358215
+            ],
+            [
+              "layer35.out_proj",
+              0.20848388969898224
+            ],
+            [
+              "layer42.out_proj",
+              0.2045447677373886
+            ]
+          ]
+        }
+      }
+    },
+    "mamba2_8b": {
+      "in_proj": {
+        "relative_weight_error": {
+          "min": 0.370401531457901,
+          "median": 0.3748125284910202,
+          "mean": 0.37623963079282213,
+          "max": 0.4030226767063141,
+          "worst_5": [
+            [
+              "layer1.in_proj",
+              0.4030226767063141
+            ],
+            [
+              "layer0.in_proj",
+              0.397442489862442
+            ],
+            [
+              "layer2.in_proj",
+              0.39079511165618896
+            ],
+            [
+              "layer3.in_proj",
+              0.3852241337299347
+            ],
+            [
+              "layer4.in_proj",
+              0.38169777393341064
+            ]
+          ]
+        },
+        "relative_calibration_output_error": {
+          "min": 0.08087341487407684,
+          "median": 0.14636018127202988,
+          "mean": 0.14181599539837667,
+          "max": 0.16334837675094604,
+          "worst_5": [
+            [
+              "layer25.in_proj",
+              0.16334837675094604
+            ],
+            [
+              "layer26.in_proj",
+              0.16212639212608337
+            ],
+            [
+              "layer18.in_proj",
+              0.16073042154312134
+            ],
+            [
+              "layer27.in_proj",
+              0.15765902400016785
+            ],
+            [
+              "layer19.in_proj",
+              0.15703853964805603
+            ]
+          ]
+        }
+      },
+      "out_proj": {
+        "relative_weight_error": {
+          "min": 0.39109930396080017,
+          "median": 0.4255969524383545,
+          "mean": 0.4290631743414061,
+          "max": 0.4856128692626953,
+          "worst_5": [
+            [
+              "layer55.out_proj",
+              0.4856128692626953
+            ],
+            [
+              "layer38.out_proj",
+              0.48220953345298767
+            ],
+            [
+              "layer1.out_proj",
+              0.48013442754745483
+            ],
+            [
+              "layer37.out_proj",
+              0.4738478660583496
+            ],
+            [
+              "layer40.out_proj",
+              0.47299864888191223
+            ]
+          ]
+        },
+        "relative_calibration_output_error": {
+          "min": 0.04675653576850891,
+          "median": 0.19963998347520828,
+          "mean": 0.19380184169858694,
+          "max": 0.22993794083595276,
+          "worst_5": [
+            [
+              "layer18.out_proj",
+              0.22993794083595276
+            ],
+            [
+              "layer23.out_proj",
+              0.22939875721931458
+            ],
+            [
+              "layer17.out_proj",
+              0.22847333550453186
+            ],
+            [
+              "layer22.out_proj",
+              0.2241647094488144
+            ],
+            [
+              "layer19.out_proj",
+              0.22239328920841217
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "prior_2p7b_full_quality": [
+    {
+      "domain": "wt2_test",
+      "seqlen": 2048,
+      "fp16": 9.098635280150152,
+      "w4": 12.18879772937847,
+      "e8_w5": 11.638584752076923,
+      "relative_e8_vs_fp16_percent": 27.915719157003682
+    },
+    {
+      "domain": "c4_val_slice",
+      "seqlen": 2048,
+      "fp16": 12.903335915184412,
+      "w4": 18.698365277784422,
+      "e8_w5": 18.41337689063518,
+      "relative_e8_vs_fp16_percent": 42.70245316148558
+    },
+    {
+      "domain": "ptb_test",
+      "seqlen": 2048,
+      "fp16": 13.923628107122255,
+      "w4": 19.80378854855087,
+      "e8_w5": 19.399614336938733,
+      "relative_e8_vs_fp16_percent": 39.32873090035625
+    }
+  ],
+  "prior_2p7b_sampled_base_ppl": {
+    "fp16": 8.324625765838759,
+    "w4": 11.143332174370787,
+    "e8_w5": 10.830269135913916,
+    "e8_vs_fp16_percent": 30.099171308786122,
+    "scope": "WT2 test 16 fixed 2048 windows, base readout disabled, 32752 next-token targets; historical used test windows.",
+    "e8_vs_w4_percent": -2.809420320224354
+  },
+  "prior_2p7b_recipe": {
+    "tokens": 96661,
+    "prose_windows": 16,
+    "seqlen": 2048,
+    "recall_samples": 32,
+    "recall_query_weight": 32.0,
+    "recall_needle_weight": 4.0,
+    "adapter_calibration": true,
+    "ssm_tail_bits": 0,
+    "scale": 0.9,
+    "damping": 0.01,
+    "tune_iters": 2,
+    "vocab_tied": true
+  },
+  "current_8b_recipe": {
+    "tokens": 65536,
+    "prose_windows": 32,
+    "seqlen": 2048,
+    "recall_samples": 0,
+    "adapter_calibration": false,
+    "ssm_tail_bits": 0,
+    "scale": 0.9,
+    "damping": 0.01,
+    "tune_iters": 2,
+    "vocab_tied": false
+  },
+  "ssm_projection_rows": {
+    "2p7b": {
+      "total": 10576,
+      "z": 5120,
+      "x": 5120,
+      "B": 128,
+      "C": 128,
+      "dt": 80,
+      "B_C_dt_fraction": 0.03177004538577912
+    },
+    "8b": {
+      "total": 18560,
+      "z": 8192,
+      "x": 8192,
+      "B": 1024,
+      "C": 1024,
+      "dt": 128,
+      "B_C_dt_fraction": 0.11724137931034483
+    }
+  },
+  "current_vocab_relative_weight_error": {
+    "embedding": 0.05547563523317298,
+    "lm_head": 0.06620090129292688
+  },
+  "historical_source_files": {
+    "fp16": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/artifacts/ppl_wt2_2048_16win_fp16_v0.json",
+      "sha256": "b72c54a26e9a7a14663d585ad2b0ca1c328be7db954f03886df89ffa3b0b5c93"
+    },
+    "w4": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/artifacts/ppl_wt2_2048_16win_w4_v0.json",
+      "sha256": "283df9de3c343226fcc8dd1c4b79ba01c3a1c6c81f4bb33110b79509b547964a"
+    },
+    "e8_w5": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/artifacts/ppl_wt2_2048_16win_e8_mixed2048_cd2_embed5_v1.json",
+      "sha256": "f61edb896b099d4a6393b43697b232d5a012c838ce10d73869feb4f4001f90bf"
+    },
+    "full_quality": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/artifacts/full_quality_v1/summary.json",
+      "sha256": "68d0e182b04aecfad890bafb1e0a5970a613f68b7c1924fa52056d459e5bce77"
+    },
+    "prior_recipe": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/artifacts/e8_mixed2048_cd2_embed5_manifest_v1.json",
+      "sha256": "949cc2e0a0cac184b3ed53e1765b90cab9c4db68e0a1e6f41212e6bef8f1c82f"
+    },
+    "prior_calibration": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/artifacts/hessian_train_mixed2048_manifest_v1.json",
+      "sha256": "494eec1fa54b92cd83b5e3033295c8c1d431507ff8ba16cd405279e8a112f5f5"
+    },
+    "prior_method_report": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/compute_for_compression.md",
+      "sha256": "60b5f67081d699aa07c2ae75d0e976adf156b0ff9090b3a9c5860fb16e78a310"
+    },
+    "prior_codec": {
+      "path": "/Users/Kun/Documents/ChatGPT/LowDram ASIC Design/benchmarks/compute_tradeoff_codec.py",
+      "sha256": "5c97cdeddf86054e4e777c090bf313fd1338bf70b1b9e161e188dd14af746c2d"
+    }
+  },
+  "prior_initial_projection_vocab_ablation": {
+    "e8_fp16_vocab_ppl": 10.380478437456313,
+    "e8_w5_vocab_ppl": 11.136981018858211,
+    "w5_relative_percent": 7.287742910501871,
+    "scope": "Same initial E8 projections, no LDLQ tuning sweeps, prose-only short calibration, prior 2.7B sampled protocol; different projection candidate from final mixed-calibration model."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "prior_full_loaded_model_audit_sha256": "0ff1bc0b9a1399bf7042c764bae31e9af169d6e92b341ee4b3ec921c7b3ad04e",
+  "samples": {
+    "embedding": {
+      "rows": [
+        0,
+        128
+      ],
+      "shape": [
+        128,
+        4096
+      ],
+      "exact_equal": true,
+      "fp16_sha256": "61375ffc50b2cd0f7c6f2ce4d6d3d54149aed35452dc72b30b2380a30f84f898"
+    },
+    "lm_head": {
+      "rows": [
+        0,
+        128
+      ],
+      "shape": [
+        128,
+        4096
+      ],
+      "exact_equal": true,
+      "fp16_sha256": "95f6e14932048a7a767025e3800ee59f629f18e3b0fbba8e963787be08f7ef80"
+    }
+  }
+}

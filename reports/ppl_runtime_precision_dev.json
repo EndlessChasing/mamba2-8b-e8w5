@@ -1,0 +1,163 @@
+{
+  "complete": true,
+  "purpose": "Original source BF16 versus FP16 numerical control",
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-2-raw-v1",
+    "split": "validation",
+    "revision_argument": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_fingerprint": "51d84d52d095f90d",
+    "document_join": "two newline characters",
+    "text_sha256": "b44fb967f92b525731216a507d1fbc44b97446b7ef0a2b4d1a893f81f1bbc29e",
+    "token_stream_sha256_int64le": "5bbeae08ba8eb34a482f3b6e9d17b182e67229dd14b2853d87f89fc72e5ad027",
+    "total_tokens": 264765,
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "automatic_special_tokens": false
+  },
+  "model_config": {
+    "d_model": 4096,
+    "d_intermediate": 0,
+    "n_layer": 56,
+    "vocab_size": 256000,
+    "ssm_cfg": {
+      "layer": "Mamba2",
+      "d_state": 128,
+      "d_conv": 4,
+      "expand": 2,
+      "headdim": 64,
+      "ngroups": 8,
+      "chunk_size": 128,
+      "rmsnorm": true,
+      "norm_before_gate": false,
+      "use_mem_eff_path": false
+    },
+    "rms_norm": true,
+    "residual_in_fp32": false,
+    "fused_add_norm": false,
+    "pad_vocab_size_multiple": 128,
+    "tie_embeddings": false
+  },
+  "runtime_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "script_sha256": "05170511f5316bdd5ae08d8db441b3b867a3917bf51a1fafc8f6ba7e33843c60",
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "variants": {
+    "bf16": {
+      "ppl": 7.8558497803162135,
+      "nll": 8442.914608001709,
+      "target_tokens": 4096,
+      "execution": "prefill",
+      "windows": [
+        {
+          "start": 0,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+          "nll": 1564.6990547180176,
+          "ppl": 4.6090714717857
+        },
+        {
+          "start": 87913,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+          "nll": 2636.819984436035,
+          "ppl": 13.131573432443675
+        },
+        {
+          "start": 175826,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+          "nll": 2229.985450744629,
+          "ppl": 8.826161128003971
+        },
+        {
+          "start": 263740,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+          "nll": 2011.4101181030273,
+          "ppl": 7.129689559669358
+        }
+      ],
+      "elapsed_seconds": 27.031346559524536,
+      "cache_dtype": "SSD scan internal precision",
+      "cache_bytes": null,
+      "logits_chunk_tokens": 64,
+      "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+    },
+    "fp16": {
+      "ppl": 7.857623554099677,
+      "nll": 8443.839340209961,
+      "target_tokens": 4096,
+      "execution": "prefill",
+      "windows": [
+        {
+          "start": 0,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+          "nll": 1564.9225692749023,
+          "ppl": 4.61007763097436
+        },
+        {
+          "start": 87913,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+          "nll": 2635.7410049438477,
+          "ppl": 13.117744100079877
+        },
+        {
+          "start": 175826,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+          "nll": 2231.692642211914,
+          "ppl": 8.840888192880293
+        },
+        {
+          "start": 263740,
+          "input_tokens": 1024,
+          "target_tokens": 1024,
+          "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+          "nll": 2011.4831237792969,
+          "ppl": 7.13019788619576
+        }
+      ],
+      "elapsed_seconds": 8.239631652832031,
+      "cache_dtype": "SSD scan internal precision",
+      "cache_bytes": null,
+      "logits_chunk_tokens": 64,
+      "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state"
+    }
+  },
+  "limitations": [
+    "Public mamba_ssm runtime; original Megatron runtime not tested.",
+    "Four development validation windows, not full test.",
+    "Prefill SSD scan; this is not a per-token BF16 cache experiment."
+  ],
+  "source_receipt": {
+    "format": "original BF16 checkpoint cast to requested dtype",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "parameter_count": 8236999680
+  },
+  "comparison": {
+    "fp16_endpoint_ppl_difference": 0.0,
+    "fp16_minus_bf16_nll_per_token": 0.000225764699280262,
+    "fp16_vs_bf16_ppl_percent": 0.02257901860479506
+  }
+}
