@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Under their original gates neither advanced to full validation. The user subsequently directed PPL-first work: the norm candidate completed separately recorded full validation (8.83656→8.58964, −2.7943%; still +17.1180% versus source), and a larger all-small-tensor training experiment is being prepared. MK remains disclosed evidence rather than a blocker for this continuation. The GitHub release remains a draft with zero assets.
+Status: publication is on hold at the user's request. Diagnosis identifies E8 projection quantization as the dominant quality loss. Local package restoration and generation passed. Both bounded repairs have stopped: eight sweeps missed the PPL improvement threshold; norm-only training improved development PPL 2.9421% but reduced normal MK from 10/12 to 9/12. Under their original gates neither advanced to full validation. The user subsequently directed PPL-first work: the norm candidate completed separately recorded full validation (8.83656→8.58964, −2.7943%; still +17.1180% versus source), and the larger all-small-tensor experiment is now training under its frozen 1024-step protocol. MK remains disclosed evidence rather than a blocker for this continuation. The GitHub release remains a draft with zero assets.
 
 ## Scope
 
@@ -87,7 +87,7 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 - [x] Confirm the actual source and candidate architectures are pure Mamba-2: 56 Mamba blocks, zero attention/independent MLP/MoE; reports/pure_mamba2_architecture_audit.json.
 - [x] Run separate full-validation PPL for original source, original E8/W5, and fixed norm-v1 export with exact paired inputs: 7.334176 / 8.836560 / 8.589641, all 264,764 targets; docs/NORM_PPL_RESULTS.md.
 - [x] Freeze the next all-small-tensor protocol: 393 existing tensors, 256 disjoint train windows excluding the old 32, 1024 fixed updates.
-- [ ] Pass new CPU and GPU checks covering convolution and recurrent parameter gradients, resumption, and actual FP16 export.
+- [x] Pass new CPU and GPU checks covering convolution and recurrent parameter gradients, resumption, and actual FP16 export: 393 finite-gradient tensors, all seven families nonzero, checkpoint gradients exact, reloaded FP16 output exact, 114 frozen weight hashes unchanged; reports/small_compensation_v1_smoke.json.
 - [ ] Train, export and independently audit the final checkpoint without changing E8/W5 or payload capacity.
 - [ ] Measure complete validation PPL, source-relative gap and gain over norm-v1; report recall as unmeasured for this candidate.
 - [ ] Consider a separate Resurface recall experiment after the PPL work; no recall recovery is assumed.

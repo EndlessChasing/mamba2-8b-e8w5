@@ -1,0 +1,5808 @@
+{
+  "complete": true,
+  "passed": true,
+  "mode": "smoke",
+  "pid": 1092864,
+  "started_at_unix": 1790563354.060852,
+  "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+  "initialization": {
+    "norm_manifest_sha256": "1fa9d35ff56a08e2f7ddf258bfa1fb61bc2e83ae2af404ab2f68a781821ac4d8",
+    "other_fp16_sha256": "8a98319ad513fceaf48673ff4199a8a22b5c1046c64b91bbf3bbbb09f5d84530"
+  },
+  "selected_small_tensors": {
+    "backbone.layers.0.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.0.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.0.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.0.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.0.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.0.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.0.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.1.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.1.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.1.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.1.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.1.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.1.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.1.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.10.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.10.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.10.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.10.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.10.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.10.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.10.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.11.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.11.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.11.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.11.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.11.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.11.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.11.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.12.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.12.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.12.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.12.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.12.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.12.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.12.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.13.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.13.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.13.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.13.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.13.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.13.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.13.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.14.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.14.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.14.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.14.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.14.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.14.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.14.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.15.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.15.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.15.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.15.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.15.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.15.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.15.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.16.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.16.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.16.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.16.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.16.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.16.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.16.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.17.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.17.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.17.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.17.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.17.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.17.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.17.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.18.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.18.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.18.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.18.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.18.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.18.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.18.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.19.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.19.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.19.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.19.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.19.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.19.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.19.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.2.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.2.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.2.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.2.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.2.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.2.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.2.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.20.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.20.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.20.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.20.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.20.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.20.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.20.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.21.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.21.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.21.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.21.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.21.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.21.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.21.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.22.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.22.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.22.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.22.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.22.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.22.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.22.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.23.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.23.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.23.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.23.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.23.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.23.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.23.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.24.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.24.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.24.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.24.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.24.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.24.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.24.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.25.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.25.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.25.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.25.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.25.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.25.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.25.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.26.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.26.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.26.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.26.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.26.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.26.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.26.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.27.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.27.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.27.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.27.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.27.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.27.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.27.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.28.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.28.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.28.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.28.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.28.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.28.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.28.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.29.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.29.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.29.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.29.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.29.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.29.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.29.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.3.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.3.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.3.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.3.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.3.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.3.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.3.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.30.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.30.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.30.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.30.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.30.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.30.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.30.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.31.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.31.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.31.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.31.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.31.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.31.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.31.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.32.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.32.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.32.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.32.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.32.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.32.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.32.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.33.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.33.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.33.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.33.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.33.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.33.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.33.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.34.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.34.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.34.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.34.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.34.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.34.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.34.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.35.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.35.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.35.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.35.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.35.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.35.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.35.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.36.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.36.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.36.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.36.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.36.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.36.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.36.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.37.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.37.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.37.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.37.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.37.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.37.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.37.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.38.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.38.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.38.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.38.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.38.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.38.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.38.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.39.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.39.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.39.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.39.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.39.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.39.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.39.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.4.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.4.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.4.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.4.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.4.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.4.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.4.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.40.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.40.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.40.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.40.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.40.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.40.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.40.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.41.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.41.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.41.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.41.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.41.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.41.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.41.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.42.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.42.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.42.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.42.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.42.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.42.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.42.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.43.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.43.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.43.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.43.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.43.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.43.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.43.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.44.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.44.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.44.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.44.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.44.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.44.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.44.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.45.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.45.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.45.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.45.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.45.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.45.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.45.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.46.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.46.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.46.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.46.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.46.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.46.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.46.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.47.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.47.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.47.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.47.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.47.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.47.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.47.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.48.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.48.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.48.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.48.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.48.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.48.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.48.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.49.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.49.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.49.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.49.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.49.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.49.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.49.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.5.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.5.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.5.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.5.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.5.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.5.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.5.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.50.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.50.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.50.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.50.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.50.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.50.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.50.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.51.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.51.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.51.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.51.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.51.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.51.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.51.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.52.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.52.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.52.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.52.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.52.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.52.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.52.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.53.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.53.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.53.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.53.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.53.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.53.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.53.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.54.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.54.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.54.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.54.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.54.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.54.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.54.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.55.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.55.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.55.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.55.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.55.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.55.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.55.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.6.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.6.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.6.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.6.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.6.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.6.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.6.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.7.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.7.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.7.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.7.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.7.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.7.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.7.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.8.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.8.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.8.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.8.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.8.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.8.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.8.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.9.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.9.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.9.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.9.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.9.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.9.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.9.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.norm_f.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    }
+  },
+  "evaluation_data_used": false,
+  "split": "train",
+  "binding": {
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "protocol_sha256": "f57229f979f8bc94def0780f87aa48ae0b83f7d30dc29fef527b46aaa2be0c31",
+    "small_overlay_source_sha256": "3512c1b232c4039c16a26ffc0fe8c2eac1be6bb9c704ccbcb1d4e8e7788a1286",
+    "trainer_source_sha256": "d92317e3157f374ef872e40f0de5ad81f9dc6ad9732b19f3df616a114fc5ca7a",
+    "training_helper_source_sha256": "6e98858460534c4047f7bf75bd62eaf7769d7e46919cd9de6868fd6177a80086",
+    "norm_training_source_sha256": "25ac3ec6ba167902014018f99fbf8dbbc659e0e4903f80baf28e28a4a3e74087",
+    "norm_trainer_utility_source_sha256": "da1818af295738cfa8a012b35ff0d1f007c410f27988d9bdaf88425fbedc47f2",
+    "norm_overlay_source_sha256": "2e911764fe065c9dfe7971dff02f17c92911530c02ca5b16c78d2f42af450385",
+    "training_data_manifest_sha256": "88d4dcd9f468a50137f25f7afdc101fd2635f254bdd0d4b194ecf252c7116709",
+    "training_tokens_sha256": "f9d2321f580832b19d62ec498841b552b5f66b90be16a195c004b30be1f6d0b8",
+    "hyperparameters": {
+      "epochs": 4,
+      "windows_per_epoch": 256,
+      "window_tokens": 2048,
+      "targets_per_window": 2047,
+      "successful_updates": 1024,
+      "maximum_skipped_attempts": 8,
+      "maximum_attempts": 1032,
+      "seed": 20260927,
+      "sampler": "four sequential torch.randperm(256) draws from one seeded CPU Generator",
+      "optimizer": "AdamW",
+      "learning_rate": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 0.0,
+      "gradient_clip_norm": 1.0,
+      "ce_coefficient": 0.5,
+      "teacher_to_student_kl_coefficient": 0.5,
+      "temperature": 1.0,
+      "logits_chunk_tokens": 64,
+      "model_mode": "eval with gradients enabled",
+      "master_dtype": "float32",
+      "forward_parameter_dtype": "float16",
+      "checkpoint_each_native_block": true,
+      "loss_scaler": {
+        "device": "cuda",
+        "init_scale": 1024.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000
+      },
+      "overflow_policy": "retry same scheduled window without optimizer update; stop above8 skipped attempts",
+      "selection": "final1024 successful updates only; no validation during training",
+      "selected_tensors": 393,
+      "selected_parameters": 3580928,
+      "initialization": "norm_compensation_v1 exported FP16 small tensors; fresh optimizer and scaler",
+      "checkpoint_interval_successes": 32,
+      "training_data": "256 disjoint train windows excluding all32 original calibration windows",
+      "stability": "native FP16 casts and native A/dt formulas; finite checks; no new clamps or reparameterization"
+    },
+    "frozen_code_sha256": {
+      "quantize.py": "7a63da784932e53eecfa49e1403d140e142f05d97b1621729af7fe3f20b03b08",
+      "codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369"
+    },
+    "evaluation_source_sha256": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "initial_parameter_ranges": {
+    "A_log": {
+      "tensors": 56,
+      "parameters": 7168,
+      "finite": true,
+      "nonzero": 7168,
+      "minimum": -5.40625,
+      "maximum": 11.4375
+    },
+    "D": {
+      "tensors": 56,
+      "parameters": 7168,
+      "finite": true,
+      "nonzero": 7168,
+      "minimum": -0.69140625,
+      "maximum": 3.390625
+    },
+    "conv_bias": {
+      "tensors": 56,
+      "parameters": 573440,
+      "finite": true,
+      "nonzero": 573436,
+      "minimum": -4.3125,
+      "maximum": 6.03125
+    },
+    "conv_weight": {
+      "tensors": 56,
+      "parameters": 2293760,
+      "finite": true,
+      "nonzero": 2293744,
+      "minimum": -0.875,
+      "maximum": 1.2578125
+    },
+    "dt_bias": {
+      "tensors": 56,
+      "parameters": 7168,
+      "finite": true,
+      "nonzero": 7168,
+      "minimum": -8.625,
+      "maximum": -0.1455078125
+    },
+    "gated_norm": {
+      "tensors": 56,
+      "parameters": 458752,
+      "finite": true,
+      "nonzero": 458752,
+      "minimum": -0.007640838623046875,
+      "maximum": 11.375
+    },
+    "block_and_final_norm": {
+      "tensors": 57,
+      "parameters": 233472,
+      "finite": true,
+      "nonzero": 233472,
+      "minimum": 0.123291015625,
+      "maximum": 10.5703125
+    }
+  },
+  "initial_stability": {
+    "all_masters_and_fp16_casts_finite": true,
+    "native_A_finite": true,
+    "dt_bias_softplus_finite": true,
+    "native_A": {
+      "minimum": -92734.890625,
+      "maximum": -0.0044884406961500645,
+      "zeros": 0
+    },
+    "softplus_dt_bias_only": {
+      "minimum": 0.00017954407667275518,
+      "maximum": 0.6230375170707703,
+      "zeros": 0
+    }
+  },
+  "initial_forward": {
+    "hidden_bitwise_equal": true,
+    "logits_bitwise_equal": true,
+    "input_tokens": 128,
+    "hidden_sha256": "435b2d43b7387cd1542c83834ccbb28dad252d6ddb274b7afd0f9085f04bc373"
+  },
+  "tolerances": {
+    "checkpoint_gradient_rtol": 0.005,
+    "checkpoint_gradient_atol": 3e-05,
+    "chunk_hidden_gradient_rtol": 0.005,
+    "chunk_hidden_gradient_atol": 0.001,
+    "chunk_objective_absolute": 1e-05
+  },
+  "checkpoint_parity": {
+    "passed": true,
+    "rtol": 0.005,
+    "atol": 3e-05,
+    "maximum_absolute_difference": 0.0,
+    "tensor_count": 393,
+    "hidden_bitwise_equal": true,
+    "gradient_coverage": {
+      "finite": true,
+      "tensors": 393,
+      "parameters": 3580928,
+      "nonzero": 3580847,
+      "dtypes": [
+        "torch.float32"
+      ],
+      "per_tensor": {
+        "backbone.layers.0.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.0.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.0.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.0.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40959,
+          "numel": 40960
+        },
+        "backbone.layers.0.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.0.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.0.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.1.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.1.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.1.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.1.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.1.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.1.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.1.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.10.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.10.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.10.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.10.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.10.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.10.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.10.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.11.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.11.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.11.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.11.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.11.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.11.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.11.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.12.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.12.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.12.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.12.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.12.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.12.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.12.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.13.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.13.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.13.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.13.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.13.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.13.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.13.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.14.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.14.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.14.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.14.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.14.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.14.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.14.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.15.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.15.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.15.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.15.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.15.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.15.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.15.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.16.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.16.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.16.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.16.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.16.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.16.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.16.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.17.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.17.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.17.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.17.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.17.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.17.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.17.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.18.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.18.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.18.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.18.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.18.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.18.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.18.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.19.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.19.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.19.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.19.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.19.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.19.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.19.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.2.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.2.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.2.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.2.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.2.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.2.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.2.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.20.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.20.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.20.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.20.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.20.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.20.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.20.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.21.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.21.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.21.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.21.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.21.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.21.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.21.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.22.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.22.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.22.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10239,
+          "numel": 10240
+        },
+        "backbone.layers.22.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.22.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.22.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.22.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.23.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.23.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.23.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.23.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.23.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.23.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.23.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.24.mixer.A_log": {
+          "finite": true,
+          "nonzero": 125,
+          "numel": 128
+        },
+        "backbone.layers.24.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.24.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.24.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40959,
+          "numel": 40960
+        },
+        "backbone.layers.24.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.24.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.24.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.25.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.25.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.25.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.25.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.25.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.25.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.25.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.26.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.26.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.26.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.26.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.26.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.26.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.26.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.27.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.27.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.27.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.27.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.27.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.27.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8191,
+          "numel": 8192
+        },
+        "backbone.layers.27.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.28.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.28.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.28.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.28.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.28.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.28.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.28.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.29.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.29.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.29.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.29.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.29.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.29.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.29.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.3.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.3.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.3.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.3.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.3.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.3.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.3.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.30.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.30.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.30.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.30.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.30.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.30.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.30.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.31.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.31.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.31.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.31.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.31.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.31.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.31.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.32.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.32.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.32.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.32.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.32.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.32.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.32.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.33.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.33.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.33.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.33.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.33.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.33.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.33.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.34.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.34.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.34.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.34.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.34.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.34.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.34.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.35.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.35.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.35.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.35.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.35.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.35.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.35.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.36.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.36.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.36.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.36.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40959,
+          "numel": 40960
+        },
+        "backbone.layers.36.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.36.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.36.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.37.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.37.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.37.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.37.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.37.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.37.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.37.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.38.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.38.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.38.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.38.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.38.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.38.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.38.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.39.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.39.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.39.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.39.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.39.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.39.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.39.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.4.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.4.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.4.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.4.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.4.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.4.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.4.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.40.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.40.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.40.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.40.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.40.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.40.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.40.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.41.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.41.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.41.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.41.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.41.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.41.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.41.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.42.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.42.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.42.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.42.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.42.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.42.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.42.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.43.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.43.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.43.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.43.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.43.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.43.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.43.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.44.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.44.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.44.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.44.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.44.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.44.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.44.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.45.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.45.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.45.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.45.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.45.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.45.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.45.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.46.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.46.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.46.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.46.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40959,
+          "numel": 40960
+        },
+        "backbone.layers.46.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.46.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.46.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.47.mixer.A_log": {
+          "finite": true,
+          "nonzero": 125,
+          "numel": 128
+        },
+        "backbone.layers.47.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.47.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.47.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.47.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.47.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.47.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.48.mixer.A_log": {
+          "finite": true,
+          "nonzero": 124,
+          "numel": 128
+        },
+        "backbone.layers.48.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.48.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.48.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.48.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.48.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.48.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.49.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.49.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.49.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.49.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.49.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.49.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.49.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.5.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.5.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.5.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.5.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.5.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.5.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.5.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.50.mixer.A_log": {
+          "finite": true,
+          "nonzero": 127,
+          "numel": 128
+        },
+        "backbone.layers.50.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.50.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.50.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.50.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.50.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.50.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.51.mixer.A_log": {
+          "finite": true,
+          "nonzero": 122,
+          "numel": 128
+        },
+        "backbone.layers.51.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.51.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.51.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.51.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.51.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.51.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.52.mixer.A_log": {
+          "finite": true,
+          "nonzero": 126,
+          "numel": 128
+        },
+        "backbone.layers.52.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.52.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.52.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.52.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.52.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.52.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.53.mixer.A_log": {
+          "finite": true,
+          "nonzero": 118,
+          "numel": 128
+        },
+        "backbone.layers.53.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.53.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.53.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.53.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.53.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.53.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.54.mixer.A_log": {
+          "finite": true,
+          "nonzero": 124,
+          "numel": 128
+        },
+        "backbone.layers.54.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.54.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.54.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.54.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.54.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.54.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.55.mixer.A_log": {
+          "finite": true,
+          "nonzero": 116,
+          "numel": 128
+        },
+        "backbone.layers.55.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.55.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.55.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.55.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.55.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.55.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.6.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.6.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.6.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.6.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.6.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.6.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.6.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.7.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.7.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.7.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.7.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.7.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.7.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.7.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.8.mixer.A_log": {
+          "finite": true,
+          "nonzero": 125,
+          "numel": 128
+        },
+        "backbone.layers.8.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.8.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.8.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.8.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.8.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.8.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.layers.9.mixer.A_log": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.9.mixer.D": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.9.mixer.conv1d.bias": {
+          "finite": true,
+          "nonzero": 10240,
+          "numel": 10240
+        },
+        "backbone.layers.9.mixer.conv1d.weight": {
+          "finite": true,
+          "nonzero": 40960,
+          "numel": 40960
+        },
+        "backbone.layers.9.mixer.dt_bias": {
+          "finite": true,
+          "nonzero": 128,
+          "numel": 128
+        },
+        "backbone.layers.9.mixer.norm.weight": {
+          "finite": true,
+          "nonzero": 8192,
+          "numel": 8192
+        },
+        "backbone.layers.9.norm.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        },
+        "backbone.norm_f.weight": {
+          "finite": true,
+          "nonzero": 4096,
+          "numel": 4096
+        }
+      }
+    },
+    "gradient_family_ranges": {
+      "A_log": {
+        "tensors": 56,
+        "parameters": 7168,
+        "finite": true,
+        "nonzero": 7094,
+        "minimum": -0.482421875,
+        "maximum": 0.8369140625
+      },
+      "D": {
+        "tensors": 56,
+        "parameters": 7168,
+        "finite": true,
+        "nonzero": 7168,
+        "minimum": -9.8515625,
+        "maximum": 34.5625
+      },
+      "conv_bias": {
+        "tensors": 56,
+        "parameters": 573440,
+        "finite": true,
+        "nonzero": 573439,
+        "minimum": -131.0,
+        "maximum": 165.875
+      },
+      "conv_weight": {
+        "tensors": 56,
+        "parameters": 2293760,
+        "finite": true,
+        "nonzero": 2293756,
+        "minimum": -205.375,
+        "maximum": 423.75
+      },
+      "dt_bias": {
+        "tensors": 56,
+        "parameters": 7168,
+        "finite": true,
+        "nonzero": 7167,
+        "minimum": -0.3740234375,
+        "maximum": 0.328125
+      },
+      "gated_norm": {
+        "tensors": 56,
+        "parameters": 458752,
+        "finite": true,
+        "nonzero": 458751,
+        "minimum": -220.375,
+        "maximum": 138.0
+      },
+      "block_and_final_norm": {
+        "tensors": 57,
+        "parameters": 233472,
+        "finite": true,
+        "nonzero": 233472,
+        "minimum": -7.390625,
+        "maximum": 13.9453125
+      }
+    }
+  },
+  "chunked_loss_parity": {
+    "passed": true,
+    "rtol": 0.005,
+    "atol": 0.001,
+    "maximum_absolute_difference": 0.0,
+    "tensor_count": 1,
+    "tokens": 5,
+    "chunk_tokens": 3,
+    "objective_absolute_difference": 2.9057264150367246e-08
+  },
+  "full_window_trial": {
+    "attempts": [
+      {
+        "ce": 2.4737738128050863,
+        "teacher_to_student_kl": 0.1826905934008145,
+        "loss": 1.3282322031029503,
+        "targets": 2047,
+        "scaled_hidden_gradient_finite": true,
+        "scaled_hidden_gradient_nonzero": 8365916,
+        "scaled_hidden_gradient_elements": 8384512,
+        "overflow": false,
+        "loss_scale_before": 1024.0,
+        "loss_scale_after": 1024.0,
+        "gradient_norm_before_clip": 2.7339208126068115,
+        "gradients": {
+          "finite": true,
+          "tensors": 393,
+          "parameters": 3580928,
+          "nonzero": 3580906,
+          "dtypes": [
+            "torch.float32"
+          ]
+        },
+        "gradient_family_ranges": {
+          "A_log": {
+            "tensors": 56,
+            "parameters": 7168,
+            "finite": true,
+            "nonzero": 7147,
+            "minimum": -0.0022125244140625,
+            "maximum": 0.003509521484375
+          },
+          "D": {
+            "tensors": 56,
+            "parameters": 7168,
+            "finite": true,
+            "nonzero": 7168,
+            "minimum": -0.0728759765625,
+            "maximum": 0.058013916015625
+          },
+          "conv_bias": {
+            "tensors": 56,
+            "parameters": 573440,
+            "finite": true,
+            "nonzero": 573440,
+            "minimum": -0.089111328125,
+            "maximum": 0.11358642578125
+          },
+          "conv_weight": {
+            "tensors": 56,
+            "parameters": 2293760,
+            "finite": true,
+            "nonzero": 2293759,
+            "minimum": -0.1209716796875,
+            "maximum": 0.317138671875
+          },
+          "dt_bias": {
+            "tensors": 56,
+            "parameters": 7168,
+            "finite": true,
+            "nonzero": 7168,
+            "minimum": -0.0012292861938476562,
+            "maximum": 0.0011377334594726562
+          },
+          "gated_norm": {
+            "tensors": 56,
+            "parameters": 458752,
+            "finite": true,
+            "nonzero": 458752,
+            "minimum": -0.462158203125,
+            "maximum": 0.411376953125
+          },
+          "block_and_final_norm": {
+            "tensors": 57,
+            "parameters": 233472,
+            "finite": true,
+            "nonzero": 233472,
+            "minimum": -0.014801025390625,
+            "maximum": 0.01342010498046875
+          }
+        },
+        "stability": {
+          "all_masters_and_fp16_casts_finite": true,
+          "native_A_finite": true,
+          "dt_bias_softplus_finite": true,
+          "native_A": {
+            "minimum": -92734.890625,
+            "maximum": -0.0044884406961500645,
+            "zeros": 0
+          },
+          "softplus_dt_bias_only": {
+            "minimum": 0.00017954407667275518,
+            "maximum": 0.6229808926582336,
+            "zeros": 0
+          }
+        },
+        "overflow_optimizer_and_masters_unchanged": null
+      }
+    ],
+    "successful_updates": 1,
+    "discard_before_training": true
+  },
+  "final_parameter_ranges": {
+    "A_log": {
+      "tensors": 56,
+      "parameters": 7168,
+      "finite": true,
+      "nonzero": 7168,
+      "minimum": -5.406149864196777,
+      "maximum": 11.437499046325684
+    },
+    "D": {
+      "tensors": 56,
+      "parameters": 7168,
+      "finite": true,
+      "nonzero": 7168,
+      "minimum": -0.6915062069892883,
+      "maximum": 3.3905251026153564
+    },
+    "conv_bias": {
+      "tensors": 56,
+      "parameters": 573440,
+      "finite": true,
+      "nonzero": 573440,
+      "minimum": -4.312600135803223,
+      "maximum": 6.0313496589660645
+    },
+    "conv_weight": {
+      "tensors": 56,
+      "parameters": 2293760,
+      "finite": true,
+      "nonzero": 2293760,
+      "minimum": -0.8750998377799988,
+      "maximum": 1.2579123973846436
+    },
+    "dt_bias": {
+      "tensors": 56,
+      "parameters": 7168,
+      "finite": true,
+      "nonzero": 7168,
+      "minimum": -8.625069618225098,
+      "maximum": -0.14560754597187042
+    },
+    "gated_norm": {
+      "tensors": 56,
+      "parameters": 458752,
+      "finite": true,
+      "nonzero": 458752,
+      "minimum": -0.0075408401899039745,
+      "maximum": 11.375100135803223
+    },
+    "block_and_final_norm": {
+      "tensors": 57,
+      "parameters": 233472,
+      "finite": true,
+      "nonzero": 233472,
+      "minimum": 0.12339088320732117,
+      "maximum": 10.570412635803223
+    }
+  },
+  "export_parity": {
+    "bitwise_equal": true,
+    "maximum_absolute_difference": 0.0,
+    "functional_hidden_sha256": "8b69b18ce8aec206f84fa079cb98afbd1fb34c8e470adf15a9102c7af512bb57",
+    "reloaded_hidden_sha256": "8b69b18ce8aec206f84fa079cb98afbd1fb34c8e470adf15a9102c7af512bb57",
+    "input_tokens": 128,
+    "tensor_comparison": {
+      "tensor_count": 393,
+      "parameter_count": 3580928,
+      "actual_changed_keys": [
+        "backbone.layers.0.mixer.A_log",
+        "backbone.layers.0.mixer.D",
+        "backbone.layers.0.mixer.conv1d.bias",
+        "backbone.layers.0.mixer.conv1d.weight",
+        "backbone.layers.0.mixer.norm.weight",
+        "backbone.layers.0.norm.weight",
+        "backbone.layers.1.mixer.A_log",
+        "backbone.layers.1.mixer.D",
+        "backbone.layers.1.mixer.conv1d.bias",
+        "backbone.layers.1.mixer.conv1d.weight",
+        "backbone.layers.1.mixer.norm.weight",
+        "backbone.layers.10.mixer.A_log",
+        "backbone.layers.10.mixer.D",
+        "backbone.layers.10.mixer.conv1d.bias",
+        "backbone.layers.10.mixer.conv1d.weight",
+        "backbone.layers.10.mixer.norm.weight",
+        "backbone.layers.11.mixer.A_log",
+        "backbone.layers.11.mixer.D",
+        "backbone.layers.11.mixer.conv1d.bias",
+        "backbone.layers.11.mixer.conv1d.weight",
+        "backbone.layers.11.mixer.norm.weight",
+        "backbone.layers.12.mixer.A_log",
+        "backbone.layers.12.mixer.D",
+        "backbone.layers.12.mixer.conv1d.bias",
+        "backbone.layers.12.mixer.conv1d.weight",
+        "backbone.layers.12.mixer.norm.weight",
+        "backbone.layers.13.mixer.A_log",
+        "backbone.layers.13.mixer.D",
+        "backbone.layers.13.mixer.conv1d.bias",
+        "backbone.layers.13.mixer.conv1d.weight",
+        "backbone.layers.13.mixer.norm.weight",
+        "backbone.layers.14.mixer.A_log",
+        "backbone.layers.14.mixer.D",
+        "backbone.layers.14.mixer.conv1d.bias",
+        "backbone.layers.14.mixer.conv1d.weight",
+        "backbone.layers.14.mixer.norm.weight",
+        "backbone.layers.15.mixer.A_log",
+        "backbone.layers.15.mixer.D",
+        "backbone.layers.15.mixer.conv1d.bias",
+        "backbone.layers.15.mixer.conv1d.weight",
+        "backbone.layers.15.mixer.norm.weight",
+        "backbone.layers.16.mixer.A_log",
+        "backbone.layers.16.mixer.D",
+        "backbone.layers.16.mixer.conv1d.bias",
+        "backbone.layers.16.mixer.conv1d.weight",
+        "backbone.layers.16.mixer.norm.weight",
+        "backbone.layers.17.mixer.A_log",
+        "backbone.layers.17.mixer.D",
+        "backbone.layers.17.mixer.conv1d.bias",
+        "backbone.layers.17.mixer.conv1d.weight",
+        "backbone.layers.17.mixer.norm.weight",
+        "backbone.layers.18.mixer.A_log",
+        "backbone.layers.18.mixer.D",
+        "backbone.layers.18.mixer.conv1d.bias",
+        "backbone.layers.18.mixer.conv1d.weight",
+        "backbone.layers.18.mixer.norm.weight",
+        "backbone.layers.19.mixer.A_log",
+        "backbone.layers.19.mixer.D",
+        "backbone.layers.19.mixer.conv1d.bias",
+        "backbone.layers.19.mixer.conv1d.weight",
+        "backbone.layers.19.mixer.norm.weight",
+        "backbone.layers.2.mixer.A_log",
+        "backbone.layers.2.mixer.D",
+        "backbone.layers.2.mixer.conv1d.bias",
+        "backbone.layers.2.mixer.conv1d.weight",
+        "backbone.layers.2.mixer.norm.weight",
+        "backbone.layers.20.mixer.A_log",
+        "backbone.layers.20.mixer.D",
+        "backbone.layers.20.mixer.conv1d.bias",
+        "backbone.layers.20.mixer.conv1d.weight",
+        "backbone.layers.20.mixer.norm.weight",
+        "backbone.layers.21.mixer.A_log",
+        "backbone.layers.21.mixer.D",
+        "backbone.layers.21.mixer.conv1d.bias",
+        "backbone.layers.21.mixer.conv1d.weight",
+        "backbone.layers.21.mixer.norm.weight",
+        "backbone.layers.22.mixer.A_log",
+        "backbone.layers.22.mixer.D",
+        "backbone.layers.22.mixer.conv1d.bias",
+        "backbone.layers.22.mixer.conv1d.weight",
+        "backbone.layers.22.mixer.norm.weight",
+        "backbone.layers.23.mixer.A_log",
+        "backbone.layers.23.mixer.D",
+        "backbone.layers.23.mixer.conv1d.bias",
+        "backbone.layers.23.mixer.conv1d.weight",
+        "backbone.layers.23.mixer.norm.weight",
+        "backbone.layers.24.mixer.A_log",
+        "backbone.layers.24.mixer.D",
+        "backbone.layers.24.mixer.conv1d.bias",
+        "backbone.layers.24.mixer.conv1d.weight",
+        "backbone.layers.24.mixer.norm.weight",
+        "backbone.layers.25.mixer.A_log",
+        "backbone.layers.25.mixer.D",
+        "backbone.layers.25.mixer.conv1d.bias",
+        "backbone.layers.25.mixer.conv1d.weight",
+        "backbone.layers.25.mixer.norm.weight",
+        "backbone.layers.26.mixer.A_log",
+        "backbone.layers.26.mixer.D",
+        "backbone.layers.26.mixer.conv1d.bias",
+        "backbone.layers.26.mixer.conv1d.weight",
+        "backbone.layers.26.mixer.norm.weight",
+        "backbone.layers.27.mixer.A_log",
+        "backbone.layers.27.mixer.D",
+        "backbone.layers.27.mixer.conv1d.bias",
+        "backbone.layers.27.mixer.conv1d.weight",
+        "backbone.layers.27.mixer.norm.weight",
+        "backbone.layers.28.mixer.A_log",
+        "backbone.layers.28.mixer.D",
+        "backbone.layers.28.mixer.conv1d.bias",
+        "backbone.layers.28.mixer.conv1d.weight",
+        "backbone.layers.28.mixer.norm.weight",
+        "backbone.layers.29.mixer.A_log",
+        "backbone.layers.29.mixer.D",
+        "backbone.layers.29.mixer.conv1d.bias",
+        "backbone.layers.29.mixer.conv1d.weight",
+        "backbone.layers.29.mixer.norm.weight",
+        "backbone.layers.3.mixer.A_log",
+        "backbone.layers.3.mixer.D",
+        "backbone.layers.3.mixer.conv1d.bias",
+        "backbone.layers.3.mixer.conv1d.weight",
+        "backbone.layers.3.mixer.norm.weight",
+        "backbone.layers.30.mixer.A_log",
+        "backbone.layers.30.mixer.D",
+        "backbone.layers.30.mixer.conv1d.bias",
+        "backbone.layers.30.mixer.conv1d.weight",
+        "backbone.layers.30.mixer.norm.weight",
+        "backbone.layers.31.mixer.A_log",
+        "backbone.layers.31.mixer.D",
+        "backbone.layers.31.mixer.conv1d.bias",
+        "backbone.layers.31.mixer.conv1d.weight",
+        "backbone.layers.31.mixer.norm.weight",
+        "backbone.layers.32.mixer.A_log",
+        "backbone.layers.32.mixer.D",
+        "backbone.layers.32.mixer.conv1d.bias",
+        "backbone.layers.32.mixer.conv1d.weight",
+        "backbone.layers.32.mixer.norm.weight",
+        "backbone.layers.33.mixer.A_log",
+        "backbone.layers.33.mixer.D",
+        "backbone.layers.33.mixer.conv1d.bias",
+        "backbone.layers.33.mixer.conv1d.weight",
+        "backbone.layers.33.mixer.norm.weight",
+        "backbone.layers.34.mixer.A_log",
+        "backbone.layers.34.mixer.D",
+        "backbone.layers.34.mixer.conv1d.bias",
+        "backbone.layers.34.mixer.conv1d.weight",
+        "backbone.layers.34.mixer.norm.weight",
+        "backbone.layers.35.mixer.A_log",
+        "backbone.layers.35.mixer.D",
+        "backbone.layers.35.mixer.conv1d.bias",
+        "backbone.layers.35.mixer.conv1d.weight",
+        "backbone.layers.35.mixer.dt_bias",
+        "backbone.layers.35.mixer.norm.weight",
+        "backbone.layers.36.mixer.A_log",
+        "backbone.layers.36.mixer.D",
+        "backbone.layers.36.mixer.conv1d.bias",
+        "backbone.layers.36.mixer.conv1d.weight",
+        "backbone.layers.36.mixer.norm.weight",
+        "backbone.layers.37.mixer.A_log",
+        "backbone.layers.37.mixer.D",
+        "backbone.layers.37.mixer.conv1d.bias",
+        "backbone.layers.37.mixer.conv1d.weight",
+        "backbone.layers.37.mixer.norm.weight",
+        "backbone.layers.38.mixer.A_log",
+        "backbone.layers.38.mixer.D",
+        "backbone.layers.38.mixer.conv1d.bias",
+        "backbone.layers.38.mixer.conv1d.weight",
+        "backbone.layers.38.mixer.norm.weight",
+        "backbone.layers.39.mixer.A_log",
+        "backbone.layers.39.mixer.D",
+        "backbone.layers.39.mixer.conv1d.bias",
+        "backbone.layers.39.mixer.conv1d.weight",
+        "backbone.layers.39.mixer.norm.weight",
+        "backbone.layers.39.norm.weight",
+        "backbone.layers.4.mixer.A_log",
+        "backbone.layers.4.mixer.D",
+        "backbone.layers.4.mixer.conv1d.bias",
+        "backbone.layers.4.mixer.conv1d.weight",
+        "backbone.layers.4.mixer.norm.weight",
+        "backbone.layers.40.mixer.A_log",
+        "backbone.layers.40.mixer.D",
+        "backbone.layers.40.mixer.conv1d.bias",
+        "backbone.layers.40.mixer.conv1d.weight",
+        "backbone.layers.40.mixer.norm.weight",
+        "backbone.layers.40.norm.weight",
+        "backbone.layers.41.mixer.A_log",
+        "backbone.layers.41.mixer.D",
+        "backbone.layers.41.mixer.conv1d.bias",
+        "backbone.layers.41.mixer.conv1d.weight",
+        "backbone.layers.41.mixer.norm.weight",
+        "backbone.layers.41.norm.weight",
+        "backbone.layers.42.mixer.A_log",
+        "backbone.layers.42.mixer.D",
+        "backbone.layers.42.mixer.conv1d.bias",
+        "backbone.layers.42.mixer.conv1d.weight",
+        "backbone.layers.42.mixer.norm.weight",
+        "backbone.layers.42.norm.weight",
+        "backbone.layers.43.mixer.A_log",
+        "backbone.layers.43.mixer.conv1d.bias",
+        "backbone.layers.43.mixer.conv1d.weight",
+        "backbone.layers.43.mixer.norm.weight",
+        "backbone.layers.43.norm.weight",
+        "backbone.layers.44.mixer.A_log",
+        "backbone.layers.44.mixer.D",
+        "backbone.layers.44.mixer.conv1d.bias",
+        "backbone.layers.44.mixer.conv1d.weight",
+        "backbone.layers.44.mixer.norm.weight",
+        "backbone.layers.44.norm.weight",
+        "backbone.layers.45.mixer.A_log",
+        "backbone.layers.45.mixer.D",
+        "backbone.layers.45.mixer.conv1d.bias",
+        "backbone.layers.45.mixer.conv1d.weight",
+        "backbone.layers.45.mixer.norm.weight",
+        "backbone.layers.45.norm.weight",
+        "backbone.layers.46.mixer.A_log",
+        "backbone.layers.46.mixer.D",
+        "backbone.layers.46.mixer.conv1d.bias",
+        "backbone.layers.46.mixer.conv1d.weight",
+        "backbone.layers.46.mixer.dt_bias",
+        "backbone.layers.46.mixer.norm.weight",
+        "backbone.layers.46.norm.weight",
+        "backbone.layers.47.mixer.A_log",
+        "backbone.layers.47.mixer.D",
+        "backbone.layers.47.mixer.conv1d.bias",
+        "backbone.layers.47.mixer.conv1d.weight",
+        "backbone.layers.47.mixer.dt_bias",
+        "backbone.layers.47.mixer.norm.weight",
+        "backbone.layers.47.norm.weight",
+        "backbone.layers.48.mixer.A_log",
+        "backbone.layers.48.mixer.D",
+        "backbone.layers.48.mixer.conv1d.bias",
+        "backbone.layers.48.mixer.conv1d.weight",
+        "backbone.layers.48.mixer.norm.weight",
+        "backbone.layers.48.norm.weight",
+        "backbone.layers.49.mixer.A_log",
+        "backbone.layers.49.mixer.conv1d.bias",
+        "backbone.layers.49.mixer.conv1d.weight",
+        "backbone.layers.49.mixer.norm.weight",
+        "backbone.layers.49.norm.weight",
+        "backbone.layers.5.mixer.A_log",
+        "backbone.layers.5.mixer.D",
+        "backbone.layers.5.mixer.conv1d.bias",
+        "backbone.layers.5.mixer.conv1d.weight",
+        "backbone.layers.5.mixer.norm.weight",
+        "backbone.layers.50.mixer.A_log",
+        "backbone.layers.50.mixer.D",
+        "backbone.layers.50.mixer.conv1d.bias",
+        "backbone.layers.50.mixer.conv1d.weight",
+        "backbone.layers.50.mixer.norm.weight",
+        "backbone.layers.50.norm.weight",
+        "backbone.layers.51.mixer.A_log",
+        "backbone.layers.51.mixer.conv1d.bias",
+        "backbone.layers.51.mixer.conv1d.weight",
+        "backbone.layers.51.mixer.norm.weight",
+        "backbone.layers.51.norm.weight",
+        "backbone.layers.52.mixer.A_log",
+        "backbone.layers.52.mixer.conv1d.bias",
+        "backbone.layers.52.mixer.conv1d.weight",
+        "backbone.layers.52.mixer.norm.weight",
+        "backbone.layers.52.norm.weight",
+        "backbone.layers.53.mixer.A_log",
+        "backbone.layers.53.mixer.conv1d.bias",
+        "backbone.layers.53.mixer.conv1d.weight",
+        "backbone.layers.53.mixer.norm.weight",
+        "backbone.layers.53.norm.weight",
+        "backbone.layers.54.mixer.A_log",
+        "backbone.layers.54.mixer.conv1d.bias",
+        "backbone.layers.54.mixer.conv1d.weight",
+        "backbone.layers.54.mixer.norm.weight",
+        "backbone.layers.55.mixer.A_log",
+        "backbone.layers.55.mixer.conv1d.bias",
+        "backbone.layers.55.mixer.conv1d.weight",
+        "backbone.layers.55.mixer.norm.weight",
+        "backbone.layers.6.mixer.A_log",
+        "backbone.layers.6.mixer.D",
+        "backbone.layers.6.mixer.conv1d.bias",
+        "backbone.layers.6.mixer.conv1d.weight",
+        "backbone.layers.6.mixer.norm.weight",
+        "backbone.layers.7.mixer.A_log",
+        "backbone.layers.7.mixer.D",
+        "backbone.layers.7.mixer.conv1d.bias",
+        "backbone.layers.7.mixer.conv1d.weight",
+        "backbone.layers.7.mixer.norm.weight",
+        "backbone.layers.8.mixer.A_log",
+        "backbone.layers.8.mixer.D",
+        "backbone.layers.8.mixer.conv1d.bias",
+        "backbone.layers.8.mixer.conv1d.weight",
+        "backbone.layers.8.mixer.norm.weight",
+        "backbone.layers.9.mixer.A_log",
+        "backbone.layers.9.mixer.D",
+        "backbone.layers.9.mixer.conv1d.bias",
+        "backbone.layers.9.mixer.conv1d.weight",
+        "backbone.layers.9.mixer.norm.weight"
+      ],
+      "actual_changed_tensor_count": 292,
+      "fp16_tensor_sha256": {
+        "backbone.layers.0.mixer.A_log": "e32f24b8fde71901516d3401a149d59e223e46246216dc20dc778351d881a9ed",
+        "backbone.layers.0.mixer.D": "00a8f6871eeba9d2b632a831cedb75a487923500fdbb32cfdd513fdce6792818",
+        "backbone.layers.0.mixer.conv1d.bias": "ce8e26a8fd9ea35de60922d35b8163d99090b0817adf9f66d787220112ae11d8",
+        "backbone.layers.0.mixer.conv1d.weight": "9546a1b9cc08e6ab0ff2f10ec1a5c984f79210c7d5da3d932612fa2fd7900f20",
+        "backbone.layers.0.mixer.dt_bias": "575d992f7d30726a3ed0ef4404363b3bb05517d6c5c9919fe0ce6f71e82a2f95",
+        "backbone.layers.0.mixer.norm.weight": "6789116eb339b165ab43132f78c0b8ea881147d7fe69218a36009d4cb2b415da",
+        "backbone.layers.0.norm.weight": "aa1b3374e40e29db3f0ee01bb90ec041b28db8f64195d02db5c7e6417d78068f",
+        "backbone.layers.1.mixer.A_log": "b26b4ec2314e2055d7e5542d4f02371020ddadc85589d99fec35d93d9e22d6b6",
+        "backbone.layers.1.mixer.D": "b6c4912cf26ce9caaab3742bc94363bf07cdb410ba99012c8e94d7a8924dc2e2",
+        "backbone.layers.1.mixer.conv1d.bias": "694aac82c19be188883215837f7bc53228bab51c7b19552c97849c6a67dba732",
+        "backbone.layers.1.mixer.conv1d.weight": "513ad01df222df650c53a487a60e8c7ac933f7158d6885afda99e2f3d040c7d9",
+        "backbone.layers.1.mixer.dt_bias": "ae3bc85972c86c363f53effd0dc73bbaf26e8e1dc3712b93a2b55e355c272d2a",
+        "backbone.layers.1.mixer.norm.weight": "0f7338ff83266f4a9577fc741ff4b4b36d627041d1ead39cc4be11e3a7b92294",
+        "backbone.layers.1.norm.weight": "1a7a1190bd7ca73ededcefadf107142761e12ab9b79dc533c6fcca5f69ee4051",
+        "backbone.layers.10.mixer.A_log": "37b239b099b79bf32d710f5aba5782342fa54e6cf1563185c4443f872cbc6bd8",
+        "backbone.layers.10.mixer.D": "49b046860c88b695b91d9c6720c16a5b8eb018ef84236dd9aa693d6fbe9b16fa",
+        "backbone.layers.10.mixer.conv1d.bias": "f5449204e47936dfb55a49d70e949da3a40029f8f22b0accbc5e5964f1e1440a",
+        "backbone.layers.10.mixer.conv1d.weight": "ee21f51394fdeea04cf9c65673d70c8d1292209bd0737d07f96be3b5adc57561",
+        "backbone.layers.10.mixer.dt_bias": "d324777e66f0e6e4d99a1ef833e038402303c7a973c79b7e9eec5de728ee0994",
+        "backbone.layers.10.mixer.norm.weight": "206d3a05e90044340460409507a3ebc8cf7bd4aa5590e67367dc6b3d6f5a0fbe",
+        "backbone.layers.10.norm.weight": "a9ca90fd1b89c7226fb5094dde038d9ce6edf5be9f03827be10ae4e9a5defe54",
+        "backbone.layers.11.mixer.A_log": "09b6c03f0a4450d75b8cfe3801d699a5de939e9c9fd8dcc7e939b28069d85a0f",
+        "backbone.layers.11.mixer.D": "af3dc6a9f448a5b28a3cc0af0fae5dc40c2bc39e520fd4fb7c67082cf1cd1cff",
+        "backbone.layers.11.mixer.conv1d.bias": "ed9cf0f804b7a8d969914048ab58e2aff117aebdd726e6d3f1730befe0049260",
+        "backbone.layers.11.mixer.conv1d.weight": "d5aea090ab4cdc3a24c31101c5deaadc42b05202d45720e7350f2267bca1ff71",
+        "backbone.layers.11.mixer.dt_bias": "398a57d4a84fad84fe793c252c36689eb7222bf2c7dae842bd769aea8d132a8d",
+        "backbone.layers.11.mixer.norm.weight": "46bbb716360a2599bc97220ad2e25868c212ef724ca61022b210274daf934d89",
+        "backbone.layers.11.norm.weight": "f00a52d0027217944d28051ecb23820c6b1686e8cbe834c5a68f6841fb2f938b",
+        "backbone.layers.12.mixer.A_log": "fc8913424b74d777711eb0b61188650958f1253b16c74ba6749429aa3d4c9feb",
+        "backbone.layers.12.mixer.D": "c8d3b2b134efa237ced4e010f95a7e3432934bbd485b66e7193f5bae689ef0f0",
+        "backbone.layers.12.mixer.conv1d.bias": "507583cfbcfa4cb189f091ab2daf92bd21145253e37cfb060fd77c6ee13e53b6",
+        "backbone.layers.12.mixer.conv1d.weight": "86c630ff36174477fc7190729574b2f72deda14b87ab8007b57505e43c76decc",
+        "backbone.layers.12.mixer.dt_bias": "8c838c8c0b2d299b3b927c826c5bd7cd94b062276337a426e327ce8d2e5d9615",
+        "backbone.layers.12.mixer.norm.weight": "48df9cc2a5d7d86d8a9270bed466e78726d5f166cfc8337e92c84862e68ac0d9",
+        "backbone.layers.12.norm.weight": "c45565478557b9edb9eaf200595c3ad988f77feb55b71306730795bf07488647",
+        "backbone.layers.13.mixer.A_log": "bdf7e056c2dba2a80585f856856f221919ff260ab0913935074dacaac1a1b2f1",
+        "backbone.layers.13.mixer.D": "5daa494c3d54fd3cd011c30852220efcc8752a6cec39f8531781010c9910afd9",
+        "backbone.layers.13.mixer.conv1d.bias": "19ea75fb5e9864f94f1999d37463a69dc12fb3159f1271f3d569d8d30d110695",
+        "backbone.layers.13.mixer.conv1d.weight": "83fd4e30d6ffd0e49e77063fc921a55031bbd7872051471b922714182f14056d",
+        "backbone.layers.13.mixer.dt_bias": "18197d06a34ed3676a0bf74347d6d97dc6e7c35f5295f92a2b5e93b628b408f6",
+        "backbone.layers.13.mixer.norm.weight": "c9bb08ae7c96cb80ed0471e024fe26dd7f96ba4d7fa45283fe3de730c24bc11f",
+        "backbone.layers.13.norm.weight": "3bac3626cf9d0070e58ec6dab6895a84398458b371cba2917da50c04540a26f9",
+        "backbone.layers.14.mixer.A_log": "f10ae0fe7b3606e88b7084c4ed464eaa6af6ae20c8a07491910374e5d1bbac09",
+        "backbone.layers.14.mixer.D": "97eebf2a63d5365da71c21d136cc60e1e1aac618eb86e6ce07abcb4a6d6d3b50",
+        "backbone.layers.14.mixer.conv1d.bias": "b297a21fbe1691b137df6397c6bdde18945fa9932ebf93b4a5cde5c0c9f49dde",
+        "backbone.layers.14.mixer.conv1d.weight": "3f6e81df60bd26ce601147d2f86e5b0aea740baead1f9138f71c4d8913e492bc",
+        "backbone.layers.14.mixer.dt_bias": "d7ba3283e57c1d6667dafc6a5557bc0283b6083ca738eb24bc16e7bc5ebbbfe9",
+        "backbone.layers.14.mixer.norm.weight": "2f3b5e9fc66638e210c56d5f6fcf7e7fad787d3e1224ffb7dc92541d983759a8",
+        "backbone.layers.14.norm.weight": "be712cc8a139757c640885d2068c7a03e6396cfdb7a991e699f80300f1c70b42",
+        "backbone.layers.15.mixer.A_log": "f77e55d565f7862e92146f86cd86cfc72cfa74888d9ec5b8b393eb2b36ca7bc5",
+        "backbone.layers.15.mixer.D": "29b5a27711cfd6e04ca2af565831b4cfad78da9a6616a5513bbaf8aaf51af0ce",
+        "backbone.layers.15.mixer.conv1d.bias": "e1a6632623e0171de3010296cbc020a2caa488181a1608d2d8d333f3b5a09080",
+        "backbone.layers.15.mixer.conv1d.weight": "84662f27c259d7580809e831ed8e08d35fbe47b293ddd7567f6f5e8d6ac7b684",
+        "backbone.layers.15.mixer.dt_bias": "03d06adfb765cd1c63511a591af2b922594ca984d9d02191990aed377ab87a7f",
+        "backbone.layers.15.mixer.norm.weight": "dec61f5d436b36e0f832220b74ff582a8996e7354c13f10d4e95d3a935b61561",
+        "backbone.layers.15.norm.weight": "9c9f08688ad99c883d97ede6503fcd858f2d18874c3d457445d2e4b0143f725d",
+        "backbone.layers.16.mixer.A_log": "894989d2c1b402a6954e574bf28b4b1cb5970449504e86ff54f5f9ec53522fd4",
+        "backbone.layers.16.mixer.D": "f8ff8eb969ed8a54fc4c15e708a17991df4af7f2d2215e99125325dc516a77f9",
+        "backbone.layers.16.mixer.conv1d.bias": "71e7b208a35fbdc5c657c606af1ea35998c4faca690b7a3477a8a4132a168acc",
+        "backbone.layers.16.mixer.conv1d.weight": "e685b063871a343868e84bd736ac013cb8057e1bdb0aec03d151f4a2e069450e",
+        "backbone.layers.16.mixer.dt_bias": "56bbfd60436a32ec7d72a51ea63f95e86b0ba57016422a180dc28e8edaba05d0",
+        "backbone.layers.16.mixer.norm.weight": "e935e32b84552c3de823c58201bf986a952d81952ad1aa5a9a978557a49e8452",
+        "backbone.layers.16.norm.weight": "012edbe4f936759d613448bd3afa38a8bb39c233b2236bda11d43ea90794972b",
+        "backbone.layers.17.mixer.A_log": "673a9ffd5c7b14895d7acbcc5ec3981207951a4ee5b93f71a2c8ddb0d150cdb2",
+        "backbone.layers.17.mixer.D": "73bca66556879bfd7864effc5bb834a691ec555b075fac506a4a9db6c193799e",
+        "backbone.layers.17.mixer.conv1d.bias": "f79552b80d6e5c0e822e8aeb9affcdbd5ab36d9047a42995ffc09a17bbbf3b13",
+        "backbone.layers.17.mixer.conv1d.weight": "8d542dd48446528a7799fbf580919cd041e1426d8e0d455928d6d55373ec8c16",
+        "backbone.layers.17.mixer.dt_bias": "da30edbdcb7abd589e0f5be03acb09f8e313d50cf6e2895ea510e1bbd866e10b",
+        "backbone.layers.17.mixer.norm.weight": "831ca16b0f2666847d91b5112535b22ae5c81c18e4708db22df8c096607429ba",
+        "backbone.layers.17.norm.weight": "37e224c346c397c7aa9d6105c56070fdac8f0ae8ab2c843c6b738702a604b47e",
+        "backbone.layers.18.mixer.A_log": "3b2c0fc809ecfe3cb97938296c9e54e313b34ecf6b6fa515f30df52f7498f489",
+        "backbone.layers.18.mixer.D": "334755138c02136e8bc4e5320e5bfc7e582cd974671e5825126cb7db2bd28fc6",
+        "backbone.layers.18.mixer.conv1d.bias": "0c703b986ad29b2618abaee9ef13c356fbd82999df4733ee9556ee96e6335348",
+        "backbone.layers.18.mixer.conv1d.weight": "6780b0537c7757771c78de44e01596ea920340720f0e09a737a805e6f834ccd6",
+        "backbone.layers.18.mixer.dt_bias": "caf798ab038bbe6db8ecabd667b6b8f9832f81e578660c9de7e5645ad0d4bc5d",
+        "backbone.layers.18.mixer.norm.weight": "f431e789079cd6a9d76e81d7cc821e53d06139920831ef23b3459c86fe8f205d",
+        "backbone.layers.18.norm.weight": "52da6279a57641f4a74dce8a9c9c0d9fda82e8e7b2b8583226e14c545f8c8edd",
+        "backbone.layers.19.mixer.A_log": "e4b6e71a78d4f8450bd99b1a49ef10588c51fc2b0156f6807363f5b1b52a0e5f",
+        "backbone.layers.19.mixer.D": "024b5d63da3e532ff7f6643608c1cfa3a788d809cdb5485ba4d275d3fc33fef5",
+        "backbone.layers.19.mixer.conv1d.bias": "c8f9a51893d3a280ee7be8c1fe90773bcdb956fee2f6db6f61e6c8f274fbeb21",
+        "backbone.layers.19.mixer.conv1d.weight": "ee57ccc28a5da3c7d567eac10726d6c5fd2a1714e601af370a344e18ddba4b3e",
+        "backbone.layers.19.mixer.dt_bias": "fafee561285a386364dd8bd49ca8b045c843e15d969b711630a193a3c86fe037",
+        "backbone.layers.19.mixer.norm.weight": "20c1063d4ca817d2a9fe712a41b8564c6861ec641a073907cce57ffdae4f563a",
+        "backbone.layers.19.norm.weight": "2f8051019f8a1c547685e3e1357e6344728892d086265b6e92adc413ea19a05f",
+        "backbone.layers.2.mixer.A_log": "931d5039e666668b58edb0b6b9782a40ec687926054c61e889786b580cffe4f6",
+        "backbone.layers.2.mixer.D": "de40c3b8e7e777abfc4aee45d09baad52363d0a70ec19b75fdf9d5f89c8c754c",
+        "backbone.layers.2.mixer.conv1d.bias": "fa79c42dd478a42f6bce6895300f9d640ddfddfbd64919a93aa58ef10956ff37",
+        "backbone.layers.2.mixer.conv1d.weight": "9173a7298cb3e1f47073be70ec171f5a4ade105c142aa7c35ecff1058cd5f2c8",
+        "backbone.layers.2.mixer.dt_bias": "15cde4f788f1ff9485dc227f4e9ebce8086db1708b906f1f978da5f91575c0ee",
+        "backbone.layers.2.mixer.norm.weight": "661fba67da7fae502b237671797d217cb7cc79d38d661359c4a3d8c58e6fd53e",
+        "backbone.layers.2.norm.weight": "29f2e55ff8b9b28f86d732dd83bfa2cce375f86ee69cda2fe519d0b9cdab45ba",
+        "backbone.layers.20.mixer.A_log": "776feff55af05be0e5ad12c3990b6352410cf638bb8ce5f335d80c977dbd8dbd",
+        "backbone.layers.20.mixer.D": "d012de5d03c198520d52fdc4e410fb31e227a8995b0818d16ddb6dc31b88f96e",
+        "backbone.layers.20.mixer.conv1d.bias": "213cba6611eeff19653aa858671641b0243eb752fd8cd5a3972addf785e14421",
+        "backbone.layers.20.mixer.conv1d.weight": "c7b77ed5b104383a84acf55d03c05d316e19534671ea14c54253e8869b494de3",
+        "backbone.layers.20.mixer.dt_bias": "26134afcf405687849544834016e542c1c58a6d5adfbc8240aac49638608a861",
+        "backbone.layers.20.mixer.norm.weight": "1969a01bde90984af398704dde1bd0f76d7119e1cff8855dbdb70b016f08420d",
+        "backbone.layers.20.norm.weight": "6229b0c2a03525e353bdee3ae41f6807dfe79113a9eee81ab0c40493f634d2b3",
+        "backbone.layers.21.mixer.A_log": "27d3f874d39f71c4a591c08b45d79dacc7169855f10722795a484ce29d9d4d3c",
+        "backbone.layers.21.mixer.D": "26793b6df542dcb7352d12bb6c3de08998248e3d04ebe160cf4964bbd281b7c8",
+        "backbone.layers.21.mixer.conv1d.bias": "a8e1f0d4033e9a1336a15d1c59809370b301e8b84224e5f91d19d79f5848f3cb",
+        "backbone.layers.21.mixer.conv1d.weight": "dd3ee732640a59a64150a1bd8bab3b01a85b09cf9cad34734ee25a08a5d7c092",
+        "backbone.layers.21.mixer.dt_bias": "b20c56a2c64efcff68b3e93d6b8514034ca5d5546856071a9398095d275b8b4c",
+        "backbone.layers.21.mixer.norm.weight": "5ed3df19104035ce2888786a1964b9b9d77fb5778cba47cb066ef15057d1362a",
+        "backbone.layers.21.norm.weight": "6a847ee6b83736378a688b115a38e22ecfbe8d49dc8fa13aa25ee14941052645",
+        "backbone.layers.22.mixer.A_log": "1353cd909cc7dd62a407f4eabb1a4d6e7ef1eb38b5f4c4ef7b5b22dbcbb2cac5",
+        "backbone.layers.22.mixer.D": "d6cdfb32863be016e0d99bd01f1509eb4a55e9abd6a413ca39dbcbe8bad6ecf2",
+        "backbone.layers.22.mixer.conv1d.bias": "e52d21cbcd99c8178b30c238fa228f1fdcaa7a0bb439dca415a72382e9b54712",
+        "backbone.layers.22.mixer.conv1d.weight": "6da2ea4bdc26c45f10af5f9c4c264b577e313818eb09964f5cc2891b17573c1b",
+        "backbone.layers.22.mixer.dt_bias": "1629d1e393ad3c37f1da0f068d94e157e63c37eb7548b3e44125308b3a7ccd62",
+        "backbone.layers.22.mixer.norm.weight": "88e102f4ce8dd4cb843351537dde2724c7a91466ca60b02a98a5e435c01066cf",
+        "backbone.layers.22.norm.weight": "95fd0d3751bc2e9d0c34fa8130a16b782845489617d166008197b4a47f603a4c",
+        "backbone.layers.23.mixer.A_log": "a34bdbbf2be0ca26433760f0d4511816f57ad0fe3fd9f9701e6b673401e24761",
+        "backbone.layers.23.mixer.D": "d4d1abb674a45cfd3407634d22c99eeee3f367ebb3a7bddcac9d0085ed1d1d60",
+        "backbone.layers.23.mixer.conv1d.bias": "e7512d4d72983019d4b26db0e9bc6b691466d0b9ebac9e44c10f4e3f62a04712",
+        "backbone.layers.23.mixer.conv1d.weight": "61dcfd82486437c08bb7948671711968fe77a3f8c0f059bb39e0dcfe3aea7d4d",
+        "backbone.layers.23.mixer.dt_bias": "62460522d608fcb2491b08c60a786297e7f35abf22250529d8a17417b73a075a",
+        "backbone.layers.23.mixer.norm.weight": "ad9349129f80974c47bae2a4116eda63b334b03021d4991549a93e9098837641",
+        "backbone.layers.23.norm.weight": "6111fa3f1696f7012799bb17be9cad153289d9de74763871de0a68448bb068ce",
+        "backbone.layers.24.mixer.A_log": "648316d84f1c8ad46701acf4f2d00488353177b593195cfb8269bd5cd02d8a6a",
+        "backbone.layers.24.mixer.D": "b3f87a7b5c379380787b5d03a5d150e4c982adae4f28c54eff6a1d287f481eb3",
+        "backbone.layers.24.mixer.conv1d.bias": "f4c008074ec866ce256f67a90ec23d341166fc1c435404938b10237636a6edd7",
+        "backbone.layers.24.mixer.conv1d.weight": "5eab584f49344d094eb1e8e82c792ace61e64cda40a63590103bec8bcb6f6828",
+        "backbone.layers.24.mixer.dt_bias": "39582e76d30b090ba934dfb12c1e9352eeb31e98ff91cbebc7adf05866e9ea0d",
+        "backbone.layers.24.mixer.norm.weight": "e3bf1f884f574447691ac319f957e982adc52dd652479599c0fa02f9bd0f1faf",
+        "backbone.layers.24.norm.weight": "a5b62670552f0aa9a0c5f662c16e7145ee40cb176d225fe5c259c665c81a5079",
+        "backbone.layers.25.mixer.A_log": "3c253f59e6b9204661e16865c467caec8141bfe471ffc08fd1dba924cd033d5e",
+        "backbone.layers.25.mixer.D": "95dd442efaa1b7bdd8a0cfbefc6b068d35c6e4e6be76e8d0ec45fc8f7d01bbe5",
+        "backbone.layers.25.mixer.conv1d.bias": "010c29882ff4c17d1e03627c7105e6e55055b710d62eaa310f33bdb372a8504c",
+        "backbone.layers.25.mixer.conv1d.weight": "4e172b092d1d42453fd1551cf6128e5d204fd36e71c4812ae831d0764db2df65",
+        "backbone.layers.25.mixer.dt_bias": "33269b569cd020ff52d7a8a4b57f59259e6f20d6ff929caf74006f2f79ff7a70",
+        "backbone.layers.25.mixer.norm.weight": "080915b460c3249df3d20eba8d8d4c64b8c7c403103c4f65ec384722903f5aa9",
+        "backbone.layers.25.norm.weight": "5b3018b812ce76768a52e0cb16ba021f2b613b6a2cfcbe8e70b817e9ec631b75",
+        "backbone.layers.26.mixer.A_log": "2208e7884ffc4a1e58f52f0fba016c7fcd5c88f94eab9122aa38868a3cacf4f2",
+        "backbone.layers.26.mixer.D": "8da1cbc5eb3d622c9977a1188168cb63f89d70883dce3d59ecea789b56348b7e",
+        "backbone.layers.26.mixer.conv1d.bias": "e89c2ad39ff8e9bdda776bc4c1a6bc2e6ba3b90ba9e31951d558bac85e3f4ac6",
+        "backbone.layers.26.mixer.conv1d.weight": "7b1502ee9bf6779e4ad40234ae25f539d4abd78eac57f7673ee3bf70abc01024",
+        "backbone.layers.26.mixer.dt_bias": "50f2caf9766bd297c1f9f16b96b3990a628752bc545e16dd1c84042633921bfe",
+        "backbone.layers.26.mixer.norm.weight": "f14e909ed2d2cacea1d7dc297fa83e681bbde7abf36698d44a8ca271e7b22bc3",
+        "backbone.layers.26.norm.weight": "7a1c03c514ed81980d5fb49ff6963d9452ac265ea4971409b75ca6bf08cb55c8",
+        "backbone.layers.27.mixer.A_log": "58666d80de7ce2d40ddcbe2fb0bbe8d2d2ccbb72e0e93f6b87bf4097a5e0702e",
+        "backbone.layers.27.mixer.D": "a3b0e900c8da1cceeb27595cfaf98a28a99db182d244dc25974b2987c57d2c0f",
+        "backbone.layers.27.mixer.conv1d.bias": "0a1e6d66fbf733725efc7f0a00b7f3a70dff499e6696aadb2eda5aa198f67710",
+        "backbone.layers.27.mixer.conv1d.weight": "934c39cf1d1939be1e03558105c47912f6d55413818e5450ee2bb4f694701c98",
+        "backbone.layers.27.mixer.dt_bias": "fea735358e84b4fa3d1724dd2a6e03006ac8a27e484d1804b24a6aef42ffab09",
+        "backbone.layers.27.mixer.norm.weight": "891333d88f8d5249df7fe28e4217ae42878511f02f47c1767267f27e33d878d3",
+        "backbone.layers.27.norm.weight": "2d9db969cf7ec0e06517b47917fb412ad52ed0fc87e797eaf64e7d7f329476a9",
+        "backbone.layers.28.mixer.A_log": "2ec1a6e145e6821212d53b23760cc61a305ef22bded070e3168d6c83f796d414",
+        "backbone.layers.28.mixer.D": "5b79fcd6e83abd655cb0d836e3247d4f99dacb894a0970bf3f170d1b80b7c133",
+        "backbone.layers.28.mixer.conv1d.bias": "f8b68ef7b4df81a26aaf9ba14459245346639d3a73037feefe97a84ae5521952",
+        "backbone.layers.28.mixer.conv1d.weight": "63cddf18c0e049cad1e1c8a2361a00590c5ba8e75cfb66eeaf444de23848e4e6",
+        "backbone.layers.28.mixer.dt_bias": "58ca53e6860d866c746ce73692e7ba63c1cb4a784422fa8e177644a901c7f77e",
+        "backbone.layers.28.mixer.norm.weight": "4315799c9019f7958db88156ecb0719451b5f198040666f16c2f3f8e29ade0b4",
+        "backbone.layers.28.norm.weight": "b3ed39a8b6dcac603fae1afb6ef4c2728fe4513a20f5d9975a517d2db4797288",
+        "backbone.layers.29.mixer.A_log": "b99c1046d52751c0dc452acf033a253ab6bb8fda14ef1c690d324eaaa969f872",
+        "backbone.layers.29.mixer.D": "a56ec31849450d40279156df78a21e4f355b2d70cc4f382e9bd7e864710d70b4",
+        "backbone.layers.29.mixer.conv1d.bias": "2a823088c79aead00845b03903258bc4347213f1660f0a5b39e66134df3860cd",
+        "backbone.layers.29.mixer.conv1d.weight": "7cdbf32f010f95bbe3972a1a55a2f5bd8dcff60e105daa6fed5cd18add7af0da",
+        "backbone.layers.29.mixer.dt_bias": "af38750da64c057b7a71009edd4eb40a3af42162b6c7efac9eeaad380d430357",
+        "backbone.layers.29.mixer.norm.weight": "11eab13fd8038eab58d40e18026d611f28fb5e552ad64a58d4e872aad1e065df",
+        "backbone.layers.29.norm.weight": "1b8ab0349834e03ae7fdebf26c50e7fa40848a5d2d23d0f6308b848b6f8fe630",
+        "backbone.layers.3.mixer.A_log": "551b28a6203141aaeab3a504600953ba8fa031326ffa7e265f54d04df2021d94",
+        "backbone.layers.3.mixer.D": "462f87b253764ba7c23ff927a6e3674dea84a2025e5a6dbb9b664b8b08de76cd",
+        "backbone.layers.3.mixer.conv1d.bias": "8486bf67bfbe9595b9d40b899fd890242d67889cced9f008ea175a4059c57971",
+        "backbone.layers.3.mixer.conv1d.weight": "032919cfdae6492de8eeacec619a95c59181c0bca493d68787dafb5c610f0df2",
+        "backbone.layers.3.mixer.dt_bias": "269a5fbcce1bc2c51819b1e7a5558a29775161ca550099a8a105961d11842405",
+        "backbone.layers.3.mixer.norm.weight": "4061351f8886aed6edf865dc1a721b73fe8441e3c36e7378c70e29f816a2479d",
+        "backbone.layers.3.norm.weight": "1ded7c7c20db8416e8b5ce9aa6d9f60350151d16827344be09bcc91525838113",
+        "backbone.layers.30.mixer.A_log": "5a6e1113075a0744841f1bb5b261c06e24f8e1ee4c7910b482a3144faec8f1e6",
+        "backbone.layers.30.mixer.D": "9f31aa92275e9f830ae7d045ac9fcdef9f9eb2f24f7e5d6f0843477303093611",
+        "backbone.layers.30.mixer.conv1d.bias": "23e994f6490d82b76c52f0347911dbac144017eaa46039fdffbdde6617546db6",
+        "backbone.layers.30.mixer.conv1d.weight": "acb871a83cc02d37de6016d6858e1deda9b4c77304fc1c376fc2954c7e75dcca",
+        "backbone.layers.30.mixer.dt_bias": "60af789d442f0a8809967c8dc2f804aabdef826126615deda6e174c9e4d4ddb6",
+        "backbone.layers.30.mixer.norm.weight": "6dd12f208ff3260aaf21e2d90a963f7e7b211da509eccfcefe54f35531fedfbe",
+        "backbone.layers.30.norm.weight": "8fadca216ae1a49dff4b2d09b9688445675a383d9501e84ab7afcdef28c04dc8",
+        "backbone.layers.31.mixer.A_log": "69e1dbccdf16ec810f68520c5e722282f28bd5e95ae983860ef902b6d86c55c2",
+        "backbone.layers.31.mixer.D": "eae6fc7c635075e60866c7a6891aa6e62f8606e3fd2d90c9542eef6c049b082b",
+        "backbone.layers.31.mixer.conv1d.bias": "6b9ac9697427d27ac41f47db31d11b12d9d1edbb5267334f4339b0840e61841e",
+        "backbone.layers.31.mixer.conv1d.weight": "35872de1aff382f0578c776b2f82e3c8bec6a3e1af7ad7b1a530bfc317b45015",
+        "backbone.layers.31.mixer.dt_bias": "7d5c2871ec08174f6b13748229c1da78b992e7b8cacf72b0eebf0e0f6127e3be",
+        "backbone.layers.31.mixer.norm.weight": "17ab4d7a6b52ebca96864c9505442b60739931bacc6b7ccb0f40e4ee360c7662",
+        "backbone.layers.31.norm.weight": "dd111a631c4c5b06e39d702d4caf752daef3f9ea5967db5ac4b49fe01c42e4c1",
+        "backbone.layers.32.mixer.A_log": "05bf5e0262ac1c0aa51c36c4715e810c086e6b40f917c9159cbeb38744e8f58c",
+        "backbone.layers.32.mixer.D": "9bf58757e600081165baabe4346bb1a49b7d2a676874fdd7a39c4f5a7aad2b93",
+        "backbone.layers.32.mixer.conv1d.bias": "594b79ce94a9381cdc555a94e7a05a83a5ec1c35d4ef890a073768caacd67501",
+        "backbone.layers.32.mixer.conv1d.weight": "0e4de97053cd9403b9d0162ef3da83cfb9f56d8dc6946c0f269a6a1d673e6ec0",
+        "backbone.layers.32.mixer.dt_bias": "1291bf7326684dfeef78b2fe3a1c2320f2b22fe6592cff6dbe716d688811fe8b",
+        "backbone.layers.32.mixer.norm.weight": "ccb67990537cbdfb01804765aa6f3f01c4c29a017234dfae92a93cf401fff99c",
+        "backbone.layers.32.norm.weight": "efac75d00b13292def552b4c89d32b349e4be59fc5c607d7f6c186f233aa3981",
+        "backbone.layers.33.mixer.A_log": "8efba8871d97b59bf435c25e252dd9012c7db7bb726483a110534540c13cdf1c",
+        "backbone.layers.33.mixer.D": "f98410fc51f9d6c6d3a64598cdf5af8fd03989e187d53d3c7a0035ed674d5404",
+        "backbone.layers.33.mixer.conv1d.bias": "f95213854bf377509f0664dbe5e22bd0d54a8ab4e577d30e34829bc66f4c1d95",
+        "backbone.layers.33.mixer.conv1d.weight": "022398f44c534c758e4938f6ed8b3192e94e50343a01011e296aca335c4f9f7b",
+        "backbone.layers.33.mixer.dt_bias": "671034faf837a3a064b45420ab7b2195bc42fbc3c3ca1f710af4fc531e3ecb1f",
+        "backbone.layers.33.mixer.norm.weight": "0faebd5a7a8b7254878df30fdb23af3fef4ff81a961ad435d17eeb3e1b048313",
+        "backbone.layers.33.norm.weight": "e80512384e9b6d6e91f938bb14b1a5ee90b85c8fdb26dd0cf907cc8e9b4ea032",
+        "backbone.layers.34.mixer.A_log": "d8614b33f795edf22764bc7754758551d6d5fec59225a03c4687773cffe0d499",
+        "backbone.layers.34.mixer.D": "65792249bebd3ba336f84e84e357211e59ad39255f843014c054b83e389e415b",
+        "backbone.layers.34.mixer.conv1d.bias": "316c93a974616d98e251beb252114009cc45cfb0fec2df1ff83ddfb319e81516",
+        "backbone.layers.34.mixer.conv1d.weight": "332cecd13e1af1494e265f2d73e18c827aadbe9de7a788372c3daab70dc9a5ff",
+        "backbone.layers.34.mixer.dt_bias": "35cd68aeead431973ef70bdbf0e1124941455a7de3564290fc1079aaa51210b9",
+        "backbone.layers.34.mixer.norm.weight": "5688c35efcb9f4a392c1b5b692c56152428c6990f4d27362a66b7496f3c94c59",
+        "backbone.layers.34.norm.weight": "90341c5cdd7a4fe3f778450446215a330afc609b375ad83cc6ebd43346ec3ce3",
+        "backbone.layers.35.mixer.A_log": "21183f54a42a044cad563f3629eb783cac52c7695225750abdfa037120870e48",
+        "backbone.layers.35.mixer.D": "0e37d7363a6f009f55484344ef4b7f6a8d373d9271e5ba2224c3bc459dae1e1f",
+        "backbone.layers.35.mixer.conv1d.bias": "902bb117d415a39f4d6c3cca6c8537c0b7010b5ad0fa4aa719a9212ee8f34d21",
+        "backbone.layers.35.mixer.conv1d.weight": "63fad02e4907061b82de345b8b81ee3b70962a3d0e53f92b9ad9afbfe9a409da",
+        "backbone.layers.35.mixer.dt_bias": "652d31adcdcaac923088ddf3cc4a53f1638b63cd56258d4e43bd08cc77948187",
+        "backbone.layers.35.mixer.norm.weight": "b62f8cd64cb2d04832a0895a75815c0831d174d57d03d0430c106e25d268d497",
+        "backbone.layers.35.norm.weight": "f5cd96ac498c31c502c3ff870d8e782c43bab9e279ea80b75cf6160d002f7b04",
+        "backbone.layers.36.mixer.A_log": "7890ef4291b76eba622079374c2dd34d249080f7f793abd8ed2073431ec2da15",
+        "backbone.layers.36.mixer.D": "5926873aec505dd1f4b63cfb50a4861ccb82cfffe3ed8c662748ae38fd1455a7",
+        "backbone.layers.36.mixer.conv1d.bias": "b15a938db647ed637f31e6cdbebf605374c8728abd2552d78bbcdaf2f62cb06f",
+        "backbone.layers.36.mixer.conv1d.weight": "bfd6242c0907fdd8b157a542193d2ec676125e1bd9f1359828b746752086fa2f",
+        "backbone.layers.36.mixer.dt_bias": "39d4835ea0cdc827b0968deafc0c0d45f524819048cffa165179614d1b50b8e4",
+        "backbone.layers.36.mixer.norm.weight": "a034585d884629ca89e831e514c78aea1c59a0a8cb5c86a592d3e7d2335f7d7c",
+        "backbone.layers.36.norm.weight": "ecab48a9539e201d4e761a7a4bdde1fb11e7797615b03f2d02e936cff3ad6775",
+        "backbone.layers.37.mixer.A_log": "843771a5498650ca79e9efe57d2cb86a7fbff297903e7152c0b7702552eaed86",
+        "backbone.layers.37.mixer.D": "2812d75a5ecc8e38aebb74341c0c2525e8218b008a8b1f748b1d5d74317b34de",
+        "backbone.layers.37.mixer.conv1d.bias": "243c4e69f413b9d6069fe70c22aea15418a6c52765e4e2893d3e0faed3c2af47",
+        "backbone.layers.37.mixer.conv1d.weight": "98ab019364dca32cfb06462ada2899e4f70d6296d6b3ebb50d47e1b33ca4e0c4",
+        "backbone.layers.37.mixer.dt_bias": "7fa97f465f46d7d49c6e250dc670484f0540ffc579589d7a7c82835dba869191",
+        "backbone.layers.37.mixer.norm.weight": "3d19abb3bd268e30319d0b8b6dede7f4451d8e06efe78d5efef85815a9f0da6f",
+        "backbone.layers.37.norm.weight": "4c0864a398776eb50ca9258cf714fbac53245fac8cf6adedb80115daa36aa00e",
+        "backbone.layers.38.mixer.A_log": "83e2275ae00c9fb6991fedc8fa2589559d5bd601d269b72b73fff9d5f19cb5f7",
+        "backbone.layers.38.mixer.D": "4fe1b74b2df1d124268276bceff73ee07e8fbb3009cb4da5a9be5e3ea0ef3bbe",
+        "backbone.layers.38.mixer.conv1d.bias": "4cf9730ce93be26d59825f43187ffec764cf66281f6733b8d41585cc810a4167",
+        "backbone.layers.38.mixer.conv1d.weight": "128a66dce1b7c12437340d97ec461c83c16f5332f40dbd716944b1d87a23f97a",
+        "backbone.layers.38.mixer.dt_bias": "061ccf5c8f95a1663f665cad6f4d39abc5a10cc3aa5ee489da261fe361a9176d",
+        "backbone.layers.38.mixer.norm.weight": "12e5f0b5129a0e51b8a7ea5822ff476719700ec144f228eacb4005fe82fb4d64",
+        "backbone.layers.38.norm.weight": "47000ad136447a0f143bd94100f3fa67009ab15851f204f85cf04ec4eaadfe8c",
+        "backbone.layers.39.mixer.A_log": "3753df028036988614f1949b06d13099e8b0cfaaf8b2ab0a5c2f27f287ca41da",
+        "backbone.layers.39.mixer.D": "b6e056d7e2924595168c15095096197e91a6db6402b8cd2fb66589f1e0d3013a",
+        "backbone.layers.39.mixer.conv1d.bias": "fb1bdd78af643813cc9a725b51222d7ecdccb60d84fb34da770092882f8b31cf",
+        "backbone.layers.39.mixer.conv1d.weight": "f91c8b0180bf947a2d85c4dd0dc19155b8a71326aa570d066c5599d78a9390a8",
+        "backbone.layers.39.mixer.dt_bias": "9b380fb631b17078a624dc88c90de4d115963e9355a987fb69faa1637f72d1ec",
+        "backbone.layers.39.mixer.norm.weight": "97113cbb7b08a375a3d7cd634a8875900e2a7551e6922aed21422d66f6105e6b",
+        "backbone.layers.39.norm.weight": "c33456132c747ff45efacc2c5d742b1c16cc622884cfdf146e0032a39031ebf5",
+        "backbone.layers.4.mixer.A_log": "341157e512c915a7580bc58dc034502c6fa4907b96e2d3e4434ff69a1144a0e5",
+        "backbone.layers.4.mixer.D": "ba1a3a3d0545c05063375de7018a0488e79348f46b7d29099f344404c7498c5a",
+        "backbone.layers.4.mixer.conv1d.bias": "22f0ea4c5406eb94c3ad9deeb37583b24ece2c381bdfe51db9dd8b59bdd76cfa",
+        "backbone.layers.4.mixer.conv1d.weight": "ca963eb5b1776f3b405488ec92a06ae0f5bdd58348d5fec9067b246022880674",
+        "backbone.layers.4.mixer.dt_bias": "330c9ada10d50b5b1395a49c669a6c6866cb89c67b5dab528d216bd183d29306",
+        "backbone.layers.4.mixer.norm.weight": "b6bf90f02632ac893d8b46af5a19226de7c9b5fa8aaed0a113a8728304ccdbc1",
+        "backbone.layers.4.norm.weight": "c45c871465405030ec9e2354e98257cac4dedfa96cd8230239f37c389b8ae024",
+        "backbone.layers.40.mixer.A_log": "13d6f04f4d0b52fd35570ea4b00824b69cd834079b50b33a230aab4cc35fabd0",
+        "backbone.layers.40.mixer.D": "3cf59ade9238329206e3a8f4e146cdabf2b7854fe92659b370a0db4006b000fe",
+        "backbone.layers.40.mixer.conv1d.bias": "65948b44b1e038278d8f713b547e8e3016d3142225d42a38efbdca7cb04a5aa0",
+        "backbone.layers.40.mixer.conv1d.weight": "ac0a6735889f403d2375522aa882c51952a28f918c24903f68c029e988b59471",
+        "backbone.layers.40.mixer.dt_bias": "5ee07eefa9ba88c43d0c9b43280d5ec57fb2a16d8b9368f677d6fb3baf0cb60d",
+        "backbone.layers.40.mixer.norm.weight": "21d9d327f2130a789744323e758e024a1a8ae1173a6e74fcbcea18cfda7794d6",
+        "backbone.layers.40.norm.weight": "272c57264e3b4d0214a33817c4432b6afe4cfd0d224b50e47b56620deec32d63",
+        "backbone.layers.41.mixer.A_log": "8d3e4e4f2a0221837605b496f67db7aa6440d64d34956dba9e289031640229e5",
+        "backbone.layers.41.mixer.D": "3302e3c54d3ddac08592b169dd4b32321a98b6a2f0b3d4f64b504beab8609dfd",
+        "backbone.layers.41.mixer.conv1d.bias": "ac273a4776853f25c099c7a9fdbf5023d8253336412fd8145e657145c6fd8c43",
+        "backbone.layers.41.mixer.conv1d.weight": "e718fb13c1ca208f6b70c498b37e92677c5fc8f18a6aa3dd21bf52ead526e3a1",
+        "backbone.layers.41.mixer.dt_bias": "47ee2a26e5060ee6a24d9880f5919c3837647d82a9a1cbb5def674e3691e642f",
+        "backbone.layers.41.mixer.norm.weight": "ba83b5e0833a1666fce08d430d8141cb52c2a946b569d2e5922d7864cbfcbe92",
+        "backbone.layers.41.norm.weight": "c6c9baea15c398b3c9d2c805b9919c0bdd3d0b8af19aefb49f3c7e9f8b3b3aef",
+        "backbone.layers.42.mixer.A_log": "737837ec27c43122dc264f7129c381fbe0d86465b247c4aee7cf7f3cce4fd0c9",
+        "backbone.layers.42.mixer.D": "73f47f796577dc0e8c9da0a15a108d8ad3e847807f96c718aa2c219ad217b928",
+        "backbone.layers.42.mixer.conv1d.bias": "9d64aadf0d00eee85e6cd4994cdd07a0e432ef440ba1ef044e378634857ae381",
+        "backbone.layers.42.mixer.conv1d.weight": "bbbbcbce15842b10f34048fe8ae0333ab44829b86e0fc5e7ec692c75811e8682",
+        "backbone.layers.42.mixer.dt_bias": "440ded94260ab51228f5094c6985f2cde93cc90e0cfa4e83bec65064482f7649",
+        "backbone.layers.42.mixer.norm.weight": "0944671c12e25f99bfa8f66522d53c2322dca1a30edcc860869a848f5cf59efc",
+        "backbone.layers.42.norm.weight": "c1563e629c336c699f525c35b8b3a4c2627b731015042b5ab1e225744e71d88b",
+        "backbone.layers.43.mixer.A_log": "24bfd768ba6ca75c74cedc57f9bb587779b5af6f461d94350004cb24ce722a9f",
+        "backbone.layers.43.mixer.D": "5c3ff72ef67a19d151b873fdb28f0357913e45538d309d35fad864e6d50b3b39",
+        "backbone.layers.43.mixer.conv1d.bias": "f8e017e188c1254e8d714023fcf0f8fc07bd2ae597fa2d45f542452a64151e7a",
+        "backbone.layers.43.mixer.conv1d.weight": "3de7c448babebad1550e4fcfc2d1984b2a0e57ab18f6cbbef162e36f50d0b6f9",
+        "backbone.layers.43.mixer.dt_bias": "2c03c0820d17bff6a4406000d60b1649789e3c0a6967c257e38f402343db9b74",
+        "backbone.layers.43.mixer.norm.weight": "26eb933ba7472f3468015a94c25d21e793ca6a6d0c00733bd0329d44fb3e5456",
+        "backbone.layers.43.norm.weight": "d149a6c99ce5e959b0a9279d90d08a9f79c818efa39d863d80ce13f476f69322",
+        "backbone.layers.44.mixer.A_log": "41192350ad9efa8dcd09d8c26f5625d06b784385fa003c954d1733c5de0250aa",
+        "backbone.layers.44.mixer.D": "71171b248c1b8481c22f03d41ceda02245e44df048a1135e93d6727d566c4556",
+        "backbone.layers.44.mixer.conv1d.bias": "03da95bf248b7213963dd8b29543bcfe51faef89b85181c95ce9b8295025c70c",
+        "backbone.layers.44.mixer.conv1d.weight": "a57c16699245217db107d1508300cb97d9257937c7d768ea4f7bb0b709170e10",
+        "backbone.layers.44.mixer.dt_bias": "27ff0f9825db835728f903b85e28332ebb74fcdb63b029568360ec9d7cfeb35d",
+        "backbone.layers.44.mixer.norm.weight": "4edcd0dc455248ff0e3608de26b28b29bd90842c4eb7c9a1f32c626463b33e80",
+        "backbone.layers.44.norm.weight": "c6398d999cc0a9d5cc6a631a34f74b237d56c1fc2b54fa6878c7011e9baa6886",
+        "backbone.layers.45.mixer.A_log": "5de827468c8d079d94f7e4be9b23e98ae6c9037bde3bd3a9f92d01507202ac29",
+        "backbone.layers.45.mixer.D": "b96d3efce4f2efe7a63a350ac78561b416bb2b536b1f5712f63ce5a8406d8b52",
+        "backbone.layers.45.mixer.conv1d.bias": "f6f392f1e76156aab9af50e90eb0172b94be234e49798c991955c02a6bdbcca5",
+        "backbone.layers.45.mixer.conv1d.weight": "0676fce261fc313cebd1c8d3ca53fecdb00522392b324c312e52901af4924a12",
+        "backbone.layers.45.mixer.dt_bias": "73f042043e635f13a0d122a4961e62978223a846164ff40005d62a8c1bb8d45f",
+        "backbone.layers.45.mixer.norm.weight": "c80e12079283d4a0f025f96b45d0a3ccbc2e0f6224d27b67a0fcdb1d671155bc",
+        "backbone.layers.45.norm.weight": "b8e740c513d63c930933817c9d09163acd8eec92111c9e4f128008031cb5d899",
+        "backbone.layers.46.mixer.A_log": "bfde7955eb11ac778cbed5c059f7aee3456d1f787a1082d9160d4737e172d868",
+        "backbone.layers.46.mixer.D": "205fc3bccfbeee38dff3e5e59dec627e4dfde513c57e019d877126bcb58acac4",
+        "backbone.layers.46.mixer.conv1d.bias": "0c11b01c198eb3838ba8690b359607cb9e04ecfd52bf74f60887bee5e542734f",
+        "backbone.layers.46.mixer.conv1d.weight": "08be864ad4e4d7e4d6998b216c20a43afed5f2be6f13b9f4d80356523c1b6dfb",
+        "backbone.layers.46.mixer.dt_bias": "faa6bb70c8a95c3ff7a4841b3265413e3b22d4b61c8892c9952e16270660b6b2",
+        "backbone.layers.46.mixer.norm.weight": "bc829e66d9fe957b57f44a7b92b18ccfd1194dd62590877d969bee30ae2ad722",
+        "backbone.layers.46.norm.weight": "efff1eb980c1eea300976707a09adf740f9c0de416bd4a3ec594c52190817b94",
+        "backbone.layers.47.mixer.A_log": "81b15b8fc08fb2f7548230b4cf25fb1a5ca8dc17056a42f11e44115864ed44f0",
+        "backbone.layers.47.mixer.D": "6bd97c73e6ae10557e4bfc805bfb7981aeea3b63bfa3f1402abbe2794492d61f",
+        "backbone.layers.47.mixer.conv1d.bias": "7cb375c8919da3dd89c961c20264c490af2b094ddc30db5e13c9e169b6ff0345",
+        "backbone.layers.47.mixer.conv1d.weight": "2ffded0222a0580f85d2b60715dc3f5d6a9968bf2aca13f74c2dd22cad0d05c1",
+        "backbone.layers.47.mixer.dt_bias": "c31256967d2923eed5aa5865428e9762ca89fa39d33c5bed0db584abec20b2cf",
+        "backbone.layers.47.mixer.norm.weight": "07bce40208aebf3c64d49f8d68d291c990e9e52975cb33cc3a4932cfbc274d89",
+        "backbone.layers.47.norm.weight": "d69cc2d0fff56bf0c83c0afd174fd29d3b022bdcbea29db250d76b9b4b5482ee",
+        "backbone.layers.48.mixer.A_log": "6c0b43a1b7baaea16c5e33a07c03964635ccb7b0c8d7d687a9254053c46fe8d0",
+        "backbone.layers.48.mixer.D": "0df508a9a1a80ded4aa376f66bbefc9ae681940ff709e0ab5d82a4f1ded6d174",
+        "backbone.layers.48.mixer.conv1d.bias": "c9eaae99c04d6667a9ba746b612daf85c7869114ec4e993af42587a22ea7aa04",
+        "backbone.layers.48.mixer.conv1d.weight": "e11929586a1c7aca5eb730b5380a15dbf039d8f2e969630ec4ab41ef78e9b184",
+        "backbone.layers.48.mixer.dt_bias": "23a9a99e94e54323779b8093cc5fcf089d2574c528bd896078d50ef52ff587db",
+        "backbone.layers.48.mixer.norm.weight": "94372de195552fe5ae1e9ed73882041ce00f99bae91af8278324740dbd073bab",
+        "backbone.layers.48.norm.weight": "8e17855a44d56475c6ce9193af7157ea6867055b7e663cd1e8bd82298299fb86",
+        "backbone.layers.49.mixer.A_log": "14ebda0a017333f8d1d810d021388b9f916ea872624ba78b8cb20802c97d9dd1",
+        "backbone.layers.49.mixer.D": "e633566bf14b4724b48810efe18360b9ac69e95b4491dded550cff85ce11857a",
+        "backbone.layers.49.mixer.conv1d.bias": "c376c23744654cb3ebdc1bb8fcd73a565e7fb4e6a4e5994430445d9f188efc68",
+        "backbone.layers.49.mixer.conv1d.weight": "77a37dfea48c983a554b3d36c48b39b8afb8e01453f9edada26c1a361267fbfe",
+        "backbone.layers.49.mixer.dt_bias": "0fcd19bb99e92f5cff77e6078429ce3a6d8857344b2a843c8d6a7e1f696925e5",
+        "backbone.layers.49.mixer.norm.weight": "472662aae2a541301e37b2a8656f40f927afe7aed05c20013c18d7a6ecc9bb93",
+        "backbone.layers.49.norm.weight": "8d537d9d641c9af601af7e11f845818f1c086eac12c12f78877a15d89e39f192",
+        "backbone.layers.5.mixer.A_log": "39440350aebb9eaa01dd1e3b82e18a1c4711885d052ff49f376732a802bf43f8",
+        "backbone.layers.5.mixer.D": "57d744e77aa03f3f5551ed113263659d82bb0ae4e36d107d1c1211486de93446",
+        "backbone.layers.5.mixer.conv1d.bias": "ef23d71f22fb0b98b1265a56d9f27d4de2ffd2d71448782906ae7cc59d8f1ece",
+        "backbone.layers.5.mixer.conv1d.weight": "952f7ee4cbfb517a1d72aab231dd2010ed3c2e2e83cc59106e9218cab672f7d2",
+        "backbone.layers.5.mixer.dt_bias": "63264b7f6a174f9440dff8dc8ea288244c1bfd1d57521e59bddda1e1fa431610",
+        "backbone.layers.5.mixer.norm.weight": "50bee6c1bfa45dd1aa925594ca18cb92fb5b91e525c676fc929f5059a61397f0",
+        "backbone.layers.5.norm.weight": "56b734509a5a6c5ef1809bb8c8b7d278a9202e2b7054f3e90e2e113113a9c4f0",
+        "backbone.layers.50.mixer.A_log": "1ee5a9f38b22957661c6ae78ed91a8d416bcb58ccc2fcf3c31a263050d05657a",
+        "backbone.layers.50.mixer.D": "a0d73db9bef9fdc3ed5b387f3755f53c4cf2d1db24026b5ca91c1ff62eda7b5a",
+        "backbone.layers.50.mixer.conv1d.bias": "e784510d6518c088209bb81b5667f66b7e3ddc10b52d44ce7f6d3e9cabb63378",
+        "backbone.layers.50.mixer.conv1d.weight": "1cda5e53385ca33297914bfb67c654de4b0a83556eec94de82fe1ad3e147fead",
+        "backbone.layers.50.mixer.dt_bias": "aadca8ec16a867cc51108504122036d3180b4a49cefeefdfc214a87ee6a04922",
+        "backbone.layers.50.mixer.norm.weight": "5618616eb03a75081405fdb3f974e68b07091a955d7e2ba0e26af4b1aa382f97",
+        "backbone.layers.50.norm.weight": "7f99013d9e933c043c1f80ae1ca86c8792a375d8688ab0c79b3a6df6319c0644",
+        "backbone.layers.51.mixer.A_log": "9f880bc2534a3c4daf488436f19dfa225697996a93a7696c6026c536bb550331",
+        "backbone.layers.51.mixer.D": "def5cfc13027bf23767a3350da1b773efb9fcb03142d328c0d6e7ea8e7f749c4",
+        "backbone.layers.51.mixer.conv1d.bias": "12ec3f89e515cd01caca04fd35cba5e327b04179afad91ee1615572c6bc89329",
+        "backbone.layers.51.mixer.conv1d.weight": "eabd633f07878107f73aaf78c438ce25aef68fa51aff181c5bee8850cef03629",
+        "backbone.layers.51.mixer.dt_bias": "809ad982abbd2d789f5987a7f2cc7f8b3117e668c96af026c493e34743b3cbbd",
+        "backbone.layers.51.mixer.norm.weight": "770a5670f1058dfb298397fb20ff72fb623040c47422c064e1cc0134c79f0901",
+        "backbone.layers.51.norm.weight": "1d4a83762e021b45bdbf12bb4bd0ea25fb45a4380c9b4d32b1ee7c5fd97bb4d3",
+        "backbone.layers.52.mixer.A_log": "ae477508512002a444ca396b1a70ff867054908a602b12725b33fc64f9fd34c0",
+        "backbone.layers.52.mixer.D": "40eae124031d35334db04160927348808b35efaccf64cc40116e67c4febe3909",
+        "backbone.layers.52.mixer.conv1d.bias": "4aa6c479d8926f1d424b06e4858b8e20a233c824222d1179799c9f861b0ee3f7",
+        "backbone.layers.52.mixer.conv1d.weight": "3968e01172e12100a417bda600941b4272e6466c9e03c7295b1ed2ca13c3bc96",
+        "backbone.layers.52.mixer.dt_bias": "f74bef10810b0cb3a93c1f7c014da3f7443cec9852ac0edc274c8f481d8b0a49",
+        "backbone.layers.52.mixer.norm.weight": "57fc64cc70c1c11c0a0f3d956edb6ffb5bf427cdfbe892e90392785704437923",
+        "backbone.layers.52.norm.weight": "38ba8b4ae22c21e3cdf07e59c83511e417dd15e779edc67c49a82d206688e548",
+        "backbone.layers.53.mixer.A_log": "bb6d50fcdbc6e730c2fb33c354ccaa8d0b6d45e80f4009c438cdf8320ba52486",
+        "backbone.layers.53.mixer.D": "02e9bc75761e09e3555dea47f2d592b82f0be4032b023ef2a966fa100e0c4195",
+        "backbone.layers.53.mixer.conv1d.bias": "de6d3b8bce8111a13a13272415cf5a64c0c6e1707fc810731e4a5d7df3dae68d",
+        "backbone.layers.53.mixer.conv1d.weight": "6f1a4999d7f9265c1858df8c66ec6ea82ff75ffc348be9adc96a38b3ac64833f",
+        "backbone.layers.53.mixer.dt_bias": "54c22bf7fb4a2652393889934c697e92dd607d863ca4342022a665dfdbfeca45",
+        "backbone.layers.53.mixer.norm.weight": "ccdfd5566eacfa2819708e4bb46fbce7cbe842d6041a8b2f710c0fdefe44d963",
+        "backbone.layers.53.norm.weight": "9e4e3961e89658b5ec3f16b5c68bc4159bde59851be8a1786801606590c8a63f",
+        "backbone.layers.54.mixer.A_log": "7932b74893f75034181dac496d7352fda74c22f8747e040981ba82591f71dc2e",
+        "backbone.layers.54.mixer.D": "8e30d52e7ddf898f766aa1d730fbe8153198193cb6287955210b5f63d1e2c75e",
+        "backbone.layers.54.mixer.conv1d.bias": "d314f05d1e076094811d5b4e219d640d4668e245b00bdd9d8281632722b5469d",
+        "backbone.layers.54.mixer.conv1d.weight": "8990a569a63774271fc416fb0ded7d37656709c0992908ae12d2dd4d53d28ddc",
+        "backbone.layers.54.mixer.dt_bias": "17947be77cb8cc01a782b111ac37b7c9f36feac7394e952dd4b65b241b10fddd",
+        "backbone.layers.54.mixer.norm.weight": "ee498ab430d15362eab4c2cd7dabbb6343c2119fa75ce01ed7b244283d5402e6",
+        "backbone.layers.54.norm.weight": "28677ba33cb8a6c4c7dfd1eb30412f14cf17f7a5078110a625882b69b76dfe23",
+        "backbone.layers.55.mixer.A_log": "fd1c9dc1e08cb78c41a54cf81914cb885478671276cadb9952453d8f99f57a43",
+        "backbone.layers.55.mixer.D": "3213cef8067aff9ed891bae84b92ae1f2732b3bfc43a6c54725a9fae2e436c18",
+        "backbone.layers.55.mixer.conv1d.bias": "c9bb4d9020d788402cca0f1c6822912abc7ed3b3352c839a06a65ae4216fa2ec",
+        "backbone.layers.55.mixer.conv1d.weight": "2cc40f71680e4b833b2eaa0b31a8699353f062a4a83bf5bf818e4b3b3943ae58",
+        "backbone.layers.55.mixer.dt_bias": "c62e1181d17ae9066f1580fc55bb69327cc3fd10a2dc2cdea946874edaaf83e3",
+        "backbone.layers.55.mixer.norm.weight": "b542d349f79943f7327ed7ffd2405c9c140a2b4fe72805e9fb3b6641859ac34a",
+        "backbone.layers.55.norm.weight": "d96d7a4a34bc421a05fd5c0adbcaa54f35a085c4b26767637767b78514892e42",
+        "backbone.layers.6.mixer.A_log": "7cd2745bf2f7fab7bb6e35d2711c4f46c81cc527ff4f39453c27b747c95ae5f1",
+        "backbone.layers.6.mixer.D": "6ef84a31cb6e1183dcef146d60340961e81fa7267bdd354e95452cb6896d65d0",
+        "backbone.layers.6.mixer.conv1d.bias": "b00ff27e0e38983cdfb5ad20a04df7707bf96cb67741c5c28cdea76610481dc0",
+        "backbone.layers.6.mixer.conv1d.weight": "3c271e4d12acdc77f7f457ce805dbc899c40fdb76d4621e2bcac525687c65d33",
+        "backbone.layers.6.mixer.dt_bias": "08a8f542317c36767a974f0703ead327a5750c2a2e99bf44ff78b6660763f564",
+        "backbone.layers.6.mixer.norm.weight": "a854a918cfb478d5d5cdc4b163db7d82d8c9952c53370e3234a1920fdbf7aa97",
+        "backbone.layers.6.norm.weight": "faf04a244bfd8b3eadb17e494972d539ae08d823a44afa4c1f0a23e101db7ba1",
+        "backbone.layers.7.mixer.A_log": "273826f476ccd943cb4e294e13011368eaa4022cbd2492c061192a0dd029ed17",
+        "backbone.layers.7.mixer.D": "bf4f46127a1f8e77ae347bc0e9d5b3d5a6626f213922079edadecf9c262d9473",
+        "backbone.layers.7.mixer.conv1d.bias": "bdef541060fd59f6aaab9c00389c5df53e70fc797948a3f96e20552b11454d95",
+        "backbone.layers.7.mixer.conv1d.weight": "d1223dc59a27a77dfa4339680e4ef2e4b4b99216bd9727971d68d9ad3037dca9",
+        "backbone.layers.7.mixer.dt_bias": "8121037a3fb7644e5e255a153151ad5e2d8c378c65571fb8e6bbcd758538fd21",
+        "backbone.layers.7.mixer.norm.weight": "fd401d6cb970659900f3b4bee1df4eb534c2de6f59916e0e19965825544ac7e2",
+        "backbone.layers.7.norm.weight": "abd729ddb7b954155504dd53b46c7c0b5fd2cf5812bf9d53fe7649b6ad499f6b",
+        "backbone.layers.8.mixer.A_log": "6b2dab379feedd2020d64eb89ae5c674f6c817b46f726bc67fc1a77d7e43dcfd",
+        "backbone.layers.8.mixer.D": "32f7c8ee217ccb3550e7edcfe04c0841a79978e4c0134fd964c3d2a593d37f83",
+        "backbone.layers.8.mixer.conv1d.bias": "b4757aadb57020baff5d37119b3e6a5525f0f0d30479e8dbad1f26b9d44b47b8",
+        "backbone.layers.8.mixer.conv1d.weight": "afa86403ad91a5a5a414803fa075cf6e679f378c18096b4f0dcf920aa129b274",
+        "backbone.layers.8.mixer.dt_bias": "d09c4c2c4fb2bf1ff7f998b49b31b971106e406d3a708e8a7eba2cff0496a9a5",
+        "backbone.layers.8.mixer.norm.weight": "3a1e942028b0f0e1eee97af4829e3a54c495b32cfffc4e4c8203951ce6ac7cf4",
+        "backbone.layers.8.norm.weight": "79c4c37b36dd23cb11cd62a8f8c5c89455697d5558a72156c2792b0f7f648519",
+        "backbone.layers.9.mixer.A_log": "753860ddd540128cdeceaaf4d8448b1c855d8b36849825fba6d634bcc36b3994",
+        "backbone.layers.9.mixer.D": "088848d33f8a541468b0f697c562f0c125b10e1cc3e46d3f2dedc5b0cfe9376c",
+        "backbone.layers.9.mixer.conv1d.bias": "9cfe3b1ffb52068ec826647f3386de02b0cf45e4ed49f3f8d9173ec94e616c4d",
+        "backbone.layers.9.mixer.conv1d.weight": "1c9158285b5a91fdae7b7ea713e5bd34aed02583073a91a7bfbf8e72b795e709",
+        "backbone.layers.9.mixer.dt_bias": "47f82d0956f1410de8d2e3028613d87744fff36c40e01f101499275d9a1f246c",
+        "backbone.layers.9.mixer.norm.weight": "0968d7a5dc583a570e8ffb7cabf9080cf1ec3c8b9ce892e7181330503826dff2",
+        "backbone.layers.9.norm.weight": "2bdaf1c7d6930be50d0803f602d3ba9e1ccf11149eab04b3397dae1a8f530a21",
+        "backbone.norm_f.weight": "d87f2f913493d34f635985b772eb4e2e645d822ba9a2a67a8c17a7adf7706791"
+      }
+    },
+    "bytes": 7283930,
+    "sha256": "54f12c32f93414a466f7b0f82b93f09820435c9496444c4d8fd2750244206671",
+    "archive_byte_delta": 0
+  },
+  "trial_state_discarded": true,
+  "frozen_parameter_audit": {
+    "tensor_count": 114,
+    "before_sha256": {
+      "backbone.embedding.weight": "288a0cae67bb9be35ddb1b666d4c81a2fe1e5c769e836f8dc0d87246627023bd",
+      "backbone.layers.0.mixer.in_proj.weight": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "backbone.layers.0.mixer.out_proj.weight": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "backbone.layers.1.mixer.in_proj.weight": "1e961fa6ed90650f949fce3b32c1fcfb276accd966ed66a3dd0d63d3d4f6463b",
+      "backbone.layers.1.mixer.out_proj.weight": "7a0dcefd2aa82ffc20482e4b13095fcb33560d6912305303c2cb2fda34d9e817",
+      "backbone.layers.2.mixer.in_proj.weight": "5e4e505cebf6d6810ad40170844dabbe4cf33e97ae29ab4a9cf20126bbac5e55",
+      "backbone.layers.2.mixer.out_proj.weight": "d0f1228216363f5fc3041451d3d4e76a282e3e6c45378f69eb58ce15530ad263",
+      "backbone.layers.3.mixer.in_proj.weight": "f3385a66d8ce919096a9086dc7b0ddc9ccd9ced6cff4386539d4bb36893a2c0b",
+      "backbone.layers.3.mixer.out_proj.weight": "18adf873bd11b502b45dadb0b20cf299467fc6faa0f9dff849d66daad5b95d35",
+      "backbone.layers.4.mixer.in_proj.weight": "19154f2f6bc502f9d08c451eb2c6797428e55704cc6a33047e81aa1db937d0b1",
+      "backbone.layers.4.mixer.out_proj.weight": "41c72357e8333850a20d65fdfd05bded0ded46ef4ffe5248af42d5681525c46f",
+      "backbone.layers.5.mixer.in_proj.weight": "089a3fb790a957a3a87f62e2fd71ce39238be81c205f41df3d34237b55b73b0b",
+      "backbone.layers.5.mixer.out_proj.weight": "9b943e0409bcea2e22b19494aa2cedea196acbf80f95e02b2626d46b40c8923a",
+      "backbone.layers.6.mixer.in_proj.weight": "8f484049a0769a9588e1f54e1a0215c60c1a8f7b88c3ac2a0d01ecdeb42b9c87",
+      "backbone.layers.6.mixer.out_proj.weight": "5e5dae58a44d876854a9664f51c9c425b20909e0d23ec33e0f5c7f0f89fec68e",
+      "backbone.layers.7.mixer.in_proj.weight": "bc1f3a6a9540e71abfb95760ff65c4fd515f6915cb34888228d10835cee77ed3",
+      "backbone.layers.7.mixer.out_proj.weight": "862ba10823f6360b0e819765b9981be1dfa6a158086b80d3444260dbf3710631",
+      "backbone.layers.8.mixer.in_proj.weight": "9241aadb0880673bfa3ef8ba1fe4941defa73e3cbc9e04b43c640a50f5af0feb",
+      "backbone.layers.8.mixer.out_proj.weight": "73c034e48ed1463a4f10c972afbf833746a20f60408d16d179e124eb35dd9fb8",
+      "backbone.layers.9.mixer.in_proj.weight": "b2a8617c338561af787109b45b27706bb0b280fff0d3ebad00d119ffad48f187",
+      "backbone.layers.9.mixer.out_proj.weight": "a0eed01718db853e8e99502e6bf98ca415c8b037959fde9c7e08274ae5ec1b29",
+      "backbone.layers.10.mixer.in_proj.weight": "36a3422185616b93e4c43a26060de8bb26c12ba8d2869ee9c13502d614357e1e",
+      "backbone.layers.10.mixer.out_proj.weight": "5ac19af21d9a6a59a9106b2fb75b1652d26c97c991e3541417798e2de60eb778",
+      "backbone.layers.11.mixer.in_proj.weight": "c497592b5042850803eed38fd284d2f1a06e4bffd2e06ce8a23269bdbb65d194",
+      "backbone.layers.11.mixer.out_proj.weight": "b970f1e57235ba9d3d7d84f7d4bdb17438d029984653b527ae8a6d575acd1891",
+      "backbone.layers.12.mixer.in_proj.weight": "1dba6708eb351eaeb01550ed4ffbf0024d951b931ab68d95ee2ef9c754c6a7ed",
+      "backbone.layers.12.mixer.out_proj.weight": "bff49ec5058f026932644d65b11164acd4a470f669abd32b5448d9ce907a3b6c",
+      "backbone.layers.13.mixer.in_proj.weight": "4d7a47148d4a6b6a536c7c77d365040da23a800fec446c2334fbe9321f7a66f4",
+      "backbone.layers.13.mixer.out_proj.weight": "8f8fc3a5f0f50da76f92aeac6c05ef4c258a1feba6fd66b27c1f8bab1dad5c56",
+      "backbone.layers.14.mixer.in_proj.weight": "fc2db9c425c8f206314d5a5a56986efb4979c4b81bcb58f5c4c7fbdba981a662",
+      "backbone.layers.14.mixer.out_proj.weight": "bd80ed76c8430cca41e09f45346faaa1b08b479e3187f5dd8d11af81f49bf474",
+      "backbone.layers.15.mixer.in_proj.weight": "49a39a68932a59c5db53ac5172392a92f5f58706339103ed9c8836c74a54c1bf",
+      "backbone.layers.15.mixer.out_proj.weight": "65cd797637c7ff987dfc91a95604ddaa857eeeca3d68dad8e2fe297d3243f1a4",
+      "backbone.layers.16.mixer.in_proj.weight": "929f3d4f80e099c400c58a1f5b28aba4c001748641381253161599b419795265",
+      "backbone.layers.16.mixer.out_proj.weight": "e46c7c53c282ce3a855af8663347589dc6ac9c4a7a806e62eadc569c87a82cb4",
+      "backbone.layers.17.mixer.in_proj.weight": "f352ba90de5d005208df0375d093d63a9df4ba600ca9071ed91f9dd7e45c425c",
+      "backbone.layers.17.mixer.out_proj.weight": "ee93d897df3e460fe6383b7b42f579e5cccb07873dc2c26a681ece61f69ca872",
+      "backbone.layers.18.mixer.in_proj.weight": "6d2c4378b823aba6cbfd3b89a39327a8f2db533ed4c45dbc567045ca85b1df4a",
+      "backbone.layers.18.mixer.out_proj.weight": "5e3cb23f4203f749e46d81d49a4904908f48c7c84ca244f9d512471587f9f6cc",
+      "backbone.layers.19.mixer.in_proj.weight": "c564d26e0ba450a41f1855708e8afbfae7cbf40b4114e3a47c7e54842132526e",
+      "backbone.layers.19.mixer.out_proj.weight": "5d4477b3158e8188cfdecd9ec62d416b4aa9b5cf31ac9647d3ee265a180a4d74",
+      "backbone.layers.20.mixer.in_proj.weight": "9401c4e0a93e9828c85ab5a00a76f79f57cb4db272c408bb72fae0fe184733ec",
+      "backbone.layers.20.mixer.out_proj.weight": "ed672b54567649ebaa94d392558ab03ed00322fe0a57ba00598b1c94cb400109",
+      "backbone.layers.21.mixer.in_proj.weight": "225c80997e9b73af44bd9506ee19362b4d08de382e0e1da649c5414c3d8bf55a",
+      "backbone.layers.21.mixer.out_proj.weight": "d8e02fd36d55abed919be03bf1d87f646db0b22564c8789376670471419cf8df",
+      "backbone.layers.22.mixer.in_proj.weight": "a1ba77d51c53398d2112fd50051c0dfd5e0551542102c05ed64693c1c6d73f9b",
+      "backbone.layers.22.mixer.out_proj.weight": "c16fba7e05be5540b6bcd14cdca9cabb7a6c6b73bafa4beff0c0293dbe3ce37d",
+      "backbone.layers.23.mixer.in_proj.weight": "54786f7ee1d6c168bb7949f0d0b5d8293787bdd7ab83b5593b839f09df907289",
+      "backbone.layers.23.mixer.out_proj.weight": "9daf19d3b96756ce57d3b7501f46c1f5ba96968c754a101d238301d085fe560f",
+      "backbone.layers.24.mixer.in_proj.weight": "0a0b671e0d324dc132ad5d3e89c045de03813677d7377d77151d64f35fe76393",
+      "backbone.layers.24.mixer.out_proj.weight": "06138a031fa223967c975103c1131c9b14d0a0a8e913163f6dcb851e3cb98eb3",
+      "backbone.layers.25.mixer.in_proj.weight": "cdc939f85c3cd80429cba51144b80ccc97bf7c1fabf66c367bcd9f2fa687f967",
+      "backbone.layers.25.mixer.out_proj.weight": "e03882f403ff41afd2c5adc2d158c910d238f0acebd314df580cfbe9d40c513f",
+      "backbone.layers.26.mixer.in_proj.weight": "a65257875471d10e04283331b2a916e50c9cc93a58d8ede1f38ee79b9e47f764",
+      "backbone.layers.26.mixer.out_proj.weight": "60581d05a9f748a2a5dd8ee5b06ab93d7cce858de5811591078bb42db477eb9c",
+      "backbone.layers.27.mixer.in_proj.weight": "15034dd171ecdedfe4ada0e2682faabbcebbce29ffdf43581a6e25acb73927c2",
+      "backbone.layers.27.mixer.out_proj.weight": "336148c867bfbb10cbe43600c38fa0f7a5cb58b0084c3819aa829fe493bbaf15",
+      "backbone.layers.28.mixer.in_proj.weight": "b0bbe0bc2c2b38113593dea7858a47cea9598037c596cf43df3604dbec67d93b",
+      "backbone.layers.28.mixer.out_proj.weight": "18b4e6f28f1acf4d86e62d7dab7dba083f9d84dee831adf28afc098820e75330",
+      "backbone.layers.29.mixer.in_proj.weight": "42cdbaaa96bda366ea601db324a5c718361114f7b4cf4c51f812287f66791578",
+      "backbone.layers.29.mixer.out_proj.weight": "54c9724db56c376c94a4805f777f923e6c5647816fe36421ce7f0acc84327c25",
+      "backbone.layers.30.mixer.in_proj.weight": "a186f70805a768f942ed8e0753040d4e43ee8f813940be44f721941cd560d1c3",
+      "backbone.layers.30.mixer.out_proj.weight": "d4d0d6f34730dcf9aa17c13a6878b34059ee95840e6c279c0080e92ff77cc689",
+      "backbone.layers.31.mixer.in_proj.weight": "f9ab45fb63088bf130522ed1332bb64144aad2f17e8e7580ed43fc2ae0a64788",
+      "backbone.layers.31.mixer.out_proj.weight": "336d9edd16bd4b0053a3755ca50cf4b22a113b62d3bb9512add2beebf37f2c2b",
+      "backbone.layers.32.mixer.in_proj.weight": "7fa1f64d2c7a6cd493aed52ca46c8515d3f0518b04b7020642f6c5e1b58e9df5",
+      "backbone.layers.32.mixer.out_proj.weight": "d64d7115a2f84655cb2fe393569f51d88498f05a4838d91f93faafeb4040510a",
+      "backbone.layers.33.mixer.in_proj.weight": "7c77c55eb8925d4c305a10c69ca81a96e75bbb6adcdb2b27de2b3915d6d10eb9",
+      "backbone.layers.33.mixer.out_proj.weight": "ae6dfaae914f40abd1223f245f34492ebedde73c395104f3043b903ef537e164",
+      "backbone.layers.34.mixer.in_proj.weight": "ccaa93f53a94ee24eae51c9bdb223bfd94f4faa629aa6547ccc3e746d220d68e",
+      "backbone.layers.34.mixer.out_proj.weight": "0e9ebe3df3dbbd95d231f2d026b300e0bbb84b8469c381548fb880f07bff73ca",
+      "backbone.layers.35.mixer.in_proj.weight": "75f1e1d275700ede4ebde0544b3f75eba9101d808a2c4048a1fd4650b2e71761",
+      "backbone.layers.35.mixer.out_proj.weight": "d3bb3e20c0dcaa0cf6c7813b2d0ca80442441c5388e694d3ede147145ca9a4d9",
+      "backbone.layers.36.mixer.in_proj.weight": "530cd72090569e0e6ab6bc7505a617ffa387bccb93bb4326e0da8aa1eae3b709",
+      "backbone.layers.36.mixer.out_proj.weight": "34a681836911073f54b93bf21ed6bfbd1047213af1bc2142b29cae4e4d7deba3",
+      "backbone.layers.37.mixer.in_proj.weight": "9a9893fb8e76e36ded556bbd3587f0acd74868b09aff9b38817f05eed507ea26",
+      "backbone.layers.37.mixer.out_proj.weight": "3f90bedb48e888a7ce273a65256dae7ced5ff3f8fcd55872972f3f5da2361b16",
+      "backbone.layers.38.mixer.in_proj.weight": "32ee35d349fb626a81883a8eacd96e49be34763b08eac6342e9afcb6b5c81758",
+      "backbone.layers.38.mixer.out_proj.weight": "72b2adfc8ba15e7d5df7e2f408813ba137cfe09bbd8d0830356212a914a1336d",
+      "backbone.layers.39.mixer.in_proj.weight": "c8dbab8b57bab97007d0ac25575e5cd0bcb958476392d8dd5bed71708b281009",
+      "backbone.layers.39.mixer.out_proj.weight": "af670109703d667f5c370c32da6beb7dc107d03eac3b4cd1aa22a51d66c86f07",
+      "backbone.layers.40.mixer.in_proj.weight": "46db5e295ba25addbfa55bb4fb3364e53336da6e781a5a63ee798d3b881b32c2",
+      "backbone.layers.40.mixer.out_proj.weight": "b56db12f91bb6f8baf57bd2c3a32e9b451a877a0fe24ee73ed931644d8d66867",
+      "backbone.layers.41.mixer.in_proj.weight": "532bd12868a87a54f43fa0ddf20995458df232a571d3fd943124a070c1701e23",
+      "backbone.layers.41.mixer.out_proj.weight": "2c567ef1177eba0cd1c5e72d8a26ab34e4bc784a2925cdd836c81f016a1ee8ac",
+      "backbone.layers.42.mixer.in_proj.weight": "0bd87e4be25414499e7bf18f85dc3acd70223202c4d142a1a963991a9dc6e1d5",
+      "backbone.layers.42.mixer.out_proj.weight": "26f523a31fc5ce2ad1d36be8145158409c779ba3fde6a2fa50df3033ad604ce8",
+      "backbone.layers.43.mixer.in_proj.weight": "2dedd35b6e1a0f22dc73303626776a9b7553c749f1fd32a1c45d4ce7c11776a2",
+      "backbone.layers.43.mixer.out_proj.weight": "0dda43ad4adf46f1b667b44258d414eeb0d94423102aa76550fb5f91e8ea0517",
+      "backbone.layers.44.mixer.in_proj.weight": "cc0643c7250eec6479bd8d87bdd382772e5be0c884aeff69df11fd04d8e1529c",
+      "backbone.layers.44.mixer.out_proj.weight": "8ae12ab47b36a27e099addd545f776b935990f129abd27e7ee5fec8c479cb275",
+      "backbone.layers.45.mixer.in_proj.weight": "3008a4e45156777e1aad947d15fb312ad9e3b32b40be8ed0832fc570c8f95395",
+      "backbone.layers.45.mixer.out_proj.weight": "ab4fbbfcfdd5061d64f23a0ea0ea45fcdcb977650188ef4e64a40baea53c1260",
+      "backbone.layers.46.mixer.in_proj.weight": "111ccb5a0896e2c53527a8802848438f487adbfdea0936d200ac01e5a4c6b66a",
+      "backbone.layers.46.mixer.out_proj.weight": "b1bb6143977982d126d4366141f2f32162ad5f386d374a2f8ee1702a5410ca9d",
+      "backbone.layers.47.mixer.in_proj.weight": "a24961e5a3a1ae38504c4faee40a8913102cb3c33ce0aed299c722e94b7c24c3",
+      "backbone.layers.47.mixer.out_proj.weight": "df622ca02087e0046bd89ea479088204bfc50239c06c1709b47b054b7f25353b",
+      "backbone.layers.48.mixer.in_proj.weight": "bfc4c6cc746d695e4c7011dfaf2ce474e388d3b215d9739b20b83710896dbfd3",
+      "backbone.layers.48.mixer.out_proj.weight": "7ddc984510e1100dab88777275dd9661002a91f790b18344d7fae75c8dad3822",
+      "backbone.layers.49.mixer.in_proj.weight": "5be6f52a88259dcbbed0ef4f938207954c53b067252119d4f61d12430a1aae75",
+      "backbone.layers.49.mixer.out_proj.weight": "a5fd9de26693011b4949d8ccd824ee893437197b6ad5b32c4c9f6083dddc6ec9",
+      "backbone.layers.50.mixer.in_proj.weight": "899db347bcd143d4cf7213d1ee5d8b355f91df585f3e6683b3330c5be2a9e80a",
+      "backbone.layers.50.mixer.out_proj.weight": "0f92d49946bedeb5a8050d2cb4100f584532cd1ebd8e5b2a9b9c9e16d3a20c6f",
+      "backbone.layers.51.mixer.in_proj.weight": "df55b0c77ea7941737160d63f36a7ae4a104f18cbc30ea7073bc767fbf6cb173",
+      "backbone.layers.51.mixer.out_proj.weight": "925ee9d7e28e813a6d3108675f5d3bfef2820a3df78a9b3df3de7c57db62987e",
+      "backbone.layers.52.mixer.in_proj.weight": "8861a9ef0aa90d987d1ff75d403de0d97dd50de5a4bb1d5b7ceab20538f43548",
+      "backbone.layers.52.mixer.out_proj.weight": "9180c91c5e947e9cb08dcd2d12f42a567ec23866cf6c6a41e0dff31628280a23",
+      "backbone.layers.53.mixer.in_proj.weight": "ada3a82172f2eb71de908883bb1ee716deaa7629b2d602ea65d93537af6ff225",
+      "backbone.layers.53.mixer.out_proj.weight": "26134cf9aea1676c534e684924e3373d2f56f0e53a46b118c5112d87b3156590",
+      "backbone.layers.54.mixer.in_proj.weight": "f9c81621d1dcb3869d1bbca699e07af435aef5910e432db2d9c7fc469c63f403",
+      "backbone.layers.54.mixer.out_proj.weight": "15d890ee6c84f7e44794b9ac2421788b4d578c0a3effc860bfb742e5ec205ba9",
+      "backbone.layers.55.mixer.in_proj.weight": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "backbone.layers.55.mixer.out_proj.weight": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "lm_head.weight": "169d2f19d0cdff2b72e65b7a9cecf87f5799e7922e29eba136886281f79ac4ae"
+    },
+    "after_sha256": {
+      "backbone.embedding.weight": "288a0cae67bb9be35ddb1b666d4c81a2fe1e5c769e836f8dc0d87246627023bd",
+      "backbone.layers.0.mixer.in_proj.weight": "96278dde3a028960a2cf45c81d1d95858398375544bd3e4274b95ff3d4134f2b",
+      "backbone.layers.0.mixer.out_proj.weight": "c2dab7391a382e7fa53982cc5aeda9a2c8ff4b57fd6e5d6d3edcf266cf690e19",
+      "backbone.layers.1.mixer.in_proj.weight": "1e961fa6ed90650f949fce3b32c1fcfb276accd966ed66a3dd0d63d3d4f6463b",
+      "backbone.layers.1.mixer.out_proj.weight": "7a0dcefd2aa82ffc20482e4b13095fcb33560d6912305303c2cb2fda34d9e817",
+      "backbone.layers.2.mixer.in_proj.weight": "5e4e505cebf6d6810ad40170844dabbe4cf33e97ae29ab4a9cf20126bbac5e55",
+      "backbone.layers.2.mixer.out_proj.weight": "d0f1228216363f5fc3041451d3d4e76a282e3e6c45378f69eb58ce15530ad263",
+      "backbone.layers.3.mixer.in_proj.weight": "f3385a66d8ce919096a9086dc7b0ddc9ccd9ced6cff4386539d4bb36893a2c0b",
+      "backbone.layers.3.mixer.out_proj.weight": "18adf873bd11b502b45dadb0b20cf299467fc6faa0f9dff849d66daad5b95d35",
+      "backbone.layers.4.mixer.in_proj.weight": "19154f2f6bc502f9d08c451eb2c6797428e55704cc6a33047e81aa1db937d0b1",
+      "backbone.layers.4.mixer.out_proj.weight": "41c72357e8333850a20d65fdfd05bded0ded46ef4ffe5248af42d5681525c46f",
+      "backbone.layers.5.mixer.in_proj.weight": "089a3fb790a957a3a87f62e2fd71ce39238be81c205f41df3d34237b55b73b0b",
+      "backbone.layers.5.mixer.out_proj.weight": "9b943e0409bcea2e22b19494aa2cedea196acbf80f95e02b2626d46b40c8923a",
+      "backbone.layers.6.mixer.in_proj.weight": "8f484049a0769a9588e1f54e1a0215c60c1a8f7b88c3ac2a0d01ecdeb42b9c87",
+      "backbone.layers.6.mixer.out_proj.weight": "5e5dae58a44d876854a9664f51c9c425b20909e0d23ec33e0f5c7f0f89fec68e",
+      "backbone.layers.7.mixer.in_proj.weight": "bc1f3a6a9540e71abfb95760ff65c4fd515f6915cb34888228d10835cee77ed3",
+      "backbone.layers.7.mixer.out_proj.weight": "862ba10823f6360b0e819765b9981be1dfa6a158086b80d3444260dbf3710631",
+      "backbone.layers.8.mixer.in_proj.weight": "9241aadb0880673bfa3ef8ba1fe4941defa73e3cbc9e04b43c640a50f5af0feb",
+      "backbone.layers.8.mixer.out_proj.weight": "73c034e48ed1463a4f10c972afbf833746a20f60408d16d179e124eb35dd9fb8",
+      "backbone.layers.9.mixer.in_proj.weight": "b2a8617c338561af787109b45b27706bb0b280fff0d3ebad00d119ffad48f187",
+      "backbone.layers.9.mixer.out_proj.weight": "a0eed01718db853e8e99502e6bf98ca415c8b037959fde9c7e08274ae5ec1b29",
+      "backbone.layers.10.mixer.in_proj.weight": "36a3422185616b93e4c43a26060de8bb26c12ba8d2869ee9c13502d614357e1e",
+      "backbone.layers.10.mixer.out_proj.weight": "5ac19af21d9a6a59a9106b2fb75b1652d26c97c991e3541417798e2de60eb778",
+      "backbone.layers.11.mixer.in_proj.weight": "c497592b5042850803eed38fd284d2f1a06e4bffd2e06ce8a23269bdbb65d194",
+      "backbone.layers.11.mixer.out_proj.weight": "b970f1e57235ba9d3d7d84f7d4bdb17438d029984653b527ae8a6d575acd1891",
+      "backbone.layers.12.mixer.in_proj.weight": "1dba6708eb351eaeb01550ed4ffbf0024d951b931ab68d95ee2ef9c754c6a7ed",
+      "backbone.layers.12.mixer.out_proj.weight": "bff49ec5058f026932644d65b11164acd4a470f669abd32b5448d9ce907a3b6c",
+      "backbone.layers.13.mixer.in_proj.weight": "4d7a47148d4a6b6a536c7c77d365040da23a800fec446c2334fbe9321f7a66f4",
+      "backbone.layers.13.mixer.out_proj.weight": "8f8fc3a5f0f50da76f92aeac6c05ef4c258a1feba6fd66b27c1f8bab1dad5c56",
+      "backbone.layers.14.mixer.in_proj.weight": "fc2db9c425c8f206314d5a5a56986efb4979c4b81bcb58f5c4c7fbdba981a662",
+      "backbone.layers.14.mixer.out_proj.weight": "bd80ed76c8430cca41e09f45346faaa1b08b479e3187f5dd8d11af81f49bf474",
+      "backbone.layers.15.mixer.in_proj.weight": "49a39a68932a59c5db53ac5172392a92f5f58706339103ed9c8836c74a54c1bf",
+      "backbone.layers.15.mixer.out_proj.weight": "65cd797637c7ff987dfc91a95604ddaa857eeeca3d68dad8e2fe297d3243f1a4",
+      "backbone.layers.16.mixer.in_proj.weight": "929f3d4f80e099c400c58a1f5b28aba4c001748641381253161599b419795265",
+      "backbone.layers.16.mixer.out_proj.weight": "e46c7c53c282ce3a855af8663347589dc6ac9c4a7a806e62eadc569c87a82cb4",
+      "backbone.layers.17.mixer.in_proj.weight": "f352ba90de5d005208df0375d093d63a9df4ba600ca9071ed91f9dd7e45c425c",
+      "backbone.layers.17.mixer.out_proj.weight": "ee93d897df3e460fe6383b7b42f579e5cccb07873dc2c26a681ece61f69ca872",
+      "backbone.layers.18.mixer.in_proj.weight": "6d2c4378b823aba6cbfd3b89a39327a8f2db533ed4c45dbc567045ca85b1df4a",
+      "backbone.layers.18.mixer.out_proj.weight": "5e3cb23f4203f749e46d81d49a4904908f48c7c84ca244f9d512471587f9f6cc",
+      "backbone.layers.19.mixer.in_proj.weight": "c564d26e0ba450a41f1855708e8afbfae7cbf40b4114e3a47c7e54842132526e",
+      "backbone.layers.19.mixer.out_proj.weight": "5d4477b3158e8188cfdecd9ec62d416b4aa9b5cf31ac9647d3ee265a180a4d74",
+      "backbone.layers.20.mixer.in_proj.weight": "9401c4e0a93e9828c85ab5a00a76f79f57cb4db272c408bb72fae0fe184733ec",
+      "backbone.layers.20.mixer.out_proj.weight": "ed672b54567649ebaa94d392558ab03ed00322fe0a57ba00598b1c94cb400109",
+      "backbone.layers.21.mixer.in_proj.weight": "225c80997e9b73af44bd9506ee19362b4d08de382e0e1da649c5414c3d8bf55a",
+      "backbone.layers.21.mixer.out_proj.weight": "d8e02fd36d55abed919be03bf1d87f646db0b22564c8789376670471419cf8df",
+      "backbone.layers.22.mixer.in_proj.weight": "a1ba77d51c53398d2112fd50051c0dfd5e0551542102c05ed64693c1c6d73f9b",
+      "backbone.layers.22.mixer.out_proj.weight": "c16fba7e05be5540b6bcd14cdca9cabb7a6c6b73bafa4beff0c0293dbe3ce37d",
+      "backbone.layers.23.mixer.in_proj.weight": "54786f7ee1d6c168bb7949f0d0b5d8293787bdd7ab83b5593b839f09df907289",
+      "backbone.layers.23.mixer.out_proj.weight": "9daf19d3b96756ce57d3b7501f46c1f5ba96968c754a101d238301d085fe560f",
+      "backbone.layers.24.mixer.in_proj.weight": "0a0b671e0d324dc132ad5d3e89c045de03813677d7377d77151d64f35fe76393",
+      "backbone.layers.24.mixer.out_proj.weight": "06138a031fa223967c975103c1131c9b14d0a0a8e913163f6dcb851e3cb98eb3",
+      "backbone.layers.25.mixer.in_proj.weight": "cdc939f85c3cd80429cba51144b80ccc97bf7c1fabf66c367bcd9f2fa687f967",
+      "backbone.layers.25.mixer.out_proj.weight": "e03882f403ff41afd2c5adc2d158c910d238f0acebd314df580cfbe9d40c513f",
+      "backbone.layers.26.mixer.in_proj.weight": "a65257875471d10e04283331b2a916e50c9cc93a58d8ede1f38ee79b9e47f764",
+      "backbone.layers.26.mixer.out_proj.weight": "60581d05a9f748a2a5dd8ee5b06ab93d7cce858de5811591078bb42db477eb9c",
+      "backbone.layers.27.mixer.in_proj.weight": "15034dd171ecdedfe4ada0e2682faabbcebbce29ffdf43581a6e25acb73927c2",
+      "backbone.layers.27.mixer.out_proj.weight": "336148c867bfbb10cbe43600c38fa0f7a5cb58b0084c3819aa829fe493bbaf15",
+      "backbone.layers.28.mixer.in_proj.weight": "b0bbe0bc2c2b38113593dea7858a47cea9598037c596cf43df3604dbec67d93b",
+      "backbone.layers.28.mixer.out_proj.weight": "18b4e6f28f1acf4d86e62d7dab7dba083f9d84dee831adf28afc098820e75330",
+      "backbone.layers.29.mixer.in_proj.weight": "42cdbaaa96bda366ea601db324a5c718361114f7b4cf4c51f812287f66791578",
+      "backbone.layers.29.mixer.out_proj.weight": "54c9724db56c376c94a4805f777f923e6c5647816fe36421ce7f0acc84327c25",
+      "backbone.layers.30.mixer.in_proj.weight": "a186f70805a768f942ed8e0753040d4e43ee8f813940be44f721941cd560d1c3",
+      "backbone.layers.30.mixer.out_proj.weight": "d4d0d6f34730dcf9aa17c13a6878b34059ee95840e6c279c0080e92ff77cc689",
+      "backbone.layers.31.mixer.in_proj.weight": "f9ab45fb63088bf130522ed1332bb64144aad2f17e8e7580ed43fc2ae0a64788",
+      "backbone.layers.31.mixer.out_proj.weight": "336d9edd16bd4b0053a3755ca50cf4b22a113b62d3bb9512add2beebf37f2c2b",
+      "backbone.layers.32.mixer.in_proj.weight": "7fa1f64d2c7a6cd493aed52ca46c8515d3f0518b04b7020642f6c5e1b58e9df5",
+      "backbone.layers.32.mixer.out_proj.weight": "d64d7115a2f84655cb2fe393569f51d88498f05a4838d91f93faafeb4040510a",
+      "backbone.layers.33.mixer.in_proj.weight": "7c77c55eb8925d4c305a10c69ca81a96e75bbb6adcdb2b27de2b3915d6d10eb9",
+      "backbone.layers.33.mixer.out_proj.weight": "ae6dfaae914f40abd1223f245f34492ebedde73c395104f3043b903ef537e164",
+      "backbone.layers.34.mixer.in_proj.weight": "ccaa93f53a94ee24eae51c9bdb223bfd94f4faa629aa6547ccc3e746d220d68e",
+      "backbone.layers.34.mixer.out_proj.weight": "0e9ebe3df3dbbd95d231f2d026b300e0bbb84b8469c381548fb880f07bff73ca",
+      "backbone.layers.35.mixer.in_proj.weight": "75f1e1d275700ede4ebde0544b3f75eba9101d808a2c4048a1fd4650b2e71761",
+      "backbone.layers.35.mixer.out_proj.weight": "d3bb3e20c0dcaa0cf6c7813b2d0ca80442441c5388e694d3ede147145ca9a4d9",
+      "backbone.layers.36.mixer.in_proj.weight": "530cd72090569e0e6ab6bc7505a617ffa387bccb93bb4326e0da8aa1eae3b709",
+      "backbone.layers.36.mixer.out_proj.weight": "34a681836911073f54b93bf21ed6bfbd1047213af1bc2142b29cae4e4d7deba3",
+      "backbone.layers.37.mixer.in_proj.weight": "9a9893fb8e76e36ded556bbd3587f0acd74868b09aff9b38817f05eed507ea26",
+      "backbone.layers.37.mixer.out_proj.weight": "3f90bedb48e888a7ce273a65256dae7ced5ff3f8fcd55872972f3f5da2361b16",
+      "backbone.layers.38.mixer.in_proj.weight": "32ee35d349fb626a81883a8eacd96e49be34763b08eac6342e9afcb6b5c81758",
+      "backbone.layers.38.mixer.out_proj.weight": "72b2adfc8ba15e7d5df7e2f408813ba137cfe09bbd8d0830356212a914a1336d",
+      "backbone.layers.39.mixer.in_proj.weight": "c8dbab8b57bab97007d0ac25575e5cd0bcb958476392d8dd5bed71708b281009",
+      "backbone.layers.39.mixer.out_proj.weight": "af670109703d667f5c370c32da6beb7dc107d03eac3b4cd1aa22a51d66c86f07",
+      "backbone.layers.40.mixer.in_proj.weight": "46db5e295ba25addbfa55bb4fb3364e53336da6e781a5a63ee798d3b881b32c2",
+      "backbone.layers.40.mixer.out_proj.weight": "b56db12f91bb6f8baf57bd2c3a32e9b451a877a0fe24ee73ed931644d8d66867",
+      "backbone.layers.41.mixer.in_proj.weight": "532bd12868a87a54f43fa0ddf20995458df232a571d3fd943124a070c1701e23",
+      "backbone.layers.41.mixer.out_proj.weight": "2c567ef1177eba0cd1c5e72d8a26ab34e4bc784a2925cdd836c81f016a1ee8ac",
+      "backbone.layers.42.mixer.in_proj.weight": "0bd87e4be25414499e7bf18f85dc3acd70223202c4d142a1a963991a9dc6e1d5",
+      "backbone.layers.42.mixer.out_proj.weight": "26f523a31fc5ce2ad1d36be8145158409c779ba3fde6a2fa50df3033ad604ce8",
+      "backbone.layers.43.mixer.in_proj.weight": "2dedd35b6e1a0f22dc73303626776a9b7553c749f1fd32a1c45d4ce7c11776a2",
+      "backbone.layers.43.mixer.out_proj.weight": "0dda43ad4adf46f1b667b44258d414eeb0d94423102aa76550fb5f91e8ea0517",
+      "backbone.layers.44.mixer.in_proj.weight": "cc0643c7250eec6479bd8d87bdd382772e5be0c884aeff69df11fd04d8e1529c",
+      "backbone.layers.44.mixer.out_proj.weight": "8ae12ab47b36a27e099addd545f776b935990f129abd27e7ee5fec8c479cb275",
+      "backbone.layers.45.mixer.in_proj.weight": "3008a4e45156777e1aad947d15fb312ad9e3b32b40be8ed0832fc570c8f95395",
+      "backbone.layers.45.mixer.out_proj.weight": "ab4fbbfcfdd5061d64f23a0ea0ea45fcdcb977650188ef4e64a40baea53c1260",
+      "backbone.layers.46.mixer.in_proj.weight": "111ccb5a0896e2c53527a8802848438f487adbfdea0936d200ac01e5a4c6b66a",
+      "backbone.layers.46.mixer.out_proj.weight": "b1bb6143977982d126d4366141f2f32162ad5f386d374a2f8ee1702a5410ca9d",
+      "backbone.layers.47.mixer.in_proj.weight": "a24961e5a3a1ae38504c4faee40a8913102cb3c33ce0aed299c722e94b7c24c3",
+      "backbone.layers.47.mixer.out_proj.weight": "df622ca02087e0046bd89ea479088204bfc50239c06c1709b47b054b7f25353b",
+      "backbone.layers.48.mixer.in_proj.weight": "bfc4c6cc746d695e4c7011dfaf2ce474e388d3b215d9739b20b83710896dbfd3",
+      "backbone.layers.48.mixer.out_proj.weight": "7ddc984510e1100dab88777275dd9661002a91f790b18344d7fae75c8dad3822",
+      "backbone.layers.49.mixer.in_proj.weight": "5be6f52a88259dcbbed0ef4f938207954c53b067252119d4f61d12430a1aae75",
+      "backbone.layers.49.mixer.out_proj.weight": "a5fd9de26693011b4949d8ccd824ee893437197b6ad5b32c4c9f6083dddc6ec9",
+      "backbone.layers.50.mixer.in_proj.weight": "899db347bcd143d4cf7213d1ee5d8b355f91df585f3e6683b3330c5be2a9e80a",
+      "backbone.layers.50.mixer.out_proj.weight": "0f92d49946bedeb5a8050d2cb4100f584532cd1ebd8e5b2a9b9c9e16d3a20c6f",
+      "backbone.layers.51.mixer.in_proj.weight": "df55b0c77ea7941737160d63f36a7ae4a104f18cbc30ea7073bc767fbf6cb173",
+      "backbone.layers.51.mixer.out_proj.weight": "925ee9d7e28e813a6d3108675f5d3bfef2820a3df78a9b3df3de7c57db62987e",
+      "backbone.layers.52.mixer.in_proj.weight": "8861a9ef0aa90d987d1ff75d403de0d97dd50de5a4bb1d5b7ceab20538f43548",
+      "backbone.layers.52.mixer.out_proj.weight": "9180c91c5e947e9cb08dcd2d12f42a567ec23866cf6c6a41e0dff31628280a23",
+      "backbone.layers.53.mixer.in_proj.weight": "ada3a82172f2eb71de908883bb1ee716deaa7629b2d602ea65d93537af6ff225",
+      "backbone.layers.53.mixer.out_proj.weight": "26134cf9aea1676c534e684924e3373d2f56f0e53a46b118c5112d87b3156590",
+      "backbone.layers.54.mixer.in_proj.weight": "f9c81621d1dcb3869d1bbca699e07af435aef5910e432db2d9c7fc469c63f403",
+      "backbone.layers.54.mixer.out_proj.weight": "15d890ee6c84f7e44794b9ac2421788b4d578c0a3effc860bfb742e5ec205ba9",
+      "backbone.layers.55.mixer.in_proj.weight": "02a904041223a1b249e8eaa0dbd8f2e72b5fcebcb3c77bf0529a10db4f6b491b",
+      "backbone.layers.55.mixer.out_proj.weight": "663bcc120f99e30d8b00722062c142a878963ad8603f8f279453b239bd9f9c73",
+      "lm_head.weight": "169d2f19d0cdff2b72e65b7a9cecf87f5799e7922e29eba136886281f79ac4ae"
+    },
+    "bitwise_unchanged": true
+  },
+  "elapsed_seconds": 139.99336314201355,
+  "gpu_memory": {
+    "peak_allocated_bytes": 35771303936,
+    "peak_reserved_bytes": 36125540352,
+    "current_allocated_bytes": 33353940480,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  }
+}
