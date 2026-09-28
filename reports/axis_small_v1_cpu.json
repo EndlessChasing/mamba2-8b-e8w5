@@ -1,0 +1,2720 @@
+{
+  "format": "MAMBA2_AXIS_SMALL_TRAINING_REPORT_V1",
+  "complete": true,
+  "mode": "cpu-preflight",
+  "pid": 3361345,
+  "started_at_unix": 1790610134.8360662,
+  "script_sha256": "7c03ccedc5bd1e5886aa82afac84640ac9d2c0e427455d8fb6bac327f42701af",
+  "protocol_sha256": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282",
+  "training_split": "train",
+  "heldout_used_for_fitting": false,
+  "validation_loaded": false,
+  "initialization_selected_by_diagnostic": false,
+  "selected_small_tensors": {
+    "backbone.layers.0.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.0.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.0.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.0.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.0.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.0.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.0.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.1.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.1.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.1.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.1.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.1.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.1.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.1.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.10.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.10.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.10.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.10.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.10.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.10.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.10.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.11.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.11.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.11.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.11.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.11.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.11.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.11.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.12.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.12.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.12.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.12.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.12.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.12.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.12.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.13.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.13.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.13.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.13.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.13.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.13.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.13.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.14.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.14.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.14.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.14.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.14.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.14.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.14.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.15.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.15.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.15.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.15.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.15.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.15.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.15.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.16.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.16.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.16.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.16.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.16.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.16.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.16.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.17.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.17.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.17.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.17.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.17.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.17.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.17.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.18.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.18.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.18.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.18.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.18.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.18.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.18.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.19.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.19.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.19.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.19.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.19.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.19.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.19.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.2.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.2.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.2.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.2.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.2.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.2.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.2.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.20.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.20.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.20.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.20.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.20.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.20.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.20.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.21.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.21.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.21.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.21.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.21.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.21.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.21.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.22.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.22.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.22.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.22.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.22.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.22.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.22.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.23.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.23.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.23.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.23.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.23.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.23.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.23.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.24.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.24.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.24.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.24.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.24.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.24.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.24.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.25.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.25.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.25.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.25.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.25.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.25.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.25.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.26.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.26.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.26.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.26.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.26.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.26.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.26.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.27.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.27.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.27.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.27.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.27.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.27.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.27.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.28.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.28.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.28.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.28.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.28.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.28.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.28.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.29.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.29.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.29.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.29.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.29.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.29.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.29.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.3.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.3.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.3.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.3.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.3.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.3.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.3.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.30.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.30.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.30.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.30.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.30.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.30.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.30.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.31.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.31.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.31.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.31.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.31.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.31.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.31.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.32.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.32.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.32.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.32.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.32.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.32.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.32.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.33.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.33.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.33.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.33.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.33.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.33.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.33.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.34.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.34.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.34.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.34.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.34.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.34.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.34.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.35.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.35.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.35.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.35.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.35.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.35.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.35.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.36.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.36.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.36.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.36.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.36.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.36.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.36.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.37.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.37.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.37.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.37.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.37.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.37.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.37.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.38.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.38.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.38.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.38.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.38.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.38.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.38.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.39.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.39.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.39.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.39.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.39.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.39.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.39.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.4.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.4.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.4.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.4.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.4.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.4.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.4.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.40.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.40.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.40.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.40.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.40.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.40.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.40.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.41.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.41.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.41.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.41.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.41.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.41.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.41.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.42.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.42.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.42.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.42.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.42.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.42.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.42.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.43.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.43.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.43.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.43.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.43.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.43.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.43.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.44.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.44.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.44.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.44.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.44.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.44.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.44.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.45.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.45.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.45.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.45.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.45.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.45.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.45.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.46.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.46.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.46.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.46.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.46.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.46.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.46.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.47.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.47.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.47.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.47.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.47.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.47.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.47.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.48.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.48.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.48.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.48.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.48.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.48.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.48.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.49.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.49.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.49.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.49.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.49.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.49.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.49.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.5.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.5.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.5.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.5.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.5.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.5.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.5.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.50.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.50.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.50.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.50.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.50.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.50.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.50.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.51.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.51.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.51.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.51.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.51.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.51.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.51.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.52.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.52.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.52.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.52.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.52.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.52.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.52.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.53.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.53.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.53.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.53.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.53.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.53.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.53.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.54.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.54.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.54.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.54.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.54.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.54.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.54.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.55.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.55.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.55.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.55.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.55.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.55.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.55.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.6.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.6.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.6.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.6.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.6.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.6.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.6.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.7.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.7.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.7.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.7.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.7.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.7.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.7.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.8.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.8.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.8.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.8.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.8.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.8.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.8.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.layers.9.mixer.A_log": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.9.mixer.D": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.9.mixer.conv1d.bias": {
+      "shape": [
+        10240
+      ],
+      "numel": 10240
+    },
+    "backbone.layers.9.mixer.conv1d.weight": {
+      "shape": [
+        10240,
+        1,
+        4
+      ],
+      "numel": 40960
+    },
+    "backbone.layers.9.mixer.dt_bias": {
+      "shape": [
+        128
+      ],
+      "numel": 128
+    },
+    "backbone.layers.9.mixer.norm.weight": {
+      "shape": [
+        8192
+      ],
+      "numel": 8192
+    },
+    "backbone.layers.9.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    },
+    "backbone.norm_f.weight": {
+      "shape": [
+        4096
+      ],
+      "numel": 4096
+    }
+  },
+  "cpu_self_test": {
+    "passed": true,
+    "checks": [
+      "448 successes/917056 targets",
+      "8 same-window overflow retries/456 attempts",
+      "Reject float/bool/mismatched-window/excess-overflow accounting"
+    ]
+  },
+  "binding": {
+    "protocol_sha256": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282",
+    "current_evaluation_sha256": "23f48ae741195ca646f68dd5008493d003e15335d7e69c034e6d424b69871eb4",
+    "input_manifest_sha256": "0fabdec5f6713f4530723f1e6a8c0e8b34563edea015441035613e5232347c85",
+    "output_manifest_sha256": "2b6f56e4f1705ddfad18fc58662a28b1f36b7fd63dd4ff540e733e1f0747812f",
+    "parent_manifest_sha256": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+    "small_manifest_sha256": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006",
+    "small_values_sha256": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "data_manifest_sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+    "training_tokens_file_sha256": "e54b02e5162e042a9cdd504f4eb1b1652724fb240bbc2c97608967aa26297233",
+    "heldout_tokens_file_sha256": "a3fc0803052890d973b74f91581a6bfc1d2f93ed28db5725f23c16eb8ec20546",
+    "helper_source_sha256": "4e7026475fc97b005105b27043a15bae83c576934612b1e346576438eef4da70",
+    "frozen_code_sha256": {
+      "mamba_e8w5/runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+      "mamba_e8w5/codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "mamba_e8w5/input_axis_residual.py": "baff8c56c875258830ac00076f880105b7933a173f57ba0bf38e27cbf1436c06",
+      "mamba_e8w5/calibration.py": "b5a7356a2ab769538940aed218653a092a7055aa26a9ec6f62d3783b9ac78ee5",
+      "scripts/prepare_teacher_kl_data.py": "4e528dbaa965110a908c56f2386b12483c23d4bc1e8f80a341875ed00728cd13"
+    },
+    "checked_input_sha256": {
+      "/home/horde/Mamba2-8B-E8W5/docs/AXIS_SMALL_READAPTATION_PROTOCOL.md": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282",
+      "/home/horde/Mamba2-8B-E8W5/reports/output_axis_residual_v1_eval.json": "23f48ae741195ca646f68dd5008493d003e15335d7e69c034e6d424b69871eb4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/manifest.json": "ef47f52000c14fd644cc0ee459318beb16ce1e078e3586cbe2e946c7506722ed",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/manifest.json": "0fabdec5f6713f4530723f1e6a8c0e8b34563edea015441035613e5232347c85",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/manifest.json": "2b6f56e4f1705ddfad18fc58662a28b1f36b7fd63dd4ff540e733e1f0747812f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/small_compensation_v1/manifest.json": "edde5734ee447bca45f0e7079287abfe5ef378dd5fd9f0cd57bd7d868bd9a006",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/small_compensation_v1/other_fp16.pt": "15de8deba5335a1e3961143b562b03aee91f62ae2224627ed12f42ce5a4865a4",
+      "/home/horde/Mamba2-8B-E8W5/training_data/teacher_kl_compensation_v1/manifest.json": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/axis_small_base.py": "4e7026475fc97b005105b27043a15bae83c576934612b1e346576438eef4da70",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/runtime.py": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/codec.py": "ece47122f23dd0a726b45fba0b79466134534f011d560f8473c74ae9494aa79f",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/input_axis_residual.py": "baff8c56c875258830ac00076f880105b7933a173f57ba0bf38e27cbf1436c06",
+      "/home/horde/Mamba2-8B-E8W5/mamba_e8w5/calibration.py": "b5a7356a2ab769538940aed218653a092a7055aa26a9ec6f62d3783b9ac78ee5",
+      "/home/horde/Mamba2-8B-E8W5/scripts/prepare_teacher_kl_data.py": "4e528dbaa965110a908c56f2386b12483c23d4bc1e8f80a341875ed00728cd13",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer0.in_proj.e8": "b9bced2b14abac77e7a4b6df9e58149f1341d79c13281cefa34b4b82290797ef",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer0.out_proj.e8": "8dd1a6dcc5c6978e8c90c47a02b7cff65198f6d5a477f65b5367d4ea55b23e2f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer1.in_proj.e8": "c9b375f2ce868b41e807996e78a6161527ea55891c2f6ed17df372b142a353a3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer1.out_proj.e8": "437fe333388af7136ad6a215afbc2c22eafd3343742011291c9eb5d670d67021",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer2.in_proj.e8": "86b112916178464dced1f273e604859794aecaa127993cfbb21aa24335a637c3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer2.out_proj.e8": "bfe1fb68fcaba61dd5829a7f4a4ea82a63d3af50ef3350dd3670c786d8f3cbba",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer3.in_proj.e8": "adbf5bf5a743401d45ec5120b9d7524427b43d05b2422cd0cdb85c66c4cee531",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer3.out_proj.e8": "64d6817f33e3f687e1ad6c80fe8b75502edb17ac15b5c1c91e77390208c0719b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer4.in_proj.e8": "1f9b254ced5796c6b6ffdb54aa67b407b7e0ac64efb80676d5ff921b45dd4d2f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer4.out_proj.e8": "74ca56164c2a75c8da083c9a76185bfe1653619f16856b8504598f5ce29b093d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer5.in_proj.e8": "998ecd1176c7033f91e3cde3a770aee68a4491cc71c67d02b21b2f72ff5cd8cf",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer5.out_proj.e8": "937887e2d4068056189045a208ad81788b883eb6796ed6f991e14c29b2243f36",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer6.in_proj.e8": "a48b8cc3f9fd39b226d64a2e40fbfc60139e179a9e4309b36c6e78109a24f58d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer6.out_proj.e8": "3c978122a10d31f33d498a678700c9f935c2193bbdc9c1112965169b7634d1cb",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer7.in_proj.e8": "48ca556f31153a0a7eb9a3a1c67841242be2a1400ffb7debe6626a8b73b03c06",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer7.out_proj.e8": "fb21db0f6888af460ac57a301fb0372a0173ce0d26864c947f025296a0e06ef3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer8.in_proj.e8": "da815b531220afb53282424881a961b2c3b990e641919df44b7f9409aaa78f60",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer8.out_proj.e8": "65f9fd624c67c6dec32f5800d846495bcf4b379bc6982fff644425cab6173ab8",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer9.in_proj.e8": "cba4a6aa2bcf368822622a39d1850eaa90cd026ba1c0012b720d8ed8955c6a3e",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer9.out_proj.e8": "f9b7b02b0099ff8cdd1a370842070861c33c116bc55770c26cb43b97263dafd4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer10.in_proj.e8": "5d3575a3c5722933a3df92bf6148fa576cbc7d039588f6bdb86e083d2756d763",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer10.out_proj.e8": "d70cbf18eb4cf6fe03ef40937045c216d92fc085f474e623b9d670d1b387e381",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer11.in_proj.e8": "2eb3d2ba59297e599024e835bfda5e83f8123ca70dc57bde0b887beda3dc7783",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer11.out_proj.e8": "4e4059015ebfe5681287180cdb8bc4c9466970a63f9c95f19636c2a4b35b2e15",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer12.in_proj.e8": "c35de0c6da9c21825bfc5a8ed7bcddd8e2d6cc022b9f55250a0e9052179e9439",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer12.out_proj.e8": "1bd1a1f238e5ad355ea168666cd729aa4cf26a8e4c5c0de176a34a0f2a396a0d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer13.in_proj.e8": "0823f1c3f1bcaf01e8b47250668966fb351d7a428ebd87d40e54f467fcf67d68",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer13.out_proj.e8": "dd2d036fd9118182888fb2f8159d9653ec38d10c5d91e9e80b9cf4470c85f510",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer14.in_proj.e8": "934757dd9c995e79cf111e1b9546dfde18645842933c33603eb436cf1a37c6ae",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer14.out_proj.e8": "54852a3ecda2799f349e8825d454818b920aefbf34180983a70e89f8977e5bad",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer15.in_proj.e8": "b34dfe4a5c161c5ef92fcc1762d5d19d5a1a2647a01cab36bcf370418e397560",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer15.out_proj.e8": "6fc97a817be93eff5b95e84c8e3bc4056e2278817224027709c5bfde07fae0d7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer16.in_proj.e8": "de8229892639ae4a88e914bb30e018f98f510ecd6f646f71667b3972a0f5ea33",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer16.out_proj.e8": "42edca6afdad34de9da809c6f855f32cd2c8cffe6a8ee2303e26fbf537d1f0b4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer17.in_proj.e8": "5842699af1cd44d5ac91eb1fb73f3608ebd97b645acc3054242299c0945f8d3a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer17.out_proj.e8": "c2f04fc5f971cf53d2b88eb5c2ed18d83bfd9e2370466b8a706376e0cc8c522d",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer18.in_proj.e8": "420b26f5fa3ef9e366acd5dae043c6853afa8209b29a3c6c1f7bd90537d8c397",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer18.out_proj.e8": "0bb031bc30532de8cdecbc9acadafdfd38ba7185571c5eb8cb4e6cf7fad421b3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer19.in_proj.e8": "dcbaf2b7d6533bdb5c12bad767b085f634698d7ac2fb40eff9ff7fff34afde6f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer19.out_proj.e8": "1949088f025460bc3115fd1746531bb47222ad5018981d6527107f643fb480d3",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer20.in_proj.e8": "355c5eb1c4b0f5faa5e18e8645c3286a06f8e05f9b6da199fb8d4c3cfd698451",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer20.out_proj.e8": "2108ec846bbd305494ad67bb29892706ec9dc15d00f8b0927adc41936e750a0c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer21.in_proj.e8": "df979b7a200941a46568932a4220608e5b1a51e7d1619b6cfbd17481d3f838e7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer21.out_proj.e8": "27ad0d171ffac1dc36c1061c36e40236b2cbcb19ebcf69b59e397543bcfb2f33",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer22.in_proj.e8": "3a688c2897b99135057745b78cf13d4ba87d5cc1ffd56189a0a1bca4f541b0e4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer22.out_proj.e8": "12bd49adedb2d5f4854c5486b037c2605ba5a2b6c77a90b7c85291a9c3755278",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer23.in_proj.e8": "8eaef98b728af4802bc0cd0c1275e0649a20567ff92c7e7670a243d0322ffc58",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer23.out_proj.e8": "95986be205efe12ceae5bbf57badba2de220c9f2ff0d3d7b4713bdef4ad15778",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer24.in_proj.e8": "f8664603fc183564131620c3ac6a1b219b5e0863f55a17365e9bed073ed61855",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer24.out_proj.e8": "1ef0f1d7c908a61a531c9e931350e524603cf0feefd8d8489e33b126ec7f522f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer25.in_proj.e8": "ef4abe53d24d84a361d1859358bfe491f20c07453f7457ba7f22015e0183d533",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer25.out_proj.e8": "2eb889dc7a9691f29b5a66d7847294bc634c21540956fc38f28d4e14279a2bd8",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer26.in_proj.e8": "ca437bba33e25dbbe9667b154285596471eb1595a7b3834ad24ca2625182b552",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer26.out_proj.e8": "5d7c7ee644bffd8aecfa83277c4b8d41cf809d41b91041c9933a8ce2162927b1",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer27.in_proj.e8": "2bafd6e245434bab80631da6bad8ed4c23620775a27e4666f009115ee565b5cf",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer27.out_proj.e8": "3568b00c54b0abf15509138dfde65594e8e3b3bff98a7de8ec4d1a68f196f920",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer28.in_proj.e8": "063f075d9889a5695d2a1c3f6e2e616b384defb41ba9a442b63e546c4bc182e7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer28.out_proj.e8": "4e0cfe6f9bd224f304cbcb20494a24b70eaed048b836f3bf470edbc1828c3f64",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer29.in_proj.e8": "64766364474591fbf5bb9e48d07accdd733089e44e6a894f893201993c140c05",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer29.out_proj.e8": "13b505fd6ca57ae2a4d3270a93555b35b25a667aed35623b73517e3fcf571844",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer30.in_proj.e8": "02a6ac54141a202397808846b348dc39e49e44f8ead3059058252b83e8c00a97",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer30.out_proj.e8": "02a46cd46e58e004e9a19087cfb61f0d02bd097a1d7a187a423bb915cb453854",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer31.in_proj.e8": "eb0baa9cf98ba8996bd8ba74a4c0e492af359576447e540d4bb7893c5e130936",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer31.out_proj.e8": "9520b6ebbe96dc311b314fcd4f9ec16ed8deac23e20f74d43f58bbf527fa0970",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer32.in_proj.e8": "e2aef10b9e304a48d3120e4067b63e4f4048a60f584c1d97f6a19cf4e5ccfcba",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer32.out_proj.e8": "aac463ab0ed64976151d0cde2bbb4203fac5f66cbe3768ab92c2a6520b0e5c59",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer33.in_proj.e8": "1ad5782521c831d9c68690b629e781162aa6bbb67893654818cc4d9438ec9290",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer33.out_proj.e8": "981b8316c4c8310dd3b2fe85de810b13662a4410fb270a428b9a60ff47a77ce4",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer34.in_proj.e8": "9e1d6f88b1871ef9c32618cc2adc27af3d699c371c1177efdde47b04c02cef77",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer34.out_proj.e8": "39f5a25e7db0b82f3cade56e37b9b9bb51b82ba3894dd93157c4629aea219dad",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer35.in_proj.e8": "398835e213d2bda007708d94a668ea605ff88fac1cebd6010aed66a1cb9859fb",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer35.out_proj.e8": "033de7a46d9711a9097ecea56f1c9ab8f4cb06e0cb9842fd1f195b88877c0214",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer36.in_proj.e8": "db859a76b2d503c3d75a419873b5a34cb30db1bed1d53a2f9bb42ec3d4770cca",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer36.out_proj.e8": "805c52991d63765f29907c262d0efaeaccded9452c80d398aca3f92c6e5efeb6",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer37.in_proj.e8": "54e67888621f3df95ac95c389805dce5b8742d7083eb6dd60d29eaaececf8f1f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer37.out_proj.e8": "a26d2c223245f999532c8ca01f63f627e848342eb80dcf20c106243f30207967",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer38.in_proj.e8": "e787d59d1efe138f7ad76677c9bfa5d56f45fa3a4115618523842660ed82bcbf",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer38.out_proj.e8": "6aa82a0ee4ed7ce0c09026dd90c99a9b9d03200d79bf16c7b3f095f70c5f05ca",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer39.in_proj.e8": "ca34fe736cde5c2ee2a0cd10089ffe57f2c0c92c537f304064292628811c836e",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer39.out_proj.e8": "34d9a5f5a6bb7efaa75a0a85023f90f0586332cb5e13bff8fd31cc4437935062",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer40.in_proj.e8": "ac749b61716d76ff35db50b668f55fc5c8ff6a8a63b72b5b2f8db44e9c416876",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer40.out_proj.e8": "4fc82582674acfe5b947c0494d31a77304c0d099bebe0643786ee4a7dc798a73",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer41.in_proj.e8": "96827a9ce7cbedbe181dc2e994edc1ab55cae5ce6d902ce04a7af33e9c331e21",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer41.out_proj.e8": "dc6b75f95c1bdbaf8ef0b5f9819d9a7b223316c8835ef3eaf42cc5204de2419a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer42.in_proj.e8": "724b459916a8576505993f0912a24cf7d5059cd262ddf3c1a7d4f1c47bbafd01",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer42.out_proj.e8": "c5b0b654a06a737135fb8010ffaea9fe714c97e2c4db87bf9d967917cbb3faf7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer43.in_proj.e8": "acd577bd0f4d63e8bc41856a42945de90f9372b82968ae98a43e5398fc7b5995",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer43.out_proj.e8": "c9ccd77afaf316c89a8cf28978d047dde96981d86a5777fc0bbfcd29124a6142",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer44.in_proj.e8": "3c8b9643a8e6ee4cd8878e79969c4692d1e2ccbdb92a30bcb3c440495bb9ea8f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer44.out_proj.e8": "81947b80efd92938a617a4e88a23f8694a6e40c06f7ded0f86beb974257a201b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer45.in_proj.e8": "f09e77c769004f606b34a408efeda8e6e0b2dcaa33c806c215a5141f1ffb824c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer45.out_proj.e8": "aaa5c0f8a98a0d533872e49af127bd3590235161a62734f92b9447ebfea6af03",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer46.in_proj.e8": "eaab663cd907a6f76394bd33f8be7c5a609f5e22ac97db47a17606c98a29c4f6",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer46.out_proj.e8": "a066131c104b59e46fc4067dfdc265904780ed5fd0a1a1ea47b1e461e4805494",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer47.in_proj.e8": "cf03db1cb44ab52eb82eb272b7994eb5fe64f6e3b71a0bbf29dedffc214aeb14",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer47.out_proj.e8": "4965e1fc11acedc57f77842bf6780ff8ab716e8846295a5eb254cd07f279754a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer48.in_proj.e8": "2895aee870434423596414f97d9d44b31d2a6dbef86b0592b1644cc24e6dde02",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer48.out_proj.e8": "9a1cc9d654174d9c3033083ac7ffd966faec11c447cdd0ed7bb748b394fbbbd0",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer49.in_proj.e8": "b4d1ec45f4e3a2cac082542c67788c4525e8e2648bd98c2bef1646a3af78b59f",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer49.out_proj.e8": "557ec9ecdc69a8166d5a535e6201f5288c359231b4944c2f4f1687836f4eae65",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer50.in_proj.e8": "0a6b57973f1a011b966b9b04d97ff213e53744a02fd3273c44fec9cab654b33a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer50.out_proj.e8": "8f9bea0bd4374e4ab553e41f25e4e7ae09296598341253c683375f5ca6ae5bc9",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer51.in_proj.e8": "17924f5e808aaa508fde6afee7f5ad65deb589ec43fa98d37202e54c32d3891e",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer51.out_proj.e8": "239a6e62d914cddaeec292c28c8f17de1364650a8c9dfd5f55275eb17cf91b31",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer52.in_proj.e8": "8fcebb788026a54d7ec0bb626bc214c1c29cf503e6a2f7c8b55af6b3afaea5be",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer52.out_proj.e8": "efbea858d56804bdedcaa3ed081f353d2e1dfdfe0dce1215c64f6022e4517972",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer53.in_proj.e8": "9f9d08491d0fad59e68ac53c5e0d3e71ad90be8adb766597c4160ec70889bb4a",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer53.out_proj.e8": "674cd3ed89f04e8a6e88c6ae568ac2e9bb66d8d7edd3d6a5b96eefd40231a06b",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer54.in_proj.e8": "09c9dd50a8078b909afde8c147da222be7bc26496e2975146d8bf30f7225b26c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer54.out_proj.e8": "4760a0df72f5d30a82ce95b27912f90339a65df5231aff216eb3c6f1f885be19",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/input_axis_residual_v1/layer55.in_proj.e8": "fe01b46fa24380f0696ed0479e0545e19af347b698ea6f963bc55b9700fdd0eb",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/output_axis_residual_v1/layer55.out_proj.e8": "7b77186993bde2c74ca240567aa1b7b59b5098ef716a96a11dff7849124dc4e7",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/config.json": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/e8_codebook.bin": "efc2c03c60acd955dc812ff2bade9ec6cc31259807e48473506161f3a9a230ce",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/vocab_w4_v1/embedding.uniform": "9857f7d145bb5f833e591356ac1d2d76e1845bd688917ab77da9d476bce7a181",
+      "/home/horde/Mamba2-8B-E8W5/artifacts/e8w5_v1/lm_head.uniform": "95ebb5b8c72e57621b33287b84a223cda11bae9440c72158aec64dc30c6cec98",
+      "/home/horde/Mamba2-8B-E8W5/third_party/quip-sharp/lib/codebook/latticee8_padded12.py": "af3442929e4dd033f1a9776eab36bea42ba9dd17761a3d0056639f0db7c4e75f",
+      "/home/horde/Mamba2-8B-E8W5/third_party/quip-sharp/lib/algo/quip.py": "abd4986cbd636dea77809bc0b816964f406e0f2440cdde39cc83ba7734052fc4",
+      "/home/horde/Mamba2-8B-E8W5/models/source/mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+      "/home/horde/Mamba2-8B-E8W5/models/source/model_optim_rng.pt": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+      "/home/horde/Mamba2-8B-E8W5/calibration/v1/manifest.json": "70f2993a00bc441b4dd340cc42dbee3262bd24a8547c665a1f1b236cd276afab",
+      "/home/horde/Mamba2-8B-E8W5/training_data/small_compensation_v1/manifest.json": "88d4dcd9f468a50137f25f7afdc101fd2635f254bdd0d4b194ecf252c7116709",
+      "/home/horde/Mamba2-8B-E8W5/reports/projection_crossmoment_pilot_v1.json": "034a161df40fa4dac5be99b25545f9087da6695accc414a852fafe0e47228f87",
+      "/home/horde/Mamba2-8B-E8W5/training_data/prototype_compensation_v1/manifest.json": "a485424d1b7894eb1d5a6361ab4c25fdb4f6e5bedc56d7a15a7e4add2c454bcd",
+      "/home/horde/Mamba2-8B-E8W5/training_data/low_rank_compensation_v1/manifest.json": "e168e1d90ea7cd9c14c8210f13b5e6b569612c82dcaf832100c250cb72d24bef",
+      "/home/horde/Mamba2-8B-E8W5/reports/low_rank_generalization_v1.json": "2f75a73ad675f563b035f02ee3fab3522f011785eff3459b5c0caf098347da25",
+      "/home/horde/Mamba2-8B-E8W5/docs/TEACHER_KL_COMPENSATION_PROTOCOL.md": "c80fe02fe1dafb24b7a983bf347205c709a7af297cc325ed8761a29ecbff5c6a",
+      "/home/horde/Mamba2-8B-E8W5/training_data/teacher_kl_compensation_v1/training_tokens.pt": "e54b02e5162e042a9cdd504f4eb1b1652724fb240bbc2c97608967aa26297233",
+      "/home/horde/Mamba2-8B-E8W5/training_data/teacher_kl_compensation_v1/heldout_tokens.pt": "a3fc0803052890d973b74f91581a6bfc1d2f93ed28db5725f23c16eb8ec20546"
+    },
+    "hyperparameters": {
+      "seed": 20260928,
+      "successful_updates": 448,
+      "maximum_attempts": 456,
+      "maximum_overflow_retries": 8,
+      "epochs": 1,
+      "windows": 448,
+      "stored_tokens": 2048,
+      "targets_per_window": 2047,
+      "optimizer": "AdamW",
+      "learning_rate": 3e-05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 0.0,
+      "gradient_clip_norm": 1.0,
+      "ce_coefficient": 0.5,
+      "teacher_to_student_kl_coefficient": 0.5,
+      "temperature": 1.0,
+      "logits_chunk_tokens": 64,
+      "selected_tensors": 393,
+      "selected_parameters": 3580928,
+      "master_dtype": "float32",
+      "forward_dtype": "float16",
+      "native_eval_mode": true,
+      "checkpoint_each_block": true,
+      "loss_scaler": {
+        "init_scale": 1024.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000
+      },
+      "initialization": "current accepted trained393 FP16; fresh optimizer/scaler",
+      "schedule": "prepared seed20260928 torch.randperm448 once",
+      "selection": "final448 only",
+      "resume": false,
+      "overflow_policy": "same window retry, no master/optimizer update; maximum8"
+    },
+    "trainer_source_sha256": "7c03ccedc5bd1e5886aa82afac84640ac9d2c0e427455d8fb6bac327f42701af",
+    "training_code_sha256": {
+      "mamba_e8w5/axis_small_base.py": "4e7026475fc97b005105b27043a15bae83c576934612b1e346576438eef4da70",
+      "mamba_e8w5/small_training.py": "6e98858460534c4047f7bf75bd62eaf7769d7e46919cd9de6868fd6177a80086",
+      "mamba_e8w5/norm_training.py": "25ac3ec6ba167902014018f99fbf8dbbc659e0e4903f80baf28e28a4a3e74087",
+      "scripts/train_small_compensation.py": "d92317e3157f374ef872e40f0de5ad81f9dc6ad9732b19f3df616a114fc5ca7a",
+      "scripts/train_norm_compensation.py": "da1818af295738cfa8a012b35ff0d1f007c410f27988d9bdaf88425fbedc47f2",
+      "mamba_e8w5/small_overlay.py": "3512c1b232c4039c16a26ffc0fe8c2eac1be6bb9c704ccbcb1d4e8e7788a1286",
+      "scripts/prepare_teacher_kl_data.py": "4e528dbaa965110a908c56f2386b12483c23d4bc1e8f80a341875ed00728cd13",
+      "scripts/train_axis_small.py": "7c03ccedc5bd1e5886aa82afac84640ac9d2c0e427455d8fb6bac327f42701af"
+    }
+  },
+  "cuda_initialized": false,
+  "training_windows": [
+    448,
+    2048
+  ],
+  "selected_tensors": 393,
+  "selected_parameters": 3580928,
+  "heldout_tensor_discarded": true,
+  "elapsed_seconds": 18.02132984797936
+}

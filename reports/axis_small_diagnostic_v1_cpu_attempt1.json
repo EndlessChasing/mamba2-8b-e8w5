@@ -1,0 +1,33 @@
+{
+  "format": "MAMBA2_AXIS_SMALL_DIAGNOSTIC_V1",
+  "complete": false,
+  "script_sha256": "fc35f16c8a6737a3b9f4ee79f1e91d3d765202f1f92186a89313b3478932bac5",
+  "protocol_sha256": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282",
+  "arm_order": [
+    "current_old_small",
+    "original_source_small",
+    "current_old_small_repeat"
+  ],
+  "training_performed": false,
+  "validation_loaded": false,
+  "candidate_advancement": false,
+  "initialization_selection_performed": false,
+  "publication_performed": false,
+  "limitations": [
+    "These64 reserved TRAIN windows have been observed; this is descriptive development evidence.",
+    "Diagnostic direction does not select training initialization or prove adaptation cannot help.",
+    "Native FP16 evaluation does not establish compact runtime residency."
+  ],
+  "self_test": {
+    "passed": true,
+    "cuda_initialized": false,
+    "checks": [
+      "Exact393/3580928 inventory disjoint from114 fixed keys",
+      "Missing-key/precision rejection and signed-zero content hashing"
+    ]
+  },
+  "correctness_passed": false,
+  "error": "ValueError('Bound regular-file identity differs:/home/horde/Mamba2-8B-E8W5/docs/AXIS_SMALL_READAPTATION_PROTOCOL.md')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/diagnose_axis_small.py\", line 144, in main\n    run(args,report)\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/diagnose_axis_small.py\", line 58, in run\n    context = base.verify_inputs()\n  File \"/home/horde/Mamba2-8B-E8W5/mamba_e8w5/axis_small_base.py\", line 151, in verify_inputs\n    checked_file(path,digest)\n  File \"/home/horde/Mamba2-8B-E8W5/mamba_e8w5/axis_small_base.py\", line 73, in checked_file\n    raise ValueError(f'Bound regular-file identity differs:{path}')\nValueError: Bound regular-file identity differs:/home/horde/Mamba2-8B-E8W5/docs/AXIS_SMALL_READAPTATION_PROTOCOL.md\n",
+  "elapsed_seconds": 0.09475952805951238
+}
