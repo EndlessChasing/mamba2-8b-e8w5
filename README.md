@@ -1,4 +1,4 @@
-# Mamba-2 8B E8/W5
+# Mamba-2 8B E8/W5， 3GB， Recall Recovered
 
 **Current release: `v0.2.0-resurface` (research prerelease).** The complete **3,165,987,804-byte (3.166 GB)** package is [publicly available](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface). Exact restoration, archived-source GPU inference and all26 GitHub asset checksums passed. Use the [release guide](docs/RESURFACE_RELEASE.md) and [download instructions](docs/DOWNLOAD.md) for the latest axis-residual, W4-embedding/W5-head model with its enabled soft Resurface adapter. The original `v0.1` recipes below are retained as experiment history.
 
