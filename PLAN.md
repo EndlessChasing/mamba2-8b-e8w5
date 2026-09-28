@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold. Input-axis quantization and final native evaluation completed with exit0. The fixed primary passes the1% development gate and improves complete-validation PPL8.359867548→8.109428666 (2.99573%;127/130 windows), but its10.57041% source gap fails the+5% quality target. Actual raw data3,021,487,451 bytes are4.67715% larger; no complete package or promotion is claimed. The historical accepted all-small model/distribution remains unchanged; the primary is a tested improvement, not an automatically promoted replacement. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
+Status: publication remains on hold. Output-axis quantization and final native evaluation completed with exit 0. The fixed candidate passes the 1% development gate and improves complete-validation PPL **8.109428666→7.977512009 (1.62671%; 116/130 windows improve)** versus the paired input-axis model. Its **8.77176%** source gap still fails the +5% quality target. Actual raw data are **3,138,928,792 bytes**, 3.88687% above the paired baseline and 8.74581% above historical all-small. This is the best tested compressed-candidate PPL so far; the historical accepted all-small model/distribution remains unchanged. No new complete package or promotion is claimed. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
 
 ## Scope
 
@@ -189,6 +189,11 @@ completed prototype recipe or promote its failed candidate.
 - [x] Complete the CUDA-hidden CPU preflight: 314 bound files, 56 output Hessians and 61 inherited files pass; evaluator CPU tests and independent code review also pass.
 - [x] Complete all 56 output matrices with exact stored-index and finite FP16 readback; process exited 0. New files total 588,217,549 bytes and replace 470,776,208 bytes. Resolved raw candidate data are 3,138,928,792 bytes, adding 117,441,341 bytes including changed headers.
 - [x] Pass the independent actual-overlay CPU preflight with 392 bound files, full paired-model tensor ledgers and no CUDA initialization; start the native PPL evaluation.
-- [ ] Independently score paired input-only baseline, output-enhanced candidate and exact baseline repeat on the same 64 observed development windows.
-- [ ] If the fixed 1% improvement gate passes, run complete source/baseline/candidate validation on all 130 windows / 264,764 targets; otherwise retain the negative result and stop this recipe.
-- [ ] Record actual quality and storage, including the separate source-plus-5% target. Measured extra code bytes are 117,440,512 (112 MiB), plus 829 bytes of header growth. New PPL and complete package size remain unmeasured; MK and publication remain deferred.
+- [x] Independently score paired input-only baseline, output-enhanced candidate and exact baseline repeat on 64 observed TRAIN windows /131,008 targets: PPL 8.168229289→8.013059657 (1.89967% improvement; 61 improve, 3 worsen). All 64 repeated baseline windows /2,048 CE chunks are exact; the fixed 1% gate passes.
+- [x] After the development gate passed, reload actual output files and complete same-process source/paired-input/candidate validation on 130 windows /264,764 targets: PPL 7.334175947 /8.109428666 /7.977512009. The further 1.62671% reduction passes the improvement condition; 116 windows improve and 14 worsen. The source +5% target still fails at an 8.77176% gap.
+- [x] Finish all 507 actual tensor audits, exact token/window pairing, final paired-baseline restoration and bound-file rechecks. The final report is complete, the process exited 0 and is absent. See [final results and receipts](docs/OUTPUT_AXIS_RESIDUAL_RESULTS.md).
+- [x] Record actual raw data 3,138,928,792 bytes: 117,440,512 extra code bytes plus 829 changed-header bytes above the paired baseline. Historical cumulative PPL improvement versus all-small is 4.57370%, not a fourth same-process arm. Retain the tested gain and unchanged historical distribution; no new complete package, promotion, test/MK measurement or publication. This fixed recipe is complete.
+
+## Remaining PPL objective
+
+- [ ] Reduce complete-validation PPL from 7.977512009 to at most 7.700884745 (the paired source +5% target), with all added weight data counted. Declare the next experiment before measuring it. Recall/Resurface and publication remain deferred.
