@@ -1,0 +1,23 @@
+{
+  "format": "MAMBA2_PROJECTION_STATISTICS_CPU_TEST_V1",
+  "complete": true,
+  "passed": true,
+  "exit_code": 0,
+  "tests_run": 12,
+  "collector_tests": 7,
+  "repair_tests": 5,
+  "test_seconds": 1.8,
+  "execution_host": "horde-gpu",
+  "cuda_visible_devices": "",
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python -m unittest tests.test_projection_statistics tests.test_projection_repair -v",
+  "sources": {
+    "mamba_e8w5/projection_statistics.py": "3247ef752491a0542210e9b3058ffa2149d3485c56a4aca851d67edd971f595f",
+    "tests/test_projection_statistics.py": "ef33137d34a2da63b3e4faa4175aaf900e8567dbd9be6e763cb2ed0d5f8b848e",
+    "mamba_e8w5/projection_repair.py": "b7ac8e0f9c5692c403db456a718ecf0872a9d4f4432ff09c161f715578234625",
+    "tests/test_projection_repair.py": "b06a02ee48fd01ea0c4f16ba4634c48df0e1b60bff14527ab72d9be56c5f10a5"
+  },
+  "limitations": [
+    "Synthetic CPU tests only; no GPU job was launched by collector implementation agent.",
+    "No model quality claim."
+  ]
+}

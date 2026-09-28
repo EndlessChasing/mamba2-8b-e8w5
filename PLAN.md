@@ -95,4 +95,9 @@ Only code, small reports and metadata are retained on the Mac. Original weights,
 ## Next PPL hypothesis
 
 - [x] Audit input-balance training versus already trained norm gains; they are redundant in exact arithmetic, with finite-precision differences. Do not count this as 688,128 new independent modes.
-- [ ] Design a bounded experiment that changes E8 codeword assignment or the codebook itself; preserve comparable capacity accounting and full-validation measurements. This is not yet implemented or measured.
+- [x] Design a bounded six-projection codeword-reassignment experiment using current-candidate inputs and native teacher outputs: docs/PROJECTION_CROSSMOMENT_PILOT_PROTOCOL.md. E8 raw bytes remain fixed; pilot inputs are disjoint TRAIN intervals.
+- [x] Implement the anchored cross-moment solve and check it against independent augmented least squares, rank-deficient inputs and a self-target identity (five CPU tests passed).
+- [x] Complete the four-arm full-validation projection/small-tensor interaction diagnostic: trained-small+E8 PPL8.359912 versus trained-small+source-projections7.412137, W5 fixed; all130 windows improve on restoration. The trained small tensors remain compatible with source projections. This diagnostic does not produce a compact candidate. See docs/PROJECTION_REPAIR_RESULTS.md.
+- [x] Pass12 paired-statistics/anchored-solve CPU checks, including native teacher rounding and independent heldout scoring.
+- [ ] Pass the discarded GPU pairing check, then compare current E8, H-refresh control and anchored cross-moment repair on six fixed projections (run started).
+- [ ] Apply the declared native teacher-error and joint heldout TRAIN PPL advancement rule. Do not infer full-validation gain from local MSE.
