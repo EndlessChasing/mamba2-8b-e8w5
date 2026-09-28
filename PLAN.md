@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: publication remains on hold. Pure teacher-KL compensation completed448 updates and independent reserved evaluation: PPL8.397298749→8.571699071 (+2.0769%), while mean teacher KL improves21.6746%. The required combined reserved gate fails; full validation is correctly skipped, so its source+5% full-validation target remains unmeasured. Stop this fixed recipe with no extra updates, checkpoint selection or promotion. Accepted all-small full-validation PPL8.359867548 and its distribution remain unchanged. Prior prototype full-validation PPL8.306585062 remains the numerical low, but failed its1% advancement gate. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
+Status: publication remains on hold. The fixed-beta output diagnostic completed on all64 already-observed reserved TRAIN windows, with exact same-process controls, unchanged model identities and zero historical PPL drift. All-small locally favors higher temperature, while the failed teacher-KL candidate favors lower temperature; candidate top-1 accuracy and all six source-difficulty-bin total NLLs worsen. No temperature was fitted and no PPL repair or promotion occurred. The teacher-KL reserved gate remains failed and its full-validation/source+5% target unmeasured. Accepted all-small full-validation PPL8.359867548 and its distribution remain unchanged; prior prototype8.306585062 remains the numerical low but failed its1% gate. MK remains deferred. The last recorded release audit found a draft with zero assets; this run performed no publication and did not refresh that remote snapshot.
 
 ## Scope
 
@@ -147,3 +147,17 @@ completed prototype recipe or promote its failed candidate.
 - [x] Complete exactly448 successful updates:448 attempts,zero overflows,917,056 targets. Independently verify final224 rounded masters/112 files,507 baseline and112 merged/395 inherited candidate tensors; no intermediate quality selection.
 - [x] Evaluate all64 reserved windows/131,008 targets. PPL8.397298749→8.571699071 (+2.0769%) fails the>=1% gain requirement; mean teacher KL.248099897→.194325164 passes. Combined gateFAIL; all64 source CE repeats are exact. See [completed result](docs/TEACHER_KL_COMPENSATION_RESULTS.md).
 - [x] Apply the conditional stop rule:skip full validation after the failed reserved gate, retain empty full-validation results and leave this candidate's full-validation/source+5% target unmeasured. Stop the fixed recipe without extra updates, earlier checkpoint selection, promotion, MK or publication. Teacher matching generalized but target-token PPL worsened; this does not validate pure KL as a repair or isolate a cause.
+
+
+## Fixed-beta output diagnostic
+
+- [x] Preserve the v1 exact historical CE-control failure and its zero accepted rows. Complete the bounded window-0 replay: all nine same-process comparisons exact; earlier cross-process drift remains unexplained.
+- [x] Freeze the [separate v2 protocol](docs/OUTPUT_CALIBRATION_DIAGNOSTIC_V2_PROTOCOL.md): beta1 only, same64 observed reserved TRAIN windows, strict same-process controls and a descriptive0.1% historical PPL drift ceiling; no fit or advancement gate.
+- [x] Complete paired source/base and source/candidate scoring on131,008 targets. First-window frozen/new CE+KL and all64 repeated source controls are exact; all507 identities and112/395 merge/inheritance checks pass. All three aggregate PPL drifts are0. See [diagnostic results](docs/OUTPUT_CALIBRATION_DIAGNOSTIC_RESULTS.md).
+- [x] Record entropy, slope, curvature, strict ranks/ties and fixed source-surprisal bins: base slope+0.0728683 locally favors higher T; candidate slope-0.0359664 favors lower T. Candidate top1 falls53.4715%→52.9273%; six NLL windows improve and58 worsen, with all six difficulty-bin totals worse.
+- [x] Keep interpretation descriptive: no beta fit, Newton candidate, sweep, measured finite gain or dominant-cause claim. Retain the accepted model/distribution and failed teacher-KL gate; no new validation/test/MK or publication.
+
+## Separate scalar-temperature experiment
+
+- [x] Declare the [bounded scalar-temperature protocol](docs/SCALAR_TEMPERATURE_PROTOCOL.md) for accepted all-small only: a fixed TRAIN fitting budget, a separate seven-window screen and conditional complete validation. This declaration does not fit a scalar or establish a PPL gain.
+- [ ] Implement and verify the scalar path; execute TRAIN-only fitting, reload the final scalar, and apply the screen before any conditional full validation. No implementation, fitting or result is claimed yet.

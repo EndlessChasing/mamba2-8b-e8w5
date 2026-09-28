@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "started_at_unix": 1790599938.7874057,
+  "argv": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/diagnose_output_calibration_v2.py",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/output_calibration_v2.json"
+  ],
+  "script_sha256": "232e82d6da7ca32a0375a37a999dfbcedb68f34a1bf40013ba282d627cf09caa",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "log_path": "/home/horde/Mamba2-8B-E8W5/reports/output_calibration_v2.log",
+  "pid": 2870676,
+  "process_start_ticks": 98122589,
+  "command_line": "/home/horde/.venvs/lodram/bin/python -u /home/horde/Mamba2-8B-E8W5/scripts/diagnose_output_calibration_v2.py --report /home/horde/Mamba2-8B-E8W5/reports/output_calibration_v2.json ",
+  "exit_code": 0,
+  "finished_at_unix": 1790600201.08092,
+  "wall_seconds": 262.29351472854614,
+  "report_sha256": "e401ea26a84fcf2d91ed053e8995b0ddf78e44cf0b613c7897f5e72c7c8a37f0",
+  "report_bytes": 2637918,
+  "diagnostic_complete": true,
+  "error": null
+}
