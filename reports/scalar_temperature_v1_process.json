@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "started_at_unix": 1790601271.4723644,
+  "argv": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/fit_scalar_temperature.py",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/scalar_temperature_v1.json"
+  ],
+  "script_sha256": "5dc7d188b4bcac74614368bc37e8f28d756fbb99b953d599deb7bfe6db845892",
+  "cpu_receipt_sha256": "18ae64974942b057a0f47199bc6f0278e26366e4325958bb89f0df5a1fb2611e",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "log_path": "/home/horde/Mamba2-8B-E8W5/reports/scalar_temperature_v1.log",
+  "pid": 2934232,
+  "process_start_ticks": 98255858,
+  "command_line": "/home/horde/.venvs/lodram/bin/python -u /home/horde/Mamba2-8B-E8W5/scripts/fit_scalar_temperature.py --report /home/horde/Mamba2-8B-E8W5/reports/scalar_temperature_v1.json ",
+  "exit_code": 0,
+  "finished_at_unix": 1790601482.247724,
+  "wall_seconds": 210.77536010742188,
+  "report_sha256": "cc678de09046d6f1113c73ebe1fbdd5b4664c9878a6f2329a64917deb4c4a4ee",
+  "report_bytes": 1358517,
+  "experiment_complete": true,
+  "error": null,
+  "screen_passed": false,
+  "full_validation_performed": false
+}
