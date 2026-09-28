@@ -97,3 +97,11 @@ same-process MK112→346/384, removed controls0→0, PPL7.624250427→7.59503252
 all restored/actual-export/507/224/final-file checks pass. The candidate and
 native numerical profile are unchanged. Prospective full PPL and independent
 confirmation are still required; no hard0 or deterministic-profile probe ran.
+
+Final continuation outcome: both prospective stages subsequently passed.
+Complete PPL is7.622396588→7.593163114; independent MK is91→340/384 with
+removed-target matches0→0 and a conservative95% improvement lower bound of
+58.502343 percentage points. Both have exact same-process restored baselines
+and independent receipt audits. See [the final result](RESURFACE_READAPTED_RESULTS.md).
+The historical seven-output discrepancy and original strict failure remain
+preserved; its cause is not asserted resolved by these successful paired tests.

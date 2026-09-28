@@ -1,10 +1,21 @@
 # Readapted Mamba2-8B MK validation and Resurface repair
 
-Status on2026-09-28: the source/current MK baseline, native correctness checks,
-final1536 training/export and all DEV measurements are complete. The original
-strict DEV run failed its historical cross-process MK replay prerequisite.
-The separate terminal audit and prospective full PPL passed. Independent
-confirmation is running. No promotion or publication.
+Status on2026-09-28: complete. The fixed final1536 soft adapter passes the
+declared paired MK/PPL quality gates, including independent confirmation and
+independent receipt audits. Original strict DEV failure from historical
+cross-process MK replay remains preserved; the transparent continuation
+changes only that prerequisite. No model publication or new distribution.
+
+| Final measurement | Current compressed base | Same base + soft adapter |
+|---|---:|---:|
+| Independent normal MK |91/384 (23.6979%)|340/384 (88.5417%)|
+| Independent target-removed false recall |0/384|0/384|
+| Complete WikiText-2 validation PPL |7.622396588|7.593163114|
+
+The independent MK improvement is64.84375 percentage points, with a
+conservative95% lower bound of58.502343 points. Full PPL improves0.3835208%,
+with all130 windows improving. This meets PPL non-regression, not exact
+unchanged candidate PPL. Both tasks use the identical enabled adapter/policy.
 
 ## Completed baseline
 
@@ -96,12 +107,17 @@ bindings. These are correctness checks and do not establish recall/PPL quality.
   Current/restored/historical chunks match exactly;507/224 and167 bound-file
   checks pass. Independent receipt audit passes. GPU exit0 in287.4773 seconds;
   report SHA256 `06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961`.
-- [ ] Conditional independent384+384 confirmation MK with positive paired
-  gain/confidence and no increased removed-target false recall.
+- [x] Independent384+384 confirmation MK with positive paired gain/confidence
+  and no increased removed-target false recall. Normal91→340,251 gained/2
+  lost, conservative95% lower bound+58.502343pp, exact McNemar
+  p4.439957888196715e-72. All768 restored rows and12 within-arm replays match;
+  final507/224 and170 bound-file checks pass. GPU exit0 in1532.3547 seconds,
+  evaluator process absent; independent terminal receipt audit passes.
 
-The candidate must pass both recall and PPL gates. Improvement over the current
-model is not automatically full recovery to source recall or broad recall
-equivalence. No tested candidate has yet passed those gates.
+This candidate passes both gates under the explicit continuation protocol.
+The finite numeric-binding test does not establish broad recall equivalence
+or performance on unseen prompt families. Original source full PPL remains
+7.334175947, so the repaired compressed candidate is still3.5312374% higher.
 
 ## Completed DEV measurements and preserved replay failure
 
@@ -155,3 +171,64 @@ roundtrip and normal384/removed384 coverage. Actual manifest SHA256
 `0abb3e1ef2994e2088b8da0f0f605371e980f5afa3ea9df5335ff19d3f5b3dec`.
 The new ranges separate numeric instances, while the three template families
 remain shared. No confirmation fitting or prior score inspection occurred.
+
+## Completed independent confirmation
+
+| Records N | Template | Current correct/64 | Active soft correct/64 |
+|---:|---:|---:|---:|
+|16|0: colon records|16|61|
+|16|1: sentence records|14|63|
+|16|2: arrow dictionary|44|64|
+|64|0: colon records|0|47|
+|64|1: sentence records|2|48|
+|64|2: arrow dictionary|15|57|
+
+N16 improves74→188/192 (38.5417%→97.9167%); N64 improves17→152/192
+(8.8542%→79.1667%). All six cells improve. Across384 paired normal prompts,
+89 are correct in both models,42 wrong in both,251 newly correct and2 newly
+wrong. Target-removed matches remain0/384. The exact two-sided McNemar
+p-value is4.439957888196715e-72. The conservative95% improvement lower bound
+is0.5850234300333482, using the predeclared Bonferroni/Clopper–Pearson rule.
+
+The report is5,171,089 bytes, SHA256
+`306ae9e8ed5e78756f7c8ea39c8db40dbebf3895ced3c5c279722be5100a344b`.
+Runtime1532.3547 seconds, exit0; process3797841 absence verified. All three
+arms have complete768-prompt coverage and12 exact fresh-cache replays. The
+restored current rows equal the initial current rows in full. Actual507 base
+and224 adapter contents/identities, same native environment and170 final
+bound-file checks pass.
+
+Independent CPU audit:
+`reports/resurface_soft_continuation_v1_confirm_independent_audit.json`,
+4,523 bytes, SHA256
+`37e3c9e0e5498335fcbf0a30fbc0cfaee34418c80cf5ea0a1cfd99adad6b56da`.
+It recomputes the paired statistics and confidence bound independently and
+checks complete receipt identities/restoration/chronology. Its direct-binomial
+inversion agrees within1e-15; SciPy was unavailable and was not claimed used.
+This audit reads reports/manifests, not model binaries; actual binary/tensor
+audits were performed by the completed native evaluator. Preparation started
+34.4859 seconds after complete PPL finished successfully.
+
+## Validated artifact and scope
+
+The measured candidate is the unchanged current readapted axis/W4-embedding/
+W5-head base plus the actual final1536 soft adapter at remote path
+`/home/horde/Mamba2-8B-E8W5/artifacts/resurface_readapted_v1/adapter_fp16.pt`.
+Its2,539,647 serialized bytes add0.0809081% to base raw data; FP16 tensor payload
+is2,308,208 bytes and the separate manifest is294,171 bytes. Combined raw base
+and adapter data are3,141,468,439 bytes, excluding manifests/tokenizer/software.
+No new complete entropy-coded distribution was built or published.
+
+All507 base tensors stay frozen; only1,154,104 external readout/router
+parameters were trained. Native FP16 recurrent/conv cache capacity stays
+122,028,032 bytes per tested batch-one prompt. Execution expands weights to
+FP16: these results do not measure compressed GPU residency, latency or ASIC
+energy. This is the documented post-D Resurface-inspired native variant,
+not an exact reproduction of the original paper's placement. Soft gates stay
+enabled for both MK and PPL. The hard0 fallback and deterministic-profile
+probe remain untriggered and unexecuted on the model.
+
+The scope is independent numeric bindings within three shared prompt families,
+N16/64, and the complete previously used WikiText-2 validation protocol. No
+arbitrary-prompt, longer-context, original test-set or global-smallest claim
+follows. The original historical MK replay failure remains unchanged in Git.
