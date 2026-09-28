@@ -73,8 +73,19 @@ def compare(baseline, candidate):
         result['mk'] = mk
     if baseline['suite'] == 'full' and 'ppl' in result and 'mk' in result:
         normal, control = result['mk']['normal'], result['mk']['target_removed']
+        windows = baseline['ppl']['windows']
+        ppl_scope = (all(w['target_tokens'] == 2048 for w in windows[:-1]) and
+                     0 < windows[-1]['target_tokens'] <= 2048 and
+                     all(w['start'] == index*2048 for index, w in enumerate(windows)) and
+                     baseline['ppl']['target_tokens'] == baseline['dataset']['total_tokens']-1)
+        cells = {}
+        for row in baseline['mk']['rows']:
+            key = (row['N'], row['template'], row['condition'])
+            cells[key] = cells.get(key, 0)+1
+        expected_cells = {(size, template, condition): 8 for size in (16, 64)
+                          for template in range(3) for condition in ('normal', 'target_removed')}
         expected_scope = (result['ppl']['coverage'] == 'full split' and normal['count'] == 48
-                          and control['count'] == 48)
+                          and control['count'] == 48 and ppl_scope and cells == expected_cells)
         engineering_target = (result['ppl']['relative_change'] <= .05 and
                               normal['candidate_correct'] >= normal['baseline_correct']-1 and
                               control['candidate_correct'] <= control['baseline_correct'])

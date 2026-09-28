@@ -23,6 +23,8 @@ def main():
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.cuda.reset_peak_memory_stats()
     tokenizer = SentencePieceTokenizer(args.tokenizer)
+    if len(tokenizer.encode(args.prompt))+args.max_new_tokens > 4096:
+        parser.error('Prompt plus generation exceeds the source model training length of 4096 tokens')
     model = load_quantized_model(args.raw_dir)
     if tokenizer.sha256 != model._package_receipt['tokenizer_sha256']:
         raise ValueError('Tokenizer differs from the quantized model source')

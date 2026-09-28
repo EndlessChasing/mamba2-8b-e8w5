@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: source and runtime checks passed; collecting 65,536 train calibration tokens. No compressed 8B model or quality result yet.
+Status: source/runtime checks and 65,536-token calibration passed; first full-size E8 layer pilot running. No complete compressed 8B model or quality result yet.
 
 ## Scope
 
@@ -27,7 +27,7 @@ Status: source and runtime checks passed; collecting 65,536 train calibration to
 
 ## Compression
 
-- [ ] Collect train-only FP32 input covariances for all112 projections.
+- [x] Collect train-only FP32 input covariances for all112 projections.
 - [ ] Generate and decode-check every E8 matrix; bind resumption to source/config/calibration/code hashes.
 - [ ] Stream W5 embedding and lm_head separately, including all scales and rounding rules.
 - [ ] Save all remaining model parameters and configuration; verify complete parameter coverage.

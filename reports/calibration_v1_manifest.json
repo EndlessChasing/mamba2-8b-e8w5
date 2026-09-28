@@ -1,0 +1,1569 @@
+{
+  "complete": true,
+  "model_config": {
+    "d_model": 4096,
+    "d_intermediate": 0,
+    "n_layer": 56,
+    "vocab_size": 256000,
+    "ssm_cfg": {
+      "layer": "Mamba2",
+      "d_state": 128,
+      "d_conv": 4,
+      "expand": 2,
+      "headdim": 64,
+      "ngroups": 8,
+      "chunk_size": 128,
+      "rmsnorm": true,
+      "norm_before_gate": false,
+      "use_mem_eff_path": false
+    },
+    "rms_norm": true,
+    "residual_in_fp32": false,
+    "fused_add_norm": false,
+    "pad_vocab_size_multiple": 128,
+    "tie_embeddings": false
+  },
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-2-raw-v1",
+    "split": "train",
+    "revision_argument": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_fingerprint": "5d4fb603254a7a5b",
+    "document_join": "two newline characters",
+    "text_sha256": "aee724fa58bfbdeb3fc6803297fb6bab27b203d7c40b39ddef9b9770e5d52fe5",
+    "token_stream_sha256_int64le": "7205aba52233c95b0a2b84cbf6cf6ae5e8b58463e6ecf51f6a694f1339e5f172",
+    "total_tokens": 2533678,
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "automatic_special_tokens": false
+  },
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "nwin": 32,
+  "seqlen": 2048,
+  "starts": [
+    0,
+    81665,
+    163330,
+    244996,
+    326661,
+    408327,
+    489992,
+    571658,
+    653323,
+    734989,
+    816654,
+    898320,
+    979985,
+    1061651,
+    1143316,
+    1224982,
+    1306647,
+    1388313,
+    1469978,
+    1551644,
+    1633309,
+    1714975,
+    1796640,
+    1878306,
+    1959971,
+    2041637,
+    2123302,
+    2204968,
+    2286633,
+    2368299,
+    2449964,
+    2531630
+  ],
+  "selected_tokens_sha256_int64le": "893bf7df37895a98e00116db9cb7a3189e5ee2e8f991e35594b970087958db34",
+  "token_windows_file": "calibration_tokens.pt",
+  "token_windows_file_sha256": "ebeb62135d074ba41fcb44cc64f8fe8aa09f452dfd28183c1b28f84645e6f577",
+  "calibration_split": "train",
+  "evaluation_data_used": false,
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "calibration_source_sha256": "b5a7356a2ab769538940aed218653a092a7055aa26a9ec6f62d3783b9ac78ee5",
+  "matrices": {
+    "layer0.in_proj": {
+      "file": "layer0.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "e74482d71d0f0a4b2e92ef14037a9595de600eb46df90fffbd5e3174d5d9b0aa",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.04356323555111885,
+      "diagonal_max": 8.804727554321289,
+      "tokens": 65536
+    },
+    "layer0.out_proj": {
+      "file": "layer0.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "aa46eae63009c88cb302e9d574e321a696d83e31d01c855933591fb7f344ab5d",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.8100162479939286e-09,
+      "diagonal_max": 0.015357492491602898,
+      "tokens": 65536
+    },
+    "layer1.in_proj": {
+      "file": "layer1.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "120b91426e995f6f088b5f99fe6792d86b0abf8f5acdc11ecbccce992f2e5fb2",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.4007294774055481,
+      "diagonal_max": 1933.735595703125,
+      "tokens": 65536
+    },
+    "layer1.out_proj": {
+      "file": "layer1.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "fab6bbaba10ecf0a7b69c70e136175389ad0cb8d98298e065eea537c3ffee45f",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.9484273916514638e-10,
+      "diagonal_max": 0.009239675477147102,
+      "tokens": 65536
+    },
+    "layer2.in_proj": {
+      "file": "layer2.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "35526a7bd3273aa7a9fb173030e69e4bcdb59c9ae2919b3eeb9bb8523ec00d87",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.4715869724750519,
+      "diagonal_max": 1402.792236328125,
+      "tokens": 65536
+    },
+    "layer2.out_proj": {
+      "file": "layer2.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "789b1c8a4f6669c3122009d6567d29992578ece518464bd768a044714615b393",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.8293000891844713e-08,
+      "diagonal_max": 0.011999093927443027,
+      "tokens": 65536
+    },
+    "layer3.in_proj": {
+      "file": "layer3.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "15ffaa2382f5aeb2b6c175ba041b8e12fcb53efacc87b9e1818c60a5ec6e2ee5",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.4843614399433136,
+      "diagonal_max": 1537.5887451171875,
+      "tokens": 65536
+    },
+    "layer3.out_proj": {
+      "file": "layer3.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "b4930963b510d2d0bc3d84a0021a8a4d9e671f60154cf6af212232218b3466a2",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.2458684911796922e-10,
+      "diagonal_max": 0.008667918853461742,
+      "tokens": 65536
+    },
+    "layer4.in_proj": {
+      "file": "layer4.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "a08b20a7c60bcc6bbf8b3c3d3a320ae45544a2e03ffe58aa5ed372924a0713f5",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.5129294991493225,
+      "diagonal_max": 1128.809326171875,
+      "tokens": 65536
+    },
+    "layer4.out_proj": {
+      "file": "layer4.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "d562658d815b050ff92506e570062991ce3f1d99d23935cac121b49ae29d0176",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.1662325505312765e-07,
+      "diagonal_max": 0.013061387464404106,
+      "tokens": 65536
+    },
+    "layer5.in_proj": {
+      "file": "layer5.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "b12c0af5bb2c8dfb09d9c0f9fe53344a87c8cb1b9f9b1af17a6034972e91fcee",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.4904184341430664,
+      "diagonal_max": 999.8375854492188,
+      "tokens": 65536
+    },
+    "layer5.out_proj": {
+      "file": "layer5.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "0f56be3d138a159e69419909a15b651962412c123bebd2c65920c5131277de48",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 7.598026741106878e-08,
+      "diagonal_max": 0.02003069408237934,
+      "tokens": 65536
+    },
+    "layer6.in_proj": {
+      "file": "layer6.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "79bf08df209f128b30805f49551a812ad034b94eac6e52e61280a435742ca5e7",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.5362464189529419,
+      "diagonal_max": 837.8301391601562,
+      "tokens": 65536
+    },
+    "layer6.out_proj": {
+      "file": "layer6.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "05f61c6bc11df049ad171a5e7d00026c3b6a20f9e431ac1c7e3a459bfd300736",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.1269627719912023e-07,
+      "diagonal_max": 0.020886799320578575,
+      "tokens": 65536
+    },
+    "layer7.in_proj": {
+      "file": "layer7.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "7f21830566cbefa23c1e7f1798b35fd5b23bdd1dc191134478381826c41db839",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.40439215302467346,
+      "diagonal_max": 617.129638671875,
+      "tokens": 65536
+    },
+    "layer7.out_proj": {
+      "file": "layer7.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "e5d1b9e81aa3d63cfd96494670856754ed2627776a91208939b1e3e28c48a363",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 6.570983313025636e-09,
+      "diagonal_max": 0.059139177203178406,
+      "tokens": 65536
+    },
+    "layer8.in_proj": {
+      "file": "layer8.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "33667b393e89252ca71c9d35cfe4539856719eeb0191e122bc9b8f449a92842c",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.39230236411094666,
+      "diagonal_max": 497.386474609375,
+      "tokens": 65536
+    },
+    "layer8.out_proj": {
+      "file": "layer8.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "84f16353810d22d31a47feef999fc570321c9e31216a58f87fca300638a42e3f",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 4.2788905751933726e-09,
+      "diagonal_max": 0.03483585640788078,
+      "tokens": 65536
+    },
+    "layer9.in_proj": {
+      "file": "layer9.in_proj.pt",
+      "bytes": 67110511,
+      "sha256": "9752313a6e7db8d37992dfcac384548c8795fd21dd83ce4e720b3247ca2078d6",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.37707361578941345,
+      "diagonal_max": 382.67999267578125,
+      "tokens": 65536
+    },
+    "layer9.out_proj": {
+      "file": "layer9.out_proj.pt",
+      "bytes": 268437110,
+      "sha256": "7124eafd2524ec4a372c87abf5987e56488ef99e8a77face74ae36e16c8d22dc",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.4000522963186768e-10,
+      "diagonal_max": 0.04593146592378616,
+      "tokens": 65536
+    },
+    "layer10.in_proj": {
+      "file": "layer10.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "3a77e509e690cd02946fc430e032c8ef7723150e67be7f5dfe93e24837cd01a0",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2435550093650818,
+      "diagonal_max": 276.21270751953125,
+      "tokens": 65536
+    },
+    "layer10.out_proj": {
+      "file": "layer10.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "0f2d9338fd7ab1ae16da10750183fc3c3556cd511a68aefee685bb61598bad7c",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.2420770101616583e-11,
+      "diagonal_max": 0.15207809209823608,
+      "tokens": 65536
+    },
+    "layer11.in_proj": {
+      "file": "layer11.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "b19441bb3deb4cccd76c0219d6a063eeb1e3b25ff2b7a4019e18642c0866318e",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.28375715017318726,
+      "diagonal_max": 365.0480041503906,
+      "tokens": 65536
+    },
+    "layer11.out_proj": {
+      "file": "layer11.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "fff7912774271d23d30a3dbc4d1977e07e910df8ebc1c9ad325b040d12c7c188",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 3.2423472795528596e-09,
+      "diagonal_max": 0.15228307247161865,
+      "tokens": 65536
+    },
+    "layer12.in_proj": {
+      "file": "layer12.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "1ef8c7a31ba72c65ccc31e68f1530edff287d6baf088f65069a08bd9e92bb209",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2293507307767868,
+      "diagonal_max": 333.00067138671875,
+      "tokens": 65536
+    },
+    "layer12.out_proj": {
+      "file": "layer12.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "c5e4e7975b15e02708d2cb5b141b1dc3a0bb7da5db64ea4faab8e8096e29efca",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 4.5936414672098635e-09,
+      "diagonal_max": 0.08226530253887177,
+      "tokens": 65536
+    },
+    "layer13.in_proj": {
+      "file": "layer13.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "cbddba3430b9e09c1683ca74b89e930b7710edc32631e02b123e484a188017c4",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.25522273778915405,
+      "diagonal_max": 334.3409729003906,
+      "tokens": 65536
+    },
+    "layer13.out_proj": {
+      "file": "layer13.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "34467e119865bbf036a3e1534f0db161c09df86b6e78977981900a6a455c3671",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 3.076329857520932e-09,
+      "diagonal_max": 0.21865908801555634,
+      "tokens": 65536
+    },
+    "layer14.in_proj": {
+      "file": "layer14.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "7fe1bb43e2e51c61b2ab89d91c254a9d4b1471fff227665ff6606399f18c1f7c",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.22358301281929016,
+      "diagonal_max": 319.9280090332031,
+      "tokens": 65536
+    },
+    "layer14.out_proj": {
+      "file": "layer14.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "ebaa1eef89a0216c3652bcebbaa7983c2dab8add019b88ccac9f9a9c561dfd46",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.106605201390721e-08,
+      "diagonal_max": 0.13279786705970764,
+      "tokens": 65536
+    },
+    "layer15.in_proj": {
+      "file": "layer15.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "ba9428360f12b04c5e7bcb7feafda92e3551de6468b2fb909a659dd863e23170",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.24224114418029785,
+      "diagonal_max": 314.3843078613281,
+      "tokens": 65536
+    },
+    "layer15.out_proj": {
+      "file": "layer15.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "9cc3f069db1dac47a4c3ab3211394ebd9503a95d33af96158c6f180f845c6c65",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.5037146283702896e-07,
+      "diagonal_max": 0.18340760469436646,
+      "tokens": 65536
+    },
+    "layer16.in_proj": {
+      "file": "layer16.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "8b98c7970ea0026202a2424203ff03c1a5ce96726aefd59782733a6f98103799",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3015930950641632,
+      "diagonal_max": 493.6080322265625,
+      "tokens": 65536
+    },
+    "layer16.out_proj": {
+      "file": "layer16.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "7a09dd8a2267dee252a35f7cbfba78e73491503e16756bd79c12477e69c5f9bb",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 9.47711686904995e-09,
+      "diagonal_max": 0.1527591347694397,
+      "tokens": 65536
+    },
+    "layer17.in_proj": {
+      "file": "layer17.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "1e87a1503bcdbf315729b6571f63445d5b290f9e76b8c8bf048819ad2da33c31",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.18129871785640717,
+      "diagonal_max": 387.0793151855469,
+      "tokens": 65536
+    },
+    "layer17.out_proj": {
+      "file": "layer17.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "d8a02c31cedb081718462732f7dccd6ce00e5f71ba5be8e92c9bb08e963448fc",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 8.447480936979446e-09,
+      "diagonal_max": 0.2394103854894638,
+      "tokens": 65536
+    },
+    "layer18.in_proj": {
+      "file": "layer18.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "ada71a4959b741b47bd10153ba50b43f46e65a0eb8661ccae994c1515e6b1699",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.1718069612979889,
+      "diagonal_max": 248.62698364257812,
+      "tokens": 65536
+    },
+    "layer18.out_proj": {
+      "file": "layer18.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "bfee4172cae27a38b0c675f5ab6e9b74b7dc9372c4ae8cb51fd99e1535a4712b",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.2733011867105404e-10,
+      "diagonal_max": 0.21526262164115906,
+      "tokens": 65536
+    },
+    "layer19.in_proj": {
+      "file": "layer19.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "07bb722edfacef8618c56be0666998bdb40b479871c981a93caaa7a2bb34d54f",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.22763685882091522,
+      "diagonal_max": 380.63421630859375,
+      "tokens": 65536
+    },
+    "layer19.out_proj": {
+      "file": "layer19.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "362e485a75b3f67e09a732300dcdd0c0feb476030aeac07bc3235f9c45208c65",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.0480340978679124e-08,
+      "diagonal_max": 1.122021198272705,
+      "tokens": 65536
+    },
+    "layer20.in_proj": {
+      "file": "layer20.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "f319d877e832e2ac343c2a550765b9e9df95c72c45ba694c6e96e3f63a734898",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.19050243496894836,
+      "diagonal_max": 386.56280517578125,
+      "tokens": 65536
+    },
+    "layer20.out_proj": {
+      "file": "layer20.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "4dabb5ec326fe719fa717a665a3a2ad79a1cbf84dbe4f991e07771f8ca133a6f",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.918627117765027e-09,
+      "diagonal_max": 0.6242386698722839,
+      "tokens": 65536
+    },
+    "layer21.in_proj": {
+      "file": "layer21.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "85fb969dc424d6700f5c21cc70807c25be556a2059af8729e77d93defef05999",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2050011307001114,
+      "diagonal_max": 377.44903564453125,
+      "tokens": 65536
+    },
+    "layer21.out_proj": {
+      "file": "layer21.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "e004cd3d68696f50a49507eb1d914a6accf04fd34f7ccd4cde8bc66f375c6101",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 3.833116046791929e-09,
+      "diagonal_max": 1.4038653373718262,
+      "tokens": 65536
+    },
+    "layer22.in_proj": {
+      "file": "layer22.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "ccacb6fc2b926ef5ac545035d72258ab6d9abca515079d20be34652f9a8cbae2",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2017863243818283,
+      "diagonal_max": 424.5199890136719,
+      "tokens": 65536
+    },
+    "layer22.out_proj": {
+      "file": "layer22.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "3eded493ee145de538253ef680eecbd6737410454be79e06bb6f2ad4cfc1677a",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 4.245461582286225e-08,
+      "diagonal_max": 0.8471115231513977,
+      "tokens": 65536
+    },
+    "layer23.in_proj": {
+      "file": "layer23.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "3d4ffea2f878b2513f89b0b0df3afa3249b4017d139de0816e4fa74bd0e02d2c",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.1835317760705948,
+      "diagonal_max": 383.49176025390625,
+      "tokens": 65536
+    },
+    "layer23.out_proj": {
+      "file": "layer23.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "5b394041cdff567bfd281c1f670b341aff5a138f63000269909ad23e50a80978",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.5704183226338273e-09,
+      "diagonal_max": 1.566574215888977,
+      "tokens": 65536
+    },
+    "layer24.in_proj": {
+      "file": "layer24.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "c7274f30eb9d6b9d2c2da8ae8692972d8c0140f34008ba390a0050a4ca8a7ac7",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.29655346274375916,
+      "diagonal_max": 396.8934326171875,
+      "tokens": 65536
+    },
+    "layer24.out_proj": {
+      "file": "layer24.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "e63f4953bcd1cdf72d649ee90b6163cc9f7264f07105db4d9943429158f6a1c4",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.0273780876323144e-08,
+      "diagonal_max": 6.193655014038086,
+      "tokens": 65536
+    },
+    "layer25.in_proj": {
+      "file": "layer25.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "967f35b53a48833a823d40e05070aae4c01d117bc30c69a996d0dac4d9312ea1",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.181263267993927,
+      "diagonal_max": 210.5032196044922,
+      "tokens": 65536
+    },
+    "layer25.out_proj": {
+      "file": "layer25.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "534c507ca2458805a0bfdea161c9f6b3fc432751e82e1029a2c64ccb7a79a612",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.7003923541712993e-09,
+      "diagonal_max": 7.652317047119141,
+      "tokens": 65536
+    },
+    "layer26.in_proj": {
+      "file": "layer26.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "60bd6e0569616667d39e679085d98d1262b1a303684d0bcf1172b16e3d46098a",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.20595307648181915,
+      "diagonal_max": 238.88082885742188,
+      "tokens": 65536
+    },
+    "layer26.out_proj": {
+      "file": "layer26.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "5cb0b61e46db92b77d0c770cc68b7c57fc5706adb6626122f47e06fc80e70be8",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 4.2740868622104244e-09,
+      "diagonal_max": 3.0423243045806885,
+      "tokens": 65536
+    },
+    "layer27.in_proj": {
+      "file": "layer27.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "078fd3756e52adf95ac5aabc8a421f7dfaad7547a4252b0ecb05109e1bc5f648",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.19869016110897064,
+      "diagonal_max": 223.60975646972656,
+      "tokens": 65536
+    },
+    "layer27.out_proj": {
+      "file": "layer27.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "399c8a7053240b9dea14ec11c1458cfe626d298c028de8e89abea1fd6253e2d5",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.4483668426000804e-09,
+      "diagonal_max": 4.750758171081543,
+      "tokens": 65536
+    },
+    "layer28.in_proj": {
+      "file": "layer28.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "939506ba220b57e69b630fc7a0ffebac9ccda8aa815483e03c02ae2fdc22da32",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.24398323893547058,
+      "diagonal_max": 271.1474609375,
+      "tokens": 65536
+    },
+    "layer28.out_proj": {
+      "file": "layer28.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "6f9737a8948e4f5538bfe3177d19f9acb9d45559f632430792e3e322ee68ba9c",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.7672581620331584e-08,
+      "diagonal_max": 3.6141550540924072,
+      "tokens": 65536
+    },
+    "layer29.in_proj": {
+      "file": "layer29.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "100f9240f458bd51db0f3e22d2ce2c2670d85515be0ee8b1a5d3a8d22178cb51",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.27638208866119385,
+      "diagonal_max": 239.35372924804688,
+      "tokens": 65536
+    },
+    "layer29.out_proj": {
+      "file": "layer29.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "3a6b5b056a3e8b1ad8d878bcba50b43244ffeb059fb3790b5823ad61e50ba4ca",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.298353862784097e-08,
+      "diagonal_max": 78.43891906738281,
+      "tokens": 65536
+    },
+    "layer30.in_proj": {
+      "file": "layer30.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "2761cef64e6beff0621c318445ad721f2d56a423f2b52cc7b043ace55828a4c7",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3479471504688263,
+      "diagonal_max": 234.37339782714844,
+      "tokens": 65536
+    },
+    "layer30.out_proj": {
+      "file": "layer30.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "6e2df034c8c3095c1160f0ce05b3811b41d636a77b4314c59b02b57f6063ea36",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 3.3555631606674297e-09,
+      "diagonal_max": 51.17901611328125,
+      "tokens": 65536
+    },
+    "layer31.in_proj": {
+      "file": "layer31.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "55fbe8ccf1b93134d6279832a56725aba8c4b6768c744ba31f3a327f0664443c",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.36502745747566223,
+      "diagonal_max": 203.31814575195312,
+      "tokens": 65536
+    },
+    "layer31.out_proj": {
+      "file": "layer31.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "ccecd3913302d410b21b85cf8b1800f7d8907b9ea91af613681a1fca0b902579",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.3965482992261968e-07,
+      "diagonal_max": 6.33388614654541,
+      "tokens": 65536
+    },
+    "layer32.in_proj": {
+      "file": "layer32.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "a5698d9dea3b796283c6f72875b52187ec4a7d5d165dea85244b2b1468c651b4",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.36637017130851746,
+      "diagonal_max": 176.8489532470703,
+      "tokens": 65536
+    },
+    "layer32.out_proj": {
+      "file": "layer32.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "6c454009e7364fa3955e2aa992bed8cb97ee0b56a1739306949e94e1d03fa2df",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.3213311333970523e-08,
+      "diagonal_max": 13.835213661193848,
+      "tokens": 65536
+    },
+    "layer33.in_proj": {
+      "file": "layer33.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "98706c81b45d8203e6e02ab5db4a2f50bff11dc5fa3e0fb695c3734790df1d5a",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.396884560585022,
+      "diagonal_max": 195.46124267578125,
+      "tokens": 65536
+    },
+    "layer33.out_proj": {
+      "file": "layer33.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "83eb50eb7ecb1d47dbad74195e96f8c11e28930c53d65e62ef3b34fea46ec69d",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.1063909965969287e-07,
+      "diagonal_max": 16.007944107055664,
+      "tokens": 65536
+    },
+    "layer34.in_proj": {
+      "file": "layer34.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "a352d15818857c99f0876f8ecdcb3a4e7ff7ac6dfa65cad908b9054a3bd0ec79",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.407136470079422,
+      "diagonal_max": 161.5531005859375,
+      "tokens": 65536
+    },
+    "layer34.out_proj": {
+      "file": "layer34.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "0e62bf1c357104b8c5afc2a3bfbd3addf8d3bf11253bb58295161cc8a9bf9d6c",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 6.397542051672644e-08,
+      "diagonal_max": 13.514220237731934,
+      "tokens": 65536
+    },
+    "layer35.in_proj": {
+      "file": "layer35.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "43a5d82a387d9dcd76bdcaa2de77c17d144f1bf494581083ce438246962d7cc9",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.35958051681518555,
+      "diagonal_max": 144.30776977539062,
+      "tokens": 65536
+    },
+    "layer35.out_proj": {
+      "file": "layer35.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "c440bf3ba243b69848980297f244318a475586095fee7d15f43bd926fc4f6079",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.232658206617998e-07,
+      "diagonal_max": 45.4922981262207,
+      "tokens": 65536
+    },
+    "layer36.in_proj": {
+      "file": "layer36.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "32a62d31da32adccb93b18eb15ba639c55757a4a023cc203e7eaef2cf7054f35",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3529210090637207,
+      "diagonal_max": 105.44066619873047,
+      "tokens": 65536
+    },
+    "layer36.out_proj": {
+      "file": "layer36.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "da8baaaddb5aba9db45e5a9cca6f48c0832c23f9a043305efcd2513e47a3f3a8",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.330474870859689e-07,
+      "diagonal_max": 104.37026977539062,
+      "tokens": 65536
+    },
+    "layer37.in_proj": {
+      "file": "layer37.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "8c314c2d3d3e557dea4731d578a610eed0a1c56865737b3f7adfc55b34080658",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.37596434354782104,
+      "diagonal_max": 138.81150817871094,
+      "tokens": 65536
+    },
+    "layer37.out_proj": {
+      "file": "layer37.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "3456fac4cc5c82f92904bdca1ae28022a67e588a7384d1acf4ff46df6932252a",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.7243846068003563e-10,
+      "diagonal_max": 194.45330810546875,
+      "tokens": 65536
+    },
+    "layer38.in_proj": {
+      "file": "layer38.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "b9bb988bc96106fb276cb70e145d6f91e027dbaa3774d8793b9d61b9440ad45a",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.4464087188243866,
+      "diagonal_max": 169.77713012695312,
+      "tokens": 65536
+    },
+    "layer38.out_proj": {
+      "file": "layer38.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "9940c54081b1cd3084cb1ce0e25fe5fc4c7ddcac5d4f7f42a23437b4b52ab81a",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.324275882870097e-08,
+      "diagonal_max": 39.413536071777344,
+      "tokens": 65536
+    },
+    "layer39.in_proj": {
+      "file": "layer39.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "4a76ed7441f645bd8cc7b995436f89380398c67b846c6cf2a387f3ff838da089",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.34617891907691956,
+      "diagonal_max": 111.78099822998047,
+      "tokens": 65536
+    },
+    "layer39.out_proj": {
+      "file": "layer39.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "bd413de1601ecde6d7d9cf909c2cf6a5467833b413c9ff800449297f3a723937",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.7639844429595541e-07,
+      "diagonal_max": 53.25571823120117,
+      "tokens": 65536
+    },
+    "layer40.in_proj": {
+      "file": "layer40.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "2e440e2a6d891ddf0ec39f911c590fc9f991fd4ee8e93d5dfb6965ad583f0cc7",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3674250543117523,
+      "diagonal_max": 125.94441223144531,
+      "tokens": 65536
+    },
+    "layer40.out_proj": {
+      "file": "layer40.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "7fd99558edf2f8fc9f0013781574d40a3937485a13abe2e0261491c2e2d37570",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.0003718386997207e-07,
+      "diagonal_max": 29.55506134033203,
+      "tokens": 65536
+    },
+    "layer41.in_proj": {
+      "file": "layer41.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "8260323601544b3e14431346e9227579c42bd23d1630712606592cdf77339015",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3295291066169739,
+      "diagonal_max": 118.62105560302734,
+      "tokens": 65536
+    },
+    "layer41.out_proj": {
+      "file": "layer41.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "052bdef1a83ba617482d242724461fe8ad59164cae37192ea65c092a40658d26",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 7.157538561841648e-08,
+      "diagonal_max": 21.09122085571289,
+      "tokens": 65536
+    },
+    "layer42.in_proj": {
+      "file": "layer42.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "613d33543b5bccb201b2dccaf3717151c38f134414d25a6208a6e62e66dbe981",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2934426963329315,
+      "diagonal_max": 92.61103820800781,
+      "tokens": 65536
+    },
+    "layer42.out_proj": {
+      "file": "layer42.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "b230413ab1fb9bae5cb49a41a316425753bc3cca26d95c825e3745f59dafdbea",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.233296242908466e-10,
+      "diagonal_max": 102.7098388671875,
+      "tokens": 65536
+    },
+    "layer43.in_proj": {
+      "file": "layer43.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "e75aa214cbc8368bc4f75bb5f1b6cbd675003239bd6aac39976aef3939808fcb",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.31893429160118103,
+      "diagonal_max": 90.61190032958984,
+      "tokens": 65536
+    },
+    "layer43.out_proj": {
+      "file": "layer43.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "40af65f663e22cf69ffa6b8809901f1a389da497e6b870676d3e1321cc1d4c32",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 0.0,
+      "diagonal_max": 37.04854965209961,
+      "tokens": 65536
+    },
+    "layer44.in_proj": {
+      "file": "layer44.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "9d2b424c96891bd17a3904bb83b7beda5dd37c1ff7dea17a40dbc813934ca8cf",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3156827688217163,
+      "diagonal_max": 102.81315612792969,
+      "tokens": 65536
+    },
+    "layer44.out_proj": {
+      "file": "layer44.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "93b0fce92ddda92f1afcbf1b88bcc23328cae431045015f1dd3c6160ca39b58b",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.61913121132784e-07,
+      "diagonal_max": 32.18600845336914,
+      "tokens": 65536
+    },
+    "layer45.in_proj": {
+      "file": "layer45.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "a13e6c5fe5e9abdc6cba5d8f5b397ff8f5fdf13008d5314f14de294fc0801a74",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3441360890865326,
+      "diagonal_max": 115.0600357055664,
+      "tokens": 65536
+    },
+    "layer45.out_proj": {
+      "file": "layer45.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "0acd97ad6f35af4be559146d1964d34f6134dc66fb2914a526f9979f9b0fbc6b",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.010793226896567e-09,
+      "diagonal_max": 20.37409210205078,
+      "tokens": 65536
+    },
+    "layer46.in_proj": {
+      "file": "layer46.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "b273c0b5372e08ba1f531cf241852d632c0de0f6d216ef9496eb4ec3545e8b82",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3070431053638458,
+      "diagonal_max": 86.77155303955078,
+      "tokens": 65536
+    },
+    "layer46.out_proj": {
+      "file": "layer46.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "0ef64c38b35d9117a4cea35ba0a68aa4839e8ccc8087342e6de3eda0c217826a",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.0351458712420936e-07,
+      "diagonal_max": 27.105976104736328,
+      "tokens": 65536
+    },
+    "layer47.in_proj": {
+      "file": "layer47.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "f3eeb58c72a4ea238d52fe9653cb6288bca57c405225af709dfabca2a99c0f8f",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3073180019855499,
+      "diagonal_max": 85.3118667602539,
+      "tokens": 65536
+    },
+    "layer47.out_proj": {
+      "file": "layer47.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "a17fc7cdcc073890b8746270ddde51f539832d8da603d472bd25384673ae7f40",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.5828399000383797e-06,
+      "diagonal_max": 36.14908981323242,
+      "tokens": 65536
+    },
+    "layer48.in_proj": {
+      "file": "layer48.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "d6607a257b3adf8cb1f6a470d21d585035525db50d223956261d613068546a01",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.30705147981643677,
+      "diagonal_max": 72.0986099243164,
+      "tokens": 65536
+    },
+    "layer48.out_proj": {
+      "file": "layer48.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "fbb252db2192f8a4a51f1b61791455af2a315a824767b2641a30ea47964d5290",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.515435457122294e-07,
+      "diagonal_max": 46.34480285644531,
+      "tokens": 65536
+    },
+    "layer49.in_proj": {
+      "file": "layer49.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "a75d176c8caec4bace114ce6c712cfe3f1f91485d210b6e6bc42559bdeb38e47",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2685214579105377,
+      "diagonal_max": 56.15261459350586,
+      "tokens": 65536
+    },
+    "layer49.out_proj": {
+      "file": "layer49.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "d5c67cbbd37abaeb6882a1d5598c3a3a2ceaee31257d1139ab7fd44d0cdf7b66",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.7673261965001075e-08,
+      "diagonal_max": 24.55409812927246,
+      "tokens": 65536
+    },
+    "layer50.in_proj": {
+      "file": "layer50.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "476597bb2a2a784470da6d8b8c2d94f283910fde542fc5c519883ba43f7bcae7",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.29435330629348755,
+      "diagonal_max": 64.25519561767578,
+      "tokens": 65536
+    },
+    "layer50.out_proj": {
+      "file": "layer50.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "079e04726c7143d244a4e33f4e83c60724f529099eb114ab2e428a225a268739",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 6.211912761955318e-08,
+      "diagonal_max": 139.32650756835938,
+      "tokens": 65536
+    },
+    "layer51.in_proj": {
+      "file": "layer51.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "5008735134074c71f68a18babeaca1a038bed5db68b6080fb52f917058c3bdf0",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.3045012354850769,
+      "diagonal_max": 67.64917755126953,
+      "tokens": 65536
+    },
+    "layer51.out_proj": {
+      "file": "layer51.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "68bef09695082345e6520c8cffdf4c9c79a12df72ca150394edb47358336b0b2",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.649858110714831e-08,
+      "diagonal_max": 94.79490661621094,
+      "tokens": 65536
+    },
+    "layer52.in_proj": {
+      "file": "layer52.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "e512dfedf1c92a616e6ef0f916722dd5cb264c6b15968f6e95f96b14ea8b3699",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.26948872208595276,
+      "diagonal_max": 64.14668273925781,
+      "tokens": 65536
+    },
+    "layer52.out_proj": {
+      "file": "layer52.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "fd80eafadf36488da79be8eacb843a4218afcc653c8e159c99ba3390ce3fdfb7",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 2.442948527914268e-07,
+      "diagonal_max": 130.97848510742188,
+      "tokens": 65536
+    },
+    "layer53.in_proj": {
+      "file": "layer53.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "97ff7e2b5ac209f04588f98bc7a39009cadacd79690219d9366603db2be91b9b",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.26361870765686035,
+      "diagonal_max": 82.49759674072266,
+      "tokens": 65536
+    },
+    "layer53.out_proj": {
+      "file": "layer53.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "a0566bbece41f3a5de37538a07faf1c3036e366461ca5198e3400da1239cbe24",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 4.817436449755519e-10,
+      "diagonal_max": 465.0948486328125,
+      "tokens": 65536
+    },
+    "layer54.in_proj": {
+      "file": "layer54.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "b5586420dfb9a16fa3220b11e45456c5af2ffb8e327000cd889246404c99c6a4",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.2842606008052826,
+      "diagonal_max": 222.72023010253906,
+      "tokens": 65536
+    },
+    "layer54.out_proj": {
+      "file": "layer54.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "c886c31df085ef9e9f8710872f0cc989b132cb21099e6e769c57e96adba917dd",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 9.442835846584785e-08,
+      "diagonal_max": 874.63330078125,
+      "tokens": 65536
+    },
+    "layer55.in_proj": {
+      "file": "layer55.in_proj.pt",
+      "bytes": 67110518,
+      "sha256": "de97c43d4d82bdc16b681c902c4d11d412eb7be4f11d2f5e8cc961bff84ad0ac",
+      "shape": [
+        4096,
+        4096
+      ],
+      "diagonal_min": 0.29951223731040955,
+      "diagonal_max": 943.2225341796875,
+      "tokens": 65536
+    },
+    "layer55.out_proj": {
+      "file": "layer55.out_proj.pt",
+      "bytes": 268437117,
+      "sha256": "a852561b84d5b8cca268bda2474cc5f4778ca4bd3037d0782b474a7b17cfe2d0",
+      "shape": [
+        8192,
+        8192
+      ],
+      "diagonal_min": 1.347861156020258e-09,
+      "diagonal_max": 1300.749267578125,
+      "tokens": 65536
+    }
+  },
+  "counts": {
+    "layer0.in_proj": 65536,
+    "layer0.out_proj": 65536,
+    "layer1.in_proj": 65536,
+    "layer1.out_proj": 65536,
+    "layer2.in_proj": 65536,
+    "layer2.out_proj": 65536,
+    "layer3.in_proj": 65536,
+    "layer3.out_proj": 65536,
+    "layer4.in_proj": 65536,
+    "layer4.out_proj": 65536,
+    "layer5.in_proj": 65536,
+    "layer5.out_proj": 65536,
+    "layer6.in_proj": 65536,
+    "layer6.out_proj": 65536,
+    "layer7.in_proj": 65536,
+    "layer7.out_proj": 65536,
+    "layer8.in_proj": 65536,
+    "layer8.out_proj": 65536,
+    "layer9.in_proj": 65536,
+    "layer9.out_proj": 65536,
+    "layer10.in_proj": 65536,
+    "layer10.out_proj": 65536,
+    "layer11.in_proj": 65536,
+    "layer11.out_proj": 65536,
+    "layer12.in_proj": 65536,
+    "layer12.out_proj": 65536,
+    "layer13.in_proj": 65536,
+    "layer13.out_proj": 65536,
+    "layer14.in_proj": 65536,
+    "layer14.out_proj": 65536,
+    "layer15.in_proj": 65536,
+    "layer15.out_proj": 65536,
+    "layer16.in_proj": 65536,
+    "layer16.out_proj": 65536,
+    "layer17.in_proj": 65536,
+    "layer17.out_proj": 65536,
+    "layer18.in_proj": 65536,
+    "layer18.out_proj": 65536,
+    "layer19.in_proj": 65536,
+    "layer19.out_proj": 65536,
+    "layer20.in_proj": 65536,
+    "layer20.out_proj": 65536,
+    "layer21.in_proj": 65536,
+    "layer21.out_proj": 65536,
+    "layer22.in_proj": 65536,
+    "layer22.out_proj": 65536,
+    "layer23.in_proj": 65536,
+    "layer23.out_proj": 65536,
+    "layer24.in_proj": 65536,
+    "layer24.out_proj": 65536,
+    "layer25.in_proj": 65536,
+    "layer25.out_proj": 65536,
+    "layer26.in_proj": 65536,
+    "layer26.out_proj": 65536,
+    "layer27.in_proj": 65536,
+    "layer27.out_proj": 65536,
+    "layer28.in_proj": 65536,
+    "layer28.out_proj": 65536,
+    "layer29.in_proj": 65536,
+    "layer29.out_proj": 65536,
+    "layer30.in_proj": 65536,
+    "layer30.out_proj": 65536,
+    "layer31.in_proj": 65536,
+    "layer31.out_proj": 65536,
+    "layer32.in_proj": 65536,
+    "layer32.out_proj": 65536,
+    "layer33.in_proj": 65536,
+    "layer33.out_proj": 65536,
+    "layer34.in_proj": 65536,
+    "layer34.out_proj": 65536,
+    "layer35.in_proj": 65536,
+    "layer35.out_proj": 65536,
+    "layer36.in_proj": 65536,
+    "layer36.out_proj": 65536,
+    "layer37.in_proj": 65536,
+    "layer37.out_proj": 65536,
+    "layer38.in_proj": 65536,
+    "layer38.out_proj": 65536,
+    "layer39.in_proj": 65536,
+    "layer39.out_proj": 65536,
+    "layer40.in_proj": 65536,
+    "layer40.out_proj": 65536,
+    "layer41.in_proj": 65536,
+    "layer41.out_proj": 65536,
+    "layer42.in_proj": 65536,
+    "layer42.out_proj": 65536,
+    "layer43.in_proj": 65536,
+    "layer43.out_proj": 65536,
+    "layer44.in_proj": 65536,
+    "layer44.out_proj": 65536,
+    "layer45.in_proj": 65536,
+    "layer45.out_proj": 65536,
+    "layer46.in_proj": 65536,
+    "layer46.out_proj": 65536,
+    "layer47.in_proj": 65536,
+    "layer47.out_proj": 65536,
+    "layer48.in_proj": 65536,
+    "layer48.out_proj": 65536,
+    "layer49.in_proj": 65536,
+    "layer49.out_proj": 65536,
+    "layer50.in_proj": 65536,
+    "layer50.out_proj": 65536,
+    "layer51.in_proj": 65536,
+    "layer51.out_proj": 65536,
+    "layer52.in_proj": 65536,
+    "layer52.out_proj": 65536,
+    "layer53.in_proj": 65536,
+    "layer53.out_proj": 65536,
+    "layer54.in_proj": 65536,
+    "layer54.out_proj": 65536,
+    "layer55.in_proj": 65536,
+    "layer55.out_proj": 65536
+  },
+  "elapsed_seconds": 63.609821796417236,
+  "accumulator_dtype": "float32",
+  "formula": "X.T @ X / token_count",
+  "fused_projection_path": false,
+  "calibration_tokens": 65536,
+  "hessian_files_bytes": 18790667420,
+  "gpu_memory": {
+    "peak_allocated_bytes": 35632198144,
+    "peak_reserved_bytes": 35739664384,
+    "current_allocated_bytes": 16541282304,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  }
+}

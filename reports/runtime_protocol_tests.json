@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "test_source_sha256": "326524d66185ba1f143fd47a8413aa08acd6ad9405637e7c02d0fa2b72eaaf41",
+  "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "scope": "CPU protocol fixtures; grouped256tokenGPUrecurrence was checked separately before fullsource smoke"
+}
