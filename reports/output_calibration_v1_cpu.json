@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "passed": true,
+  "cuda_initialized": false,
+  "checks": [
+    "beta1 first/second derivatives versus CPU float64 autograd",
+    "per-row logit offset invariance",
+    "label-dependent gradient and label-independent entropy/curvature",
+    "strict and tied target rank versus actual argmax",
+    "native FP16 head short3+3+1 target-weighted statistics",
+    "fixed source-surprisal bin boundaries and paired target means"
+  ],
+  "script_sha256": "116c69a5151a2497209408ed4fef7561fcae38624b20e6bdf659b40b3126fd64",
+  "diagnostic_protocol_sha256": "6020795db522ca5a311ba75422c6db9ac029d90a0eb6f22cd0af189be99fb315",
+  "protocol_document_sha256": "baa87fa1549e29bf757cca8e18f1ab0feadc18daebffa79402c75c87035bc05d",
+  "actual_fp32_gradient_identity_tolerance": {
+    "atol": 0.0003,
+    "rtol": 3e-05
+  },
+  "actual_fp32_ce_reduction_tolerance": {
+    "atol_per_chunk": 0.0002,
+    "rtol": 3e-06
+  },
+  "toy_derivative_tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-12
+  }
+}

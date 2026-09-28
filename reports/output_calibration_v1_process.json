@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "started_at_unix": 1790598911.8846784,
+  "argv": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/Mamba2-8B-E8W5/scripts/diagnose_output_calibration.py",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/output_calibration_v1.json"
+  ],
+  "script_sha256": "116c69a5151a2497209408ed4fef7561fcae38624b20e6bdf659b40b3126fd64",
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "log_path": "/home/horde/Mamba2-8B-E8W5/reports/output_calibration_v1.log",
+  "pid": 2821146,
+  "process_start_ticks": 98019899,
+  "command_line": "/home/horde/.venvs/lodram/bin/python -u /home/horde/Mamba2-8B-E8W5/scripts/diagnose_output_calibration.py --report /home/horde/Mamba2-8B-E8W5/reports/output_calibration_v1.json ",
+  "exit_code": 1,
+  "finished_at_unix": 1790598969.401123,
+  "wall_seconds": 57.51644468307495,
+  "report_sha256": "38c31d728bc44dba9882b3e2344aeae1feec746a48d500dcbe27264b6b3a374c",
+  "report_bytes": 245283,
+  "diagnostic_complete": false,
+  "error": "Original beta1 CE does not reproduce exactly: source_fp16/0"
+}
