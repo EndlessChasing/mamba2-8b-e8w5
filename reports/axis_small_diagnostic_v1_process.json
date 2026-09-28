@@ -1,0 +1,29 @@
+{
+  "status": "finished",
+  "pid": 3366453,
+  "started_unix": 1790610239.4807155,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "scripts/diagnose_axis_small.py",
+    "--report",
+    "reports/axis_small_diagnostic_v1.json"
+  ],
+  "code_pins": {
+    "mamba_e8w5/axis_small_base.py": "4e7026475fc97b005105b27043a15bae83c576934612b1e346576438eef4da70",
+    "scripts/diagnose_axis_small.py": "fc35f16c8a6737a3b9f4ee79f1e91d3d765202f1f92186a89313b3478932bac5",
+    "docs/AXIS_SMALL_READAPTATION_PROTOCOL.md": "a2509bec3d82748b18e452c9bbb5053a894c96ed5309eeb67d45f7dfa6029282"
+  },
+  "required_reports": {
+    "reports/axis_small_diagnostic_v1_cpu.json": "05b2aa9b0b9e9c6099e660d18fef8643deb06bccc456fd69ae42f88f97b349cf"
+  },
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 99152659,
+  "exit_code": 0,
+  "finished_unix": 1790610599.9677403,
+  "wall_seconds": 360.4870254993439,
+  "log_sha256": "69e2f8efc2ce3254995da8630018021991cc805234e530848a50a90f3b9008e5",
+  "report_sha256": "7a4d9ad7793773e2b09859eafd201189344d529c0c6d7bf4995af6370dfcdc09",
+  "report_bytes": 1584152,
+  "report_complete": true
+}

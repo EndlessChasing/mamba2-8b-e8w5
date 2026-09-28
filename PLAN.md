@@ -209,7 +209,7 @@ completed prototype recipe or promote its failed candidate.
 ## Current-axis small-tensor readaptation
 
 - [x] Freeze the [diagnosis and readaptation protocol](docs/AXIS_SMALL_READAPTATION_PROTOCOL.md) before measurements, following the user's option1: fixed current-axis baseline,393 existing small tensors,448 TRAIN windows once,lr3e-5 and mixed CE/KL.
-- [ ] Complete current-old393 / current-source393 / restored-old393 diagnostic on64 observed reserved TRAIN windows, with fixed114 large tensors and exact baseline repetition. The diagnostic does not select training initialization.
+- [x] Complete current-old393 / current-source393 / restored-old393 diagnostic on64 observed reserved TRAIN windows: PPL8.013059657 /8.190893923 /8.013059657. Original small values worsen PPL2.21931%; current adaptation remains useful. Fixed114/507 audits and all64 repeated windows pass, exit0. The diagnostic does not select training initialization. See [results](docs/AXIS_SMALL_READAPTATION_RESULTS.md).
 - [ ] Pass CPU input checks and current-axis native/functional/checkpoint/chunk/export smoke, discarding every smoke update.
 - [ ] Starting from current old-trained393, finish448 successful updates and independent final393 FP16 readback; preserve parameter count, record exact raw byte delta, and keep all114 large tensors fixed.
 - [ ] Independently score current/readapted/restored-current on64 reserved windows; only a1% paired PPL gain enables source/current/readapted130-window validation. Report the source+5% target separately. No publication or MK.
