@@ -213,3 +213,12 @@ completed prototype recipe or promote its failed candidate.
 - [x] Pass CPU input checks and current-axis native/functional/checkpoint/chunk/export smoke. Checkpoint and chunk hidden gradients match exactly; one2047-target update succeeds with zero overflow; actual FP16 native export matches. Fixed114 and underlying/teacher507 audits pass; all smoke updates discarded. Start formal training from fresh process/optimizer/scaler/RNG.
 - [x] Starting from current old-trained393, finish448 successful updates/448 attempts/zero overflows and917,056 targets. All393 changed exports equal final448 rounded masters; independent CPU verification passes with CUDA uninitialized. Fixed114, underlying507 and teacher507 audits pass. Actual replacement file7,283,930 bytes gives zero raw-byte delta; total3,138,928,792 bytes plus239,782-byte new manifest. Native PPL evaluation follows.
 - [x] Independently score current/readapted/restored-current on64 reserved windows:8.013059657→7.624250427,4.85219% gain,64/64 improve and exact baseline repeat. The1% gate enables complete source/current/readapted validation:7.334175947 /7.977512009 /7.622396588 on130 windows/264,764 targets. Paired improvement4.45146%,130/130 improve; source+3.92983% passes the+5% target. All507/114, tail, restoration and final input checks pass; reportcomplete/exit0/processabsent. No new complete package, MK or publication. See [final results](docs/AXIS_SMALL_READAPTATION_RESULTS.md).
+
+## User-directed MK validation and Resurface repair
+
+- [x] Freeze the [Stage1 MK baseline protocol](docs/MK_RESURFACE_PROTOCOL.md) before measurements: original source and actual final448 readapted current model,384 normal+384 removed-binding prompts per arm, native prefill/recurrent decode, no fitting or publication.
+- [ ] Pass current-file/prompt CPU verification and independent baseline evaluator review.
+- [ ] Complete paired MK baseline, all507 audits and12 exact prompt replays per arm.
+- [ ] Declare the separate native no-EMA Resurface adapter, disjoint data, bounded training and final selection recipe before training.
+- [ ] Validate adapter identity, cache-step placement, checkpoint gradients and multi-token answer loss; fit only declared TRAIN data with frozen backbone.
+- [ ] Verify actual final adapter and require independent MK improvement, no increased deleted-target matches and complete same-enabled-model PPL no worse than7.622396588. Keep publication on hold.
