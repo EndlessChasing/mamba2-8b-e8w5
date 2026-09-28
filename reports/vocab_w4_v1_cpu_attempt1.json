@@ -1,0 +1,7 @@
+{
+  "complete": false,
+  "script_sha256": "b3a50bae0cd92dfeef4705ba6a5a03d5b9bd03abbe15569ea9c19e7b883f2753",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/diagnose_vocab_w4.py\", line 241, in main\n    result['self_test']=self_test()\n  File \"/home/horde/Mamba2-8B-E8W5/scripts/diagnose_vocab_w4.py\", line 207, in self_test\n    assert raw_tensor_hash(expected)==raw_tensor_hash(actual)\nAssertionError\n",
+  "elapsed_seconds": 0.02924985100980848
+}
