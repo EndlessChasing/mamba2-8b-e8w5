@@ -1,12 +1,26 @@
 # Mamba-2 8B E8/W5
 
-Work in progress: a reproducible compact release of NVIDIA’s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head.
+An experimental compact version of NVIDIA’s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head.
 
-The goal is a small, openly reproducible full-model package. No 8B compressed size, quality retention, runtime-memory result, or smallest-model claim has been established yet.
+All **8,236,999,680 parameters** have been quantized or retained and independently verified. The raw weight data occupies **2,886,482,462 bytes** before entropy coding, tokenizer and release metadata. The first release is being packaged. Its exact archive and complete download sizes will be recorded in the release manifest.
+
+## Measured quality
+
+| Full test measurement | Original weights cast to FP16 | E8/W5 reconstructed to FP16 |
+| --- | ---: | ---: |
+| WikiText-2 PPL, 300,963 next-token targets | 7.2445 | 8.7085 |
+| Public MK, normal prompts | 18/48 | 15/48 |
+| Public MK, target-removed controls | 0/48 | 0/48 |
+
+PPL increases **20.21%** and recall decreases **6.25 percentage points**. This fails the provisional quality-retention target; the release is experimental and does not claim equal quality. Measurements use 2,048-target windows with state reset and SSD prefill; per-token FP16-state validation is reported separately. The MK task is new and has limited sample size. See the [frozen protocol](docs/EVALUATION.md) and [full paired results](reports/comparison_full_prefill.json).
+
+The decoded FP16 evaluation peaked at **17.36 GB allocated / 18.60 GB reserved** GPU memory. Compact file size is not compressed inference residency. Timings were collected on a shared GPU and are not isolated throughput benchmarks.
 
 Source: [nvidia/mamba2-8b-3t-4k](https://huggingface.co/nvidia/mamba2-8b-3t-4k), Apache-2.0. The software and QuIP#-derived components are distributed under GPL-3.0; upstream model attribution is separate. See [license scope](licenses/THIRD_PARTY.md), [pinned sources](docs/SOURCES.md), and [comparison limits](docs/COMPARISON.md).
 
 Only public upstream model/runtime sources and project-authored compression code will be included; research checkpoints and large model files are excluded from Git.
+
+Download instructions are in [DOWNLOAD.md](docs/DOWNLOAD.md); model assets will appear in [GitHub Releases](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases). A global smallest-model claim is not established. The public comparison records the exact same-base artifacts audited and which quality measurements were not repeated.
 
 ## Method
 

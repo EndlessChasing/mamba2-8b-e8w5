@@ -1,0 +1,1023 @@
+{
+  "complete": true,
+  "suite": "dev",
+  "execution": "tokenwise",
+  "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+  "weight_format": "original weights cast to FP16",
+  "raw_package": null,
+  "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "runtime_source_sha256": "bc31a8d898f78e6be59d74e34d3948166d217a8d36b1817b819bde1f32a0d369",
+  "evaluation_source_sha256": "ff4811cf74d98302c5712d0968f683e840c3a50af2a0dcad9a07628362b45089",
+  "package_receipt": {
+    "format": "original BF16 checkpoint cast to requested dtype",
+    "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "parameter_count": 8236999680
+  },
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-2-raw-v1",
+    "split": "validation",
+    "revision_argument": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_fingerprint": "51d84d52d095f90d",
+    "document_join": "two newline characters",
+    "text_sha256": "b44fb967f92b525731216a507d1fbc44b97446b7ef0a2b4d1a893f81f1bbc29e",
+    "token_stream_sha256_int64le": "5bbeae08ba8eb34a482f3b6e9d17b182e67229dd14b2853d87f89fc72e5ad027",
+    "total_tokens": 264765,
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "automatic_special_tokens": false
+  },
+  "ppl": {
+    "ppl": 7.857485874788794,
+    "nll": 8443.767570495605,
+    "target_tokens": 4096,
+    "execution": "tokenwise",
+    "windows": [
+      {
+        "start": 0,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "0f8d81979cd34d4c82cc7acc34f0b7644eef40aea6e68f7e81f13b517dccfc89",
+        "nll": 1564.6290969848633,
+        "ppl": 4.60875659954145
+      },
+      {
+        "start": 87913,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "dc8edac03cc4ef0bcf2084262688a230d61b555d3717659bb335347cf9c1df53",
+        "nll": 2635.7815856933594,
+        "ppl": 13.118263961833398
+      },
+      {
+        "start": 175826,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "6179dc9678eee24ff17f0efaf40565280c051e0726733834b81e3855175f060a",
+        "nll": 2231.585662841797,
+        "ppl": 8.839964615490228
+      },
+      {
+        "start": 263740,
+        "input_tokens": 1024,
+        "target_tokens": 1024,
+        "token_sha256_int64le": "4c60d5d763f9465a7262388372c59d5d49f73f3d61bb5b28b3d6df3553192cb2",
+        "nll": 2011.771224975586,
+        "ppl": 7.13220424121908
+      }
+    ],
+    "elapsed_seconds": 169.20867204666138,
+    "cache_dtype": "float16 each token",
+    "cache_bytes": 122028032,
+    "logits_chunk_tokens": 64,
+    "score": "next-token cross entropy; no BOS/EOS added; each window starts from zero state",
+    "coverage": "fixed nonoverlapping subset"
+  },
+  "mk": {
+    "protocol": "public-mamba8-mk-v1",
+    "split": "validation",
+    "execution": "tokenwise",
+    "cache_dtype": "float16",
+    "prefill_rounding": "each token",
+    "generation": "greedy, at most 12 tokens, stop at EOS",
+    "matching": "first standalone six-digit integer equals answer",
+    "private_resurface_comparable": false,
+    "summary": {
+      "normal": {
+        "correct": 7,
+        "count": 12,
+        "accuracy": 0.5833333333333334
+      },
+      "target_removed": {
+        "correct": 0,
+        "count": 12,
+        "accuracy": 0.0
+      }
+    },
+    "cells": [
+      {
+        "N": 16,
+        "template": 0,
+        "condition": "normal",
+        "correct": 1,
+        "count": 2,
+        "query_positions": [
+          0,
+          15
+        ],
+        "paired_case_ids": [
+          "validation-n16-t0-s0",
+          "validation-n16-t0-s1"
+        ]
+      },
+      {
+        "N": 16,
+        "template": 0,
+        "condition": "target_removed",
+        "correct": 0,
+        "count": 2,
+        "query_positions": [
+          0,
+          15
+        ],
+        "paired_case_ids": [
+          "validation-n16-t0-s0-removed",
+          "validation-n16-t0-s1-removed"
+        ]
+      },
+      {
+        "N": 16,
+        "template": 1,
+        "condition": "normal",
+        "correct": 1,
+        "count": 2,
+        "query_positions": [
+          0,
+          15
+        ],
+        "paired_case_ids": [
+          "validation-n16-t1-s0",
+          "validation-n16-t1-s1"
+        ]
+      },
+      {
+        "N": 16,
+        "template": 1,
+        "condition": "target_removed",
+        "correct": 0,
+        "count": 2,
+        "query_positions": [
+          0,
+          15
+        ],
+        "paired_case_ids": [
+          "validation-n16-t1-s0-removed",
+          "validation-n16-t1-s1-removed"
+        ]
+      },
+      {
+        "N": 16,
+        "template": 2,
+        "condition": "normal",
+        "correct": 2,
+        "count": 2,
+        "query_positions": [
+          0,
+          15
+        ],
+        "paired_case_ids": [
+          "validation-n16-t2-s0",
+          "validation-n16-t2-s1"
+        ]
+      },
+      {
+        "N": 16,
+        "template": 2,
+        "condition": "target_removed",
+        "correct": 0,
+        "count": 2,
+        "query_positions": [
+          0,
+          15
+        ],
+        "paired_case_ids": [
+          "validation-n16-t2-s0-removed",
+          "validation-n16-t2-s1-removed"
+        ]
+      },
+      {
+        "N": 64,
+        "template": 0,
+        "condition": "normal",
+        "correct": 1,
+        "count": 2,
+        "query_positions": [
+          0,
+          63
+        ],
+        "paired_case_ids": [
+          "validation-n64-t0-s0",
+          "validation-n64-t0-s1"
+        ]
+      },
+      {
+        "N": 64,
+        "template": 0,
+        "condition": "target_removed",
+        "correct": 0,
+        "count": 2,
+        "query_positions": [
+          0,
+          63
+        ],
+        "paired_case_ids": [
+          "validation-n64-t0-s0-removed",
+          "validation-n64-t0-s1-removed"
+        ]
+      },
+      {
+        "N": 64,
+        "template": 1,
+        "condition": "normal",
+        "correct": 1,
+        "count": 2,
+        "query_positions": [
+          0,
+          63
+        ],
+        "paired_case_ids": [
+          "validation-n64-t1-s0",
+          "validation-n64-t1-s1"
+        ]
+      },
+      {
+        "N": 64,
+        "template": 1,
+        "condition": "target_removed",
+        "correct": 0,
+        "count": 2,
+        "query_positions": [
+          0,
+          63
+        ],
+        "paired_case_ids": [
+          "validation-n64-t1-s0-removed",
+          "validation-n64-t1-s1-removed"
+        ]
+      },
+      {
+        "N": 64,
+        "template": 2,
+        "condition": "normal",
+        "correct": 1,
+        "count": 2,
+        "query_positions": [
+          0,
+          63
+        ],
+        "paired_case_ids": [
+          "validation-n64-t2-s0",
+          "validation-n64-t2-s1"
+        ]
+      },
+      {
+        "N": 64,
+        "template": 2,
+        "condition": "target_removed",
+        "correct": 0,
+        "count": 2,
+        "query_positions": [
+          0,
+          63
+        ],
+        "paired_case_ids": [
+          "validation-n64-t2-s0-removed",
+          "validation-n64-t2-s1-removed"
+        ]
+      }
+    ],
+    "rows": [
+      {
+        "id": "validation-n16-t0-s0",
+        "N": 16,
+        "template": 0,
+        "query_position": 0,
+        "key": 127355,
+        "answer": "613677",
+        "condition": "normal",
+        "prompt_tokens": 263,
+        "prompt_token_sha256_int64le": "56e05dd4a92ec1bc55ad1a3c3a8c358b711e75a365c1f9f442f756316d3d230f",
+        "prompt": "Key-value records:\n127355: 613677\n117315: 628324\n114692: 601833\n176128: 677697\n141695: 615152\n113133: 627953\n119870: 660951\n117334: 661554\n148823: 634961\n102744: 631773\n139393: 658048\n134912: 641579\n130526: 603598\n103422: 656437\n136480: 602754\n160871: 679793\n\nLookup the value for key 127355.\nValue:",
+        "output": "613677\n\nLookup the value",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251556,
+          251574,
+          251581,
+          251581,
+          14,
+          14,
+          155786,
+          276,
+          2184
+        ],
+        "prediction": "613677",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t0-s0-removed",
+        "N": 16,
+        "template": 0,
+        "query_position": 0,
+        "key": 127355,
+        "answer": "613677",
+        "condition": "target_removed",
+        "prompt_tokens": 263,
+        "prompt_token_sha256_int64le": "6ebf0fb04f3bea74d82afa771a5d814f6182aeaa4d4258b725758003258b6094",
+        "prompt": "Key-value records:\n190000: 690000\n117315: 628324\n114692: 601833\n176128: 677697\n141695: 615152\n113133: 627953\n119870: 660951\n117334: 661554\n148823: 634961\n102744: 631773\n139393: 658048\n134912: 641579\n130526: 603598\n103422: 656437\n136480: 602754\n160871: 679793\n\nLookup the value for key 127355.\nValue:",
+        "output": "628324\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251527,
+          251577,
+          251556,
+          251527,
+          251564,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "628324",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t0-s1",
+        "N": 16,
+        "template": 0,
+        "query_position": 15,
+        "key": 119356,
+        "answer": "663240",
+        "condition": "normal",
+        "prompt_tokens": 263,
+        "prompt_token_sha256_int64le": "73e107dc1d6615cc660d73d69c75ce5e2a46d221a52657b3420be5be409ed07f",
+        "prompt": "Key-value records:\n106296: 633341\n178216: 647626\n156400: 615570\n164889: 620180\n168523: 655752\n128851: 653483\n155001: 633801\n171574: 650274\n153586: 661896\n123381: 660549\n124877: 610230\n140655: 666673\n117844: 615514\n131582: 632095\n120154: 670716\n119356: 663240\n\nLookup the value for key 119356.\nValue:",
+        "output": "610230\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251521,
+          251527,
+          251556,
+          251521,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "610230",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t0-s1-removed",
+        "N": 16,
+        "template": 0,
+        "query_position": 15,
+        "key": 119356,
+        "answer": "663240",
+        "condition": "target_removed",
+        "prompt_tokens": 263,
+        "prompt_token_sha256_int64le": "a69c83fe0e2762002712c5f6c442a71e940b7fc2869f3ca911979ab5a0802698",
+        "prompt": "Key-value records:\n106296: 633341\n178216: 647626\n156400: 615570\n164889: 620180\n168523: 655752\n128851: 653483\n155001: 633801\n171574: 650274\n153586: 661896\n123381: 660549\n124877: 610230\n140655: 666673\n117844: 615514\n131582: 632095\n120154: 670716\n190001: 690001\n\nLookup the value for key 119356.\nValue:",
+        "output": "610230\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251521,
+          251527,
+          251556,
+          251521,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "610230",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t1-s0",
+        "N": 16,
+        "template": 1,
+        "query_position": 0,
+        "key": 123068,
+        "answer": "612310",
+        "condition": "normal",
+        "prompt_tokens": 324,
+        "prompt_token_sha256_int64le": "47ebd1e8462df0fb3399d8971a8fd34293730709275797dcefd26a7e2b12ac77",
+        "prompt": "Key 123068 has value 612310.\nKey 128592 has value 627093.\nKey 160187 has value 632596.\nKey 134099 has value 619134.\nKey 177403 has value 601862.\nKey 114361 has value 652929.\nKey 154201 has value 624380.\nKey 125379 has value 612593.\nKey 165718 has value 604046.\nKey 105947 has value 634335.\nKey 135598 has value 601575.\nKey 150077 has value 600805.\nKey 160625 has value 655549.\nKey 139170 has value 646970.\nKey 157527 has value 618790.\nKey 171845 has value 631674.\n\nQuestion: What is the value of key 123068?\nAnswer:",
+        "output": "612310\n\nQuestion: What",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251527,
+          251556,
+          251525,
+          251521,
+          14,
+          14,
+          75493,
+          251541,
+          1853
+        ],
+        "prediction": "612310",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t1-s0-removed",
+        "N": 16,
+        "template": 1,
+        "query_position": 0,
+        "key": 123068,
+        "answer": "612310",
+        "condition": "target_removed",
+        "prompt_tokens": 324,
+        "prompt_token_sha256_int64le": "dd28914871d8eeca694538e5d9a4871139707de0d548f7ac4cb7635057b9891a",
+        "prompt": "Key 190000 has value 690000.\nKey 128592 has value 627093.\nKey 160187 has value 632596.\nKey 134099 has value 619134.\nKey 177403 has value 601862.\nKey 114361 has value 652929.\nKey 154201 has value 624380.\nKey 125379 has value 612593.\nKey 165718 has value 604046.\nKey 105947 has value 634335.\nKey 135598 has value 601575.\nKey 150077 has value 600805.\nKey 160625 has value 655549.\nKey 139170 has value 646970.\nKey 157527 has value 618790.\nKey 171845 has value 631674.\n\nQuestion: What is the value of key 123068?\nAnswer:",
+        "output": "623068\n\nQuestion: What",
+        "generated_ids": [
+          251490,
+          251574,
+          251527,
+          251556,
+          251521,
+          251574,
+          251577,
+          14,
+          14,
+          75493,
+          251541,
+          1853
+        ],
+        "prediction": "623068",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t1-s1",
+        "N": 16,
+        "template": 1,
+        "query_position": 15,
+        "key": 136718,
+        "answer": "614737",
+        "condition": "normal",
+        "prompt_tokens": 324,
+        "prompt_token_sha256_int64le": "55bf6ea2cdfcbb641b851e542d3a95274525ac9f8054cf824ef919168b86ce35",
+        "prompt": "Key 105559 has value 613923.\nKey 158871 has value 616611.\nKey 126357 has value 641835.\nKey 154523 has value 636696.\nKey 128779 has value 602366.\nKey 134546 has value 670303.\nKey 164863 has value 677008.\nKey 157012 has value 621101.\nKey 150559 has value 610747.\nKey 140972 has value 671612.\nKey 136339 has value 669556.\nKey 155244 has value 647418.\nKey 144349 has value 660462.\nKey 157751 has value 628774.\nKey 144764 has value 649432.\nKey 136718 has value 614737.\n\nQuestion: What is the value of key 136718?\nAnswer:",
+        "output": "616611\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251574,
+          251574,
+          251525,
+          251525,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "616611",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t1-s1-removed",
+        "N": 16,
+        "template": 1,
+        "query_position": 15,
+        "key": 136718,
+        "answer": "614737",
+        "condition": "target_removed",
+        "prompt_tokens": 324,
+        "prompt_token_sha256_int64le": "01a7c76bfb1f95fc61ba00401426ec0ad10401bc206d1567c6658b60ab2e5389",
+        "prompt": "Key 105559 has value 613923.\nKey 158871 has value 616611.\nKey 126357 has value 641835.\nKey 154523 has value 636696.\nKey 128779 has value 602366.\nKey 134546 has value 670303.\nKey 164863 has value 677008.\nKey 157012 has value 621101.\nKey 150559 has value 610747.\nKey 140972 has value 671612.\nKey 136339 has value 669556.\nKey 155244 has value 647418.\nKey 144349 has value 660462.\nKey 157751 has value 628774.\nKey 144764 has value 649432.\nKey 190001 has value 690001.\n\nQuestion: What is the value of key 136718?\nAnswer:",
+        "output": "616611\n\nQuestion: What",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251574,
+          251574,
+          251525,
+          251525,
+          14,
+          14,
+          75493,
+          251541,
+          1853
+        ],
+        "prediction": "616611",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t2-s0",
+        "N": 16,
+        "template": 2,
+        "query_position": 0,
+        "key": 160243,
+        "answer": "621890",
+        "condition": "normal",
+        "prompt_tokens": 257,
+        "prompt_token_sha256_int64le": "8af7800c6ba77c3e65ce1547b3c3a8f73554ae5309c626d85ff468473370413c",
+        "prompt": "Dictionary:\n160243 -> 621890\n172609 -> 629895\n121617 -> 678795\n150262 -> 653715\n176895 -> 654709\n129062 -> 657044\n179745 -> 668471\n167636 -> 656365\n107612 -> 629987\n117981 -> 606097\n156668 -> 620714\n156202 -> 606862\n129072 -> 609610\n151747 -> 640759\n149057 -> 633377\n103268 -> 617176\n\nReturn the stored value.\n160243 ->",
+        "output": "621890\n1726",
+        "generated_ids": [
+          251490,
+          251574,
+          251527,
+          251525,
+          251577,
+          251561,
+          251521,
+          14,
+          251525,
+          251581,
+          251527,
+          251574
+        ],
+        "prediction": "621890",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t2-s0-removed",
+        "N": 16,
+        "template": 2,
+        "query_position": 0,
+        "key": 160243,
+        "answer": "621890",
+        "condition": "target_removed",
+        "prompt_tokens": 257,
+        "prompt_token_sha256_int64le": "928496fd8c03ec73b3fc06aceff3c33afed5142c67ca316789c69f678da284d1",
+        "prompt": "Dictionary:\n190000 -> 690000\n172609 -> 629895\n121617 -> 678795\n150262 -> 653715\n176895 -> 654709\n129062 -> 657044\n179745 -> 668471\n167636 -> 656365\n107612 -> 629987\n117981 -> 606097\n156668 -> 620714\n156202 -> 606862\n129072 -> 609610\n151747 -> 640759\n149057 -> 633377\n103268 -> 617176\n\nReturn the stored value.\n160243 ->",
+        "output": "660243\n\n\n\n\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251574,
+          251521,
+          251527,
+          251564,
+          251556,
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "prediction": "660243",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t2-s1",
+        "N": 16,
+        "template": 2,
+        "query_position": 15,
+        "key": 143354,
+        "answer": "635844",
+        "condition": "normal",
+        "prompt_tokens": 257,
+        "prompt_token_sha256_int64le": "7dd16e541ce09c2d7517194668f74467d0a3e3ca93f38e3eceb93cd10bc7d346",
+        "prompt": "Dictionary:\n151147 -> 620688\n176578 -> 627222\n121473 -> 677201\n158552 -> 605585\n169933 -> 604647\n101780 -> 611980\n115935 -> 646357\n139410 -> 633669\n119139 -> 641024\n116783 -> 677594\n139432 -> 604114\n167078 -> 646385\n127131 -> 660624\n172817 -> 664584\n175253 -> 608842\n143354 -> 635844\n\nReturn the stored value.\n143354 ->",
+        "output": "635844\n\n\n\n\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251556,
+          251557,
+          251577,
+          251564,
+          251564,
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "prediction": "635844",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n16-t2-s1-removed",
+        "N": 16,
+        "template": 2,
+        "query_position": 15,
+        "key": 143354,
+        "answer": "635844",
+        "condition": "target_removed",
+        "prompt_tokens": 257,
+        "prompt_token_sha256_int64le": "9de2e446e38f18ce372780b09a63c7526b135fdb706eba2f6c91d8b925caaed8",
+        "prompt": "Dictionary:\n151147 -> 620688\n176578 -> 627222\n121473 -> 677201\n158552 -> 605585\n169933 -> 604647\n101780 -> 611980\n115935 -> 646357\n139410 -> 633669\n119139 -> 641024\n116783 -> 677594\n139432 -> 604114\n167078 -> 646385\n127131 -> 660624\n172817 -> 664584\n175253 -> 608842\n190001 -> 690001\n\nReturn the stored value.\n143354 ->",
+        "output": "646385\n1433",
+        "generated_ids": [
+          251490,
+          251574,
+          251564,
+          251574,
+          251556,
+          251577,
+          251557,
+          14,
+          251525,
+          251564,
+          251556,
+          251556
+        ],
+        "prediction": "646385",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t0-s0",
+        "N": 64,
+        "template": 0,
+        "query_position": 0,
+        "key": 144408,
+        "answer": "637965",
+        "condition": "normal",
+        "prompt_tokens": 983,
+        "prompt_token_sha256_int64le": "e9155e70128b3298dfaa26516bfedaca301bba1ac194c721630b5a5e3a77a06e",
+        "prompt": "Key-value records:\n144408: 637965\n154068: 662818\n154656: 632676\n101839: 627304\n176354: 640232\n112807: 633060\n171655: 622770\n175907: 621335\n120417: 666387\n111299: 612336\n143894: 651818\n177046: 675776\n140080: 648966\n136368: 648546\n136316: 625303\n164326: 652743\n170633: 677098\n163105: 629053\n170296: 610439\n157278: 667794\n165835: 660115\n127862: 667631\n114739: 646982\n100670: 670895\n111220: 664270\n166249: 641308\n140349: 634179\n109256: 649948\n176986: 660576\n148036: 663038\n150549: 661273\n146690: 615737\n109464: 616862\n135109: 632363\n133909: 631478\n152041: 610497\n122012: 648968\n143599: 611738\n175527: 620532\n175769: 629206\n110999: 603871\n107252: 625764\n140936: 656480\n174515: 601079\n128405: 646623\n100586: 624950\n156378: 601271\n134359: 611577\n100078: 673400\n147183: 602146\n159295: 603666\n140326: 602005\n149774: 621121\n111414: 607050\n118773: 644638\n112940: 642305\n133790: 678352\n154638: 625898\n138034: 603676\n174192: 613421\n120992: 601032\n140793: 667057\n155582: 656478\n174879: 664882\n\nLookup the value for key 144408.\nValue:",
+        "output": "637965\n\nLookup the value",
+        "generated_ids": [
+          251490,
+          251574,
+          251556,
+          251581,
+          251561,
+          251574,
+          251557,
+          14,
+          14,
+          155786,
+          276,
+          2184
+        ],
+        "prediction": "637965",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t0-s0-removed",
+        "N": 64,
+        "template": 0,
+        "query_position": 0,
+        "key": 144408,
+        "answer": "637965",
+        "condition": "target_removed",
+        "prompt_tokens": 983,
+        "prompt_token_sha256_int64le": "70ec8246430fc278f5777e5f6b2a1291caad5262c612101500cdaf1435b7af6a",
+        "prompt": "Key-value records:\n190000: 690000\n154068: 662818\n154656: 632676\n101839: 627304\n176354: 640232\n112807: 633060\n171655: 622770\n175907: 621335\n120417: 666387\n111299: 612336\n143894: 651818\n177046: 675776\n140080: 648966\n136368: 648546\n136316: 625303\n164326: 652743\n170633: 677098\n163105: 629053\n170296: 610439\n157278: 667794\n165835: 660115\n127862: 667631\n114739: 646982\n100670: 670895\n111220: 664270\n166249: 641308\n140349: 634179\n109256: 649948\n176986: 660576\n148036: 663038\n150549: 661273\n146690: 615737\n109464: 616862\n135109: 632363\n133909: 631478\n152041: 610497\n122012: 648968\n143599: 611738\n175527: 620532\n175769: 629206\n110999: 603871\n107252: 625764\n140936: 656480\n174515: 601079\n128405: 646623\n100586: 624950\n156378: 601271\n134359: 611577\n100078: 673400\n147183: 602146\n159295: 603666\n140326: 602005\n149774: 621121\n111414: 607050\n118773: 644638\n112940: 642305\n133790: 678352\n154638: 625898\n138034: 603676\n174192: 613421\n120992: 601032\n140793: 667057\n155582: 656478\n174879: 664882\n\nLookup the value for key 144408.\nValue:",
+        "output": "640232\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251564,
+          251521,
+          251527,
+          251556,
+          251527,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "640232",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t0-s1",
+        "N": 64,
+        "template": 0,
+        "query_position": 63,
+        "key": 168333,
+        "answer": "656026",
+        "condition": "normal",
+        "prompt_tokens": 983,
+        "prompt_token_sha256_int64le": "2991151d35d2f36dd72f4a4f217c1574513f01762b749c965e5a58f38b7aa00a",
+        "prompt": "Key-value records:\n119353: 663147\n106060: 636916\n125327: 640589\n159531: 661310\n178366: 648203\n173109: 662714\n105023: 630773\n148647: 602276\n158276: 632017\n178347: 658326\n161412: 668195\n111817: 649480\n122315: 622353\n152409: 626134\n160704: 636785\n168943: 604961\n141651: 613513\n125480: 643493\n161133: 676118\n144117: 644351\n142013: 607372\n115307: 650333\n138583: 614558\n175877: 668731\n101995: 669769\n104842: 633353\n140028: 646875\n156632: 620954\n103057: 661728\n117172: 604515\n169893: 653420\n116309: 660658\n130258: 642804\n118248: 658415\n145222: 674784\n132168: 602638\n159431: 635886\n133046: 676651\n177317: 645423\n130950: 669521\n157720: 614842\n164744: 619786\n170147: 629820\n136691: 645977\n134898: 678904\n137071: 653692\n104330: 641033\n125812: 623604\n161158: 677377\n141055: 679347\n144163: 605342\n103510: 665741\n146434: 613357\n113882: 655557\n118363: 660786\n114610: 678013\n124587: 647304\n121437: 630895\n158743: 610755\n141190: 624813\n114364: 647219\n111455: 621617\n107643: 659051\n168333: 656026\n\nLookup the value for key 168333.\nValue:",
+        "output": "668731\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251574,
+          251577,
+          251581,
+          251556,
+          251525,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "668731",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t0-s1-removed",
+        "N": 64,
+        "template": 0,
+        "query_position": 63,
+        "key": 168333,
+        "answer": "656026",
+        "condition": "target_removed",
+        "prompt_tokens": 983,
+        "prompt_token_sha256_int64le": "679b4d4a9d32443948888de98dcc66b6bf539b9dd8f933fbe157888ade94bf44",
+        "prompt": "Key-value records:\n119353: 663147\n106060: 636916\n125327: 640589\n159531: 661310\n178366: 648203\n173109: 662714\n105023: 630773\n148647: 602276\n158276: 632017\n178347: 658326\n161412: 668195\n111817: 649480\n122315: 622353\n152409: 626134\n160704: 636785\n168943: 604961\n141651: 613513\n125480: 643493\n161133: 676118\n144117: 644351\n142013: 607372\n115307: 650333\n138583: 614558\n175877: 668731\n101995: 669769\n104842: 633353\n140028: 646875\n156632: 620954\n103057: 661728\n117172: 604515\n169893: 653420\n116309: 660658\n130258: 642804\n118248: 658415\n145222: 674784\n132168: 602638\n159431: 635886\n133046: 676651\n177317: 645423\n130950: 669521\n157720: 614842\n164744: 619786\n170147: 629820\n136691: 645977\n134898: 678904\n137071: 653692\n104330: 641033\n125812: 623604\n161158: 677377\n141055: 679347\n144163: 605342\n103510: 665741\n146434: 613357\n113882: 655557\n118363: 660786\n114610: 678013\n124587: 647304\n121437: 630895\n158743: 610755\n141190: 624813\n114364: 647219\n111455: 621617\n107643: 659051\n190001: 690001\n\nLookup the value for key 168333.\nValue:",
+        "output": "668195\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251574,
+          251577,
+          251525,
+          251561,
+          251557,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "668195",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t1-s0",
+        "N": 64,
+        "template": 1,
+        "query_position": 0,
+        "key": 116205,
+        "answer": "644299",
+        "condition": "normal",
+        "prompt_tokens": 1236,
+        "prompt_token_sha256_int64le": "af71fce93cac0e82ad12a7405b88c1b1e4643c6186ada4b16ae96f0e5643991f",
+        "prompt": "Key 116205 has value 644299.\nKey 125314 has value 610092.\nKey 159425 has value 645032.\nKey 155954 has value 638595.\nKey 123059 has value 667675.\nKey 115495 has value 668144.\nKey 128266 has value 665961.\nKey 137732 has value 655787.\nKey 115725 has value 632046.\nKey 123917 has value 667182.\nKey 126483 has value 617397.\nKey 125002 has value 677117.\nKey 151129 has value 632720.\nKey 173091 has value 638362.\nKey 167731 has value 659986.\nKey 143403 has value 660231.\nKey 122243 has value 634636.\nKey 124544 has value 619425.\nKey 118190 has value 629767.\nKey 156646 has value 622281.\nKey 151729 has value 662065.\nKey 123615 has value 627189.\nKey 161976 has value 655483.\nKey 175995 has value 671053.\nKey 154103 has value 639532.\nKey 143155 has value 672033.\nKey 123732 has value 607669.\nKey 105640 has value 661072.\nKey 119827 has value 677534.\nKey 133766 has value 655684.\nKey 102071 has value 629655.\nKey 136579 has value 657001.\nKey 123403 has value 665107.\nKey 149798 has value 653974.\nKey 163643 has value 626748.\nKey 168436 has value 610141.\nKey 159982 has value 625506.\nKey 103098 has value 629766.\nKey 148733 has value 655174.\nKey 171422 has value 622948.\nKey 106797 has value 651748.\nKey 176708 has value 662615.\nKey 119369 has value 658614.\nKey 110124 has value 661201.\nKey 172916 has value 610230.\nKey 157562 has value 676392.\nKey 151656 has value 608144.\nKey 137638 has value 610747.\nKey 144121 has value 661160.\nKey 177454 has value 664728.\nKey 178824 has value 607575.\nKey 171931 has value 621352.\nKey 108950 has value 640147.\nKey 119843 has value 657748.\nKey 113406 has value 663931.\nKey 168248 has value 666387.\nKey 117204 has value 642459.\nKey 129306 has value 664190.\nKey 118929 has value 643396.\nKey 102466 has value 678220.\nKey 133461 has value 676073.\nKey 117014 has value 620241.\nKey 153011 has value 628571.\nKey 130236 has value 652495.\n\nQuestion: What is the value of key 116205?\nAnswer:",
+        "output": "644299\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251564,
+          251564,
+          251527,
+          251561,
+          251561,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "644299",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t1-s0-removed",
+        "N": 64,
+        "template": 1,
+        "query_position": 0,
+        "key": 116205,
+        "answer": "644299",
+        "condition": "target_removed",
+        "prompt_tokens": 1236,
+        "prompt_token_sha256_int64le": "bbc9b7165d24d16591bb0c1dfa129e5d826ff05b5e2f25f369d00825bb5dc0dc",
+        "prompt": "Key 190000 has value 690000.\nKey 125314 has value 610092.\nKey 159425 has value 645032.\nKey 155954 has value 638595.\nKey 123059 has value 667675.\nKey 115495 has value 668144.\nKey 128266 has value 665961.\nKey 137732 has value 655787.\nKey 115725 has value 632046.\nKey 123917 has value 667182.\nKey 126483 has value 617397.\nKey 125002 has value 677117.\nKey 151129 has value 632720.\nKey 173091 has value 638362.\nKey 167731 has value 659986.\nKey 143403 has value 660231.\nKey 122243 has value 634636.\nKey 124544 has value 619425.\nKey 118190 has value 629767.\nKey 156646 has value 622281.\nKey 151729 has value 662065.\nKey 123615 has value 627189.\nKey 161976 has value 655483.\nKey 175995 has value 671053.\nKey 154103 has value 639532.\nKey 143155 has value 672033.\nKey 123732 has value 607669.\nKey 105640 has value 661072.\nKey 119827 has value 677534.\nKey 133766 has value 655684.\nKey 102071 has value 629655.\nKey 136579 has value 657001.\nKey 123403 has value 665107.\nKey 149798 has value 653974.\nKey 163643 has value 626748.\nKey 168436 has value 610141.\nKey 159982 has value 625506.\nKey 103098 has value 629766.\nKey 148733 has value 655174.\nKey 171422 has value 622948.\nKey 106797 has value 651748.\nKey 176708 has value 662615.\nKey 119369 has value 658614.\nKey 110124 has value 661201.\nKey 172916 has value 610230.\nKey 157562 has value 676392.\nKey 151656 has value 608144.\nKey 137638 has value 610747.\nKey 144121 has value 661160.\nKey 177454 has value 664728.\nKey 178824 has value 607575.\nKey 171931 has value 621352.\nKey 108950 has value 640147.\nKey 119843 has value 657748.\nKey 113406 has value 663931.\nKey 168248 has value 666387.\nKey 117204 has value 642459.\nKey 129306 has value 664190.\nKey 118929 has value 643396.\nKey 102466 has value 678220.\nKey 133461 has value 676073.\nKey 117014 has value 620241.\nKey 153011 has value 628571.\nKey 130236 has value 652495.\n\nQuestion: What is the value of key 116205?\nAnswer:",
+        "output": "610092\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251521,
+          251521,
+          251561,
+          251527,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "610092",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t1-s1",
+        "N": 64,
+        "template": 1,
+        "query_position": 63,
+        "key": 101447,
+        "answer": "651086",
+        "condition": "normal",
+        "prompt_tokens": 1236,
+        "prompt_token_sha256_int64le": "276e49d17d7b268f01e0087d34769ce9a2ba857fa038088c8a870499dc0146c8",
+        "prompt": "Key 121409 has value 650075.\nKey 136883 has value 619210.\nKey 101288 has value 667624.\nKey 130892 has value 672308.\nKey 178758 has value 606675.\nKey 114799 has value 603778.\nKey 142412 has value 600877.\nKey 128013 has value 623309.\nKey 106811 has value 657533.\nKey 133618 has value 652711.\nKey 137551 has value 655014.\nKey 125272 has value 630606.\nKey 131703 has value 635233.\nKey 130428 has value 623439.\nKey 177444 has value 678500.\nKey 177533 has value 601008.\nKey 164939 has value 624034.\nKey 163719 has value 669226.\nKey 170604 has value 642452.\nKey 175479 has value 621738.\nKey 131603 has value 626894.\nKey 131304 has value 665727.\nKey 149469 has value 620698.\nKey 162718 has value 606230.\nKey 117655 has value 610935.\nKey 175664 has value 610955.\nKey 123537 has value 619201.\nKey 149769 has value 661712.\nKey 119330 has value 632766.\nKey 126520 has value 657755.\nKey 163054 has value 657989.\nKey 174691 has value 614440.\nKey 179944 has value 616637.\nKey 113650 has value 606043.\nKey 111570 has value 610361.\nKey 155284 has value 637461.\nKey 137880 has value 676058.\nKey 127931 has value 611495.\nKey 137966 has value 664604.\nKey 106804 has value 667725.\nKey 156843 has value 637193.\nKey 144700 has value 618849.\nKey 126967 has value 616746.\nKey 158593 has value 615807.\nKey 149083 has value 651016.\nKey 134190 has value 662907.\nKey 134750 has value 601926.\nKey 150410 has value 665282.\nKey 114676 has value 612384.\nKey 148569 has value 661106.\nKey 122347 has value 644578.\nKey 138025 has value 654614.\nKey 153493 has value 600380.\nKey 137071 has value 637483.\nKey 128675 has value 664656.\nKey 160998 has value 611124.\nKey 164019 has value 661443.\nKey 101131 has value 631468.\nKey 169285 has value 660904.\nKey 173980 has value 634649.\nKey 164659 has value 647422.\nKey 149380 has value 651665.\nKey 172324 has value 614216.\nKey 101447 has value 651086.\n\nQuestion: What is the value of key 101447?\nAnswer:",
+        "output": "614470\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251564,
+          251564,
+          251581,
+          251521,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "614470",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t1-s1-removed",
+        "N": 64,
+        "template": 1,
+        "query_position": 63,
+        "key": 101447,
+        "answer": "651086",
+        "condition": "target_removed",
+        "prompt_tokens": 1236,
+        "prompt_token_sha256_int64le": "33b3ddc7678b6047a637b00db68e61ab64c9d308403c0ea1e782d05333bb6b30",
+        "prompt": "Key 121409 has value 650075.\nKey 136883 has value 619210.\nKey 101288 has value 667624.\nKey 130892 has value 672308.\nKey 178758 has value 606675.\nKey 114799 has value 603778.\nKey 142412 has value 600877.\nKey 128013 has value 623309.\nKey 106811 has value 657533.\nKey 133618 has value 652711.\nKey 137551 has value 655014.\nKey 125272 has value 630606.\nKey 131703 has value 635233.\nKey 130428 has value 623439.\nKey 177444 has value 678500.\nKey 177533 has value 601008.\nKey 164939 has value 624034.\nKey 163719 has value 669226.\nKey 170604 has value 642452.\nKey 175479 has value 621738.\nKey 131603 has value 626894.\nKey 131304 has value 665727.\nKey 149469 has value 620698.\nKey 162718 has value 606230.\nKey 117655 has value 610935.\nKey 175664 has value 610955.\nKey 123537 has value 619201.\nKey 149769 has value 661712.\nKey 119330 has value 632766.\nKey 126520 has value 657755.\nKey 163054 has value 657989.\nKey 174691 has value 614440.\nKey 179944 has value 616637.\nKey 113650 has value 606043.\nKey 111570 has value 610361.\nKey 155284 has value 637461.\nKey 137880 has value 676058.\nKey 127931 has value 611495.\nKey 137966 has value 664604.\nKey 106804 has value 667725.\nKey 156843 has value 637193.\nKey 144700 has value 618849.\nKey 126967 has value 616746.\nKey 158593 has value 615807.\nKey 149083 has value 651016.\nKey 134190 has value 662907.\nKey 134750 has value 601926.\nKey 150410 has value 665282.\nKey 114676 has value 612384.\nKey 148569 has value 661106.\nKey 122347 has value 644578.\nKey 138025 has value 654614.\nKey 153493 has value 600380.\nKey 137071 has value 637483.\nKey 128675 has value 664656.\nKey 160998 has value 611124.\nKey 164019 has value 661443.\nKey 101131 has value 631468.\nKey 169285 has value 660904.\nKey 173980 has value 634649.\nKey 164659 has value 647422.\nKey 149380 has value 651665.\nKey 172324 has value 614216.\nKey 190001 has value 690001.\n\nQuestion: What is the value of key 101447?\nAnswer:",
+        "output": "610955\n\nA:\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251521,
+          251561,
+          251557,
+          251557,
+          14,
+          14,
+          251519,
+          251541,
+          14
+        ],
+        "prediction": "610955",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t2-s0",
+        "N": 64,
+        "template": 2,
+        "query_position": 0,
+        "key": 123260,
+        "answer": "677753",
+        "condition": "normal",
+        "prompt_tokens": 977,
+        "prompt_token_sha256_int64le": "ac29481f2eaaafb2ac7202bfadb415c5d502d797e7c84969f2a75c409cb4eeed",
+        "prompt": "Dictionary:\n123260 -> 677753\n123020 -> 638594\n130866 -> 612371\n174513 -> 660033\n150659 -> 638991\n111088 -> 641181\n116209 -> 627051\n153578 -> 628043\n169881 -> 607814\n104927 -> 649527\n112119 -> 642529\n130997 -> 633307\n172095 -> 670502\n167067 -> 640762\n120226 -> 642562\n115346 -> 649354\n163422 -> 661094\n166888 -> 601368\n139141 -> 614230\n163929 -> 676217\n152980 -> 650850\n156693 -> 677638\n162696 -> 656084\n129028 -> 651541\n113273 -> 639522\n111680 -> 645946\n122865 -> 668357\n179924 -> 662185\n106825 -> 627195\n169039 -> 648092\n116531 -> 620425\n139587 -> 654877\n131689 -> 664332\n128456 -> 659073\n162863 -> 606775\n109159 -> 608720\n146120 -> 648771\n146619 -> 600002\n110555 -> 615874\n140687 -> 665970\n164270 -> 644219\n104469 -> 611006\n109542 -> 623250\n166694 -> 611370\n146570 -> 633660\n111862 -> 660491\n121890 -> 676375\n141006 -> 671913\n102971 -> 640256\n113256 -> 646152\n149531 -> 620370\n111679 -> 676747\n122710 -> 659444\n147267 -> 612144\n152502 -> 613680\n116138 -> 601843\n161373 -> 637985\n105616 -> 600980\n142345 -> 633710\n123152 -> 618148\n177815 -> 641254\n130541 -> 661120\n124614 -> 629957\n155697 -> 606968\n\nReturn the stored value.\n123260 ->",
+        "output": "677753\n1230",
+        "generated_ids": [
+          251490,
+          251574,
+          251581,
+          251581,
+          251581,
+          251557,
+          251556,
+          14,
+          251525,
+          251527,
+          251556,
+          251521
+        ],
+        "prediction": "677753",
+        "correct": true,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t2-s0-removed",
+        "N": 64,
+        "template": 2,
+        "query_position": 0,
+        "key": 123260,
+        "answer": "677753",
+        "condition": "target_removed",
+        "prompt_tokens": 977,
+        "prompt_token_sha256_int64le": "1bf44569fdaef6144c1de11c6eea0ba6e5b038d7a7437be28f2ec9f913eb8db2",
+        "prompt": "Dictionary:\n190000 -> 690000\n123020 -> 638594\n130866 -> 612371\n174513 -> 660033\n150659 -> 638991\n111088 -> 641181\n116209 -> 627051\n153578 -> 628043\n169881 -> 607814\n104927 -> 649527\n112119 -> 642529\n130997 -> 633307\n172095 -> 670502\n167067 -> 640762\n120226 -> 642562\n115346 -> 649354\n163422 -> 661094\n166888 -> 601368\n139141 -> 614230\n163929 -> 676217\n152980 -> 650850\n156693 -> 677638\n162696 -> 656084\n129028 -> 651541\n113273 -> 639522\n111680 -> 645946\n122865 -> 668357\n179924 -> 662185\n106825 -> 627195\n169039 -> 648092\n116531 -> 620425\n139587 -> 654877\n131689 -> 664332\n128456 -> 659073\n162863 -> 606775\n109159 -> 608720\n146120 -> 648771\n146619 -> 600002\n110555 -> 615874\n140687 -> 665970\n164270 -> 644219\n104469 -> 611006\n109542 -> 623250\n166694 -> 611370\n146570 -> 633660\n111862 -> 660491\n121890 -> 676375\n141006 -> 671913\n102971 -> 640256\n113256 -> 646152\n149531 -> 620370\n111679 -> 676747\n122710 -> 659444\n147267 -> 612144\n152502 -> 613680\n116138 -> 601843\n161373 -> 637985\n105616 -> 600980\n142345 -> 633710\n123152 -> 618148\n177815 -> 641254\n130541 -> 661120\n124614 -> 629957\n155697 -> 606968\n\nReturn the stored value.\n123260 ->",
+        "output": "638594\n1308",
+        "generated_ids": [
+          251490,
+          251574,
+          251556,
+          251577,
+          251557,
+          251561,
+          251564,
+          14,
+          251525,
+          251556,
+          251521,
+          251577
+        ],
+        "prediction": "638594",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t2-s1",
+        "N": 64,
+        "template": 2,
+        "query_position": 63,
+        "key": 110134,
+        "answer": "649843",
+        "condition": "normal",
+        "prompt_tokens": 977,
+        "prompt_token_sha256_int64le": "e3e311b814fae10c1d523103031db7e4e43262d13f1b475244fe29d8d283305f",
+        "prompt": "Dictionary:\n119971 -> 672226\n161630 -> 619673\n119060 -> 620604\n146815 -> 666153\n178063 -> 640473\n168088 -> 634956\n151888 -> 630401\n171882 -> 646802\n113032 -> 628589\n145570 -> 645812\n149232 -> 675432\n143293 -> 659146\n149430 -> 676667\n141598 -> 668119\n137638 -> 631575\n101968 -> 619710\n149647 -> 608947\n125089 -> 654432\n128002 -> 674528\n133887 -> 676971\n125515 -> 609647\n138191 -> 662760\n105717 -> 635813\n114458 -> 610102\n154120 -> 619958\n115912 -> 616654\n143990 -> 672436\n114852 -> 631717\n149884 -> 640179\n175247 -> 655402\n163608 -> 600506\n175603 -> 608317\n169125 -> 678125\n141401 -> 650644\n171716 -> 664005\n157748 -> 661817\n104801 -> 674427\n143569 -> 607765\n171821 -> 601866\n165693 -> 628492\n123894 -> 662591\n124279 -> 656458\n145819 -> 614834\n149614 -> 657753\n160878 -> 658464\n164764 -> 661836\n111534 -> 649021\n121891 -> 652854\n148686 -> 635541\n161957 -> 621927\n146491 -> 655485\n129299 -> 652397\n102644 -> 672849\n145088 -> 609648\n123875 -> 678655\n175221 -> 643285\n152216 -> 600914\n155810 -> 648603\n112479 -> 628729\n160923 -> 641507\n161246 -> 641759\n167590 -> 649202\n120167 -> 614828\n110134 -> 649843\n\nReturn the stored value.\n110134 ->",
+        "output": "619958\n\n\n\n\n",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251561,
+          251561,
+          251557,
+          251577,
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "prediction": "619958",
+        "correct": false,
+        "cache_bytes": 122028032
+      },
+      {
+        "id": "validation-n64-t2-s1-removed",
+        "N": 64,
+        "template": 2,
+        "query_position": 63,
+        "key": 110134,
+        "answer": "649843",
+        "condition": "target_removed",
+        "prompt_tokens": 977,
+        "prompt_token_sha256_int64le": "596525566f5e51cb5acc412365e64948d1e655c57147f73bc135fe5086b4f4b1",
+        "prompt": "Dictionary:\n119971 -> 672226\n161630 -> 619673\n119060 -> 620604\n146815 -> 666153\n178063 -> 640473\n168088 -> 634956\n151888 -> 630401\n171882 -> 646802\n113032 -> 628589\n145570 -> 645812\n149232 -> 675432\n143293 -> 659146\n149430 -> 676667\n141598 -> 668119\n137638 -> 631575\n101968 -> 619710\n149647 -> 608947\n125089 -> 654432\n128002 -> 674528\n133887 -> 676971\n125515 -> 609647\n138191 -> 662760\n105717 -> 635813\n114458 -> 610102\n154120 -> 619958\n115912 -> 616654\n143990 -> 672436\n114852 -> 631717\n149884 -> 640179\n175247 -> 655402\n163608 -> 600506\n175603 -> 608317\n169125 -> 678125\n141401 -> 650644\n171716 -> 664005\n157748 -> 661817\n104801 -> 674427\n143569 -> 607765\n171821 -> 601866\n165693 -> 628492\n123894 -> 662591\n124279 -> 656458\n145819 -> 614834\n149614 -> 657753\n160878 -> 658464\n164764 -> 661836\n111534 -> 649021\n121891 -> 652854\n148686 -> 635541\n161957 -> 621927\n146491 -> 655485\n129299 -> 652397\n102644 -> 672849\n145088 -> 609648\n123875 -> 678655\n175221 -> 643285\n152216 -> 600914\n155810 -> 648603\n112479 -> 628729\n160923 -> 641507\n161246 -> 641759\n167590 -> 649202\n120167 -> 614828\n190001 -> 690001\n\nReturn the stored value.\n110134 ->",
+        "output": "610134\n1464",
+        "generated_ids": [
+          251490,
+          251574,
+          251525,
+          251521,
+          251525,
+          251556,
+          251564,
+          14,
+          251525,
+          251564,
+          251574,
+          251564
+        ],
+        "prediction": "610134",
+        "correct": false,
+        "cache_bytes": 122028032
+      }
+    ],
+    "interpretation": "Small engineering screen; not statistical equivalence. Near-zero baseline recall cannot establish retained recall capacity.",
+    "elapsed_seconds": 563.6087110042572
+  },
+  "gpu_memory": {
+    "peak_allocated_bytes": 16942446080,
+    "peak_reserved_bytes": 17209229312,
+    "current_allocated_bytes": 16541282304,
+    "note": "Decoded FP16 quality reference, not compressed model residency"
+  }
+}

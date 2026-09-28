@@ -1,6 +1,6 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: all 8.237B parameters quantized and independently decoded; raw data files 2,886,482,462 bytes. Development PPL +17.6%; full and tokenwise quality measurements running. No model release yet.
+Status: all 8.237B parameters quantized and independently decoded; full test PPL +20.21%, normal MK 18/48 to 15/48. Tokenwise development validation complete. Experimental release packaging underway; quality-retention target not met.
 
 ## Scope
 
@@ -36,8 +36,8 @@ Status: all 8.237B parameters quantized and independently decoded; raw data file
 
 ## Evaluation and release
 
-- [ ] Compare original and reconstructed quantized models on the same PPL and multi-key recall protocol.
-- [ ] Keep development screens distinct from full evaluation and numerical roundtrip checks.
+- [x] Compare original and reconstructed quantized models on the same PPL and multi-key recall protocol.
+- [x] Keep development screens distinct from full evaluation and numerical roundtrip checks.
 - [ ] Measure actual model bytes and evaluation memory; separate compressed file size from inference residency.
 - [ ] Release model artifact, tokenizer/config, checksums, source revision and reproducible commands.
 - [ ] Publish quality changes, limitations and a bounded comparison to available same-base releases.
