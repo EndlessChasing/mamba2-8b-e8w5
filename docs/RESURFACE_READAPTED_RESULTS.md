@@ -64,7 +64,13 @@ bindings. These are correctness checks and do not establish recall/PPL quality.
 
 - [x] Source/current384+384 MK baseline and integrity/replay audit.
 - [x] Frozen bounded1536-step recipe, data and CPU preflight.
-- [ ] Native8B adapter zero/step/gradient/export correctness smoke.
+- [x] Native8B adapter zero/step/gradient/export correctness smoke. All zero
+  prefill/three-step/cache comparisons are exact; checkpoint gradients match
+  exactly across224 tensors. Full-vocabulary MK/prose objective differences
+  are3.41e-8/6.55e-8. One complete MK+511-prose trial succeeds without overflow,
+  then is discarded. Actual FP16 export/reload and hook-removal restoration
+  are exact; both507-tensor models remain unchanged. Smoke exits0 in333.2057s,
+  report SHA256 `3e34033ec70f2827b674d1f953afc318758868c51791529f49f33be8a8b04a89`.
 - [ ] Final1536 training and actualFP16 export verification.
 - [ ] Same-enabled-adapter DEV MK and64-window PPL joint screen.
 - [ ] Conditional complete130-window PPL no greater than paired current.
