@@ -1,0 +1,36 @@
+{
+  "format": "MAMBA2_READONLY_LICENSE_COPY_REGRESSION_V1",
+  "complete": true,
+  "exit_code": 0,
+  "command": "python3 tests/test_release_readonly_licenses.py -v",
+  "scope": "CPU filesystem regression against exact copy_license_assets function compiled from source AST; unrelated torch/GPU modules not imported.",
+  "tests_passed": 1,
+  "subcases": [
+    "PROJECT-LICENSE absent from licenses/",
+    "PROJECT-LICENSE already present as placeholder"
+  ],
+  "source_modes": {
+    "files": "0444",
+    "directories": "0555"
+  },
+  "checks": [
+    "root LICENSE copied to PROJECT-LICENSE with exact bytes in both subcases",
+    "all upstream and nested license bytes preserved",
+    "all source bytes, modes and mtimes unchanged",
+    "destination directories and files retain owner write permission",
+    "existing destination refused"
+  ],
+  "gpu_used": false,
+  "full_pack_performed": false,
+  "remote_build_performed": false,
+  "files": {
+    "scripts/package_release.py": {
+      "bytes": 32354,
+      "sha256": "76b9dc2ba349ca5c564f2d61c21872235871950622f303dcb48cc7b1134bf5a1"
+    },
+    "tests/test_release_readonly_licenses.py": {
+      "bytes": 3578,
+      "sha256": "ec676d27b75042b96f9e330f2e5ee99a5a42f45e44278cea34ba29dcda7ca806"
+    }
+  }
+}

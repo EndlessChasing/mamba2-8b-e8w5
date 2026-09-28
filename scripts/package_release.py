@@ -60,6 +60,38 @@ def record_asset(directory, path, role):
             "bytes": path.stat().st_size, "sha256": sha256_file(path)}
 
 
+def copy_license_assets(source_root, destination):
+    """Copy license bytes with normal destination modes, never source modes.
+
+    Git exports may make every source file444 and directory555. copytree's
+    directory copystat would also make the destination unwritable before the
+    project LICENSE is added. Build fresh directories and copy regular bytes.
+    """
+    source_root, destination = Path(source_root), Path(destination)
+    source = source_root / "licenses"
+    if source.is_symlink() or not source.is_dir():
+        raise ValueError("License source must be a regular directory")
+    destination.mkdir()
+    for path in sorted(source.rglob("*")):
+        target = destination / path.relative_to(source)
+        if path.is_symlink():
+            raise ValueError("License assets must not be symlinks")
+        if path.is_dir():
+            target.mkdir(parents=True, exist_ok=True)
+        elif path.is_file():
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(path, target)
+        else:
+            raise ValueError(f"Unsupported license asset: {path}")
+    project_license = source_root / "LICENSE"
+    if project_license.is_symlink():
+        raise ValueError("Project license must not be a symlink")
+    if project_license.is_file():
+        # Preserve existing behavior: the root LICENSE supplies PROJECT-LICENSE,
+        # including when a placeholder with that name existed in licenses/.
+        shutil.copyfile(project_license, destination / "PROJECT-LICENSE")
+
+
 def git_value(*arguments):
     result = subprocess.run(["git", "-C", str(ROOT), *arguments], capture_output=True, text=True)
     return result.stdout.strip() if result.returncode == 0 else None
@@ -358,9 +390,7 @@ def build_release(args):
                     else [{"path": CONTAINER_NAME, "offset": 0, "bytes": container.stat().st_size}])
     shutil.copyfile(tokenizer, staging / TOKENIZER_NAME)
     shutil.copyfile(raw_dir / "config.json", staging / "config.json")
-    shutil.copytree(ROOT / "licenses", staging / "licenses")
-    if (ROOT / "LICENSE").is_file():
-        shutil.copyfile(ROOT / "LICENSE", staging / "licenses" / "PROJECT-LICENSE")
+    copy_license_assets(ROOT, staging / "licenses")
     reports = []
     quality_paths = []
     quality_reports = {}
