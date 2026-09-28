@@ -3,7 +3,7 @@
 **Publication is authorized for the latest validated model as a research
 prerelease.** This supersedes the earlier publication hold for the current release;
 historical failed experiments and their frozen protocols remain unchanged.
-The planned tag is `v0.2.0-resurface`. The older empty
+The fixed source tag is `v0.2.0-resurface`. The older empty
 `v0.1.0-experimental` draft is retained separately.
 
 ## Scientific evidence
@@ -24,17 +24,17 @@ The planned tag is `v0.2.0-resurface`. The older empty
 
 Quality validation of the measured model is complete. The following acceptance
 checks concern the **new complete package**, not the earlier all-small bundle.
-They remain pending until a terminal receipt establishes each result.
+Terminal CPU/GPU receipts establish the first five checks. Upload/public verification remains pending.
 
-- [ ] Compose all latest base files and the actual final soft adapter into one
+- [x] Compose all latest base files and the actual final soft adapter into one
   self-contained model; bind the 507+224 decoded tensors to the quality reports.
-- [ ] Generate an accurate outer model card and file ledger for 112 nominal2.5-bit
+- [x] Generate an accurate outer model card and file ledger for 112 nominal2.5-bit
   projections, W4 embedding/W5 head, readapted393 and the soft adapter.
-- [ ] Pack and read back every raw member; count complete distribution bytes,
+- [x] Pack and read back every raw member; count complete distribution bytes,
   including tokenizer, matching software, licenses, reports and manifest itself.
-- [ ] Restore using the shipped software into a fresh path and compare every
+- [x] Restore using the shipped software into a fresh path and compare every
   restored member with the pinned raw ledger.
-- [ ] Run the new loader from archived software using only restored model files,
+- [x] Run the new loader from archived software using only restored model files,
   with soft adapter enabled and original-checkpoint access excluded.
 - [ ] Check flat GitHub asset basename uniqueness, upload the complete assets and
   verify the public manifest/assets for `v0.2.0-resurface`.

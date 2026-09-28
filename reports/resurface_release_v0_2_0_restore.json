@@ -1,0 +1,19 @@
+{
+  "assets_verified": 25,
+  "complete": true,
+  "container_bytes": 3146417981,
+  "container_sha256": "8e13536a99b45009f057c32b979bd25fab4abcd1c4520649371b70174f65ac18",
+  "manifest_authenticity_checked": true,
+  "manifest_sha256": "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d",
+  "note": "Every raw file SHA matches the original quantized package. This is not a model-quality evaluation.",
+  "quality_reports": [
+    "reports/resurface_soft_continuation_v1_full_eval.json",
+    "reports/resurface_soft_continuation_v1_confirm_eval.json"
+  ],
+  "quality_status": "same-soft-adapter-full-PPL-and-fresh-synthetic-confirmation-reports-attached",
+  "raw_manifest_sha256": "7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f",
+  "release_dir": "/home/horde/Mamba2-8B-E8W5/artifacts/resurface_release_v0_2_0",
+  "restored_raw_dir": "/home/horde/Mamba2-8B-E8W5/artifacts/resurface_restored_v0_2_0/raw",
+  "restored_raw_files": 120,
+  "total_release_bytes": 3165987804
+}

@@ -2,9 +2,10 @@
 
 Target: **public research prerelease**
 [`v0.2.0-resurface`](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface).
-Publication is authorized. At this documentation snapshot, assembly and public
-asset verification are in progress; no completed upload or public download is
-claimed. The old empty `v0.1.0-experimental` draft remains separate.
+Publication is authorized. Complete packaging, public-command restoration and
+archived-source GPU generation have passed. The draft's assets are uploading;
+public availability will be recorded after GitHub verification. The old empty
+`v0.1.0-experimental` draft remains separate.
 
 ## Model selected for this release
 
@@ -66,3 +67,32 @@ is GPU residency.
 See [readiness](RELEASE_READINESS.md) for status and [DOWNLOAD.md](DOWNLOAD.md)
 for the end-user verification flow. Exact terminal packaging and public release
 receipts will be recorded here when available.
+
+## Completed build and restored inference
+
+- [Build/process receipt](../reports/resurface_release_v0_2_0_build.json): exit0, CPU-only,72.15s;119 payload files plus the raw manifest restored exactly through the unchanged public CLI.
+- [Independent distribution audit](../reports/resurface_release_v0_2_0_independent_audit.json): reconstructed file and tensor ledgers, source provenance, byte totals and download contract all pass.
+- [Restored GPU inference](../reports/resurface_release_v0_2_0_inference.json): exit0,110.45s; actual archived code, all507 decoded base and224 adapter hashes exact, soft adapter enabled, three short prompts and exact fresh-cache repetition. No original checkpoint/calibration/training-file access; this is a Python-level access check, not OS isolation.
+- [Restore receipt](../reports/resurface_release_v0_2_0_restore.json) binds all120 files to the final release manifest.
+
+The batch1 cache is112 FP16 tensors totaling **122,028,032 bytes**. This smoke
+peaked at **22,063,559,680 allocated /23,922,212,864 reserved GPU bytes** and ended
+with16,820,608,512 allocated bytes. These are observed reference-loader figures
+from the96GB RTX PRO6000, not a minimum-VRAM or throughput benchmark. Packaging
+and generation do not remeasure the previously completed PPL/MK scores.
+
+Exact source/tag commit: `e89c764e33a7fcd72095e1b9b9ea47f22d3ff7bb`.
+The independent audit checked230 archived files against this Git commit, plus
+the producer's snapshot provenance (231 indexed members).
+
+Trusted release-manifest SHA-256:
+
+```text
+da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d
+```
+
+Final raw-manifest SHA-256:
+
+```text
+7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f
+```

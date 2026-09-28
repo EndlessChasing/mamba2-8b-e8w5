@@ -1,0 +1,103 @@
+{
+  "format": "MAMBA2_RESURFACE_RELEASE_METADATA_INDEPENDENT_AUDIT_V1",
+  "complete": true,
+  "release_tag": "v0.2.0-resurface",
+  "inputs": {
+    "build": {
+      "file": "reports/resurface_release_v0_2_0_build.json",
+      "bytes": 4397,
+      "sha256": "1b136f26fcaa8a0d50985b25e764289ff998f32209c04ed5ea1d933ba34ca813"
+    },
+    "build_process": {
+      "file": "reports/resurface_release_v0_2_0_build_process.json",
+      "bytes": 1290,
+      "sha256": "5f045d35f8abc0c705dbc9ac31812bf735c051cda30dbb63ffea3ca622b9a0d8"
+    },
+    "manifest": {
+      "file": "reports/resurface_release_v0_2_0_manifest.json",
+      "bytes": 8428,
+      "sha256": "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d"
+    },
+    "raw_manifest": {
+      "file": "reports/resurface_release_v0_2_0_raw_manifest.json",
+      "bytes": 352665,
+      "sha256": "7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f"
+    },
+    "restore": {
+      "file": "reports/resurface_release_v0_2_0_restore.json",
+      "bytes": 998,
+      "sha256": "8efc3c1fd9c3fc6f14f1d24298e5d15ff045d5bda309370e5d1c442d775cd681"
+    }
+  },
+  "code_snapshot": {
+    "commit": "e89c764e33a7fcd72095e1b9b9ea47f22d3ff7bb",
+    "tree": "ca8188fb64e3ce12a3aae001fb836a8471fd22f2",
+    "exported_archive_sha256": "b8a3334fb75061dd11ac3c99d59c7513dbaa5ba0de237bcfb285b588d0686e1b",
+    "source_zip_sha256": "c927ab7898420ad51d42f2da301122dedf2ee29fb8c36c717826771bc29ba21d",
+    "archived_files_verified": 231,
+    "git_tracked_archived_files_matched_to_commit": 230,
+    "required_loader_source_files_matched": 13
+  },
+  "storage": {
+    "model_plus_adapter_data_bytes": 3141468439,
+    "tokenizer_bytes": 4573028,
+    "raw_manifest_bytes": 352665,
+    "raw_package_bytes": 3146394132,
+    "container_bytes": 3146417981,
+    "container_overhead_bytes": 23849,
+    "complete_release_bytes": 3165987804,
+    "outer_assets": 25,
+    "outer_manifest_bytes": 8428,
+    "public_upload_assets_including_manifest": 26,
+    "parts_bytes": [
+      1500000000,
+      1500000000,
+      146417981
+    ],
+    "storage_mode": "all-raw-members-no-entropy-coding"
+  },
+  "identity": {
+    "raw_manifest_sha256": "7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f",
+    "release_manifest_sha256": "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d",
+    "base_tensors": 507,
+    "adapter_tensors": 224,
+    "raw_payload_files": 119,
+    "restored_members_including_raw_manifest": 120,
+    "adapter_sha256": "1e9857feaf80ede6525cce839726883f6230c98a067cb226eb2f095693ea803e",
+    "gate_mode": "soft"
+  },
+  "quality_summary": {
+    "full_ppl_source_historical": 7.334175947318572,
+    "paired_base_ppl": 7.622396587826496,
+    "active_ppl": 7.593163113563457,
+    "source_relative_ppl_percent": 3.531237430151535,
+    "confirmation_normal_base": 91,
+    "confirmation_normal_active": 340,
+    "confirmation_normal_count": 384,
+    "confirmation_removed_matches": [
+      0,
+      0
+    ],
+    "uncompressed_confirmation_measured": false,
+    "strict_historical_MK_failure_preserved": true
+  },
+  "checks": {
+    "terminal_build_and_restore_exit0": true,
+    "full_encoded_file_ledger_reconstructed": true,
+    "all507_and224_bound_to_completed_evaluations": true,
+    "manifest_self_inclusive_byte_totals_and_parts_exact": true,
+    "flat_asset_basenames_unique": true,
+    "standalone_downloader_metadata_contract": true,
+    "actual_small_source_zip_members_rehashed": true,
+    "archived_git_sources_equal_commit_S": true,
+    "retained_license_asset_hashes_exact": true,
+    "generated_model_card_scopes_correct": true
+  },
+  "limits": [
+    "No weight part or model binary was rehashed by this audit;120-member full-byte readback and restore are verified against the completed builder receipts.",
+    "Actual3MB source archive, its231 members and small license assets were independently read and hashed;230 tracked members matched commit S; SNAPSHOT_PROVENANCE.json is the declared export receipt.",
+    "No GPU or new model-quality measurement; archived-software generation is a separate root-owned check.",
+    "No upload or public availability verification is claimed by this receipt.",
+    "The raw envelope has zero entropy-coded chunks by design; no further compression gain is claimed."
+  ]
+}

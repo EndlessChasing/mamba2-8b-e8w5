@@ -1,13 +1,13 @@
 # Mamba-2 8B E8/W5 execution checklist
 
-Status: the user authorized publication of the latest fixed-soft Resurface candidate. Full validation PPL is **7.593163114** versus source **7.334175947** (+3.53%). Independent MK confirmation is **340/384** versus compressed base **91/384**, with removed-target matches **0/384** for both. The current raw base-plus-adapter data are **3,141,468,439 bytes**. Release packaging, independent restore and archived-source inference checks are in progress for **v0.2.0-resurface**; older candidate failures and artifacts remain retained.
+Status: the user authorized publication of the latest fixed-soft Resurface candidate. Full validation PPL is **7.593163114** versus source **7.334175947** (+3.53%). Independent MK confirmation is **340/384** versus compressed base **91/384**, with removed-target matches **0/384** for both. The current raw base-plus-adapter data are **3,141,468,439 bytes**. Release packaging, independent restore and archived-source inference checks have passed; GitHub upload is in progress for **v0.2.0-resurface**; older candidate failures and artifacts remain retained.
 
 ## Current publication checklist
 
 - [x] Receive explicit user authorization to publish after the source comparison.
 - [x] Fix release identity to the validated axis/readapted base plus enabled soft adapter.
-- [ ] Build complete portable package, tokenizer, corresponding source and licenses.
-- [ ] Restore all released files exactly and run inference using the archived source.
+- [x] Build complete portable package, tokenizer, corresponding source and licenses.
+- [x] Restore all released files exactly and run inference using the archived source.
 - [ ] Upload and verify each asset checksum, then publish the research prerelease.
 - [ ] Confirm public release URL and publish exact download byte counts.
 

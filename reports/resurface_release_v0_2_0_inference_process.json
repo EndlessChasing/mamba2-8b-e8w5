@@ -1,0 +1,33 @@
+{
+  "status": "finished",
+  "pid": 3967933,
+  "started_unix": 1790622491.6441805,
+  "cmd": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "-u",
+    "/home/horde/release-sources/mamba2-resurface-v020-e89c764e33a7/scripts/verify_resurface_release.py",
+    "--release-dir",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/resurface_release_v0_2_0",
+    "--restored-dir",
+    "/home/horde/Mamba2-8B-E8W5/artifacts/resurface_restored_v0_2_0",
+    "--expected-manifest-sha256",
+    "da5931dc8315bf576b773abdf4c77828a2994ccaf4fd14858c7798235b2ef19d",
+    "--report",
+    "/home/horde/Mamba2-8B-E8W5/reports/resurface_release_v0_2_0_inference.json"
+  ],
+  "code_pins": {
+    "/home/horde/release-sources/mamba2-resurface-v020-e89c764e33a7/scripts/verify_resurface_release.py": "4617563b9d2d78323652061c918b08dfe9d9b0e8c20a3f08917f817223449a9c"
+  },
+  "required_reports": {
+    "reports/resurface_release_v0_2_0_build.json": "1b136f26fcaa8a0d50985b25e764289ff998f32209c04ed5ea1d933ba34ca813"
+  },
+  "boot_id": "ce28e8d2-9d77-4304-a305-855d1a9064fd",
+  "start_ticks": 100377875,
+  "exit_code": 0,
+  "finished_unix": 1790622602.0905545,
+  "wall_seconds": 110.44637441635132,
+  "log_sha256": "9916420d789531603f902d12b3a88a8d4130e05848eb07e34ebed3d8ea9e6d1c",
+  "report_sha256": "0cd4a69349a4c933d2c3eaf024e5c63d3ac5fa3d74716e788b0bd1b9085b640a",
+  "report_bytes": 168644,
+  "report_complete": true
+}

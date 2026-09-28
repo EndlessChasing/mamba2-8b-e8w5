@@ -1,0 +1,230 @@
+{
+  "assets": [
+    {
+      "bytes": 3662,
+      "path": "MODEL_CARD.md",
+      "role": "distribution-support",
+      "sha256": "72ed1da21be1fe67ea30840d436508e28cb6d350e48710350f9843b698a7fd37"
+    },
+    {
+      "bytes": 373,
+      "path": "composition_verification.json",
+      "role": "distribution-support",
+      "sha256": "0707585a39742ace6d461b90da9f26cc95c4fa015d35cf9a30c5f1b98ff9e8bb"
+    },
+    {
+      "bytes": 462,
+      "path": "config.json",
+      "role": "distribution-support",
+      "sha256": "fb697f1e612e29c9b4f9886031b21c6a58200961348554288f80f500903b5e6c"
+    },
+    {
+      "bytes": 516,
+      "path": "container_verification.json",
+      "role": "distribution-support",
+      "sha256": "98f51c35f412dc6180818bce2daa5478ba9eeff77c72549b18678dc0a79181c4"
+    },
+    {
+      "bytes": 11358,
+      "path": "licenses/APACHE-2.0.txt",
+      "role": "distribution-support",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 11348,
+      "path": "licenses/MAMBA-APACHE-2.0.txt",
+      "role": "distribution-support",
+      "sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5"
+    },
+    {
+      "bytes": 2162,
+      "path": "licenses/NVIDIA_MAMBA2_MODEL_CARD.md",
+      "role": "distribution-support",
+      "sha256": "2e83defa8c178beb564f510fff383e6e7876d0e3eee044266318c59493e5ecc3"
+    },
+    {
+      "bytes": 35149,
+      "path": "licenses/PROJECT-LICENSE",
+      "role": "distribution-support",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "bytes": 35149,
+      "path": "licenses/QUIP-SHARP-GPL-3.0.txt",
+      "role": "distribution-support",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "bytes": 4479,
+      "path": "licenses/THIRD_PARTY.md",
+      "role": "distribution-support",
+      "sha256": "f20938c522dcaaa613361a273d50028bd521f3cd1df1fd92ee095b03b75a29be"
+    },
+    {
+      "bytes": 1500000000,
+      "path": "mamba2-8b-axis-resurface.raw.huff.part-00001-of-00003",
+      "role": "weight-container-part",
+      "sha256": "ee5d769afbe16fcf00125364d43904caad3a0ae869aec28122116d638335268e"
+    },
+    {
+      "bytes": 1500000000,
+      "path": "mamba2-8b-axis-resurface.raw.huff.part-00002-of-00003",
+      "role": "weight-container-part",
+      "sha256": "ad54ac0124852324029b25ec054dd0e880fd86b6824905930512e9660ca7d5be"
+    },
+    {
+      "bytes": 146417981,
+      "path": "mamba2-8b-axis-resurface.raw.huff.part-00003-of-00003",
+      "role": "weight-container-part",
+      "sha256": "522e0093c7477deac154e8eaa6d15f3c17aad23c6136ddc3d2d6ed0553138d6d"
+    },
+    {
+      "bytes": 4573028,
+      "path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "role": "distribution-support",
+      "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+    },
+    {
+      "bytes": 352665,
+      "path": "raw_manifest.json",
+      "role": "distribution-support",
+      "sha256": "7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f"
+    },
+    {
+      "bytes": 2821435,
+      "path": "reports/axis_small_readaptation_v1_eval.json",
+      "role": "distribution-support",
+      "sha256": "3c6d840315b7552be5530ea884d0a9c620219df8dbbdad1a98b4cdd6e89ad1b4"
+    },
+    {
+      "bytes": 239782,
+      "path": "reports/axis_small_readaptation_v1_manifest.json",
+      "role": "distribution-support",
+      "sha256": "3ede80b2883d8b8987cb3e2198fd8badc2dbbb5af03c8fe6cac7f5f9f5b62047"
+    },
+    {
+      "bytes": 168431,
+      "path": "reports/input_axis_residual_v1_manifest.json",
+      "role": "distribution-support",
+      "sha256": "0fabdec5f6713f4530723f1e6a8c0e8b34563edea015441035613e5232347c85"
+    },
+    {
+      "bytes": 193007,
+      "path": "reports/output_axis_residual_v1_manifest.json",
+      "role": "distribution-support",
+      "sha256": "2b6f56e4f1705ddfad18fc58662a28b1f36b7fd63dd4ff540e733e1f0747812f"
+    },
+    {
+      "bytes": 294171,
+      "path": "reports/resurface_readapted_v1_manifest.json",
+      "role": "distribution-support",
+      "sha256": "5660676adb45806052cbaab7f5e50056769c4f5e106d5a49cf148f025bf2b7a8"
+    },
+    {
+      "bytes": 5171089,
+      "path": "reports/resurface_soft_continuation_v1_confirm_eval.json",
+      "role": "distribution-support",
+      "sha256": "306ae9e8ed5e78756f7c8ea39c8db40dbebf3895ced3c5c279722be5100a344b"
+    },
+    {
+      "bytes": 4523,
+      "path": "reports/resurface_soft_continuation_v1_confirm_independent_audit.json",
+      "role": "distribution-support",
+      "sha256": "37e3c9e0e5498335fcbf0a30fbc0cfaee34418c80cf5ea0a1cfd99adad6b56da"
+    },
+    {
+      "bytes": 2703975,
+      "path": "reports/resurface_soft_continuation_v1_full_eval.json",
+      "role": "distribution-support",
+      "sha256": "06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961"
+    },
+    {
+      "bytes": 4653,
+      "path": "reports/resurface_soft_continuation_v1_full_independent_audit.json",
+      "role": "distribution-support",
+      "sha256": "14a9bb85a95dcdd6429e12409c73336765e546a9ae09b43b2c0bd28bdcc2d515"
+    },
+    {
+      "bytes": 2929978,
+      "path": "source.zip",
+      "role": "distribution-support",
+      "sha256": "c927ab7898420ad51d42f2da301122dedf2ee29fb8c36c717826771bc29ba21d"
+    }
+  ],
+  "complete": true,
+  "container": {
+    "bytes": 3146417981,
+    "format": "E8HUF001",
+    "parts": [
+      {
+        "bytes": 1500000000,
+        "offset": 0,
+        "path": "mamba2-8b-axis-resurface.raw.huff.part-00001-of-00003",
+        "sha256": "ee5d769afbe16fcf00125364d43904caad3a0ae869aec28122116d638335268e"
+      },
+      {
+        "bytes": 1500000000,
+        "offset": 1500000000,
+        "path": "mamba2-8b-axis-resurface.raw.huff.part-00002-of-00003",
+        "sha256": "ad54ac0124852324029b25ec054dd0e880fd86b6824905930512e9660ca7d5be"
+      },
+      {
+        "bytes": 146417981,
+        "offset": 3000000000,
+        "path": "mamba2-8b-axis-resurface.raw.huff.part-00003-of-00003",
+        "sha256": "522e0093c7477deac154e8eaa6d15f3c17aad23c6136ddc3d2d6ed0553138d6d"
+      }
+    ],
+    "raw_manifest_sha256": "7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f",
+    "raw_members": 120,
+    "raw_package_bytes": 3146394132,
+    "sha256": "8e13536a99b45009f057c32b979bd25fab4abcd1c4520649371b70174f65ac18",
+    "storage_mode": "all-raw-members-no-entropy-coding"
+  },
+  "created_utc": "2026-09-28T19:07:04.129922+00:00",
+  "format": "MAMBA2_E8W5_RELEASE_V1",
+  "inference": {
+    "adapter_required": true,
+    "entrypoint": "mamba_e8w5.release_runtime.load_model",
+    "gate_mode": "soft"
+  },
+  "integrity_note": "Trust the independently published release_manifest.json SHA. Internal hashes alone do not provide authenticity.",
+  "quality": {
+    "reports": [
+      "reports/resurface_soft_continuation_v1_full_eval.json",
+      "reports/resurface_soft_continuation_v1_confirm_eval.json"
+    ],
+    "smallest_claim": "not certified by packaging",
+    "status": "same-soft-adapter-full-PPL-and-fresh-synthetic-confirmation-reports-attached"
+  },
+  "release_tag": "v0.2.0-resurface",
+  "research_prerelease": true,
+  "sizes": {
+    "all_asset_bytes": 3165979376,
+    "configuration_bytes": 462,
+    "manifest_bytes": 8428,
+    "scope": "Every shipped asset+release manifest; includes both raw-contained and standalone tokenizer copies, source, licenses and quality evidence.",
+    "tokenizer_bytes": 4573028,
+    "total_release_bytes": 3165987804,
+    "weight_container_bytes": 3146417981
+  },
+  "software": {
+    "git_commit": null,
+    "git_metadata_present": false,
+    "git_worktree_dirty": null,
+    "snapshot_provenance": {
+      "exported_archive_sha256": "b8a3334fb75061dd11ac3c99d59c7513dbaa5ba0de237bcfb285b588d0686e1b",
+      "exported_git_commit": "e89c764e33a7fcd72095e1b9b9ea47f22d3ff7bb",
+      "exported_git_tree": "ca8188fb64e3ce12a3aae001fb836a8471fd22f2",
+      "release_tag": "v0.2.0-resurface",
+      "sha256": "f2568f74a0b1de01cabbc6692d9ab29a27e0dd66045d6a6e192ea01acda4556a",
+      "source_archive_bytes": 26972666,
+      "source_repository": "https://github.com/EndlessChasing/mamba2-8b-e8w5"
+    },
+    "source_archive": "source.zip"
+  },
+  "tokenizer": {
+    "path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+    "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+  }
+}
