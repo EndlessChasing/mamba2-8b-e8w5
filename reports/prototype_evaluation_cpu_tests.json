@@ -1,0 +1,37 @@
+{
+  "format": "MAMBA2_PROTOTYPE_EVALUATION_CPU_TESTS_V1",
+  "complete": true,
+  "cpu_only": true,
+  "gpu_used": false,
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "exit_code": 0,
+  "unittest_elapsed_seconds": 0.034,
+  "command": "CUDA_VISIBLE_DEVICES=\"\" /home/horde/.venvs/lodram/bin/python -m unittest discover -s tests -p test_prototype_evaluation.py -v",
+  "source_sha256": {
+    "scripts/evaluate_prototype_compensation.py": "59a10619c16721056dc8afe128f3c44eef5d05015488e10b7f063b4cd3394ebd",
+    "tests/test_prototype_evaluation.py": "ebe85b707136a630793dc32cfe42743b25d0e6d25bdd5c7345ca825c3be899c5"
+  },
+  "checks": [
+    "Final128 checkpoint and all112 exported FP16 table identities",
+    "Missing/altered/signed-zero/dtype master/table rejection",
+    "Repeated-window overflow and exact successful-update history",
+    "Safe flat ledger filenames plus size/SHA/symlink rejection",
+    "Three-arm full-validation input identity and1%/source+5% thresholds",
+    "Exact integer counters and schedule/target fields reject float and bool substitutions"
+  ],
+  "actual_prepared_training_data_independent_cpu_check": "passed32 fresh windows,871 eligible grid blocks, pinned manifest/tokenfile hashes",
+  "pre_hardening_run": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0,
+    "unittest_elapsed_seconds": 0.03,
+    "source_sha256": {
+      "scripts/evaluate_prototype_compensation.py": "69e1ac3ac05a220f8705b56d24789b21578fdd604f280c06d811df8919625909",
+      "tests/test_prototype_evaluation.py": "9a947f4350497c850c5d10052f3b7814917077354bd0e99d77eb23655843d2ea"
+    }
+  },
+  "post_review_hardening": "All112 .proto file digests and bound training code files are included in final evaluation rehash ledger."
+}
