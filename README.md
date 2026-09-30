@@ -2,13 +2,13 @@
 
 ## Current v0.2.0: frozen WikiText-2 test
 
-The already published `v0.2.0-resurface` model was evaluated on the complete
-WikiText-2 **test** split, separately from its earlier validation results.
-
 | Frozen same-base arm | Full test PPL |
 | --- | ---: |
-| Current readapted E8/W5 base, Resurface disabled | 7.534184760938831 |
-| Identical base, published soft Resurface enabled | **7.502958939186295** |
+| Current readapted E8/W5 base, Resurface disabled | 7.53418476 |
+| Identical base, published soft Resurface enabled | **7.50295894** |
+
+The already published `v0.2.0-resurface` model was evaluated on the complete
+WikiText-2 **test** split, separately from its earlier validation results.
 
 Both arms score the same **300,963 targets / 147 windows**, including the last
 1,955 targets, with the published SSD **parallel prefill** and zero initial state
@@ -33,9 +33,9 @@ project; this is a frozen retrospective test of the released v0.2.0 artifact.
 
 **Preceding PPL-priority result:** [current-axis small-parameter readaptation](docs/AXIS_SMALL_READAPTATION_RESULTS.md) and independent native evaluation completed. Training the existing393 small tensors for448 updates lowers complete-validation PPL **7.977512009→7.622396588 (4.45146%)**, with **130/130 windows improving**. The candidate is **3.92983% above source7.334175947** and passes the declared **source+5% PPL target**. All112 nominal2.5-bit axis projections, W4 embedding and W5 head remain fixed. Raw model data stay **3,138,928,792 bytes** with **zero replacement-byte delta**; the new provenance manifest adds239,782 bytes separately. That stage did not include MK or a new complete package.
 
-The preceding [output-axis residual experiment](docs/OUTPUT_AXIS_RESIDUAL_RESULTS.md) measured **8.109428666→7.977512009 (1.62671%)**, with116/130 windows improving. Its paired source+5% target failed before the new readaptation. The [same-capacity joint E8/axis screen](docs/JOINT_AXIS_SELECTION_RESULTS.md) also stopped: all six sampled reconstruction errors improved, but median reduction was only **1.839555%**, with **0/6** reaching2%. It failed the declared expansion gate before all112 rebuilding or PPL; pilot file sizes were unchanged and matrix-stage time was5.4934x greedy replay.
+The preceding [output-axis residual experiment](docs/OUTPUT_AXIS_RESIDUAL_RESULTS.md) measured full-validation PPL **8.109428666→7.977512009 (1.62671%)**, with116/130 windows improving. Its paired source+5% target failed before the new readaptation. The [same-capacity joint E8/axis screen](docs/JOINT_AXIS_SELECTION_RESULTS.md) also stopped: all six sampled reconstruction errors improved, but median reduction was only **1.839555%**, with **0/6** reaching2%. It failed the declared expansion gate before all112 rebuilding or PPL; pilot file sizes were unchanged and matrix-stage time was5.4934x greedy replay.
 
-The preceding [input-axis experiment](docs/INPUT_AXIS_RESIDUAL_RESULTS.md) improved PPL8.359867548→8.109428666. The [W4 diagnostic](docs/VOCAB_W4_DIAGNOSTIC_RESULTS.md) motivated retaining W5 for the head. Earlier [scalar-temperature](docs/SCALAR_TEMPERATURE_RESULTS.md), [prototype](docs/PROTOTYPE_COMPENSATION_RESULTS.md), [rank-4](docs/LOW_RANK_COMPENSATION_RESULTS.md) and [teacher-KL](docs/TEACHER_KL_COMPENSATION_RESULTS.md) recipes remain stopped with their recorded negative gates.
+The preceding [input-axis experiment](docs/INPUT_AXIS_RESIDUAL_RESULTS.md) improved full-validation PPL **8.359867548→8.109428666**. The [W4 diagnostic](docs/VOCAB_W4_DIAGNOSTIC_RESULTS.md) motivated retaining W5 for the head. Earlier [scalar-temperature](docs/SCALAR_TEMPERATURE_RESULTS.md), [prototype](docs/PROTOTYPE_COMPENSATION_RESULTS.md), [rank-4](docs/LOW_RANK_COMPENSATION_RESULTS.md) and [teacher-KL](docs/TEACHER_KL_COMPENSATION_RESULTS.md) recipes remain stopped with their recorded negative gates.
 
 The historical [accepted all-small model](docs/SMALL_TENSOR_COMPENSATION_RESULTS.md), **full-validation PPL8.359867548**, and its verified **2,671,176,471-byte** offline distribution remain unchanged. The readapted candidate uses more raw bytes than that historical package's underlying data; the current adapter result is summarized above. This does not establish a global minimum or equal quality. Validation has informed development and is not untouched test evidence. The user-directed MK repair follows the earlier [PPL-first work](docs/PPL_PRIORITY_CONTINUATION.md).
 
@@ -45,7 +45,7 @@ All **8,236,999,680 base parameters** have been quantized or retained and indepe
 
 ## Original candidate: measured test quality
 
-The following test, runtime-memory and restored-generation measurements describe the original `e8w5_v1` candidate before compensation training. The retained all-small candidate has separate full-validation, complete offline-distribution, CPU restoration and archived-software generation evidence; its test quality remains unmeasured.
+**Historical, different weights:** the following test, runtime-memory and restored-generation measurements describe the original `e8w5_v1` candidate before compensation training. The retained all-small candidate has separate full-validation, complete offline-distribution, CPU restoration and archived-software generation evidence; its test quality remains unmeasured.
 
 | Full test measurement | Original weights cast to FP16 | Original `e8w5_v1` reconstructed to FP16 |
 | --- | ---: | ---: |
@@ -81,7 +81,7 @@ Only public upstream model/runtime sources and project-authored compression code
 
 Download instructions are in [DOWNLOAD.md](docs/DOWNLOAD.md); the current version is tracked at [v0.2.0-resurface](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface). A global smallest-model claim is not established. The public comparison records the exact same-base artifacts audited and which quality measurements were not repeated.
 
-## Current method and quality
+## Historical validation and recall for the current release
 
 | Metric | Uncompressed source | Current release |
 | --- | ---: | ---: |
