@@ -1,8 +1,35 @@
 # Mamba-2 8B E8/W5， 3GB， Recall Recovered
 
+## Current v0.2.0: frozen WikiText-2 test
+
+The already published `v0.2.0-resurface` model was evaluated on the complete
+WikiText-2 **test** split, separately from its earlier validation results.
+
+| Frozen same-base arm | Full test PPL |
+| --- | ---: |
+| Current readapted E8/W5 base, Resurface disabled | 7.534184760938831 |
+| Identical base, published soft Resurface enabled | **7.502958939186295** |
+
+Both arms score the same **300,963 targets / 147 windows**, including the last
+1,955 targets, with the published SSD **parallel prefill** and zero initial state
+per window. All 147 windows improve; relative PPL change is **−0.4144552164%**.
+All 507 decoded base tensors remain unchanged, all 224 adapter tensors match the
+published artifact, and adapter removal restores the first-window score exactly.
+The independent CPU audit passed. This measures decoded FP16 execution, not
+compressed GPU residency or per-token quantized state. No training or selection
+was performed in this test.
+
+See the [complete paired result and audit](evaluation/wt2_test_v1/),
+[frozen test protocol](docs/RELEASE_V02_WT2_TEST_V1_PROTOCOL.md), and
+[external test runner](scripts/run_release_v02_wt2_test_v1.py).
+The original `e8w5_v1` test below describes different pre-repair weights and
+remains unchanged. WikiText-2 test was previously exposed elsewhere in this
+project; this is a frozen retrospective test of the released v0.2.0 artifact.
+
+
 **Current release: `v0.2.0-resurface` (research prerelease).** The complete **3,165,987,804-byte (3.166 GB)** package is [publicly available](https://github.com/EndlessChasing/mamba2-8b-e8w5/releases/tag/v0.2.0-resurface). Exact restoration, archived-source GPU inference and all26 GitHub asset checksums passed. Use the [release guide](docs/RESURFACE_RELEASE.md) and [download instructions](docs/DOWNLOAD.md) for the latest axis-residual, W4-embedding/W5-head model with its enabled soft Resurface adapter. The original `v0.1` recipes below are retained as experiment history.
 
-**Latest verified MK/PPL repair:** the [fixed soft Resurface adapter](docs/RESURFACE_READAPTED_RESULTS.md) improves independent numeric-binding recall **91→340/384 (23.70%→88.54%)**, with removed-target matches **0→0/384**. Complete130-window PPL improves **7.622396588→7.593163114**; all130 windows improve, with exact historical/restored-baseline CE replay. Independent confirmation gives251 gained/2 lost and a conservative95% improvement lower bound of **+58.50 percentage points**. Both tasks use the same enabled final adapter, adding **2,539,647 serialized bytes** with all507 base tensors frozen. Native audits and independent receipt checks pass. The [continuation protocol](docs/RESURFACE_SOFT_CONTINUATION_PROTOCOL.md) explicitly preserves a historical cross-process MK replay failure and changes only that prerequisite. Results cover three shared prompt families/N16/64 and previously used WikiText-2 validation. The user authorized publication after reviewing these results.
+**Historical validation and MK repair:** the [fixed soft Resurface adapter](docs/RESURFACE_READAPTED_RESULTS.md) improves independent numeric-binding recall **91→340/384 (23.70%→88.54%)**, with removed-target matches **0→0/384**. Complete130-window validation PPL improves **7.622396588→7.593163114**; all130 windows improve, with exact historical/restored-baseline CE replay. Independent confirmation gives251 gained/2 lost and a conservative95% improvement lower bound of **+58.50 percentage points**. Both tasks use the same enabled final adapter, adding **2,539,647 serialized bytes** with all507 base tensors frozen. Native audits and independent receipt checks pass. The [continuation protocol](docs/RESURFACE_SOFT_CONTINUATION_PROTOCOL.md) explicitly preserves a historical cross-process MK replay failure and changes only that prerequisite. Results cover three shared prompt families/N16/64 and previously used WikiText-2 validation. The user authorized publication after reviewing these results.
 
 **Preceding PPL-priority result:** [current-axis small-parameter readaptation](docs/AXIS_SMALL_READAPTATION_RESULTS.md) and independent native evaluation completed. Training the existing393 small tensors for448 updates lowers complete-validation PPL **7.977512009→7.622396588 (4.45146%)**, with **130/130 windows improving**. The candidate is **3.92983% above source7.334175947** and passes the declared **source+5% PPL target**. All112 nominal2.5-bit axis projections, W4 embedding and W5 head remain fixed. Raw model data stay **3,138,928,792 bytes** with **zero replacement-byte delta**; the new provenance manifest adds239,782 bytes separately. That stage did not include MK or a new complete package.
 

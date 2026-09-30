@@ -1,0 +1,23 @@
+{
+  "format": "E8W5_RELEASE_V02_WT2_TEST_CPU_AUDIT_V1",
+  "passed": true,
+  "comparison_sha256": "79c39d8b87f8d5e141fcf0f09086e2aa723f7b4caea0faa8d897b91519820745",
+  "raw_manifest_sha256": "7dd96a44d3de6e634b949e2fb94bbc004c0aecc8404d3848d13f83b396616a1f",
+  "protocol_sha256": "99427c7998b9b18a44abfbd317b92d6da30706dd7bbbe159fd2b46d09449a13f",
+  "runner_sha256": "efcd3fcd3d31b46b0724250d2273c09705c9b036a6355322f4ef46d526bd2273",
+  "auditor_sha256": "9f05f13acba1b4e45b3cdba6444bfcbaff41c2029e34195d9b65c6ff21b0176d",
+  "quality_threshold": null,
+  "scope": "Stdlib complete-population arithmetic and immutable source/reported tensor-ledger audit; no GPU, model load or large-weight rehash.",
+  "complete": true,
+  "windows": 147,
+  "targets": 300963,
+  "last_window_targets": 1955,
+  "control_ppl": 7.534184760938831,
+  "candidate_ppl": 7.502958939186295,
+  "ppl_relative_change": -0.004144552163682813,
+  "improved_windows": 147,
+  "base507_ledger_exact": true,
+  "adapter224_ledger_exact": true,
+  "adapter_removal_restoration_exact": true,
+  "population_complete": true
+}
